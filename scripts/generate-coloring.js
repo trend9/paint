@@ -200,8 +200,8 @@ async function generateImageViaHorde(prompt) {
       prompt: prompt,
       models: ["Flux.1-Schnell fp8 (Compact)", "FLUX.1-schnell", "flux", "stable_diffusion", "Dreamshaper", "Deliberate"],
       params: {
-        width: 768,
-        height: 1024,
+        width: 512,
+        height: 768,
         steps: 20,
         n: 1
       }
