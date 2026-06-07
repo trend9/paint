@@ -18,8 +18,6 @@ const SUGGESTED_THEMES = [
   "サファリパークの愉快な赤ちゃんライオン", "不思議の国のアリス風のうさぎの時計屋さん", "雪の世界ののんびりペンギン温泉"
 ];
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-
 // Fallback LLM Models on Hugging Face Serverless (direct endpoints, bypassing the router)
 const LLM_MODELS = [
   "Qwen/Qwen2.5-7B-Instruct",
@@ -36,65 +34,9 @@ const HF_LLM_URL = (model) => `https://api-inference.huggingface.co/models/${mod
 const HF_IMAGE_URL = (model) => `https://api-inference.huggingface.co/models/${model}`;
 
 /**
- * Call Gemini API using native fetch
- */
-async function callGemini(prompt) {
-  console.log('🤖 Attempting generation via Gemini API (gemini-1.5-flash)...');
-  try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        contents: [{
-          role: 'user',
-          parts: [{
-            text: `You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only.\n\n${prompt}`
-          }]
-        }],
-        generationConfig: {
-          responseMimeType: "application/json"
-        }
-      })
-    });
-
-    if (!response.ok) {
-      const errText = await response.text();
-      throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
-    }
-
-    const data = await response.json();
-    if (!data.candidates || data.candidates.length === 0) {
-      throw new Error("No response candidates returned from Gemini API");
-    }
-
-    const content = data.candidates[0].content.parts[0].text;
-    let jsonText = content.trim();
-    const jsonStart = jsonText.indexOf('{');
-    const jsonEnd = jsonText.lastIndexOf('}');
-    if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
-      jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
-    }
-    return JSON.parse(jsonText);
-  } catch (error) {
-    console.warn('⚠️ Gemini generation failed:', error.message);
-    throw error;
-  }
-}
-
-/**
- * Call LLM model with fallback logic (Gemini first if key exists, then direct HF models)
+ * Call LLM model with fallback logic (direct HF models)
  */
 async function callLLM(prompt, retries = 3) {
-  if (GEMINI_API_KEY) {
-    try {
-      return await callGemini(prompt);
-    } catch (e) {
-      console.warn('⚠️ Falling back to Hugging Face models due to Gemini failure...');
-    }
-  }
-
   for (let model of LLM_MODELS) {
     console.log(`🤖 Using HF LLM model: ${model}...`);
     try {
@@ -148,7 +90,7 @@ async function callLLM(prompt, retries = 3) {
       await new Promise(resolve => setTimeout(resolve, 3000));
     }
   }
-  throw new Error("❌ All fallback LLM models (including Gemini and Hugging Face) failed.");
+  throw new Error("❌ All fallback LLM models failed on Hugging Face inference API.");
 }
 
 /**
