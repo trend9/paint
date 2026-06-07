@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <!-- Background border -->
+  <rect x="5" y="5" width="390" height="490" rx="15" fill="#FFFFFF" stroke="#333333" stroke-width="6" />
+  
+  <!-- Sky background stars & sun -->
+  <g stroke="#333333" stroke-width="4" fill="none">
+    <!-- Big cute Sun with face -->
+    <circle cx="90" cy="90" r="35" />
+    <path d="M 90 40 L 90 25" stroke-width="5" stroke-linecap="round" />
+    <path d="M 90 140 L 90 155" stroke-width="5" stroke-linecap="round" />
+    <path d="M 40 90 L 25 90" stroke-width="5" stroke-linecap="round" />
+    <path d="M 140 90 L 155 90" stroke-width="5" stroke-linecap="round" />
+    <path d="M 55 55 L 43 43" stroke-width="5" stroke-linecap="round" />
+    <path d="M 125 125 L 137 137" stroke-width="5" stroke-linecap="round" />
+    <path d="M 125 55 L 137 43" stroke-width="5" stroke-linecap="round" />
+    <path d="M 55 125 L 43 137" stroke-width="5" stroke-linecap="round" />
+    
+    <!-- Sun eyes & smile -->
+    <circle cx="80" cy="85" r="4.5" fill="#333333" />
+    <circle cx="100" cy="85" r="4.5" fill="#333333" />
+    <path d="M 83 103 Q 90 112 97 103" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Tropical Island -->
+  <g stroke="#333333" stroke-width="4.5" fill="none" stroke-linecap="round">
+    <!-- Island sand curve -->
+    <path d="M 220 280 Q 310 260 380 290" />
+    
+    <!-- Palm Tree -->
+    <path d="M 310 268 Q 325 210 320 160" /> <!-- Trunk left -->
+    <path d="M 323 268 Q 338 210 333 160" /> <!-- Trunk right -->
+    <!-- Trunk horizontal segment lines -->
+    <path d="M 314 250 L 327 248" />
+    <path d="M 319 220 L 332 218" />
+    <path d="M 321 190 L 334 188" />
+    
+    <!-- Palm leafs -->
+    <path d="M 320 160 Q 280 150 260 170 Q 295 185 320 160" /> <!-- Leaves left -->
+    <path d="M 320 160 Q 300 120 310 100 Q 325 130 320 160" /> <!-- Leaves top left -->
+    <path d="M 320 160 Q 350 110 370 120 Q 355 145 320 160" /> <!-- Leaves top right -->
+    <path d="M 320 160 Q 370 170 385 190 Q 350 190 320 160" /> <!-- Leaves right -->
+  </g>
+
+  <!-- Sea water wave lines -->
+  <g stroke="#333333" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M 20 350 Q 80 320 140 350 T 260 350 T 380 350" />
+    <path d="M 10 395 Q 70 375 130 395 T 250 395 T 370 395" stroke-width="4" />
+    <path d="M 30 440 Q 90 420 150 440 T 270 440 T 390 440" stroke-width="4.5" />
+  </g>
+
+  <!-- Jumping Dolphins (Cute & bold) -->
+  <g stroke="#333333" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Dolphin 1 (Main jumping) -->
+    <!-- Body curve top -->
+    <path d="M 70 290 Q 140 180 230 240 Q 240 250 260 215" />
+    <!-- Fluke (tail) -->
+    <path d="M 68 290 Q 50 310 35 305 Q 40 270 60 275 Z" />
+    <!-- Body bottom matching belly -->
+    <path d="M 60 275 Q 110 195 190 260" />
+    <!-- Snout & mouth -->
+    <path d="M 230 240 Q 248 248 243 258 Q 235 264 220 260" />
+    <!-- Cute open eye -->
+    <circle cx="210" cy="235" r="4.5" fill="#333333" />
+    <circle cx="208" cy="233" r="1.5" fill="#FFFFFF" />
+    <!-- Flippers -->
+    <path d="M 140 226 Q 148 250 135 265 Q 128 250 135 228" fill="none" />
+    <path d="M 160 220 Q 170 200 178 205" /> <!-- Back fin -->
+    <!-- Water Splashes around Dolphin 1 -->
+    <path d="M 60 310 Q 50 340 40 315" stroke-width="4" />
+    <path d="M 80 300 Q 90 325 105 310" stroke-width="4" />
+  </g>
+
+  <!-- Dolphin 2 (smaller, slightly further back) -->
+  <g stroke="#333333" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 160 310 Q 210 220 270 265" />
+    <path d="M 158 310 L 140 315 Q 142 295 155 298 Z" />
+    <path d="M 155 298 Q 190 230 245 280" />
+    <path d="M 270 265 Q 282 272 278 279 Q 272 283 260 280" />
+    <circle cx="255" cy="261" r="3.5" fill="#333333" />
+    <path d="M 210 252 Q 217 270 205 280" />
+    <!-- Splash -->
+    <path d="M 150 330 Q 135 345 130 325" />
+  </g>
+</svg>

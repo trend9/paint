@@ -1,0 +1,6 @@
+{
+  "name": "ぬりぬり！ぬりえ！",
+  "description": "無料のぬりえをダウンロードできる、こども向けの可愛いぬりえギャラリーサイトです。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

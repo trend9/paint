@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "ColoringPage": {
+      "title": "ColoringPage",
+      "description": "A children's printable coloring page item managed by the CMS.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "slug": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": { "type": "array" },
+        "image": { "type": "string" },
+        "imageType": { "type": "string", "enum": ["svg", "jpg", "png"] },
+        "prompt": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "article": { "type": "string" },
+        "seo": { "type": "object" }
+      },
+      "required": ["id", "slug", "title", "description", "category", "tags", "image", "imageType", "prompt", "createdAt", "article"]
+    }
+  },
+  "firestore": {
+    "coloringPages/{pageId}": {
+      "schema": "ColoringPage",
+      "description": "Educational coloring pages collections."
+    }
+  }
+}

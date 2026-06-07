@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <!-- Background border -->
+  <rect x="5" y="5" width="390" height="490" rx="15" fill="#FFFFFF" stroke="#333333" stroke-width="6" />
+
+  <!-- Playful background hearts/sparkles -->
+  <g stroke="#333333" stroke-width="4.5" fill="none">
+    <!-- Heart 1 -->
+    <path d="M 60 70 Q 45 50 35 70 Q 25 85 60 115 Q 95 85 85 70 Q 75 50 60 70 Z" />
+    <!-- Heart 2 -->
+    <path d="M 330 90 Q 320 75 312 90 Q 305 100 330 125 Q 355 100 348 90 Q 340 75 330 90 Z" stroke-width="3.5" />
+    <!-- Sparkle 1 -->
+    <path d="M 320 220 L 320 235 M 312.5 227.5 L 327.5 227.5" stroke-width="3" stroke-linecap="round" />
+    <path d="M 70 240 L 70 255 M 62.5 247.5 L 77.5 247.5" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Large Plate -->
+  <ellipse cx="200" cy="410" rx="160" ry="35" fill="none" stroke="#333333" stroke-width="5" />
+  <ellipse cx="200" cy="415" rx="130" ry="25" fill="none" stroke="#333333" stroke-width="3" />
+
+  <!-- Giant 3-tier Pancakes stack -->
+  <g stroke="#333333" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bottom Pancake (Tier 3) -->
+    <!-- Base curve -->
+    <path d="M 95 380 Q 95 397 200 405 Q 305 397 305 380" />
+    <!-- Pancake depth sides -->
+    <path d="M 95 350 L 95 380" />
+    <path d="M 305 350 L 305 380" />
+
+    <!-- Middle Pancake (Tier 2) -->
+    <path d="M 100 350 Q 100 367 200 375 Q 300 367 300 350" />
+    <path d="M 100 320 L 100 350" />
+    <path d="M 300 320 L 300 350" />
+
+    <!-- Top Pancake (Tier 1) -->
+    <path d="M 110 320 Q 110 337 200 345 Q 290 337 290 320" />
+    <path d="M 110 290 L 110 320" />
+    <path d="M 290 290 L 290 320" />
+    <!-- Top pancake flat surface ellipse -->
+    <ellipse cx="200" cy="290" rx="90" ry="20" />
+
+    <!-- Butter block melting on top -->
+    <path d="M 185 272 L 210 268 L 220 282 L 195 287 Z" fill="none" />
+    <!-- Butter drip vertical lines -->
+    <path d="M 185 272 L 185 280" />
+    <path d="M 198 285 Q 198 295 194 297" />
+    <path d="M 215 280 Q 220 298 214 302" />
+
+    <!-- Honey / Maple Syrup flowing downwards -->
+    <path d="M 130 295 Q 140 310 135 320 Q 130 325 140 325 Q 155 315 150 298" />
+    <path d="M 260 295 Q 275 313 268 322 Q 257 325 250 315" />
+    <path d="M 195 330 Q 200 355 204 365 Q 210 370 215 360 Q 210 340 213 332" stroke-width="4.5" />
+    
+    <!-- Strawberry on top -->
+    <path d="M 165 285 Q 160 260 173 255 Q 185 262 178 285 Z" />
+    <path d="M 170 257 Q 172 250 176 254" /> <!-- leaf -->
+  </g>
+
+  <!-- Cute Cat peering over the side of the pancake plate -->
+  <g stroke="#333333" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cat Paws holding the plate -->
+    <path d="M 60 380 Q 65 370 73 375 Q 81 370 86 380" /> <!-- Left Paw -->
+    <circle cx="73" cy="380" r="13" stroke-dasharray="20 15" />
+
+    <!-- Cat Head -->
+    <!-- Left Ear -->
+    <path d="M 210 180 Q 190 120 175 145" />
+    <!-- Right Ear -->
+    <path d="M 290 195 Q 320 140 295 155" />
+    <!-- Head outline -->
+    <path d="M 175 145 C 150 170 160 220 200 230 C 235 235 285 225 295 195" />
+    <!-- Forehead marks -->
+    <path d="M 230 155 L 230 170" stroke-width="3" />
+    <path d="M 240 158 L 240 168" stroke-width="3" />
+    
+    <!-- Big cute eyes -->
+    <circle cx="210" cy="190" r="8.5" fill="#333333" />
+    <circle cx="207.5" cy="186.5" r="2.5" fill="#FFFFFF" />
+    
+    <circle cx="260" cy="195" r="8.5" fill="#333333" />
+    <circle cx="257.5" cy="191.5" r="2.5" fill="#FFFFFF" />
+    
+    <!-- Little nose & cute w-shape mouth -->
+    <path d="M 233 194 L 237 194 L 235 198 Z" fill="#333333" />
+    <path d="M 227 206 Q 235 212 235 204 Q 235 212 243 206" stroke-width="4" />
+    
+    <!-- Cat whiskers -->
+    <path d="M 185 205 L 155 208 M 183 213 L 150 220" stroke-width="3" />
+    <path d="M 280 210 L 310 215 M 283 218 L 315 225" stroke-width="3" />
+
+    <!-- Cute little tail swaying on the left side of the cup -->
+    <path d="M 45 420 Q 20 400 15 360 Q 20 340 35 350 Q 30 375 55 400" />
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+name: Auto Generate Coloring Page
+
+on:
+  schedule:
+    # 毎日午前0時と午後12時に自動で実行（1日に2回ぬりえを自動生成・サイト自動更新）
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # GitHub UIから「お好みのタイミングでポチッと実行」できる手動ボタン
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci || npm install
+
+      - name: ⚡ Run Coloring Generator Pipeline
+        id: generate
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          node scripts/generate-coloring.js
+
+      - name: 💾 Commit and Push generated content
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/coloring-pages.json public/coloring-pages/
+          
+          # 差分がある場合のみコミットしてプッシュ
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-generate new kids coloring page 🎨 [skip ci]"
+            git push origin HEAD
+          else
+            echo "No coloring updates found. Skipping commit."
+          fi
+
+      # 🚀 Vercelへのデプロイトークンが設定されている場合は、GHA側から強制即時ビルド・デプロイを叩きます
+      # ※GitHub連携済みのVercelなら自動プッシュされるだけで自動ビルドされますが、こちらを入れておくと確実です！
+      - name: ⚡ Deploy to Vercel
+        if: env.VERCEL_TOKEN != ''
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npm install --global vercel
+          # Vercelプロジェクト情報をプルしてビルド＆プロダクションへデプロイ
+          vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+          vercel build --prod --token=$VERCEL_TOKEN
+          vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
