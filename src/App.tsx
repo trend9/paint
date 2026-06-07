@@ -87,15 +87,59 @@ export default function App() {
     return matchesCategory && matchesSearch;
   });
 
-  // Native A4 print trigger
+  // Native A4 print trigger with mobile optimization
   const triggerPrint = () => {
-    window.print();
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile && selectedPage) {
+      window.open(selectedPage.image, '_blank');
+    } else {
+      window.print();
+    }
+  };
+
+  // Robust blob-based image downloader with fallback
+  const handleDownload = async () => {
+    if (!selectedPage) return;
+    try {
+      const response = await fetch(selectedPage.image);
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = `${selectedPage.slug}.${selectedPage.imageType}`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      setTimeout(() => {
+        window.URL.revokeObjectURL(blobUrl);
+      }, 100);
+    } catch (err) {
+      console.error('Download failed, opening in new window:', err);
+      window.open(selectedPage.image, '_blank');
+    }
   };
 
   // Convert markdown-style raw text article into clean React paragraphs without any developer or AI telemetry
   const renderArticle = (text: string) => {
     if (!text) return null;
-    const lines = text.split('\n');
+
+    // Preprocess: Convert common HTML tags to clean markdown structure
+    let normalized = text;
+    normalized = normalized.replace(/<h3>(.*?)<\/h3>/gi, '\n### $1\n');
+    normalized = normalized.replace(/<h4>(.*?)<\/h4>/gi, '\n#### $1\n');
+    normalized = normalized.replace(/<p>(.*?)<\/p>/gi, '\n$1\n');
+    normalized = normalized.replace(/<li>(.*?)<\/li>/gi, '\n* $1\n');
+    normalized = normalized.replace(/<\/?ul>/gi, '');
+    normalized = normalized.replace(/<strong>(.*?)<\/strong>/gi, '**$1**');
+    normalized = normalized.replace(/<b>(.*?)<\/b>/gi, '**$1**');
+    // Strip any remaining HTML tags to keep details clean
+    normalized = normalized.replace(/<[^>]+>/g, '');
+    // Standardize header tags
+    normalized = normalized.replace(/^## (?!#)/gm, '### ');
+
+    const lines = normalized.split('\n');
     return lines.map((line, index) => {
       const trimmed = line.trim();
       if (trimmed.startsWith('###')) {
@@ -131,9 +175,21 @@ export default function App() {
       if (trimmed === '') {
         return <div key={index} className="h-2" />;
       }
+
+      // Inline formatter helper to support **bold** highlights in paragraph content
+      const renderFormattedText = (rawStr: string) => {
+        const parts = rawStr.split(/\*\*(.*?)\*\*/g);
+        return parts.map((part, i) => {
+          if (i % 2 === 1) {
+            return <strong key={i} className="text-brand-pink font-bold">{part}</strong>;
+          }
+          return part;
+        });
+      };
+
       return (
         <p key={index} className="text-xs text-gray-600 leading-relaxed my-2 font-medium">
-          {trimmed}
+          {renderFormattedText(trimmed)}
         </p>
       );
     });
@@ -318,17 +374,16 @@ export default function App() {
                           <Printer className="w-4 h-4" />
                           用紙に印刷する (A4/PDF)
                         </button>
-                        <a
-                          href={selectedPage.image}
-                          download={`${selectedPage.slug}.${selectedPage.imageType}`}
+                        <button
+                          onClick={handleDownload}
                           className="flex items-center justify-center gap-2 py-4 px-6 bg-brand-mint hover:bg-brand-mint-hover text-white font-black text-xs rounded-full shadow-lg shadow-emerald-50 transition-all cursor-pointer text-center transform active:scale-95"
                         >
                           <Download className="w-4 h-4" />
                           ぬりえを保存する
-                        </a>
+                        </button>
                       </div>
                       <p className="text-[10px] text-gray-400 text-center mt-4 leading-relaxed max-w-sm font-semibold">
-                        ※「用紙に印刷する」をタップすると、ヘッダー等を自動で隠し、塗り絵イラストだけをA4サイズに美しく配置して印刷画面を開きます。
+                        ※「用紙に印刷する」をタップすると、ヘッダー等を自動で隠し、塗り絵イラストだけをA4サイズに美しく配置して印刷画面を開きます（スマートフォンや一部ブラウザでは、画像が別タブで表示されますので、ブラウザの共有メニューからプリントまたは画像を長押しして保存してください）。
                       </p>
                     </div>
 
