@@ -18,36 +18,93 @@ const SUGGESTED_THEMES = [
   "サファリパークの愉快な赤ちゃんライオン", "不思議の国のアリス風のうさぎの時計屋さん", "雪の世界ののんびりペンギン温泉"
 ];
 
-// Fallback LLM Models on Hugging Face Serverless (via router.huggingface.co)
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+// Fallback LLM Models on Hugging Face Serverless (direct endpoints, bypassing the router)
 const LLM_MODELS = [
-  "Qwen/Qwen2.5-72B-Instruct",
-  "meta-llama/Llama-3.3-70B-Instruct",
+  "Qwen/Qwen2.5-7B-Instruct",
   "meta-llama/Meta-Llama-3-8B-Instruct",
-  "mistralai/Mistral-7B-Instruct-v0.3"
+  "meta-llama/Llama-3.2-3B-Instruct",
+  "Qwen/Qwen2.5-72B-Instruct"
 ];
 
-// Image generation model (via router.huggingface.co)
+// Image generation model
 const FLUX_MODEL = "black-forest-labs/FLUX.1-schnell";
 
-// HF Router base URLs (api-inference.huggingface.co is deprecated and DNS-unresolvable)
-const HF_LLM_URL = "https://router.huggingface.co/v1/chat/completions";
-const HF_IMAGE_URL = (model) => `https://router.huggingface.co/hf-inference/models/${model}`;
+// Direct HF Serverless Inference API endpoints (free tier, bypassing router.huggingface.co credit pools)
+const HF_LLM_URL = (model) => `https://api-inference.huggingface.co/models/${model}/v1/chat/completions`;
+const HF_IMAGE_URL = (model) => `https://api-inference.huggingface.co/models/${model}`;
 
 /**
- * Call HF LLM model with fallback logic
+ * Call Gemini API using native fetch
+ */
+async function callGemini(prompt) {
+  console.log('🤖 Attempting generation via Gemini API (gemini-1.5-flash)...');
+  try {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        contents: [{
+          role: 'user',
+          parts: [{
+            text: `You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only.\n\n${prompt}`
+          }]
+        }],
+        generationConfig: {
+          responseMimeType: "application/json"
+        }
+      })
+    });
+
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
+    }
+
+    const data = await response.json();
+    if (!data.candidates || data.candidates.length === 0) {
+      throw new Error("No response candidates returned from Gemini API");
+    }
+
+    const content = data.candidates[0].content.parts[0].text;
+    let jsonText = content.trim();
+    const jsonStart = jsonText.indexOf('{');
+    const jsonEnd = jsonText.lastIndexOf('}');
+    if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
+      jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
+    }
+    return JSON.parse(jsonText);
+  } catch (error) {
+    console.warn('⚠️ Gemini generation failed:', error.message);
+    throw error;
+  }
+}
+
+/**
+ * Call LLM model with fallback logic (Gemini first if key exists, then direct HF models)
  */
 async function callLLM(prompt, retries = 3) {
-  for (let model of LLM_MODELS) {
-    console.log(`🤖 Using LLM model: ${model}...`);
+  if (GEMINI_API_KEY) {
     try {
-      const response = await fetch(HF_LLM_URL, {
+      return await callGemini(prompt);
+    } catch (e) {
+      console.warn('⚠️ Falling back to Hugging Face models due to Gemini failure...');
+    }
+  }
+
+  for (let model of LLM_MODELS) {
+    console.log(`🤖 Using HF LLM model: ${model}...`);
+    try {
+      const response = await fetch(HF_LLM_URL(model), {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${HF_TOKEN}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          model: model,
           messages: [
             {
               role: "system",
@@ -69,7 +126,10 @@ async function callLLM(prompt, retries = 3) {
       }
 
       const data = await response.json();
-      const content = data.choices[0].message.content;
+      const content = data.choices ? data.choices[0].message.content : null;
+      if (!content) {
+        throw new Error("Invalid response format received from Hugging Face");
+      }
       
       // Robust JSON extraction in case of markdown wrapping or extra commentary
       let jsonText = content.trim();
@@ -88,7 +148,7 @@ async function callLLM(prompt, retries = 3) {
       await new Promise(resolve => setTimeout(resolve, 3000));
     }
   }
-  throw new Error("❌ All fallback LLM models failed on Hugging Face inference API.");
+  throw new Error("❌ All fallback LLM models (including Gemini and Hugging Face) failed.");
 }
 
 /**
