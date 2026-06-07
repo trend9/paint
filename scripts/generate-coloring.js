@@ -175,31 +175,138 @@ async function callLLM(prompt, retries = 3) {
   throw new Error("❌ All fallback LLM models failed on Hugging Face inference API.");
 }
 
+const AI_HORDE_API_KEY = process.env.AI_HORDE_API_KEY;
+
 /**
- * Generate binary image using FLUX.1-schnell
+ * Generate image using AI Horde API
  */
-async function generateColoringImage(prompt) {
-  console.log(`🎨 Triggering image generation via ${FLUX_MODEL}...`);
+async function generateImageViaHorde(prompt) {
+  const apiKey = AI_HORDE_API_KEY || "0000000000";
+  console.log(`🎨 Triggering image generation via AI Horde (using key: ${apiKey === "0000000000" ? "anonymous" : "provided"})...`);
   console.log(`💡 Image Prompt: "${prompt}"`);
 
-  const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
+  const response = await fetch('https://aihorde.net/api/v2/generate/async', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${HF_TOKEN}`,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'apikey': apiKey,
+      'Client-Agent': 'coloring-page-generator:1.0.0:github-actions@users.noreply.github.com'
     },
     body: JSON.stringify({
-      inputs: prompt
+      prompt: prompt,
+      models: ["Flux.1-Schnell fp8 (Compact)", "FLUX.1-schnell", "flux"],
+      params: {
+        width: 768,
+        height: 1024,
+        steps: 4,
+        n: 1
+      }
     })
   });
 
   if (!response.ok) {
     const errText = await response.text();
-    throw new Error(`FLUX Generation failed with HTTP ${response.status}: ${errText}`);
+    throw new Error(`AI Horde job submission failed with HTTP ${response.status}: ${errText}`);
   }
 
-  const arrayBuffer = await response.arrayBuffer();
-  return Buffer.from(arrayBuffer);
+  const data = await response.json();
+  const jobId = data.id;
+  console.log(`Job submitted successfully. Job ID: ${jobId}. Polling for completion...`);
+
+  let done = false;
+  let attempts = 0;
+  // Limit to 60 attempts for anonymous queue, 30 for registered
+  const maxAttempts = apiKey === "0000000000" ? 60 : 30;
+  while (!done && attempts < maxAttempts) {
+    attempts++;
+    await new Promise(resolve => setTimeout(resolve, 5000));
+    
+    const checkRes = await fetch(`https://aihorde.net/api/v2/generate/check/${jobId}`);
+    if (!checkRes.ok) {
+      console.warn(`⚠️ Failed to check job status (HTTP ${checkRes.status}). Retrying...`);
+      continue;
+    }
+    
+    const checkData = await checkRes.json();
+    console.log(`   [Horde Status] done: ${checkData.done}, wait time: ${checkData.wait_time}s, queue position: ${checkData.queue_position}`);
+    
+    if (checkData.done) {
+      done = true;
+      break;
+    }
+  }
+
+  if (!done) {
+    throw new Error(`AI Horde job timed out after ${maxAttempts * 5} seconds.`);
+  }
+
+  console.log("Job completed! Retrieving image data...");
+  const statusRes = await fetch(`https://aihorde.net/api/v2/generate/status/${jobId}`);
+  if (!statusRes.ok) {
+    throw new Error(`Failed to retrieve results from AI Horde (HTTP ${statusRes.status})`);
+  }
+
+  const statusData = await statusRes.json();
+  if (!statusData.generations || statusData.generations.length === 0) {
+    throw new Error("AI Horde returned no generated images.");
+  }
+
+  const imgData = statusData.generations[0].img;
+  if (imgData.startsWith('http')) {
+    const imgRes = await fetch(imgData);
+    if (!imgRes.ok) throw new Error(`Failed to download image from Horde URL: ${imgRes.status}`);
+    const arrayBuffer = await imgRes.arrayBuffer();
+    return Buffer.from(arrayBuffer);
+  } else {
+    return Buffer.from(imgData, 'base64');
+  }
+}
+
+/**
+ * Generate binary image using FLUX.1-schnell (via HF or AI Horde fallback)
+ */
+async function generateColoringImage(prompt) {
+  // If AI Horde API key is explicitly configured, prefer AI Horde first
+  if (AI_HORDE_API_KEY) {
+    try {
+      return await generateImageViaHorde(prompt);
+    } catch (e) {
+      console.warn(`⚠️ AI Horde generation failed: ${e.message}. Falling back to Hugging Face...`);
+    }
+  }
+
+  // Otherwise try Hugging Face FLUX
+  try {
+    console.log(`🎨 Triggering image generation via HF ${FLUX_MODEL}...`);
+    console.log(`💡 Image Prompt: "${prompt}"`);
+
+    const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${HF_TOKEN}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        inputs: prompt
+      })
+    });
+
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`HF FLUX Generation failed with HTTP ${response.status}: ${errText}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    return Buffer.from(arrayBuffer);
+  } catch (error) {
+    console.warn(`⚠️ HF FLUX generation failed: ${error.message}`);
+    // If AI Horde key was NOT configured, try it as a final fallback
+    if (!AI_HORDE_API_KEY) {
+      console.log("🔄 Attempting final fallback via AI Horde (anonymous)...");
+      return await generateImageViaHorde(prompt);
+    }
+    throw error;
+  }
 }
 
 async function run() {
