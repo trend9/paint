@@ -18,7 +18,7 @@ const SUGGESTED_THEMES = [
   "サファリパークの愉快な赤ちゃんライオン", "不思議の国のアリス風のうさぎの時計屋さん", "雪の世界ののんびりペンギン温泉"
 ];
 
-// Fallback LLM Models on Hugging Face Serverless
+// Fallback LLM Models on Hugging Face Serverless (via router.huggingface.co)
 const LLM_MODELS = [
   "Qwen/Qwen2.5-72B-Instruct",
   "meta-llama/Llama-3.3-70B-Instruct",
@@ -26,7 +26,12 @@ const LLM_MODELS = [
   "mistralai/Mistral-7B-Instruct-v0.3"
 ];
 
+// Image generation model (via router.huggingface.co)
 const FLUX_MODEL = "black-forest-labs/FLUX.1-schnell";
+
+// HF Router base URLs (api-inference.huggingface.co is deprecated and DNS-unresolvable)
+const HF_LLM_URL = "https://router.huggingface.co/v1/chat/completions";
+const HF_IMAGE_URL = (model) => `https://router.huggingface.co/hf-inference/models/${model}`;
 
 /**
  * Call HF LLM model with fallback logic
@@ -35,7 +40,7 @@ async function callLLM(prompt, retries = 3) {
   for (let model of LLM_MODELS) {
     console.log(`🤖 Using LLM model: ${model}...`);
     try {
-      const response = await fetch(`https://api-inference.huggingface.co/v1/chat/completions`, {
+      const response = await fetch(HF_LLM_URL, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${HF_TOKEN}`,
@@ -94,17 +99,14 @@ async function generateColoringImage(prompt) {
   console.log(`🎨 Triggering image generation via ${FLUX_MODEL}...`);
   console.log(`💡 Image Prompt: "${prompt}"`);
 
-  const response = await fetch(`https://api-inference.huggingface.co/models/${FLUX_MODEL}`, {
+  const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${HF_TOKEN}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      inputs: prompt,
-      options: {
-        wait_for_model: true
-      }
+      inputs: prompt
     })
   });
 
