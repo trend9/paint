@@ -1,5 +1,33 @@
 [
   {
+    "slug": "astro-animal-adventure",
+    "title": "【日本語】宇宙飛行士のどうぶつと星の冒険！かわいい宇宙船で大空へ！",
+    "description": "宇宙飛行士のどうぶつたちが可愛らしい宇宙船に乗って星々の間を冒険します。星雲や惑星をバックに、友好的なエイリアンたちと楽しい時間を過ごします。",
+    "category": "ファンタジー",
+    "tags": [
+      "宇宙飛行士",
+      "どうぶつ",
+      "宇宙船",
+      "エイリアン"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, cute happy animals as astronauts floating in a spaceship, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4",
+    "article": "【日本語】<h3>宇宙飛行士のどうぶつたち</h3>このぬりえでは、うさぎ（うさぎ）、パンダ（パンダ）、そしてくま（くま）が宇宙飛行士として冒険しています。彼らは大きな眼と笑顔を浮かべ、宇宙船から星々を眺めています。<h4>ぬり方のコツ</h4>宇宙船は青や紫を使って宇宙の雰囲気を出すと良いでしょう。どうぶつたちは柔らかい色でぬってあげると、かわいらしさが増します。背景の星々は銀や白で点を打つと、輝く星空が表現できます。<h4>お母様お父様へ</h4>このぬりえは、子どもたちの創造力と想像力を育むのに最適です。宇宙という未知の世界を描くことで、子供たちの視野が広がり、新しいことへの興味や好奇心を引き出します。また、親子で一緒にぬりえをすることで、コミュニケーションを深め、楽しく学ぶ時間を共有できます。",
+    "seo": {
+      "h1": "【無料ダウンロード】宇宙飛行士のどうぶつと星の冒険！かわいい宇宙船で大空へ！（子供・幼児向け）",
+      "metaDescription": "宇宙飛行士のどうぶつたちが宇宙船に乗って星々の間を冒険します。かわいらしいエイリアンたちと楽しい時間を過ごしましょう。無料ダウンロードできるぬりえです。",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "宇宙飛行士"
+      ]
+    },
+    "image": "/coloring-pages/astro-animal-adventure.jpg",
+    "imageType": "jpg",
+    "createdAt": "2026-06-07T07:07:57.778Z",
+    "id": "7"
+  },
+  {
     "slug": "flying-whale-and-magic-balloon",
     "title": "【日本語】空を飛ぶクジラとふしぎな風船のぬりえ",
     "description": "空を自由に飛ぶクジラとカラフルな風船の世界を描いたぬりえ。想像力をかき立てるファンタジーな画面で、子供たちの創造力を引き出します。",
