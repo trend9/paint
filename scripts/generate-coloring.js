@@ -35,52 +35,76 @@ const FLUX_MODEL = "black-forest-labs/FLUX.1-schnell";
 const HF_LLM_URL = "https://router.huggingface.co/v1/chat/completions";
 const HF_IMAGE_URL = (model) => `https://router.huggingface.co/hf-inference/models/${model}`;
 
+const GEMINI_MODELS = [
+  "gemini-2.5-flash",
+  "gemini-2.0-flash",
+  "gemini-flash-latest"
+];
+
 /**
- * Call Gemini API using native fetch
+ * Call Gemini API using native fetch with model fallback and retries
  */
 async function callGemini(prompt) {
-  console.log('🤖 Attempting generation via Gemini API (gemini-2.5-flash)...');
-  try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        contents: [{
-          role: 'user',
-          parts: [{
-            text: `You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only.\n\n${prompt}`
-          }]
-        }],
-        generationConfig: {
-          responseMimeType: "application/json"
+  for (let model of GEMINI_MODELS) {
+    console.log(`🤖 Attempting generation via Gemini API (${model})...`);
+    let retries = 2;
+    while (retries >= 0) {
+      try {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            contents: [{
+              role: 'user',
+              parts: [{
+                text: `You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only.\n\n${prompt}`
+              }]
+            }],
+            generationConfig: {
+              responseMimeType: "application/json"
+            }
+          })
+        });
+
+        if (!response.ok) {
+          const errText = await response.text();
+          // If it is 503 (temporary high demand) or 429 (rate limit), retry after a delay
+          if ((response.status === 503 || response.status === 429) && retries > 0) {
+            console.warn(`⚠️ Gemini model ${model} returned ${response.status}. Retrying in 3 seconds... (${retries} retries left)`);
+            retries--;
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            continue;
+          }
+          throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
         }
-      })
-    });
 
-    if (!response.ok) {
-      const errText = await response.text();
-      throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
-    }
+        const data = await response.json();
+        if (!data.candidates || data.candidates.length === 0) {
+          throw new Error("No response candidates returned from Gemini API");
+        }
 
-    const data = await response.json();
-    if (!data.candidates || data.candidates.length === 0) {
-      throw new Error("No response candidates returned from Gemini API");
+        const content = data.candidates[0].content.parts[0].text;
+        let jsonText = content.trim();
+        const jsonStart = jsonText.indexOf('{');
+        const jsonEnd = jsonText.lastIndexOf('}');
+        if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
+          jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
+        }
+        return JSON.parse(jsonText);
+      } catch (error) {
+        console.warn(`⚠️ Gemini model ${model} attempt failed:`, error.message);
+        if (retries > 0 && (error.message.includes('503') || error.message.includes('429') || error.message.includes('fetch failed'))) {
+          retries--;
+          await new Promise(resolve => setTimeout(resolve, 3000));
+          continue;
+        }
+        break; // try next model
+      }
     }
-
-    const content = data.candidates[0].content.parts[0].text;
-    let jsonText = content.trim();
-    const jsonStart = jsonText.indexOf('{');
-    const jsonEnd = jsonText.lastIndexOf('}');
-    if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
-      jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
-    }
-    return JSON.parse(jsonText);
-  } catch (error) {
-    console.warn('⚠️ Gemini generation failed:', error.message);
-    throw error;
   }
+  throw new Error("❌ All Gemini models and retries failed.");
 }
 
 /**
