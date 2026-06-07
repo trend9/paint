@@ -2,12 +2,14 @@ name: Auto Generate Coloring Page
 
 on:
   schedule:
-    # 毎日午前0時と午後12時に自動で実行（1日に2回ぬりえを自動生成・サイト自動更新）
+    # 毎日午前9時と午後9時（日本時間）に自動で実行（1日に2回ぬりえを自動生成・サイト自動更新）
     - cron: '0 0,12 * * *'
   workflow_dispatch: # GitHub UIから「お好みのタイミングでポチッと実行」できる手動ボタン
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   generate-and-deploy:
@@ -36,22 +38,25 @@ jobs:
         run: |
           node scripts/generate-coloring.js
 
+      - name: 🏗️ Build site with new content
+        run: npm run build
+
       - name: 💾 Commit and Push generated content
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/coloring-pages.json public/coloring-pages/
-          
+
           # 差分がある場合のみコミットしてプッシュ
+          # ※ [skip ci] を使わないことでVercelが自動でリビルド＆デプロイを検知します
           if ! git diff --cached --quiet; then
-            git commit -m "chore: auto-generate new kids coloring page 🎨 [skip ci]"
+            git commit -m "chore: auto-generate new kids coloring page 🎨"
             git push origin HEAD
           else
             echo "No coloring updates found. Skipping commit."
           fi
 
       # 🚀 Vercelへのデプロイトークンが設定されている場合は、GHA側から強制即時ビルド・デプロイを叩きます
-      # ※GitHub連携済みのVercelなら自動プッシュされるだけで自動ビルドされますが、こちらを入れておくと確実です！
       - name: ⚡ Deploy to Vercel
         if: env.VERCEL_TOKEN != ''
         env:
