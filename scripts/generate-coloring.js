@@ -29,9 +29,9 @@ const LLM_MODELS = [
 // Image generation model
 const FLUX_MODEL = "black-forest-labs/FLUX.1-schnell";
 
-// Direct HF Serverless Inference API endpoints (free tier, bypassing router.huggingface.co credit pools)
-const HF_LLM_URL = (model) => `https://api-inference.huggingface.co/models/${model}/v1/chat/completions`;
-const HF_IMAGE_URL = (model) => `https://api-inference.huggingface.co/models/${model}`;
+// HF Router base URLs (api-inference.huggingface.co is deprecated and DNS-unresolvable)
+const HF_LLM_URL = "https://router.huggingface.co/v1/chat/completions";
+const HF_IMAGE_URL = (model) => `https://router.huggingface.co/hf-inference/models/${model}`;
 
 /**
  * Call LLM model with fallback logic (direct HF models)
@@ -40,13 +40,14 @@ async function callLLM(prompt, retries = 3) {
   for (let model of LLM_MODELS) {
     console.log(`🤖 Using HF LLM model: ${model}...`);
     try {
-      const response = await fetch(HF_LLM_URL(model), {
+      const response = await fetch(HF_LLM_URL, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${HF_TOKEN}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+          model: model,
           messages: [
             {
               role: "system",
