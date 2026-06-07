@@ -51,7 +51,7 @@ async function callLLM(prompt, retries = 3) {
           messages: [
             {
               role: "system",
-              content: "You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English."
+              content: "You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only, no markdown, no code blocks."
             },
             {
               role: "user",
@@ -59,8 +59,7 @@ async function callLLM(prompt, retries = 3) {
             }
           ],
           temperature: 0.8,
-          max_tokens: 3000,
-          response_format: { type: "json_object" }
+          max_tokens: 3000
         })
       });
 
