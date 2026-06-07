@@ -35,7 +35,7 @@ async function callLLM(prompt, retries = 3) {
   for (let model of LLM_MODELS) {
     console.log(`🤖 Using LLM model: ${model}...`);
     try {
-      const response = await fetch(`https://api-inference.huggingface.co/models/${model}/v1/chat/completions`, {
+      const response = await fetch(`https://api-inference.huggingface.co/v1/chat/completions`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${HF_TOKEN}`,
@@ -77,6 +77,9 @@ async function callLLM(prompt, retries = 3) {
       return JSON.parse(jsonText);
     } catch (error) {
       console.warn(`⚠️ Model ${model} failed:`, error.message);
+      if (error.cause) {
+        console.warn(`   Cause:`, error.cause);
+      }
       // Wait briefly before trying next model
       await new Promise(resolve => setTimeout(resolve, 3000));
     }
