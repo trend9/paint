@@ -72,9 +72,10 @@ async function callGemini(prompt) {
           const errText = await response.text();
           // If it is 503 (temporary high demand) or 429 (rate limit), retry after a delay
           if ((response.status === 503 || response.status === 429) && retries > 0) {
-            console.warn(`⚠️ Gemini model ${model} returned ${response.status}. Retrying in 3 seconds... (${retries} retries left)`);
+            const waitMs = response.status === 429 ? 31000 : 3000;
+            console.warn(`⚠️ Gemini model ${model} returned ${response.status}. Retrying in ${waitMs / 1000} seconds... (${retries} retries left)`);
             retries--;
-            await new Promise(resolve => setTimeout(resolve, 3000));
+            await new Promise(resolve => setTimeout(resolve, waitMs));
             continue;
           }
           throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
@@ -95,9 +96,12 @@ async function callGemini(prompt) {
         return JSON.parse(jsonText);
       } catch (error) {
         console.warn(`⚠️ Gemini model ${model} attempt failed:`, error.message);
-        if (retries > 0 && (error.message.includes('503') || error.message.includes('429') || error.message.includes('fetch failed'))) {
+        const isRetryable = error.message.includes('503') || error.message.includes('429') || error.message.includes('fetch failed');
+        if (retries > 0 && isRetryable) {
+          const waitMs = error.message.includes('429') ? 31000 : 3000;
+          console.log(`🔄 Retrying in ${waitMs / 1000} seconds...`);
           retries--;
-          await new Promise(resolve => setTimeout(resolve, 3000));
+          await new Promise(resolve => setTimeout(resolve, waitMs));
           continue;
         }
         break; // try next model
@@ -263,49 +267,63 @@ async function generateImageViaHorde(prompt) {
 }
 
 /**
- * Generate binary image using FLUX.1-schnell (via HF or AI Horde fallback)
+ * Generate binary image using FLUX.1-schnell (via HF or AI Horde fallback) with retries
  */
 async function generateColoringImage(prompt) {
-  // If AI Horde API key is explicitly configured, prefer AI Horde first
-  if (AI_HORDE_API_KEY) {
+  let retries = 2;
+  while (retries >= 0) {
     try {
-      return await generateImageViaHorde(prompt);
-    } catch (e) {
-      console.warn(`⚠️ AI Horde generation failed: ${e.message}. Falling back to Hugging Face...`);
+      // If AI Horde API key is explicitly configured, prefer AI Horde first
+      if (AI_HORDE_API_KEY) {
+        try {
+          return await generateImageViaHorde(prompt);
+        } catch (e) {
+          console.warn(`⚠️ AI Horde generation failed: ${e.message}. Falling back to Hugging Face...`);
+        }
+      }
+
+      // Otherwise try Hugging Face FLUX
+      try {
+        console.log(`🎨 Triggering image generation via HF ${FLUX_MODEL}...`);
+        console.log(`💡 Image Prompt: "${prompt}"`);
+
+        const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${HF_TOKEN}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            inputs: prompt
+          })
+        });
+
+        if (!response.ok) {
+          const errText = await response.text();
+          throw new Error(`HF FLUX Generation failed with HTTP ${response.status}: ${errText}`);
+        }
+
+        const arrayBuffer = await response.arrayBuffer();
+        return Buffer.from(arrayBuffer);
+      } catch (error) {
+        console.warn(`⚠️ HF FLUX generation failed: ${error.message}`);
+        // If AI Horde key was NOT configured, try it as a final fallback
+        if (!AI_HORDE_API_KEY) {
+          console.log("🔄 Attempting final fallback via AI Horde (anonymous)...");
+          return await generateImageViaHorde(prompt);
+        }
+        throw error;
+      }
+    } catch (finalError) {
+      console.warn(`⚠️ Image generation attempt failed: ${finalError.message}`);
+      if (retries > 0) {
+        console.log("🔄 Retrying image generation in 30 seconds...");
+        retries--;
+        await new Promise(resolve => setTimeout(resolve, 30000));
+        continue;
+      }
+      throw finalError;
     }
-  }
-
-  // Otherwise try Hugging Face FLUX
-  try {
-    console.log(`🎨 Triggering image generation via HF ${FLUX_MODEL}...`);
-    console.log(`💡 Image Prompt: "${prompt}"`);
-
-    const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${HF_TOKEN}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        inputs: prompt
-      })
-    });
-
-    if (!response.ok) {
-      const errText = await response.text();
-      throw new Error(`HF FLUX Generation failed with HTTP ${response.status}: ${errText}`);
-    }
-
-    const arrayBuffer = await response.arrayBuffer();
-    return Buffer.from(arrayBuffer);
-  } catch (error) {
-    console.warn(`⚠️ HF FLUX generation failed: ${error.message}`);
-    // If AI Horde key was NOT configured, try it as a final fallback
-    if (!AI_HORDE_API_KEY) {
-      console.log("🔄 Attempting final fallback via AI Horde (anonymous)...");
-      return await generateImageViaHorde(prompt);
-    }
-    throw error;
   }
 }
 
