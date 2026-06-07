@@ -6,8 +6,6 @@ import ColoringCard from './components/ColoringCard';
 import InteractivePainter from './components/InteractivePainter';
 import SEOHeader from './components/SEOHeader';
 import CMSAdmin from './components/CMSAdmin';
-import { db, handleFirestoreError, OperationType } from './firebase';
-import { collection, getDocs } from 'firebase/firestore';
 
 
 export default function App() {
@@ -20,30 +18,7 @@ export default function App() {
   // Custom Path / hash-based Admin CMS router
   const [isAdminMode, setIsAdminMode] = useState(false);
 
-  // 1. Fetch coloring pages from Firestore to enable full dynamic CMS management
-  useEffect(() => {
-    async function loadFirestorePages() {
-      const pathForGetDocs = 'coloringPages';
-      try {
-        const querySnapshot = await getDocs(collection(db, pathForGetDocs));
-        const list: ColoringPage[] = [];
-        querySnapshot.forEach((doc) => {
-          list.push(doc.data() as ColoringPage);
-        });
-        if (list.length > 0) {
-          // Sort coloring pages by date descending
-          list.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
-          setColoringPages(list);
-        }
-      } catch (error) {
-        console.warn("Could not retrieve active Firestore collection, running on default local files:", error);
-        if (error instanceof Error && (error.message.includes('permission') || error.message.includes('Permission'))) {
-          handleFirestoreError(error, OperationType.LIST, pathForGetDocs);
-        }
-      }
-    }
-    loadFirestorePages();
-  }, []);
+
 
   // 2. Router connection for detail viewing and secure /host CMS checking
   useEffect(() => {
