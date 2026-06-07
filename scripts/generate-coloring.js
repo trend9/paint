@@ -198,11 +198,11 @@ async function generateImageViaHorde(prompt) {
     },
     body: JSON.stringify({
       prompt: prompt,
-      models: ["Flux.1-Schnell fp8 (Compact)", "FLUX.1-schnell", "flux", "stable_diffusion", "Dreamshaper", "Deliberate"],
+      models: ["stable_diffusion"],
       params: {
         width: 512,
-        height: 768,
-        steps: 20,
+        height: 512,
+        steps: 15,
         n: 1
       }
     })
