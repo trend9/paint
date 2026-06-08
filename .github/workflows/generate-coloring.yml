@@ -34,9 +34,8 @@ jobs:
       - name: ⚡ Run Coloring Generator Pipeline
         id: generate
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          COLAB_API_URL: ${{ secrets.COLAB_API_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          AI_HORDE_API_KEY: ${{ secrets.AI_HORDE_API_KEY }}
         run: |
           node scripts/generate-coloring.js
 

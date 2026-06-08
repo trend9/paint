@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 
-// Hugging Face authentication
-const HF_TOKEN = process.env.HF_TOKEN;
+// Colab API URL
+const COLAB_API_URL = process.env.COLAB_API_URL;
 
-if (!HF_TOKEN) {
-  console.error('❌ Error: HF_TOKEN environment variable is missing.');
-  console.log('Ensure you populate the HF_TOKEN secret in your GitHub repository secrets.');
+if (!COLAB_API_URL) {
+  console.error('❌ Error: COLAB_API_URL environment variable is missing.');
+  console.log('Ensure you populate the COLAB_API_URL secret in your GitHub repository secrets.');
   process.exit(1);
 }
 
@@ -112,219 +112,195 @@ async function callGemini(prompt) {
 }
 
 /**
- * Call LLM model with fallback logic (direct HF models)
+ * Call LLM model with fallback logic (Colab LLM)
  */
 async function callLLM(prompt, retries = 3) {
   if (GEMINI_API_KEY) {
     try {
       return await callGemini(prompt);
     } catch (e) {
-      console.warn('⚠️ Falling back to Hugging Face models due to Gemini failure...');
+      console.warn('⚠️ Falling back to Colab LLM due to Gemini failure...');
     }
   }
-  for (let model of LLM_MODELS) {
-    console.log(`🤖 Using HF LLM model: ${model}...`);
-    try {
-      const response = await fetch(HF_LLM_URL, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${HF_TOKEN}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          model: model,
-          messages: [
-            {
-              role: "system",
-              content: "You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only, no markdown, no code blocks."
-            },
-            {
-              role: "user",
-              content: prompt
-            }
-          ],
-          temperature: 0.8,
-          max_tokens: 3000
-        })
-      });
+  
+  console.log(`🤖 Using Colab LLM...`);
+  try {
+    const response = await fetch(`${COLAB_API_URL}/generate/text`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        system_prompt: "You are a professional children's coloring page content creator and expert SEO content developer. You generate beautifully written educational materials in Japanese and optimized drawings instructions in English. Always respond with valid raw JSON only, no markdown, no code blocks.",
+        user_prompt: prompt
+      })
+    });
 
-      if (!response.ok) {
-        const errText = await response.text();
-        throw new Error(`HTTP ${response.status}: ${errText}`);
-      }
-
-      const data = await response.json();
-      const content = data.choices ? data.choices[0].message.content : null;
-      if (!content) {
-        throw new Error("Invalid response format received from Hugging Face");
-      }
-      
-      // Robust JSON extraction in case of markdown wrapping or extra commentary
-      let jsonText = content.trim();
-      const jsonStart = jsonText.indexOf('{');
-      const jsonEnd = jsonText.lastIndexOf('}');
-      if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
-        jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
-      }
-      return JSON.parse(jsonText);
-    } catch (error) {
-      console.warn(`⚠️ Model ${model} failed:`, error.message);
-      if (error.cause) {
-        console.warn(`   Cause:`, error.cause);
-      }
-      // Wait briefly before trying next model
-      await new Promise(resolve => setTimeout(resolve, 3000));
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`HTTP ${response.status}: ${errText}`);
     }
-  }
-  throw new Error("❌ All fallback LLM models failed on Hugging Face inference API.");
-}
 
-const AI_HORDE_API_KEY = process.env.AI_HORDE_API_KEY;
-
-/**
- * Generate image using AI Horde API
- */
-async function generateImageViaHorde(prompt) {
-  const apiKey = AI_HORDE_API_KEY || "0000000000";
-  console.log(`🎨 Triggering image generation via AI Horde (using key: ${apiKey === "0000000000" ? "anonymous" : "provided"})...`);
-  console.log(`💡 Image Prompt: "${prompt}"`);
-
-  const response = await fetch('https://aihorde.net/api/v2/generate/async', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'apikey': apiKey,
-      'Client-Agent': 'coloring-page-generator:1.0.0:github-actions@users.noreply.github.com'
-    },
-    body: JSON.stringify({
-      prompt: prompt,
-      models: ["stable_diffusion"],
-      params: {
-        width: 512,
-        height: 512,
-        steps: 15,
-        n: 1
-      }
-    })
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`AI Horde job submission failed with HTTP ${response.status}: ${errText}`);
-  }
-
-  const data = await response.json();
-  const jobId = data.id;
-  console.log(`Job submitted successfully. Job ID: ${jobId}. Polling for completion...`);
-
-  let done = false;
-  let attempts = 0;
-  // Limit to 60 attempts for anonymous queue, 30 for registered
-  const maxAttempts = apiKey === "0000000000" ? 60 : 30;
-  while (!done && attempts < maxAttempts) {
-    attempts++;
-    await new Promise(resolve => setTimeout(resolve, 5000));
-    
-    const checkRes = await fetch(`https://aihorde.net/api/v2/generate/check/${jobId}`);
-    if (!checkRes.ok) {
-      console.warn(`⚠️ Failed to check job status (HTTP ${checkRes.status}). Retrying...`);
-      continue;
+    const data = await response.json();
+    const content = data.result;
+    if (!content) {
+      throw new Error("Invalid response format received from Colab");
     }
     
-    const checkData = await checkRes.json();
-    console.log(`   [Horde Status] done: ${checkData.done}, wait time: ${checkData.wait_time}s, queue position: ${checkData.queue_position}`);
-    
-    if (checkData.done) {
-      done = true;
-      break;
+    // Robust JSON extraction
+    let jsonText = content.trim();
+    const jsonStart = jsonText.indexOf('{');
+    const jsonEnd = jsonText.lastIndexOf('}');
+    if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
+      jsonText = jsonText.substring(jsonStart, jsonEnd + 1);
     }
-  }
-
-  if (!done) {
-    throw new Error(`AI Horde job timed out after ${maxAttempts * 5} seconds.`);
-  }
-
-  console.log("Job completed! Retrieving image data...");
-  const statusRes = await fetch(`https://aihorde.net/api/v2/generate/status/${jobId}`);
-  if (!statusRes.ok) {
-    throw new Error(`Failed to retrieve results from AI Horde (HTTP ${statusRes.status})`);
-  }
-
-  const statusData = await statusRes.json();
-  if (!statusData.generations || statusData.generations.length === 0) {
-    throw new Error("AI Horde returned no generated images.");
-  }
-
-  const imgData = statusData.generations[0].img;
-  if (imgData.startsWith('http')) {
-    const imgRes = await fetch(imgData);
-    if (!imgRes.ok) throw new Error(`Failed to download image from Horde URL: ${imgRes.status}`);
-    const arrayBuffer = await imgRes.arrayBuffer();
-    return Buffer.from(arrayBuffer);
-  } else {
-    return Buffer.from(imgData, 'base64');
+    return JSON.parse(jsonText);
+  } catch (error) {
+    console.error(`❌ Colab LLM failed:`, error.message);
+    throw new Error("❌ Fallback LLM failed on Colab API.");
   }
 }
 
 /**
- * Generate binary image using FLUX.1-schnell (via HF or AI Horde fallback) with retries
+ * Generate coloring page SVG via Gemini text API.
+ * Since coloring pages are line art, SVG is the ideal format.
+ * This uses the already-working Gemini text model - no image generation API needed!
  */
-async function generateColoringImage(prompt) {
-  let retries = 2;
-  while (retries >= 0) {
-    try {
-      // If AI Horde API key is explicitly configured, prefer AI Horde first
-      if (AI_HORDE_API_KEY) {
-        try {
-          return await generateImageViaHorde(prompt);
-        } catch (e) {
-          console.warn(`⚠️ AI Horde generation failed: ${e.message}. Falling back to Hugging Face...`);
-        }
-      }
+async function generateSVGViaGemini(drawingPrompt) {
+  console.log(`🎨 Generating SVG coloring page via Gemini text API...`);
+  console.log(`💡 Drawing description: "${drawingPrompt}"`);
 
-      // Otherwise try Hugging Face FLUX
+  const svgPrompt = `Generate a children's coloring book SVG image based on this description:
+"${drawingPrompt}"
+
+STRICT REQUIREMENTS - Follow ALL of these exactly:
+1. Output ONLY raw SVG code. No markdown, no code blocks, no explanation text. Start with <svg and end with </svg>.
+2. Use viewBox="0 0 800 1000" for portrait orientation (3:4 ratio).
+3. Use clean, thick black outlines: stroke="black" stroke-width="3" to "5".
+4. All fills must be "white" or "none" - this is a COLORING page meant to be colored in by children.
+5. Use simple, rounded shapes suitable for toddlers (circles, ellipses, rounded rectangles, simple paths).
+6. NO shading, NO gradients, NO gray fills, NO complex patterns, NO cross-hatching.
+7. Make the drawing cute, friendly, and appealing to young children (ages 2-6).
+8. Include enough detail to be interesting but keep shapes large and simple enough for small hands to color.
+9. Do NOT use <text> elements. Do NOT include any text in the image.
+10. Keep the SVG clean and well-structured. Use groups <g> for logical parts.`;
+
+  for (let model of GEMINI_MODELS) {
+    console.log(`🤖 Trying Gemini model: ${model}...`);
+    let retries = 2;
+    while (retries >= 0) {
       try {
-        console.log(`🎨 Triggering image generation via HF ${FLUX_MODEL}...`);
-        console.log(`💡 Image Prompt: "${prompt}"`);
-
-        const response = await fetch(HF_IMAGE_URL(FLUX_MODEL), {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`, {
           method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${HF_TOKEN}`,
-            'Content-Type': 'application/json'
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            inputs: prompt
+            contents: [{ role: 'user', parts: [{ text: svgPrompt }] }]
           })
         });
 
         if (!response.ok) {
           const errText = await response.text();
-          throw new Error(`HF FLUX Generation failed with HTTP ${response.status}: ${errText}`);
+          if ((response.status === 503 || response.status === 429) && retries > 0) {
+            const waitMs = response.status === 429 ? 31000 : 5000;
+            console.warn(`⚠️ Gemini ${model} returned ${response.status}. Retrying in ${waitMs / 1000}s... (${retries} retries left)`);
+            retries--;
+            await new Promise(resolve => setTimeout(resolve, waitMs));
+            continue;
+          }
+          throw new Error(`Gemini API HTTP ${response.status}: ${errText}`);
         }
 
-        const arrayBuffer = await response.arrayBuffer();
-        return Buffer.from(arrayBuffer);
-      } catch (error) {
-        console.warn(`⚠️ HF FLUX generation failed: ${error.message}`);
-        // If AI Horde key was NOT configured, try it as a final fallback
-        if (!AI_HORDE_API_KEY) {
-          console.log("🔄 Attempting final fallback via AI Horde (anonymous)...");
-          return await generateImageViaHorde(prompt);
+        const data = await response.json();
+        if (!data.candidates || data.candidates.length === 0) {
+          throw new Error("No response candidates from Gemini");
         }
-        throw error;
+
+        let svgText = data.candidates[0].content.parts[0].text.trim();
+
+        // Strip markdown code fences if present
+        svgText = svgText.replace(/^```(?:svg|xml|html)?\s*\n?/i, '').replace(/\n?```\s*$/i, '').trim();
+
+        // Extract just the SVG element
+        const svgStart = svgText.indexOf('<svg');
+        const svgEnd = svgText.lastIndexOf('</svg>');
+        if (svgStart === -1 || svgEnd === -1) {
+          throw new Error("Gemini response did not contain valid SVG markup");
+        }
+        svgText = svgText.substring(svgStart, svgEnd + 6);
+
+        console.log(`✅ SVG generated successfully (${svgText.length} characters)`);
+        return svgText;
+      } catch (error) {
+        console.warn(`⚠️ Gemini SVG generation (${model}) failed: ${error.message}`);
+        const isRetryable = error.message.includes('503') || error.message.includes('429') || error.message.includes('fetch failed');
+        if (retries > 0 && isRetryable) {
+          const waitMs = error.message.includes('429') ? 31000 : 5000;
+          console.log(`🔄 Retrying in ${waitMs / 1000}s...`);
+          retries--;
+          await new Promise(resolve => setTimeout(resolve, waitMs));
+          continue;
+        }
+        break; // try next model
       }
-    } catch (finalError) {
-      console.warn(`⚠️ Image generation attempt failed: ${finalError.message}`);
-      if (retries > 0) {
-        console.log("🔄 Retrying image generation in 30 seconds...");
-        retries--;
-        await new Promise(resolve => setTimeout(resolve, 30000));
-        continue;
-      }
-      throw finalError;
     }
   }
+  throw new Error("❌ All Gemini models failed for SVG generation.");
+}
+
+/**
+ * Generate coloring page image with retry logic.
+ * Primary: Gemini SVG (uses text API, most reliable)
+ * Fallback: HF FLUX (if credits available)
+ * Returns: { data: Buffer|string, type: 'svg'|'jpg' }
+ */
+async function generateColoringImage(prompt) {
+  let retries = 2;
+  while (retries >= 0) {
+    // Strategy 1: Gemini SVG (primary - most reliable, uses text API)
+    if (GEMINI_API_KEY) {
+      try {
+        const svgData = await generateSVGViaGemini(prompt);
+        return { data: svgData, type: 'svg' };
+      } catch (e) {
+        console.warn(`⚠️ Gemini SVG generation failed: ${e.message}`);
+      }
+    }
+
+    // Strategy 2: Colab Stable Diffusion (fallback)
+    try {
+      console.log(`🎨 Falling back to Colab Stable Diffusion...`);
+      const response = await fetch(`${COLAB_API_URL}/generate/image`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ prompt: prompt, width: 512, height: 512 })
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(`Colab SD HTTP ${response.status}: ${errText}`);
+      }
+
+      const resJson = await response.json();
+      const base64Str = resJson.image_base64;
+      if (base64Str) {
+        return { data: Buffer.from(base64Str, 'base64'), type: 'jpg' };
+      }
+    } catch (error) {
+      console.warn(`⚠️ Colab SD generation failed: ${error.message}`);
+    }
+
+    // Both strategies failed - retry after delay
+    if (retries > 0) {
+      console.log("🔄 All image generation methods failed. Retrying in 30 seconds...");
+      retries--;
+      await new Promise(resolve => setTimeout(resolve, 30000));
+    } else {
+      break;
+    }
+  }
+  throw new Error("❌ All image generation methods exhausted after retries.");
 }
 
 async function run() {
@@ -371,8 +347,8 @@ Important details:
     generatedData.slug = slug;
 
     // 3. Generate Image
-    const imageBuffer = await generateColoringImage(generatedData.prompt);
-    console.log(`✅ Coloring Image downloaded successfully.`);
+    const imageResult = await generateColoringImage(generatedData.prompt);
+    console.log(`✅ Coloring image generated successfully (type: ${imageResult.type}).`);
 
     // 4. Save Image to local directory
     const outputDir = path.join(process.cwd(), 'public', 'coloring-pages');
@@ -380,14 +356,22 @@ Important details:
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    const imageFilename = `${slug}.jpg`;
+    const imageExt = imageResult.type; // 'svg' or 'jpg'
+    const imageFilename = `${slug}.${imageExt}`;
     const imagePathOnDisk = path.join(outputDir, imageFilename);
-    fs.writeFileSync(imagePathOnDisk, imageBuffer);
+
+    if (imageResult.type === 'svg') {
+      // SVG is text data
+      fs.writeFileSync(imagePathOnDisk, imageResult.data, 'utf8');
+    } else {
+      // Raster image is a Buffer
+      fs.writeFileSync(imagePathOnDisk, imageResult.data);
+    }
     console.log(`💾 Saved coloring picture to disk at: ${imagePathOnDisk}`);
 
     // Update image path in JSON database
     generatedData.image = `/coloring-pages/${imageFilename}`;
-    generatedData.imageType = 'jpg';
+    generatedData.imageType = imageExt;
     generatedData.createdAt = new Date().toISOString();
 
     // 5. Read/Write to JSON database
