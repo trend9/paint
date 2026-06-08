@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 // Colab API URL
-const COLAB_API_URL = process.env.COLAB_API_URL;
+const COLAB_API_URL = process.env.COLAB_API_URL?.replace(/\/$/, '');
 
 if (!COLAB_API_URL) {
   console.error('❌ Error: COLAB_API_URL environment variable is missing.');
