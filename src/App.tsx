@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Search, Printer, Download, Sparkles, BookOpen, Settings, ChevronLeft, Brush, Heart, Baby, Smile, ClipboardList, Lock } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { ColoringPage } from './types';
 import coloringPagesData from './data/coloring-pages.json';
 import ColoringCard from './components/ColoringCard';
@@ -466,6 +467,7 @@ export default function App() {
         </div>
       </footer>
 
+      <Analytics />
     </div>
   );
 }
