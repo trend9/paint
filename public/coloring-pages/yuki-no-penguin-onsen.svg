@@ -1,0 +1,77 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountains (background) -->
+  <g id="mountains" stroke="black" stroke-width="4" fill="white">
+    <!-- Mountain 1 (left) -->
+    <path d="M0 700 C150 400 350 400 500 700 L500 1000 L0 1000 Z"/>
+    <!-- Snow cap for Mountain 1 -->
+    <path d="M150 480 C200 420 300 420 350 480 L250 600 Z"/>
+
+    <!-- Mountain 2 (right) -->
+    <path d="M300 750 C450 450 700 450 800 750 L800 1000 L300 1000 Z"/>
+    <!-- Snow cap for Mountain 2 -->
+    <path d="M450 520 C500 460 600 460 650 520 L550 640 Z"/>
+  </g>
+
+  <!-- Snow ground (foreground to mountains) -->
+  <g id="snow-ground" stroke="black" stroke-width="4" fill="white">
+    <path d="M0 800 Q200 750 400 800 Q600 850 800 800 L800 1000 L0 1000 Z"/>
+  </g>
+
+  <!-- Penguins (full body, standing on snow ground, will be partially covered by hot spring) -->
+  <g id="penguins" stroke="black" stroke-width="4" fill="white">
+    <!-- Penguin 1 (left) -->
+    <g transform="translate(100 0)">
+      <path d="M230 830 C200 750 280 650 330 700 C360 730 350 780 330 830 Z"/> <!-- Body -->
+      <circle cx="280" cy="670" r="45"/> <!-- Head -->
+      <path d="M270 660 L290 660 L280 680 Z"/> <!-- Beak -->
+      <circle cx="265" cy="660" r="8"/> <!-- Left Eye -->
+      <circle cx="295" cy="660" r="8"/> <!-- Right Eye -->
+      <path d="M235 740 C220 750 220 790 235 800 Z"/> <!-- Left Flipper -->
+      <path d="M325 740 C340 750 340 790 325 800 Z"/> <!-- Right Flipper -->
+    </g>
+
+    <!-- Penguin 2 (middle) -->
+    <g transform="translate(0 0)">
+      <path d="M350 810 C320 730 400 630 450 680 C480 710 470 760 450 810 Z"/> <!-- Body -->
+      <circle cx="400" cy="650" r="50"/> <!-- Head -->
+      <path d="M390 640 L410 640 L400 670 Z"/> <!-- Beak -->
+      <circle cx="380" cy="640" r="10"/> <!-- Left Eye -->
+      <circle cx="420" cy="640" r="10"/> <!-- Right Eye -->
+      <path d="M355 720 C340 730 340 770 355 780 Z"/> <!-- Left Flipper -->
+      <path d="M445 720 C460 730 460 770 445 780 Z"/> <!-- Right Flipper -->
+    </g>
+
+    <!-- Penguin 3 (right) -->
+    <g transform="translate(-100 0)">
+      <path d="M530 830 C500 750 580 650 630 700 C660 730 650 780 630 830 Z"/> <!-- Body -->
+      <circle cx="580" cy="670" r="45"/> <!-- Head -->
+      <path d="M570 660 L590 660 L580 680 Z"/> <!-- Beak -->
+      <circle cx="565" cy="660" r="8"/> <!-- Left Eye -->
+      <circle cx="595" cy="660" r="8"/> <!-- Right Eye -->
+      <path d="M535 740 C520 750 520 790 535 800 Z"/> <!-- Left Flipper -->
+      <path d="M625 740 C640 750 640 790 625 800 Z"/> <!-- Right Flipper -->
+    </g>
+  </g>
+
+  <!-- Hot Spring (placed over the lower part of the penguins) -->
+  <g id="hot-spring" stroke="black" stroke-width="4" fill="white">
+    <path d="M150 800 C150 700 650 700 650 800 C650 900 400 920 150 800 Z"/>
+  </g>
+
+  <!-- Steam rising from hot spring -->
+  <g id="steam" stroke="black" stroke-width="4" fill="white">
+    <path d="M280 720 C290 680 330 680 340 720 Q330 740 310 740 Q290 740 280 720 Z"/>
+    <path d="M380 700 C390 660 430 660 440 700 Q430 720 410 720 Q390 720 380 700 Z"/>
+    <path d="M480 710 C490 670 530 670 540 710 Q530 730 510 730 Q490 730 480 710 Z"/>
+  </g>
+
+  <!-- Snowflakes (foreground) -->
+  <g id="snowflakes" stroke="black" stroke-width="4" fill="white">
+    <circle cx="100" cy="150" r="18"/>
+    <circle cx="650" cy="100" r="18"/>
+    <circle cx="300" cy="80" r="18"/>
+    <circle cx="750" cy="300" r="18"/>
+    <circle cx="50" cy="400" r="18"/>
+    <circle cx="450" cy="200" r="18"/>
+  </g>
+</svg>
