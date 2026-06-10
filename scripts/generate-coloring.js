@@ -2,11 +2,16 @@ import fs from 'fs';
 import path from 'path';
 
 // Colab API URL
-const COLAB_API_URL = process.env.COLAB_API_URL?.replace(/\/$/, '');
+let COLAB_API_URL = process.argv[2] && (process.argv[2].startsWith("http://") || process.argv[2].startsWith("https://"))
+  ? process.argv[2]
+  : process.env.COLAB_API_URL;
+
+if (COLAB_API_URL) {
+  COLAB_API_URL = COLAB_API_URL.replace(/\/$/, '');
+}
 
 if (!COLAB_API_URL) {
-  console.error('❌ Error: COLAB_API_URL environment variable is missing.');
-  console.log('Ensure you populate the COLAB_API_URL secret in your GitHub repository secrets.');
+  console.error('❌ Error: COLAB_API_URL is missing. Please provide it via command line argument or environment variable.');
   process.exit(1);
 }
 
