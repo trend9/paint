@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- White Background for the whole image -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- Coloring Book Page Border -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="black" stroke-width="14" rx="30" />
+
+  <!-- Global Styles Group: Sets line style for thick, clean cartoon borders -->
+  <g stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    
+    <!-- ==================== BACKGROUND & DECORATIVE ELEMENTS ==================== -->
+    <g id="background-decorations" stroke-width="6">
+      <!-- Left Side Steam Swirls -->
+      <path d="M 160 320 Q 120 270 160 220 T 160 130" fill="none" stroke-width="8" />
+      <path d="M 210 290 Q 180 250 210 210 T 200 150" fill="none" stroke-width="6" />
+
+      <!-- Floating Sparkles / Stars (Top Right) -->
+      <!-- Large Sparkle -->
+      <path d="M 640 160 Q 640 190 670 190 Q 640 190 640 220 Q 640 190 610 190 Q 640 190 640 160 Z" />
+      <!-- Medium Sparkle -->
+      <path d="M 570 240 Q 570 260 590 260 Q 570 260 570 280 Q 570 260 550 260 Q 570 260 570 240 Z" />
+      <!-- Small Sparkle -->
+      <path d="M 700 270 Q 700 280 710 280 Q 700 280 700 290 Q 700 280 690 280 Q 700 280 700 270 Z" />
+
+      <!-- Floating Bubbles -->
+      <circle cx="110" cy="380" r="14" />
+      <circle cx="130" cy="430" r="8" />
+      <circle cx="680" cy="350" r="16" />
+      <circle cx="710" cy="400" r="10" />
+      <circle cx="270" cy="180" r="12" />
+    </g>
+
+    <!-- ==================== DIAGONAL COOKING INGREDIENTS (LOWER LEFT) ==================== -->
+    <g id="ingredients-left">
+      <!-- Cute Honey/Syrup Bear Jar -->
+      <!-- Ears -->
+      <circle cx="145" cy="805" r="14" />
+      <circle cx="215" cy="805" r="14" />
+      <!-- Jar Lid -->
+      <rect x="150" y="775" width="60" height="18" rx="8" />
+      <path d="M 170 775 L 190 775 L 180 760 Z" />
+      <!-- Jar Body -->
+      <path d="M 140 805 C 130 845, 130 905, 180 915 C 230 915, 230 845, 220 805 Z" />
+      <!-- Jar Face Details -->
+      <circle cx="165" cy="835" r="3" fill="black" stroke="none" />
+      <circle cx="195" cy="835" r="3" fill="black" stroke="none" />
+      <ellipse cx="180" cy="845" rx="8" ry="5" />
+      <path d="M 176 846 Q 180 850 184 846" fill="none" stroke-width="4" />
+      <!-- Label on Jar (Heart) -->
+      <path d="M 180 885 C 180 885, 165 870, 165 860 C 165 853, 172 848, 180 855 C 188 848, 195 853, 195 860 C 195 870, 180 885, 180 885 Z" stroke-width="5" />
+
+      <!-- Blueberries on the Floor -->
+      <g id="blueberries-floor">
+        <circle cx="105" cy="895" r="18" />
+        <path d="M 95 885 L 100 880 L 105 885 L 110 880 L 115 885" fill="none" stroke-width="5" />
+        
+        <circle cx="250" cy="900" r="16" />
+        <path d="M 242 890 L 246 886 L 250 890 L 254 886 L 258 890" fill="none" stroke-width="5" />
+      </g>
+    </g>
+
+    <!-- ==================== WHIPPED CREAM & STRAWBERRY (LOWER RIGHT) ==================== -->
+    <g id="ingredients-right">
+      <!-- Big Whipped Cream Swirl -->
+      <path d="M 570 895 C 550 855, 580 815, 620 815 C 630 765, 690 765, 700 815 C 730 825, 745 865, 725 895 Z" />
+      <!-- Swirl Lines for Depth -->
+      <path d="M 620 815 Q 635 855 645 895" fill="none" stroke-width="6" />
+      <path d="M 665 820 Q 670 855 670 895" fill="none" stroke-width="6" />
+      <path d="M 590 845 Q 615 870 635 895" fill="none" stroke-width="6" />
+
+      <!-- Strawberry next to/on cream -->
+      <g id="strawberry-right">
+        <path d="M 660 805 C 675 780, 710 780, 715 810 C 720 840, 685 865, 670 845 C 655 825, 650 815, 660 805 Z" />
+        <!-- Strawberry Leaf Cap -->
+        <path d="M 655 810 Q 665 795 680 805 Q 675 790 690 800 Q 695 795 710 810 Z" fill="white" />
+        <!-- Seeds (Simple Dots) -->
+        <circle cx="675" cy="820" r="2" fill="black" stroke="none" />
+        <circle cx="690" cy="820" r="2" fill="black" stroke="none" />
+        <circle cx="680" cy="835" r="2" fill="black" stroke="none" />
+        <circle cx="695" cy="835" r="2" fill="black" stroke="none" />
+        <circle cx="705" cy="825" r="2" fill="black" stroke="none" />
+      </g>
+    </g>
+
+    <!-- ==================== CHARACTER BODY & CLOTHES ==================== -->
+    <g id="koala-body">
+      <!-- Chubby Torso/Outline -->
+      <path d="M 310 590 C 270 630, 260 760, 360 785 C 400 790, 440 790, 480 760 C 500 630, 490 590, 490 590" />
+      
+      <!-- Apron Neck Strap -->
+      <path d="M 345 590 Q 400 550 455 590" fill="none" stroke-width="8" />
+      
+      <!-- Apron Body -->
+      <path d="M 340 590 L 460 590 L 470 680 C 470 760, 330 760, 330 680 Z" />
+      
+      <!-- Apron Pocket -->
+      <path d="M 365 670 L 435 670 C 435 710, 365 710, 365 670 Z" />
+      <!-- Cute Spoon/Fork design on pocket -->
+      <path d="M 390 680 L 390 700" fill="none" stroke-width="5" />
+      <circle cx="390" cy="678" r="4" fill="white" stroke-width="4" />
+      <path d="M 410 680 L 410 700" fill="none" stroke-width="5" />
+      <path d="M 405 678 L 415 678 M 407 675 L 407 680 M 413 675 L 413 680" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- ==================== KOALA HEAD & FACE ==================== -->
+    <!-- Left Ear (Behind Head) -->
+    <path id="ear-left" d="M 305 435 C 215 385, 165 495, 285 545 Z" />
+    <path id="ear-left-inner" d="M 285 455 C 230 425, 200 495, 270 525" fill="none" stroke-width="6" />
+
+    <!-- Right Ear (Behind Head) -->
+    <path id="ear-right" d="M 495 435 C 585 385, 635 495, 515 545 Z" />
+    <path id="ear-right-inner" d="M 515 455 C 570 425, 600 495, 530 525" fill="none" stroke-width="6" />
+
+    <!-- Head Base (Overlaps Ears) -->
+    <path id="head-main" d="M 325 410 C 295 430, 290 460, 290 490 C 290 560, 330 595, 400 595 C 470 595, 510 560, 510 490 C 510 460, 505 430, 475 410 Z" />
+
+    <!-- Face Details -->
+    <g id="face-features">
+      <!-- Left Eye (Happy Closed Arch) -->
+      <path d="M 325 475 Q 345 450 365 475" fill="none" stroke-width="9" />
+      <path d="M 320 470 L 312 462" fill="none" stroke-width="6" />
+      <path d="M 325 462 L 320 452" fill="none" stroke-width="6" />
+
+      <!-- Right Eye (Happy Closed Arch) -->
+      <path d="M 435 475 Q 455 450 475 475" fill="none" stroke-width="9" />
+      <path d="M 480 470 L 488 462" fill="none" stroke-width="6" />
+      <path d="M 475 462 L 480 452" fill="none" stroke-width="6" />
+
+      <!-- Blush Cheeks -->
+      <ellipse cx="315" cy="510" rx="15" ry="10" />
+      <ellipse cx="485" cy="510" rx="15" ry="10" />
+
+      <!-- Big Soft Koala Nose -->
+      <ellipse cx="400" cy="500" rx="26" ry="36" />
+      <!-- Cute highlight on nose -->
+      <ellipse cx="392" cy="485" rx="8" ry="12" fill="none" stroke-width="5" />
+
+      <!-- Happy Smile -->
+      <path d="M 370 535 C 370 575, 430 575, 430 535 Z" />
+      <!-- Tongue inside smile -->
+      <path d="M 382 555 C 390 545, 410 545, 418 555 C 412 567, 388 567, 382 555 Z" stroke-width="5" />
+    </g>
+
+    <!-- ==================== TALL CHEF'S HAT ==================== -->
+    <g id="chef-hat">
+      <!-- Hat Base Band (Sits on top of head, overlaps it) -->
+      <path d="M 325 410 Q 400 422 475 410 L 465 355 Q 400 365 335 355 Z" />
+      
+      <!-- Puffy Top of Hat -->
+      <path d="M 335 355 C 295 335, 285 245, 345 235 C 355 165, 445 165, 455 235 C 515 245, 505 335, 465 355" />
+      
+      <!-- Crease Lines in Hat for Realism (Simple lines) -->
+      <path d="M 370 355 Q 375 275 390 240" fill="none" stroke-width="5" />
+      <path d="M 430 355 Q 425 275 410 240" fill="none" stroke-width="5" />
+    </g>
+
+    <!-- ==================== LEFT ARM & FRYING PAN ==================== -->
+    <g id="left-arm-and-pan">
+      <!-- Left Arm extending to the side -->
+      <path d="M 305 605 C 265 620, 235 650, 235 690 C 235 710, 255 725, 275 700" fill="none" stroke-width="8" />
+      
+      <!-- Frying Pan Rim (Ellipse) -->
+      <ellipse cx="380" cy="670" rx="95" ry="24" />
+      <!-- Frying Pan Inner Rim -->
+      <ellipse cx="380" cy="670" rx="87" ry="19" />
+      <!-- Frying Pan Outer Depth -->
+      <path d="M 285 670 C 285 705, 475 705, 475 670" />
+
+      <!-- Frying Pan Handle (Extends to Left Paw) -->
+      <path d="M 150 720 L 285 682 L 283 666 L 152 702 Z" />
+      <!-- Handle Hanging Loop -->
+      <circle cx="157" cy="711" r="5" fill="none" stroke-width="5" />
+
+      <!-- Left Paw/Mitten wrapping over the handle -->
+      <path d="M 230 690 C 220 710, 250 730, 265 710 C 275 700, 270 680, 250 675 Z" />
+      <path d="M 250 675 Q 265 660 270 685" fill="none" stroke-width="8" />
+    </g>
+
+    <!-- ==================== RIGHT ARM & SPATULA ==================== -->
+    <g id="right-arm-and-spatula">
+      <!-- Right Arm extending down/forward -->
+      <path d="M 490 605 C 530 620, 555 640, 555 680" fill="none" stroke-width="8" />
+      
+      <!-- Spatula Handle (Double-line bar) -->
+      <path d="M 575 695 L 485 595 L 473 605 L 563 705 Z" />
+
+      <!-- Spatula Blade (Overlaps Handle) -->
+      <path d="M 485 595 C 485 595, 435 545, 430 540 C 423 533, 423 521, 433 511 C 443 501, 455 501, 462 508 L 512 562 Q 520 570 512 580 Z" />
+      <!-- Spatula Slots (Slick line details) -->
+      <line x1="452" y1="535" x2="482" y2="565" stroke-width="5" />
+      <line x1="467" y1="520" x2="497" y2="550" stroke-width="5" />
+
+      <!-- Right Paw wrapping over the Spatula Handle -->
+      <path d="M 525 680 C 515 700, 545 720, 560 700 C 570 690, 565 670, 545 665 Z" />
+    </g>
+
+    <!-- ==================== FLIPPING CREPE & MOTION LINES ==================== -->
+    <g id="flipping-crepe">
+      <!-- Crepe in Mid-Air -->
+      <path d="M 370 460 C 330 420, 420 380, 450 410 C 480 440, 490 480, 430 470 C 390 465, 385 475, 370 460 Z" />
+      <!-- Crepe Texture Lines (Simple Swirl) -->
+      <path d="M 395 435 Q 425 425 435 445 Q 425 465 405 455" fill="none" stroke-width="5" />
+
+      <!-- Motion/Swoosh Lines showing action -->
+      <!-- Left Swoosh -->
+      <path d="M 340 480 Q 330 450 350 420" fill="none" stroke-width="6" />
+      <!-- Right Swoosh -->
+      <path d="M 485 450 Q 505 430 495 400" fill="none" stroke-width="6" />
+      <!-- Bottom Splash/Swoosh near pan -->
+      <path d="M 410 500 Q 420 520 440 510" fill="none" stroke-width="5" />
+    </g>
+
+    <!-- Floating Berry Near Crepe -->
+    <g id="floating-strawberry" stroke-width="6">
+      <path d="M 580 485 C 590 465, 620 465, 625 490 C 630 515, 600 535, 590 515 C 580 495, 575 495, 580 485 Z" />
+      <!-- Leaf -->
+      <path d="M 572 485 Q 582 475 592 485 Q 582 480 572 485 Z" fill="white" />
+      <!-- Seeds -->
+      <circle cx="590" cy="500" r="1.5" fill="black" stroke="none" />
+      <circle cx="605" cy="500" r="1.5" fill="black" stroke="none" />
+      <circle cx="600" cy="512" r="1.5" fill="black" stroke="none" />
+    </g>
+
+  </g>
+</svg>
