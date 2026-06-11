@@ -1,0 +1,83 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <g id="background-elements">
+    <!-- Sun -->
+    <circle cx="700" cy="100" r="70" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M700 30 L700 170 M630 100 L770 100 M650 40 L750 160 M650 160 L750 40" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Clouds -->
+    <path d="M100 80 C70 80 50 110 80 130 C50 150 70 180 120 180 C150 180 170 150 150 130 C180 110 160 80 100 80Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M400 120 C370 120 350 150 380 170 C350 190 370 220 420 220 C450 220 470 190 450 170 C480 150 460 120 400 120Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Grass tufts -->
+    <path d="M100 950 C120 930 180 930 200 950 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 930 C320 910 380 910 400 930 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M500 940 C520 920 580 920 600 940 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Simple Tree -->
+    <rect x="50" y="600" width="80" height="300" rx="20" ry="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="90" cy="550" rx="90" ry="80" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="500" r="50" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="570" r="40" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Baby Lion -->
+  <g id="baby-lion" transform="translate(400 450)">
+    <!-- Body -->
+    <ellipse cx="0" cy="150" rx="120" ry="90" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="0" r="100" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Mane -->
+    <path d="M -130 0 C -150 -50 -100 -130 0 -120 C 100 -130 150 -50 130 0 C 150 50 100 130 0 120 C -100 130 -150 50 -130 0 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Ears -->
+    <circle cx="-70" cy="-80" r="30" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="-80" r="30" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Inner ears -->
+    <circle cx="-70" cy="-80" r="15" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="-80" r="15" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Face details -->
+    <g id="face-details">
+      <!-- Eyes -->
+      <circle cx="-40" cy="-20" r="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="40" cy="-20" r="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Pupils -->
+      <circle cx="-35" cy="-25" r="8" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="45" cy="-25" r="8" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Nose -->
+      <path d="M0 20 L-15 40 Q0 50 15 40 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Mouth -->
+      <path d="M-30 60 Q0 80 30 60" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Tongue -->
+      <ellipse cx="0" cy="70" rx="20" ry="10" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Whiskers -->
+      <path d="M-40 40 L-70 30" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-40 50 L-70 50" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-40 60 L-70 70" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <path d="M40 40 L70 30" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M40 50 L70 50" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M40 60 L70 70" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Legs and Paws -->
+    <!-- Front left leg -->
+    <rect x="-80" y="190" width="50" height="70" rx="20" ry="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front right leg -->
+    <rect x="30" y="190" width="50" height="70" rx="20" ry="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Back left leg (partially hidden) -->
+    <rect x="-130" y="200" width="60" height="80" rx="20" ry="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Tail -->
+    <path d="M120 180 Q180 150 200 250 Q220 350 180 380" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Tail tuft -->
+    <ellipse cx="180" cy="380" rx="30" ry="20" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
