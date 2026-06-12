@@ -1,0 +1,77 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css"><![CDATA[
+      /* Common style for thick black outlines and white fills for coloring */
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      /* Style for outlines with no fill (for paths like smiles or tail curves) */
+      .outline-nofill {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Acacia Tree (in the background) -->
+  <g id="acacia-tree">
+    <!-- Tree Trunk - simple rounded rectangle -->
+    <rect x="150" y="450" width="60" height="300" rx="30" ry="30" class="outline"/>
+    <!-- Tree Canopy - simplified flat-top shape -->
+    <path d="M 50 450 C 0 350, 100 250, 200 250 C 300 250, 400 350, 350 450 L 50 450 Z" class="outline"/>
+    <!-- Simple leaf clusters for coloring inside canopy -->
+    <circle cx="130" cy="350" r="25" class="outline"/>
+    <circle cx="230" cy="330" r="20" class="outline"/>
+    <circle cx="170" cy="300" r="22" class="outline"/>
+  </g>
+
+  <!-- Baby Lion Cub -->
+  <g id="lion-cub">
+    <!-- Body - a large, rounded shape for a sitting posture -->
+    <path d="M 300 750 C 250 600, 280 550, 400 550 C 520 550, 550 600, 500 750 C 450 780, 350 780, 300 750 Z" class="outline"/>
+
+    <!-- Head - a large circle -->
+    <circle cx="400" cy="450" r="100" class="outline"/>
+
+    <!-- Ears - two ellipses on top of the head -->
+    <ellipse cx="330" cy="380" rx="30" ry="40" class="outline"/>
+    <ellipse cx="470" cy="380" rx="30" ry="40" class="outline"/>
+    <!-- Inner ears for coloring -->
+    <ellipse cx="330" cy="380" rx="15" ry="20" class="outline"/>
+    <ellipse cx="470" cy="380" rx="15" ry="20" class="outline"/>
+
+    <!-- Muzzle - a smaller ellipse on the face -->
+    <ellipse cx="400" cy="490" rx="60" ry="35" class="outline"/>
+
+    <!-- Nose - a simple rounded triangle shape -->
+    <path d="M 375 475 Q 400 465, 425 475 L 400 505 Z" class="outline"/>
+
+    <!-- Eyes - two simple circles -->
+    <circle cx="360" cy="430" r="12" class="outline"/>
+    <circle cx="440" cy="430" r="12" class="outline"/>
+
+    <!-- Smile - a simple curved line -->
+    <path d="M 370 515 Q 400 535, 430 515" class="outline-nofill"/>
+
+    <!-- Front Paws - two rounded rectangles -->
+    <rect x="320" y="650" width="70" height="90" rx="35" ry="35" class="outline"/>
+    <rect x="410" y="650" width="70" height="90" rx="35" ry="35" class="outline"/>
+
+    <!-- Tail - a simple curved path with a fluffy circular end -->
+    <path d="M 500 650 C 550 620, 580 650, 580 720 C 580 770, 550 820, 480 800" class="outline-nofill"/>
+    <circle cx="480" cy="800" r="30" class="outline"/>
+  </g>
+
+  <!-- Safari Grass Patch (in the foreground) -->
+  <g id="grass-patch">
+    <!-- Grass shape - a wavy path covering the bottom of the page -->
+    <path d="M 0 760 Q 100 740, 200 760 Q 300 780, 400 760 Q 500 740, 600 760 Q 700 780, 800 760 L 800 1000 L 0 1000 Z" class="outline"/>
+  </g>
+</svg>
