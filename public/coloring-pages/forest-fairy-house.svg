@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Mushroom House -->
+  <g id="mushroom-house" stroke="black" stroke-width="4" fill="white" stroke-linejoin="round">
+    <!-- Mushroom Cap -->
+    <path d="M150 500 C150 200, 650 200, 650 500 L650 550 L150 550 Z"/>
+    <!-- Spots on the cap -->
+    <circle cx="250" cy="380" r="30" stroke-width="3"/>
+    <circle cx="400" cy="300" r="40" stroke-width="3"/>
+    <circle cx="550" cy="380" r="30" stroke-width="3"/>
+    <!-- Mushroom Stem -->
+    <rect x="300" y="550" width="200" height="300" rx="50" ry="50"/>
+    <!-- Door -->
+    <rect x="340" y="680" width="120" height="150" rx="40" ry="40"/>
+    <circle cx="440" cy="750" r="8" stroke-width="3"/>
+    <!-- Chimney -->
+    <g id="chimney">
+      <rect x="550" y="280" width="50" height="80" rx="15" ry="15"/>
+      <ellipse cx="575" cy="250" rx="20" ry="15" stroke-width="3"/>
+      <ellipse cx="560" cy="225" rx="18" ry="13" stroke-width="3"/>
+      <ellipse cx="585" cy="210" rx="16" ry="11" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Cute Fairy -->
+  <g id="fairy" stroke="black" stroke-width="4" fill="white" stroke-linecap="round">
+    <!-- Head -->
+    <circle cx="300" cy="530" r="40"/>
+    <!-- Hair -->
+    <path d="M260 510 C240 480, 290 470, 320 480 C340 470, 360 490, 340 520 C360 530, 330 540, 300 540 C270 540, 240 530, 260 510 Z"
+          stroke-width="3" stroke-linejoin="round"/>
+    <!-- Face -->
+    <circle cx="290" cy="520" r="4" stroke-width="2"/>
+    <circle cx="310" cy="520" r="4" stroke-width="2"/>
+    <path d="M290 535 Q300 545, 310 535" fill="none" stroke="black" stroke-width="2"/> <!-- Smile -->
+    <!-- Body -->
+    <rect x="270" y="600" width="60" height="150" rx="30" ry="30"/>
+    <!-- Arms -->
+    <line x1="280" y1="620" x2="230" y2="680"/>
+    <circle cx="230" cy="680" r="10" stroke-width="3"/> <!-- Hand -->
+    <line x1="320" y1="620" x2="370" y2="680"/>
+    <circle cx="370" cy="680" r="10" stroke-width="3"/> <!-- Hand -->
+    <!-- Legs -->
+    <line x1="290" y1="750" x2="270" y2="810"/>
+    <ellipse cx="270" cy="820" rx="18" ry="12" stroke-width="3"/> <!-- Foot -->
+    <line x1="310" y1="750" x2="330" y2="810"/>
+    <ellipse cx="330" cy="820" rx="18" ry="12" stroke-width="3"/> <!-- Foot -->
+    <!-- Wings -->
+    <path d="M280 580 C230 540, 210 600, 280 610 Z" stroke-width="3"/>
+    <path d="M320 580 C370 540, 390 600, 320 610 Z" stroke-width="3"/>
+  </g>
+
+  <!-- Friendly Bunny -->
+  <g id="bunny" stroke="black" stroke-width="4" fill="white" stroke-linejoin="round">
+    <ellipse cx="600" cy="800" rx="80" ry="60"/> <!-- Body -->
+    <ellipse cx="540" cy="740" rx="40" ry="30"/> <!-- Head -->
+    <path d="M520 710 Q525 670, 540 680 Q555 670, 560 710 Z" stroke-width="3"/> <!-- Left Ear -->
+    <path d="M540 700 Q545 660, 560 670 Q575 660, 580 700 Z" stroke-width="3"/> <!-- Right Ear -->
+    <circle cx="530" cy="740" r="3" stroke-width="2"/> <!-- Eye -->
+    <path d="M540 750 Q545 755, 550 750" fill="none" stroke="black" stroke-width="2"/> <!-- Nose/mouth -->
+    <ellipse cx="660" cy="830" rx="15" ry="10"/> <!-- Tail -->
+  </g>
+
+  <!-- Simple Flowers -->
+  <g id="flowers" stroke="black" stroke-width="3" fill="white" stroke-linecap="round">
+    <!-- Flower 1 -->
+    <circle cx="150" cy="880" r="10"/> <!-- Center -->
+    <circle cx="150" cy="860" r="10"/>
+    <circle cx="135" cy="870" r="10"/>
+    <circle cx="135" cy="890" r="10"/>
+    <circle cx="165" cy="870" r="10"/>
+    <circle cx="165" cy="890" r="10"/>
+    <line x1="150" y1="890" x2="150" y2="930"/>
+    <ellipse cx="170" cy="910" rx="15" ry="8" transform="rotate(20 170 910)"/> <!-- Leaf -->
+
+    <!-- Flower 2 -->
+    <circle cx="700" cy="900" r="12"/> <!-- Center -->
+    <circle cx="700" cy="875" r="12"/>
+    <circle cx="680" cy="890" r="12"/>
+    <circle cx="680" cy="910" r="12"/>
+    <circle cx="720" cy="890" r="12"/>
+    <circle cx="720" cy="910" r="12"/>
+    <line x1="700" y1="910" x2="700" y2="950"/>
+    <ellipse cx="680" cy="930" rx="15" ry="8" transform="rotate(-20 680 930)"/> <!-- Leaf -->
+
+    <!-- Flower 3 - near fairy -->
+    <circle cx="100" cy="750" r="8"/> <!-- Center -->
+    <circle cx="100" cy="735" r="8"/>
+    <circle cx="90" cy="745" r="8"/>
+    <circle cx="110" cy="745" r="8"/>
+    <path d="M100 758 L100 780" fill="none"/>
+  </g>
+</svg>
