@@ -1,0 +1,166 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base background (explicitly white for coloring book clarity) -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" stroke="none"/>
+
+  <!-- Global default styles for coloring book outlines -->
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+      }
+      .outline-thin {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+      }
+      .outline-nofill {
+        stroke: black;
+        stroke-width: 3;
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Elements -->
+  <g id="background_elements">
+    <!-- Sun -->
+    <g id="sun">
+      <circle cx="700" cy="100" r="50" class="outline"/>
+      <!-- Sun rays -->
+      <line x1="700" y1="50" x2="700" y2="20" class="outline-thin"/>
+      <line x1="700" y1="150" x2="700" y2="180" class="outline-thin"/>
+      <line x1="650" y1="100" x2="620" y2="100" class="outline-thin"/>
+      <line x1="750" y1="100" x2="780" y2="100" class="outline-thin"/>
+      <line x1="664.6" y1="64.6" x2="643.2" y2="43.2" class="outline-thin"/>
+      <line x1="735.4" y1="135.4" x2="756.8" y2="156.8" class="outline-thin"/>
+      <line x1="735.4" y1="64.6" x2="756.8" y2="43.2" class="outline-thin"/>
+      <line x1="664.6" y1="135.4" x2="643.2" y2="156.8" class="outline-thin"/>
+    </g>
+
+    <!-- Clouds -->
+    <g id="clouds">
+      <path d="M100 80 Q120 40 160 50 T220 70 T280 80 T320 100 Q300 140 260 130 T180 110 T120 100 Z" class="outline"/>
+      <path d="M450 120 Q470 80 510 90 T570 110 T630 120 Q610 160 570 150 T490 130 T450 120 Z" class="outline"/>
+    </g>
+
+    <!-- Trees (simplified forest clearing) -->
+    <g id="trees">
+      <!-- Tree 1 -->
+      <rect x="50" y="300" width="50" height="300" rx="15" ry="15" class="outline"/>
+      <path d="M25 300 Q10 200 75 150 T150 200 T125 300 Z" class="outline"/>
+      <!-- Tree 2 -->
+      <rect x="650" y="350" width="60" height="280" rx="15" ry="15" class="outline"/>
+      <path d="M620 350 Q600 250 680 200 T760 250 T730 350 Z" class="outline"/>
+    </g>
+  </g>
+
+  <!-- Picnic Scene -->
+  <g id="picnic_scene">
+    <!-- Picnic Blanket -->
+    <rect x="150" y="650" width="500" height="150" rx="30" ry="30" class="outline"/>
+
+    <!-- Picnic Basket -->
+    <g id="picnic_basket">
+      <rect x="500" y="580" width="120" height="80" rx="10" ry="10" class="outline"/>
+      <rect x="500" y="570" width="120" height="15" rx="5" ry="5" class="outline"/> <!-- Lid base -->
+      <path d="M530 570 A30 30 0 0 1 590 570" class="outline-nofill"/> <!-- Basket handle -->
+    </g>
+
+    <!-- Picnic Food -->
+    <g id="picnic_food">
+      <!-- Sandwiches -->
+      <rect x="180" y="680" width="70" height="40" rx="10" ry="10" class="outline"/>
+      <rect x="200" y="700" width="70" height="40" rx="10" ry="10" class="outline"/>
+      <!-- Fruits (apples/berries) -->
+      <circle cx="280" cy="700" r="20" class="outline"/>
+      <circle cx="310" cy="690" r="18" class="outline"/>
+      <circle cx="300" cy="720" r="15" class="outline"/>
+      <!-- Juice Bottle -->
+      <rect x="350" y="670" width="40" height="80" rx="10" ry="10" class="outline"/>
+      <rect x="360" y="655" width="20" height="15" rx="5" ry="5" class="outline"/>
+      <circle cx="370" cy="655" r="10" class="outline"/>
+    </g>
+  </g>
+
+  <!-- Dinosaurs -->
+  <g id="dinosaurs">
+    <!-- Brachiosaurus -->
+    <g id="brachiosaurus">
+      <!-- Body -->
+      <path d="M100 700 Q150 650 250 680 Q300 720 280 780 Q200 820 120 750 Z" class="outline"/>
+      <!-- Front Legs -->
+      <path d="M150 780 Q160 850 140 900 H100 Q90 850 110 780 Z" class="outline"/>
+      <path d="M210 780 Q220 850 200 900 H160 Q150 850 170 780 Z" class="outline"/>
+      <!-- Back Legs -->
+      <path d="M240 780 Q250 850 230 900 H190 Q180 850 200 780 Z" class="outline"/>
+      <!-- Tail -->
+      <path d="M100 700 Q50 700 30 750 Q10 800 50 800 Z" class="outline"/>
+      <!-- Neck -->
+      <path d="M200 680 Q250 500 350 400 Q400 350 380 300 Q350 280 300 350 Z" class="outline"/>
+      <!-- Head -->
+      <path d="M380 300 Q400 280 430 300 Q450 320 420 340 Q390 330 380 300 Z" class="outline"/>
+      <!-- Eye -->
+      <circle cx="400" cy="310" r="5" class="outline-thin"/>
+      <!-- Smile -->
+      <path d="M395 325 Q405 335 415 325" class="outline-nofill"/>
+      <!-- Fruit on tree for Brachiosaurus -->
+      <g id="tree_fruit_for_brachio">
+        <circle cx="450" cy="270" r="25" class="outline"/>
+      </g>
+    </g>
+
+    <!-- Triceratops -->
+    <g id="triceratops">
+      <!-- Body -->
+      <path d="M500 750 Q550 700 650 720 Q700 760 680 820 Q600 860 520 790 Z" class="outline"/>
+      <!-- Front Legs -->
+      <path d="M550 820 Q560 890 540 940 H500 Q490 890 510 820 Z" class="outline"/>
+      <path d="M610 820 Q620 890 600 940 H560 Q550 890 570 820 Z" class="outline"/>
+      <!-- Tail -->
+      <path d="M500 750 Q450 750 430 800 Q410 850 450 850 Z" class="outline"/>
+      <!-- Head with Frill -->
+      <path d="M680 720 Q700 680 750 700 Q780 730 760 760 Q730 780 690 750 Z" class="outline"/> <!-- Face part -->
+      <path d="M720 680 Q760 640 790 680 Q800 720 760 750 Q720 780 690 750 Z" class="outline"/> <!-- Frill part -->
+      <!-- Horns -->
+      <path d="M740 700 L750 680 L760 700 Z" class="outline"/>
+      <path d="M720 710 L730 690 L740 710 Z" class="outline"/>
+      <path d="M700 720 L710 700 L720 720 Z" class="outline"/>
+      <!-- Eye -->
+      <circle cx="730" cy="730" r="5" class="outline-thin"/>
+      <!-- Smile -->
+      <path d="M725 745 Q735 755 745 745" class="outline-nofill"/>
+      <!-- Berry in Triceratops mouth, from basket -->
+      <circle cx="630" cy="620" r="15" class="outline"/>
+    </g>
+
+    <!-- Stegosaurus -->
+    <g id="stegosaurus">
+      <!-- Body -->
+      <path d="M200 850 Q250 800 400 830 Q450 870 430 930 Q350 970 270 900 Z" class="outline"/>
+      <!-- Front Legs -->
+      <path d="M250 930 Q260 980 240 1000 H200 Q190 980 210 930 Z" class="outline"/>
+      <!-- Back Legs -->
+      <path d="M350 930 Q360 980 340 1000 H300 Q290 980 310 930 Z" class="outline"/>
+      <!-- Tail -->
+      <path d="M200 850 Q150 850 130 900 Q110 950 150 950 Z" class="outline"/>
+      <!-- Plates -->
+      <path d="M250 830 Q270 780 290 830 Z" class="outline"/>
+      <path d="M300 830 Q320 780 340 830 Z" class="outline"/>
+      <path d="M350 830 Q370 780 390 830 Z" class="outline"/>
+      <!-- Head -->
+      <path d="M430 870 Q450 850 480 870 Q500 890 470 910 Q440 900 430 870 Z" class="outline"/>
+      <!-- Eye -->
+      <circle cx="460" cy="880" r="5" class="outline-thin"/>
+      <!-- Smile -->
+      <path d="M455 895 Q465 905 475 895" class="outline-nofill"/>
+      <!-- Sandwich for Stegosaurus -->
+      <g id="stego_sandwich">
+        <rect x="470" y="850" width="50" height="30" rx="8" ry="8" class="outline"/>
+        <rect x="480" y="865" width="50" height="30" rx="8" ry="8" class="outline"/>
+      </g>
+    </g>
+  </g>
+
+</svg>
