@@ -1,5 +1,35 @@
 [
   {
+    "slug": "umi-no-soko-sanpoga-sakana-nurie",
+    "title": "【無料ぬりえ】キラキラお魚とサンゴ礁の海中探検！",
+    "description": "きれいなサンゴ礁とカラフルなお魚たちが待っているよ！海の底の素敵な世界を、自分だけの色でいっぱいにしよう。お魚さんたちと楽しい海中探検に出かけよう！",
+    "category": "動物・生き物",
+    "tags": [
+      "サンゴ礁 ぬりえ",
+      "魚 ぬりえ",
+      "海の生き物 ぬりえ",
+      "無料ぬりえ"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, a vibrant coral reef scene with various happy, friendly fish swimming around, one large playful clownfish, one cheerful angelfish, one small pufferfish hiding in the coral, simple bubble patterns, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines, symmetrical elements, simple shapes, clear separation of colors --ar 3:4",
+    "article": "<h3>海の底のキラキラお魚さんたちとサンゴ礁</h3>\n<h4>さあ、みんなで海の中へ出発だ！</h4>\n<p>色とりどりのサンゴ礁（さんごしょう）が、まるで秘密のお城みたいに広がっているよ。そこには、赤や青、黄色、しましま模様（もよう）の可愛いお魚さんたちが、楽しそうに泳ぎ回っているんだ。小さなお魚さんがかくれんぼしたり、大きなお魚さんがごはんを探したり…みんなはどんな色のお魚さんを見つけられるかな？</p>\n<h4>ぬりえのコツはね！</h4>\n<p>まず好きな色から塗（ぬ）り始めてみよう！サンゴ礁はピンクやオレンジ、紫（むらさき）など、色々な色があるから、好きなようにカラフルにしてもいいし、本物のサンゴ礁みたいに塗るのも素敵だね。お魚さんたちも、一匹（いっぴき）ずつ違う色に塗ってみると、もっと賑（にぎ）やかな海の世界になるよ。背景（はいけい）の海の水の色は、薄（うす）い青色や緑色で優しく塗ると、お魚さんたちがもっと際立つよ！</p>\n<h4>【保護者の方へ】知育にもつながる海のぬりえ</h4>\n<p>このぬりえは、お子様の色彩感覚（しきさいかんかく）や集中力（しゅうちゅうりょく）を育むのに最適です。サンゴ礁や海の生き物たちの多様な色を表現することで、創造力（そうぞうりょく）を刺激し、自然への興味関心（きょうみかんしん）を深めるきっかけにもなります。色を塗る際には、お魚の名前やサンゴ礁の役割について話してあげることで、学びをより豊かなものにすることができるでしょう。また、線の内側を丁寧に塗ることで、運筆力（うんぴつりょく）や手先の器用さも養われます。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】海の底のサンゴ礁と可愛いお魚たちのぬりえ（子供・幼児向け）",
+      "metaDescription": "無料ダウンロードできる、海の底のサンゴ礁と可愛いお魚たちのぬりえ。お子様の色彩感覚や集中力を育む知育ぬりえです。印刷して家族みんなで楽しもう！",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "海の生き物 ぬりえ",
+        "サンゴ礁 ぬりえ",
+        "魚 ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/umi-no-soko-sanpoga-sakana-nurie.svg",
+    "imageType": "svg",
+    "createdAt": "2026-06-15T02:19:00.634Z",
+    "id": "25"
+  },
+  {
     "slug": "astronaut-animal-space-adventure",
     "title": "お星さまの世界へ出発！宇宙飛行士になったうさぎさんのぬりえ",
     "description": "宇宙服を着たかわいい「うさぎの宇宙飛行士」のぬりえです。キラキラ輝く星やロケットが描かれたワクワクする宇宙の世界。お子さまの自由な想像力で、カラフルな宇宙を彩ってみましょう！",
