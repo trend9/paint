@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="reef_elements" stroke="black" stroke-width="4" fill="white">
+    <!-- Coral Base -->
+    <path d="M 50 950 C 150 850 650 850 750 950 L 750 1000 L 50 1000 Z" />
+    <!-- Rounded Coral Mound 1 -->
+    <path d="M 150 900 C 120 850 180 800 200 820 C 220 800 280 850 250 900 Z" />
+    <!-- Rounded Coral Mound 2 -->
+    <path d="M 500 900 C 470 850 530 800 550 820 C 570 800 630 850 600 900 Z" />
+    <!-- Finger Coral on mound 1 -->
+    <path d="M 170 810 C 160 780 180 750 170 720 C 160 690 190 660 180 630 L 190 630 C 200 660 170 690 180 720 C 190 750 170 780 180 810 Z" />
+    <path d="M 210 810 C 200 780 220 750 210 720 C 200 690 230 660 220 630 L 230 630 C 240 660 210 690 220 720 C 230 750 210 780 220 810 Z" />
+
+    <!-- Starfish - simplified and rounded -->
+    <path d="M350,700 C345,715 350,735 370,745 C385,750 410,750 420,765 C415,775 390,785 380,800 C370,810 375,830 390,840 C375,830 360,815 350,800 C340,815 325,830 310,840 C325,830 330,810 320,800 C310,785 285,775 280,765 C290,750 315,750 330,745 C350,735 355,715 350,700 Z" stroke-linejoin="round" />
+
+    <!-- Seaweed 1 -->
+    <path d="M 120 950 C 100 850 150 750 130 650 C 110 550 160 450 140 350 L 160 350 C 180 450 130 550 150 650 C 170 750 120 850 140 950 Z" />
+    <!-- Seaweed 2 -->
+    <path d="M 220 950 C 200 870 250 790 230 710 C 210 630 260 550 240 470 L 260 470 C 280 550 230 630 250 710 C 270 790 220 870 240 950 Z" />
+    <!-- Seaweed 3 -->
+    <path d="M 680 950 C 660 850 710 750 690 650 C 670 550 720 450 700 350 L 720 350 C 740 450 690 550 710 650 C 730 750 680 850 700 950 Z" />
+
+    <!-- Bubbles -->
+    <circle cx="180" cy="400" r="10" />
+    <circle cx="170" cy="350" r="8" />
+    <circle cx="210" cy="500" r="12" />
+    <circle cx="220" cy="450" r="9" />
+    <circle cx="690" cy="400" r="10" />
+    <circle cx="700" cy="350" r="8" />
+  </g>
+
+  <g id="fish_group" stroke="black" stroke-width="4" fill="white">
+    <!-- Fish 1 -->
+    <g transform="translate(150, 200)">
+      <ellipse cx="0" cy="0" rx="100" ry="60" /> <!-- Body -->
+      <path d="M 100 0 Q 120 30 100 60 L 130 0 L 100 -60 Q 120 -30 100 0 Z" /> <!-- Tail -->
+      <path d="M 0 -60 Q -10 -80 -30 -60 Q -50 -40 -30 -20 Q -10 0 0 -20 Z" /> <!-- Top Fin -->
+      <path d="M 0 60 Q -10 80 -30 60 Q -50 40 -30 20 Q -10 0 0 20 Z" /> <!-- Bottom Fin -->
+      <g transform="translate(50, -20)"> <!-- Eye -->
+        <circle cx="0" cy="0" r="15" />
+        <circle cx="5" cy="0" r="5" fill="black" stroke="black" stroke-width="3" />
+      </g>
+      <path d="M 20 20 Q 30 40 40 20" fill="none" stroke="black" stroke-width="3" /> <!-- Smile -->
+    </g>
+
+    <!-- Fish 2 -->
+    <g transform="translate(550, 300)">
+      <ellipse cx="0" cy="0" rx="90" ry="55" /> <!-- Body -->
+      <path d="M 90 0 Q 110 25 90 50 L 120 0 L 90 -50 Q 110 -25 90 0 Z" /> <!-- Tail -->
+      <path d="M 0 -55 Q -10 -70 -25 -55 Q -40 -40 -25 -15 Q -10 10 0 -15 Z" /> <!-- Top Fin -->
+      <g transform="translate(45, -15)"> <!-- Eye -->
+        <circle cx="0" cy="0" r="14" />
+        <circle cx="4" cy="0" r="4" fill="black" stroke="black" stroke-width="3" />
+      </g>
+      <path d="M 18 18 Q 28 35 38 18" fill="none" stroke="black" stroke-width="3" /> <!-- Smile -->
+    </g>
+
+    <!-- Fish 3 (smaller) -->
+    <g transform="translate(400, 500)">
+      <ellipse cx="0" cy="0" rx="70" ry="45" /> <!-- Body -->
+      <path d="M 70 0 Q 90 20 70 40 L 100 0 L 70 -40 Q 90 -20 70 0 Z" /> <!-- Tail -->
+      <path d="M 0 -45 Q -10 -60 -20 -45 Q -30 -30 -20 -10 Q -10 10 0 -10 Z" /> <!-- Top Fin -->
+      <g transform="translate(35, -10)"> <!-- Eye -->
+        <circle cx="0" cy="0" r="12" />
+        <circle cx="3" cy="0" r="3" fill="black" stroke="black" stroke-width="3" />
+      </g>
+      <path d="M 15 15 Q 25 30 35 15" fill="none" stroke="black" stroke-width="3" /> <!-- Smile -->
+    </g>
+  </g>
+</svg>

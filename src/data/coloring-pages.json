@@ -1,5 +1,33 @@
 [
   {
+    "slug": "umi-no-soko-sango-sakana",
+    "title": "【きらきら海の冒険】サンゴしょうとカラフル魚さんぬりえ",
+    "description": "海の底には、きらきら光るサンゴしょうと、たくさんの元気なお魚さんたちが住んでいるよ！素敵な色のクレヨンで、みんなの世界を彩ろう！",
+    "category": "動物・生き物",
+    "tags": [
+      "サンゴ礁 ぬりえ",
+      "魚 ぬりえ",
+      "海 ぬりえ",
+      "無料 ぬりえ"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, cute happy cartoon fish swimming around a vibrant, simple coral reef, starfish, and gently swaying seaweed. The fish have big, friendly eyes and happy smiles. Pure white background, pure block-white segments, no shading, no gray fills, zero gradients, thick borders, highly simplified shapes for toddlers, SVG vector look, beautiful ink lines, very minimal detail inside shapes, only outlines --ar 3:4",
+    "article": "<h3>海の底のキラキラ世界！サンゴ礁と魚さんをぬりえで探検しよう！</h3>\n<p>さあ、みんな！海の底には、どんな不思議な世界が広がっているか知っているかな？このぬりえでは、カラフルなサンゴ（さんご）しょうと、そこに住むたくさんの可愛らしいお魚さんたちに出会えるよ！</p>\n\n<h4>お魚さんたちに素敵な色を塗ってあげよう！</h4>\n<p>海の底は、実はとってもカラフル！赤いサンゴ、黄色いお魚、青い海藻（かいそう）…好きな色をたくさん使って、自分だけの特別な海の世界を表現してみようね。</p>\n<ul>\n  <li><p><b>サンゴしょうはどんな色？</b><br>ピンクやオレンジ、赤、紫など、いろんな色があるんだ。クレヨンや色鉛筆で、カラフルなサンゴしょうを描いてみてね！</p></li>\n  <li><p><b>お魚さんたちは元気いっぱい！</b><br>小さなお魚さん、大きなお魚さん、しましま模様のお魚さん…一匹ずつ違う色を塗ってあげると、もっと楽しくなるよ！</p></li>\n  <li><p><b>海の泡（あわ）も描いてみよう！</b><br>水色のクレヨンで、プクプクと浮かぶ泡を描き足すと、海の中がもっと生き生きと見えるよ。</p></li>\n</ul>\n\n<h4>お父さん、お母さんへ：ぬりえで育む豊かな感性</h4>\n<p>この「海の底のサンゴ礁と魚たち」のぬりえは、お子様の色彩感覚や集中力を高めるだけでなく、豊かな想像力を育む素晴らしい機会となります。</p>\n<p>サンゴ礁は、海の生き物たちにとって大切な家。様々な生き物が共存する美しい生態系を、ぬりえを通して視覚的に体験することで、自然への興味や命の大切さへの意識を芽生えさせることができます。</p>\n<p>また、一つ一つの魚やサンゴに異なる色を選ぶ作業は、思考力や判断力を養い、完成した時の達成感は自己肯定感を高めます。ぜひ、お子様と一緒に「この魚は何色かな？」「サンゴはどんな形をしているかな？」といった会話を楽しみながら、海の生き物たちの多様性について話してみてください。</p>\n<p>自由な発想で色を塗り、世界に一つだけの海の楽園を創造する喜びを、お子様と一緒に分かち合いましょう。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】海の底のサンゴ礁と可愛い魚のぬりえ（子供・幼児向け）",
+      "metaDescription": "無料で海の底を探検！サンゴ礁とカラフルな魚たちの可愛いぬりえをダウンロード。お子様の想像力を育む知育教材としても最適です。",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "サンゴ礁 ぬりえ",
+        "魚 ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/umi-no-soko-sango-sakana.svg",
+    "imageType": "svg",
+    "createdAt": "2026-06-15T16:52:40.676Z",
+    "id": "26"
+  },
+  {
     "slug": "umi-no-soko-sanpoga-sakana-nurie",
     "title": "【無料ぬりえ】キラキラお魚とサンゴ礁の海中探検！",
     "description": "きれいなサンゴ礁とカラフルなお魚たちが待っているよ！海の底の素敵な世界を、自分だけの色でいっぱいにしよう。お魚さんたちと楽しい海中探検に出かけよう！",
