@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Global styling defaults applied to the SVG tag for convenience -->
+
+  <!-- Coral Reef elements -->
+  <g id="coral_reef">
+    <!-- Large brain coral -->
+    <path d="M100 700 C50 600, 150 500, 200 550 C250 600, 180 750, 100 700 Z" />
+    <path d="M130 650 C110 630, 160 610, 180 630" fill="none" />
+    <path d="M120 680 C100 660, 150 640, 170 660" fill="none" />
+
+    <!-- Branching coral left -->
+    <path d="M50 850 C70 800, 100 800, 100 750 C100 700, 120 700, 150 720" />
+    <path d="M100 750 C80 700, 80 650, 100 650" />
+    <path d="M150 720 C160 680, 170 650, 150 650" />
+
+    <!-- Branching coral right -->
+    <path d="M650 850 C630 800, 600 800, 600 750 C600 700, 580 700, 550 720" />
+    <path d="M600 750 C620 700, 620 650, 600 650" />
+    <path d="M550 720 C540 680, 530 650, 550 650" />
+    
+    <!-- Large fan coral -->
+    <path d="M700 700 C750 600, 650 500, 600 550 C550 600, 620 750, 700 700 Z" />
+    <path d="M650 600 L650 700" fill="none" />
+    <path d="M620 620 L620 720" fill="none" />
+    <path d="M680 620 L680 720" fill="none" />
+
+    <!-- Central coral cluster -->
+    <path d="M400 850 C300 850, 300 750, 400 750 C500 750, 500 850, 400 850 Z" />
+    <path d="M400 750 C390 700, 410 700, 400 680" />
+    <path d="M360 780 C350 730, 370 730, 360 710" />
+    <path d="M440 780 C430 730, 450 730, 440 710" />
+  </g>
+
+  <!-- Clownfish -->
+  <g id="clownfish">
+    <path d="M250 300 C280 250, 380 250, 400 300 C420 350, 380 400, 280 400 C250 380, 230 320, 250 300 Z" /> <!-- Body -->
+    <path d="M400 300 L450 320 L400 340 Z" /> <!-- Tail fin -->
+    <ellipse cx="320" cy="270" rx="30" ry="20" transform="rotate(-15 320 270)" /> <!-- Dorsal fin -->
+    <path d="M270 370 C280 390, 300 380, 300 360" /> <!-- Pectoral fin -->
+
+    <!-- Stripes -->
+    <path d="M290 280 C300 260, 320 260, 330 280 L320 320 C310 340, 290 340, 280 320 Z" />
+    <path d="M350 280 C360 260, 380 260, 390 280 L380 320 C370 340, 350 340, 340 320 Z" />
+
+    <!-- Eye -->
+    <circle cx="280" cy="300" r="10" stroke-width="3" />
+    <!-- Mouth -->
+    <path d="M255 325 Q265 335, 275 325" fill="none" stroke-width="3" />
+  </g>
+
+  <!-- Surgeonfish -->
+  <g id="surgeonfish">
+    <path d="M500 450 C550 400, 650 400, 700 450 C750 500, 650 550, 550 550 C500 530, 480 470, 500 450 Z" /> <!-- Body -->
+    <path d="M700 450 Q750 430, 750 470 Q700 490, 700 450 Z" /> <!-- Tail fin -->
+    <ellipse cx="600" cy="420" rx="40" ry="20" transform="rotate(10 600 420)" /> <!-- Dorsal fin -->
+    <path d="M520 520 C530 540, 550 530, 550 510" /> <!-- Pectoral fin -->
+
+    <!-- Stripe/Pattern (simplified) -->
+    <path d="M530 430 C540 410, 570 410, 580 430 L570 470 C560 490, 530 490, 520 470 Z" />
+
+    <!-- Eye -->
+    <circle cx="530" cy="450" r="10" stroke-width="3" />
+    <!-- Mouth -->
+    <path d="M505 475 Q515 485, 525 475" fill="none" stroke-width="3" />
+  </g>
+
+  <!-- Seabed elements -->
+  <g id="seabed_elements">
+    <!-- Starfish -->
+    <path d="M200 900 L220 870 L250 880 L230 850 L250 820 L220 830 L200 800 L180 830 L150 820 L170 850 L150 880 L180 870 Z" />
+    <!-- Seashell 1 (spiral) -->
+    <path d="M300 920 C310 900, 330 900, 340 920 Q330 940, 310 940 Q300 920, 300 920 Z" />
+    <path d="M310 920 C315 915, 320 920, 310 925" fill="none" />
+    <!-- Seashell 2 (clamshell) -->
+    <path d="M480 910 C470 890, 490 880, 500 900 C510 880, 530 890, 520 910 C510 920, 490 920, 480 910 Z" />
+    <path d="M490 900 L500 890" fill="none" />
+    <path d="M500 900 L510 890" fill="none" />
+  </g>
+</svg>
