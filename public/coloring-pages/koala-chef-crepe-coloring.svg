@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Koala Chef -->
+  <g id="koala-chef">
+    <!-- Koala Head -->
+    <circle cx="400" cy="380" r="120" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Ears -->
+    <circle cx="290" cy="300" r="60" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="510" cy="300" r="60" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Inner ears -->
+    <circle cx="290" cy="300" r="35" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="510" cy="300" r="35" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Snout/Muzzle -->
+    <ellipse cx="400" cy="410" rx="60" ry="50" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Nose (solid black) -->
+    <circle cx="400" cy="400" r="30" fill="black" stroke="none"/>
+    <!-- Eyes -->
+    <circle cx="340" cy="350" r="25" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="460" cy="350" r="25" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Pupils (solid black) -->
+    <circle cx="340" cy="350" r="12" fill="black" stroke="none"/>
+    <circle cx="460" cy="350" r="12" fill="black" stroke="none"/>
+    <!-- Mouth - happy smile -->
+    <path d="M 360 450 Q 400 480 440 450" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Chef Hat -->
+    <g id="chef-hat">
+      <!-- Hat brim base -->
+      <path d="M 280 270 A 130 40 0 0 1 520 270 L 520 300 A 130 40 0 0 0 280 300 Z" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Tall top puff -->
+      <ellipse cx="400" cy="170" rx="110" ry="100" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Puff lines -->
+      <path d="M 310 120 Q 400 90 490 120" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 310 150 Q 400 130 490 150" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Koala Body (mostly hidden by apron and counter, simple form) -->
+    <ellipse cx="400" cy="600" rx="150" ry="100" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Apron -->
+    <g id="apron">
+      <path d="M 300 500 Q 400 480 500 500 L 500 680 Q 400 700 300 680 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Apron strap top -->
+      <path d="M 330 500 Q 360 490 380 500" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 420 500 Q 440 490 470 500" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Apron ties -->
+      <path d="M 300 600 H 260 Q 240 610 260 620 H 300" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 500 600 H 540 Q 560 610 540 620 H 500" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Arms and Frying Pan -->
+    <g id="arms-pan">
+      <!-- Right arm holding pan -->
+      <path d="M 460 550 C 500 500 560 520 580 580 L 550 600 C 530 540 480 560 460 580 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Frying Pan -->
+      <g id="frying-pan">
+        <ellipse cx="600" cy="650" rx="110" ry="45" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/> <!-- Pan body/rim -->
+        <ellipse cx="600" cy="655" rx="100" ry="40" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/> <!-- Pan inner bottom -->
+        <!-- Handle -->
+        <path d="M 690 640 Q 720 630 760 640 L 760 660 Q 720 670 690 660 Z" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Crepe -->
+        <circle cx="600" cy="650" r="80" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Items on counter -->
+  <g id="counter-items">
+    <!-- Bowl of whipped cream -->
+    <g id="whipped-cream-bowl">
+      <path d="M 150 780 C 180 750 250 750 280 780 L 280 820 C 250 850 180 850 150 820 Z" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Cream swirl -->
+      <path d="M 170 770 C 180 760 200 750 220 760 C 240 770 250 780 260 770 C 270 760 250 750 220 750 C 190 750 170 760 170 770 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 220 750 C 210 740 230 730 220 720 C 210 710 230 700 220 690" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Strawberries -->
+    <g id="strawberries">
+      <!-- Strawberry 1 -->
+      <path d="M 650 790 C 660 760 690 760 700 790 C 700 820 670 830 650 820 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 670 770 Q 675 765 680 770 Q 685 765 690 770" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round"/> <!-- Leaf top -->
+      <circle cx="660" cy="800" r="4" fill="black" stroke="none"/>
+      <circle cx="675" cy="790" r="4" fill="black" stroke="none"/>
+      <circle cx="685" cy="805" r="4" fill="black" stroke="none"/>
+
+      <!-- Strawberry 2 (partially hidden behind first one) -->
+      <path d="M 600 820 C 610 790 640 790 650 820 C 650 850 620 860 600 850 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 620 800 Q 625 795 630 800 Q 635 795 640 800" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="610" cy="830" r="4" fill="black" stroke="none"/>
+      <circle cx="625" cy="820" r="4" fill="black" stroke="none"/>
+      <circle cx="635" cy="835" r="4" fill="black" stroke="none"/>
+    </g>
+
+    <!-- Bananas -->
+    <g id="bananas">
+      <!-- Banana 1 -->
+      <path d="M 350 790 C 370 770 430 770 450 790 C 470 810 450 830 430 830 C 410 830 370 830 350 810 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 350 800 C 355 795 365 795 370 800" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 445 795 C 440 800 430 800 425 795" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="350" cy="800" r="6" fill="black" stroke="none"/> <!-- Banana tip -->
+      <circle cx="450" cy="790" r="6" fill="black" stroke="none"/> <!-- Banana stem -->
+
+      <!-- Banana 2 (partially hidden) -->
+      <path d="M 370 820 C 390 800 450 800 470 820 C 490 840 470 860 450 860 C 430 860 390 860 370 840 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 370 830 C 375 825 385 825 390 830" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 465 825 C 460 830 450 830 445 825" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="370" cy="830" r="6" fill="black" stroke="none"/>
+      <circle cx="470" cy="820" r="6" fill="black" stroke="none"/>
+    </g>
+  </g>
+  <!-- Counter (last to ensure it overlays items below it) -->
+  <g id="counter">
+    <rect x="0" y="700" width="800" height="300" rx="30" ry="30" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Countertop surface line -->
+    <path d="M 0 700 H 800" stroke="black" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
