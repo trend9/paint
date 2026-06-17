@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main coral reef elements at the bottom -->
+  <g id="coral_reef" stroke="black" stroke-width="4" fill="white">
+    <!-- Large coral formation on the left -->
+    <path d="M50 850 C150 950, 300 950, 400 850 C380 750, 300 700, 200 750 C100 800, 80 780, 50 850 Z" />
+    <path d="M180 750 C160 700, 200 680, 220 730 C240 780, 200 770, 180 750 Z" />
+    <path d="M260 740 C240 690, 280 670, 300 720 C320 770, 280 760, 260 740 Z" />
+    <path d="M100 830 C80 780, 120 760, 140 810 C160 860, 120 850, 100 830 Z" />
+
+    <!-- Large coral formation on the right -->
+    <path d="M750 850 C650 950, 500 950, 400 850 C420 750, 500 700, 600 750 C700 800, 720 780, 750 850 Z" />
+    <path d="M620 750 C640 700, 600 680, 580 730 C560 780, 600 770, 620 750 Z" />
+    <path d="M540 740 C560 690, 520 670, 500 720 C480 770, 520 760, 540 740 Z" />
+    <path d="M700 830 C720 780, 680 760, 660 810 C640 860, 680 850, 700 830 Z" />
+
+    <!-- Center small coral cluster -->
+    <path d="M380 800 C400 850, 480 850, 500 800 C480 750, 400 750, 380 800 Z" />
+    <path d="M430 780 C410 730, 450 710, 470 760 C490 810, 450 800, 430 780 Z" />
+  </g>
+
+  <!-- Fish elements -->
+  <g id="fish_collection" stroke="black" stroke-width="4">
+    <!-- Fish 1 (Top left, elongated body) -->
+    <g id="fish_1">
+      <ellipse cx="250" cy="200" rx="100" ry="60" fill="white" /> <!-- Body -->
+      <path d="M350 200 C390 170, 390 230, 350 200 Z" fill="white" /> <!-- Tail fin -->
+      <path d="M220 240 C200 260, 240 270, 260 250 Z" fill="white" /> <!-- Bottom fin -->
+      <path d="M250 140 C230 120, 270 120, 290 140 Z" fill="white" /> <!-- Top fin -->
+      <circle cx="200" cy="180" r="15" fill="white" /> <!-- Eye outline -->
+      <circle cx="203" cy="183" r="5" fill="white" /> <!-- Pupil outline -->
+      <path d="M200 205 Q210 215, 220 205" fill="none" /> <!-- Mouth -->
+    </g>
+
+    <!-- Fish 2 (Center, rounder body) -->
+    <g id="fish_2">
+      <circle cx="450" cy="350" r="80" fill="white" /> <!-- Body -->
+      <path d="M530 350 C580 300, 580 400, 530 350 Z" fill="white" /> <!-- Tail fin -->
+      <path d="M420 400 C400 420, 440 430, 460 410 Z" fill="white" /> <!-- Bottom fin -->
+      <path d="M420 300 C400 280, 440 270, 460 290 Z" fill="white" /> <!-- Top fin -->
+      <circle cx="420" cy="320" r="18" fill="white" /> <!-- Eye outline -->
+      <circle cx="423" cy="323" r="6" fill="white" /> <!-- Pupil outline -->
+      <path d="M420 360 Q435 375, 450 360" fill="none" /> <!-- Mouth -->
+    </g>
+
+    <!-- Fish 3 (Bottom right, slightly taller body) -->
+    <g id="fish_3">
+      <path d="M600 480 Q620 420, 680 450 Q720 500, 680 550 Q620 580, 600 520 Z" fill="white" /> <!-- Body -->
+      <path d="M700 490 C730 460, 730 520, 700 490 Z" fill="white" /> <!-- Tail fin -->
+      <path d="M640 440 C630 410, 670 410, 680 440 Z" fill="white" /> <!-- Dorsal fin -->
+      <path d="M640 560 C630 590, 670 590, 680 560 Z" fill="white" /> <!-- Ventral fin -->
+      <circle cx="630" cy="460" r="16" fill="white" /> <!-- Eye outline -->
+      <circle cx="633" cy="463" r="5" fill="white" /> <!-- Pupil outline -->
+      <path d="M630 490 Q645 500, 660 490" fill="none" /> <!-- Mouth -->
+    </g>
+
+    <!-- Fish 4 (Smaller, near center-top, simple oval) -->
+    <g id="fish_4">
+      <ellipse cx="580" cy="180" rx="70" ry="45" fill="white" /> <!-- Body -->
+      <path d="M650 180 C670 160, 670 200, 650 180 Z" fill="white" /> <!-- Tail fin -->
+      <path d="M550 200 C530 215, 570 220, 590 205 Z" fill="white" /> <!-- Bottom fin -->
+      <circle cx="550" cy="165" r="12" fill="white" /> <!-- Eye outline -->
+      <circle cx="552" cy="167" r="4" fill="white" /> <!-- Pupil outline -->
+      <path d="M550 190 Q560 200, 570 190" fill="none" /> <!-- Mouth -->
+    </g>
+
+    <!-- Fish 5 (Left bottom, simple oval) -->
+    <g id="fish_5">
+      <ellipse cx="200" cy="550" rx="80" ry="50" fill="white" /> <!-- Body -->
+      <path d="M280 550 C310 520, 310 580, 280 550 Z" fill="white" /> <!-- Tail fin -->
+      <path d="M170 580 C150 600, 190 610, 210 590 Z" fill="white" /> <!-- Bottom fin -->
+      <circle cx="170" cy="530" r="15" fill="white" /> <!-- Eye outline -->
+      <circle cx="173" cy="533" r="5" fill="white" /> <!-- Pupil outline -->
+      <path d="M170 560 Q185 570, 200 560" fill="none" /> <!-- Mouth -->
+    </g>
+  </g>
+
+  <!-- Bubbles (simplified circles) -->
+  <g id="bubbles" stroke="black" stroke-width="4" fill="white">
+    <!-- Bubbles for Fish 1 -->
+    <circle cx="160" cy="160" r="10" />
+    <circle cx="150" cy="130" r="8" />
+    <circle cx="165" cy="105" r="6" />
+
+    <!-- Bubbles for Fish 2 -->
+    <circle cx="400" cy="300" r="12" />
+    <circle cx="385" cy="270" r="10" />
+    <circle cx="400" cy="245" r="8" />
+
+    <!-- Bubbles for Fish 3 -->
+    <circle cx="580" cy="440" r="10" />
+    <circle cx="565" cy="410" r="8" />
+    <circle cx="580" cy="385" r="6" />
+
+    <!-- Bubbles for Fish 4 -->
+    <circle cx="500" cy="150" r="8" />
+    <circle cx="490" cy="125" r="6" />
+
+    <!-- Bubbles for Fish 5 -->
+    <circle cx="140" cy="500" r="10" />
+    <circle cx="130" cy="470" r="8" />
+    <circle cx="145" cy="445" r="6" />
+  </g>
+</svg>
