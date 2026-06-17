@@ -1,0 +1,128 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group for Background Elements (Trees, Sun) -->
+  <g id="background-elements">
+    <!-- Sun -->
+    <g id="sun">
+      <circle cx="650" cy="150" r="80" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Sun Rays -->
+      <path d="M650 70 L650 30" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M720 150 L760 150" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M650 230 L650 270" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M580 150 L540 150" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M706 94 L734 66" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M706 206 L734 234" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M594 94 L566 66" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M594 206 L566 234" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Trees -->
+    <g id="trees">
+      <!-- Tree 1 -->
+      <rect x="50" y="550" width="60" height="250" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="80" cy="500" rx="100" ry="120" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Tree 2 -->
+      <rect x="700" y="500" width="50" height="300" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="725" cy="450" rx="90" ry="110" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Tree 3 (partially visible) -->
+      <rect x="350" y="450" width="40" height="200" rx="8" ry="8" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="370" cy="420" rx="70" ry="90" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- Ground Line and Grass Tufts -->
+  <g id="ground">
+    <path d="M0 920 H800" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Grass Tufts -->
+    <path d="M10 920 C30 900 50 900 70 920" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M700 920 C720 900 740 900 760 920" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M400 920 C420 900 440 900 460 920" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Picnic Blanket -->
+  <g id="picnic-blanket">
+    <rect x="150" y="650" width="500" height="250" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Checkered pattern (simple lines) -->
+    <line x1="200" y1="650" x2="200" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="250" y1="650" x2="250" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="300" y1="650" x2="300" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="350" y1="650" x2="350" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="400" y1="650" x2="400" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="450" y1="650" x2="450" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="500" y1="650" x2="500" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="550" y1="650" x2="550" y2="900" stroke="black" stroke-width="3"/>
+    <line x1="600" y1="650" x2="600" y2="900" stroke="black" stroke-width="3"/>
+
+    <line x1="150" y1="700" x2="650" y2="700" stroke="black" stroke-width="3"/>
+    <line x1="150" y1="750" x2="650" y2="750" stroke="black" stroke-width="3"/>
+    <line x1="150" y1="800" x2="650" y2="800" stroke="black" stroke-width="3"/>
+    <line x1="150" y1="850" x2="650" y2="850" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Dinosaurs -->
+  <g id="dinosaurs">
+    <!-- Brontosaurus/Long-neck Dino (left side, behind blanket) -->
+    <g id="dino1">
+      <ellipse cx="250" cy="780" rx="100" ry="60" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M200 730 Q200 630 250 580 C250 530 280 510 310 530 Q350 550 340 600 C330 650 320 730 310 730" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Neck and Head -->
+      <circle cx="330" cy="550" r="10" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <path d="M310 580 Q320 590 330 580" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/> <!-- Mouth -->
+      <path d="M240 840 L220 930 Q250 950 280 930 L260 840" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Front Leg -->
+      <path d="M300 840 L280 930 Q310 950 340 930 L320 840" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Back Leg -->
+      <path d="M150 780 Q100 810 70 780 Q40 750 80 730" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Tail -->
+    </g>
+
+    <!-- Triceratops Dino (right side, behind blanket) -->
+    <g id="dino2">
+      <ellipse cx="550" cy="780" rx="100" ry="60" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M550 730 Q600 630 650 680 Q670 710 650 780" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Head and Frill -->
+      <path d="M650 680 L670 660 M650 680 L670 700" stroke="black" stroke-width="4" stroke-linecap="round"/> <!-- Horns, simplified -->
+      <circle cx="610" cy="730" r="10" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <path d="M610 740 Q620 750 630 740" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/> <!-- Mouth -->
+      <path d="M540 840 L520 930 Q550 950 580 930 L560 840" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Front Leg -->
+      <path d="M600 840 L580 930 Q610 950 640 930 L620 840" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Back Leg -->
+      <path d="M450 780 Q400 810 370 780 Q340 750 380 730" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Tail -->
+    </g>
+
+    <!-- Small T-Rex like Dino (front-center, in front of blanket) -->
+    <g id="dino3">
+      <ellipse cx="380" cy="880" rx="70" ry="50" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M400 840 Q430 780 460 830 Q470 850 430 880" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Head, smiling -->
+      <circle cx="440" cy="840" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <path d="M430 860 Q440 870 450 860" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/> <!-- Smile -->
+      <path d="M390 920 L370 990 Q400 1010 430 990 L410 920" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Legs -->
+      <path d="M310 880 Q280 900 260 880 Q240 860 280 850" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/> <!-- Tail -->
+      <path d="M400 850 Q405 845 410 850 Q405 855 400 850" fill="white" stroke="black" stroke-width="3"/> <!-- Tiny arm 1 -->
+      <path d="M380 855 Q385 850 390 855 Q385 860 380 855" fill="white" stroke="black" stroke-width="3"/> <!-- Tiny arm 2 -->
+    </g>
+  </g>
+
+  <!-- Food Items on Blanket -->
+  <g id="food-items">
+    <!-- Sandwich 1 -->
+    <rect x="250" y="680" width="80" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M255 710 H325" fill="none" stroke="black" stroke-width="3"/> <!-- Filling line -->
+
+    <!-- Sandwich 2 -->
+    <rect x="470" y="680" width="80" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M475 710 H545" fill="none" stroke="black" stroke-width="3"/> <!-- Filling line -->
+
+    <!-- Apple -->
+    <circle cx="370" cy="700" r="25" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M370 675 L375 665 Q370 660 365 665 L370 675" fill="white" stroke="black" stroke-width="3"/> <!-- Stem -->
+
+    <!-- Juice Box/Cup -->
+    <rect x="400" y="660" width="60" height="70" rx="8" ry="8" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="420" y="630" width="20" height="30" rx="5" ry="5" fill="white" stroke="black" stroke-width="3"/> <!-- Straw -->
+
+    <!-- Grapes -->
+    <g id="grapes">
+        <circle cx="170" cy="700" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <circle cx="185" cy="710" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <circle cx="170" cy="720" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <circle cx="155" cy="710" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M170 685 L175 675" fill="none" stroke="black" stroke-width="3"/> <!-- Stem -->
+    </g>
+
+  </g>
+
+</svg>
