@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Global style for outlines and fills -->
+  <g stroke="black" stroke-width="5" fill="white">
+
+    <!-- Coral Reef Base -->
+    <path d="M 0 980 Q 50 900 150 940 T 300 900 Q 380 850 450 880 T 600 870 Q 700 850 800 900 V 1000 H 0 Z" />
+
+    <!-- Large Central Coral Structure -->
+    <path d="M 400 880 Q 380 750 300 700 S 250 550 300 500 Q 350 450 400 480 Q 450 450 500 500 S 550 550 500 700 Q 420 750 400 880 Z" />
+    <path d="M 300 700 C 270 650 250 600 280 570 L 300 500 L 350 480 C 320 530 300 580 300 700 Z" />
+    <path d="M 500 700 C 530 650 550 600 520 570 L 500 500 L 450 480 C 480 530 500 580 500 700 Z" />
+
+    <!-- Left Coral Structure -->
+    <path d="M 120 950 Q 80 800 100 700 Q 120 600 200 650 Q 280 700 250 800 S 180 900 120 950 Z" />
+    <circle cx="150" cy="620" r="40" />
+
+    <!-- Right Coral Structure -->
+    <path d="M 680 950 Q 720 800 700 700 Q 680 600 600 650 Q 520 700 550 800 S 620 900 680 950 Z" />
+    <circle cx="650" cy="620" r="40" />
+
+    <!-- Smaller coral bumps -->
+    <ellipse cx="250" cy="900" rx="60" ry="30" />
+    <ellipse cx="550" cy="890" rx="70" ry="35" />
+
+    <!-- Marine Plants (Seaweed) -->
+    <path d="M 180 850 C 170 750 200 700 220 680 C 240 660 230 750 220 850 Z" />
+    <path d="M 230 850 C 240 750 210 700 190 680 C 170 660 180 750 190 850 Z" />
+    <path d="M 330 800 C 320 700 350 650 370 630 C 390 610 380 700 370 800 Z" />
+    <path d="M 380 800 C 390 700 360 650 340 630 C 320 610 330 700 340 800 Z" />
+
+    <path d="M 600 850 C 590 750 620 700 640 680 C 660 660 650 750 640 850 Z" />
+    <path d="M 650 850 C 660 750 630 700 610 680 C 590 660 600 750 610 850 Z" />
+    
+    <!-- Fish 1 (Top Left) -->
+    <g transform="translate(150, 250) scale(1.2)">
+      <ellipse cx="0" cy="0" rx="80" ry="50" />
+      <path d="M 80 0 L 130 30 L 130 -30 Z" /> <!-- Tail fin -->
+      <ellipse cx="50" cy="40" rx="30" ry="20" transform="rotate(20 50 40)" /> <!-- Bottom fin -->
+      <circle cx="-30" cy="-10" r="15" /> <!-- Eye -->
+      <path d="M -45 -10 C -40 -5 -35 -5 -30 -10 Z" fill="none" /> <!-- Mouth -->
+      <path d="M -50 10 Q -40 25 -30 10" fill="none"/> <!-- Smile -->
+    </g>
+
+    <!-- Fish 2 (Middle Right) -->
+    <g transform="translate(600, 450) scale(1.0)">
+      <ellipse cx="0" cy="0" rx="70" ry="45" />
+      <path d="M 70 0 L 110 25 L 110 -25 Z" /> <!-- Tail fin -->
+      <ellipse cx="40" cy="35" rx="25" ry="18" transform="rotate(15 40 35)" /> <!-- Bottom fin -->
+      <circle cx="-25" cy="-8" r="12" /> <!-- Eye -->
+      <path d="M -40 -8 C -35 -4 -30 -4 -25 -8 Z" fill="none" /> <!-- Mouth -->
+      <path d="M -45 8 Q -35 20 -25 8" fill="none"/> <!-- Smile -->
+    </g>
+
+    <!-- Fish 3 (Bottom Left) -->
+    <g transform="translate(250, 750) scale(0.9)">
+      <ellipse cx="0" cy="0" rx="60" ry="40" />
+      <path d="M 60 0 L 90 20 L 90 -20 Z" /> <!-- Tail fin -->
+      <ellipse cx="35" cy="30" rx="20" ry="15" transform="rotate(10 35 30)" /> <!-- Bottom fin -->
+      <circle cx="-20" cy="-7" r="10" /> <!-- Eye -->
+      <path d="M -35 -7 C -30 -3 -25 -3 -20 -7 Z" fill="none" /> <!-- Mouth -->
+      <path d="M -40 7 Q -30 15 -20 7" fill="none"/> <!-- Smile -->
+    </g>
+
+    <!-- Fish 4 (Small, Top Right) -->
+    <g transform="translate(700, 200) scale(0.7) rotate(10)">
+      <ellipse cx="0" cy="0" rx="50" ry="30" />
+      <path d="M 50 0 L 70 15 L 70 -15 Z" /> <!-- Tail fin -->
+      <ellipse cx="25" cy="20" rx="15" ry="10" transform="rotate(5 25 20)" /> <!-- Bottom fin -->
+      <circle cx="-15" cy="-5" r="8" /> <!-- Eye -->
+      <path d="M -25 -5 C -20 -2 -15 -2 -15 -5 Z" fill="none" /> <!-- Mouth -->
+      <path d="M -28 5 Q -20 10 -15 5" fill="none"/> <!-- Smile -->
+    </g>
+
+  </g>
+</svg>
