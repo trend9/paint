@@ -1,0 +1,48 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="black" stroke-width="4" fill="white">
+
+    <!-- Simplified fluffy clouds below the locomotive -->
+    <g id="ground_clouds">
+      <path d="M 150 750 C 100 730, 100 780, 150 800 C 200 820, 250 780, 200 750 Z"/>
+      <path d="M 400 800 C 350 780, 350 830, 400 850 C 450 870, 500 830, 450 800 Z"/>
+      <path d="M 600 700 C 550 680, 550 730, 600 750 C 650 770, 700 730, 650 700 Z"/>
+    </g>
+
+    <!-- The central flying steam locomotive -->
+    <g id="locomotive">
+      <!-- Main lower body of the locomotive -->
+      <rect x="80" y="470" width="640" height="100" rx="40" ry="40"/>
+
+      <!-- Boiler section, forming the front top part -->
+      <rect x="120" y="300" width="400" height="170" rx="85" ry="85"/>
+
+      <!-- Cabin section at the back -->
+      <rect x="580" y="330" width="140" height="140" rx="30" ry="30"/>
+      <!-- Cabin window for a simple detail -->
+      <rect x="620" y="370" width="60" height="50" rx="10" ry="10"/>
+
+      <!-- Chimney on top of the boiler -->
+      <rect x="250" y="230" width="80" height="70" rx="20" ry="20"/>
+
+      <!-- Large and simple wheels -->
+      <g id="wheels">
+        <circle cx="200" cy="570" r="70"/>
+        <circle cx="450" cy="570" r="70"/>
+        <circle cx="600" cy="570" r="70"/>
+      </g>
+
+      <!-- Friendly face with large eyes and a smile -->
+      <g id="face">
+        <circle cx="270" cy="380" r="40"/> <!-- Left eye -->
+        <circle cx="370" cy="380" r="40"/> <!-- Right eye -->
+        <path d="M 280 440 Q 320 470 360 440" fill="none" stroke="black" stroke-width="4"/> <!-- Smile -->
+      </g>
+
+      <!-- Simple cartoon smoke puffing from the chimney -->
+      <g id="smoke">
+        <path d="M 290 200 C 270 180, 270 150, 300 130 C 330 110, 350 140, 330 170 Z"/>
+        <path d="M 330 170 C 350 150, 350 120, 380 100 C 410 80, 430 110, 410 140 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
