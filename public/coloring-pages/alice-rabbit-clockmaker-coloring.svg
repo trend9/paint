@@ -1,145 +1,194 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <g id="coloring_page">
-    <!-- Rabbit Group - Main Character -->
-    <g id="rabbit">
-      <!-- Body -->
-      <path d="M400 650 C300 750 250 850 400 900 C550 850 500 750 400 650 Z" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Head -->
-      <circle cx="400" cy="450" r="150" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Ears -->
-      <ellipse cx="330" cy="270" rx="40" ry="100" transform="rotate(-15 330 270)" fill="white" stroke="black" stroke-width="4"/>
-      <ellipse cx="470" cy="270" rx="40" ry="100" transform="rotate(15 470 270)" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Inner Ears -->
-      <ellipse cx="330" cy="270" rx="25" ry="70" transform="rotate(-15 330 270)" fill="white" stroke="black" stroke-width="2"/>
-      <ellipse cx="470" cy="270" rx="25" ry="70" transform="rotate(15 470 270)" fill="white" stroke="black" stroke-width="2"/>
+  <defs>
+    <style>
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-nofill {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-bold {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
 
-      <!-- Face Details -->
-      <!-- Eyes -->
-      <circle cx="350" cy="420" r="15" fill="white" stroke="black" stroke-width="3"/>
-      <circle cx="450" cy="420" r="15" fill="white" stroke="black" stroke-width="3"/>
-      <!-- Nose -->
-      <ellipse cx="400" cy="460" rx="15" ry="10" fill="white" stroke="black" stroke-width="3"/>
-      <!-- Mouth -->
-      <path d="M380 480 Q400 500 420 480" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <!-- Rabbit Character -->
+  <g id="rabbit">
+    <!-- Body -->
+    <path d="M400,450 Q300,350 350,250 C370,200 430,200 450,250 Q500,350 400,450 Z" class="outline-bold"/>
+    <!-- Head -->
+    <circle cx="400" cy="220" r="100" class="outline-bold"/>
+    <!-- Ears -->
+    <path d="M340,120 Q320,50 360,30 Q400,50 380,120 Z" class="outline-bold"/>
+    <path d="M460,120 Q480,50 440,30 Q400,50 420,120 Z" class="outline-bold"/>
+    <!-- Inner ears -->
+    <path d="M350,110 Q335,65 365,55 Q390,70 370,110 Z" class="outline"/>
+    <path d="M450,110 Q465,65 435,55 Q410,70 430,110 Z" class="outline"/>
+    <!-- Face features -->
+    <circle cx="360" cy="200" r="15" class="outline"/> <!-- Left Eye White -->
+    <circle cx="440" cy="200" r="15" class="outline"/> <!-- Right Eye White -->
+    <circle cx="365" cy="205" r="5" class="outline-nofill" stroke-width="3"/> <!-- Left Pupil (smaller stroke for detail) -->
+    <circle cx="435" cy="205" r="5" class="outline-nofill" stroke-width="3"/> <!-- Right Pupil (smaller stroke for detail) -->
+    <path d="M400,230 L390,250 L410,250 L400,230 Z" class="outline" stroke-width="3" /> <!-- Nose -->
+    <path d="M380,260 Q400,280 420,260" class="outline-nofill" stroke-width="3"/> <!-- Mouth -->
 
-      <!-- Waistcoat -->
-      <path d="M400 650 C370 600 300 600 300 700 L300 820 C350 850 450 850 500 820 L500 700 C500 600 430 600 400 650 Z" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Buttons -->
-      <circle cx="400" cy="720" r="10" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="400" cy="760" r="10" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="400" cy="800" r="10" fill="white" stroke="black" stroke-width="2"/>
+    <!-- Waistcoat -->
+    <path d="M380,260 Q340,300 340,350 C340,400 380,430 400,430 C420,430 460,400 460,350 C460,300 420,260 400,260 Z" class="outline" fill="white" stroke-width="3"/>
+    <circle cx="390" cy="320" r="8" class="outline" stroke-width="2"/>
+    <circle cx="410" cy="320" r="8" class="outline" stroke-width="2"/>
+    <circle cx="390" cy="360" r="8" class="outline" stroke-width="2"/>
+    <circle cx="410" cy="360" r="8" class="outline" stroke-width="2"/>
 
-      <!-- Arms -->
-      <path d="M310 650 Q250 600 280 500 Q300 450 350 480 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left arm -->
-      <path d="M490 650 Q550 600 520 500 Q500 450 450 480 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right arm -->
+    <!-- Arms -->
+    <path d="M350,300 Q280,350 300,450 C320,470 340,460 350,440 Z" class="outline"/> <!-- Left Arm -->
+    <path d="M450,300 Q520,350 500,450 C480,470 460,460 450,440 Z" class="outline"/> <!-- Right Arm -->
+    <!-- Hands -->
+    <circle cx="300" cy="450" r="30" class="outline"/> <!-- Left Hand holding magnifying glass -->
+    <circle cx="500" cy="450" r="30" class="outline"/> <!-- Right Hand holding pocket watch -->
 
-      <!-- Pocket Watch (held by left arm) -->
-      <g transform="translate(290, 520) scale(0.8)">
-        <circle cx="0" cy="0" r="40" fill="white" stroke="black" stroke-width="4"/>
-        <circle cx="0" cy="-40" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Top loop -->
-        <line x1="0" y1="0" x2="20" y2="-20" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="2"/>
-      </g>
-    </g>
+    <!-- Legs/Feet (simplified to be behind props) -->
+    <path d="M360,450 Q350,550 380,570 C400,580 420,550 410,450 Z" class="outline"/>
+    <path d="M440,450 Q450,550 420,570 C400,580 380,550 390,450 Z" class="outline"/>
+  </g>
 
-    <!-- Clocks and Gears Group -->
-    <g id="clocks_and_gears">
-      <!-- Large whimsical clock behind rabbit -->
-      <rect x="150" y="50" width="500" height="600" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/>
-      <circle cx="400" cy="300" r="180" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="400" cy="300" r="10" fill="white" stroke="black" stroke-width="2"/>
-      <line x1="400" y1="300" x2="400" y2="180" stroke="black" stroke-width="3" stroke-linecap="round"/>
-      <line x1="400" y1="300" x2="500" y2="340" stroke="black" stroke-width="3" stroke-linecap="round"/>
-      <!-- Hour marks for the large clock -->
-      <circle cx="400" cy="140" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="400" cy="460" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="240" cy="300" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="560" cy="300" r="5" fill="white" stroke="black" stroke-width="2"/>
+  <!-- Magnifying Glass -->
+  <g id="magnifying-glass">
+    <circle cx="280" cy="420" r="40" class="outline"/> <!-- Lens Frame -->
+    <circle cx="280" cy="420" r="35" class="outline" stroke-width="2"/> <!-- Lens (inner circle, slightly thinner stroke) -->
+    <path d="M310,450 Q330,480 300,520 Q270,550 250,520 Q230,490 260,460 Z" class="outline"/> <!-- Handle -->
+  </g>
 
-      <!-- Small clock 1 (bottom left) -->
-      <circle cx="150" cy="800" r="80" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="150" cy="800" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <line x1="150" y1="800" x2="150" y2="740" stroke="black" stroke-width="2" stroke-linecap="round"/>
-      <line x1="150" y1="800" x2="190" y2="820" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  <!-- Pocket Watch -->
+  <g id="pocket-watch">
+    <circle cx="520" cy="420" r="40" class="outline"/> <!-- Watch body -->
+    <circle cx="520" cy="420" r="30" class="outline" stroke-width="2"/> <!-- Watch face -->
+    <path d="M520,390 L520,420" class="outline-nofill" stroke-width="2"/> <!-- Hour Hand -->
+    <path d="M520,420 L540,420" class="outline-nofill" stroke-width="2"/> <!-- Minute Hand -->
+    <circle cx="520" cy="420" r="3" class="outline" stroke-width="2"/> <!-- Hand pivot -->
+    <path d="M520,380 Q510,360 530,360 Q540,380 520,380 Z" class="outline" stroke-width="3"/> <!-- Crown -->
+    <path d="M520,360 Q550,330 500,300 Q450,270 480,240" class="outline-nofill"/> <!-- Chain -->
+  </g>
 
-      <!-- Small clock 2 (top right, tilted) -->
-      <g transform="translate(680, 200) rotate(20)">
-        <ellipse cx="0" cy="0" rx="70" ry="90" fill="white" stroke="black" stroke-width="4"/>
-        <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="2"/>
-        <line x1="0" y1="0" x2="40" y2="-40" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <line x1="0" y1="0" x2="-20" y2="50" stroke="black" stroke-width="2" stroke-linecap="round"/>
-      </g>
+  <!-- Clocks (simplified, various shapes) -->
+  <g id="clocks">
+    <!-- Tall Grandfather-like clock on left -->
+    <rect x="100" y="600" width="100" height="300" rx="20" ry="20" class="outline-bold"/>
+    <rect x="110" y="610" width="80" height="80" rx="15" ry="15" class="outline"/> <!-- Clock face frame -->
+    <circle cx="150" cy="650" r="30" class="outline" stroke-width="2"/> <!-- Clock face -->
+    <path d="M150,630 L150,650" class="outline-nofill" stroke-width="2"/>
+    <path d="M150,650 L165,650" class="outline-nofill" stroke-width="2"/>
+    <rect x="130" y="700" width="40" height="150" rx="10" ry="10" class="outline"/> <!-- Pendulum body -->
+    <circle cx="150" cy="860" r="20" class="outline"/> <!-- Pendulum bob -->
 
-      <!-- Small clock 3 (mid-left) -->
-      <g transform="translate(100, 400)">
-        <rect x="-60" y="-60" width="120" height="120" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
-        <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="2"/>
-        <line x1="0" y1="0" x2="40" y2="0" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <line x1="0" y1="0" x2="-20" y2="-30" stroke="black" stroke-width="2" stroke-linecap="round"/>
-      </g>
+    <!-- Round clock on right -->
+    <circle cx="700" cy="650" r="80" class="outline-bold"/>
+    <circle cx="700" cy="650" r="60" class="outline"/>
+    <path d="M700,610 L700,650" class="outline-nofill" stroke-width="2"/>
+    <path d="M700,650 L730,650" class="outline-nofill" stroke-width="2"/>
 
-      <!-- Small clock 4 (bottom right) -->
-      <g transform="translate(700, 850)">
-        <path d="M0 -50 A50 50 0 0 1 50 0 L50 70 A50 50 0 0 1 0 120 A50 50 0 0 1 -50 70 L-50 0 A50 50 0 0 1 0 -50 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Pendulum clock shape -->
-        <circle cx="0" cy="-20" r="30" fill="white" stroke="black" stroke-width="3"/>
-        <circle cx="0" cy="-20" r="5" fill="white" stroke="black" stroke-width="2"/>
-        <line x1="0" y1="-20" x2="15" y2="-40" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <line x1="0" y1="-20" x2="-10" y2="0" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="0" cy="70" r="20" fill="white" stroke="black" stroke-width="3"/> <!-- Pendulum bob -->
-      </g>
+    <!-- Small square clock near rabbit's feet -->
+    <rect x="250" y="700" width="80" height="80" rx="10" ry="10" class="outline"/>
+    <circle cx="290" cy="740" r="30" class="outline" stroke-width="2"/>
+    <path d="M290,725 L290,740" class="outline-nofill" stroke-width="2"/>
+    <path d="M290,740 L305,740" class="outline-nofill" stroke-width="2"/>
 
-      <!-- Gears -->
-      <!-- Gear 1 (top left) -->
-      <g transform="translate(100, 100)">
-        <circle cx="0" cy="0" r="50" fill="white" stroke="black" stroke-width="4"/>
-        <g stroke="black" stroke-width="2" fill="white">
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(0)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(45)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(90)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(135)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(180)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(225)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(270)"/>
-          <path d="M50 0 L60 0 A10 10 0 0 1 60 10 L50 10 L50 0 Z" transform="rotate(315)"/>
-        </g>
-      </g>
+    <!-- Oval clock hanging on the right -->
+    <ellipse cx="600" cy="150" rx="70" ry="50" class="outline-bold"/>
+    <ellipse cx="600" cy="150" rx="50" ry="30" class="outline"/>
+    <path d="M600,130 L600,150" class="outline-nofill" stroke-width="2"/>
+    <path d="M600,150 L620,150" class="outline-nofill" stroke-width="2"/>
+  </g>
 
-      <!-- Gear 2 (mid right) -->
-      <g transform="translate(650, 500) rotate(-30)">
-        <circle cx="0" cy="0" r="40" fill="white" stroke="black" stroke-width="4"/>
-        <g stroke="black" stroke-width="2" fill="white">
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(0)"/>
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(60)"/>
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(120)"/>
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(180)"/>
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(240)"/>
-          <path d="M40 0 L48 0 A8 8 0 0 1 48 8 L40 8 L40 0 Z" transform="rotate(300)"/>
-        </g>
-      </g>
+  <!-- Cogs (various sizes) -->
+  <g id="cogs">
+    <!-- Large cog behind rabbit -->
+    <circle cx="400" cy="750" r="70" class="outline-bold"/>
+    <path d="M400,680 L400,670" class="outline-nofill"/>
+    <path d="M420,685 L430,675" class="outline-nofill"/>
+    <path d="M449,700 L459,690" class="outline-nofill"/>
+    <path d="M465,725 L475,715" class="outline-nofill"/>
+    <path d="M470,750 L480,750" class="outline-nofill"/>
+    <path d="M465,775 L475,785" class="outline-nofill"/>
+    <path d="M449,800 L459,810" class="outline-nofill"/>
+    <path d="M420,815 L430,825" class="outline-nofill"/>
+    <path d="M400,820 L400,830" class="outline-nofill"/>
+    <path d="M380,815 L370,825" class="outline-nofill"/>
+    <path d="M351,800 L341,810" class="outline-nofill"/>
+    <path d="M335,775 L325,785" class="outline-nofill"/>
+    <path d="M330,750 L320,750" class="outline-nofill"/>
+    <path d="M335,725 L325,715" class="outline-nofill"/>
+    <path d="M351,700 L341,690" class="outline-nofill"/>
+    <path d="M380,685 L370,675" class="outline-nofill"/>
+    <circle cx="400" cy="750" r="20" class="outline"/> <!-- Inner cog circle -->
 
-      <!-- Gear 3 (top middle) -->
-      <g transform="translate(400, 80)">
-        <circle cx="0" cy="0" r="30" fill="white" stroke="black" stroke-width="3"/>
-        <g stroke="black" stroke-width="2" fill="white">
-          <path d="M30 0 L36 0 A6 6 0 0 1 36 6 L30 6 L30 0 Z" transform="rotate(0)"/>
-          <path d="M30 0 L36 0 A6 6 0 0 1 36 6 L30 6 L30 0 Z" transform="rotate(90)"/>
-          <path d="M30 0 L36 0 A6 6 0 0 1 36 6 L30 6 L30 0 Z" transform="rotate(180)"/>
-          <path d="M30 0 L36 0 A6 6 0 0 1 36 6 L30 6 L30 0 Z" transform="rotate(270)"/>
-        </g>
-      </g>
+    <!-- Smaller cog on left -->
+    <circle cx="200" cy="550" r="40" class="outline"/>
+    <path d="M200,510 L200,505" class="outline-nofill"/>
+    <path d="M219,515 L224,510" class="outline-nofill"/>
+    <path d="M234,530 L239,525" class="outline-nofill"/>
+    <path d="M240,550 L245,550" class="outline-nofill"/>
+    <path d="M234,570 L239,575" class="outline-nofill"/>
+    <path d="M219,585 L224,590" class="outline-nofill"/>
+    <path d="M200,590 L200,595" class="outline-nofill"/>
+    <path d="M181,585 L176,590" class="outline-nofill"/>
+    <path d="M166,570 L161,575" class="outline-nofill"/>
+    <path d="M160,550 L155,550" class="outline-nofill"/>
+    <path d="M166,530 L161,525" class="outline-nofill"/>
+    <path d="M181,515 L176,510" class="outline-nofill"/>
+    <circle cx="200" cy="550" r="10" class="outline"/>
 
-      <!-- Gear 4 (bottom middle) -->
-      <g transform="translate(300, 900)">
-        <circle cx="0" cy="0" r="35" fill="white" stroke="black" stroke-width="3"/>
-        <g stroke="black" stroke-width="2" fill="white">
-          <path d="M35 0 L42 0 A7 7 0 0 1 42 7 L35 7 L35 0 Z" transform="rotate(0)"/>
-          <path d="M35 0 L42 0 A7 7 0 0 1 42 7 L35 7 L35 0 Z" transform="rotate(72)"/>
-          <path d="M35 0 L42 0 A7 7 0 0 1 42 7 L35 7 L35 0 Z" transform="rotate(144)"/>
-          <path d="M35 0 L42 0 A7 7 0 0 1 42 7 L35 7 L35 0 Z" transform="rotate(216)"/>
-          <path d="M35 0 L42 0 A7 7 0 0 1 42 7 L35 7 L35 0 Z" transform="rotate(288)"/>
-        </g>
-      </g>
-    </g>
+    <!-- Smaller cog on right -->
+    <circle cx="650" cy="500" r="40" class="outline"/>
+    <path d="M650,460 L650,455" class="outline-nofill"/>
+    <path d="M669,465 L674,460" class="outline-nofill"/>
+    <path d="M684,480 L689,475" class="outline-nofill"/>
+    <path d="M690,500 L695,500" class="outline-nofill"/>
+    <path d="M684,520 L689,525" class="outline-nofill"/>
+    <path d="M669,535 L674,540" class="outline-nofill"/>
+    <path d="M650,540 L650,545" class="outline-nofill"/>
+    <path d="M631,535 L626,540" class="outline-nofill"/>
+    <path d="M616,520 L611,525" class="outline-nofill"/>
+    <path d="M610,500 L605,500" class="outline-nofill"/>
+    <path d="M616,480 L611,475" class="outline-nofill"/>
+    <path d="M631,465 L626,460" class="outline-nofill"/>
+    <circle cx="650" cy="500" r="10" class="outline"/>
+  </g>
+
+  <!-- Tiny clockmaking tools -->
+  <g id="tools">
+    <!-- Hammer -->
+    <path d="M70,850 Q60,830 80,820 L120,820 Q140,830 130,850 Z" class="outline"/> <!-- Hammer head -->
+    <rect x="90" y="850" width="20" height="80" rx="5" ry="5" class="outline"/> <!-- Handle -->
+    <!-- Screwdriver -->
+    <rect x="550" y="880" width="20" height="80" rx="10" ry="10" class="outline"/> <!-- Handle -->
+    <path d="M560,880 L560,860 L565,850 L555,850 L560,860 Z" class="outline" fill="white" stroke-width="3"/> <!-- Tip -->
+    <!-- Wrench -->
+    <path d="M700,890 Q690,870 710,870 L730,890 Q740,910 720,910 L700,890 M730,890 L760,920 L750,930 L720,900 Z" class="outline"/>
+    <!-- Spring (simplified) -->
+    <path d="M50,150 Q70,130 90,150 Q110,170 130,150 Q150,130 170,150" class="outline-nofill" stroke-width="3"/>
+    <!-- Small Gear on the floor -->
+    <circle cx="380" cy="920" r="25" class="outline"/>
+    <path d="M380,895 L380,890" class="outline-nofill"/>
+    <path d="M392,900 L397,895" class="outline-nofill"/>
+    <path d="M400,920 L405,920" class="outline-nofill"/>
+    <path d="M392,940 L397,945" class="outline-nofill"/>
+    <path d="M380,945 L380,950" class="outline-nofill"/>
+    <path d="M368,940 L363,945" class="outline-nofill"/>
+    <path d="M360,920 L355,920" class="outline-nofill"/>
+    <path d="M368,900 L363,895" class="outline-nofill"/>
+    <circle cx="380" cy="920" r="10" class="outline"/>
   </g>
 </svg>
