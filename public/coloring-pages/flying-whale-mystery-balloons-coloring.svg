@@ -1,0 +1,63 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <g id="background-elements">
+    <!-- Clouds -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M100 150 Q150 100 200 150 C230 130 270 130 300 150 Q350 100 400 150 L400 190 Q350 240 300 190 C270 210 230 210 200 190 Q150 240 100 190 Z"/>
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M500 100 Q550 50 600 100 C630 80 670 80 700 100 Q750 50 800 100 L800 140 Q750 190 700 140 C670 160 630 160 600 140 Q550 190 500 140 Z"/>
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M50 800 Q80 770 120 800 C150 780 190 780 220 800 Q250 770 280 800 L280 830 Q250 860 220 830 C190 850 150 850 120 830 Q80 860 50 830 Z"/>
+
+    <!-- Stars - simple circles for toddlers -->
+    <circle stroke="black" stroke-width="5" fill="white" cx="50" cy="50" r="15"/>
+    <circle stroke="black" stroke-width="5" fill="white" cx="750" cy="50" r="15"/>
+    <circle stroke="black" stroke-width="5" fill="white" cx="700" cy="900" r="15"/>
+    <circle stroke="black" stroke-width="5" fill="white" cx="100" cy="950" r="15"/>
+    <circle stroke="black" stroke-width="5" fill="white" cx="400" cy="90" r="15"/>
+  </g>
+
+  <!-- Whale -->
+  <g id="whale">
+    <!-- Body -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M200 500 Q200 350 400 350 C600 350 600 500 600 500 C650 550 650 650 600 700 C500 750 300 750 200 700 Q150 650 150 550 Z"/>
+
+    <!-- Tail fins -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M150 550 C100 580 80 620 100 650 C120 680 170 680 190 650 C210 620 200 580 150 550 Z"/>
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M150 550 C100 520 80 480 100 450 C120 420 170 420 190 450 C210 480 200 520 150 550 Z"/>
+
+    <!-- Front flipper (holding balloons) -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M300 580 Q280 650 350 680 C400 700 450 650 430 600 Z"/>
+
+    <!-- Eye -->
+    <circle stroke="black" stroke-width="5" fill="white" cx="500" cy="450" r="25"/>
+    <!-- Mouth - simple happy curve -->
+    <path stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M470 520 Q500 550 530 520"/>
+    <!-- Blowhole -->
+    <ellipse stroke="black" stroke-width="5" fill="white" cx="350" cy="370" rx="20" ry="10" transform="rotate(-20 350 370)"/>
+  </g>
+
+  <!-- Balloons -->
+  <g id="balloons">
+    <!-- Balloon 1 (classic oval) -->
+    <ellipse stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" cx="450" cy="300" rx="50" ry="70"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="450" y1="370" x2="430" y2="580"/>
+
+    <!-- Balloon 2 (star shape - simplified) -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M550 200 L580 250 L630 260 L590 300 L600 350 L550 320 L500 350 L510 300 L470 260 L520 250 Z"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="550" y1="320" x2="430" y2="580"/>
+
+    <!-- Balloon 3 (heart shape) -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M380 200 C350 150 280 150 280 220 C280 270 340 300 380 350 C420 300 480 270 480 220 C480 150 410 150 380 200 Z"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="380" y1="350" x2="430" y2="580"/>
+
+    <!-- Balloon 4 (whimsical cloud shape) -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M200 250 Q230 200 260 250 C290 230 320 230 350 250 Q380 200 410 250 L410 280 Q380 330 350 280 C320 300 290 300 260 280 Q230 330 200 280 Z"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="300" y1="280" x2="430" y2="580"/>
+
+    <!-- Balloon 5 (rounded rectangle/pill shape) -->
+    <rect stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" x="500" y="80" rx="30" ry="30" width="100" height="80"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="550" y1="160" x2="430" y2="580"/>
+
+    <!-- Balloon 6 (another whimsical blob) -->
+    <path stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round" d="M680 150 C720 100 750 150 720 200 C750 250 700 280 650 250 C600 220 630 150 680 150 Z"/>
+    <line stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" x1="680" y1="250" x2="430" y2="580"/>
+  </g>
+</svg>
