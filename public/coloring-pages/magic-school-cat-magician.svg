@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Pure white background -->
+  <rect x="0" y="0" width="800" height="1000" fill="white"/>
+
+  <!-- Cat Magician Character -->
+  <g id="cat-magician">
+
+    <!-- Cat Head -->
+    <g id="cat-head">
+      <!-- Ears (drawn first so hat can overlap) -->
+      <path d="M 320 230 L 350 160 L 380 230 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M 420 230 L 450 160 L 480 230 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+      <!-- Head circle -->
+      <circle cx="400" cy="300" r="100" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Eyes -->
+      <circle cx="360" cy="300" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="440" cy="300" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Nose -->
+      <path d="M 400 330 L 390 350 L 410 350 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Mouth (smile) -->
+      <path d="M 380 360 Q 400 375 420 360" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Whiskers -->
+      <line x1="320" y1="340" x2="360" y2="345" stroke="black" stroke-width="3"/>
+      <line x1="320" y1="355" x2="360" y2="355" stroke="black" stroke-width="3"/>
+      <line x1="320" y1="370" x2="360" y2="365" stroke="black" stroke-width="3"/>
+      <line x1="480" y1="340" x2="440" y2="345" stroke="black" stroke-width="3"/>
+      <line x1="480" y1="355" x2="440" y2="355" stroke="black" stroke-width="3"/>
+      <line x1="480" y1="370" x2="440" y2="365" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Wizard Hat (drawn after head so it overlaps ears and top of head) -->
+    <g id="wizard-hat">
+      <!-- Hat cone -->
+      <path d="M 350 280 L 380 100 L 420 100 L 450 280 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+      <!-- Hat brim -->
+      <ellipse cx="400" cy="280" rx="80" ry="20" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Hat decoration (star) -->
+      <path d="M400 130 L410 150 L430 155 L415 170 L420 190 L400 180 L380 190 L385 170 L370 155 L390 150 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Flowing Cape (drawn before body so it sits behind) -->
+    <g id="cape">
+      <path d="M 280 380 Q 200 450 220 600 Q 240 700 400 680 Q 560 700 580 600 Q 600 450 520 380 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+      <!-- Simple lines on cape to suggest folds -->
+      <path d="M350 450 C300 500 300 580 350 630" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M450 450 C500 500 500 580 450 630" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Cat Body (drawn after cape and head) -->
+    <g id="cat-body">
+      <!-- Body shape -->
+      <rect x="300" y="380" width="200" height="250" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Paws / Arms holding wand -->
+      <path d="M 310 450 Q 280 470 290 520 L 320 550 L 340 500 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left arm -->
+      <path d="M 490 450 Q 520 470 510 520 L 480 550 L 460 500 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right arm -->
+      <!-- Legs/Feet -->
+      <rect x="320" y="600" width="60" height="70" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="420" y="600" width="60" height="70" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Magic Wand (drawn last so it is on top of the arm) -->
+    <g id="magic-wand-held">
+      <!-- Wand stick -->
+      <rect x="480" y="470" width="20" height="150" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" transform="rotate(-30 490 545)"/>
+      <!-- Wand star -->
+      <path d="M 480 440 L 490 420 L 500 440 L 485 435 L 490 410 Z" fill="white" stroke="black" stroke-width="4" transform="rotate(-30 490 545)"/>
+    </g>
+
+  </g>
+
+  <!-- Surrounding Stars and Bubbles -->
+  <g id="stars-and-bubbles">
+    <!-- Stars -->
+    <path d="M600 150 L610 170 L630 175 L615 190 L620 210 L600 200 L580 210 L585 190 L570 175 L590 170 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M150 180 L160 200 L180 205 L165 220 L170 240 L150 230 L130 240 L135 220 L120 205 L140 200 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M700 500 L710 520 L730 525 L715 540 L720 560 L700 550 L680 560 L685 540 L670 525 L690 520 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M100 600 L110 620 L130 625 L115 640 L120 660 L100 650 L80 660 L85 640 L70 625 L90 620 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M500 800 L510 820 L530 825 L515 840 L520 860 L500 850 L480 860 L485 840 L470 825 L490 820 Z" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Bubbles -->
+    <circle cx="100" cy="800" r="40" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="200" cy="750" r="30" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="700" cy="700" r="50" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="650" cy="850" r="25" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="150" cy="350" r="20" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="750" cy="250" r="35" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+</svg>
