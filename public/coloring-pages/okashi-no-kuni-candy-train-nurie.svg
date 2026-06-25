@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Pure white background -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" />
+
+  <!-- Background Candy Land -->
+  <g id="background_candy_land">
+    <!-- Oversized Lollipop 1 -->
+    <circle cx="150" cy="200" r="80" fill="white" stroke="black" stroke-width="4" />
+    <rect x="140" y="270" width="20" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Oversized Lollipop 2 -->
+    <circle cx="700" cy="180" r="70" fill="white" stroke="black" stroke-width="4" />
+    <rect x="690" y="240" width="20" height="90" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Cookie 1 (simple circle) -->
+    <circle cx="60" cy="450" r="50" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Cookie 2 (simple blobby path for a rustic cookie shape) -->
+    <path d="M 750 480 C 770 470 770 430 750 420 C 730 410 700 410 680 430 C 660 450 660 480 680 500 C 700 520 730 520 750 480 Z" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Gingerbread House 1 -->
+    <rect x="500" y="270" width="150" height="120" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
+    <path d="M 500 270 L 575 190 L 650 270 Z" fill="white" stroke="black" stroke-width="4" /> <!-- Roof -->
+    <rect x="550" y="320" width="50" height="70" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" /> <!-- Door -->
+    <circle cx="590" cy="355" r="5" fill="white" stroke="black" stroke-width="4" /> <!-- Doorknob -->
+
+    <!-- Gingerbread House 2 (smaller) -->
+    <rect x="50" y="280" width="100" height="90" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+    <path d="M 50 280 L 100 220 L 150 280 Z" fill="white" stroke="black" stroke-width="4" /> <!-- Roof -->
+    <rect x="80" y="320" width="40" height="50" rx="8" ry="8" fill="white" stroke="black" stroke-width="4" /> <!-- Door -->
+    <circle cx="110" cy="345" r="4" fill="white" stroke="black" stroke-width="4" /> <!-- Doorknob -->
+  </g>
+
+  <!-- Licorice Track -->
+  <g id="licorice_track">
+    <path d="M 0 750 L 800 750" stroke="black" stroke-width="5" fill="none" />
+    <path d="M 0 780 L 800 780" stroke="black" stroke-width="5" fill="none" />
+  </g>
+
+  <!-- Candy Train -->
+  <g id="candy_train">
+    <!-- Locomotive -->
+    <g id="locomotive">
+      <!-- Main body -->
+      <rect x="120" y="550" width="180" height="120" rx="20" ry="20" fill="white" stroke="black" stroke-width="4" />
+      <!-- Front boiler/nose (circle for a rounded look) -->
+      <circle cx="120" cy="610" r="60" fill="white" stroke="black" stroke-width="4" />
+      <!-- Cabin -->
+      <rect x="220" y="470" width="80" height="80" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
+      <!-- Smokestack -->
+      <rect x="150" y="480" width="40" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="170" cy="480" r="30" fill="white" stroke="black" stroke-width="4" />
+
+      <!-- Wheels (gummy wheels) -->
+      <circle cx="180" cy="670" r="40" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="280" cy="670" r="40" fill="white" stroke="black" stroke-width="4" />
+
+      <!-- Cotton candy steam (simple cloud-like shapes) -->
+      <path d="M 170 450 C 210 400 250 420 230 370 C 210 320 150 300 130 350 C 110 400 130 450 170 450 Z" fill="white" stroke="black" stroke-width="4" />
+      <path d="M 230 370 C 270 320 310 340 290 290 C 270 240 210 220 190 270 C 170 320 190 370 230 370 Z" fill="white" stroke="black" stroke-width="4" />
+    </g>
+
+    <!-- Connector 1 -->
+    <rect x="290" y="600" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Chocolate Wagon 1 -->
+    <g id="wagon1_chocolate">
+      <rect x="320" y="570" width="200" height="100" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
+      <!-- Wheels -->
+      <circle cx="380" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="480" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
+      <!-- Candies inside wagon -->
+      <circle cx="360" cy="590" r="20" fill="white" stroke="black" stroke-width="4" /> <!-- Lollipop head -->
+      <rect x="350" y="600" width="5" height="40" rx="2" ry="2" fill="white" stroke="black" stroke-width="4" /> <!-- Lollipop stick -->
+      <ellipse cx="420" cy="610" rx="25" ry="15" fill="white" stroke="black" stroke-width="4" /> <!-- Gummy bear/blob -->
+      <rect x="460" y="600" width="30" height="30" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" /> <!-- Chocolate bar piece -->
+    </g>
+
+    <!-- Connector 2 -->
+    <rect x="510" y="600" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Candy Wagon 2 -->
+    <g id="wagon2_candy">
+      <rect x="540" y="570" width="200" height="100" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
+      <!-- Wheels -->
+      <circle cx="600" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="700" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
+      <!-- Candies inside wagon -->
+      <circle cx="580" cy="610" r="20" fill="white" stroke="black" stroke-width="4" /> <!-- Small round candy -->
+      <rect x="630" y="590" width="40" height="25" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" /> <!-- Pill-shaped candy -->
+      <!-- Wrapped candy (two simple overlapping rectangles to suggest wrapping) -->
+      <rect x="625" y="600" width="10" height="40" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" transform="rotate(45 630 620)" />
+      <rect x="650" y="600" width="10" height="40" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" transform="rotate(-45 655 620)" />
+    </g>
+  </g>
+</svg>
