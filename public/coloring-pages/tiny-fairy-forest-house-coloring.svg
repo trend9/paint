@@ -1,0 +1,96 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground line -->
+  <path d="M0 950 Q200 930 400 950 T800 950" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g id="mushroom-house">
+    <!-- Mushroom Stem -->
+    <rect x="300" y="600" width="200" height="350" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Mushroom Cap -->
+    <path d="M200 600 C150 450 650 450 600 600 L500 600 L300 600 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Door -->
+    <rect x="360" y="750" width="80" height="150" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Door Knob -->
+    <circle cx="420" cy="820" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Window 1 -->
+    <rect x="250" y="650" width="60" height="60" rx="15" ry="15" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Window 2 (on cap) -->
+    <circle cx="500" cy="550" r="30" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <g id="fairy">
+    <!-- Body -->
+    <ellipse cx="450" cy="300" rx="40" ry="60" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Head -->
+    <circle cx="450" cy="200" r="50" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Dress (flowing) -->
+    <path d="M410 360 Q450 450 490 360 L410 360 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Eyes -->
+    <circle cx="430" cy="190" r="15" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="470" cy="190" r="15" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Pupils (small, simple) -->
+    <circle cx="430" cy="190" r="3" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="470" cy="190" r="3" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Smile -->
+    <path d="M435 220 Q450 235 465 220" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arm waving (right arm) -->
+    <path d="M470 280 C500 250 500 200 480 180" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="480" cy="170" r="15" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Other arm (left arm) -->
+    <path d="M430 280 C400 290 390 320 400 330" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <!-- Other Hand -->
+    <circle cx="400" cy="330" r="15" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Wings -->
+    <path d="M490 270 C550 200 550 150 490 120 C490 100 450 100 450 120 C450 150 450 200 490 270 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M410 270 C350 200 350 150 410 120 C410 100 450 100 450 120 C450 150 450 200 410 270 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="forest-elements">
+    <!-- Big Flower 1 (left) -->
+    <circle cx="150" cy="800" r="40" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+    <path d="M150 760 Q120 740 100 760 Q80 780 100 800 Q120 820 150 840 Q180 820 200 800 Q220 780 200 760 Q180 740 150 760 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Petals (simplified) -->
+    <path d="M150 840 L150 950" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/> <!-- Stem -->
+
+    <!-- Big Flower 2 (right) -->
+    <circle cx="650" cy="850" r="35" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+    <path d="M650 815 Q620 795 600 815 Q580 835 600 855 Q620 875 650 890 Q680 875 700 855 Q720 835 700 815 Q680 795 650 815 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Petals -->
+    <path d="M650 885 L650 950" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/> <!-- Stem -->
+
+    <!-- Squirrel (left, near mushroom) -->
+    <g id="squirrel" transform="translate(100 700)">
+      <!-- Body -->
+      <ellipse cx="100" cy="100" rx="40" ry="60" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <circle cx="100" cy="60" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Ears -->
+      <path d="M85 35 Q90 20 100 30 Q110 20 115 35" fill="white" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Eye -->
+      <circle cx="90" cy="55" r="5" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Mouth (smile) -->
+      <path d="M90 65 Q100 70 110 65" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <!-- Tail -->
+      <path d="M140 120 Q180 100 190 60 Q190 20 140 20 Q120 40 140 120 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Legs (simple) -->
+      <path d="M80 150 Q90 160 100 150" fill="white" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M120 150 Q110 160 100 150" fill="white" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Small bird on a branch (right side, above mushroom) -->
+    <g id="bird" transform="translate(600 400)">
+      <!-- Branch -->
+      <rect x="-50" y="50" width="200" height="15" rx="7" ry="7" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Bird Body -->
+      <ellipse cx="50" cy="40" rx="30" ry="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Bird Head -->
+      <circle cx="70" cy="30" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Bird Eye -->
+      <circle cx="75" cy="28" r="4" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Bird Beak -->
+      <path d="M85 28 L95 35 L85 42 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Bird Wing -->
+      <path d="M40 35 Q50 10 70 30" fill="white" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <!-- Bird Legs -->
+      <path d="M50 60 L45 70 M55 60 L60 70" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
