@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 1000">
+  <!-- Snowy Ground and Ice Formations -->
+  <g id="ground-and-ice">
+    <path d="M0 750 C100 700 200 780 300 750 C400 720 500 780 600 750 C700 720 800 780 800 750 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Small ice formations -->
+    <rect x="50" y="700" width="80" height="40" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="700" cy="730" rx="60" ry="30" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M200 680 C220 660 250 670 270 690 C260 710 230 720 200 700 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Hot Spring Pool -->
+  <g id="hot-spring">
+    <ellipse cx="400" cy="650" rx="300" ry="150" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Steam rising -->
+    <path d="M200 550 C220 520 250 500 280 520 C300 540 330 520 350 500 C370 520 400 500 420 520" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M500 540 C520 510 550 490 580 510 C600 530 630 510 650 490" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M350 580 C370 550 400 530 430 550 C450 570 480 550 500 530" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (left) -->
+    <g id="penguin-1">
+      <ellipse cx="280" cy="600" rx="70" ry="100" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="280" cy="520" rx="50" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <path d="M250 560 C240 540 250 520 280 510 C310 520 320 540 310 560 C300 590 280 600 260 590 Z" fill="white" stroke="black" stroke-width="4"/> <!-- White face/belly patch -->
+      <circle cx="270" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Left eye -->
+      <circle cx="290" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Right eye -->
+      <path d="M280 505 L270 515 L290 515 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M220 580 C200 590 200 620 220 630 C230 610 230 590 220 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left flipper -->
+      <path d="M340 580 C360 590 360 620 340 630 C330 610 330 590 340 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right flipper -->
+    </g>
+
+    <!-- Penguin 2 (middle) -->
+    <g id="penguin-2">
+      <ellipse cx="400" cy="600" rx="70" ry="100" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="400" cy="520" rx="50" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <path d="M370 560 C360 540 370 520 400 510 C430 520 440 540 430 560 C420 590 400 600 380 590 Z" fill="white" stroke="black" stroke-width="4"/> <!-- White face/belly patch -->
+      <circle cx="390" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Left eye -->
+      <circle cx="410" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Right eye -->
+      <path d="M400 505 L390 515 L410 515 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M340 580 C320 590 320 620 340 630 C350 610 350 590 340 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left flipper -->
+      <path d="M460 580 C480 590 480 620 460 630 C450 610 450 590 460 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right flipper -->
+    </g>
+
+    <!-- Penguin 3 (right) -->
+    <g id="penguin-3">
+      <ellipse cx="520" cy="600" rx="70" ry="100" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="520" cy="520" rx="50" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <path d="M490 560 C480 540 490 520 520 510 C550 520 560 540 550 560 C540 590 520 600 500 590 Z" fill="white" stroke="black" stroke-width="4"/> <!-- White face/belly patch -->
+      <circle cx="510" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Left eye -->
+      <circle cx="530" cy="500" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Right eye -->
+      <path d="M520 505 L510 515 L530 515 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M460 580 C440 590 440 620 460 630 C470 610 470 590 460 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left flipper -->
+      <path d="M580 580 C600 590 600 620 580 630 C570 610 570 590 580 580 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right flipper -->
+    </g>
+  </g>
+
+  <!-- Stylized Snowflakes -->
+  <g id="snowflakes">
+    <g id="snowflake-1" transform="translate(100,150) scale(0.8)">
+      <path d="M0 -30 L0 30 M-26 -15 L26 15 M-26 15 L26 -15" stroke="black" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+    <g id="snowflake-2" transform="translate(400,100) scale(0.9)">
+      <path d="M0 -30 L0 30 M-26 -15 L26 15 M-26 15 L26 -15" stroke="black" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+    <g id="snowflake-3" transform="translate(700,200) scale(0.7)">
+      <path d="M0 -30 L0 30 M-26 -15 L26 15 M-26 15 L26 -15" stroke="black" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+    <g id="snowflake-4" transform="translate(250,300) scale(0.6)">
+      <path d="M0 -30 L0 30 M-26 -15 L26 15 M-26 15 L26 -15" stroke="black" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+    <g id="snowflake-5" transform="translate(600,350) scale(0.8)">
+      <path d="M0 -30 L0 30 M-26 -15 L26 15 M-26 15 L26 -15" stroke="black" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
