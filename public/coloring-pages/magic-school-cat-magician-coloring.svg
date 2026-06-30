@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background White Card -->
+  <rect width="800" height="1000" fill="white" stroke="none" />
+
+  <!-- ==================== LAYER 1: BLACKBOARD (BACKGROUND) ==================== -->
+  <g id="blackboard">
+    <!-- Easel Legs -->
+    <path d="M 220 450 L 190 800" stroke="black" stroke-width="10" stroke-linecap="round" fill="none" />
+    <path d="M 580 450 L 610 800" stroke="black" stroke-width="10" stroke-linecap="round" fill="none" />
+    <path d="M 150 770 L 650 770" stroke="black" stroke-width="10" stroke-linecap="round" fill="none" />
+
+    <!-- Blackboard Frame -->
+    <rect x="140" y="120" width="520" height="360" rx="30" ry="30" fill="white" stroke="black" stroke-width="10" />
+    
+    <!-- Inner Chalkboard Area -->
+    <rect x="170" y="150" width="460" height="300" rx="15" ry="15" fill="white" stroke="black" stroke-width="8" />
+
+    <!-- Chalkboard Drawings -->
+    <!-- Crescent Moon -->
+    <path d="M 210 190 A 30 30 0 0 0 260 240 A 22 22 0 0 1 210 190" fill="white" stroke="black" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Star -->
+    <path d="M 300 180 L 304 192 L 316 192 L 306 200 L 310 212 L 300 204 L 290 212 L 294 200 L 284 192 L 296 192 Z" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Cute Cloud -->
+    <path d="M 210 300 Q 190 300 190 320 Q 190 340 210 340 L 290 340 Q 310 340 310 320 Q 310 300 290 300 Q 270 280 250 300 Q 230 280 210 300 Z" fill="white" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Potion Bottle -->
+    <path d="M 540 280 L 540 320 A 25 25 0 0 0 590 320 L 590 280 L 575 260 L 575 235 L 555 235 L 555 260 Z" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round" />
+    <rect x="558" y="218" width="14" height="17" rx="3" fill="white" stroke="black" stroke-width="6" />
+    <path d="M 543 300 Q 565 310 587 300" fill="none" stroke="black" stroke-width="5" />
+    <circle cx="565" cy="195" r="7" fill="white" stroke="black" stroke-width="5" />
+    <circle cx="580" cy="175" r="5" fill="white" stroke="black" stroke-width="5" />
+  </g>
+
+  <!-- ==================== LAYER 2: BACKGROUND SPARKLES ==================== -->
+  <!-- Top Left Star -->
+  <g transform="translate(100, 100)">
+    <path d="M 0 -30 L 9 -9 L 30 -9 L 13 4 L 19 26 L 0 13 L -19 26 L -13 4 L -30 -9 L -9 -9 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+  </g>
+  <!-- Top Right Sparkle -->
+  <g transform="translate(700, 120)">
+    <path d="M 0 -40 Q 0 0 40 0 Q 0 0 0 40 Q 0 0 -40 0 Q 0 0 0 -40" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+  </g>
+  <!-- Middle Left Bubble -->
+  <g id="bubble">
+    <circle cx="90" cy="460" r="25" fill="white" stroke="black" stroke-width="8" />
+    <path d="M 75 450 A 15 15 0 0 1 100 445" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+  </g>
+
+  <!-- Ground Line -->
+  <path d="M 40 910 Q 400 940 760 910" fill="none" stroke="black" stroke-width="10" stroke-linecap="round" />
+  <!-- Cute Grass Tufts -->
+  <path d="M 80 910 Q 75 880 60 870 Q 80 885 95 912" fill="white" stroke="black" stroke-width="7" stroke-linecap="round" />
+  <path d="M 105 913 Q 115 875 130 865 Q 120 890 120 914" fill="white" stroke="black" stroke-width="7" stroke-linecap="round" />
+  <path d="M 710 910 Q 705 880 690 870 Q 710 885 725 912" fill="white" stroke="black" stroke-width="7" stroke-linecap="round" />
+
+  <!-- ==================== LAYER 3: THE CAT (FOREGROUND) ==================== -->
+  <g id="cat">
+    <!-- Cloak Back -->
+    <path d="M 280 680 C 180 720 160 850 220 900 L 580 900 C 640 850 620 720 520 680 Z" fill="white" stroke="black" stroke-width="10" stroke-linejoin="round" />
+
+    <!-- Cat Body -->
+    <path d="M 320 650 C 300 750 320 900 400 900 C 480 900 500 750 480 650 Z" fill="white" stroke="black" stroke-width="8" />
+
+    <!-- Left Foot -->
+    <ellipse cx="330" cy="900" rx="45" ry="25" fill="white" stroke="black" stroke-width="9" />
+    <line x1="315" y1="885" x2="315" y2="910" stroke="black" stroke-width="6" stroke-linecap="round" />
+    <line x1="345" y1="885" x2="345" y2="910" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Right Foot -->
+    <ellipse cx="470" cy="900" rx="45" ry="25" fill="white" stroke="black" stroke-width="9" />
+    <line x1="455" y1="885" x2="455" y2="910" stroke="black" stroke-width="6" stroke-linecap="round" />
+    <line x1="485" y1="885" x2="485" y2="910" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Cloak Front / Collar -->
+    <path d="M 300 630 L 250 710 L 350 675 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+    <path d="M 500 630 L 550 710 L 450 675 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+    
+    <!-- Bow Tie -->
+    <path d="M 382 650 C 350 620 330 680 382 650" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+    <path d="M 418 650 C 450 620 470 680 418 650" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+    <circle cx="400" cy="650" r="18" fill="white" stroke="black" stroke-width="8" />
+
+    <!-- Cat Head -->
+    <path d="M 280 460 C 220 490 200 600 290 640 C 320 655 360 660 400 660 C 440 660 480 655 510 640 C 600 600 580 490 520 460 C 480 440 440 435 400 435 C 360 435 320 440 280 460 Z" fill="white" stroke="black" stroke-width="10" stroke-linejoin="round" />
+
+    <!-- Left Ear -->
+    <path d="M 290 455 C 270 410 250 330 325 365 C 340 372 345 390 355 415" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+    <path d="M 295 435 C 285 405 270 355 315 380 C 323 384 328 395 332 410" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Right Ear -->
+    <path d="M 510 455 C 530 410 550 330 475 365 C 460 372 455 390 445 415" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+    <path d="M 505 435 C 515 405 530 355 485 380 C 477 384 472 395 468 410" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Magician's Hat (Tilted) -->
+    <g transform="translate(400, 435) rotate(-8)">
+      <!-- Hat Cone -->
+      <path d="M -55 -2 C -45 -130 0 -190 0 -190 C 0 -190 45 -130 55 -2" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+      <!-- Hat Brim -->
+      <ellipse cx="0" cy="5" rx="85" ry="22" fill="white" stroke="black" stroke-width="9" />
+      <!-- Hat Band -->
+      <path d="M -57 -15 C -30 -5 30 -5 57 -15 L 61 -32 C 30 -22 -30 -22 -61 -32 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+      <!-- Star Buckle -->
+      <path d="M 0 -50 L 5 -38 L 17 -38 L 8 -30 L 12 -18 L 0 -25 L -12 -18 L -8 -30 L -17 -38 L -5 -38 Z" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round" />
+    </g>
+
+    <!-- Face Features -->
+    <!-- Left Eye -->
+    <circle cx="335" cy="535" r="28" fill="white" stroke="black" stroke-width="8" />
+    <circle cx="342" cy="535" r="16" fill="white" stroke="black" stroke-width="6" />
+    <circle cx="338" cy="527" r="6" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Right Eye -->
+    <circle cx="465" cy="535" r="28" fill="white" stroke="black" stroke-width="8" />
+    <circle cx="458" cy="535" r="16" fill="white" stroke="black" stroke-width="6" />
+    <circle cx="462" cy="527" r="6" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Nose -->
+    <path d="M 390 555 L 410 555 C 410 555 400 570 400 570 Z" fill="white" stroke="black" stroke-width="7" stroke-linejoin="round" />
+
+    <!-- Mouth -->
+    <path d="M 368 578 Q 384 595 400 578 Q 416 595 432 578" fill="none" stroke="black" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Whiskers -->
+    <!-- Left -->
+    <line x1="260" y1="550" x2="190" y2="540" stroke="black" stroke-width="7" stroke-linecap="round" />
+    <line x1="250" y1="570" x2="180" y2="570" stroke="black" stroke-width="7" stroke-linecap="round" />
+    <line x1="260" y1="590" x2="195" y2="600" stroke="black" stroke-width="7" stroke-linecap="round" />
+    <!-- Right -->
+    <line x1="540" y1="550" x2="610" y2="540" stroke="black" stroke-width="7" stroke-linecap="round" />
+    <line x1="550" y1="570" x2="620" y2="570" stroke="black" stroke-width="7" stroke-linecap="round" />
+    <line x1="540" y1="590" x2="605" y2="600" stroke="black" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Cheeks (Blush Outlines) -->
+    <circle cx="285" cy="570" r="14" fill="white" stroke="black" stroke-width="4" stroke-dasharray="6,4" />
+    <circle cx="515" cy="570" r="14" fill="white" stroke="black" stroke-width="4" stroke-dasharray="6,4" />
+
+    <!-- Left Arm holding Magic Wand -->
+    <path d="M 285 675 C 240 660 190 700 205 730 C 215 750 240 755 265 740 C 280 730 285 710 288 690" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+    <!-- Finger lines -->
+    <path d="M 215 725 Q 225 735 235 725" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+    <path d="M 225 740 Q 235 748 245 735" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Right Arm (Raised) -->
+    <path d="M 515 675 C 560 660 610 700 595 730 C 585 750 560 755 535 740 C 520 730 515 710 512 690" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+  </g>
+
+  <!-- ==================== LAYER 4: MAGIC WAND & SPARKLES ==================== -->
+  <g id="magic-wand">
+    <!-- Wand Shaft -->
+    <path d="M 235 750 L 165 650" fill="white" stroke="black" stroke-width="10" stroke-linecap="round" />
+    <!-- Star on Wand -->
+    <path d="M 165 615 L 175 636 L 197 636 L 180 650 L 186 672 L 165 660 L 144 672 L 150 650 L 133 636 L 155 636 Z" fill="white" stroke="black" stroke-width="7" stroke-linejoin="round" />
+    
+    <!-- Sparkles -->
+    <!-- 4-point sparkle left -->
+    <path d="M 115 595 Q 115 615 135 615 Q 115 615 115 635 Q 115 615 95 615 Q 115 615 115 595" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    <!-- 4-point sparkle right -->
+    <path d="M 205 580 Q 205 595 220 595 Q 205 595 205 610 Q 205 595 190 595 Q 205 595 205 580" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Small magic circles -->
+    <circle cx="150" cy="590" r="5" fill="white" stroke="black" stroke-width="4" />
+    <circle cx="120" cy="670" r="4" fill="white" stroke="black" stroke-width="4" />
+    <circle cx="185" cy="680" r="5" fill="white" stroke="black" stroke-width="4" />
+  </g>
+
+  <!-- ==================== LAYER 5: FLOATING SPELLBOOK ==================== -->
+  <g id="spellbook" transform="translate(640, 720) rotate(12)">
+    <!-- Book Shadow/Back Cover -->
+    <path d="M -95 -65 Q -45 -80 0 -55 Q 45 -80 95 -65 L 90 45 Q 45 30 0 55 Q -45 30 -90 45 Z" fill="white" stroke="black" stroke-width="9" stroke-linejoin="round" />
+    
+    <!-- Book Pages -->
+    <path d="M -90 -70 Q -45 -85 0 -60 Q 45 -85 90 -70 L 85 35 Q 45 20 0 45 Q -45 20 -85 35 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" />
+    
+    <!-- Spine Center Line -->
+    <path d="M 0 -60 L 0 45" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Hanging Bookmark Ribbon -->
+    <path d="M 0 45 C 10 75 30 85 20 105 C 15 115 5 120 10 130" fill="none" stroke="black" stroke-width="7" stroke-linecap="round" />
+    
+    <!-- Left Page Star Drawing -->
+    <path d="M -45 -30 L -41 -18 L -29 -18 L -38 -10 L -34 2 L -45 -5 L -56 2 L -52 -10 L -61 -18 L -49 -18 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Right Page Heart Drawing -->
+    <path d="M 45 -22 C 37 -34 25 -22 45 -2 C 65 -22 53 -34 45 -22 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Whimsical Page Lines -->
+    <path d="M -75 15 Q -45 5 -15 15" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+    <path d="M 15 15 Q 45 25 75 15" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Sparkles around Book -->
+    <path d="M -120 -20 Q -120 -10 -110 -10 Q -120 -10 -120 0 Q -120 -10 -130 -10 Q -120 -10 -120 -20" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    <path d="M 110 -10 Q 110 0 120 0 Q 110 0 110 10 Q 110 0 100 0 Q 110 0 110 -10" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Magical Wind/Float Lines -->
+    <path d="M -110 65 Q -60 85 0 75 Q 60 65 110 80" fill="none" stroke="black" stroke-width="6" stroke-linecap="round" />
+    <path d="M -60 95 Q 0 105 60 95" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>
