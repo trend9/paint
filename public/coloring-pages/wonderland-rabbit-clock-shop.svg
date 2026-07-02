@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .detail-outline {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Workbench -->
+  <g id="workbench">
+    <rect x="100" y="700" width="600" height="150" rx="30" ry="30" class="outline"/>
+    <rect x="150" y="850" width="50" height="100" rx="10" ry="10" class="outline"/>
+    <rect x="600" y="850" width="50" height="100" rx="10" ry="10" class="outline"/>
+  </g>
+
+  <!-- Rabbit Clockmaker -->
+  <g id="rabbit_clockmaker">
+    <!-- Body -->
+    <ellipse cx="400" cy="550" rx="150" ry="180" class="outline"/>
+    <!-- Head -->
+    <ellipse cx="400" cy="300" rx="120" ry="100" class="outline"/>
+    <!-- Ears -->
+    <path d="M 330 180 Q 300 100 350 80 Q 400 60 420 180 Z" class="outline"/>
+    <path d="M 470 180 Q 500 100 450 80 Q 400 60 380 180 Z" class="outline"/>
+    <!-- Inner ears -->
+    <path d="M 340 190 Q 320 130 360 110 Q 390 90 400 190 Z" class="detail-outline"/>
+    <path d="M 460 190 Q 480 130 440 110 Q 410 90 400 190 Z" class="detail-outline"/>
+
+    <!-- Face details -->
+    <circle cx="360" cy="280" r="15" class="detail-outline"/> <!-- Left eye -->
+    <circle cx="440" cy="280" r="15" class="detail-outline"/> <!-- Right eye -->
+    <path d="M 350 320 Q 400 350 450 320" class="detail-outline no-fill" stroke-width="4"/> <!-- Smile -->
+    <path d="M 400 300 L 400 320" class="detail-outline no-fill" stroke-width="3"/> <!-- Nose split -->
+    <ellipse cx="400" cy="310" rx="15" ry="10" class="detail-outline"/> <!-- Nose -->
+
+    <!-- Waistcoat -->
+    <path d="M 400 380 C 300 400 280 500 290 580 L 290 650 Q 400 670 510 650 L 510 580 C 520 500 500 400 400 380 Z" class="detail-outline"/>
+    <circle cx="400" cy="480" r="8" class="detail-outline"/>
+    <circle cx="400" cy="530" r="8" class="detail-outline"/>
+    <circle cx="400" cy="580" r="8" class="detail-outline"/>
+
+    <!-- Arms -->
+    <path d="M 300 500 C 250 480 200 550 230 600 L 250 620 C 300 550 300 500 300 500 Z" class="outline"/>
+    <path d="M 500 500 C 550 480 600 550 570 600 L 550 620 C 500 550 500 500 500 500 Z" class="outline"/>
+    <!-- Hands -->
+    <circle cx="230" cy="600" r="30" class="outline"/>
+    <circle cx="570" cy="600" r="30" class="outline"/>
+
+    <!-- Legs -->
+    <ellipse cx="330" cy="700" rx="50" ry="30" class="outline"/>
+    <ellipse cx="470" cy="700" rx="50" ry="30" class="outline"/>
+
+    <!-- Monocle (over right eye) -->
+    <circle cx="440" cy="280" r="30" class="detail-outline no-fill" stroke-width="3"/>
+    <line x1="465" y1="290" x2="490" y2="320" class="detail-outline no-fill" stroke-width="3"/>
+  </g>
+
+  <!-- Whimsical Clocks and Workbench Elements -->
+  <g id="clocks_and_elements">
+    <!-- Grandfather Clock (left side) -->
+    <rect x="50" y="400" width="80" height="280" rx="20" ry="20" class="outline"/>
+    <circle cx="90" cy="450" r="30" class="detail-outline"/> <!-- Clock face -->
+    <line x1="90" y1="450" x2="105" y2="440" class="detail-outline no-fill" stroke-width="3"/> <!-- Hour hand -->
+    <line x1="90" y1="450" x2="110" y2="460" class="detail-outline no-fill" stroke-width="3"/> <!-- Minute hand -->
+    <rect x="80" y="550" width="20" height="60" rx="5" ry="5" class="detail-outline"/> <!-- Pendulum -->
+    <circle cx="90" cy="630" r="10" class="detail-outline"/> <!-- Weight -->
+
+    <!-- Cuckoo Clock (right side) -->
+    <rect x="670" y="380" width="100" height="120" rx="15" ry="15" class="outline"/>
+    <path d="M 670 380 L 720 320 L 770 380 Z" class="outline"/> <!-- Roof -->
+    <circle cx="720" cy="440" r="35" class="detail-outline"/> <!-- Clock face -->
+    <line x1="720" y1="440" x2="735" y2="430" class="detail-outline no-fill" stroke-width="3"/>
+    <line x1="720" y1="440" x2="740" y2="450" class="detail-outline no-fill" stroke-width="3"/>
+    <circle cx="720" cy="400" r="15" class="detail-outline"/> <!-- Cuckoo door -->
+
+    <!-- Pocket Watch (on workbench, left) -->
+    <circle cx="200" cy="680" r="40" class="outline"/>
+    <path d="M 200 640 L 200 660 Q 210 655 210 645 Q 200 640 200 640 Z" class="detail-outline"/> <!-- Winder loop -->
+    <circle cx="200" cy="680" r="30" class="detail-outline"/> <!-- Inner face -->
+    <line x1="200" y1="680" x2="215" y2="670" class="detail-outline no-fill" stroke-width="3"/>
+    <line x1="200" y1="680" x2="220" y2="690" class="detail-outline no-fill" stroke-width="3"/>
+
+    <!-- Small clock (on workbench, right) -->
+    <rect x="580" y="670" width="70" height="80" rx="10" ry="10" class="outline"/>
+    <circle cx="615" cy="700" r="25" class="detail-outline"/>
+    <line x1="615" y1="700" x2="625" y2="690" class="detail-outline no-fill" stroke-width="3"/>
+    <line x1="615" y1="700" x2="630" y2="705" class="detail-outline no-fill" stroke-width="3"/>
+
+    <!-- Gears and Springs on workbench -->
+    <circle cx="280" cy="740" r="30" class="outline"/>
+    <circle cx="280" cy="740" r="15" class="detail-outline"/>
+    <path d="M 280 710 L 280 770 M 250 740 L 310 740" class="detail-outline no-fill" stroke-width="3"/> <!-- Simple gear spokes -->
+
+    <circle cx="520" cy="740" r="30" class="outline"/>
+    <circle cx="520" cy="740" r="15" class="detail-outline"/>
+    <path d="M 520 710 L 520 770 M 490 740 L 550 740" class="detail-outline no-fill" stroke-width="3"/> <!-- Simple gear spokes -->
+
+    <path d="M 350 720 C 360 700 370 730 380 710 C 390 740 400 720 410 750" class="detail-outline no-fill" stroke-width="3"/> <!-- Spring -->
+    <path d="M 430 730 C 440 710 450 740 460 720 C 470 750 480 730 490 760" class="detail-outline no-fill" stroke-width="3"/> <!-- Another spring -->
+
+    <!-- Alice in Wonderland elements -->
+    <!-- Playing card (floating) -->
+    <rect x="180" y="200" width="60" height="90" rx="10" ry="10" transform="rotate(-10 210 245)" class="outline"/>
+    <path d="M 210 230 C 200 220 200 210 210 210 C 220 210 220 220 210 230 C 200 240 200 250 210 250 C 220 250 220 240 210 230 Z" class="detail-outline"/> <!-- Heart shape inside card -->
+
+    <!-- Small Teacup (on workbench) -->
+    <path d="M 680 770 L 720 770 Q 730 750 710 730 Q 690 710 670 730 Q 660 750 680 770 Z" class="outline"/> <!-- Cup body -->
+    <path d="M 720 750 C 735 745 735 765 720 770" class="detail-outline no-fill" stroke-width="3"/> <!-- Handle -->
+  </g>
+</svg>
