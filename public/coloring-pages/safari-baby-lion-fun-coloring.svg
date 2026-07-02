@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="background-elements">
+    <!-- Ground line: a gentle curve at the bottom -->
+    <path d="M 0 900 C 200 895 600 895 800 900" stroke="black" stroke-width="5" fill="none"/>
+
+    <!-- Small Bush on the left -->
+    <path d="M100 900 C50 850 80 750 150 750 C180 740 220 780 200 900 Z" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Distant Acacia Tree on the right -->
+    <g id="acacia-tree">
+      <!-- Tree Trunk -->
+      <rect x="665" y="700" width="30" height="200" rx="15" ry="15" stroke="black" stroke-width="5" fill="white"/>
+      <!-- Tree Canopy (flat-top characteristic shape) -->
+      <path d="M590 680 C600 640 680 620 760 680 C740 690 620 690 590 680 Z" stroke="black" stroke-width="5" fill="white"/>
+    </g>
+  </g>
+
+  <g id="baby-lion">
+    <!-- Main Body: a large plump ellipse -->
+    <ellipse cx="400" cy="780" rx="180" ry="100" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Mane: a fluffy outline behind the head, slightly overlapping the body -->
+    <path d="M300 660 C250 620 230 540 280 480 C330 430 400 420 400 420 C400 420 470 430 520 480 C570 540 550 620 500 660 C450 690 350 690 300 660 Z" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Head: a simple circle on top of the body -->
+    <circle cx="400" cy="580" r="100" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Ears: two rounded ellipses on top of the head/mane -->
+    <ellipse cx="330" cy="500" rx="30" ry="25" stroke="black" stroke-width="5" fill="white"/>
+    <ellipse cx="470" cy="500" rx="30" ry="25" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Face features -->
+    <!-- Eyes: two simple circles -->
+    <circle cx="370" cy="560" r="15" stroke="black" stroke-width="5" fill="white"/>
+    <circle cx="430" cy="560" r="15" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Nose: a rounded ellipse -->
+    <ellipse cx="400" cy="595" rx="20" ry="15" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Mouth: a simple curved line for a happy smile -->
+    <path d="M 380 610 Q 400 630 420 610" stroke="black" stroke-width="5" fill="none"/>
+
+    <!-- Front Paws: showing playful interaction -->
+    <!-- Left Front Paw (resting on the ground) -->
+    <path d="M300 780 C290 730 350 700 380 720 L380 860 C360 880 300 880 300 820 Z" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Right Front Paw (playfully raised) -->
+    <path d="M420 700 C400 650 440 630 470 640 L470 730 C460 750 410 750 420 720 Z" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Hind Feet: peeking out from under the body -->
+    <ellipse cx="330" cy="880" rx="60" ry="30" stroke="black" stroke-width="5" fill="white"/>
+    <ellipse cx="470" cy="880" rx="60" ry="30" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Tail: a curved path extending from the body -->
+    <path d="M 550 750 C 600 700 650 680 670 710 L 670 730 C 650 750 600 780 550 790 Z" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Tail Tuft: a simple circle at the end of the tail -->
+    <circle cx="670" cy="710" r="25" stroke="black" stroke-width="5" fill="white"/>
+  </g>
+</svg>
