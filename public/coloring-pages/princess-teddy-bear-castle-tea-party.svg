@@ -1,0 +1,136 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <g id="background-elements">
+    <!-- Ground line -->
+    <path d="M 0 750 Q 400 700 800 750 L 800 1000 L 0 1000 Z" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Castle -->
+    <g id="castle">
+      <!-- Main castle wall -->
+      <rect x="150" y="300" width="500" height="350" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Left tower -->
+      <path d="M 100 200 L 100 450 C 100 500 150 500 150 450 L 150 200 Z" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="80" y="200" width="70" height="50" fill="white" stroke="black" stroke-width="4"/> <!-- Base of turret -->
+      <path d="M 80 200 L 115 150 L 150 200 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Turret roof -->
+      <!-- Right tower -->
+      <path d="M 650 200 L 650 450 C 650 500 700 500 700 450 L 700 200 Z" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="650" y="200" width="70" height="50" fill="white" stroke="black" stroke-width="4"/> <!-- Base of turret -->
+      <path d="M 650 200 L 685 150 L 720 200 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Turret roof -->
+      <!-- Main tower in middle -->
+      <rect x="350" y="150" width="100" height="250" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 330 150 L 400 100 L 470 150 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Turret roof -->
+      <!-- Door -->
+      <path d="M 360 550 C 360 600 440 600 440 550 L 440 650 L 360 650 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Windows -->
+      <circle cx="250" cy="400" r="30" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="550" cy="400" r="30" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="400" cy="270" r="25" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Flag on main tower -->
+      <rect x="420" y="60" width="50" height="40" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M 470 60 L 490 80 L 470 100 Z" fill="white" stroke="black" stroke-width="3"/>
+      <line x1="420" y1="60" x2="420" y2="100" stroke="black" stroke-width="3"/> <!-- Flag pole -->
+    </g>
+  </g>
+
+  <!-- Tea party scene -->
+  <g id="tea-party-scene">
+    <!-- Table -->
+    <g id="table">
+      <ellipse cx="400" cy="700" rx="200" ry="80" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M 250 750 L 280 850 L 300 850 L 270 750 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Left leg -->
+      <path d="M 550 750 L 520 850 L 500 850 L 530 750 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Right leg -->
+    </g>
+
+    <!-- Princess -->
+    <g id="princess">
+      <!-- Body (dress) -->
+      <path d="M 300 680 C 250 750 350 820 400 820 C 450 820 550 750 500 680 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Upper body and neck -->
+      <path d="M 370 600 C 350 630 350 670 400 670 C 450 670 450 630 430 600 L 400 580 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <circle cx="400" cy="540" r="60" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Hair - simple bangs -->
+      <path d="M 360 490 Q 400 470 440 490" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Hair - side -->
+      <path d="M 340 510 C 310 520 310 560 340 570" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M 460 510 C 490 520 490 560 460 570" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Eyes -->
+      <circle cx="375" cy="530" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <circle cx="425" cy="530" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Smile -->
+      <path d="M 380 555 Q 400 565 420 555" fill="none" stroke="black" stroke-width="3"/>
+      <!-- Crown -->
+      <path d="M 370 490 Q 380 470 390 480 Q 400 460 410 480 Q 420 470 430 490 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Arms -->
+      <path d="M 350 650 Q 300 680 300 700" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 450 650 Q 500 680 500 700" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Hands -->
+      <circle cx="300" cy="700" r="15" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="500" cy="700" r="15" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Teddy Bear -->
+    <g id="teddy-bear">
+      <!-- Body -->
+      <path d="M 190 680 C 150 730 250 800 300 800 C 350 800 450 730 410 680 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <circle cx="290" cy="600" r="50" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Ears -->
+      <circle cx="250" cy="570" r="20" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="330" cy="570" r="20" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Snout -->
+      <ellipse cx="290" cy="615" rx="25" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Nose -->
+      <circle cx="290" cy="605" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Eyes -->
+      <circle cx="270" cy="590" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <circle cx="310" cy="590" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Smile -->
+      <path d="M 275 620 Q 290 630 305 620" fill="none" stroke="black" stroke-width="3"/>
+      <!-- Arms -->
+      <path d="M 240 670 Q 200 690 200 710" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 340 670 Q 380 690 380 710" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Paws/Hands -->
+      <circle cx="200" cy="710" r="15" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="380" cy="710" r="15" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Table Items -->
+    <g id="table-items">
+      <!-- Cake on plate -->
+      <g id="cake-and-plate">
+        <ellipse cx="400" cy="690" rx="70" ry="15" fill="white" stroke="black" stroke-width="4"/> <!-- Plate -->
+        <!-- Cake body (sides and bottom outline) -->
+        <path d="M 340 675 C 340 685 460 685 460 675 L 460 650 C 450 640 350 640 340 650 Z" fill="white" stroke="black" stroke-width="4"/>
+        <ellipse cx="400" cy="650" rx="60" ry="10" fill="white" stroke="black" stroke-width="4"/> <!-- Cake top rim -->
+        <!-- Cake decoration dots -->
+        <circle cx="370" cy="640" r="4" fill="white" stroke="black" stroke-width="2"/>
+        <circle cx="400" cy="640" r="4" fill="white" stroke="black" stroke-width="2"/>
+        <circle cx="430" cy="640" r="4" fill="white" stroke="black" stroke-width="2"/>
+      </g>
+
+      <!-- Teapot -->
+      <g id="teapot">
+        <path d="M 520 680 C 500 650 500 610 540 610 C 580 610 580 650 560 680 C 560 700 520 700 520 680 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+        <ellipse cx="540" cy="605" rx="25" ry="10" fill="white" stroke="black" stroke-width="3"/> <!-- Lid top -->
+        <circle cx="540" cy="595" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Lid knob -->
+        <path d="M 565 640 C 590 620 590 660 565 680" fill="none" stroke="black" stroke-width="3"/> <!-- Handle -->
+        <path d="M 515 630 C 490 610 490 650 515 660" fill="none" stroke="black" stroke-width="3"/> <!-- Spout -->
+      </g>
+
+      <!-- Teacup 1 -->
+      <g id="teacup-1">
+        <ellipse cx="480" cy="680" rx="30" ry="10" fill="white" stroke="black" stroke-width="3"/> <!-- Rim -->
+        <path d="M 450 680 C 440 700 450 710 480 710 C 510 710 520 700 510 680 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Body -->
+        <path d="M 505 690 Q 520 690 505 700" fill="none" stroke="black" stroke-width="3"/> <!-- Handle -->
+      </g>
+
+      <!-- Teacup 2 -->
+      <g id="teacup-2">
+        <ellipse cx="320" cy="680" rx="30" ry="10" fill="white" stroke="black" stroke-width="3"/> <!-- Rim -->
+        <path d="M 290 680 C 280 700 290 710 320 710 C 350 710 360 700 350 680 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Body -->
+        <path d="M 345 690 Q 360 690 345 700" fill="none" stroke="black" stroke-width="3"/> <!-- Handle -->
+      </g>
+    </g>
+  </g>
+</svg>
