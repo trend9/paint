@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Pure White Background -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- Static Sky Elements (Sun, Background Clouds, Stars, Birds) -->
+  <g stroke="black" stroke-width="10" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Happy Sun in Top Right -->
+    <g>
+      <!-- Sun Rays -->
+      <line x1="660" y1="90" x2="660" y2="65" stroke-width="10" />
+      <line x1="660" y1="230" x2="660" y2="255" stroke-width="10" />
+      <line x1="590" y1="160" x2="565" y2="160" stroke-width="10" />
+      <line x1="730" y1="160" x2="755" y2="160" stroke-width="10" />
+      <line x1="610" y1="110" x2="592" y2="92" stroke-width="10" />
+      <line x1="710" y1="210" x2="728" y2="228" stroke-width="10" />
+      <line x1="610" y1="210" x2="592" y2="228" stroke-width="10" />
+      <line x1="710" y1="110" x2="728" y2="92" stroke-width="10" />
+      <!-- Sun Body -->
+      <circle cx="660" cy="160" r="50" fill="white" />
+      <!-- Sun Face -->
+      <path d="M 640,150 Q 645,142 650,150" fill="none" stroke-width="8" />
+      <path d="M 670,150 Q 675,142 680,150" fill="none" stroke-width="8" />
+      <path d="M 650,180 Q 660,192 670,180" fill="none" stroke-width="8" />
+    </g>
+
+    <!-- Sparkle Stars -->
+    <!-- Star 1 (Top Left-ish) -->
+    <path d="M 270,205 Q 270,220 285,220 Q 270,220 270,235 Q 270,220 255,220 Q 270,220 270,205 Z" />
+    <!-- Star 2 (Middle Right) -->
+    <path d="M 690,405 Q 690,420 705,420 Q 690,420 690,435 Q 690,420 675,420 Q 690,420 690,405 Z" />
+    <!-- Star 3 (Center Sky) -->
+    <path d="M 380,280 Q 380,300 400,300 Q 380,300 380,320 Q 380,300 360,300 Q 380,300 380,280 Z" />
+    <!-- Star 4 (Bottom Center) -->
+    <path d="M 430,780 Q 430,800 450,800 Q 430,800 430,820 Q 430,800 410,800 Q 430,800 430,780 Z" />
+
+    <!-- Cute Background Clouds (Flat Bottom, Bubbly Top) -->
+    <!-- Cloud Left (Middle height) -->
+    <path d="M 60,320 A 30,30 0 0,1 80,270 A 40,40 0 0,1 150,255 A 40,40 0 0,1 210,270 A 30,30 0 0,1 230,320 A 25,25 0 0,1 205,355 L 85,355 A 25,25 0 0,1 60,320 Z" />
+    <!-- Cloud Bottom Left -->
+    <path d="M 100,820 A 40,40 0 0,1 125,750 A 50,50 0 0,1 215,730 A 50,50 0 0,1 295,750 A 40,40 0 0,1 320,820 A 35,35 0 0,1 285,865 L 135,865 A 35,35 0 0,1 100,820 Z" />
+    <!-- Cloud Bottom Right -->
+    <path d="M 520,840 A 45,45 0 0,1 550,770 A 55,55 0 0,1 650,750 A 55,55 0 0,1 740,770 A 45,45 0 0,1 770,840 A 40,40 0 0,1 730,890 L 560,890 A 40,40 0 0,1 520,840 Z" />
+
+    <!-- Cute Simple Flying Birds -->
+    <path d="M 380,720 Q 390,710 400,720 Q 410,710 420,720" fill="none" stroke-width="8" />
+    <path d="M 430,740 Q 437,732 445,740 Q 453,732 460,740" fill="none" stroke-width="6" />
+  </g>
+
+  <!-- Dynamic Flying Train Group (Tilted Upwards for Flying Effect) -->
+  <g transform="translate(40, 50) rotate(-10 400 500)" stroke="black" stroke-width="10" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Background Wing (Peeking from behind) -->
+    <path d="M 430,390 C 410,340 380,310 350,280 C 375,290 395,310 405,330 C 418,320 432,325 438,340 C 448,345 452,360 448,380 Z" />
+
+    <!-- Giant Fluffy Smoke Cloud Trail (Rendered Back-to-Front) -->
+    <!-- Large Older Smoke Puffs -->
+    <circle cx="150" cy="80" r="100" />
+    <circle cx="180" cy="140" r="60" />
+    <circle cx="210" cy="60" r="70" />
+    <circle cx="260" cy="110" r="80" />
+    <circle cx="290" cy="170" r="50" />
+    <!-- Medium Smoke Puffs -->
+    <circle cx="310" cy="95" r="55" />
+    <circle cx="350" cy="150" r="65" />
+    <circle cx="420" cy="190" r="50" />
+    <!-- Small Fresh Smoke Puffs Near Chimney -->
+    <circle cx="470" cy="240" r="35" />
+    <circle cx="500" cy="275" r="20" />
+
+    <!-- Train Wheels (Behind Body) -->
+    <!-- Wheel 1 (Back Large) -->
+    <g>
+      <circle cx="260" cy="610" r="55" />
+      <circle cx="260" cy="610" r="30" stroke-width="8" />
+      <circle cx="260" cy="610" r="10" fill="black" />
+    </g>
+    <!-- Wheel 2 (Middle) -->
+    <g>
+      <circle cx="390" cy="610" r="50" />
+      <circle cx="390" cy="610" r="25" stroke-width="8" />
+      <circle cx="390" cy="610" r="10" fill="black" />
+    </g>
+    <!-- Wheel 3 (Front) -->
+    <g>
+      <circle cx="500" cy="610" r="50" />
+      <circle cx="500" cy="610" r="25" stroke-width="8" />
+      <circle cx="500" cy="610" r="10" fill="black" />
+    </g>
+
+    <!-- Train Body - Boiler (Main Cylinder) -->
+    <rect x="338" y="410" width="220" height="170" rx="15" />
+
+    <!-- Train Body - Cabin -->
+    <rect x="180" y="350" width="160" height="230" rx="20" />
+    <!-- Cabin Window -->
+    <rect x="215" y="385" width="90" height="90" rx="15" stroke-width="8" />
+    <!-- Cabin Roof -->
+    <rect x="160" y="335" width="200" height="25" rx="10" />
+
+    <!-- Cute Chimney (Smokestack) -->
+    <path d="M 465,410 L 480,300 L 520,300 L 535,410 Z" />
+    <rect x="470" y="285" width="60" height="20" rx="10" />
+
+    <!-- Front Cute Face Dome -->
+    <path d="M 555,410 C 610,410 645,445 645,495 C 645,545 610,580 555,580 Z" />
+
+    <!-- Face Details (Big Happy Toddler Eyes & Smile) -->
+    <g stroke-width="8" fill="none">
+      <!-- Big Closed Happy Eye -->
+      <path d="M 580,475 Q 595,460 610,475" stroke-width="10" />
+      <!-- Eyelashes -->
+      <line x1="585" y1="466" x2="578" y2="456" stroke-width="8" />
+      <line x1="605" y1="466" x2="612" y2="456" stroke-width="8" />
+      <!-- Cute Rosy Cheek Circle Outline (for coloring) -->
+      <circle cx="610" cy="505" r="12" stroke-width="6" fill="white" />
+      <!-- Happy Open Smile -->
+      <path d="M 575,515 Q 595,540 618,515" stroke-width="10" stroke-linecap="round" />
+      <path d="M 614,508 L 622,518" stroke-width="8" />
+    </g>
+
+    <!-- Front Cowcatcher (Bumper / Grill) -->
+    <path d="M 550,580 L 640,580 L 620,625 L 530,625 Z" />
+    <!-- Cowcatcher Stripes -->
+    <line x1="565" y1="580" x2="550" y2="625" stroke-width="8" />
+    <line x1="595" y1="580" x2="585" y2="625" stroke-width="8" />
+    <line x1="620" y1="580" x2="610" y2="625" stroke-width="8" />
+
+    <!-- Connecting Rod for Wheels -->
+    <rect x="260" y="598" width="240" height="16" rx="8" />
+    <circle cx="260" cy="606" r="6" fill="black" />
+    <circle cx="390" cy="606" r="6" fill="black" />
+    <circle cx="500" cy="606" r="6" fill="black" />
+
+    <!-- Foreground Cute Wing (Bird/Angel Style for Flying) -->
+    <path d="M 340,480 C 270,480 220,420 200,360 C 230,370 260,390 280,420 C 300,400 320,410 330,430 C 345,425 360,435 360,455 C 360,470 350,475 340,480 Z" />
+    <!-- Wing Detail Line -->
+    <path d="M 280,420 C 255,400 235,390 220,380" stroke-width="6" fill="none" />
+  </g>
+</svg>
