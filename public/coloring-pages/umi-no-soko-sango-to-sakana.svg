@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+
+  <!-- Coral Reef Group -->
+  <g id="coral-reef">
+    <!-- Main reef base shape 1 -->
+    <path d="M0 700 C100 850, 300 950, 500 900 C650 850, 750 700, 800 600 V1000 H0 Z" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Main reef base shape 2 (overlapping to create more complexity) -->
+    <path d="M0 600 C50 750, 250 800, 400 750 C550 700, 700 650, 800 700 V1000 H0 Z" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Coral elements - various shapes -->
+    <!-- Brain coral like bumps -->
+    <path d="M150 780 C180 810, 220 810, 250 780 C220 750, 180 750, 150 780 Z" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M300 720 C330 750, 370 750, 400 720 C370 690, 330 690, 300 720 Z" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M550 820 C580 850, 620 850, 650 820 C620 790, 580 790, 550 820 Z" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M70 650 C100 680, 140 680, 170 650 C140 620, 100 620, 70 650 Z" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Tall coral pillars -->
+    <path d="M100 600 C120 500, 130 400, 150 350 C160 300, 140 250, 120 280 C100 310, 90 380, 80 450 C70 520, 80 580, 100 600 Z" stroke="black" stroke-width="5" fill="white"/>
+    <path d="M680 650 C700 550, 710 450, 730 400 C740 350, 720 300, 700 330 C680 360, 670 430, 660 500 C650 570, 660 630, 680 650 Z" stroke="black" stroke-width="5" fill="white"/>
+
+    <!-- Fan coral like shapes -->
+    <path d="M250 650 C280 600, 320 580, 350 600 C380 620, 370 670, 340 680 C310 690, 280 680, 250 650 Z" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M450 600 C480 550, 520 530, 550 550 C580 570, 570 620, 540 630 C510 640, 480 630, 450 600 Z" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Seaweed / Anemone like shapes -->
+    <path d="M400 800 C410 750, 420 700, 430 650 C440 600, 430 550, 420 580 C410 610, 400 660, 390 710 C380 760, 390 790, 400 800 Z" stroke="black" stroke-width="3" fill="white"/>
+    <path d="M460 780 C470 730, 480 680, 490 630 C500 580, 490 530, 480 560 C470 590, 460 640, 450 690 C440 740, 450 770, 460 780 Z" stroke="black" stroke-width="3" fill="white"/>
+
+  </g>
+
+  <!-- Fish Group -->
+  <g id="fish">
+    <!-- Fish 1 -->
+    <path d="M150 200 C250 150, 350 180, 300 250 C350 320, 250 350, 150 300 C100 280, 100 220, 150 200 Z" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="180" cy="230" r="15" stroke="black" stroke-width="3" fill="white"/> <!-- Eye -->
+    <path d="M250 260 C260 270, 270 260, 260 250 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Tail fin -->
+    <path d="M220 190 C230 180, 240 200, 230 210 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Top fin -->
+    <path d="M220 310 C230 320, 240 300, 230 290 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Bottom fin -->
+    <path d="M260 260 Q270 265, 260 270" stroke="black" stroke-width="2" fill="none"/> <!-- Smile -->
+
+    <!-- Fish 2 (smaller) -->
+    <path d="M500 150 C570 120, 630 140, 600 200 C630 250, 570 280, 500 250 C470 230, 470 170, 500 150 Z" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="520" cy="180" r="10" stroke="black" stroke-width="3" fill="white"/> <!-- Eye -->
+    <path d="M570 210 C580 215, 590 210, 580 205 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Tail fin -->
+    <path d="M550 140 C560 135, 570 150, 560 155 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Top fin -->
+    <path d="M550 260 C560 265, 570 250, 560 245 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Bottom fin -->
+    <path d="M580 210 Q585 212, 580 215" stroke="black" stroke-width="2" fill="none"/> <!-- Smile -->
+
+    <!-- Fish 3 (medium) -->
+    <path d="M400 350 C480 320, 550 350, 520 420 C550 480, 480 500, 400 470 C360 450, 360 380, 400 350 Z" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="425" cy="390" r="12" stroke="black" stroke-width="3" fill="white"/> <!-- Eye -->
+    <path d="M490 430 C500 435, 510 430, 500 425 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Tail fin -->
+    <path d="M460 340 C470 335, 480 350, 470 355 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Top fin -->
+    <path d="M460 490 C470 495, 480 480, 470 475 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Bottom fin -->
+    <path d="M500 430 Q505 432, 500 435" stroke="black" stroke-width="2" fill="none"/> <!-- Smile -->
+
+  </g>
+
+  <!-- Sea Turtle Group -->
+  <g id="sea-turtle">
+    <path d="M200 650 C250 600, 350 600, 400 650 C420 680, 400 720, 350 730 C300 740, 250 720, 200 650 Z" stroke="black" stroke-width="5" fill="white"/> <!-- Shell -->
+    <path d="M280 620 C290 610, 300 610, 310 620 C300 630, 290 630, 280 620 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Shell detail 1 -->
+    <path d="M260 650 C270 640, 280 640, 290 650 C280 660, 270 660, 260 650 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Shell detail 2 -->
+    <path d="M300 670 C310 660, 320 660, 330 670 C320 680, 310 680, 300 670 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Shell detail 3 -->
+    <path d="M240 680 C250 670, 260 670, 270 680 C260 690, 250 690, 240 680 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Shell detail 4 -->
+
+    <path d="M270 580 C280 560, 300 560, 310 580 C320 590, 300 600, 280 590 C260 580, 270 570, 270 580 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Head -->
+    <circle cx="290" cy="575" r="8" stroke="black" stroke-width="3" fill="white"/> <!-- Eye -->
+    <path d="M290 585 Q295 587, 290 589" stroke="black" stroke-width="2" fill="none"/> <!-- Smile -->
+
+    <path d="M190 660 C170 680, 160 700, 170 720 C180 740, 200 720, 210 700 C220 680, 200 670, 190 660 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Front Flipper Left -->
+    <path d="M390 660 C410 680, 420 700, 410 720 C400 740, 380 720, 370 700 C360 680, 380 670, 390 660 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Front Flipper Right -->
+    <path d="M250 730 C230 740, 220 760, 230 780 C240 800, 260 790, 270 770 C280 750, 260 740, 250 730 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Back Flipper Left -->
+    <path d="M330 730 C350 740, 360 760, 350 780 C340 800, 320 790, 310 770 C300 750, 320 740, 330 730 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Back Flipper Right -->
+  </g>
+
+  <!-- Crab Group -->
+  <g id="crab">
+    <!-- Body -->
+    <path d="M600 700 C630 680, 670 680, 700 700 C720 720, 700 740, 670 750 C640 760, 610 740, 600 700 Z" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Eyes -->
+    <circle cx="630" cy="690" r="8" stroke="black" stroke-width="3" fill="white"/>
+    <circle cx="670" cy="690" r="8" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Claws -->
+    <path d="M580 700 C560 690, 550 710, 560 730 C570 750, 590 740, 600 720 C610 700, 590 695, 580 700 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Left arm -->
+    <path d="M540 720 C530 710, 520 720, 530 730 C540 740, 550 730, 540 720 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Left claw -->
+    <path d="M720 700 C740 690, 750 710, 740 730 C730 750, 710 740, 700 720 C690 700, 710 695, 720 700 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Right arm -->
+    <path d="M760 720 C770 710, 780 720, 770 730 C760 740, 750 730, 760 720 Z" stroke="black" stroke-width="3" fill="white"/> <!-- Right claw -->
+
+    <!-- Legs (simplified, 3 per side) -->
+    <path d="M600 730 Q590 740, 580 730" stroke="black" stroke-width="3" fill="none"/>
+    <path d="M600 740 Q590 750, 580 740" stroke="black" stroke-width="3" fill="none"/>
+    <path d="M600 750 Q590 760, 580 750" stroke="black" stroke-width="3" fill="none"/>
+
+    <path d="M700 730 Q710 740, 720 730" stroke="black" stroke-width="3" fill="none"/>
+    <path d="M700 740 Q710 750, 720 740" stroke="black" stroke-width="3" fill="none"/>
+    <path d="M700 750 Q710 760, 720 750" stroke="black" stroke-width="3" fill="none"/>
+  </g>
+
+</svg>
