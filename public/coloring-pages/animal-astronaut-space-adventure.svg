@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Pure White Background -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- Reusable Elements -->
+  <defs>
+    <!-- Cute 4-Point Sparkle Star -->
+    <g id="sparkle">
+      <path d="M 0 -30 Q 0 0 30 0 Q 0 0 0 30 Q 0 0 -30 0 Q 0 0 0 -30 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    </g>
+    <!-- Cute 5-Point Star -->
+    <g id="star5">
+      <path d="M 0 -20 L 6 -6 L 20 -4 L 10 6 L 13 20 L 0 11 L -13 20 L -10 6 L -20 -4 L -6 -6 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    </g>
+    <!-- Small Space Bubble/Dust -->
+    <g id="bubble">
+      <circle cx="0" cy="0" r="8" fill="white" stroke="black" stroke-width="4" />
+    </g>
+  </defs>
+
+  <!-- BACKGROUND GRAPHICS (Stars, Planets, Clouds) -->
+  <g id="space-background">
+    <!-- Fluffy Space Cloud / Nebula (Top Left) -->
+    <path d="M 320 80 C 300 60, 260 60, 240 80 C 220 60, 180 60, 160 90 C 140 95, 130 115, 140 135 C 130 155, 150 185, 170 185 C 190 205, 230 205, 250 185 C 270 205, 310 195, 320 165 C 340 165, 350 125, 330 105 C 340 85, 330 80, 320 80 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+
+    <!-- Striped Planet (Top Left) -->
+    <g id="striped-planet">
+      <circle cx="180" cy="150" r="45" fill="white" stroke="black" stroke-width="5" />
+      <path d="M 142 130 Q 180 155 218 130" fill="none" stroke="black" stroke-width="4" />
+      <path d="M 148 170 Q 180 195 212 170" fill="none" stroke="black" stroke-width="4" />
+    </g>
+
+    <!-- Saturn-like Planet (Top Right) -->
+    <g id="saturn-planet">
+      <!-- Back Ring -->
+      <path d="M 565 215 Q 650 175 735 215" fill="none" stroke="black" stroke-width="5" />
+      <!-- Planet Body -->
+      <circle cx="650" cy="220" r="55" fill="white" stroke="black" stroke-width="5" />
+      <!-- Front Ring -->
+      <path d="M 565 215 Q 650 255 735 215 Q 650 225 565 215 Z" fill="white" stroke="black" stroke-width="5" />
+    </g>
+
+    <!-- Cratered Moon (Bottom Left) -->
+    <g id="crater-moon">
+      <circle cx="150" cy="800" r="70" fill="white" stroke="black" stroke-width="5" />
+      <circle cx="120" cy="770" r="12" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="175" cy="830" r="16" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="115" cy="835" r="8" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="170" cy="775" r="8" fill="white" stroke="black" stroke-width="3" />
+    </g>
+
+    <!-- Small Ringed Planet (Bottom Right) -->
+    <g id="small-planet">
+      <circle cx="680" cy="800" r="30" fill="white" stroke="black" stroke-width="5" />
+      <!-- Back Ring -->
+      <path d="M 645 800 Q 680 775 715 800" fill="none" stroke="black" stroke-width="4" />
+      <!-- Front Ring -->
+      <path d="M 645 800 Q 680 825 715 800 Q 680 805 645 800 Z" fill="white" stroke="black" stroke-width="4" />
+    </g>
+
+    <!-- Shooting Star (Top Left) -->
+    <g id="shooting-star">
+      <path d="M 60 280 Q 35 260 10 250" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+      <path d="M 70 295 Q 45 275 20 265" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+      <path d="M 75 315 Q 50 295 25 285" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" />
+      <g transform="translate(100, 320) rotate(-20)">
+        <use href="#sparkle" x="0" y="0" />
+      </g>
+    </g>
+
+    <!-- Floating Stars (Placed around to fill space nicely) -->
+    <g transform="translate(420, 100) scale(0.8)"><use href="#sparkle" /></g>
+    <g transform="translate(710, 450) scale(1)"><use href="#sparkle" /></g>
+    <g transform="translate(380, 850) scale(0.9)"><use href="#sparkle" /></g>
+    <g transform="translate(70, 520) scale(1.1)"><use href="#sparkle" /></g>
+    
+    <g transform="translate(400, 280) scale(0.7)"><use href="#star5" /></g>
+    <g transform="translate(700, 320) scale(0.9)"><use href="#star5" /></g>
+    <g transform="translate(300, 220) scale(0.8)"><use href="#star5" /></g>
+    <g transform="translate(500, 820) scale(0.7)"><use href="#star5" /></g>
+    <g transform="translate(320, 750) scale(0.6)"><use href="#star5" /></g>
+
+    <!-- Tiny Space Bubbles -->
+    <use href="#bubble" x="220" y="260" />
+    <use href="#bubble" x="590" y="300" />
+    <use href="#bubble" x="630" y="720" />
+    <use href="#bubble" x="240" y="780" />
+    <use href="#bubble" x="480" y="900" />
+    <use href="#bubble" x="100" y="680" />
+  </g>
+
+  <!-- COSY ASTRONAUT TETHER (Connecting the two) -->
+  <path d="M 340 630 Q 400 670 460 670 L 460 682 Q 400 682 340 642 Z" fill="white" stroke="black" stroke-width="5" />
+
+  <!-- CAT ASTRONAUT (Left) -->
+  <g id="cat-astronaut">
+    <!-- Backpack -->
+    <rect x="185" y="510" width="45" height="130" rx="15" fill="white" stroke="black" stroke-width="5" />
+    
+    <!-- Left Leg -->
+    <rect x="235" y="660" width="40" height="80" rx="20" fill="white" stroke="black" stroke-width="5" />
+    <path d="M 235 710 L 275 710" stroke="black" stroke-width="4" />
+
+    <!-- Right Leg -->
+    <rect x="285" y="660" width="40" height="80" rx="20" fill="white" stroke="black" stroke-width="5" />
+    <path d="M 285 710 L 325 710" stroke="black" stroke-width="4" />
+
+    <!-- Flag (Drawn behind the hand/arm) -->
+    <g id="flag">
+      <rect x="135" y="380" width="10" height="230" rx="5" fill="white" stroke="black" stroke-width="5" />
+      <circle cx="140" cy="375" r="10" fill="white" stroke="black" stroke-width="5" />
+      <path d="M 145 385 L 60 425 L 145 465 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    </g>
+
+    <!-- Left Arm -->
+    <rect x="150" y="550" width="80" height="30" rx="15" transform="rotate(-20 190 565)" fill="white" stroke="black" stroke-width="5" />
+    <!-- Left Hand -->
+    <circle cx="145" cy="545" r="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Right Arm (Waving) -->
+    <rect x="310" y="550" width="80" height="30" rx="15" transform="rotate(20 350 565)" fill="white" stroke="black" stroke-width="5" />
+    <!-- Right Hand -->
+    <circle cx="395" cy="545" r="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Torso -->
+    <rect x="220" y="550" width="120" height="130" rx="40" fill="white" stroke="black" stroke-width="5" />
+    <!-- Crescent Moon Chest Patch -->
+    <path d="M 272 610 A 10 10 0 0 0 288 626 A 12 12 0 0 1 272 610 Z" fill="white" stroke="black" stroke-width="3" />
+
+    <!-- Space Helmet Collar -->
+    <ellipse cx="280" cy="550" rx="55" ry="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Helmet Outer -->
+    <circle cx="280" cy="445" r="100" fill="white" stroke="black" stroke-width="5" />
+    <!-- Helmet Visor Inner -->
+    <circle cx="280" cy="445" r="80" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Cat Head Inside Visor -->
+    <g id="cat-head">
+      <!-- Ears (Drawn behind head circle? We draw them with white fill overlapping) -->
+      <path d="M 230 415 L 210 365 L 255 395 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 233 405 L 220 375 L 245 393" fill="none" stroke="black" stroke-width="3" />
+
+      <path d="M 330 415 L 350 365 L 305 395 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 327 405 L 340 375 L 315 393" fill="none" stroke="black" stroke-width="3" />
+
+      <!-- Head Base -->
+      <circle cx="280" cy="455" r="60" fill="white" stroke="black" stroke-width="4" />
+
+      <!-- Eyes -->
+      <circle cx="255" cy="445" r="10" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="255" cy="445" r="4" fill="black" />
+      
+      <circle cx="305" cy="445" r="10" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="305" cy="445" r="4" fill="black" />
+
+      <!-- Nose -->
+      <polygon points="276,460 284,460 280,465" fill="black" stroke="black" stroke-width="2" />
+
+      <!-- Smile -->
+      <path d="M 270 472 Q 280 480 280 472 Q 280 480 290 472" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" />
+
+      <!-- Cute Whiskers -->
+      <path d="M 230 460 L 210 458" stroke="black" stroke-width="3" stroke-linecap="round" />
+      <path d="M 230 468 L 208 470" stroke="black" stroke-width="3" stroke-linecap="round" />
+      <path d="M 330 460 L 350 458" stroke="black" stroke-width="3" stroke-linecap="round" />
+      <path d="M 330 468 L 352 470" stroke="black" stroke-width="3" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- DOG ASTRONAUT (Right) -->
+  <g id="dog-astronaut">
+    <!-- Backpack -->
+    <rect x="570" y="550" width="45" height="130" rx="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Left Leg -->
+    <rect x="475" y="700" width="40" height="80" rx="20" fill="white" stroke="black" stroke-width="5" />
+    <path d="M 475 750 L 515 750" stroke="black" stroke-width="4" />
+
+    <!-- Right Leg -->
+    <rect x="525" y="700" width="40" height="80" rx="20" fill="white" stroke="black" stroke-width="5" />
+    <path d="M 525 750 L 565 750" stroke="black" stroke-width="4" />
+
+    <!-- Left Arm (Waving/Floating) -->
+    <rect x="410" y="590" width="80" height="30" rx="15" transform="rotate(-20 450 605)" fill="white" stroke="black" stroke-width="5" />
+    <!-- Left Hand -->
+    <circle cx="405" cy="585" r="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Right Arm (Holding Telescope) -->
+    <rect x="490" y="560" width="70" height="30" rx="15" transform="rotate(-60 525 575)" fill="white" stroke="black" stroke-width="5" />
+    <!-- Right Hand -->
+    <circle cx="538" cy="512" r="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Torso -->
+    <rect x="460" y="590" width="120" height="130" rx="40" fill="white" stroke="black" stroke-width="5" />
+    <!-- Heart Chest Patch -->
+    <path d="M 520 632 C 515 627, 510 632, 520 642 C 530 632, 525 627, 520 632 Z" fill="white" stroke="black" stroke-width="3" />
+
+    <!-- Space Helmet Collar -->
+    <ellipse cx="520" cy="590" rx="55" ry="15" fill="white" stroke="black" stroke-width="5" />
+
+    <!-- Helmet Outer -->
+    <circle cx="520" cy="485" r="100" fill="white" stroke="black" stroke-width="5" />
+    <!-- Helmet Visor Inner -->
+    <circle cx="520" cy="485" r="80" fill="white" stroke="black" stroke-width="4" />
+
+    <!-- Dog Head Inside Visor -->
+    <g id="dog-head">
+      <!-- Floppy Ears (Drawn first so head overlaps them beautifully) -->
+      <path d="M 465 475 C 435 475, 430 540, 460 540 C 475 540, 478 505, 465 475" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 575 475 C 605 475, 610 540, 580 540 C 565 540, 562 505, 575 475" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+
+      <!-- Head Base -->
+      <circle cx="520" cy="495" r="60" fill="white" stroke="black" stroke-width="4" />
+
+      <!-- Left Eye -->
+      <circle cx="495" cy="485" r="10" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="495" cy="485" r="4" fill="black" />
+
+      <!-- Right Eye -->
+      <circle cx="545" cy="485" r="10" fill="white" stroke="black" stroke-width="4" />
+      <circle cx="545" cy="485" r="4" fill="black" />
+
+      <!-- Snout -->
+      <ellipse cx="520" cy="513" rx="20" ry="12" fill="white" stroke="black" stroke-width="4" />
+      <!-- Nose -->
+      <ellipse cx="520" cy="507" rx="9" ry="5" fill="black" stroke="black" stroke-width="2" />
+      <!-- Mouth & Tongue -->
+      <path d="M 510 518 Q 520 526 530 518" fill="none" stroke="black" stroke-width="3" />
+      <path d="M 515 520 C 515 532, 525 532, 525 520 Z" fill="white" stroke="black" stroke-width="3" />
+    </g>
+
+    <!-- Telescope (Drawn in front of the face/visor) -->
+    <g id="telescope">
+      <path d="M 545 490 L 640 460 L 645 478 L 550 508 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+      <!-- Telescope Stripe Details -->
+      <path d="M 585 477 L 590 493" stroke="black" stroke-width="4" />
+      <path d="M 615 467 L 620 483" stroke="black" stroke-width="4" />
+      <!-- Flared Lens End -->
+      <path d="M 640 460 L 650 457 L 655 481 L 645 478 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- THICK BORDER (To Frame the Coloring Page) -->
+  <rect x="20" y="20" width="760" height="960" rx="30" fill="none" stroke="black" stroke-width="12" />
+</svg>
