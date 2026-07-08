@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background Color (Pure White) -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- Ground / Sand Lines -->
+  <g id="ground">
+    <path d="M 30,950 C 220,970 580,930 770,950" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 50,965 C 300,980 500,960 750,965" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- BACKGROUND LAYER: Tall Seaweed / Kelp -->
+  <g id="background-kelp">
+    <!-- Left Kelp -->
+    <path d="M 90,950 C 60,820 160,740 110,610 C 150,720 110,830 150,950" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 140,950 C 110,840 200,780 170,660 C 200,760 160,860 195,950" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Right Kelp -->
+    <path d="M 650,950 C 620,830 710,730 680,580 C 720,710 660,840 690,950" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- MIDDLE LAYER: Cute Peeking Characters in Reef -->
+  <g id="peeking-characters">
+    <!-- Left Cute Peeking Fish -->
+    <g id="peeking-fish-left">
+      <path d="M 120,740 L 100,720 C 110,740 110,750 100,770 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 120,750 C 130,700 190,700 210,735 C 220,750 210,780 180,785 C 150,785 130,775 120,750 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+      <circle cx="185" cy="735" r="14" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="190" cy="735" r="6" fill="black"/>
+      <path d="M 205,752 C 200,760 195,758 192,754" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 150,713 C 160,695 175,695 180,710" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+    <!-- Right Cute Peeking Fish -->
+    <g id="peeking-fish-right">
+      <path d="M 640,730 C 610,730 590,760 590,790 C 590,820 620,840 650,830" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="615" cy="765" r="12" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="612" cy="765" r="5" fill="black"/>
+      <path d="M 635,785 C 645,785 645,800 635,800 Z" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- FOREGROUND LAYER: Main Coral Structures -->
+  <g id="coral-reef">
+    <!-- Center-Left Bumpy Coral -->
+    <path d="M 210,950 C 190,910 200,870 230,850 C 220,810 260,770 290,790 C 320,760 380,770 380,820 C 410,810 450,830 440,880 C 460,910 440,950 420,950 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Easy-to-color texture circles on Bumpy Coral -->
+    <circle cx="250" cy="880" r="12" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="300" cy="830" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="360" cy="850" r="10" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="410" cy="890" r="14" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="310" cy="900" r="18" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Right Branching Staghorn Coral (Simplified, Thick) -->
+    <path d="M 520,950 L 520,830 C 520,800 490,780 490,750 C 490,720 520,710 530,730 C 540,750 540,780 550,800 C 570,770 590,740 590,700 C 590,670 620,670 620,700 C 620,740 580,790 580,820 L 580,840 C 600,820 630,800 640,770 C 650,740 680,750 670,780 C 660,810 620,850 610,870 L 610,950 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- Snail on the Bumpy Coral -->
+  <g id="snail">
+    <path d="M 230,840 C 220,840 210,835 210,825 C 210,820 220,815 235,820 C 240,820 250,830 260,830 C 270,830 275,835 270,840 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="245" cy="815" r="18" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M 245,815 A 9 9 0 0 0 245,825 A 5 5 0 0 0 245,818" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M 215,820 L 210,810" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 220,818 L 218,808" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sea Star (Starfish) sitting on the bottom -->
+  <g id="starfish">
+    <path d="M 330,860 C 335,885 365,890 380,895 C 365,910 360,940 370,955 C 350,945 325,945 305,955 C 310,940 305,910 290,895 C 305,890 325,885 330,860 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Cute Starfish Face -->
+    <circle cx="325" cy="910" r="5" fill="black"/>
+    <circle cx="345" cy="910" r="5" fill="black"/>
+    <path d="M 331,918 C 335,922 340,922 344,918" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="318" cy="914" r="2" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="352" cy="914" r="2" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- Cute Sea Shell at the bottom -->
+  <g id="seashell">
+    <path d="M 460,950 C 440,930 450,890 480,890 C 510,890 520,930 500,950 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 480,890 L 480,950" stroke="black" stroke-width="3"/>
+    <path d="M 480,890 Q 465,910 470,950" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M 480,890 Q 495,910 490,950" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Pebbles on Sea Floor -->
+  <g id="floor-pebbles">
+    <ellipse cx="180" cy="960" rx="15" ry="8" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="220" cy="965" rx="10" ry="5" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="450" cy="962" rx="12" ry="6" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="630" cy="961" rx="16" ry="7" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- MAIN CHARACTER: Happy Tropical Fish -->
+  <g id="main-fish">
+    <!-- Fins (Rendered behind body using layered overlapping) -->
+    <!-- Tail Fin -->
+    <path d="M 300,450 L 160,350 C 190,420 190,480 160,550 Z" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round"/>
+    <!-- Tail Fin Ribs -->
+    <path d="M 250,450 L 180,410" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 250,450 L 175,450" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 250,450 L 180,490" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Dorsal Fin (Top) -->
+    <path d="M 350,350 C 330,230 480,210 500,340" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round"/>
+    <!-- Dorsal Fin Stripes -->
+    <path d="M 380,310 C 380,280 410,260 430,250" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 420,330 C 430,290 450,270 470,260" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Ventral Fin (Bottom) -->
+    <path d="M 360,550 C 340,650 420,660 440,560" fill="white" stroke="black" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 380,580 C 380,610 400,620 410,630" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Main Body Ellipse (Covers the fin inner joints perfectly) -->
+    <ellipse cx="420" cy="450" rx="160" ry="120" fill="white" stroke="black" stroke-width="6" />
+
+    <!-- Gill Line -->
+    <path d="M 420,380 C 390,420 390,480 420,520" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Body Stripe (Thick, Simple for Toddlers) -->
+    <path d="M 340,360 C 370,420 310,480 340,540" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 290,395 C 310,430 280,470 290,505" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Pectoral Fin (Front of Body) -->
+    <path d="M 410,470 C 410,530 460,540 470,490 C 460,470 430,465 410,470 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 425,485 Q 450,495 455,500" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 425,495 Q 445,510 450,515" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Cute Big Cartoon Eye -->
+    <circle cx="500" cy="410" r="38" fill="white" stroke="black" stroke-width="5"/>
+    <circle cx="512" cy="405" r="18" fill="black"/>
+    <!-- Eye Highlights -->
+    <circle cx="518" cy="397" r="6" fill="white"/>
+    <circle cx="506" cy="413" r="3" fill="white"/>
+    <!-- Eyelash / Eyebrow -->
+    <path d="M 470,365 Q 500,355 530,375" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Happy Smile with Dimple -->
+    <path d="M 540,470 C 530,505 495,500 485,480" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 543,478 C 546,470 543,462 537,465" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- BUBBLES: Floating Upwards -->
+  <g id="bubbles">
+    <!-- Bubble 1 (Right, near mouth) -->
+    <g class="bubble">
+      <circle cx="610" cy="430" r="24" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 600,416 A 14 14 0 0 1 622,424" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 2 (Right, higher) -->
+    <g class="bubble">
+      <circle cx="650" cy="350" r="16" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 643,341 A 9 9 0 0 1 658,346" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 3 (Center Top) -->
+    <g class="bubble">
+      <circle cx="450" cy="180" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M 437,163 A 18 18 0 0 1 465,172" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 4 (Center Top, smaller) -->
+    <g class="bubble">
+      <circle cx="490" cy="110" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 482,100 A 10 10 0 0 1 498,105" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 5 (Left Middle) -->
+    <g class="bubble">
+      <circle cx="220" cy="320" r="22" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 211,308 A 13 13 0 0 1 231,315" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 6 (Left Higher) -->
+    <g class="bubble">
+      <circle cx="170" cy="230" r="14" fill="white" stroke="black" stroke-width="3.5"/>
+      <path d="M 164,222 A 8 8 0 0 1 177,226" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 7 (Bottom/Mid Rising) -->
+    <g class="bubble">
+      <circle cx="300" cy="580" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 291,569 A 11 11 0 0 1 310,575" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Bubble 8 (Bottom/Mid Rising, tiny) -->
+    <g class="bubble">
+      <circle cx="330" cy="640" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M 326,634 A 6 6 0 0 1 335,637" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- THICK BORDER (Keeps the coloring page clean and framed) -->
+  <rect x="30" y="30" width="740" height="940" rx="20" ry="20" fill="none" stroke="black" stroke-width="8" />
+</svg>
