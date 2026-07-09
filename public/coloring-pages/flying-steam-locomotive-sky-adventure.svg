@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- White background to ensure clean coloring page canvas -->
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- ================= BACKGROUND SKY ELEMENTS ================= -->
+  <!-- Whimsical Stars & Sparkles -->
+  <g stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Star 1 (Top Left) -->
+    <g transform="translate(140, 220) scale(1.2)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+    <!-- Star 2 (Top Right) -->
+    <g transform="translate(680, 160) scale(1.5)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+    <!-- Star 3 (Middle Right) -->
+    <g transform="translate(670, 380) scale(0.9)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+    <!-- Star 4 (Middle Left) -->
+    <g transform="translate(100, 480) scale(1.1)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+    <!-- Star 5 (Bottom Mid-Left) -->
+    <g transform="translate(380, 750) scale(0.8)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+    <!-- Star 6 (Bottom Right) -->
+    <g transform="translate(710, 710) scale(1.3)">
+      <path d="M 0 -25 L 7 -7 L 25 -5 L 11 7 L 15 25 L 0 15 L -15 25 L -11 7 L -25 -5 L -7 -7 Z" />
+    </g>
+
+    <!-- Four-Point Sparkle 1 -->
+    <g transform="translate(560, 100) scale(1.3)">
+      <path d="M 0 -20 Q 0 0 20 0 Q 0 0 0 20 Q 0 0 -20 0 Q 0 0 0 -20 Z" />
+    </g>
+    <!-- Four-Point Sparkle 2 -->
+    <g transform="translate(270, 290) scale(1.0)">
+      <path d="M 0 -20 Q 0 0 20 0 Q 0 0 0 20 Q 0 0 -20 0 Q 0 0 0 -20 Z" />
+    </g>
+    <!-- Four-Point Sparkle 3 -->
+    <g transform="translate(80, 700) scale(1.1)">
+      <path d="M 0 -20 Q 0 0 20 0 Q 0 0 0 20 Q 0 0 -20 0 Q 0 0 0 -20 Z" />
+    </g>
+  </g>
+
+  <!-- ================= LOW WHIMSICAL CLOUDS ================= -->
+  <!-- Cloud B (Bottom Left) -->
+  <g stroke="black" stroke-width="8" stroke-linejoin="round" fill="white">
+    <path d="M 90 850 C 90 800, 150 800, 170 820 C 190 780, 260 780, 280 820 C 300 800, 350 800, 350 850 C 370 850, 390 880, 370 910 C 350 940, 310 940, 290 940 L 150 940 C 110 940, 70 930, 70 900 C 50 880, 70 850, 90 850 Z" />
+  </g>
+  <!-- Happy Face on Cloud B -->
+  <g stroke="black" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M 195 855 Q 205 845 215 855" />
+    <path d="M 245 855 Q 255 845 265 855" />
+    <path d="M 215 875 Q 230 890 245 875" />
+  </g>
+
+  <!-- Cloud A (Bottom Right) -->
+  <g stroke="black" stroke-width="8" stroke-linejoin="round" fill="white">
+    <path d="M 450 880 C 450 830, 510 830, 530 850 C 550 810, 620 810, 640 850 C 660 830, 710 830, 710 880 C 730 880, 750 910, 730 940 C 710 970, 670 970, 650 970 L 510 970 C 470 970, 430 960, 430 930 C 410 910, 430 880, 450 880 Z" />
+  </g>
+  <!-- Sleeping Face on Cloud A -->
+  <g stroke="black" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M 545 885 Q 555 898 565 885" />
+    <path d="M 595 885 Q 605 898 615 885" />
+    <path d="M 572 910 Q 580 917 588 910" />
+  </g>
+
+  <!-- ================= STEAM LOCOMOTIVE SMOKE TRAIL ================= -->
+  <!-- Smoke Puffs merging into Clouds (Ordered back to front) -->
+  <g stroke="black" stroke-width="8" stroke-linejoin="round" fill="white">
+    <!-- Giant Leftmost Puff -->
+    <circle cx="180" cy="140" r="85" />
+    <circle cx="110" cy="180" r="40" />
+    
+    <!-- Large Middle-Left Puff -->
+    <circle cx="290" cy="160" r="65" />
+    <circle cx="220" cy="220" r="35" />
+    <circle cx="320" cy="110" r="30" />
+
+    <!-- Medium Middle-Right Puff -->
+    <circle cx="370" cy="200" r="50" />
+    
+    <!-- Small Puff near Stack -->
+    <circle cx="440" cy="250" r="38" />
+    <circle cx="470" cy="215" r="20" />
+  </g>
+
+  <!-- ================= THE LOCOMOTIVE ================= -->
+  <!-- Far Wing (Rendered behind the Cab for depth) -->
+  <path d="M 190 380 C 150 340, 110 350, 90 390 C 110 405, 140 410, 170 395" stroke="black" stroke-width="8" stroke-linejoin="round" fill="white" />
+
+  <!-- Cab Outer Shell -->
+  <rect x="150" y="360" width="180" height="240" rx="15" stroke="black" stroke-width="8" fill="white" />
+
+  <!-- Cab Window -->
+  <rect x="190" y="400" width="100" height="100" rx="20" stroke="black" stroke-width="8" fill="white" />
+
+  <!-- Cab Curved Roof -->
+  <path d="M 130 360 C 130 320, 350 320, 350 360 Z" stroke="black" stroke-width="8" stroke-linejoin="round" fill="white" />
+
+  <!-- Boiler Side Body -->
+  <rect x="330" y="440" width="200" height="160" rx="15" stroke="black" stroke-width="8" fill="white" />
+
+  <!-- Boiler Front (Face Plate) -->
+  <circle cx="530" cy="520" r="80" stroke="black" stroke-width="8" fill="white" />
+
+  <!-- Smokestack -->
+  <path d="M 390 440 L 400 330 L 440 330 L 450 440 Z" stroke="black" stroke-width="8" stroke-linejoin="round" fill="white" />
+  <rect x="385" y="310" width="70" height="20" rx="10" stroke="black" stroke-width="8" fill="white" />
+
+  <!-- Cute Locomotive Face Details -->
+  <!-- Left Eye -->
+  <circle cx="500" cy="495" r="14" stroke="black" stroke-width="5" fill="white" />
+  <circle cx="502" cy="497" r="6" fill="black" stroke="none" />
+  <!-- Right Eye -->
+  <circle cx="560" cy="495" r="14" stroke="black" stroke-width="5" fill="white" />
+  <circle cx="558" cy="497" r="6" fill="black" stroke="none" />
+  <!-- Eyebrows -->
+  <path d="M 485 475 Q 500 465 515 475" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M 545 475 Q 560 465 575 475" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" />
+  <!-- Rosy Cheeks -->
+  <circle cx="465" cy="530" r="10" stroke="black" stroke-width="4" fill="white" />
+  <circle cx="595" cy="530" r="10" stroke="black" stroke-width="4" fill="white" />
+  <!-- Happy Open Mouth with Tongue -->
+  <path d="M 495 535 Q 530 580 565 535 Z" stroke="black" stroke-width="6" stroke-linejoin="round" fill="white" />
+  <path d="M 515 562 Q 530 550 545 562" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Headlight (Lantern) -->
+  <path d="M 530 440 L 530 420" stroke="black" stroke-width="8" fill="none" />
+  <rect x="510" y="380" width="40" height="40" rx="8" stroke="black" stroke-width="8" fill="white" />
+  <!-- Light Beams -->
+  <path d="M 550 390 L 580 375" stroke="black" stroke-width="6" stroke-linecap="round" />
+  <path d="M 550 410 L 580 425" stroke="black" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Near Wing (Beautifully overlapping Cab and Boiler) -->
+  <path d="M 330 490 C 250 430, 180 460, 150 510 C 150 540, 180 550, 200 530 C 190 560, 220 570, 240 540 C 230 580, 260 580, 290 540 L 330 520 Z" stroke="black" stroke-width="8" stroke-linejoin="round" fill="white" />
+  <!-- Wing Feather Details -->
+  <path d="M 200 530 C 230 520, 280 510, 310 510" stroke="black" stroke-width="5" fill="none" />
+  <path d="M 240 540 C 270 530, 300 520, 320 520" stroke="black" stroke-width="5" fill="none" />
+
+  <!-- Bumper / Cowcatcher (Front Bottom) -->
+  <path d="M 530 590 L 630 590 C 650 590, 650 620, 630 630 L 550 630 C 530 630, 530 590, 530 590 Z" stroke="black" stroke-width="8" stroke-linejoin="round" fill="white" />
+
+  <!-- ================= WHEELS & CONNECTING RODS ================= -->
+  <!-- Back Wheel (Large) -->
+  <g stroke="black" stroke-width="8" fill="white">
+    <circle cx="240" cy="650" r="65" />
+    <circle cx="240" cy="650" r="40" stroke-width="5" />
+    <circle cx="240" cy="650" r="15" stroke-width="5" />
+    <!-- Spokes -->
+    <line x1="240" y1="585" x2="240" y2="715" stroke-width="5" />
+    <line x1="175" y1="650" x2="305" y2="650" stroke-width="5" />
+  </g>
+
+  <!-- Middle Wheel (Medium) -->
+  <g stroke="black" stroke-width="8" fill="white">
+    <circle cx="380" cy="650" r="55" />
+    <circle cx="380" cy="650" r="32" stroke-width="5" />
+    <circle cx="380" cy="650" r="12" stroke-width="5" />
+    <!-- Spokes -->
+    <line x1="380" y1="595" x2="380" y2="705" stroke-width="5" />
+    <line x1="325" y1="650" x2="435" y2="650" stroke-width="5" />
+  </g>
+
+  <!-- Front Wheel (Medium) -->
+  <g stroke="black" stroke-width="8" fill="white">
+    <circle cx="510" cy="650" r="55" />
+    <circle cx="510" cy="650" r="32" stroke-width="5" />
+    <circle cx="510" cy="650" r="12" stroke-width="5" />
+    <!-- Spokes -->
+    <line x1="510" y1="595" x2="510" y2="705" stroke-width="5" />
+    <line x1="455" y1="650" x2="565" y2="650" stroke-width="5" />
+  </g>
+
+  <!-- Connecting Side Rod (Overlaps wheels) -->
+  <rect x="220" y="640" width="310" height="20" rx="10" stroke="black" stroke-width="8" fill="white" />
+  
+  <!-- Joint Caps on Wheels -->
+  <circle cx="240" cy="650" r="7" fill="white" stroke="black" stroke-width="5" />
+  <circle cx="380" cy="650" r="7" fill="white" stroke="black" stroke-width="5" />
+  <circle cx="510" cy="650" r="7" fill="white" stroke="black" stroke-width="5" />
+
+</svg>
