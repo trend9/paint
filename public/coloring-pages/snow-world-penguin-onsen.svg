@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Snowy Landscape -->
+  <g id="snowy-landscape" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main snow ground -->
+    <path d="M0 650 C200 600, 600 600, 800 650 V1000 H0 Z" />
+    <!-- Distant snowy hill 1 -->
+    <path d="M-50 450 C150 400, 300 450, 450 400 S700 350, 850 400 V650 H-50 Z" />
+    <!-- Distant snowy hill 2 -->
+    <path d="M-50 350 C100 300, 250 350, 400 300 S650 250, 850 300 V400 H-50 Z" />
+  </g>
+
+  <!-- Hot Spring -->
+  <g id="hot-spring" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Pool shape -->
+    <ellipse cx="400" cy="700" rx="280" ry="100" />
+    <!-- Steam lines - fill="none" because they are just outlines -->
+    <path d="M200 600 C250 550, 300 550, 350 600" fill="none" stroke-width="4"/>
+    <path d="M400 600 C450 550, 500 550, 550 600" fill="none" stroke-width="4"/>
+    <path d="M600 600 C650 550, 700 550, 750 600" fill="none" stroke-width="4"/>
+    <path d="M220 580 C270 530, 320 530, 370 580" fill="none" stroke-width="4"/>
+    <path d="M420 580 C470 530, 520 530, 570 580" fill="none" stroke-width="4"/>
+    <path d="M620 580 C670 530, 720 530, 770 580" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (towel) -->
+    <g id="penguin-towel" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Body -->
+      <ellipse cx="300" cy="780" rx="80" ry="100" />
+      <!-- Belly -->
+      <ellipse cx="300" cy="800" rx="50" ry="70" />
+      <!-- Head -->
+      <ellipse cx="300" cy="690" rx="60" ry="50" />
+      <!-- Beak -->
+      <path d="M290 700 L300 715 L310 700 Z" fill="white" />
+      <!-- Eyes -->
+      <circle cx="280" cy="680" r="8" />
+      <circle cx="320" cy="680" r="8" />
+      <!-- Wings -->
+      <path d="M240 760 C220 740, 220 780, 240 800 Z" />
+      <path d="M360 760 C380 740, 380 780, 360 800 Z" />
+      <!-- Towel on head -->
+      <rect x="270" y="620" width="60" height="40" rx="10" ry="10" />
+      <path d="M270 660 C260 670, 280 670, 290 660" fill="none" stroke-width="3"/>
+      <path d="M300 660 C290 670, 310 670, 320 660" fill="none" stroke-width="3"/>
+    </g>
+
+    <!-- Penguin 2 (drinking) -->
+    <g id="penguin-drinking" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Body -->
+      <ellipse cx="550" cy="790" rx="90" ry="110" />
+      <!-- Belly -->
+      <ellipse cx="550" cy="810" rx="60" ry="80" />
+      <!-- Head -->
+      <ellipse cx="550" cy="700" rx="65" ry="55" />
+      <!-- Beak -->
+      <path d="M540 710 L550 725 L560 710 Z" fill="white" />
+      <!-- Eyes -->
+      <circle cx="530" cy="690" r="8" />
+      <circle cx="570" cy="690" r="8" />
+      <!-- Wings -->
+      <path d="M480 770 C460 750, 460 790, 480 810 Z" />
+      <path d="M620 770 C640 750, 640 790, 620 810 Z" />
+      <!-- Drink/cup -->
+      <rect x="610" y="740" width="30" height="40" rx="5" ry="5" stroke-width="3" />
+      <!-- Straw -->
+      <line x1="625" y1="740" x2="625" y2="700" stroke="black" stroke-width="3" />
+    </g>
+  </g>
+
+  <!-- Snow Bunny -->
+  <g id="snow-bunny" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="120" cy="880" rx="40" ry="30" />
+    <!-- Head -->
+    <ellipse cx="120" cy="830" rx="30" ry="25" />
+    <!-- Ears -->
+    <ellipse cx="105" cy="795" rx="10" ry="30" transform="rotate(-15 105 795)" />
+    <ellipse cx="135" cy="795" rx="10" ry="30" transform="rotate(15 135 795)" />
+    <!-- Eyes -->
+    <circle cx="110" cy="825" r="4" />
+    <circle cx="130" cy="825" r="4" />
+    <!-- Nose -->
+    <circle cx="120" cy="835" r="3" />
+    <!-- Tail -->
+    <circle cx="155" cy="875" r="10" />
+  </g>
+
+  <!-- Simple Ice Floes (within the hot spring, but outside the penguin area, or on the edges) -->
+  <g id="ice-floes" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 710 C130 690, 160 680, 180 690 S200 700, 180 720 C160 740, 140 730, 150 710 Z" />
+    <path d="M650 690 C670 670, 700 680, 720 690 S740 700, 720 720 C700 740, 680 730, 650 690 Z" />
+  </g>
+
+  <!-- Snowflakes (scattered) -->
+  <g id="snowflakes" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 100 L100 120 M90 110 L110 110 M95 105 L105 115 M95 115 L105 105 Z" />
+    <path d="M300 50 L300 70 M290 60 L310 60 M295 55 L305 65 M295 65 L305 55 Z" />
+    <path d="M600 80 L600 100 M590 90 L610 90 M595 85 L605 95 M595 95 L605 85 Z" />
+    <path d="M700 200 L700 220 M690 210 L710 210 M695 205 L705 215 M695 215 L705 205 Z" />
+    <path d="M50 250 L50 270 M40 260 L60 260 M45 255 L55 265 M45 265 L55 255 Z" />
+    <path d="M450 150 L450 170 M440 160 L460 160 M445 155 L455 165 M445 165 L455 155 Z" />
+    <path d="M200 300 L200 320 M190 310 L210 310 M195 305 L205 315 M195 315 L205 305 Z" />
+  </g>
+</svg>
