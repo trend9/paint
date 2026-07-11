@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+    <defs>
+        <!-- Daisy Template -->
+        <g id="daisy_template">
+            <!-- Center -->
+            <circle cx="0" cy="0" r="25" fill="white" stroke="black" stroke-width="4"/>
+            <!-- Petals -->
+            <g>
+                <ellipse cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(45)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(90)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(135)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(180)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(225)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(270)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+                <ellipse transform="rotate(315)" cx="0" cy="-40" rx="20" ry="30" fill="white" stroke="black" stroke-width="4"/>
+            </g>
+            <!-- Stem -->
+            <path d="M 0 25 L 0 150" fill="none" stroke="black" stroke-width="4"/>
+            <!-- Leaf -->
+            <path d="M 0 100 Q -30 90 -40 120 Q -50 150 0 140 Z" fill="white" stroke="black" stroke-width="4"/>
+        </g>
+
+        <!-- Tulip Template -->
+        <g id="tulip_template">
+            <!-- Flower head (cup shape) -->
+            <path d="M 40 0 C 70 0 90 30 80 60 L 40 80 L 0 60 C -10 30 10 0 40 0 Z" fill="white" stroke="black" stroke-width="4"/>
+            <!-- Stem -->
+            <path d="M 40 80 L 40 180" fill="none" stroke="black" stroke-width="4"/>
+            <!-- Leaf -->
+            <path d="M 40 130 C 20 110 10 130 10 160 L 10 210 C 20 230 40 210 40 180 Z" fill="white" stroke="black" stroke-width="4"/>
+        </g>
+
+        <!-- Clover Template -->
+        <g id="clover_template">
+            <!-- Three leaves combined into one path for solid coloring -->
+            <path d="M 0 0 C -25 -35 -40 -10 -15 0 C -35 25 -25 50 0 40 C 25 50 35 25 15 0 C 40 -10 25 -35 0 0 Z" fill="white" stroke="black" stroke-width="4"/>
+            <!-- Stem -->
+            <path d="M 0 40 L 0 100" fill="none" stroke="black" stroke-width="4"/>
+        </g>
+    </defs>
+
+    <!-- Ground -->
+    <path d="M -50 800 Q 200 750 400 800 Q 600 850 850 800 V 1050 H -50 Z" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Ladybug -->
+    <g id="ladybug">
+        <!-- Body -->
+        <ellipse cx="400" cy="350" rx="100" ry="120" fill="white" stroke="black" stroke-width="4"/>
+        <!-- Head -->
+        <circle cx="400" cy="200" r="70" fill="white" stroke="black" stroke-width="4"/>
+        <!-- Eyes -->
+        <circle cx="370" cy="185" r="15" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="430" cy="185" r="15" fill="white" stroke="black" stroke-width="4"/>
+        <!-- Smile -->
+        <path d="M 370 220 Q 400 240 430 220" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+        <!-- Antennae -->
+        <path d="M 370 145 Q 350 100 320 130" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="320" cy="130" r="8" fill="white" stroke="black" stroke-width="4"/>
+        <path d="M 430 145 Q 450 100 480 130" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="480" cy="130" r="8" fill="white" stroke="black" stroke-width="4"/>
+        <!-- Spots -->
+        <circle cx="350" cy="300" r="30" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="450" cy="300" r="30" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="400" cy="400" r="30" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Field of Flowers -->
+    <g id="flower_field">
+        <!-- Daisies -->
+        <use href="#daisy_template" transform="translate(100, 700) scale(0.9)"/>
+        <use href="#daisy_template" transform="translate(700, 720) scale(0.8)"/>
+        <use href="#daisy_template" transform="translate(250, 850) scale(0.7)"/>
+
+        <!-- Tulips -->
+        <use href="#tulip_template" transform="translate(300, 650) scale(1)"/>
+        <use href="#tulip_template" transform="translate(580, 700) scale(0.9)"/>
+        <use href="#tulip_template" transform="translate(180, 780) scale(0.8)"/>
+
+        <!-- Clovers -->
+        <use href="#clover_template" transform="translate(50, 880) scale(1.2)"/>
+        <use href="#clover_template" transform="translate(400, 880) scale(1)"/>
+        <use href="#clover_template" transform="translate(650, 850) scale(0.9)"/>
+        <use href="#clover_template" transform="translate(750, 900) scale(0.7)"/>
+        <use href="#clover_template" transform="translate(200, 920) scale(1.1)"/>
+    </g>
+</svg>
