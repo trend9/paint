@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <g id="main-scene">
+
+    <!-- Fluffy Cloud -->
+    <g id="cloud">
+      <path d="M100,600 Q80,550 150,520 Q220,490 280,520 Q350,550 370,600 Q350,650 280,680 Q220,710 150,680 Q80,650 100,600 Z" fill="white"/>
+      <path d="M280,520 Q250,470 320,440 Q390,410 450,440 Q520,470 540,520 Q520,570 450,600 Q390,630 320,600 Q250,570 280,520 Z" fill="white"/>
+      <path d="M450,440 Q420,390 490,360 Q560,330 620,360 Q690,390 710,440 Q690,490 620,520 Q560,550 490,520 Q420,490 450,440 Z" fill="white"/>
+      <path d="M710,440 Q690,400 750,380 Q810,360 830,400 Q850,440 830,480 Q810,520 750,500 Q690,480 710,440 Z" fill="none"/> <!-- To complete the right edge of cloud, visual separation-->
+      <path d="M100,600 C100,600 20,650 100,700 C180,750 300,750 380,700 C460,650 480,550 380,500 C280,450 180,500 100,600 Z" fill="white"/> <!-- Base for the main cloud mass -->
+      <path d="M380,500 C380,500 300,450 400,400 C500,350 600,350 680,400 C760,450 780,550 680,600 C580,650 480,600 380,500 Z" fill="white"/> <!-- Right side cloud mass -->
+      <path d="M100,600 C80,600 80,550 150,520 C220,490 280,520 350,550 C370,600 350,650 280,680 C220,710 150,680 100,600 Z M280,520 C250,470 320,440 390,410 C450,440 520,470 540,520 C520,570 450,600 390,630 C320,600 250,570 280,520 Z M450,440 C420,390 490,360 560,330 C620,360 690,390 710,440 C690,490 620,520 560,550 C490,520 420,490 450,440 Z" fill="white"/>
+    </g>
+
+    <!-- Unicorn -->
+    <g id="unicorn">
+      <!-- Body -->
+      <ellipse cx="400" cy="650" rx="120" ry="80" fill="white"/>
+      <!-- Legs -->
+      <rect x="350" y="700" width="30" height="80" rx="15" ry="15" fill="white"/>
+      <rect x="420" y="700" width="30" height="80" rx="15" ry="15" fill="white"/>
+      <rect x="370" y="680" width="30" height="80" rx="15" ry="15" fill="white" transform="rotate(-10 370 680)"/>
+      <rect x="440" y="680" width="30" height="80" rx="15" ry="15" fill="white" transform="rotate(10 440 680)"/>
+      
+      <!-- Neck -->
+      <path d="M380,580 Q370,540 390,520 Q430,500 450,540 L440,580 Z" fill="white"/>
+      <!-- Head -->
+      <ellipse cx="490" cy="510" rx="70" ry="60" fill="white"/>
+      <!-- Snout -->
+      <ellipse cx="540" cy="530" rx="35" ry="25" fill="white"/>
+      <!-- Eye -->
+      <circle cx="500" cy="490" r="8" fill="white"/>
+      <circle cx="500" cy="490" r="3" fill="black" stroke-width="0"/>
+      <!-- Mouth -->
+      <path d="M530,540 Q540,550 550,540" fill="none" stroke="black" stroke-width="3"/>
+      <!-- Ears -->
+      <path d="M470,470 Q460,450 480,440 Q500,450 490,470 Z" fill="white"/>
+      <path d="M510,470 Q500,450 520,440 Q540,450 530,470 Z" fill="white"/>
+      <!-- Horn -->
+      <path d="M490,450 Q495,420 500,400 Q505,420 510,450 Z" fill="white"/>
+      <path d="M495,430 L505,430" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M495,415 L505,415" fill="none" stroke="black" stroke-width="3"/>
+
+      <!-- Mane -->
+      <path d="M450,500 Q430,480 440,460 Q450,440 470,430 L470,450 Q460,470 450,500 Z" fill="white"/>
+      <path d="M480,430 Q490,410 500,400 Q510,410 520,430 Q510,450 500,460 Q490,450 480,430 Z" fill="white"/>
+      <!-- Tail -->
+      <path d="M300,680 Q250,700 280,750 Q310,800 350,780 Q300,730 300,680 Z" fill="white"/>
+      <path d="M300,680 Q250,700 280,750 Q310,800 350,780 Q300,730 300,680 Z" fill="white"/>
+      <path d="M290,700 Q260,720 290,760 Q320,800 360,780 Q310,740 290,700 Z" fill="white"/>
+    </g>
+
+    <!-- Cupcake -->
+    <g id="cupcake">
+      <path d="M300,600 C320,580 380,580 400,600 L410,650 C380,660 330,660 300,650 Z" fill="white"/>
+      <ellipse cx="350" cy="590" rx="60" ry="25" fill="white"/>
+      <circle cx="350" cy="570" r="15" fill="white"/> <!-- Cherry -->
+    </g>
+
+    <!-- Juice -->
+    <g id="juice-drink">
+      <rect x="520" y="580" width="60" height="100" rx="15" ry="15" fill="white"/>
+      <path d="M530,600 L530,660 M550,600 L550,660 M570,600 L570,660" fill="none" stroke="black" stroke-width="2"/>
+      <line x1="550" y1="560" x2="550" y2="480" stroke="black" stroke-width="3"/>
+      <path d="M545,490 Q550,470 555,490" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Floating Stars and Candies -->
+    <g id="stars-candies">
+      <!-- Stars -->
+      <path d="M150,150 L160,180 L190,185 L165,200 L170,230 L150,210 L130,230 L135,200 L110,185 L140,180 Z" fill="white"/>
+      <path d="M600,100 L610,130 L640,135 L615,150 L620,180 L600,160 L580,180 L585,150 L560,135 L590,130 Z" fill="white"/>
+      <path d="M700,250 L710,280 L740,285 L715,300 L720,330 L700,310 L680,330 L685,300 L660,285 L690,280 Z" fill="white"/>
+      <path d="M100,800 L110,830 L140,835 L115,850 L120,880 L100,860 L80,880 L85,850 L60,835 L90,830 Z" fill="white"/>
+      <path d="M400,150 L410,180 L440,185 L415,200 L420,230 L400,210 L380,230 L385,200 L360,185 L390,180 Z" fill="white"/>
+      <path d="M200,350 L210,380 L240,385 L215,400 L220,430 L200,410 L180,430 L185,400 L160,385 L190,380 Z" fill="white"/>
+
+
+      <!-- Candies -->
+      <circle cx="100" cy="300" r="25" fill="white"/>
+      <line x1="100" y1="275" x2="100" y2="325" stroke="black" stroke-width="3"/>
+      <line x1="80" y1="285" x2="120" y2="315" stroke="black" stroke-width="3"/>
+      <line x1="80" y1="315" x2="120" y2="285" stroke="black" stroke-width="3"/>
+
+      <circle cx="700" cy="150" r="25" fill="white"/>
+      <line x1="700" y1="125" x2="700" y2="175" stroke="black" stroke-width="3"/>
+      <line x1="680" y1="135" x2="720" y2="165" stroke="black" stroke-width="3"/>
+      <line x1="680" y1="165" x2="720" y2="135" stroke="black" stroke-width="3"/>
+
+      <circle cx="250" cy="900" r="25" fill="white"/>
+      <line x1="250" y1="875" x2="250" y2="925" stroke="black" stroke-width="3"/>
+      <line x1="230" y1="885" x2="270" y2="915" stroke="black" stroke-width="3"/>
+      <line x1="230" y1="915" x2="270" y2="885" stroke="black" stroke-width="3"/>
+
+      <circle cx="550" cy="850" r="25" fill="white"/>
+      <line x1="550" y1="825" x2="550" y2="875" stroke="black" stroke-width="3"/>
+      <line x1="530" y1="835" x2="570" y2="865" stroke="black" stroke-width="3"/>
+      <line x1="530" y1="865" x2="570" y2="835" stroke="black" stroke-width="3"/>
+
+    </g>
+  </g>
+</svg>
