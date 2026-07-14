@@ -1,0 +1,126 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .outline { stroke: black; stroke-width: 4; fill: white; }
+      .outline-thick { stroke: black; stroke-width: 5; fill: white; }
+      .outline-thin { stroke: black; stroke-width: 3; fill: white; }
+      .fill-none { fill: none; }
+    ]]></style>
+  </defs>
+
+  <!-- Background Room Elements - Simplified castle room -->
+  <g id="room">
+    <!-- Floor line/area -->
+    <path d="M0 850 L800 850 L800 1000 L0 1000 Z" class="outline-thick" />
+    <!-- Wall arch/window suggestion -->
+    <path d="M100 100 Q400 0 700 100 L700 300 Q400 400 100 300 Z" class="outline-thick" />
+    <!-- Simple wall decoration -->
+    <ellipse cx="400" cy="150" rx="60" ry="30" class="outline-thin" />
+    <path d="M370 180 Q400 220 430 180" class="outline-thin" fill="none" />
+  </g>
+
+  <!-- Characters (full body, table will overlap) -->
+  <!-- Princess -->
+  <g id="princess">
+    <!-- Head -->
+    <circle cx="320" cy="380" r="50" class="outline-thick" />
+    <!-- Neck -->
+    <rect x="310" y="420" width="20" height="30" rx="10" ry="10" class="outline-thin" />
+    <!-- Body (simplified dress) -->
+    <path d="M270 450 C250 500, 250 700, 320 700 C390 700, 390 500, 370 450 Z" class="outline-thick" />
+    <!-- Arms -->
+    <path d="M290 470 C270 490, 260 530, 280 550" class="outline" fill="white" /> <!-- Left Arm -->
+    <circle cx="280" cy="560" r="15" class="outline" /> <!-- Left Hand -->
+    <path d="M350 470 C370 490, 380 530, 360 550" class="outline" fill="white" /> <!-- Right Arm -->
+    <circle cx="360" cy="560" r="15" class="outline" /> <!-- Right Hand -->
+    <!-- Hair -->
+    <ellipse cx="300" cy="340" rx="20" ry="30" class="outline" /> <!-- Left Hair Bun -->
+    <ellipse cx="340" cy="340" rx="20" ry="30" class="outline" /> <!-- Right Hair Bun -->
+    <!-- Crown -->
+    <path d="M300 340 L310 310 L320 320 L330 310 L340 340 Z" class="outline-thin" />
+    <!-- Face -->
+    <circle cx="305" cy="370" r="8" class="outline-thin" />
+    <circle cx="335" cy="370" r="8" class="outline-thin" />
+    <path d="M310 395 Q320 405 330 395" class="outline-thin" fill="none" />
+    <circle cx="300" cy="390" r="5" class="outline-thin" />
+    <circle cx="340" cy="390" r="5" class="outline-thin" />
+  </g>
+
+  <!-- Teddy Bear -->
+  <g id="teddy-bear">
+    <!-- Head -->
+    <circle cx="470" cy="480" r="60" class="outline-thick" />
+    <!-- Ears -->
+    <circle cx="430" cy="440" r="25" class="outline" />
+    <circle cx="510" cy="440" r="25" class="outline" />
+    <!-- Neck -->
+    <rect x="460" y="530" width="20" height="20" rx="10" ry="10" class="outline-thin" />
+    <!-- Body -->
+    <rect x="420" y="550" width="100" height="200" rx="50" ry="100" class="outline-thick" />
+    <!-- Arms -->
+    <path d="M410 580 C390 570, 390 620, 410 630" class="outline" fill="white" /> <!-- Left Arm -->
+    <circle cx="415" cy="635" r="15" class="outline" /> <!-- Left Paw -->
+    <path d="M530 580 C550 570, 550 620, 530 630" class="outline" fill="white" /> <!-- Right Arm -->
+    <circle cx="525" cy="635" r="15" class="outline" /> <!-- Right Paw -->
+    <!-- Snout -->
+    <ellipse cx="470" cy="495" rx="30" ry="20" class="outline" />
+    <!-- Face -->
+    <circle cx="455" cy="475" r="8" class="outline-thin" />
+    <circle cx="485" cy="475" r="8" class="outline-thin" />
+    <circle cx="470" cy="485" r="7" class="outline-thin" />
+    <path d="M460 505 Q470 515 480 505" class="outline-thin" fill="none" />
+  </g>
+
+  <!-- Tea Table (drawn on top of characters) -->
+  <g id="table">
+    <ellipse cx="400" cy="650" rx="280" ry="90" class="outline-thick" /> <!-- Tabletop -->
+    <rect x="280" y="650" width="240" height="150" rx="30" ry="30" class="outline-thick" /> <!-- Table body -->
+    <rect x="290" y="770" width="40" height="70" rx="10" ry="10" class="outline" /> <!-- Left Leg -->
+    <rect x="470" y="770" width="40" height="70" rx="10" ry="10" class="outline" /> <!-- Right Leg -->
+  </g>
+
+  <!-- Tea Party Items (on top of table) -->
+  <g id="tea-items">
+    <!-- Teapot -->
+    <g id="teapot">
+      <ellipse cx="580" cy="600" rx="50" ry="40" class="outline" />
+      <path d="M530 600 C520 650, 520 700, 580 700 C640 700, 640 650, 630 600 Z" class="outline" />
+      <path d="M580 560 Q600 540 620 560" class="outline-thin" />
+      <line x1="580" y1="560" x2="580" y2="600" class="outline-thin" />
+      <path d="M540 600 C520 620, 520 660, 540 680" class="outline-thin" fill="none" />
+      <path d="M600 620 C620 600, 620 580, 600 560" class="outline-thin" fill="none" />
+      <path d="M610 570 C620 560, 630 560, 640 570" class="outline-thin" fill="none" />
+    </g>
+
+    <!-- Teacup 1 (right of princess) -->
+    <g id="teacup-1">
+      <ellipse cx="400" cy="620" rx="35" ry="20" class="outline" />
+      <path d="M365 620 C350 650, 350 680, 365 710 L435 710 C450 680, 450 650, 435 620 Z" class="outline" />
+      <path d="M440 640 Q460 655 440 670" class="outline-thin" fill="none" />
+    </g>
+
+    <!-- Teacup 2 (left of teddy) -->
+    <g id="teacup-2">
+      <ellipse cx="540" cy="620" rx="35" ry="20" class="outline" />
+      <path d="M505 620 C490 650, 490 680, 505 710 L575 710 C590 680, 590 650, 575 620 Z" class="outline" />
+      <path d="M580 640 Q600 655 580 670" class="outline-thin" fill="none" />
+    </g>
+
+    <!-- Small Cakes -->
+    <g id="cakes">
+      <!-- Cake 1 (cupcake) -->
+      <ellipse cx="320" cy="600" rx="25" ry="15" class="outline" />
+      <path d="M295 600 Q290 630 320 640 Q350 630 345 600 Z" class="outline" />
+      <circle cx="320" cy="590" r="5" class="outline-thin" />
+
+      <!-- Cake 2 (round cake slice) -->
+      <ellipse cx="650" cy="600" rx="30" ry="15" class="outline" />
+      <path d="M620 600 L620 640 C630 650, 670 650, 680 640 L680 600 Z" class="outline" />
+      <line x1="650" y1="585" x2="650" y2="600" class="outline-thin" />
+
+      <!-- Cake 3 (small square cake) -->
+      <rect x="230" y="600" width="40" height="40" rx="10" ry="10" class="outline" />
+      <circle cx="250" cy="605" r="4" class="outline-thin" />
+    </g>
+  </g>
+</svg>
