@@ -1,0 +1,128 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rect to ensure pure white canvas -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" />
+
+  <!-- Sandy Bottom -->
+  <g id="sandy-bottom">
+    <path d="M0 800 Q100 780 200 820 T400 790 T600 810 T800 780 V1000 H0 Z"
+          fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+    <!-- Small simplified pebbles on the sand -->
+    <circle cx="100" cy="850" r="15" fill="white" stroke="black" stroke-width="3" />
+    <circle cx="250" cy="880" r="20" fill="white" stroke="black" stroke-width="3" />
+    <circle cx="450" cy="860" r="18" fill="white" stroke="black" stroke-width="3" />
+    <circle cx="680" cy="890" r="12" fill="white" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Sea Anemones -->
+  <g id="sea-anemones">
+    <!-- Anemone 1 -->
+    <g transform="translate(150, 650)">
+      <ellipse cx="0" cy="0" rx="60" ry="40" fill="white" stroke="black" stroke-width="4" />
+      <!-- Simplified, rounded tentacles -->
+      <path d="M-40 -30 C-60 -80 -20 -90 0 -80 C20 -90 60 -80 40 -30 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-10 -35 C-30 -95 10 -105 30 -95 C50 -105 70 -95 50 -35 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 -30 C0 -70 40 -80 60 -70 C80 -80 100 -70 80 -30 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-60 -20 C-80 -70 -40 -80 -20 -70 C0 -80 20 -70 0 -20 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-20 -25 C-50 -80 -10 -90 10 -80 C30 -90 50 -80 30 -25 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Anemone 2 -->
+    <g transform="translate(600, 700) scale(0.8)">
+      <ellipse cx="0" cy="0" rx="70" ry="50" fill="white" stroke="black" stroke-width="4" />
+      <!-- Simplified, rounded tentacles -->
+      <path d="M-50 -40 C-70 -100 -30 -110 -10 -100 C10 -110 50 -100 30 -40 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-15 -45 C-40 -110 5 -120 25 -110 C45 -120 75 -110 55 -45 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 -35 C10 -85 50 -95 70 -85 C90 -95 110 -85 90 -35 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-70 -25 C-90 -85 -50 -95 -30 -85 C-10 -95 30 -85 10 -25 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-25 -30 C-55 -90 -15 -100 5 -90 C25 -100 55 -90 35 -30 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Starfish on the sandy bottom -->
+  <g id="starfish-elements">
+    <g transform="translate(350, 900) scale(0.9)">
+      <!-- Rounded starfish shape with Bezier curves -->
+      <path d="M 0 -80 Q -20 -40 -75 -45 Q -40 0 -60 50 Q 0 30 60 50 Q 40 0 75 -45 Q 20 -40 Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <!-- Small simplified internal texture dots -->
+      <circle cx="-25" cy="-25" r="5" fill="white" stroke="black" stroke-width="2" />
+      <circle cx="20" cy="-30" r="5" fill="white" stroke="black" stroke-width="2" />
+      <circle cx="30" cy="20" r="5" fill="white" stroke="black" stroke-width="2" />
+      <circle cx="-35" cy="25" r="5" fill="white" stroke="black" stroke-width="2" />
+      <circle cx="0" cy="40" r="5" fill="white" stroke="black" stroke-width="2" />
+    </g>
+    <!-- Second smaller starfish -->
+    <g transform="translate(80, 890) scale(0.6)">
+        <path d="M 0 -80 Q -20 -40 -75 -45 Q -40 0 -60 50 Q 0 30 60 50 Q 40 0 75 -45 Q 20 -40 Z"
+              fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+        <circle cx="-15" cy="-15" r="4" fill="white" stroke="black" stroke-width="2" />
+        <circle cx="10" cy="-18" r="4" fill="white" stroke="black" stroke-width="2" />
+        <circle cx="18" cy="10" r="4" fill="white" stroke="black" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Tropical Fishes -->
+  <g id="tropical-fishes">
+    <!-- Fish 1 (classic shape) -->
+    <g transform="translate(150, 300)">
+      <ellipse cx="0" cy="0" rx="80" ry="50" fill="white" stroke="black" stroke-width="4" />
+      <!-- Tail fin -->
+      <path d="M80 0 L140 -40 L120 0 L140 40 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <!-- Dorsal Fin -->
+      <path d="M-30 -50 L10 -70 L40 -50 Z" fill="white" stroke="black" stroke-width="3" stroke-linejoin="round" />
+      <!-- Eye -->
+      <circle cx="-40" cy="-10" r="15" fill="white" stroke="black" stroke-width="3" />
+      <!-- Pupil as outlined circle for coloring -->
+      <circle cx="-35" cy="-12" r="5" fill="white" stroke="black" stroke-width="2" />
+      <!-- Happy Mouth -->
+      <path d="M-60 10 Q-50 20 -40 10" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Fish 2 (more elongated) -->
+    <g transform="translate(550, 200) scale(0.8) rotate(10)">
+      <path d="M-70 0 Q-100 -60 0 -80 Q100 -60 120 0 Q100 60 0 80 Q-100 60 -70 0 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <!-- Tail fin -->
+      <path d="M120 0 L180 -30 L160 0 L180 30 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <!-- Dorsal Fin -->
+      <path d="M-20 -80 Q20 -100 60 -80" fill="white" stroke="black" stroke-width="3" stroke-linejoin="round" />
+      <!-- Eye -->
+      <circle cx="-40" cy="-15" r="12" fill="white" stroke="black" stroke-width="3" />
+      <!-- Pupil as outlined circle for coloring -->
+      <circle cx="-35" cy="-17" r="4" fill="white" stroke="black" stroke-width="2" />
+      <!-- Happy Mouth -->
+      <path d="M-80 5 Q-70 15 -60 5" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Fish 3 (smaller, near bottom) -->
+    <g transform="translate(400, 500) scale(0.7) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="70" ry="40" fill="white" stroke="black" stroke-width="4" />
+      <!-- Tail fin -->
+      <path d="M70 0 L120 -30 L100 0 L120 30 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" />
+      <!-- Dorsal Fin -->
+      <path d="M-20 -40 L10 -60 L30 -40 Z" fill="white" stroke="black" stroke-width="3" stroke-linejoin="round" />
+      <!-- Eye -->
+      <circle cx="-30" cy="-8" r="10" fill="white" stroke="black" stroke-width="3" />
+      <!-- Pupil as outlined circle for coloring -->
+      <circle cx="-27" cy="-10" r="3" fill="white" stroke="black" stroke-width="2" />
+      <!-- Happy Mouth -->
+      <path d="M-50 5 Q-40 12 -30 5" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Bubbles rising -->
+  <g id="bubbles">
+    <circle cx="180" cy="100" r="10" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="200" cy="50" r="7" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="500" cy="150" r="12" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="520" cy="100" r="8" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="540" cy="40" r="6" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="300" cy="200" r="9" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="320" cy="160" r="5" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="450" cy="300" r="10" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="470" cy="250" r="6" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="250" cy="400" r="11" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="270" cy="350" r="7" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="650" cy="450" r="9" fill="none" stroke="black" stroke-width="3" />
+    <circle cx="670" cy="400" r="5" fill="none" stroke="black" stroke-width="3" />
+  </g>
+</svg>
