@@ -1,0 +1,134 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-none {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Sky elements -->
+  <g id="sky">
+    <!-- Sun -->
+    <circle cx="150" cy="150" r="70" class="outline"/>
+    <path d="M150 80 L150 40 M150 220 L150 260 M80 150 L40 150 M220 150 L260 150 M100 100 L70 70 M200 100 L230 70 M100 200 L70 230 M200 200 L230 230" class="outline-none"/>
+  </g>
+
+  <!-- Ground and Picnic Blanket -->
+  <g id="ground">
+    <!-- Grassy ground -->
+    <path d="M0 800 Q200 700 400 800 Q600 900 800 800 L800 1000 L0 1000 Z" class="outline"/>
+    <!-- Grass blades -->
+    <path d="M100 850 C120 820 140 820 160 850 M200 870 C220 840 240 840 260 870 M300 840 C320 810 340 810 360 840 M400 860 C420 830 440 830 460 860 M500 830 C520 800 540 800 560 830 M600 850 C620 820 640 820 660 850 M700 870 C720 840 740 840 760 870" class="outline-none"/>
+    <!-- Picnic blanket -->
+    <rect x="250" y="680" width="300" height="150" rx="30" ry="30" class="outline"/>
+  </g>
+
+  <!-- Brontosaurus -->
+  <g id="brontosaurus">
+    <!-- Body -->
+    <ellipse cx="350" cy="720" rx="130" ry="70" class="outline"/>
+    <!-- Front Leg -->
+    <rect x="280" y="750" width="50" height="90" rx="15" ry="15" class="outline"/>
+    <!-- Back Leg -->
+    <rect x="380" y="750" width="50" height="90" rx="15" ry="15" class="outline"/>
+    <!-- Neck -->
+    <path d="M280 680 Q250 480 300 400 Q350 350 400 400 Q450 480 380 680" class="outline"/>
+    <!-- Head -->
+    <ellipse cx="350" cy="380" rx="45" ry="30" class="outline"/>
+    <!-- Snout detail -->
+    <ellipse cx="370" cy="390" rx="15" ry="8" transform="rotate(10 370 390)" class="outline"/>
+    <!-- Eye -->
+    <circle cx="330" cy="370" r="8" class="outline"/>
+    <!-- Mouth -->
+    <path d="M345 395 Q360 405 375 395" class="outline-none"/>
+  </g>
+
+  <!-- Triceratops -->
+  <g id="triceratops">
+    <!-- Body -->
+    <ellipse cx="600" cy="750" rx="100" ry="60" class="outline"/>
+    <!-- Front Leg -->
+    <rect x="550" y="780" width="40" height="70" rx="10" ry="10" class="outline"/>
+    <!-- Back Leg -->
+    <rect x="620" y="780" width="40" height="70" rx="10" ry="10" class="outline"/>
+    <!-- Head -->
+    <path d="M570 690 Q620 580 720 690 L680 730 Q630 780 570 690 Z" class="outline"/>
+    <!-- Frill edge -->
+    <path d="M680 690 A50 50 0 0 1 710 720 A30 30 0 0 1 680 690 Z" class="outline"/>
+    <!-- Horns -->
+    <path d="M680 660 L690 620 L700 660 M710 680 L720 640 L730 680 M690 700 L695 670 L700 700" class="outline-none"/>
+    <!-- Eye -->
+    <circle cx="670" cy="690" r="8" class="outline"/>
+    <!-- Mouth -->
+    <path d="M680 720 Q700 735 720 720" class="outline-none"/>
+  </g>
+
+  <!-- Stegosaurus -->
+  <g id="stegosaurus">
+    <!-- Body -->
+    <path d="M80 780 C150 680 280 680 350 780 C280 850 150 850 80 780 Z" class="outline"/>
+    <!-- Spikes -->
+    <path d="M120 700 L130 650 L140 700 M160 700 L170 650 L180 700 M200 700 L210 650 L220 700 M240 700 L250 650 L260 700 M280 700 L290 650 L300 700" class="outline-none"/>
+    <!-- Front Leg -->
+    <rect x="130" y="810" width="40" height="60" rx="10" ry="10" class="outline"/>
+    <!-- Back Leg -->
+    <rect x="230" y="810" width="40" height="60" rx="10" ry="10" class="outline"/>
+    <!-- Tail -->
+    <path d="M300 780 C320 730 350 760 340 810 C320 830 310 790 300 780 Z" class="outline"/>
+    <!-- Head -->
+    <ellipse cx="80" cy="740" rx="30" ry="20" class="outline"/>
+    <!-- Eye -->
+    <circle cx="70" cy="730" r="6" class="outline"/>
+    <!-- Mouth -->
+    <path d="M75 750 Q85 755 95 750" class="outline-none"/>
+  </g>
+
+  <!-- Pterodactyl -->
+  <g id="pterodactyl">
+    <!-- Body -->
+    <ellipse cx="650" cy="300" rx="60" ry="30" class="outline"/>
+    <!-- Head -->
+    <path d="M680 280 L720 250 L740 280 L680 280 Z" class="outline"/>
+    <!-- Beak -->
+    <path d="M720 250 L750 240 L730 270 Z" class="outline"/>
+    <!-- Eye -->
+    <circle cx="700" cy="265" r="5" class="outline"/>
+    <!-- Wings -->
+    <path d="M600 280 C500 200 550 150 650 150 C750 150 800 200 700 280 L650 300 L600 280 Z" class="outline"/>
+    <!-- Balloon string -->
+    <path d="M650 330 L650 400" class="outline-none"/>
+    <!-- Balloon -->
+    <circle cx="650" cy="450" r="40" class="outline"/>
+  </g>
+
+  <!-- Picnic items -->
+  <g id="food-items">
+    <!-- Sandwiches -->
+    <rect x="300" y="630" width="60" height="50" rx="8" ry="8" class="outline"/>
+    <rect x="370" y="630" width="60" height="50" rx="8" ry="8" class="outline"/>
+    <!-- Fruit basket -->
+    <ellipse cx="200" cy="750" rx="60" ry="30" class="outline"/>
+    <path d="M140 750 Q130 710 200 700 Q270 710 260 750" class="outline"/>
+    <!-- Fruits in basket -->
+    <circle cx="180" cy="720" r="12" class="outline"/>
+    <circle cx="220" cy="725" r="12" class="outline"/>
+    <circle cx="200" cy="735" r="12" class="outline"/>
+    <!-- Juice box -->
+    <rect x="460" y="640" width="50" height="70" rx="8" ry="8" class="outline"/>
+    <!-- Straw -->
+    <rect x="475" y="610" width="10" height="30" class="outline"/>
+  </g>
+
+</svg>
