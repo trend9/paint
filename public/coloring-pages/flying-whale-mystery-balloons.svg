@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky elements: Fluffy clouds -->
+  <g id="clouds">
+    <!-- Main cloud 1 (behind whale) -->
+    <path d="M100,450 C50,400 50,300 150,250 C250,200 350,200 400,250 C450,200 550,200 650,250 C700,300 700,400 650,450 C700,500 700,600 600,650 C500,700 400,700 350,650 C300,700 200,700 100,650 C50,600 50,500 100,450 Z"
+          fill="white" stroke="black" stroke-width="4"/>
+    <!-- Smaller cloud 2 (to the left, slightly in front) -->
+    <path d="M100,200 C50,150 50,100 150,80 C200,60 250,60 280,100 C300,120 300,170 250,200 C200,220 150,220 100,200 Z"
+          fill="white" stroke="black" stroke-width="4"/>
+    <!-- Smaller cloud 3 (to the right, slightly in front) -->
+    <path d="M550,150 C500,100 500,50 600,30 C650,10 700,10 730,50 C750,70 750,120 700,150 C650,170 600,170 550,150 Z"
+          fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Cute happy whale -->
+  <g id="whale">
+    <!-- Whale body -->
+    <ellipse cx="400" cy="500" rx="200" ry="120" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Tail flukes -->
+    <path d="M550,500 C600,450 650,450 700,500 C650,550 600,550 550,500 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M550,500 C600,550 650,550 700,500 C650,450 600,450 550,500 Z" fill="white" stroke="black" stroke-width="4" transform="scale(1,-1) translate(0,-1000)"/>
+
+    <!-- Left flipper -->
+    <ellipse cx="280" cy="580" rx="60" ry="30" transform="rotate(-30 280 580)" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Right flipper -->
+    <ellipse cx="520" cy="580" rx="60" ry="30" transform="rotate(30 520 580)" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Happy eye 1 -->
+    <circle cx="340" cy="450" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Happy eye 2 -->
+    <circle cx="460" cy="450" r="15" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Happy mouth -->
+    <path d="M360,530 Q400,550 440,530" fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Water spout -->
+    <g id="spout">
+      <ellipse cx="400" cy="350" rx="15" ry="30" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="380" cy="320" rx="10" ry="20" fill="white" stroke="black" stroke-width="3" transform="rotate(-15 380 320)"/>
+      <ellipse cx="420" cy="320" rx="10" ry="20" fill="white" stroke="black" stroke-width="3" transform="rotate(15 420 320)"/>
+    </g>
+  </g>
+
+  <!-- Cluster of three distinctively shaped, slightly magical-looking balloons -->
+  <g id="balloons">
+    <!-- Balloon 1: Circle -->
+    <circle cx="320" cy="180" r="60" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="320" y1="240" x2="360" y2="350" stroke="black" stroke-width="3"/>
+
+    <!-- Balloon 2: Star -->
+    <path d="M480,100 L500,160 L560,180 L500,200 L480,260 L460,200 L400,180 L460,160 Z"
+          fill="white" stroke="black" stroke-width="4"/>
+    <line x1="480" y1="260" x2="400" y2="350" stroke="black" stroke-width="3"/>
+
+    <!-- Balloon 3: Heart -->
+    <path d="M380,280 C340,240 300,240 300,280 C300,320 340,360 380,400 C420,360 460,320 460,280 C460,240 420,240 380,280 Z"
+          fill="white" stroke="black" stroke-width="4" transform="scale(0.8) translate(100,100)"/>
+    <line x1="380" y1="360" x2="440" y2="350" stroke="black" stroke-width="3"/>
+
+    <!-- The point where all strings converge and are held by the whale's flipper -->
+    <circle cx="400" cy="350" r="10" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+</svg>
