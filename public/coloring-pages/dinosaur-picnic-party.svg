@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .no-fill-outline {
+        stroke: black;
+        stroke-width: 5;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Sun -->
+  <g id="sun">
+    <circle cx="680" cy="120" r="70" class="outline"/>
+    <line x1="680" y1="40" x2="680" y2="200" class="no-fill-outline"/>
+    <line x1="600" y1="120" x2="760" y2="120" class="no-fill-outline"/>
+    <line x1="625" y1="65" x2="735" y2="175" class="no-fill-outline"/>
+    <line x1="625" y1="175" x2="735" y2="65" class="no-fill-outline"/>
+  </g>
+
+  <!-- Ground Area -->
+  <path d="M0 780 C200 750 600 750 800 780 V1000 H0 Z" class="outline"/>
+
+  <!-- Large Tree -->
+  <g id="tree">
+    <!-- Trunk -->
+    <rect x="580" y="480" width="80" height="300" rx="30" ry="30" class="outline"/>
+    <!-- Canopy -->
+    <path d="M620 180 C500 100 400 300 480 450 C560 600 700 650 780 480 C860 310 750 100 620 180 Z" class="outline"/>
+  </g>
+
+  <!-- Picnic Blanket -->
+  <g id="blanket">
+    <rect x="120" y="680" width="560" height="150" rx="40" ry="40" class="outline"/>
+    <!-- Checkered pattern lines -->
+    <line x1="180" y1="680" x2="180" y2="830" class="no-fill-outline"/>
+    <line x1="260" y1="680" x2="260" y2="830" class="no-fill-outline"/>
+    <line x1="340" y1="680" x2="340" y2="830" class="no-fill-outline"/>
+    <line x1="420" y1="680" x2="420" y2="830" class="no-fill-outline"/>
+    <line x1="500" y1="680" x2="500" y2="830" class="no-fill-outline"/>
+    <line x1="580" y1="680" x2="580" y2="830" class="no-fill-outline"/>
+
+    <line x1="120" y1="710" x2="680" y2="710" class="no-fill-outline"/>
+    <line x1="120" y1="740" x2="680" y2="740" class="no-fill-outline"/>
+    <line x1="120" y1="770" x2="680" y2="770" class="no-fill-outline"/>
+    <line x1="120" y1="800" x2="680" y2="800" class="no-fill-outline"/>
+  </g>
+
+  <!-- Happy T-Rex sitting on the left side of the blanket -->
+  <g id="t-rex">
+    <!-- Body (rounded, sitting pose) -->
+    <path d="M250 600 C200 550 180 650 200 730 C220 780 300 780 320 730 C340 680 300 650 250 600 Z" class="outline"/>
+    <!-- Head (facing right) -->
+    <path d="M300 550 C320 500 380 520 380 570 C380 600 340 600 300 550 Z" class="outline"/>
+    <!-- Happy Smile -->
+    <path d="M340 575 C345 585 355 585 360 575" class="no-fill-outline"/>
+    <!-- Big Eye -->
+    <circle cx="330" cy="540" r="10" class="outline"/>
+    <!-- Small Arms -->
+    <path d="M280 620 C290 600 300 610 290 630 C280 620 Z" class="outline"/>
+    <path d="M290 640 C300 620 310 630 300 650 C290 640 Z" class="outline"/>
+    <!-- Legs (simplified, on blanket) -->
+    <path d="M220 730 Q200 780 230 800 Q260 780 250 730 Z" class="outline"/>
+    <path d="M240 730 Q220 780 250 800 Q280 780 270 730 Z" class="outline"/>
+  </g>
+
+  <!-- Friendly Brachiosaurus sitting on the right side of the blanket -->
+  <g id="brachiosaurus">
+    <!-- Body (rounded, sitting pose) -->
+    <path d="M480 600 C430 550 410 650 430 730 C450 780 530 780 550 730 C570 680 520 650 480 600 Z" class="outline"/>
+    <!-- Long, curved Neck -->
+    <path d="M460 580 Q420 450 470 350 Q520 250 570 300 Q620 350 590 450 Q560 550 510 580 Q460 580 460 580 Z" class="outline"/>
+    <!-- Head (facing left) -->
+    <path d="M550 290 Q570 250 620 280 Q650 310 620 340 Q590 350 550 290 Z" class="outline"/>
+    <!-- Happy Smile -->
+    <path d="M590 325 C595 335 605 335 610 325" class="no-fill-outline"/>
+    <!-- Big Eye -->
+    <circle cx="580" cy="280" r="10" class="outline"/>
+    <!-- Legs (simplified, on blanket) -->
+    <path d="M450 730 Q430 780 460 800 Q490 780 480 730 Z" class="outline"/>
+    <path d="M470 730 Q450 780 480 800 Q510 780 500 730 Z" class="outline"/>
+  </g>
+
+  <!-- Picnic Items on the blanket -->
+  <g id="picnic-items">
+    <!-- Picnic Basket -->
+    <path d="M370 660 C350 660 340 680 340 710 L340 760 C340 780 360 780 380 780 L450 780 C470 780 490 780 490 760 L490 710 C490 680 480 660 460 660 C440 660 370 660 Z" class="outline"/>
+    <path d="M360 680 Q415 630 470 680" class="no-fill-outline"/> <!-- Basket Handle -->
+    <!-- Two Sandwiches -->
+    <rect x="550" y="700" width="70" height="50" rx="15" ry="15" class="outline"/>
+    <rect x="580" y="710" width="70" height="50" rx="15" ry="15" class="outline"/>
+    <!-- Juice Cup with Straw -->
+    <rect x="180" y="690" width="40" height="70" rx="10" ry="10" class="outline"/>
+    <ellipse cx="200" cy="690" rx="20" ry="8" class="outline"/> <!-- Cup opening -->
+    <line x1="200" y1="680" x2="200" y2="650" class="no-fill-outline"/> <!-- Straw -->
+  </g>
+
+</svg>
