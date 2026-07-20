@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="black" stroke-width="5" fill="white">
+
+    <!-- Planet in background -->
+    <circle cx="650" cy="850" r="100" />
+
+    <!-- Stars - simple "diamond" shapes for toddler coloring -->
+    <path d="M100,100 L140,140 L100,180 L60,140 Z" />
+    <path d="M700,50 L740,90 L700,130 L660,90 Z" />
+    <path d="M50,700 L90,740 L50,780 L10,740 Z" />
+    <path d="M400,150 L440,190 L400,230 L360,190 Z" />
+    <path d="M250,900 L290,940 L250,980 L210,940 Z" />
+    <path d="M150,300 L190,340 L150,380 L110,340 Z" />
+    <path d="M750,350 L790,390 L750,430 L710,390 Z" />
+    <path d="M500,600 L540,640 L500,680 L460,640 Z" />
+
+    <!-- Animal Astronaut (Cat) -->
+    <g transform="translate(400, 450)"> <!-- Centering the astronaut -->
+
+      <!-- Suit Body -->
+      <rect x="-100" y="-120" width="200" height="250" rx="60" ry="80" />
+      <!-- Suit Details: Belly patch -->
+      <circle cx="0" cy="0" r="60" />
+      <!-- Suit Details: Zipper line (as a simple rounded rectangle) -->
+      <rect x="-10" y="-100" width="20" height="200" rx="10" ry="10" />
+
+      <!-- Left Arm -->
+      <rect x="-150" y="-100" width="60" height="150" rx="30" ry="30" />
+      <!-- Left Hand/Glove -->
+      <circle cx="-120" cy="80" r="30" />
+
+      <!-- Right Arm -->
+      <rect x="90" y="-100" width="60" height="150" rx="30" ry="30" />
+      <!-- Right Hand/Glove -->
+      <circle cx="120" cy="80" r="30" />
+
+      <!-- Left Leg -->
+      <rect x="-80" y="100" width="70" height="120" rx="35" ry="35" />
+      <!-- Left Foot/Boot -->
+      <ellipse cx="-45" cy="240" rx="40" ry="30" />
+
+      <!-- Right Leg -->
+      <rect x="10" y="100" width="70" height="120" rx="35" ry="35" />
+      <!-- Right Foot/Boot -->
+      <ellipse cx="45" cy="240" rx="40" ry="30" />
+
+      <!-- Helmet -->
+      <circle cx="0" cy="-140" r="100" />
+      <!-- Visor (filled white for coloring) -->
+      <ellipse cx="0" cy="-140" rx="70" ry="60" />
+
+      <!-- Cat Head inside helmet -->
+      <g transform="translate(0, -140)">
+        <circle cx="0" cy="0" r="60" /> <!-- Head base -->
+        <!-- Ears (closed paths for coloring) -->
+        <path d="M-40,-50 C-55,-70 -45,-85 -25,-75 C-15,-65 -40,-50 Z" /> <!-- Left ear -->
+        <path d="M40,-50 C55,-70 45,-85 25,-75 C15,-65 40,-50 Z" /> <!-- Right ear -->
+        <!-- Eyes -->
+        <circle cx="-25" cy="-10" r="10" />
+        <circle cx="25" cy="-10" r="10" />
+        <!-- Nose (closed path) -->
+        <path d="M0,10 L-8,25 L8,25 Z" />
+        <!-- Mouth - smiling, closed shape for coloring -->
+        <path d="M-15,35 Q0,50 15,35 L15,38 Q0,53 -15,38 Z" />
+      </g>
+
+      <!-- Tail - closed shape for coloring -->
+      <path d="M100,100 C150,150 150,250 100,280 C90,260 90,140 100,100 Z" />
+
+    </g>
+  </g>
+</svg>
