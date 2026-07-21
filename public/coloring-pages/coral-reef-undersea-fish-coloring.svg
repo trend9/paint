@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Seabed / Ocean Floor -->
+  <path d="M0 850 C100 820, 300 900, 400 870 C500 840, 700 920, 800 890 L800 1000 L0 1000 Z" fill="white"/>
+
+  <!-- Coral Reef Elements -->
+  <g id="coral_reef">
+    <!-- Large branching coral on the left -->
+    <path d="M120 850 C100 780, 150 700, 180 650 C200 600, 150 550, 180 500 C210 450, 260 500, 280 550 C300 600, 250 650, 280 700 C310 750, 260 800, 280 850 Z" fill="white"/>
+    <!-- Another coral type, more like brain coral -->
+    <path d="M600 890 C650 860, 700 890, 750 870 C780 850, 790 810, 760 780 C730 750, 690 740, 660 760 C630 780, 600 810, 600 840 C600 860, 580 880, 600 890 Z" fill="white"/>
+    <path d="M580 840 C550 820, 530 780, 550 740 C570 700, 620 690, 650 720 C680 750, 670 790, 650 820 C630 840, 600 850, 580 840 Z" fill="white"/>
+
+    <!-- Seaweed / Sea Plants -->
+    <path d="M50 850 C60 750, 40 650, 50 550 C60 450, 70 350, 50 300 C30 350, 40 450, 50 550 C60 650, 40 750, 50 850 Z" fill="white"/>
+    <path d="M720 890 C730 820, 710 740, 720 660 C730 580, 740 500, 720 440 C700 500, 710 580, 720 660 C730 740, 710 820, 720 890 Z" fill="white"/>
+    <path d="M400 870 C410 810, 390 750, 400 690 C410 630, 420 570, 400 520 C380 570, 390 630, 400 690 C410 750, 390 810, 400 870 Z" fill="white"/>
+  </g>
+
+  <!-- Fish -->
+  <g id="fish">
+    <!-- Fish 1 (Clownfish style) -->
+    <g transform="translate(150, 300)">
+      <ellipse cx="0" cy="0" rx="100" ry="60" fill="white"/> <!-- Body -->
+      <path d="M100 0 C125 -30, 125 30, 100 0 Z" fill="white"/> <!-- Tail -->
+      <path d="M40 -60 C50 -80, 70 -80, 60 -60 Z" fill="white"/> <!-- Top Fin -->
+      <path d="M40 60 C50 80, 70 80, 60 60 Z" fill="white"/> <!-- Bottom Fin -->
+      <path d="M-10 40 C0 55, 30 50, 30 40 Z" fill="white"/> <!-- Side Fin -->
+      <circle cx="60" cy="-20" r="15" fill="white"/> <!-- Eye outline -->
+      <circle cx="68" cy="-18" r="5" fill="white"/> <!-- Pupil outline (child colors this black) -->
+      <path d="M70 -10 Q75 -5, 70 0" fill="none"/> <!-- Mouth (smiling) -->
+      <!-- Stripes for coloring -->
+      <path d="M-70 0 C-60 -40, -40 -50, -20 0 C-40 40, -60 50, -70 0 Z" fill="none"/> <!-- First stripe -->
+      <path d="M10 0 C20 -40, 40 -50, 60 0 C40 40, 20 50, 10 0 Z" fill="none"/> <!-- Second stripe -->
+    </g>
+
+    <!-- Fish 2 (Angelfish style) -->
+    <g transform="translate(550, 200) rotate(15)">
+      <path d="M-80 0 C-40 -80, 40 -80, 80 0 C40 80, -40 80, -80 0 Z" fill="white"/> <!-- Body, more diamond shaped -->
+      <path d="M80 0 C100 -20, 100 20, 80 0 Z" fill="white"/> <!-- Tail -->
+      <circle cx="40" cy="-20" r="12" fill="white"/> <!-- Eye outline -->
+      <circle cx="46" cy="-18" r="4" fill="white"/> <!-- Pupil outline -->
+      <path d="M50 -10 Q55 -5, 50 0" fill="none"/> <!-- Mouth (smiling) -->
+      <!-- Stripes for coloring -->
+      <path d="M-60 0 C-50 -50, -30 -60, -10 0 C-30 50, -50 60, -60 0 Z" fill="none"/>
+      <path d="M20 0 C30 -50, 50 -60, 70 0 C50 50, 30 60, 20 0 Z" fill="none"/>
+    </g>
+
+    <!-- Fish 3 (Smaller, simpler fish) -->
+    <g transform="translate(350, 100) scale(0.7) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="80" ry="50" fill="white"/> <!-- Body -->
+      <path d="M80 0 C100 -25, 100 25, 80 0 Z" fill="white"/> <!-- Tail -->
+      <path d="M20 -50 C30 -70, 50 -70, 40 -50 Z" fill="white"/> <!-- Top Fin -->
+      <path d="M20 50 C30 70, 50 70, 40 50 Z" fill="white"/> <!-- Bottom Fin -->
+      <circle cx="50" cy="-15" r="10" fill="white"/> <!-- Eye outline -->
+      <circle cx="55" cy="-13" r="3" fill="white"/> <!-- Pupil outline -->
+      <path d="M55 -10 Q60 -7, 55 0" fill="none"/> <!-- Mouth (smiling) -->
+    </g>
+  </g>
+
+  <!-- Starfish -->
+  <g id="starfish">
+    <!-- Starfish 1 -->
+    <path d="M350 850 
+             Q360 820, 380 810 
+             Q400 800, 380 770 
+             Q400 740, 350 750 
+             Q300 740, 320 770 
+             Q300 800, 320 810 
+             Q340 820, 350 850 Z" fill="white"/>
+
+    <!-- Starfish 2, smaller and higher -->
+    <path transform="translate(200, -200) scale(0.8)" 
+          d="M350 850 
+             Q360 820, 380 810 
+             Q400 800, 380 770 
+             Q400 740, 350 750 
+             Q300 740, 320 770 
+             Q300 800, 320 810 
+             Q340 820, 350 850 Z" fill="white"/>
+  </g>
+</svg>
