@@ -1,0 +1,76 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      .outline-fill-none {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <g id="cloud">
+    <path class="outline" d="M100,750 C100,700 150,650 200,670 C250,620 350,600 400,620 C450,600 550,620 600,670 C650,650 700,700 700,750 C700,800 650,850 600,830 C550,880 450,900 400,880 C350,900 250,880 200,830 C150,850 100,800 100,750 Z"/>
+  </g>
+
+  <g id="unicorn">
+    <g id="body_and_legs">
+      <!-- Unicorn Body - a large, rounded shape for the sitting posture -->
+      <path class="outline" d="M300,700 C250,650 250,450 350,400 C450,350 550,450 550,600 C550,700 450,750 300,700 Z"/>
+
+      <!-- Front Legs - simple rounded capsule shapes -->
+      <path class="outline" d="M320,680 A20,20 0 0 1 340,680 L340,750 A20,20 0 0 1 320,750 Z"/> <!-- Left front leg -->
+      <path class="outline" d="M390,680 A20,20 0 0 1 410,680 L410,750 A20,20 0 0 1 390,750 Z"/> <!-- Right front leg -->
+    </g>
+
+    <g id="head_details">
+      <!-- Head -->
+      <ellipse class="outline" cx="350" cy="350" rx="90" ry="80"/>
+      
+      <!-- Snout -->
+      <ellipse class="outline" cx="300" cy="360" rx="40" ry="30"/>
+      
+      <!-- Gentle Smile -->
+      <path class="outline-fill-none" d="M285,370 Q300,385 315,370"/>
+      
+      <!-- Eyes -->
+      <circle class="outline" cx="330" cy="330" r="10"/>
+      <circle class="outline" cx="380" cy="330" r="10"/>
+
+      <!-- Ears -->
+      <path class="outline" d="M340,290 C350,270 360,270 370,290 Q355,300 340,290 Z"/> <!-- Left ear -->
+      <path class="outline" d="M380,300 C390,280 400,280 410,300 Q395,310 380,300 Z"/> <!-- Right ear -->
+    </g>
+
+    <g id="horn">
+      <!-- Horn - a simple rounded cone shape -->
+      <path class="outline" d="M390,270 C390,250 400,220 410,270 Z"/>
+    </g>
+
+    <g id="mane_and_tail">
+      <!-- Mane - a flowing, rounded shape -->
+      <path class="outline" d="M410,290 C440,250 470,270 470,320 C470,370 440,390 410,370 C380,350 380,310 410,290 Z"/>
+      
+      <!-- Tail - a flowing, rounded shape -->
+      <path class="outline" d="M550,550 C600,500 650,500 650,550 C650,600 600,650 550,600 C500,550 500,500 550,550 Z"/>
+    </g>
+
+    <g id="cookie">
+      <!-- Simple Cookie - a circle -->
+      <circle class="outline" cx="280" cy="390" r="25"/>
+      <!-- Cookie chips - small circles inside the cookie -->
+      <circle class="outline" cx="270" cy="380" r="5"/>
+      <circle class="outline" cx="290" cy="395" r="5"/>
+      <circle class="outline" cx="285" cy="375" r="5"/>
+    </g>
+  </g>
+</svg>
