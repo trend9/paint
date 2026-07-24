@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background Fill -->
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- SKY ELEMENTS -->
+  <!-- Cute Happy Sun -->
+  <g id="sun">
+    <circle cx="120" cy="120" r="45" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Sun Rays -->
+    <path d="M 120 55 L 120 25" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 120 185 L 120 215" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 55 120 L 25 120" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 185 120 L 215 120" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74 74 L 52 52" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 166 166 L 188 188" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74 166 L 52 188" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 166 74 L 188 52" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <!-- Sun Face -->
+    <circle cx="105" cy="115" r="5" fill="black"/>
+    <circle cx="135" cy="115" r="5" fill="black"/>
+    <path d="M 105 130 Q 120 145 135 130" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clouds -->
+  <g id="clouds">
+    <!-- Cloud Left -->
+    <path d="M 260 140 C 240 120 200 120 190 140 C 170 140 150 160 165 185 C 150 200 170 230 195 220 C 210 235 250 235 265 220 C 285 225 305 200 295 180 C 310 155 285 135 260 140 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Cloud Right -->
+    <path d="M 620 120 C 600 100 560 100 550 120 C 530 120 510 140 525 165 C 510 180 530 210 555 200 C 570 215 610 215 625 200 C 645 205 665 180 655 160 C 670 135 645 115 620 120 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Magical Floating Stars -->
+  <g id="stars">
+    <!-- Star 1 -->
+    <path d="M 370 100 L 376 118 L 395 118 L 380 129 L 385 147 L 370 136 L 355 147 L 360 129 L 345 118 L 364 118 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Star 2 -->
+    <path d="M 480 170 L 484 183 L 498 183 L 487 191 L 491 204 L 480 196 L 469 204 L 473 191 L 462 183 L 476 183 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Star 3 -->
+    <path d="M 710 240 L 715 255 L 730 255 L 718 264 L 722 278 L 710 269 L 698 278 L 702 264 L 690 255 L 705 255 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Cute Butterfly -->
+  <g id="butterfly">
+    <!-- Antennae -->
+    <path d="M 650 290 Q 640 270 630 275" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 654 290 Q 664 270 674 275" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Wings -->
+    <path d="M 645 300 C 600 270 590 330 645 325 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 659 300 C 704 270 714 330 659 325 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 647 325 C 610 330 610 370 649 340 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 657 325 C 694 330 694 370 655 340 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Body -->
+    <ellipse cx="652" cy="315" rx="6" ry="20" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- BACKGROUND TREES / HILLS -->
+  <g id="background-scenery">
+    <!-- Far Hill -->
+    <path d="M -20 720 Q 200 640 450 710 T 820 680" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Magical Tree Left -->
+    <path d="M -30 680 C -30 520 20 450 80 450 C 120 450 150 480 160 520 C 190 520 210 550 200 590 C 220 620 200 670 170 680 C 160 730 110 760 50 760 C 0 760 -30 730 -30 680 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Magical Tree Right -->
+    <path d="M 620 650 C 600 530 650 420 720 420 C 770 420 810 460 820 510 C 840 530 840 580 810 610 C 830 650 810 700 760 710 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+
+  <!-- MUSHROOM HOUSE -->
+  <g id="mushroom-house">
+    <!-- Mushroom Stem/Base -->
+    <path d="M 410 520 C 390 650 410 790 420 830 C 530 845 610 845 700 830 C 710 790 730 650 710 520 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    
+    <!-- Mushroom Cap -->
+    <path d="M 330 520 C 320 300 790 300 780 520 C 780 560 720 560 670 550 C 580 535 520 535 430 550 C 380 560 330 560 330 520 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Cap Spots (Easy to Color Circles) -->
+    <circle cx="430" cy="400" r="35" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="550" cy="370" r="48" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="680" cy="420" r="38" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="540" cy="475" r="28" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="370" cy="480" r="22" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="730" cy="490" r="20" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Door -->
+    <path d="M 500 833 L 500 680 C 500 630 610 630 610 680 L 610 835 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Door Frame / Lines -->
+    <path d="M 555 640 L 555 836" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Door Knob -->
+    <circle cx="525" cy="740" r="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Heart Cutout on Door -->
+    <path d="M 555 680 C 555 670 540 660 532 672 C 525 660 510 670 510 680 C 510 695 532 708 532 708 C 532 708 555 695 555 680 Z" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Window -->
+    <circle cx="560" cy="580" r="42" fill="white" stroke="black" stroke-width="5"/>
+    <circle cx="560" cy="580" r="34" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M 518 580 L 602 580" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M 560 538 L 560 622" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Window Flower Box -->
+    <rect x="520" y="622" width="80" height="20" rx="8" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="540" cy="622" r="8" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="560" cy="622" r="8" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="580" cy="622" r="8" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Stone Pathway -->
+    <ellipse cx="555" cy="855" rx="35" ry="12" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="530" cy="880" rx="28" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="580" cy="895" rx="30" ry="10" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- MAIN GROUND LINE -->
+  <path d="M -10 830 Q 400 790 810 830 L 810 1010 L -10 1010 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- CUTE FAIRY (SITTING IN FOREGROUND) -->
+  <g id="fairy">
+    <!-- Fairy Wings (Behind Body) -->
+    <!-- Top Left Wing -->
+    <path d="M 220 560 C 100 460 40 580 210 620 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 190 560 C 130 500 90 570 180 595 Z" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Bottom Left Wing -->
+    <path d="M 210 625 C 90 640 100 740 215 660 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="150" cy="665" r="12" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Top Right Wing -->
+    <path d="M 270 560 C 390 460 450 580 280 620 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 300 560 C 360 500 400 570 310 595 Z" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Bottom Right Wing -->
+    <path d="M 280 625 C 400 640 390 740 275 660 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="340" cy="665" r="12" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Fairy Dress / Body -->
+    <path d="M 215 570 L 175 690 C 210 710 280 710 315 690 L 275 570 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Dress Petal Scallops -->
+    <path d="M 175 690 Q 210 725 245 695 Q 280 725 315 690" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Feet / Shoes (Sitting) -->
+    <ellipse cx="215" cy="720" rx="20" ry="12" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="275" cy="720" rx="20" ry="12" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Shoe Bows -->
+    <circle cx="215" cy="715" r="4" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="275" cy="715" r="4" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Left Arm Waving -->
+    <path d="M 218 580 C 180 560 155 520 170 500 C 185 485 200 520 212 560" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right Arm Holding Wand -->
+    <path d="M 272 580 Q 300 590 325 570" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="328" cy="568" r="8" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Magic Wand -->
+    <path d="M 328 575 L 360 500" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <!-- Wand Star -->
+    <path d="M 360 480 L 366 495 L 382 495 L 369 505 L 374 520 L 360 510 L 346 520 L 351 505 L 338 495 L 354 495 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Wand Sparkles -->
+    <path d="M 385 470 L 385 480 M 380 475 L 390 475" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 335 525 L 335 535 M 330 530 L 340 530" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Fairy Head -->
+    <circle cx="245" cy="500" r="55" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Hair Back/Volume -->
+    <path d="M 190 500 C 170 430 320 430 300 500 Z" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+    
+    <!-- Top Hair Bun -->
+    <circle cx="245" cy="425" r="22" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Hair Bow -->
+    <path d="M 245 435 C 225 420 220 450 245 438 C 270 450 265 420 245 435 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Hair Bangs (Front) -->
+    <path d="M 192 485 C 210 510 230 510 245 490 C 260 510 280 510 298 485 C 295 460 195 460 192 485 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Crown / Flower in Hair -->
+    <circle cx="205" cy="450" r="10" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="205" cy="450" r="4" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Face Details -->
+    <!-- Left Eye -->
+    <ellipse cx="220" cy="505" rx="9" ry="13" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="220" cy="505" rx="4" ry="7" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="222" cy="501" r="2" fill="black"/>
+    <!-- Eyelashes Left -->
+    <path d="M 212 494 Q 210 488 206 490" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 220 492 Q 220 485 218 487" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right Eye -->
+    <ellipse cx="270" cy="505" rx="9" ry="13" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="270" cy="505" rx="4" ry="7" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="272" cy="501" r="2" fill="black"/>
+    <!-- Eyelashes Right -->
+    <path d="M 278 494 Q 280 488 284 490" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 270 492 Q 270 485 272 487" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Cute Smile -->
+    <path d="M 232 525 Q 245 545 258 525" fill="white" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Rosy Cheeks (Circles to color) -->
+    <circle cx="205" cy="522" r="7" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="285" cy="522" r="7" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- FOREGROUND FLOWERS AND PLANTS -->
+  <g id="foreground-plants">
+    <!-- Big Flower Left -->
+    <g id="flower-left">
+      <!-- Stem -->
+      <path d="M 80 830 Q 70 760 90 720" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+      <!-- Leaves -->
+      <path d="M 75 780 Q 30 770 40 740 Q 70 750 75 780 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 82 760 Q 130 750 120 720 Q 90 730 82 760 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Petals -->
+      <circle cx="90" cy="670" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="90" cy="710" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="70" cy="690" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="110" cy="690" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="76" cy="676" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="104" cy="704" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="76" cy="704" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="104" cy="676" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Center -->
+      <circle cx="90" cy="690" r="22" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Big Flower Right -->
+    <g id="flower-right">
+      <!-- Stem -->
+      <path d="M 730 830 Q 740 770 720 730" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+      <!-- Leaf -->
+      <path d="M 732 770 Q 780 760 770 730 Q 740 740 732 770 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Petals -->
+      <circle cx="720" cy="680" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="720" cy="716" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="702" cy="698" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="738" cy="698" r="18" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Center -->
+      <circle cx="720" cy="698" r="18" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Cute Little Snail on Ground -->
+    <g id="snail">
+      <!-- Body -->
+      <path d="M 370 850 C 370 835 390 835 400 845 L 430 845 C 440 845 445 850 440 855 C 420 860 380 860 370 850 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Antennae -->
+      <path d="M 380 838 L 375 828" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="374" cy="826" r="3" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Shell -->
+      <circle cx="405" cy="838" r="15" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 405 838 m -8,0 a 8,8 0 1,0 16,0 a 8,8 0 1,0 -16,0" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Grass Tufts -->
+    <!-- Grass 1 -->
+    <path d="M 140 825 Q 130 780 120 775 Q 140 790 150 825 Q 160 770 175 765 Q 170 790 170 825 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Grass 2 -->
+    <path d="M 460 835 Q 465 800 455 790 Q 475 805 480 835 Q 495 795 510 790 Q 500 815 500 835 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Grass 3 -->
+    <path d="M 640 830 Q 630 790 615 785 Q 635 800 645 830 Q 660 785 675 780 Q 665 805 665 830 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+</svg>
