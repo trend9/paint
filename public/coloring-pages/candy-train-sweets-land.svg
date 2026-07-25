@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style>
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+      }
+      .outline-thin {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Landscape Elements -->
+  <g id="landscape">
+    <!-- Ground / Path for train -->
+    <path class="outline" d="M0 800 Q200 750 400 800 T800 800 L800 1000 L0 1000 Z"/>
+
+    <!-- Cupcake Mountains -->
+    <g id="cupcake-mountains">
+      <path class="outline" d="M600 700 C650 600 750 600 800 700 L800 800 L600 800 Z"/>
+      <path class="outline" d="M400 680 C430 600 500 600 550 680 L550 800 L400 800 Z"/>
+      <!-- Cupcake liners -->
+      <path class="outline-thin no-fill" d="M600 700 Q620 710 640 700 Q660 710 680 700 Q700 710 720 700 Q740 710 760 700 Q780 710 800 700"/>
+      <path class="outline-thin no-fill" d="M400 680 Q420 690 440 680 Q460 690 480 680 Q500 690 520 680 Q540 690 550 680"/>
+      <!-- Frosting swirl on cupcake mountains -->
+      <path class="outline-thin no-fill" d="M700 650 Q720 630 740 650 C750 670 730 680 710 660 S680 640 680 660 Q660 680 650 660 C640 640 660 630 680 640"/>
+      <circle class="outline-thin" cx="720" cy="630" r="10"/> <!-- Cherry/sprinkle on top -->
+      <path class="outline-thin no-fill" d="M480 630 Q500 610 520 630 C530 650 510 660 490 640 S460 620 460 640 Q440 660 430 640 C420 620 440 610 460 620"/>
+      <circle class="outline-thin" cx="500" cy="610" r="8"/> <!-- Cherry/sprinkle on top -->
+    </g>
+
+    <!-- Swirly Lollipops -->
+    <g id="lollipops">
+      <circle class="outline" cx="150" cy="300" r="80"/>
+      <path class="outline-thin no-fill" d="M150 220 A80 80 0 0 1 150 380 A80 80 0 0 1 150 220 Z M150 300 L150 220 A40 40 0 0 1 150 380 L150 300"/>
+      <rect class="outline" x="140" y="380" width="20" height="150" rx="10" ry="10"/>
+
+      <circle class="outline" cx="700" cy="200" r="60"/>
+      <path class="outline-thin no-fill" d="M700 140 A60 60 0 0 1 700 260 A60 60 0 0 1 700 140 Z M700 200 L700 140 A30 30 0 0 1 700 260 L700 200"/>
+      <rect class="outline" x="690" y="260" width="20" height="120" rx="10" ry="10"/>
+    </g>
+
+    <!-- Fluffy Marshmallow Clouds -->
+    <g id="clouds">
+      <path class="outline" d="M100 100 C70 100 50 130 50 160 C50 190 70 220 100 220 H200 C230 220 250 190 250 160 C250 130 230 100 200 100 Z"/>
+      <path class="outline" d="M550 50 C520 50 500 80 500 110 C500 140 520 170 550 170 H650 C680 170 700 140 700 110 C700 80 680 50 650 50 Z"/>
+      <path class="outline" d="M250 40 C220 40 200 70 200 100 C200 130 220 160 250 160 H350 C380 160 400 130 400 100 C400 70 380 40 350 40 Z"/>
+    </g>
+
+    <!-- Chocolate Rivers with Gummy Bear Boats -->
+    <g id="rivers">
+      <path class="outline" d="M0 900 Q200 850 400 900 T800 900 L800 1000 L0 1000 Z"/>
+      <path class="outline" d="M0 950 Q150 920 300 950 T800 950 L800 1000 L0 1000 Z"/>
+
+      <!-- Gummy Bear Boat 1 -->
+      <g id="gummy-bear-boat-1">
+        <path class="outline" d="M100 870 C100 850 120 840 140 840 H180 C200 840 220 850 220 870 C220 890 190 890 160 890 C130 890 100 890 100 870 Z"/>
+        <circle class="outline" cx="160" cy="855" r="10"/>
+        <line class="outline-thin no-fill" x1="160" y1="865" x2="160" y2="880"/>
+        <line class="outline-thin no-fill" x1="150" y1="870" x2="170" y2="870"/>
+      </g>
+      <!-- Gummy Bear Boat 2 -->
+      <g id="gummy-bear-boat-2">
+        <path class="outline" d="M600 860 C600 840 620 830 640 830 H680 C700 830 720 840 720 860 C720 880 690 880 660 880 C630 880 600 880 600 860 Z"/>
+        <circle class="outline" cx="660" cy="845" r="10"/>
+        <line class="outline-thin no-fill" x1="660" y1="855" x2="660" y2="870"/>
+        <line class="outline-thin no-fill" x1="650" y1="860" x2="670" y2="860"/>
+      </g>
+    </g>
+
+    <!-- Candy Cane Trees -->
+    <g id="candy-cane-trees">
+      <rect class="outline" x="30" y="600" width="30" height="200" rx="15" ry="15"/>
+      <path class="outline-thin no-fill" d="M30 620 L60 600 M30 580 L60 560 M30 540 L60 520 M30 500 L60 480"/>
+      <circle class="outline" cx="45" cy="460" r="30"/>
+      <path class="outline-thin no-fill" d="M45 430 A30 30 0 0 1 45 490 A30 30 0 0 1 45 430 Z M45 460 L45 430 A15 15 0 0 1 45 490 L45 460"/>
+
+      <rect class="outline" x="350" y="550" width="30" height="150" rx="15" ry="15"/>
+      <path class="outline-thin no-fill" d="M350 570 L380 550 M350 530 L380 510 M350 490 L380 470 M350 450 L380 430"/>
+      <circle class="outline" cx="365" cy="410" r="30"/>
+      <path class="outline-thin no-fill" d="M365 380 A30 30 0 0 1 365 440 A30 30 0 0 1 365 380 Z M365 410 L365 380 A15 15 0 0 1 365 440 L365 410"/>
+    </g>
+  </g>
+
+  <!-- Train Elements -->
+  <g id="train">
+    <!-- Train body -->
+    <rect class="outline" x="180" y="700" width="400" height="100" rx="20" ry="20"/>
+    <rect class="outline" x="200" y="620" width="100" height="80" rx="15" ry="15"/>
+    <rect class="outline" x="160" y="720" width="30" height="60" rx="10" ry="10"/>
+
+    <!-- Windows with characters -->
+    <g id="windows-characters">
+      <rect class="outline" x="210" y="630" width="80" height="60" rx="10" ry="10"/>
+      <circle class="outline-thin" cx="250" cy="655" r="15"/>
+      <path class="outline-thin no-fill" d="M240 660 Q250 670 260 660"/>
+      <circle class="outline-thin" cx="240" cy="650" r="2"/>
+      <circle class="outline-thin" cx="260" cy="650" r="2"/>
+      <path class="outline-thin no-fill" d="M235 670 Q245 680 255 670"/>
+
+      <rect class="outline" x="310" y="710" width="70" height="60" rx="10" ry="10"/>
+      <circle class="outline-thin" cx="345" cy="735" r="15"/>
+      <path class="outline-thin no-fill" d="M335 740 Q345 750 355 740"/>
+      <circle class="outline-thin" cx="335" cy="730" r="2"/>
+      <circle class="outline-thin" cx="355" cy="730" r="2"/>
+      <path class="outline-thin no-fill" d="M330 750 Q340 760 350 750"/>
+
+      <rect class="outline" x="420" y="710" width="70" height="60" rx="10" ry="10"/>
+      <circle class="outline-thin" cx="455" cy="735" r="15"/>
+      <path class="outline-thin no-fill" d="M445 740 Q455 750 465 740"/>
+      <circle class="outline-thin" cx="445" cy="730" r="2"/>
+      <circle class="outline-thin" cx="465" cy="730" r="2"/>
+      <path class="outline-thin no-fill" d="M440 750 Q450 760 460 750"/>
+
+      <rect class="outline" x="510" y="710" width="70" height="60" rx="10" ry="10"/>
+      <circle class="outline-thin" cx="545" cy="735" r="15"/>
+      <circle class="outline-thin no-fill" cx="545" cy="735" r="5"/>
+      <path class="outline-thin no-fill" d="M535 740 Q545 750 555 740"/>
+      <circle class="outline-thin" cx="535" cy="730" r="2"/>
+      <circle class="outline-thin" cx="555" cy="730" r="2"/>
+      <path class="outline-thin no-fill" d="M530 750 Q540 760 550 750"/>
+    </g>
+
+    <!-- Big round candy wheels -->
+    <circle class="outline" cx="250" cy="800" r="40"/>
+    <path class="outline-thin no-fill" d="M250 760 A40 40 0 0 1 250 840 A40 40 0 0 1 250 760 Z M250 800 L250 760 A20 20 0 0 1 250 840 L250 800"/>
+    <circle class="outline" cx="450" cy="800" r="40"/>
+    <path class="outline-thin no-fill" d="M450 760 A40 40 0 0 1 450 840 A40 40 0 0 1 450 760 Z M450 800 L450 760 A20 20 0 0 1 450 840 L450 800"/>
+
+    <!-- Lollipop smokestack -->
+    <rect class="outline" x="180" y="580" width="40" height="40" rx="10" ry="10"/>
+    <circle class="outline" cx="200" cy="540" r="30"/>
+    <path class="outline-thin no-fill" d="M200 510 A30 30 0 0 1 200 570 A30 30 0 0 1 200 510 Z M200 540 L200 510 A15 15 0 0 1 200 570 L200 540"/>
+    <path class="outline no-fill" d="M190 510 Q180 490 200 470 Q220 490 210 510"/>
+    <path class="outline no-fill" d="M220 480 Q210 460 230 440 Q250 460 240 480"/>
+  </g>
+
+</svg>
