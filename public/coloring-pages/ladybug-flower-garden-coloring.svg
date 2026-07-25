@@ -1,0 +1,131 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ladybug Group -->
+  <g id="ladybug">
+    <!-- Ladybug Body -->
+    <ellipse cx="400" cy="300" rx="60" ry="70" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Ladybug Head -->
+    <circle cx="400" cy="220" r="40" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Ladybug Eyes -->
+    <circle cx="380" cy="210" r="8" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="420" cy="210" r="8" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Ladybug Smile -->
+    <path d="M390 235 Q400 245 410 235" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Ladybug Antennae -->
+    <path d="M380 200 C370 180, 360 170, 370 160" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M420 200 C430 180, 440 170, 430 160" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Ladybug Spots -->
+    <circle cx="360" cy="280" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="440" cy="280" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="380" cy="330" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="420" cy="330" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Fluttering lines -->
+    <path d="M300 250 Q280 230 270 240 M300 260 Q280 280 270 270" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M500 250 Q520 230 530 240 M500 260 Q520 280 530 270" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flowers and Garden Elements Group -->
+  <g id="flowers_and_garden">
+    <!-- Flower 1 (Daisy-like, bottom center) -->
+    <g id="flower1">
+      <circle cx="400" cy="780" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+      <!-- Petals -->
+      <ellipse cx="400" cy="735" rx="20" ry="40" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="400" cy="825" rx="20" ry="40" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="355" cy="780" rx="40" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="445" cy="780" rx="40" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="370" cy="750" rx="35" ry="35" transform="rotate(-45 370 750)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="430" cy="750" rx="35" ry="35" transform="rotate(45 430 750)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="370" cy="810" rx="35" ry="35" transform="rotate(45 370 810)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="430" cy="810" rx="35" ry="35" transform="rotate(-45 430 810)" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Stem -->
+      <path d="M400 810 L400 900" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Leaves -->
+      <ellipse cx="370" cy="860" rx="15" ry="30" transform="rotate(20 370 860)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="430" cy="860" rx="15" ry="30" transform="rotate(-20 430 860)" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Flower 2 (Tulip-like, left) -->
+    <g id="flower2">
+      <path d="M150 700 C130 650, 170 630, 190 680 L200 700 L150 700 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M190 680 C180 630, 220 620, 230 670 L240 700 L190 680 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M150 700 C150 700, 100 680, 120 630 C150 600, 190 620, 190 680" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Stem -->
+      <path d="M190 700 L190 900" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Leaves -->
+      <ellipse cx="160" cy="850" rx="15" ry="30" transform="rotate(30 160 850)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="220" cy="870" rx="15" ry="30" transform="rotate(-15 220 870)" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Flower 3 (Simple, right) -->
+    <g id="flower3">
+      <circle cx="650" cy="720" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+      <!-- Petals (simpler, larger) -->
+      <circle cx="650" cy="670" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="650" cy="770" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="600" cy="720" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="700" cy="720" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Stem -->
+      <path d="M650 750 L650 880" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Leaves -->
+      <ellipse cx="620" cy="830" rx="15" ry="30" transform="rotate(10 620 830)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="680" cy="840" rx="15" ry="30" transform="rotate(-10 680 840)" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Flower 4 (Smaller, top-left) -->
+    <g id="flower4">
+      <circle cx="200" cy="500" r="20" fill="white" stroke="black" stroke-width="3"/> <!-- Center -->
+      <ellipse cx="200" cy="470" rx="15" ry="25" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="200" cy="530" rx="15" ry="25" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="170" cy="500" rx="25" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="230" cy="500" rx="25" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M200 520 L200 600" fill="none" stroke="black" stroke-width="3"/>
+      <ellipse cx="185" cy="570" rx="10" ry="20" transform="rotate(15 185 570)" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Flower 5 (Smaller, top-right) -->
+    <g id="flower5">
+      <circle cx="600" cy="550" r="20" fill="white" stroke="black" stroke-width="3"/> <!-- Center -->
+      <ellipse cx="600" cy="520" rx="15" ry="25" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="600" cy="580" rx="15" ry="25" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="570" cy="550" rx="25" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="630" cy="550" rx="25" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M600 570 L600 650" fill="none" stroke="black" stroke-width="3"/>
+      <ellipse cx="615" cy="620" rx="10" ry="20" transform="rotate(-15 615 620)" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Flower 6 (Bottom left, simple round petals) -->
+    <g id="flower6">
+      <circle cx="80" cy="850" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="80" cy="810" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="80" cy="890" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="40" cy="850" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="120" cy="850" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M80 880 L80 950" fill="none" stroke="black" stroke-width="4"/>
+      <ellipse cx="60" cy="920" rx="12" ry="25" transform="rotate(25 60 920)" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Flower 7 (Bottom right, simple round petals) -->
+    <g id="flower7">
+      <circle cx="720" cy="870" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="720" cy="830" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="720" cy="910" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="680" cy="870" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="760" cy="870" r="20" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+      <path d="M720 900 L720 970" fill="none" stroke="black" stroke-width="4"/>
+      <ellipse cx="740" cy="940" rx="12" ry="25" transform="rotate(-25 740 940)" fill="white" stroke="black" stroke-width="4"/>
+    
+
+    <!-- Additional background leaves/grass tufts (simple rounded shapes) -->
+    <g id="grass_elements">
+      <ellipse cx="100" cy="980" rx="40" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="700" cy="980" rx="40" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="50" cy="950" rx="20" ry="30" transform="rotate(10 50 950)" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="750" cy="950" rx="20" ry="30" transform="rotate(-10 750 950)" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="300" cy="970" rx="30" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="500" cy="970" rx="30" ry="15" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="250" cy="930" rx="25" ry="12" transform="rotate(5 250 930)" fill="white" stroke="black" stroke-width="3"/>
+      <ellipse cx="550" cy="930" rx="25" ry="12" transform="rotate(-5 550 930)" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
