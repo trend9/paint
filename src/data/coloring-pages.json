@@ -1,5 +1,33 @@
 [
   {
+    "slug": "flapping-ladybug-flower-field",
+    "title": "【ぬりえ】お花畑でパタパタ！元気いっぱいてんとう虫さん",
+    "description": "お花畑で楽しく遊ぶ、かわいい「てんとう虫」さんのぬりえです。カラフルな花々と一緒に、てんとう虫さんをかわいく塗ってあげてね！色塗りを楽しみながら、自然や生き物への興味を育むことができます。",
+    "category": "動物・生き物",
+    "tags": [
+      "てんとう虫 ぬりえ",
+      "お花 ぬりえ",
+      "自然 ぬりえ",
+      "春 ぬりえ"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, a cute happy ladybug with distinct spots, flapping its wings, flying happily among a field of various simple, large flowers (like daisies, tulips, sunflowers), simple leaves, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines, bold outlines for all elements, no complex cross-hatching, no gray backgrounds, no shadows, every segment must be pure block-white, printable coloring page --ar 3:4",
+    "article": "<h3>お花畑で遊ぶパタパタてんとう虫さんを塗ってみよう！</h3><p>こんにちは、ちびっこアーティストさん！ポカポカのお花畑で楽しく遊ぶ「てんとう虫」さんのぬりえだよ。小さくてまん丸、背中に黒い点々があるかわいい虫さんだね。元気いっぱいにパタパタと羽ばたくてんとう虫と、まわりに咲くたくさんのお花を、カラフルに塗ってあげてね！</p><h4>てんとう虫ってどんな虫？</h4><p>てんとう虫（てんとうむし）は、お日様が大好きな丸い虫だよ。赤やオレンジの背中に黒い水玉模様が特徴だね。実は、植物の葉っぱにつく悪い虫（アブラムシ）を食べてくれる、とっても優しい虫さんなんだ！だから、農家（のうか）の人たちも、てんとう虫さんが大好き。お花畑では、花粉（かふん）をつけながら、色々な花を訪れているよ。</p><h4>色の選び方とぬり方のコツ</h4><p>てんとう虫の背中は赤やオレンジが一般的だけど、好きな色に塗ってみても面白いね！点々は黒でパチッと目立つように。たくさんのお花は、それぞれ違う色に塗ると、お花畑がもっと賑やかになるよ。ピンク、黄色、青、紫…好きな色をたくさん使って、自分だけの素敵なお花畑を作り上げてみよう。はみ出さないように、ゆっくり丁寧に塗ってみてね。</p><h4>お父様・お母様へ：ぬりえで育む子どもの力</h4><p>このぬりえは、お子様の指先の巧緻性（こうちせい）や色彩感覚を養うのに最適です。てんとう虫や多様な花を塗ることで、自然界の面白さに触れるきっかけにも。お花の色やてんとう虫の点々を数えたり、どんなお花が咲いているか話したりすることで、語彙力（ごいりょく）や観察力（かんさつりょく）も向上します。完成した作品をぜひ褒めてあげ、達成感を高めてください。ぬりえを通して、親子の素敵な時間をお過ごしください。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】お花畑のてんとう虫！かわいいぬりえイラスト（子供・幼児向け）",
+      "metaDescription": "無料でダウンロードできる、お花畑とてんとう虫のかわいいぬりえ！子供たちの集中力や色彩感覚を育みます。おうち時間での知育遊びにぴったり。今すぐ印刷して楽しんでね！",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "てんとう虫 ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/flapping-ladybug-flower-field.svg",
+    "imageType": "svg",
+    "createdAt": "2026-07-27T14:07:43.741Z",
+    "id": "109"
+  },
+  {
     "slug": "space-animal-astronauts",
     "title": "宇宙へGO！どうぶつ宇宙飛行士の星空ぬりえ",
     "description": "かわいいどうぶつ宇宙飛行士たちが、キラキラ輝く宇宙で大冒険！惑星や流れ星をぬりながら、夢いっぱいの宇宙の世界を体験しよう。お子様の想像力を育む、無料の楽しいぬりえです。",
