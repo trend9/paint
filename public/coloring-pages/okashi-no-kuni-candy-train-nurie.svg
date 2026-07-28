@@ -1,96 +1,311 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <!-- Pure white background -->
-  <rect x="0" y="0" width="800" height="1000" fill="white" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <rect width="800" height="1000" fill="white"/>
 
-  <!-- Background Candy Land -->
-  <g id="background_candy_land">
-    <!-- Oversized Lollipop 1 -->
-    <circle cx="150" cy="200" r="80" fill="white" stroke="black" stroke-width="4" />
-    <rect x="140" y="270" width="20" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+  <!-- MAIN STYLING GROUP FOR COLORING BOOK -->
+  <g stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
 
-    <!-- Oversized Lollipop 2 -->
-    <circle cx="700" cy="180" r="70" fill="white" stroke="black" stroke-width="4" />
-    <rect x="690" y="240" width="20" height="90" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+    <!-- BACKGROUND: SKY & SUN -->
+    <g id="sky">
+      <!-- Whimsical Sun -->
+      <circle cx="700" cy="120" r="45"/>
+      <!-- Sun Rays -->
+      <line x1="700" y1="60" x2="700" y2="40"/>
+      <line x1="750" y1="120" x2="770" y2="120"/>
+      <line x1="735" y1="75" x2="750" y2="60"/>
+      <line x1="735" y1="165" x2="750" y2="180"/>
+      <line x1="665" y1="75" x2="650" y2="60"/>
+      <!-- Sun Face -->
+      <circle cx="685" cy="115" r="4" fill="black"/>
+      <circle cx="715" cy="115" r="4" fill="black"/>
+      <path d="M 685,130 Q 700,145 715,130" fill="none"/>
 
-    <!-- Cookie 1 (simple circle) -->
-    <circle cx="60" cy="450" r="50" fill="white" stroke="black" stroke-width="4" />
-
-    <!-- Cookie 2 (simple blobby path for a rustic cookie shape) -->
-    <path d="M 750 480 C 770 470 770 430 750 420 C 730 410 700 410 680 430 C 660 450 660 480 680 500 C 700 520 730 520 750 480 Z" fill="white" stroke="black" stroke-width="4" />
-
-    <!-- Gingerbread House 1 -->
-    <rect x="500" y="270" width="150" height="120" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 500 270 L 575 190 L 650 270 Z" fill="white" stroke="black" stroke-width="4" /> <!-- Roof -->
-    <rect x="550" y="320" width="50" height="70" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" /> <!-- Door -->
-    <circle cx="590" cy="355" r="5" fill="white" stroke="black" stroke-width="4" /> <!-- Doorknob -->
-
-    <!-- Gingerbread House 2 (smaller) -->
-    <rect x="50" y="280" width="100" height="90" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 50 280 L 100 220 L 150 280 Z" fill="white" stroke="black" stroke-width="4" /> <!-- Roof -->
-    <rect x="80" y="320" width="40" height="50" rx="8" ry="8" fill="white" stroke="black" stroke-width="4" /> <!-- Door -->
-    <circle cx="110" cy="345" r="4" fill="white" stroke="black" stroke-width="4" /> <!-- Doorknob -->
-  </g>
-
-  <!-- Licorice Track -->
-  <g id="licorice_track">
-    <path d="M 0 750 L 800 750" stroke="black" stroke-width="5" fill="none" />
-    <path d="M 0 780 L 800 780" stroke="black" stroke-width="5" fill="none" />
-  </g>
-
-  <!-- Candy Train -->
-  <g id="candy_train">
-    <!-- Locomotive -->
-    <g id="locomotive">
-      <!-- Main body -->
-      <rect x="120" y="550" width="180" height="120" rx="20" ry="20" fill="white" stroke="black" stroke-width="4" />
-      <!-- Front boiler/nose (circle for a rounded look) -->
-      <circle cx="120" cy="610" r="60" fill="white" stroke="black" stroke-width="4" />
-      <!-- Cabin -->
-      <rect x="220" y="470" width="80" height="80" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
-      <!-- Smokestack -->
-      <rect x="150" y="480" width="40" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
-      <circle cx="170" cy="480" r="30" fill="white" stroke="black" stroke-width="4" />
-
-      <!-- Wheels (gummy wheels) -->
-      <circle cx="180" cy="670" r="40" fill="white" stroke="black" stroke-width="4" />
-      <circle cx="280" cy="670" r="40" fill="white" stroke="black" stroke-width="4" />
-
-      <!-- Cotton candy steam (simple cloud-like shapes) -->
-      <path d="M 170 450 C 210 400 250 420 230 370 C 210 320 150 300 130 350 C 110 400 130 450 170 450 Z" fill="white" stroke="black" stroke-width="4" />
-      <path d="M 230 370 C 270 320 310 340 290 290 C 270 240 210 220 190 270 C 170 320 190 370 230 370 Z" fill="white" stroke="black" stroke-width="4" />
+      <!-- Candy Clouds -->
+      <!-- Cloud 1 (Left) -->
+      <path d="M 70,140 Q 90,110 130,120 Q 160,90 200,110 Q 230,100 250,130 Q 270,160 230,180 Q 190,190 140,180 Q 70,180 70,140 Z"/>
+      <!-- Cloud 2 (Center) -->
+      <path d="M 360,110 Q 380,85 410,95 Q 435,70 470,85 Q 500,80 515,105 Q 535,130 500,145 Q 460,155 410,145 Q 350,145 360,110 Z"/>
     </g>
 
-    <!-- Connector 1 -->
-    <rect x="290" y="600" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" />
+    <!-- BACKGROUND: HILLS & CANDY LAND FEATURES -->
+    <g id="background-hills">
+      <!-- Distant Rolling Hills -->
+      <path d="M -10,480 Q 200,410 450,470 T 810,430 L 810,1000 L -10,1000 Z"/>
+      <path d="M -10,540 Q 280,470 810,550 L 810,1000 L -10,1000 Z"/>
 
-    <!-- Chocolate Wagon 1 -->
-    <g id="wagon1_chocolate">
-      <rect x="320" y="570" width="200" height="100" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
-      <!-- Wheels -->
-      <circle cx="380" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
-      <circle cx="480" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
-      <!-- Candies inside wagon -->
-      <circle cx="360" cy="590" r="20" fill="white" stroke="black" stroke-width="4" /> <!-- Lollipop head -->
-      <rect x="350" y="600" width="5" height="40" rx="2" ry="2" fill="white" stroke="black" stroke-width="4" /> <!-- Lollipop stick -->
-      <ellipse cx="420" cy="610" rx="25" ry="15" fill="white" stroke="black" stroke-width="4" /> <!-- Gummy bear/blob -->
-      <rect x="460" y="600" width="30" height="30" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" /> <!-- Chocolate bar piece -->
+      <!-- Gingerbread House (Left Hill) -->
+      <g id="gingerbread-house">
+        <!-- Main Structure -->
+        <rect x="70" y="360" width="120" height="100" rx="5"/>
+        <!-- Roof -->
+        <path d="M 55,365 L 130,290 L 205,365 Z"/>
+        <!-- Roof Frosting Scallops -->
+        <path d="M 55,365 Q 67,380 80,365 Q 92,380 105,365 Q 117,380 130,365 Q 142,380 155,365 Q 167,380 180,365 Q 192,380 205,365" fill="none"/>
+        <!-- Chimney with Steam -->
+        <rect x="160" y="300" width="20" height="35"/>
+        <path d="M 170,290 Q 160,270 175,255" fill="none" stroke-width="3"/>
+        <!-- Door -->
+        <path d="M 110,460 L 110,410 C 110,395 150,395 150,410 L 150,460 Z"/>
+        <circle cx="142" cy="430" r="3"/>
+        <!-- Windows -->
+        <circle cx="95" cy="400" r="14"/>
+        <line x1="95" y1="386" x2="95" y2="414"/>
+        <line x1="81" y1="400" x2="109" y2="400"/>
+        <!-- Candy Canes beside door -->
+        <path d="M 100,460 L 100,425 C 100,415 108,415 108,425" fill="none" stroke-width="3"/>
+        <path d="M 160,460 L 160,425 C 160,415 168,415 168,425" fill="none" stroke-width="3"/>
+      </g>
+
+      <!-- Lollipop Tree 1 -->
+      <g id="lollipop-tree-1">
+        <rect x="255" y="350" width="16" height="140" rx="8"/>
+        <circle cx="263" cy="300" r="50"/>
+        <!-- Swirl details -->
+        <path d="M 263,300 m -35,0 a 35,35 0 1,0 70,0 a 35,35 0 1,0 -70,0" fill="none" stroke-width="3"/>
+        <path d="M 263,300 m -20,0 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0" fill="none" stroke-width="3"/>
+        <!-- Ribbon Bow -->
+        <path d="M 263,350 L 245,365 L 263,360 L 281,365 Z"/>
+      </g>
+
+      <!-- Lollipop Tree 2 -->
+      <g id="lollipop-tree-2">
+        <rect x="525" y="370" width="14" height="120" rx="7"/>
+        <circle cx="532" cy="325" r="40"/>
+        <path d="M 532,325 m -28,0 a 28,28 0 1,0 56,0 a 28,28 0 1,0 -56,0" fill="none" stroke-width="3"/>
+        <path d="M 532,325 m -15,0 a 15,15 0 1,0 30,0 a 15,15 0 1,0 -30,0" fill="none" stroke-width="3"/>
+      </g>
+
+      <!-- Gummy Bear Bush -->
+      <g id="gummy-bear-bush">
+        <!-- Bear Ears & Head Silhouette Bush -->
+        <path d="M 620,480 C 610,450 630,430 645,445 C 655,430 685,430 695,445 C 710,430 730,450 720,480 C 735,500 715,520 670,520 C 625,520 605,500 620,480 Z"/>
+        <!-- Cute Bear Face Details -->
+        <circle cx="655" cy="470" r="4" fill="black"/>
+        <circle cx="685" cy="470" r="4" fill="black"/>
+        <ellipse cx="670" cy="482" rx="7" ry="5"/>
+        <path d="M 666,485 Q 670,490 674,485" fill="none" stroke-width="2"/>
+      </g>
     </g>
 
-    <!-- Connector 2 -->
-    <rect x="510" y="600" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" />
-
-    <!-- Candy Wagon 2 -->
-    <g id="wagon2_candy">
-      <rect x="540" y="570" width="200" height="100" rx="15" ry="15" fill="white" stroke="black" stroke-width="4" />
-      <!-- Wheels -->
-      <circle cx="600" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
-      <circle cx="700" cy="670" r="35" fill="white" stroke="black" stroke-width="4" />
-      <!-- Candies inside wagon -->
-      <circle cx="580" cy="610" r="20" fill="white" stroke="black" stroke-width="4" /> <!-- Small round candy -->
-      <rect x="630" y="590" width="40" height="25" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" /> <!-- Pill-shaped candy -->
-      <!-- Wrapped candy (two simple overlapping rectangles to suggest wrapping) -->
-      <rect x="625" y="600" width="10" height="40" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" transform="rotate(45 630 620)" />
-      <rect x="650" y="600" width="10" height="40" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" transform="rotate(-45 655 620)" />
+    <!-- TRAIN TRACKS -->
+    <g id="tracks">
+      <!-- Top Rail -->
+      <path d="M -10,710 Q 400,680 810,720" fill="none" stroke-width="5"/>
+      <!-- Bottom Rail -->
+      <path d="M -10,735 Q 400,705 810,745" fill="none" stroke-width="5"/>
+      <!-- Railroad Ties -->
+      <path d="M 20,708 L 18,735 M 70,705 L 68,732 M 120,702 L 118,729 M 170,700 L 168,727 M 220,698 L 218,725 M 270,696 L 268,723 M 320,695 L 318,722 M 370,694 L 368,721 M 420,695 L 418,722 M 470,696 L 468,723 M 520,698 L 518,725 M 570,700 L 568,728 M 620,703 L 618,731 M 670,706 L 668,734 M 720,709 L 718,737 M 770,712 L 768,741" fill="none" stroke-width="4"/>
     </g>
+
+    <!-- CANDY TRAIN -->
+    <g id="train">
+
+      <!-- STEAM PUFFS WITH CANDIES (from Engine) -->
+      <g id="steam-puffs">
+        <path d="M 640,460 Q 620,440 640,420 Q 660,400 680,420 Q 700,440 680,460 Z"/>
+        <path d="M 580,400 Q 550,370 580,340 Q 610,310 640,340 Q 670,370 640,400 Z"/>
+        <!-- Large Steam Cloud with Floating Sweets -->
+        <path d="M 460,310 Q 430,260 480,220 Q 530,180 590,220 Q 640,200 660,250 Q 680,300 630,330 Q 570,360 500,330 Z"/>
+        <!-- Floating Candy inside Steam -->
+        <!-- Peppermint Swirl -->
+        <circle cx="520" cy="270" r="18"/>
+        <path d="M 520,270 m -12,0 a 12,12 0 1,0 24,0 a 12,12 0 1,0 -24,0" fill="none" stroke-width="2"/>
+        <!-- Wrapped Sweet -->
+        <circle cx="600" cy="260" r="12"/>
+        <path d="M 588,260 L 575,250 L 575,270 Z"/>
+        <path d="M 612,260 L 625,250 L 625,270 Z"/>
+      </g>
+
+      <!-- WAGONS CONNECTORS -->
+      <rect x="235" y="640" width="35" height="12" rx="4"/>
+      <rect x="435" y="640" width="35" height="12" rx="4"/>
+
+      <!-- WAGON 2: DESSERT & COOKIE CAR (REAR) -->
+      <g id="wagon-2">
+        <!-- Sweets Load -->
+        <!-- Giant Cupcake -->
+        <path d="M 85,580 L 75,520 L 145,520 L 135,580 Z"/> <!-- Wrapper -->
+        <line x1="90" y1="580" x2="83" y2="520"/>
+        <line x1="110" y1="580" x2="110" y2="520"/>
+        <line x1="130" y1="580" x2="137" y2="520"/>
+        <!-- Fluffy Icing Top -->
+        <path d="M 70,520 Q 65,480 90,470 Q 110,440 135,470 Q 155,480 150,520 Z"/>
+        <!-- Cherry on Top -->
+        <circle cx="112" cy="445" r="12"/>
+        <path d="M 112,433 Q 125,410 135,415" fill="none" stroke-width="3"/>
+
+        <!-- Chocolate Chip Cookie behind cupcake -->
+        <circle cx="180" cy="525" r="32"/>
+        <circle cx="165" cy="515" r="4"/>
+        <circle cx="185" cy="510" r="5"/>
+        <circle cx="195" cy="530" r="4"/>
+        <circle cx="170" cy="540" r="4"/>
+        <circle cx="185" cy="545" r="3"/>
+
+        <!-- Wagon Body -->
+        <rect x="60" y="580" width="180" height="75" rx="12"/>
+        <!-- Decorative Scalloped Trim -->
+        <path d="M 60,600 Q 75,615 90,600 Q 105,615 120,600 Q 135,615 150,600 Q 165,615 180,600 Q 195,615 210,600 Q 225,615 240,600" fill="none"/>
+
+        <!-- Wheels -->
+        <g id="wheels-wagon-2">
+          <circle cx="100" cy="685" r="30"/>
+          <circle cx="100" cy="685" r="18"/>
+          <circle cx="100" cy="685" r="6"/>
+          <circle cx="200" cy="685" r="30"/>
+          <circle cx="200" cy="685" r="18"/>
+          <circle cx="200" cy="685" r="6"/>
+        </g>
+      </g>
+
+      <!-- WAGON 1: CANDY & CHOCOLATE CAR (MIDDLE) -->
+      <g id="wagon-1">
+        <!-- Sweets Load -->
+        <!-- Chocolate Bar -->
+        <g transform="rotate(-12 310 530)">
+          <rect x="280" y="500" width="55" height="80" rx="4"/>
+          <line x1="280" y1="526" x2="335" y2="526"/>
+          <line x1="280" y1="553" x2="335" y2="553"/>
+          <line x1="307" y1="500" x2="307" y2="580"/>
+        </g>
+
+        <!-- Giant Wrapped Hard Candy -->
+        <circle cx="365" cy="535" r="22"/>
+        <path d="M 365,535 m -14,0 a 14,14 0 1,0 28,0 a 14,14 0 1,0 -28,0" fill="none" stroke-width="3"/>
+        <!-- Wrapper Ends -->
+        <path d="M 345,528 L 325,510 L 325,545 Z"/>
+        <path d="M 385,538 L 405,520 L 405,555 Z"/>
+
+        <!-- Candy Cane sticking out -->
+        <path d="M 410,570 L 410,500 C 410,480 430,480 430,500" fill="none" stroke-width="10"/>
+        <path d="M 410,570 L 410,500 C 410,480 430,480 430,500" fill="none" stroke="white" stroke-width="4"/>
+
+        <!-- Wagon Body -->
+        <rect x="265" y="580" width="175" height="75" rx="12"/>
+        <!-- Star Decoration -->
+        <polygon points="352,600 357,612 370,612 360,620 364,632 352,624 340,632 344,620 334,612 347,612"/>
+
+        <!-- Wheels -->
+        <g id="wheels-wagon-1">
+          <circle cx="305" cy="685" r="30"/>
+          <circle cx="305" cy="685" r="18"/>
+          <circle cx="305" cy="685" r="6"/>
+          <circle cx="400" cy="685" r="30"/>
+          <circle cx="400" cy="685" r="18"/>
+          <circle cx="400" cy="685" r="6"/>
+        </g>
+      </g>
+
+      <!-- TRAIN ENGINE (FRONT) -->
+      <g id="engine">
+        <!-- Engine Driver Cabin -->
+        <rect x="465" y="500" width="115" height="155" rx="8"/>
+        <!-- Cabin Roof -->
+        <path d="M 450,500 Q 522,465 595,500 Z"/>
+
+        <!-- Driver Window -->
+        <rect x="490" y="525" width="65" height="55" rx="10"/>
+
+        <!-- Cute Gingerbread Driver -->
+        <circle cx="522" cy="550" r="16"/> <!-- Head -->
+        <circle cx="516" cy="546" r="2" fill="black"/> <!-- Eye L -->
+        <circle cx="528" cy="546" r="2" fill="black"/> <!-- Eye R -->
+        <path d="M 517,555 Q 522,560 527,555" fill="none" stroke-width="2"/> <!-- Smile -->
+        <!-- Chef/Engineer Hat -->
+        <path d="M 508,538 Q 522,520 536,538 Z"/>
+
+        <!-- Main Engine Boiler/Body -->
+        <rect x="580" y="540" width="145" height="115" rx="12"/>
+
+        <!-- Decorative Stripes on Boiler -->
+        <line x1="610" y1="540" x2="610" y2="655" stroke-width="3"/>
+        <line x1="640" y1="540" x2="640" y2="655" stroke-width="3"/>
+
+        <!-- Smokestack -->
+        <path d="M 625,540 L 615,465 L 665,465 L 655,540 Z"/>
+        <ellipse cx="640" cy="465" rx="25" ry="8"/>
+
+        <!-- Front Engine Face (Cute & Happy) -->
+        <path d="M 725,540 C 760,540 760,655 725,655 Z"/>
+        <!-- Big Happy Eye -->
+        <circle cx="735" cy="575" r="10"/>
+        <circle cx="737" cy="573" r="4" fill="black"/>
+        <!-- Big Cheerful Smile -->
+        <path d="M 730,615 Q 748,630 755,605" fill="none" stroke-width="3"/>
+
+        <!-- Front Headlight -->
+        <path d="M 750,570 L 775,565 L 775,595 L 750,590 Z"/>
+
+        <!-- Candy Cane Cowcatcher / Bumper -->
+        <polygon points="725,655 780,675 780,690 715,690"/>
+        <line x1="735" y1="659" x2="740" y2="690" stroke-width="3"/>
+        <line x1="750" y1="664" x2="758" y2="690" stroke-width="3"/>
+        <line x1="765" y1="670" x2="772" y2="690" stroke-width="3"/>
+
+        <!-- Engine Wheels -->
+        <!-- Back Large Wheel -->
+        <circle cx="510" cy="680" r="42"/>
+        <circle cx="510" cy="680" r="26"/>
+        <circle cx="510" cy="680" r="10"/>
+        <!-- Wheel Spokes -->
+        <line x1="510" y1="638" x2="510" y2="722" stroke-width="3"/>
+        <line x1="468" y1="680" x2="552" y2="680" stroke-width="3"/>
+
+        <!-- Front Small Wheel 1 -->
+        <circle cx="610" cy="690" r="25"/>
+        <circle cx="610" cy="690" r="12"/>
+        <circle cx="610" cy="690" r="5"/>
+
+        <!-- Front Small Wheel 2 -->
+        <circle cx="675" cy="690" r="25"/>
+        <circle cx="675" cy="690" r="12"/>
+        <circle cx="675" cy="690" r="5"/>
+
+        <!-- Connecting Motion Bar -->
+        <path d="M 510,680 L 675,690" stroke-width="7"/>
+        <circle cx="510" cy="680" r="4" fill="black"/>
+        <circle cx="675" cy="690" r="4" fill="black"/>
+      </g>
+    </g>
+
+    <!-- FOREGROUND: CANDY LAND DETAILS -->
+    <g id="foreground">
+      <!-- Wrapped Candy on Ground (Left) -->
+      <g id="fg-candy-1">
+        <circle cx="120" cy="810" r="16"/>
+        <path d="M 104,810 L 85,795 L 85,825 Z"/>
+        <path d="M 136,810 L 155,795 L 155,825 Z"/>
+        <path d="M 120,810 m -10,0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0" fill="none" stroke-width="2"/>
+      </g>
+
+      <!-- Gumdrop Bushes (Center-Left) -->
+      <path d="M 220,840 C 220,800 260,800 260,840 Z"/>
+      <path d="M 250,840 C 250,790 300,790 300,840 Z"/>
+      <path d="M 290,840 C 290,805 325,805 325,840 Z"/>
+
+      <!-- Giant Lollipop in Ground (Right) -->
+      <g id="fg-lollipop">
+        <path d="M 670,880 L 670,780" stroke-width="10"/>
+        <circle cx="670" cy="740" r="42"/>
+        <!-- Swirl -->
+        <path d="M 670,740 m -30,0 a 30,30 0 1,0 60,0 a 30,30 0 1,0 -60,0" fill="none" stroke-width="3"/>
+        <path d="M 670,740 m -16,0 a 16,16 0 1,0 32,0 a 16,16 0 1,0 -32,0" fill="none" stroke-width="3"/>
+      </g>
+
+      <!-- Little Jellybeans scattered -->
+      <path d="M 420,810 C 410,810 410,825 425,825 C 435,825 435,810 420,810 Z"/>
+      <path d="M 480,830 C 470,830 470,845 485,845 C 495,845 495,830 480,830 Z"/>
+      <path d="M 540,805 C 530,805 530,820 545,820 C 555,820 555,805 540,805 Z"/>
+
+      <!-- Candy Flowers -->
+      <g id="candy-flower">
+        <circle cx="590" cy="820" r="10"/>
+        <circle cx="590" cy="800" r="8"/>
+        <circle cx="610" cy="820" r="8"/>
+        <circle cx="590" cy="840" r="8"/>
+        <circle cx="570" cy="820" r="8"/>
+        <path d="M 590,848 L 590,880" stroke-width="4"/>
+      </g>
+    </g>
+
   </g>
 </svg>
