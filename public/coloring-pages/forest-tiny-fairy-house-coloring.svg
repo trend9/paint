@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground -->
+  <path d="M0 850 Q200 830 400 850 T800 850 V1000 H0 Z" fill="white" stroke="black" stroke-width="5"/>
+  
+  <!-- Forest Elements (Trees in background) -->
+  <g id="forest-elements">
+    <!-- Tree 1 -->
+    <rect x="50" y="600" width="80" height="250" rx="30" ry="30" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="90" cy="500" rx="100" ry="120" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Tree 2 -->
+    <rect x="670" y="620" width="70" height="230" rx="25" ry="25" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="705" cy="530" rx="90" ry="110" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+
+  <!-- Magical House (Mushroom and leaves) -->
+  <g id="magical-house">
+    <!-- Mushroom Cap -->
+    <path d="M350 650 C250 500 350 400 500 400 C650 400 750 500 650 650 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Mushroom Stem -->
+    <path d="M450 850 C420 680 580 680 550 850 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Base for the stem -->
+    <ellipse cx="500" cy="850" rx="60" ry="20" fill="white" stroke="black" stroke-width="5"/>
+    
+    <!-- Door -->
+    <path d="M480 848 C465 780 465 720 500 720 C535 720 535 780 520 848 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Windows -->
+    <circle cx="430" cy="600" r="30" fill="white" stroke="black" stroke-width="5"/>
+    <circle cx="570" cy="600" r="30" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Leaves at house base -->
+    <ellipse cx="400" cy="880" rx="40" ry="20" transform="rotate(-10 400 880)" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="600" cy="880" rx="40" ry="20" transform="rotate(10 600 880)" fill="white" stroke="black" stroke-width="5"/>
+    <path d="M350 700 Q320 650 290 680 Q270 720 320 730 Q340 710 350 700 Z" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+  
+  <!-- Fairy - gently sitting next to her house -->
+  <g id="fairy" transform="translate(280 820)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="40" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Head -->
+    <circle cx="0" cy="-50" r="28" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-55" r="4" fill="black" stroke="none"/>
+    <circle cx="10" cy="-55" r="4" fill="black" stroke="none"/>
+    <!-- Smile -->
+    <path d="M-10 -40 Q0 -35 10 -40" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Arms -->
+    <path d="M-25 -20 Q-40 -10 -30 10" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M25 -20 Q40 -10 30 10" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Legs (sitting position) -->
+    <path d="M-15 35 Q-25 45 -10 50" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M15 35 Q25 45 10 50" fill="none" stroke="black" stroke-width="4"/>
+    <!-- Wings (left pair) -->
+    <ellipse cx="-40" cy="-80" rx="30" ry="45" transform="rotate(-15 -40 -80)" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="-60" cy="-60" rx="25" ry="40" transform="rotate(-25 -60 -60)" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Wings (right pair) -->
+    <ellipse cx="40" cy="-80" rx="30" ry="45" transform="rotate(15 40 -80)" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="60" cy="-60" rx="25" ry="40" transform="rotate(25 60 -60)" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Small antennae -->
+    <path d="M-15 -70 Q-20 -90 -25 -85" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M15 -70 Q20 -90 25 -85" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Surrounding elements (Flowers, Ladybug) -->
+  <g id="surrounding-elements">
+    <!-- Flower 1 (Large, stylized) -->
+    <circle cx="150" cy="900" r="35" fill="white" stroke="black" stroke-width="5"/> <!-- Center -->
+    <ellipse cx="150" cy="840" rx="30" ry="50" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="150" cy="960" rx="30" ry="50" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="90" cy="900" rx="50" ry="30" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="210" cy="900" rx="50" ry="30" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Flower 2 (Another style) -->
+    <circle cx="700" cy="920" r="30" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="700" cy="880" rx="20" ry="30" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="730" cy="920" rx="30" ry="20" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="700" cy="960" rx="20" ry="30" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="670" cy="920" rx="30" ry="20" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Ladybug - smiling -->
+    <g id="ladybug" transform="translate(100 780)">
+      <ellipse cx="0" cy="0" rx="30" ry="40" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <circle cx="0" cy="-35" r="18" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <path d="M0 -30 Q-10 -45 -20 -40" fill="none" stroke="black" stroke-width="3"/> <!-- Antenna 1 -->
+      <path d="M0 -30 Q10 -45 20 -40" fill="none" stroke="black" stroke-width="3"/> <!-- Antenna 2 -->
+      <path d="M-8 -20 Q0 -15 8 -20" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <line x1="0" y1="-25" x2="0" y2="30" stroke="black" stroke-width="3"/> <!-- Body line -->
+      <circle cx="12" cy="15" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="-12" cy="15" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="18" cy="-5" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="-18" cy="-5" r="7" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
