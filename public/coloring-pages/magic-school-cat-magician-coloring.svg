@@ -1,83 +1,233 @@
-<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <g id="backdrop" stroke="black" stroke-width="4" fill="white">
-    <!-- Magical School Building -->
-    <!-- Main Wall -->
-    <rect x="100" y="350" width="600" height="550" rx="30" ry="30" />
-    <!-- Roof -->
-    <path d="M 100 350 L 400 150 L 700 350 Z" />
-    <!-- Archway Entrance -->
-    <path d="M 300 900 L 300 650 A 100 100 0 0 1 500 650 L 500 900 Z" fill="none"/>
-    <!-- Small Windows -->
-    <circle cx="200" cy="450" r="40" />
-    <circle cx="600" cy="450" r="40" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      .bold-line {
+        stroke: #000000;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #FFFFFF;
+      }
+      .medium-line {
+        stroke: #000000;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #FFFFFF;
+      }
+      .pupil {
+        fill: #000000;
+        stroke: #000000;
+        stroke-width: 2;
+      }
+      .eye-shine {
+        fill: #FFFFFF;
+        stroke: none;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
 
-    <!-- Stars (simplified to circles for toddlers) -->
-    <circle cx="100" cy="150" r="20" />
-    <circle cx="700" cy="100" r="20" />
-    <circle cx="500" cy="150" r="15" />
-    <circle cx="250" cy="50" r="15" />
+  <!-- Background Canvas -->
+  <rect width="800" height="1000" fill="#FFFFFF"/>
 
-    <!-- Potions -->
-    <path d="M 100 800 L 100 700 Q 100 650 150 650 Q 200 650 200 700 L 200 800 Q 200 850 150 850 Q 100 850 100 800 Z" />
-    <path d="M 600 850 L 600 750 Q 600 700 650 700 Q 700 700 700 750 L 700 850 Q 700 900 650 900 Q 600 900 600 850 Z" />
-    <!-- Bubbles in potions -->
-    <circle cx="150" cy="770" r="10" />
-    <circle cx="170" cy="790" r="8" />
-    <circle cx="130" cy="795" r="7" />
-    <circle cx="650" cy="820" r="10" />
-    <circle cx="630" cy="840" r="8" />
-    <circle cx="670" cy="845" r="7" />
+  <!-- FLOOR LINE -->
+  <path class="bold-line" d="M 40 880 Q 400 900 760 880" />
 
-    <!-- Floating Book -->
-    <rect x="300" y="200" width="200" height="120" rx="10" ry="10" />
-    <!-- Book pages lines -->
-    <path d="M 300 220 L 500 220 M 300 240 L 500 240 M 300 260 L 500 260" fill="none"/>
+  <!-- BACKGROUND: SMILING MOON (Top Right) -->
+  <g id="smiling-moon">
+    <!-- Moon Body -->
+    <path class="bold-line" d="M 620 100 C 530 100 500 210 550 280 C 590 336 670 340 710 290 C 640 290 600 220 630 150 C 640 126 630 105 620 100 Z" />
+    <!-- Moon Eyes (Happy Arches) -->
+    <path class="bold-line no-fill" d="M 580 190 Q 590 175 600 190" />
+    <path class="bold-line no-fill" d="M 625 200 Q 635 185 645 200" />
+    <!-- Moon Smile -->
+    <path class="bold-line no-fill" d="M 595 225 Q 610 240 625 220" />
+    <!-- Cheek Star -->
+    <path class="medium-line" d="M 670 140 L 675 150 L 686 151 L 678 159 L 680 170 L 670 164 L 660 170 L 662 159 L 654 151 L 665 150 Z" />
   </g>
 
-  <g id="cat-magician" stroke="black" stroke-width="4" fill="white">
-    <!-- Cat Body -->
-    <ellipse cx="400" cy="720" rx="130" ry="100" />
-    <!-- Cat Head -->
-    <circle cx="400" cy="550" r="90" />
-    <!-- Cat Ears -->
-    <path d="M 330 500 Q 350 450 380 470 Q 370 510 330 500 Z" />
-    <path d="M 470 500 Q 450 450 420 470 Q 430 510 470 500 Z" />
-    <!-- Inner Ears -->
-    <path d="M 345 505 Q 360 470 380 480 Q 370 500 345 505 Z" />
-    <path d="M 455 505 Q 440 470 420 480 Q 430 500 455 505 Z" />
+  <!-- BACKGROUND: STACK OF SPELLBOOKS (Bottom Left) -->
+  <g id="spellbooks">
+    <!-- Bottom Book -->
+    <path class="bold-line" d="M 70 800 L 250 800 C 265 800 275 810 275 825 C 275 840 265 850 250 850 L 70 850 C 55 850 45 840 45 825 C 45 810 55 800 70 800 Z" />
+    <path class="bold-line no-fill" d="M 75 800 L 75 850" />
+    <path class="medium-line no-fill" d="M 90 812 L 245 812" />
+    <path class="medium-line no-fill" d="M 90 838 L 245 838" />
+    <!-- Bookmark Ribbon -->
+    <path class="bold-line" d="M 160 850 L 160 885 L 175 872 L 190 885 L 190 850 Z" />
 
-    <!-- Pointed Hat -->
-    <path d="M 350 480 L 400 380 L 450 480 Z" />
-    <ellipse cx="400" cy="480" rx="60" ry="15" />
-    <!-- Star on hat -->
-    <path d="M390,400 L395,415 L410,415 L400,425 L405,440 L390,430 L375,440 L380,425 L370,415 L385,415 Z" />
+    <!-- Middle Book -->
+    <path class="bold-line" d="M 85 740 L 235 740 C 248 740 258 750 258 763 C 258 776 248 786 235 786 L 85 786 C 72 786 62 776 62 763 C 62 750 72 740 85 740 Z" />
+    <path class="bold-line no-fill" d="M 90 740 L 90 786" />
+    <!-- Star on Middle Book Spine -->
+    <path class="medium-line" d="M 160 763 L 164 752 L 175 752 L 166 759 L 169 770 L 160 763 L 151 770 L 154 759 L 145 752 L 156 752 Z" />
 
-    <!-- Small Cape -->
-    <path d="M 300 600 Q 250 650 280 750 L 520 750 Q 550 650 500 600 Z" />
-    <path d="M 300 600 Q 350 610 400 600 Q 450 610 500 600" fill="none" stroke-width="3"/> <!-- collar detail -->
+    <!-- Top Book (Open) -->
+    <path class="bold-line" d="M 140 680 Q 180 690 220 680 L 230 725 Q 180 735 140 725 Z" />
+    <path class="bold-line" d="M 140 680 Q 100 690 60 680 L 50 725 Q 100 735 140 725 Z" />
+    <path class="medium-line no-fill" d="M 140 680 L 140 725" />
+    <path class="medium-line no-fill" d="M 75 700 Q 100 706 125 700" />
+    <path class="medium-line no-fill" d="M 155 700 Q 180 706 205 700" />
+  </g>
 
-    <!-- Magic Wand -->
-    <rect x="480" y="650" width="10" height="100" rx="5" ry="5" />
-    <!-- Star on wand tip -->
-    <path d="M490,640 L495,655 L510,655 L500,665 L505,680 L490,670 L475,680 L480,665 L470,655 L485,655 Z" />
+  <!-- BACKGROUND: BUBBLING CAULDRON (Bottom Right) -->
+  <g id="cauldron">
+    <!-- Cauldron Feet -->
+    <path class="bold-line" d="M 580 840 L 560 875 C 555 885 575 890 585 880 L 600 845 Z" />
+    <path class="bold-line" d="M 700 840 L 720 875 C 725 885 745 890 735 880 L 720 845 Z" />
 
-    <!-- Cat Face (eyes, nose, mouth) -->
-    <!-- Eyes -->
-    <circle cx="365" cy="530" r="15" />
-    <circle cx="435" cy="530" r="15" />
-    <!-- Pupils (fill white for coloring) -->
-    <circle cx="365" cy="535" r="5" fill="white" />
-    <circle cx="435" cy="535" r="5" fill="white" />
+    <!-- Cauldron Body -->
+    <path class="bold-line" d="M 540 720 C 510 790 550 860 650 860 C 750 860 790 790 760 720 Z" />
+
+    <!-- Cauldron Rim -->
+    <path class="bold-line" d="M 530 710 C 530 695 770 695 770 710 C 770 725 530 725 530 710 Z" />
+
+    <!-- Side Handles -->
+    <path class="bold-line no-fill" d="M 535 735 C 505 735 505 775 538 775" />
+    <path class="bold-line no-fill" d="M 765 735 C 795 735 795 775 762 775" />
+
+    <!-- Bubbles Liquid Top -->
+    <path class="bold-line" d="M 545 705 Q 565 685 585 705 Q 615 680 645 705 Q 675 685 705 705 Q 735 685 755 705 Z" />
+
+    <!-- Floating Bubbles -->
+    <circle class="bold-line" cx="600" cy="650" r="18" />
+    <circle class="bold-line" cx="655" cy="615" r="25" />
+    <circle class="bold-line" cx="710" cy="640" r="15" />
+    <circle class="medium-line" cx="630" cy="570" r="12" />
+    <circle class="medium-line" cx="675" cy="560" r="8" />
+  </g>
+
+  <!-- CAT MAGICIAN (CENTER STAGE) -->
+  <g id="cat-magician">
+
+    <!-- TAIL -->
+    <path class="bold-line" d="M 480 740 C 580 730 650 660 610 580 C 580 520 520 560 550 610 C 570 640 530 680 470 680 Z" />
+
+    <!-- BACK CAPE -->
+    <path class="bold-line" d="M 280 540 C 180 620 160 770 240 830 C 270 850 320 840 340 810 L 310 550 Z" />
+    <path class="bold-line" d="M 520 540 C 620 620 640 770 560 830 C 530 850 480 840 460 810 L 490 550 Z" />
+
+    <!-- FEET / PAWS (Bottom) -->
+    <path class="bold-line" d="M 310 800 C 310 845 365 845 365 800 C 365 775 310 775 310 800 Z" />
+    <path class="medium-line no-fill" d="M 330 810 L 330 835" />
+    <path class="medium-line no-fill" d="M 348 810 L 348 835" />
+
+    <path class="bold-line" d="M 435 800 C 435 845 490 845 490 800 C 490 775 435 775 435 800 Z" />
+    <path class="medium-line no-fill" d="M 452 810 L 452 835" />
+    <path class="medium-line no-fill" d="M 470 810 L 470 835" />
+
+    <!-- ROBE / BODY -->
+    <path class="bold-line" d="M 320 530 C 300 640 310 780 400 800 C 490 780 500 640 480 530 Z" />
+
+    <!-- Robe Buttons -->
+    <circle class="medium-line" cx="400" cy="610" r="10" />
+    <circle class="medium-line" cx="400" cy="660" r="10" />
+    <circle class="medium-line" cx="400" cy="710" r="10" />
+
+    <!-- LEFT ARM & PAW (Holding Wand) -->
+    <path class="bold-line" d="M 325 540 C 260 550 230 500 255 470 C 280 440 315 480 325 510 Z" />
+
+    <!-- RIGHT ARM & PAW (Waving) -->
+    <path class="bold-line" d="M 475 540 C 540 550 570 500 545 470 C 520 440 485 480 475 510 Z" />
+    <!-- Paw Lines Right -->
+    <path class="medium-line no-fill" d="M 545 475 C 535 485 530 495 530 495" />
+
+    <!-- MAGIC WAND -->
+    <!-- Wand Shaft -->
+    <path class="bold-line" d="M 270 515 L 165 375 L 150 386 L 255 526 Z" />
+    <!-- Wand Tip Star -->
+    <path class="bold-line" d="M 155 370 L 163 345 L 188 340 L 168 325 L 172 300 L 150 315 L 128 300 L 132 325 L 112 340 L 137 345 Z" />
+
+    <!-- CAT HEAD -->
+    <path class="bold-line" d="M 280 440 C 250 370 310 340 400 340 C 490 340 550 370 520 440 C 550 510 480 535 400 535 C 320 535 250 510 280 440 Z" />
+
+    <!-- CAT EARS -->
+    <!-- Left Ear -->
+    <path class="bold-line" d="M 295 365 L 230 250 L 340 342 Z" />
+    <path class="medium-line" d="M 290 350 L 248 272 L 325 333 Z" />
+
+    <!-- Right Ear -->
+    <path class="bold-line" d="M 505 365 L 570 250 L 460 342 Z" />
+    <path class="medium-line" d="M 510 350 L 552 272 L 475 333 Z" />
+
+    <!-- CAPE COLLAR AND BOW -->
+    <!-- Bow Loops -->
+    <path class="bold-line" d="M 400 530 C 360 495 340 545 390 545 Z" />
+    <path class="bold-line" d="M 400 530 C 440 495 460 545 410 545 Z" />
+    <!-- Center Knot -->
+    <circle class="bold-line" cx="400" cy="532" r="9" />
+    <!-- Ribbon Tails -->
+    <path class="bold-line" d="M 393 540 L 375 575 L 392 570 L 398 541 Z" />
+    <path class="bold-line" d="M 407 540 L 425 575 L 408 570 L 402 541 Z" />
+
+    <!-- WIZARD HAT -->
+    <!-- Hat Brim -->
+    <path class="bold-line" d="M 240 355 C 240 325 560 325 560 355 C 560 380 240 380 240 355 Z" />
+    <!-- Hat Cone -->
+    <path class="bold-line" d="M 285 340 C 305 230 360 140 470 100 C 440 180 445 260 515 340 Z" />
+    <!-- Hat Band -->
+    <path class="medium-line no-fill" d="M 280 330 C 330 350 470 350 520 330" />
+    <!-- Big Star on Hat -->
+    <path class="bold-line" d="M 390 240 L 397 220 L 417 218 L 401 205 L 406 185 L 390 197 L 374 185 L 379 205 L 363 218 L 383 220 Z" />
+
+    <!-- CAT FACE -->
+    <!-- Left Eye -->
+    <circle class="bold-line" cx="340" cy="430" r="26" />
+    <ellipse class="pupil" cx="346" cy="430" rx="15" ry="18" />
+    <circle class="eye-shine" cx="340" cy="420" r="6" />
+    <circle class="eye-shine" cx="351" cy="438" r="3" />
+
+    <!-- Right Eye -->
+    <circle class="bold-line" cx="460" cy="430" r="26" />
+    <ellipse class="pupil" cx="454" cy="430" rx="15" ry="18" />
+    <circle class="eye-shine" cx="448" cy="420" r="6" />
+    <circle class="eye-shine" cx="459" cy="438" r="3" />
+
     <!-- Nose -->
-    <path d="M 400 560 L 390 570 Q 400 580 410 570 Z" />
-    <!-- Mouth -->
-    <path d="M 370 585 Q 400 600 430 585" fill="none"/>
-    <!-- Whiskers -->
-    <path d="M 320 560 L 360 560 M 325 570 L 365 570 M 330 580 L 370 580" fill="none"/>
-    <path d="M 480 560 L 440 560 M 475 570 L 435 570 M 470 580 L 430 580" fill="none"/>
+    <path class="pupil" d="M 392 448 Q 400 442 408 448 Q 400 462 392 448 Z" />
 
-    <!-- Front Paws -->
-    <rect x="300" y="680" width="60" height="80" rx="30" ry="30" />
-    <rect x="440" y="680" width="60" height="80" rx="30" ry="30" />
+    <!-- Mouth -->
+    <path class="bold-line no-fill" d="M 400 458 Q 382 475 368 460" />
+    <path class="bold-line no-fill" d="M 400 458 Q 418 475 432 460" />
+
+    <!-- Cute Whiskers -->
+    <!-- Left Whiskers -->
+    <path class="medium-line" d="M 295 435 L 225 420" />
+    <path class="medium-line" d="M 290 450 L 220 450" />
+    <path class="medium-line" d="M 295 465 L 230 480" />
+    <!-- Right Whiskers -->
+    <path class="medium-line" d="M 505 435 L 575 420" />
+    <path class="medium-line" d="M 510 450 L 580 450" />
+    <path class="medium-line" d="M 505 465 L 570 480" />
+
   </g>
+
+  <!-- MAGIC SPARKLING STARS (Floating Extra Large Shapes) -->
+  <g id="magic-sparkles">
+    <!-- Sparkle 1 (Top Left) -->
+    <path class="bold-line" d="M 110 210 Q 110 245 75 245 Q 110 245 110 280 Q 110 245 145 245 Q 110 245 110 210 Z" />
+
+    <!-- Sparkle 2 (Mid Left near Wand) -->
+    <path class="bold-line" d="M 220 220 Q 220 245 195 245 Q 220 245 220 270 Q 220 245 245 245 Q 220 245 220 220 Z" />
+
+    <!-- Sparkle 3 (Lower Left) -->
+    <path class="bold-line" d="M 100 460 Q 100 485 75 485 Q 100 485 100 510 Q 100 485 125 485 Q 100 485 100 460 Z" />
+
+    <!-- Sparkle 4 (Top Center) -->
+    <path class="medium-line" d="M 310 110 Q 310 130 290 130 Q 310 130 310 150 Q 310 130 330 130 Q 310 130 310 110 Z" />
+
+    <!-- Sparkle 5 (Right Side) -->
+    <path class="medium-line" d="M 490 200 Q 490 215 475 215 Q 490 215 490 230 Q 490 215 505 215 Q 490 215 490 200 Z" />
+
+    <!-- Floating Magic Circles / Orbs -->
+    <circle class="medium-line" cx="170" cy="270" r="7" />
+    <circle class="medium-line" cx="70" cy="380" r="9" />
+    <circle class="medium-line" cx="240" cy="160" r="6" />
+    <circle class="medium-line" cx="130" cy="140" r="10" />
+    <circle class="medium-line" cx="270" cy="290" r="8" />
+  </g>
+
 </svg>
