@@ -1,182 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
-  <!-- Pure White Background -->
-  <rect width="800" height="1000" fill="#FFFFFF"/>
+<svg viewBox="0 0 800 1000">
+  <g id="sky_elements" stroke="black" stroke-width="5" fill="white">
+    <!-- Clouds -->
+    <g id="clouds">
+      <path d="M 100 200 Q 120 160 150 170 Q 180 150 210 180 Q 240 190 260 180 Q 290 190 310 220 Q 290 250 260 240 Q 230 260 210 230 Q 180 250 150 230 Q 120 240 100 200 Z"/>
+      <path d="M 500 150 Q 520 110 550 120 Q 580 100 610 130 Q 640 140 660 130 Q 690 140 710 170 Q 690 200 660 190 Q 630 210 610 180 Q 580 200 550 180 Q 520 190 500 150 Z"/>
+      <path d="M 150 800 Q 170 760 200 770 Q 230 750 260 780 Q 290 790 310 780 Q 340 790 360 820 Q 340 850 310 840 Q 280 860 260 830 Q 230 850 200 830 Q 170 840 150 800 Z"/>
+      <path d="M 600 700 Q 620 660 650 670 Q 680 650 710 680 Q 740 690 760 680 Q 790 690 810 720 Q 790 750 760 740 Q 730 760 710 730 Q 680 750 650 730 Q 620 740 600 700 Z"/>
+    </g>
+    <!-- Stars -->
+    <g id="stars">
+      <circle cx="150" cy="80" r="18"/>
+      <circle cx="700" cy="100" r="15"/>
+      <circle cx="250" cy="50" r="20"/>
+      <circle cx="600" cy="30" r="15"/>
+      <circle cx="50" cy="350" r="18"/>
+      <circle cx="750" cy="450" r="15"/>
+      <circle cx="100" cy="650" r="20"/>
+      <circle cx="700" cy="750" r="15"/>
+      <circle cx="350" cy="900" r="18"/>
+      <circle cx="650" cy="950" r="20"/>
+    </g>
+  </g>
 
-  <!-- Global styling for bold, toddler-friendly outlines -->
-  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
-    
-    <!-- ==================== BACKGROUND & SKY ELEMENTS ==================== -->
-    
-    <!-- Happy Sun in Top Right -->
-    <g id="sun" stroke-width="6">
-      <circle cx="700" cy="120" r="50" />
-      <!-- Sun Rays -->
-      <path d="M 630,120 L 610,120" stroke-width="6" fill="none" />
-      <path d="M 770,120 L 790,120" stroke-width="6" fill="none" />
-      <path d="M 700,50 L 700,30" stroke-width="6" fill="none" />
-      <path d="M 700,190 L 700,210" stroke-width="6" fill="none" />
-      <path d="M 650,70 L 635,55" stroke-width="6" fill="none" />
-      <path d="M 750,170 L 765,185" stroke-width="6" fill="none" />
-      <path d="M 750,70 L 765,55" stroke-width="6" fill="none" />
-      <path d="M 650,170 L 635,185" stroke-width="6" fill="none" />
-      <!-- Sun Happy Face -->
-      <path d="M 682,115 Q 687,110 692,115" stroke-width="5" fill="none" />
-      <path d="M 708,115 Q 713,110 718,115" stroke-width="5" fill="none" />
-      <path d="M 693,132 Q 700,140 707,132" stroke-width="5" fill="none" />
+  <g id="whale_and_balloons" stroke="black" fill="white">
+    <!-- Whale -->
+    <g id="whale" stroke-width="5">
+      <!-- Body -->
+      <path d="M 200 550 C 100 450 150 350 400 350 C 650 350 700 450 600 550 C 700 700 400 750 200 550 Z"/>
+      <!-- Tail fin - left fluke -->
+      <path d="M 400 750 Q 300 800 200 770 Q 150 730 200 690 Q 300 720 400 750 Z"/>
+      <!-- Tail fin - right fluke -->
+      <path d="M 400 750 Q 500 800 600 770 Q 650 730 600 690 Q 500 720 400 750 Z"/>
+      <!-- Left Flipper -->
+      <path d="M 280 580 C 250 560 240 590 260 610 C 280 620 310 600 280 580 Z"/>
+      <!-- Right Flipper -->
+      <path d="M 520 580 C 550 560 560 590 540 610 C 520 620 490 600 520 580 Z"/>
+      <!-- Eye -->
+      <circle cx="480" cy="450" r="15"/>
+      <!-- Smile -->
+      <path d="M 450 480 Q 480 500 510 480" fill="none"/>
+      <!-- Blowhole water -->
+      <path d="M 400 350 Q 420 300 440 350" fill="none" stroke-linecap="round"/>
     </g>
 
-    <!-- Whimsical Stars -->
-    <g id="stars" stroke-width="5" fill="#FFFFFF">
-      <!-- Star 1 -->
-      <path d="M 280,365 Q 280,380 295,380 Q 280,380 280,395 Q 280,380 265,380 Q 280,380 280,365 Z" />
-      <!-- Star 2 -->
-      <path d="M 530,365 Q 530,380 545,380 Q 530,380 530,395 Q 530,380 515,380 Q 530,380 530,365 Z" />
-      <!-- Star 3 -->
-      <path d="M 650,445 Q 650,460 665,460 Q 650,460 650,475 Q 650,460 635,460 Q 650,460 650,445 Z" />
+    <!-- Balloons -->
+    <g id="balloons">
+      <ellipse cx="300" cy="200" rx="60" ry="80" stroke-width="5"/>
+      <ellipse cx="500" cy="200" rx="60" ry="80" stroke-width="5"/>
+      <ellipse cx="400" cy="120" rx="60" ry="80" stroke-width="5"/>
+      <!-- Strings -->
+      <line x1="300" y1="280" x2="380" y2="400" stroke-width="3"/>
+      <line x1="500" y1="280" x2="420" y2="400" stroke-width="3"/>
+      <line x1="400" y1="200" x2="400" y2="400" stroke-width="3"/>
     </g>
-
-    <!-- Puffy Clouds -->
-    <g id="clouds" stroke-width="7">
-      <!-- Cloud Top Left (Small) -->
-      <path d="M 130,120 A 20,20 0 0,1 145,100 A 30,30 0 0,1 190,100 A 20,20 0 0,1 205,120 A 15,15 0 0,1 190,140 L 145,140 A 15,15 0 0,1 130,120 Z" />
-      
-      <!-- Cloud Middle Left with Happy Face -->
-      <g id="happy-cloud">
-        <path d="M 50,440 A 25,25 0 0,1 70,410 A 35,35 0 0,1 120,410 A 25,25 0 0,1 140,440 A 20,20 0 0,1 120,465 L 70,465 A 20,20 0 0,1 50,440 Z" />
-        <!-- Cloud Face -->
-        <path d="M 83,436 Q 86,432 89,436" stroke-width="4" fill="none" />
-        <path d="M 101,436 Q 104,432 107,436" stroke-width="4" fill="none" />
-        <path d="M 91,446 Q 95,451 99,446" stroke-width="4" fill="none" />
-      </g>
-
-      <!-- Cloud Lower Right -->
-      <path d="M 600,740 A 25,25 0 0,1 620,710 A 35,35 0 0,1 670,710 A 25,25 0 0,1 690,740 A 20,20 0 0,1 670,765 L 620,765 A 20,20 0 0,1 600,740 Z" />
-      
-      <!-- Cloud Bottom Left (Large) -->
-      <path d="M 100,840 A 30,30 0 0,1 125,800 A 45,45 0 0,1 190,800 A 30,30 0 0,1 215,840 A 25,25 0 0,1 190,875 L 125,875 A 25,25 0 0,1 100,840 Z" />
-    </g>
-
-    <!-- ==================== BALLOON STRINGS (LAYERED BEHIND) ==================== -->
-    <g id="balloon-strings" stroke-width="5" fill="none">
-      <path d="M 110,250 Q 200,420 450,525" /> <!-- From Balloon 4 (Far Left) -->
-      <path d="M 200,360 Q 280,450 450,525" /> <!-- From Balloon 3 (Left) -->
-      <path d="M 320,285 Q 340,400 450,525" /> <!-- From Balloon 1 (Center Left) -->
-      <path d="M 390,150 Q 410,350 450,525" /> <!-- From Balloon 7 (Top Center) -->
-      <path d="M 460,235 Q 450,380 450,525" /> <!-- From Balloon 2 (Center Right) -->
-      <path d="M 580,310 Q 520,440 450,525" /> <!-- From Balloon 5 (Right) -->
-      <path d="M 690,265 Q 600,420 450,525" /> <!-- From Balloon 6 (Far Right) -->
-    </g>
-
-    <!-- ==================== WHALE (LAYERED MIDDLE) ==================== -->
-    <g id="whale-group" stroke-width="7">
-      
-      <!-- Back Flipper (Behind Body) -->
-      <path d="M 340,650 C 310,670 310,710 335,700 C 360,690 370,660 370,650" fill="#FFFFFF" />
-
-      <!-- Main Whale Body -->
-      <path d="M 220,640 
-               C 220,550 320,510 460,530 
-               C 540,540 620,520 660,490 
-               C 680,470 705,470 710,500 
-               C 715,530 690,560 670,575 
-               C 690,590 715,620 710,650 
-               C 705,680 680,680 660,660 
-               C 620,630 540,640 460,680 
-               C 360,720 250,710 220,640 Z" 
-            fill="#FFFFFF" />
-
-      <!-- Whale Belly Line (for dual-tone coloring) -->
-      <path d="M 220,640 C 260,680 360,690 460,660 C 520,640 580,645 600,645" fill="none" />
-
-      <!-- Front Flipper (Overlapping Belly) -->
-      <path d="M 370,665 C 375,715 410,735 425,710 C 435,690 410,660 380,655 Z" fill="#FFFFFF" />
-
-      <!-- Cute Happy Eye -->
-      <circle cx="280" cy="580" r="22" fill="#000000" />
-      <circle cx="272" cy="572" r="7" fill="#FFFFFF" />
-      <circle cx="288" cy="588" r="3.5" fill="#FFFFFF" />
-
-      <!-- Friendly Smile -->
-      <path d="M 235,615 A 20,20 0 0,0 275,615" fill="none" />
-      <path d="M 273,610 L 277,620" fill="none" /> <!-- Smile Cheek Dimple -->
-
-      <!-- Chubby Rosy Cheek Outline -->
-      <ellipse cx="305" cy="610" rx="14" ry="8" fill="#FFFFFF" stroke-width="5" />
-
-      <!-- Blowhole & Air Bubbles -->
-      <path d="M 435,530 C 438,525 448,525 451,530" fill="none" stroke-width="5" />
-      <circle cx="205" cy="525" r="12" stroke-width="5" />
-      <circle cx="225" cy="495" r="8" stroke-width="5" />
-      <circle cx="185" cy="505" r="6" stroke-width="5" />
-
-      <!-- Tie/Bow on Whale's Back (where strings connect) -->
-      <g id="harness-bow" stroke-width="6">
-        <!-- Bow Loops -->
-        <path d="M 450,525 C 420,505 415,535 442,530 Z" fill="#FFFFFF" />
-        <path d="M 450,525 C 480,505 485,535 458,530 Z" fill="#FFFFFF" />
-        <!-- Bow Knot -->
-        <circle cx="450" cy="527" r="9" fill="#FFFFFF" />
-        <!-- Bow Ribbon Tails -->
-        <path d="M 445,535 Q 435,560 440,575" fill="none" />
-        <path d="M 455,535 Q 465,560 460,575" fill="none" />
-      </g>
-    </g>
-
-    <!-- ==================== BALLOONS (LAYERED FOREGROUND) ==================== -->
-    <g id="balloons" stroke-width="7">
-      
-      <!-- Balloon 1 (Center Left - Large Plain) -->
-      <g>
-        <ellipse cx="320" cy="220" rx="55" ry="65" />
-        <path d="M 320,285 L 310,295 L 330,295 Z" fill="#FFFFFF" />
-      </g>
-
-      <!-- Balloon 2 (Center Right - Polka Dots) -->
-      <g>
-        <ellipse cx="460" cy="180" rx="45" ry="55" />
-        <path d="M 460,235 L 450,245 L 470,245 Z" fill="#FFFFFF" />
-        <!-- Polka Dots -->
-        <circle cx="440" cy="160" r="7" fill="#FFFFFF" stroke-width="5" />
-        <circle cx="480" cy="170" r="7" fill="#FFFFFF" stroke-width="5" />
-        <circle cx="450" cy="200" r="7" fill="#FFFFFF" stroke-width="5" />
-        <circle cx="475" cy="140" r="5" fill="#FFFFFF" stroke-width="5" />
-      </g>
-
-      <!-- Balloon 3 (Left - Star Pattern) -->
-      <g>
-        <ellipse cx="200" cy="280" rx="65" ry="75" />
-        <path d="M 200,355 L 190,365 L 210,365 Z" fill="#FFFFFF" />
-        <!-- Big Cute Star Motif in Balloon -->
-        <path d="M 200,255 L 205,270 L 220,270 L 208,280 L 212,295 L 200,285 L 188,295 L 192,280 L 180,270 L 195,270 Z" stroke-width="5" fill="#FFFFFF" />
-      </g>
-
-      <!-- Balloon 4 (Far Left - Small Plain) -->
-      <g>
-        <circle cx="110" cy="210" r="40" />
-        <path d="M 110,250 L 102,258 L 118,258 Z" fill="#FFFFFF" />
-      </g>
-
-      <!-- Balloon 5 (Right - Striped) -->
-      <g>
-        <ellipse cx="580" cy="240" rx="55" ry="65" />
-        <path d="M 580,305 L 570,315 L 590,315 Z" fill="#FFFFFF" />
-        <!-- Curved Stripes -->
-        <path d="M 530,220 Q 580,260 630,220" fill="none" stroke-width="5" />
-        <path d="M 538,250 Q 580,290 622,250" fill="none" stroke-width="5" />
-      </g>
-
-      <!-- Balloon 6 (Far Right - Small Plain) -->
-      <g>
-        <ellipse cx="690" cy="220" rx="40" ry="45" />
-        <path d="M 690,265 L 682,273 L 698,273 Z" fill="#FFFFFF" />
-      </g>
-
-      <!-- Balloon 7 (Top Center - Small Plain) -->
-      <g>
-        <ellipse cx="390" cy="110" rx="35" ry="40" />
-        <path d="M 390,150 L 383,157 L 397,157 Z" fill="#FFFFFF" />
-      </g>
-    </g>
-
   </g>
 </svg>
