@@ -1,0 +1,155 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Licorice Track -->
+  <g id="track">
+    <rect x="0" y="700" width="800" height="40" rx="20" ry="20" class="outline"/>
+    <rect x="0" y="730" width="800" height="40" rx="20" ry="20" class="outline"/>
+    <!-- Sleepers -->
+    <rect x="50" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(-5 80 735)" class="outline"/>
+    <rect x="150" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(3 180 735)" class="outline"/>
+    <rect x="250" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(-7 280 735)" class="outline"/>
+    <rect x="350" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(4 380 735)" class="outline"/>
+    <rect x="450" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(-6 480 735)" class="outline"/>
+    <rect x="550" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(2 580 735)" class="outline"/>
+    <rect x="650" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(-8 680 735)" class="outline"/>
+    <rect x="730" y="705" width="60" height="60" rx="10" ry="10" transform="rotate(5 760 735)" class="outline"/>
+  </g>
+
+  <!-- Landscape Elements -->
+  <g id="landscape_elements">
+    <!-- Giant Cupcakes -->
+    <g id="cupcake1" transform="translate(50, 450)">
+      <path d="M 50 200 C 20 180, 0 140, 0 100 C 0 60, 20 20, 50 0 C 80 20, 100 60, 100 100 C 100 140, 80 180, 50 200 Z" class="outline"/> <!-- Frosting -->
+      <path d="M 10 180 C 20 190, 30 200, 50 200 C 70 200, 80 190, 90 180 L 80 250 H 20 L 10 180 Z" class="outline"/> <!-- Liner -->
+      <circle cx="50" cy="20" r="15" class="outline"/> <!-- Cherry -->
+      <path d="M 50 0 C 45 -5, 40 -10, 35 -10 C 30 -10, 25 -5, 20 0" class="outline no-fill"/> <!-- Cherry stem -->
+    </g>
+    <g id="cupcake2" transform="translate(600, 500)">
+      <path d="M 50 200 C 20 180, 0 140, 0 100 C 0 60, 20 20, 50 0 C 80 20, 100 60, 100 100 C 100 140, 80 180, 50 200 Z" class="outline"/> <!-- Frosting -->
+      <path d="M 10 180 C 20 190, 30 200, 50 200 C 70 200, 80 190, 90 180 L 80 250 H 20 L 10 180 Z" class="outline"/> <!-- Liner -->
+      <circle cx="50" cy="20" r="15" class="outline"/> <!-- Cherry -->
+      <path d="M 50 0 C 45 -5, 40 -10, 35 -10 C 30 -10, 25 -5, 20 0" class="outline no-fill"/> <!-- Cherry stem -->
+    </g>
+
+    <!-- Gingerbread Houses -->
+    <g id="gingerbread_house1" transform="translate(250, 400)">
+      <rect x="0" y="100" width="150" height="120" rx="15" ry="15" class="outline"/> <!-- Body -->
+      <path d="M 0 100 L 75 0 L 150 100 Z" class="outline"/> <!-- Roof Base -->
+      <path d="M 0 100 C 10 90, 20 80, 30 85 C 40 90, 50 85, 60 80 C 70 75, 80 80, 90 85 C 100 90, 110 85, 120 80 C 130 75, 140 80, 150 100" class="outline"/> <!-- Icing Drips -->
+      <rect x="60" y="150" width="30" height="50" rx="10" ry="10" class="outline"/> <!-- Door -->
+      <circle cx="85" cy="175" r="5" class="outline"/> <!-- Doorknob -->
+      <rect x="20" y="120" width="25" height="25" rx="5" ry="5" class="outline"/> <!-- Window -->
+      <rect x="105" y="120" width="25" height="25" rx="5" ry="5" class="outline"/> <!-- Window -->
+    </g>
+    <g id="gingerbread_house2" transform="translate(500, 420) scale(0.8)">
+      <rect x="0" y="100" width="150" height="120" rx="15" ry="15" class="outline"/> <!-- Body -->
+      <path d="M 0 100 L 75 0 L 150 100 Z" class="outline"/> <!-- Roof Base -->
+      <path d="M 0 100 C 10 90, 20 80, 30 85 C 40 90, 50 85, 60 80 C 70 75, 80 80, 90 85 C 100 90, 110 85, 120 80 C 130 75, 140 80, 150 100" class="outline"/> <!-- Icing Drips -->
+      <rect x="60" y="150" width="30" height="50" rx="10" ry="10" class="outline"/> <!-- Door -->
+      <circle cx="85" cy="175" r="5" class="outline"/> <!-- Doorknob -->
+      <rect x="20" y="120" width="25" height="25" rx="5" ry="5" class="outline"/> <!-- Window -->
+    </g>
+    
+    <!-- Cotton Candy Clouds -->
+    <g id="clouds">
+      <path d="M 0 50 C 0 20, 20 0, 50 0 C 80 0, 100 20, 100 50 C 100 80, 80 100, 50 100 C 20 100, 0 80, 0 50 Z" class="outline" transform="translate(100, 50) scale(1.5)"/>
+      <path d="M 0 50 C 0 20, 20 0, 50 0 C 80 0, 100 20, 100 50 C 100 80, 80 100, 50 100 C 20 100, 0 80, 0 50 Z" class="outline" transform="translate(450, 80) scale(1.2)"/>
+      <path d="M 0 50 C 0 20, 20 0, 50 0 C 80 0, 100 20, 100 50 C 100 80, 80 100, 50 100 C 20 100, 0 80, 0 50 Z" class="outline" transform="translate(650, 40) scale(1.8)"/>
+    </g>
+  </g>
+
+
+  <!-- The Train -->
+  <g id="candy_train" transform="translate(50, 580)">
+    <!-- Engine -->
+    <g id="engine">
+      <!-- Main body of the engine -->
+      <rect x="0" y="70" width="200" height="80" rx="20" ry="20" class="outline"/>
+      <!-- Cab -->
+      <rect x="150" y="40" width="80" height="80" rx="15" ry="15" class="outline"/>
+      <!-- Boiler front / Face -->
+      <circle cx="10" cy="110" r="40" class="outline"/>
+      <!-- Smiling Face -->
+      <circle cx="0" cy="100" r="10" class="outline"/> <!-- Eye 1 -->
+      <circle cx="20" cy="100" r="10" class="outline"/> <!-- Eye 2 -->
+      <path d="M -5 120 Q 10 140, 25 120" class="outline no-fill"/> <!-- Smile -->
+      <!-- Headlight -->
+      <circle cx="10" cy="70" r="15" class="outline"/>
+      <!-- Lollipop Smokestack -->
+      <rect x="100" y="0" width="15" height="50" rx="5" ry="5" class="outline"/> <!-- Stick -->
+      <circle cx="107.5" cy="0" r="25" class="outline"/> <!-- Lollipop head -->
+      <circle cx="107.5" cy="0" r="15" class="outline"/> <!-- Inner swirl -->
+      <circle cx="107.5" cy="0" r="5" class="outline"/> <!-- Innermost swirl -->
+
+      <!-- Cowcatcher -->
+      <path d="M -10 150 L 30 150 L 20 180 L -20 180 Z" class="outline"/>
+      
+      <!-- Wheels -->
+      <g id="engine_wheels">
+        <circle cx="60" cy="150" r="35" class="outline"/>
+        <circle cx="60" cy="150" r="20" class="outline"/>
+        <circle cx="60" cy="150" r="10" class="outline"/>
+
+        <circle cx="180" cy="150" r="35" class="outline"/>
+        <circle cx="180" cy="150" r="20" class="outline"/>
+        <circle cx="180" cy="150" r="10" class="outline"/>
+      </g>
+    </g>
+
+    <!-- Coupling -->
+    <rect x="220" y="140" width="20" height="10" rx="5" ry="5" class="outline"/>
+
+    <!-- Jelly Bean Carriage -->
+    <g id="jellybean_carriage" transform="translate(250, 0)">
+      <rect x="0" y="100" width="180" height="70" rx="15" ry="15" class="outline"/>
+      <!-- Wheels -->
+      <circle cx="40" cy="170" r="30" class="outline"/>
+      <circle cx="40" cy="170" r="15" class="outline"/>
+      <circle cx="140" cy="170" r="30" class="outline"/>
+      <circle cx="140" cy="170" r="15" class="outline"/>
+
+      <!-- Jelly beans -->
+      <ellipse cx="40" cy="120" rx="20" ry="10" class="outline" transform="rotate(20 40 120)"/>
+      <ellipse cx="90" cy="125" rx="25" ry="12" class="outline" transform="rotate(-10 90 125)"/>
+      <ellipse cx="140" cy="120" rx="20" ry="10" class="outline" transform="rotate(30 140 120)"/>
+      <ellipse cx="60" cy="140" rx="22" ry="11" class="outline" transform="rotate(-5 60 140)"/>
+      <ellipse cx="120" cy="140" rx="22" ry="11" class="outline" transform="rotate(15 120 140)"/>
+    </g>
+
+    <!-- Coupling -->
+    <rect x="420" y="140" width="20" height="10" rx="5" ry="5" class="outline"/>
+
+    <!-- Chocolate Bar Carriage -->
+    <g id="chocolate_carriage" transform="translate(450, 0)">
+      <rect x="0" y="100" width="180" height="70" rx="15" ry="15" class="outline"/>
+      <!-- Wheels -->
+      <circle cx="40" cy="170" r="30" class="outline"/>
+      <circle cx="40" cy="170" r="15" class="outline"/>
+      <circle cx="140" cy="170" r="30" class="outline"/>
+      <circle cx="140" cy="170" r="15" class="outline"/>
+
+      <!-- Chocolate Bar segments -->
+      <rect x="10" y="110" width="160" height="50" rx="5" ry="5" class="outline"/>
+      <line x1="10" y1="135" x2="170" y2="135" class="outline no-fill"/>
+      <line x1="50" y1="110" x2="50" y2="160" class="outline no-fill"/>
+      <line x1="90" y1="110" x2="90" y2="160" class="outline no-fill"/>
+      <line x1="130" y1="110" x2="130" y2="160" class="outline no-fill"/>
+    </g>
+
+  </g>
+
+</svg>
