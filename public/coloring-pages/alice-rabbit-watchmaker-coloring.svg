@@ -1,0 +1,162 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .coloring-outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .thick-outline {
+        stroke-width: 5;
+      }
+      .thin-outline {
+        stroke-width: 3;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <g id="rabbit-watchmaker">
+    <!-- Body -->
+    <ellipse cx="400" cy="650" rx="150" ry="180" class="coloring-outline thick-outline"/>
+
+    <!-- Head -->
+    <ellipse cx="400" cy="400" rx="100" ry="120" class="coloring-outline thick-outline"/>
+
+    <!-- Ears -->
+    <ellipse cx="350" cy="250" rx="30" ry="80" transform="rotate(-15 350 250)" class="coloring-outline thick-outline"/>
+    <ellipse cx="450" cy="250" rx="30" ry="80" transform="rotate(15 450 250)" class="coloring-outline thick-outline"/>
+    <!-- Inner ears -->
+    <ellipse cx="350" cy="260" rx="20" ry="60" transform="rotate(-15 350 260)" class="coloring-outline thin-outline"/>
+    <ellipse cx="450" cy="260" rx="20" ry="60" transform="rotate(15 450 260)" class="coloring-outline thin-outline"/>
+
+    <!-- Face details -->
+    <!-- Eyes -->
+    <circle cx="360" cy="380" r="15" class="coloring-outline thin-outline"/>
+    <circle cx="440" cy="380" r="15" class="coloring-outline thin-outline"/>
+    <!-- Nose -->
+    <circle cx="400" cy="420" r="10" class="coloring-outline thin-outline"/>
+    <!-- Mouth -->
+    <path d="M370 440 Q400 460 430 440" class="coloring-outline no-fill thin-outline"/>
+
+    <!-- Arms -->
+    <path d="M300 550 C250 580 250 650 320 680" class="coloring-outline thick-outline"/>
+    <path d="M500 550 C550 580 550 650 480 680" class="coloring-outline thick-outline"/>
+
+    <!-- Hands (simplified, holding watch) -->
+    <circle cx="330" cy="670" r="30" class="coloring-outline thick-outline"/>
+    <circle cx="470" cy="670" r="30" class="coloring-outline thick-outline"/>
+
+    <!-- Pocket Watch (held between hands) -->
+    <g id="pocket-watch">
+      <circle cx="400" cy="670" r="60" class="coloring-outline thick-outline"/>
+      <circle cx="400" cy="670" r="45" class="coloring-outline thin-outline"/> <!-- Watch face -->
+      <line x1="400" y1="670" x2="400" y2="640" class="coloring-outline thin-outline"/> <!-- Minute hand -->
+      <line x1="400" y1="670" x2="420" y2="670" class="coloring-outline thin-outline"/> <!-- Hour hand -->
+      <circle cx="400" cy="670" r="5" class="coloring-outline no-fill thin-outline"/> <!-- Center pin -->
+      <rect x="390" y="605" width="20" height="15" rx="5" ry="5" class="coloring-outline thin-outline"/> <!-- Crown -->
+    </g>
+
+    <!-- Outfit (vest and bow tie) -->
+    <path d="M320 520 C350 550 450 550 480 520 L400 580 Z" class="coloring-outline thick-outline"/>
+    <path d="M320 520 C330 540 370 540 380 520" class="coloring-outline thin-outline"/>
+    <path d="M420 520 C430 540 470 540 480 520" class="coloring-outline thin-outline"/>
+    <path d="M380 520 L420 520" class="coloring-outline thin-outline no-fill"/>
+    <!-- Bow tie -->
+    <path d="M380 500 Q370 490 360 500 Q370 510 380 500 Z" class="coloring-outline thin-outline"/>
+    <path d="M420 500 Q430 490 440 500 Q430 510 420 500 Z" class="coloring-outline thin-outline"/>
+    <circle cx="400" cy="500" r="10" class="coloring-outline thin-outline"/>
+
+    <!-- Legs/Feet -->
+    <ellipse cx="350" cy="800" rx="70" ry="50" class="coloring-outline thick-outline"/>
+    <ellipse cx="450" cy="800" rx="70" ry="50" class="coloring-outline thick-outline"/>
+  </g>
+
+  <!-- Fantastical Clocks -->
+  <g id="clocks-background">
+    <!-- Grandfather Clock (left) -->
+    <g id="grandfather-clock-left">
+      <rect x="50" y="500" width="100" height="300" rx="20" ry="20" class="coloring-outline thick-outline"/>
+      <rect x="60" y="510" width="80" height="80" rx="10" ry="10" class="coloring-outline thin-outline"/> <!-- Top window -->
+      <circle cx="100" cy="550" r="30" class="coloring-outline thin-outline"/> <!-- Clock face -->
+      <line x1="100" y1="550" x2="100" y2="535" class="coloring-outline thin-outline"/>
+      <line x1="100" y1="550" x2="115" y2="550" class="coloring-outline thin-outline"/>
+      <rect x="60" y="620" width="80" height="150" rx="10" ry="10" class="coloring-outline thin-outline"/> <!-- Pendulum window -->
+      <path d="M100 650 L100 750" class="coloring-outline thin-outline no-fill"/>
+      <circle cx="100" cy="750" r="15" class="coloring-outline thin-outline"/> <!-- Pendulum bob -->
+    </g>
+
+    <!-- Round Wall Clock (top right) -->
+    <g id="round-wall-clock-top-right">
+      <circle cx="650" cy="150" r="80" class="coloring-outline thick-outline"/>
+      <circle cx="650" cy="150" r="60" class="coloring-outline thin-outline"/> <!-- Inner face -->
+      <line x1="650" y1="150" x2="650" y2="120" class="coloring-outline thin-outline"/>
+      <line x1="650" y1="150" x2="680" y2="150" class="coloring-outline thin-outline"/>
+      <path d="M650 70 L650 90" class="coloring-outline thin-outline no-fill"/>
+      <path d="M680 80 L670 95" class="coloring-outline thin-outline no-fill"/>
+      <path d="M710 105 L695 115" class="coloring-outline thin-outline no-fill"/>
+      <path d="M730 140 L715 145" class="coloring-outline thin-outline no-fill"/>
+      <path d="M710 175 L695 165" class="coloring-outline thin-outline no-fill"/>
+      <path d="M680 200 L670 185" class="coloring-outline thin-outline no-fill"/>
+      <path d="M650 210 L650 190" class="coloring-outline thin-outline no-fill"/>
+      <path d="M620 200 L630 185" class="coloring-outline thin-outline no-fill"/>
+      <path d="M590 175 L605 165" class="coloring-outline thin-outline no-fill"/>
+      <path d="M570 140 L585 145" class="coloring-outline thin-outline no-fill"/>
+      <path d="M590 105 L605 115" class="coloring-outline thin-outline no-fill"/>
+      <path d="M620 80 L630 95" class="coloring-outline thin-outline no-fill"/>
+    </g>
+
+    <!-- Whimsical Pendulum Clock (bottom right) -->
+    <g id="whimsical-pendulum-clock-bottom-right">
+      <path d="M600 700 Q650 650 700 700 L700 800 Q650 850 600 800 Z" class="coloring-outline thick-outline"/> <!-- Blobby body -->
+      <circle cx="650" cy="750" r="30" class="coloring-outline thin-outline"/> <!-- Clock face -->
+      <line x1="650" y1="750" x2="650" y2="735" class="coloring-outline thin-outline"/>
+      <line x1="650" y1="750" x2="665" y2="750" class="coloring-outline thin-outline"/>
+      <line x1="650" y1="800" x2="650" y2="850" class="coloring-outline thin-outline no-fill"/> <!-- Pendulum rod -->
+      <ellipse cx="650" cy="870" rx="20" ry="30" class="coloring-outline thin-outline"/> <!-- Pendulum bob -->
+    </g>
+
+    <!-- Small Desk Clock (bottom left) -->
+    <g id="small-desk-clock-bottom-left">
+      <rect x="200" y="850" width="80" height="60" rx="10" ry="10" class="coloring-outline thick-outline"/>
+      <circle cx="240" cy="880" r="25" class="coloring-outline thin-outline"/>
+      <line x1="240" y1="880" x2="240" y2="870" class="coloring-outline thin-outline"/>
+      <line x1="240" y1="880" x2="250" y2="880" class="coloring-outline thin-outline"/>
+      <line x1="220" y1="910" x2="210" y2="930" class="coloring-outline thin-outline no-fill"/> <!-- Leg 1 -->
+      <line x1="260" y1="910" x2="270" y2="930" class="coloring-outline thin-outline no-fill"/> <!-- Leg 2 -->
+    </g>
+
+    <!-- Floating Gears/Small Clocks (various spots) -->
+    <g id="floating-elements">
+      <!-- Gear 1 (top left) -->
+      <circle cx="150" cy="150" r="40" class="coloring-outline thick-outline"/>
+      <path d="M150 110 L160 110 M150 190 L160 190 M110 150 L110 160 M190 150 L190 160" class="coloring-outline no-fill thin-outline"/>
+      <circle cx="150" cy="150" r="15" class="coloring-outline thin-outline"/>
+
+      <!-- Small clock (right of rabbit head) -->
+      <circle cx="600" cy="300" r="50" class="coloring-outline thick-outline"/>
+      <circle cx="600" cy="300" r="35" class="coloring-outline thin-outline"/>
+      <line x1="600" y1="300" x2="600" y2="285" class="coloring-outline thin-outline"/>
+      <line x1="600" y1="300" x2="615" y2="300" class="coloring-outline thin-outline"/>
+
+      <!-- Star-shaped clock (below rabbit's hand) -->
+      <path d="M200 700 L230 680 L230 650 L200 630 L170 650 L170 680 Z" class="coloring-outline thick-outline"/>
+      <circle cx="200" cy="665" r="15" class="coloring-outline thin-outline"/>
+      <line x1="200" y1="665" x2="200" y2="655" class="coloring-outline thin-outline"/>
+      <line x1="200" y1="665" x2="210" y2="665" class="coloring-outline thin-outline"/>
+
+      <!-- Cuckoo clock style element (top left, above grandfather clock) -->
+      <rect x="70" y="250" width="80" height="100" rx="10" ry="10" class="coloring-outline thick-outline"/>
+      <path d="M70 250 L110 200 L150 250" class="coloring-outline thick-outline no-fill"/>
+      <rect x="90" y="280" width="40" height="30" rx="5" ry="5" class="coloring-outline thin-outline"/>
+      <line x1="110" y1="350" x2="110" y2="380" class="coloring-outline thin-outline no-fill"/>
+      <circle cx="110" cy="390" r="10" class="coloring-outline thin-outline"/>
+      <line x1="90" y1="350" x2="90" y2="370" class="coloring-outline thin-outline no-fill"/>
+      <circle cx="90" cy="380" r="5" class="coloring-outline thin-outline"/>
+    </g>
+  </g>
+</svg>
