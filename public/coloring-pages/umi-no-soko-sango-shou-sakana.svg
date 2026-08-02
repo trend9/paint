@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background Fill -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- Global Styles for Coloring Book -->
+  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
+
+    <!-- ==================== BACKGROUND / WATER BUBBLES ==================== -->
+    <g id="bubbles">
+      <!-- Bubble Group Left -->
+      <circle cx="140" cy="250" r="18" />
+      <path d="M 133 243 A 8 8 0 0 1 145 238" fill="none" stroke-width="3" />
+
+      <circle cx="110" cy="190" r="12" />
+      <path d="M 105 185 A 5 5 0 0 1 113 182" fill="none" stroke-width="3" />
+
+      <circle cx="150" cy="130" r="22" />
+      <path d="M 142 122 A 10 10 0 0 1 156 116" fill="none" stroke-width="3" />
+
+      <circle cx="125" cy="75" r="10" />
+
+      <!-- Bubble Group Center -->
+      <circle cx="390" cy="220" r="20" />
+      <path d="M 382 212 A 9 9 0 0 1 396 206" fill="none" stroke-width="3" />
+
+      <circle cx="415" cy="160" r="14" />
+      <path d="M 409 154 A 6 6 0 0 1 419 150" fill="none" stroke-width="3" />
+
+      <circle cx="380" cy="100" r="25" />
+      <path d="M 370 90 A 12 12 0 0 1 388 82" fill="none" stroke-width="3" />
+
+      <circle cx="410" cy="45" r="10" />
+
+      <!-- Bubble Group Right -->
+      <circle cx="680" cy="280" r="16" />
+      <path d="M 674 274 A 7 7 0 0 1 685 270" fill="none" stroke-width="3" />
+
+      <circle cx="710" cy="210" r="22" />
+      <path d="M 702 202 A 10 10 0 0 1 716 196" fill="none" stroke-width="3" />
+
+      <circle cx="675" cy="140" r="12" />
+
+      <circle cx="700" cy="85" r="18" />
+      <path d="M 693 78 A 8 8 0 0 1 705 73" fill="none" stroke-width="3" />
+    </g>
+
+    <!-- ==================== SEAFLOOR & CORAL REEF ==================== -->
+    <g id="sea-floor">
+      <!-- Wavy Sandy Bottom -->
+      <path d="M -10 880 Q 200 850 400 880 T 810 860 L 810 1010 L -10 1010 Z" />
+    </g>
+
+    <!-- Seaweed Left -->
+    <g id="seaweed-left">
+      <path d="M 50 870 C 20 780 90 700 40 600 C 0 510 70 430 30 350 C 20 330 40 330 50 350 C 90 440 20 520 60 610 C 110 710 40 790 70 870 Z" />
+      <path d="M 90 860 C 60 790 120 730 80 640 C 50 570 100 500 70 440 C 60 420 80 420 90 440 C 120 510 70 580 100 650 C 140 740 80 800 115 860 Z" />
+    </g>
+
+    <!-- Seaweed Right -->
+    <g id="seaweed-right">
+      <path d="M 730 860 C 700 770 760 690 720 590 C 690 510 740 440 710 370 C 700 350 720 350 730 370 C 760 450 710 520 740 600 C 780 700 720 780 755 860 Z" />
+    </g>
+
+    <!-- Branching Coral (Left) -->
+    <g id="branch-coral">
+      <path d="M 130 870 
+               C 120 800 90 770 70 750
+               C 50 730 40 700 60 690
+               C 80 680 90 700 100 720
+               C 110 690 100 640 120 630
+               C 140 620 150 650 140 680
+               C 150 660 170 630 190 640
+               C 210 650 190 680 170 700
+               C 190 720 220 710 230 730
+               C 240 750 210 770 180 760
+               C 160 780 170 830 175 870 Z" />
+    </g>
+
+    <!-- Brain Coral (Center-Bottom) -->
+    <g id="brain-coral">
+      <!-- Dome Base -->
+      <path d="M 280 875 C 260 760 500 760 480 875 Z" />
+      <!-- Brain Squiggles / Ridges -->
+      <path d="M 320 860 C 310 820 340 800 360 820 C 380 840 360 860 390 860" fill="none" stroke-width="4" />
+      <path d="M 440 860 C 450 820 420 800 400 820 C 380 840 400 860 370 860" fill="none" stroke-width="4" />
+      <path d="M 340 790 C 360 760 410 760 430 790" fill="none" stroke-width="4" />
+      <path d="M 370 785 C 380 765 400 765 410 785" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Fan Coral (Right) -->
+    <g id="fan-coral">
+      <!-- Base Stem -->
+      <path d="M 600 865 L 610 780 L 630 780 L 640 865 Z" />
+      <!-- Fan Outer Boundary -->
+      <path d="M 620 780 
+               C 530 760 510 630 570 560 
+               C 630 490 730 520 770 600 
+               C 810 680 740 770 620 780 Z" />
+      <!-- Inner Fan Ribs / Lines -->
+      <path d="M 620 780 Q 600 700 560 630" fill="none" stroke-width="3" />
+      <path d="M 620 780 Q 620 680 600 580" fill="none" stroke-width="3" />
+      <path d="M 620 780 Q 650 670 670 560" fill="none" stroke-width="3" />
+      <path d="M 620 780 Q 680 700 730 630" fill="none" stroke-width="3" />
+      <path d="M 620 780 Q 700 730 750 700" fill="none" stroke-width="3" />
+    </g>
+
+    <!-- Cute Starfish on Sand -->
+    <g id="starfish">
+      <path d="M 220 910 
+               C 225 890 210 880 230 875 
+               C 245 885 245 890 260 880 
+               C 265 895 255 905 270 915 
+               C 255 920 245 915 240 930 
+               C 235 915 225 920 220 910 Z" />
+      <!-- Tiny smile on starfish -->
+      <circle cx="238" cy="895" r="2" fill="black" />
+      <circle cx="248" cy="897" r="2" fill="black" />
+      <path d="M 240 903 Q 243 907 246 903" fill="none" stroke-width="2" />
+    </g>
+
+    <!-- Sea Shell on Sand -->
+    <g id="seashell">
+      <path d="M 520 920 C 510 880 570 880 560 920 Z" />
+      <path d="M 520 920 L 540 885 L 560 920" fill="none" stroke-width="3" />
+      <path d="M 530 920 L 540 885 L 550 920" fill="none" stroke-width="3" />
+      <!-- Pearl -->
+      <circle cx="540" cy="912" r="7" />
+    </g>
+
+
+    <!-- ==================== FISH 1: HAPPY CLOWNFISH (LEFT) ==================== -->
+    <g id="clownfish">
+      <!-- Tail Fin -->
+      <path d="M 160 410 C 110 370 100 470 150 445 Z" />
+      <path d="M 130 405 C 138 418 138 430 128 440" fill="none" stroke-width="3" />
+
+      <!-- Top Fin (Dorsal) -->
+      <path d="M 230 365 C 250 310 310 320 330 375 Z" />
+      <path d="M 260 340 Q 270 360 280 368" fill="none" stroke-width="3" />
+      <path d="M 290 338 Q 295 355 305 372" fill="none" stroke-width="3" />
+
+      <!-- Bottom Fin (Pelvic) -->
+      <path d="M 240 460 C 260 500 290 490 290 455 Z" />
+
+      <!-- Main Body -->
+      <path d="M 360 400 
+               C 400 420 380 470 330 475 
+               C 270 480 180 470 160 425 
+               C 150 390 220 360 290 360 
+               C 330 360 340 390 360 400 Z" />
+
+      <!-- White Stripes (Outlined regions for coloring) -->
+      <!-- Stripe 1 (Head) -->
+      <path d="M 325 363 C 315 390 315 430 335 473 C 350 465 355 440 348 410 C 345 385 338 370 325 363 Z" />
+
+      <!-- Stripe 2 (Middle with round bulge) -->
+      <path d="M 245 361 
+               C 235 390 230 430 250 472 
+               C 265 473 275 465 270 435 
+               C 285 430 285 400 268 395 
+               C 275 375 260 363 245 361 Z" />
+
+      <!-- Stripe 3 (Tail Base) -->
+      <path d="M 175 390 C 170 410 170 430 177 447 C 187 448 192 435 190 420 C 190 405 185 393 175 390 Z" />
+
+      <!-- Pectoral Fin (Front Side Fin) -->
+      <path d="M 280 420 C 260 410 240 440 265 455 C 285 465 295 435 280 420 Z" />
+
+      <!-- Face Details -->
+      <!-- Big Cute Eye -->
+      <circle cx="345" cy="395" r="18" />
+      <circle cx="342" cy="395" r="10" fill="black" />
+      <circle cx="339" cy="391" r="3" fill="white" stroke="none" />
+
+      <!-- Smiling Mouth -->
+      <path d="M 370 425 C 360 440 345 435 340 430" fill="none" stroke-width="4" />
+      <path d="M 365 435 C 358 443 350 442 346 438" fill="none" stroke-width="3" />
+
+      <!-- Cute Cheek Dimple -->
+      <path d="M 330 420 A 4 4 0 0 1 334 425" fill="none" stroke-width="3" />
+    </g>
+
+
+    <!-- ==================== FISH 2: FRIENDLY BLUE TANG (RIGHT) ==================== -->
+    <g id="blue-tang">
+      <!-- Tail Fin (Scalpel/Triangular shape) -->
+      <path d="M 610 410 L 675 360 C 685 410 685 430 675 480 L 610 435 Z" />
+      <!-- Tail Detail Lines -->
+      <path d="M 640 400 L 670 390" fill="none" stroke-width="3" />
+      <path d="M 635 422 L 672 422" fill="none" stroke-width="3" />
+      <path d="M 640 440 L 670 450" fill="none" stroke-width="3" />
+
+      <!-- Large Dorsal Fin (Top) -->
+      <path d="M 470 340 C 510 280 600 310 625 390 Z" />
+      <path d="M 510 320 Q 540 325 570 350" fill="none" stroke-width="3" />
+      <path d="M 540 310 Q 570 320 600 360" fill="none" stroke-width="3" />
+
+      <!-- Long Anal Fin (Bottom) -->
+      <path d="M 480 470 C 520 520 590 500 615 440 Z" />
+      <path d="M 515 485 Q 550 480 580 460" fill="none" stroke-width="3" />
+
+      <!-- Main Oval Body -->
+      <path d="M 430 410 
+               C 420 360 480 330 540 340 
+               C 600 350 630 380 620 420 
+               C 610 460 570 490 510 485 
+               C 460 480 435 450 430 410 Z" />
+
+      <!-- Tang Body Pattern (The Black Palette / Cam Pattern outlined for coloring) -->
+      <path d="M 480 345 
+               C 530 350 570 370 560 400 
+               C 550 420 510 410 500 430 
+               C 490 450 520 465 550 460 
+               C 580 455 600 430 595 400 
+               C 590 360 540 340 480 345 Z" fill="white" stroke-width="4" />
+
+      <!-- Pectoral Fin (Side) -->
+      <path d="M 485 425 C 460 430 450 460 475 460 C 495 460 500 440 485 425 Z" />
+
+      <!-- Face Details -->
+      <!-- Big Cute Eye -->
+      <circle cx="465" cy="385" r="18" />
+      <circle cx="462" cy="385" r="10" fill="black" />
+      <circle cx="459" cy="381" r="3" fill="white" stroke="none" />
+
+      <!-- Open Happy Smile -->
+      <path d="M 430 420 C 440 435 455 430 460 425" fill="none" stroke-width="4" />
+      <path d="M 435 427 C 442 437 452 435 455 430" fill="none" stroke-width="3" />
+
+      <!-- Cute Cheek Dimple -->
+      <path d="M 475 410 A 4 4 0 0 1 479 415" fill="none" stroke-width="3" />
+    </g>
+
+  </g>
+</svg>
