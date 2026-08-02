@@ -1,48 +1,58 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="black" stroke-width="4" fill="white">
+  <!-- Group for clouds -->
+  <g id="clouds" stroke="black" stroke-width="4" fill="white">
+    <!-- Cloud 1 -->
+    <path d="M100 200 Q150 150 200 180 T300 190 T400 220 Q450 250 400 300 Q350 350 300 320 T200 310 T100 280 Q50 250 100 200 Z" />
+    <!-- Cloud 2 -->
+    <path d="M500 150 Q550 100 600 130 T700 140 T750 170 Q780 200 750 250 Q700 300 650 270 T550 260 T500 230 Q470 200 500 150 Z" />
+    <!-- Cloud 3 -->
+    <path d="M50 700 Q100 650 150 680 T250 690 T350 720 Q400 750 350 800 Q300 850 250 820 T150 810 T50 780 Q0 750 50 700 Z" />
+    <!-- Cloud 4 -->
+    <path d="M450 800 Q500 750 550 780 T650 790 T750 820 Q800 850 750 900 Q700 950 650 920 T550 910 T450 880 Q400 850 450 800 Z" />
+  </g>
 
-    <!-- Simplified fluffy clouds below the locomotive -->
-    <g id="ground_clouds">
-      <path d="M 150 750 C 100 730, 100 780, 150 800 C 200 820, 250 780, 200 750 Z"/>
-      <path d="M 400 800 C 350 780, 350 830, 400 850 C 450 870, 500 830, 450 800 Z"/>
-      <path d="M 600 700 C 550 680, 550 730, 600 750 C 650 770, 700 730, 650 700 Z"/>
+  <!-- Group for locomotive -->
+  <g id="locomotive" stroke="black" stroke-width="4" fill="white">
+    <!-- Main body -->
+    <path d="M200 450 L200 550 C200 580 220 600 250 600 L550 600 C580 600 600 580 600 550 L600 450 C600 420 580 400 550 400 L250 400 C220 400 200 420 200 450 Z" />
+    <!-- Boiler front (overlapping main body slightly for solid look) -->
+    <ellipse cx="200" cy="500" rx="60" ry="70" />
+    <!-- Cabin -->
+    <path d="M550 450 L550 350 C550 320 570 300 600 300 L650 300 C680 300 700 320 700 350 L700 550 C700 580 680 600 650 600 L550 600 Z" />
+    <!-- Chimney -->
+    <path d="M350 350 L350 270 C350 240 370 220 400 220 L450 220 C480 220 500 240 500 270 L500 350 L350 350 Z" />
+    <ellipse cx="425" cy="270" rx="40" ry="20" /> <!-- Top part of chimney -->
+
+    <!-- Wheels (stylized, for flying) -->
+    <circle cx="300" cy="620" r="45" />
+    <circle cx="480" cy="620" r="45" />
+    <!-- Connecting rod -->
+    <rect x="270" y="605" width="240" height="30" rx="15" ry="15" />
+
+    <!-- Simple details on body -->
+    <path d="M250 420 H550" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M250 580 H550" fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Face details -->
+    <g id="locomotive-face">
+      <!-- Left Eye -->
+      <circle cx="170" cy="480" r="25" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="170" cy="480" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Right Eye -->
+      <circle cx="230" cy="480" r="25" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="230" cy="480" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Mouth - simple smiling arc -->
+      <path d="M160 520 Q200 540 240 520" fill="none" stroke="black" stroke-width="3"/>
     </g>
+  </g>
 
-    <!-- The central flying steam locomotive -->
-    <g id="locomotive">
-      <!-- Main lower body of the locomotive -->
-      <rect x="80" y="470" width="640" height="100" rx="40" ry="40"/>
-
-      <!-- Boiler section, forming the front top part -->
-      <rect x="120" y="300" width="400" height="170" rx="85" ry="85"/>
-
-      <!-- Cabin section at the back -->
-      <rect x="580" y="330" width="140" height="140" rx="30" ry="30"/>
-      <!-- Cabin window for a simple detail -->
-      <rect x="620" y="370" width="60" height="50" rx="10" ry="10"/>
-
-      <!-- Chimney on top of the boiler -->
-      <rect x="250" y="230" width="80" height="70" rx="20" ry="20"/>
-
-      <!-- Large and simple wheels -->
-      <g id="wheels">
-        <circle cx="200" cy="570" r="70"/>
-        <circle cx="450" cy="570" r="70"/>
-        <circle cx="600" cy="570" r="70"/>
-      </g>
-
-      <!-- Friendly face with large eyes and a smile -->
-      <g id="face">
-        <circle cx="270" cy="380" r="40"/> <!-- Left eye -->
-        <circle cx="370" cy="380" r="40"/> <!-- Right eye -->
-        <path d="M 280 440 Q 320 470 360 440" fill="none" stroke="black" stroke-width="4"/> <!-- Smile -->
-      </g>
-
-      <!-- Simple cartoon smoke puffing from the chimney -->
-      <g id="smoke">
-        <path d="M 290 200 C 270 180, 270 150, 300 130 C 330 110, 350 140, 330 170 Z"/>
-        <path d="M 330 170 C 350 150, 350 120, 380 100 C 410 80, 430 110, 410 140 Z"/>
-      </g>
-    </g>
+  <!-- Group for smoke puffs -->
+  <g id="smoke-puffs" stroke="black" stroke-width="4" fill="white">
+    <!-- Puff 1 -->
+    <path d="M425 200 Q400 150 450 130 Q500 110 520 160 Q540 210 490 230 Q440 250 425 200 Z" />
+    <!-- Puff 2 -->
+    <path d="M500 150 Q480 100 530 80 Q580 60 600 110 Q620 160 570 180 Q520 200 500 150 Z" />
+    <!-- Puff 3 -->
+    <path d="M580 100 Q560 50 610 30 Q660 10 680 60 Q700 110 650 130 Q600 150 580 100 Z" />
   </g>
 </svg>
