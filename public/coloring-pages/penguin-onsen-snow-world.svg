@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Group for background elements: Mountain and Rocks -->
+  <g id="background_elements">
+    <!-- Distant Mountain -->
+    <path d="M0 650 Q150 500 400 550 T800 500 L800 750 L0 750 Z" 
+          fill="white" stroke="black" stroke-width="5"/>
+    <path d="M0 660 Q100 600 250 620 Q400 640 550 600 Q700 580 800 600 L800 650 L0 650 Z" 
+          fill="white" stroke="black" stroke-width="5" /> <!-- Snow on mountain -->
+
+    <!-- Simple Snow-covered Rock 1 -->
+    <path d="M50 800 C80 770 150 780 180 800 C160 830 100 850 50 800 Z" 
+          fill="white" stroke="black" stroke-width="5"/>
+    <path d="M50 790 C70 775 120 780 170 790 L170 800 C120 810 70 805 50 790 Z" 
+          fill="white" stroke="black" stroke-width="5" /> <!-- Snow on rock 1 -->
+
+    <!-- Simple Snow-covered Rock 2 -->
+    <path d="M600 850 C630 820 700 830 730 850 C710 880 650 900 600 850 Z" 
+          fill="white" stroke="black" stroke-width="5"/>
+    <path d="M600 840 C620 825 670 830 720 840 L720 850 C670 860 620 855 600 840 Z" 
+          fill="white" stroke="black" stroke-width="5" /> <!-- Snow on rock 2 -->
+  </g>
+
+  <!-- Group for the Hot Spring Bath -->
+  <g id="hot_spring_bath">
+    <!-- The main water basin -->
+    <path d="M100 900 C150 850 650 850 700 900 C650 950 150 950 100 900 Z" 
+          fill="white" stroke="black" stroke-width="5"/>
+    <!-- Steam lines -->
+    <path d="M200 860 Q250 840 300 860" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M350 855 Q400 835 450 855" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M500 860 Q550 840 600 860" fill="none" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Group for the Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (left) -->
+    <g id="penguin_1">
+      <path d="M250 800 C200 700 300 650 350 700 C400 750 300 800 250 800 Z" 
+            fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="300" cy="720" rx="40" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Belly -->
+      <circle cx="280" cy="670" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Eye left -->
+      <circle cx="320" cy="670" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Eye right -->
+      <path d="M300 680 Q290 695 310 695 Q300 680 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M290 690 Q300 700 310 690" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M220 750 Q200 720 230 710 L220 750 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Flipper left -->
+      <path d="M380 750 Q400 720 370 710 L380 750 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Flipper right -->
+    </g>
+
+    <!-- Penguin 2 (right) -->
+    <g id="penguin_2">
+      <path d="M450 790 C400 690 500 640 550 690 C600 740 500 790 450 790 Z" 
+            fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="500" cy="710" rx="40" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Belly -->
+      <circle cx="480" cy="660" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Eye left -->
+      <circle cx="520" cy="660" r="8" fill="white" stroke="black" stroke-width="3"/> <!-- Eye right -->
+      <path d="M500 670 Q490 685 510 685 Q500 670 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M490 680 Q500 690 510 680" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M420 740 Q400 710 430 700 L420 740 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Flipper left -->
+      <path d="M580 740 Q600 710 570 700 L580 740 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Flipper right -->
+    </g>
+  </g>
+
+  <!-- Group for Snow Elements -->
+  <g id="snow_elements">
+    <!-- Falling snow (circles) -->
+    <circle cx="100" cy="100" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="700" cy="150" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="50" cy="300" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="750" cy="400" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="400" cy="50" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="200" cy="200" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="600" cy="250" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="150" cy="450" r="5" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="650" cy="550" r="5" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Stylized snow crystals (simple cross shapes using rectangles for fillability) -->
+    <g transform="translate(150, 50)" stroke="black" stroke-width="3">
+      <rect x="-10" y="-3" width="20" height="6" fill="white"/>
+      <rect x="-3" y="-10" width="6" height="20" fill="white"/>
+    </g>
+    <g transform="translate(700, 300)" stroke="black" stroke-width="3">
+      <rect x="-10" y="-3" width="20" height="6" fill="white"/>
+      <rect x="-3" y="-10" width="6" height="20" fill="white"/>
+    </g>
+    <g transform="translate(300, 400)" stroke="black" stroke-width="3">
+      <rect x="-10" y="-3" width="20" height="6" fill="white"/>
+      <rect x="-3" y="-10" width="6" height="20" fill="white"/>
+      <!-- A second cross rotated by 45 degrees for a star effect -->
+      <rect x="-10" y="-3" width="20" height="6" fill="white" transform="rotate(45, 0, 0)"/>
+      <rect x="-3" y="-10" width="6" height="20" fill="white" transform="rotate(45, 0, 0)"/>
+    </g>
+  </g>
+</svg>
