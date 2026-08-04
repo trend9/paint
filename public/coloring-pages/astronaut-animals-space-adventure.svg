@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .outline {
+        stroke: black;
+        stroke-width: 4; /* Thick outlines */
+        fill: white;
+      }
+      .outline-no-fill {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+      }
+      .face-feature {
+        stroke: black;
+        stroke-width: 3; /* Slightly thinner for internal details */
+        fill: white;
+      }
+      .mouth {
+        stroke: black;
+        stroke-width: 3;
+        fill: none;
+      }
+    ]]></style>
+    <!-- Helper for a simple 5-point star path (one point up) -->
+    <path id="star-shape" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z" />
+  </defs>
+
+  <!-- Bear Astronaut -->
+  <g id="bear-astronaut">
+    <!-- Helmet -->
+    <circle cx="300" cy="400" r="80" class="outline"/>
+    <circle cx="300" cy="400" r="70" class="outline-no-fill"/> <!-- Inner helmet line -->
+
+    <!-- Head -->
+    <circle cx="300" cy="400" r="50" class="outline"/>
+    <!-- Ears -->
+    <circle cx="260" cy="355" r="20" class="outline"/>
+    <circle cx="340" cy="355" r="20" class="outline"/>
+    <!-- Muzzle -->
+    <ellipse cx="300" cy="415" rx="25" ry="15" class="outline"/>
+    <!-- Eyes -->
+    <circle cx="285" cy="390" r="8" class="face-feature"/>
+    <circle cx="315" cy="390" r="8" class="face-feature"/>
+    <!-- Smile -->
+    <path d="M 290 420 Q 300 425 310 420" class="mouth"/>
+
+    <!-- Body -->
+    <ellipse cx="300" cy="520" rx="70" ry="80" class="outline"/>
+    <!-- Suit details -->
+    <circle cx="300" cy="480" r="15" class="outline"/>
+    <circle cx="300" cy="520" r="15" class="outline"/>
+    <circle cx="300" cy="560" r="15" class="outline"/>
+    <!-- Arms -->
+    <ellipse cx="210" cy="470" rx="30" ry="60" transform="rotate(-30 210 470)" class="outline"/>
+    <ellipse cx="390" cy="470" rx="30" ry="60" transform="rotate(30 390 470)" class="outline"/>
+    <!-- Legs -->
+    <ellipse cx="260" cy="620" rx="30" ry="60" transform="rotate(15 260 620)" class="outline"/>
+    <ellipse cx="340" cy="620" rx="30" ry="60" transform="rotate(-15 340 620)" class="outline"/>
+  </g>
+
+  <!-- Rabbit Astronaut -->
+  <g id="rabbit-astronaut">
+    <!-- Helmet -->
+    <circle cx="500" cy="450" r="80" class="outline"/>
+    <circle cx="500" cy="450" r="70" class="outline-no-fill"/> <!-- Inner helmet line -->
+
+    <!-- Head -->
+    <circle cx="500" cy="450" r="50" class="outline"/>
+    <!-- Ears (rounded rectangles for simplicity) -->
+    <rect x="460" y="300" width="30" height="70" rx="15" ry="15" transform="rotate(-15 475 335)" class="outline"/>
+    <rect x="510" y="300" width="30" height="70" rx="15" ry="15" transform="rotate(15 525 335)" class="outline"/>
+    <!-- Muzzle -->
+    <ellipse cx="500" cy="465" rx="25" ry="15" class="outline"/>
+    <!-- Eyes -->
+    <circle cx="485" cy="440" r="8" class="face-feature"/>
+    <circle cx="515" cy="440" r="8" class="face-feature"/>
+    <!-- Smile -->
+    <path d="M 490 470 Q 500 475 510 470" class="mouth"/>
+
+    <!-- Body -->
+    <ellipse cx="500" cy="570" rx="70" ry="80" class="outline"/>
+    <!-- Suit details -->
+    <circle cx="500" cy="530" r="15" class="outline"/>
+    <circle cx="500" cy="570" r="15" class="outline"/>
+    <circle cx="500" cy="610" r="15" class="outline"/>
+    <!-- Arms -->
+    <ellipse cx="410" cy="520" rx="30" ry="60" transform="rotate(-30 410 520)" class="outline"/>
+    <ellipse cx="590" cy="520" rx="30" ry="60" transform="rotate(30 590 520)" class="outline"/>
+    <!-- Legs -->
+    <ellipse cx="460" cy="670" rx="30" ry="60" transform="rotate(15 460 670)" class="outline"/>
+    <ellipse cx="540" cy="670" rx="30" ry="60" transform="rotate(-15 540 670)" class="outline"/>
+  </g>
+
+  <!-- Planets and Stars -->
+  <g id="space-elements">
+    <!-- Smiling Planet 1 (with ring) -->
+    <g id="planet1">
+      <circle cx="150" cy="180" r="60" class="outline"/>
+      <ellipse cx="150" cy="190" rx="90" ry="20" transform="rotate(-15 150 190)" class="outline-no-fill"/>
+      <circle cx="135" cy="170" r="6" class="face-feature"/>
+      <circle cx="165" cy="170" r="6" class="face-feature"/>
+      <path d="M 140 185 Q 150 190 160 185" class="mouth"/>
+    </g>
+
+    <!-- Smiling Planet 2 -->
+    <g id="planet2">
+      <circle cx="700" cy="250" r="70" class="outline"/>
+      <circle cx="680" cy="240" r="8" class="face-feature"/>
+      <circle cx="720" cy="240" r="8" class="face-feature"/>
+      <path d="M 690 260 Q 700 265 710 260" class="mouth"/>
+    </g>
+
+    <!-- Smiling Planet 3 -->
+    <g id="planet3">
+      <circle cx="100" cy="800" r="50" class="outline"/>
+      <circle cx="85" cy="790" r="5" class="face-feature"/>
+      <circle cx="115" cy="790" r="5" class="face-feature"/>
+      <path d="M 90 800 Q 100 805 110 800" class="mouth"/>
+    </g>
+
+    <!-- Smiling Planet 4 (with simple crater-like lines) -->
+    <g id="planet4">
+      <circle cx="700" cy="850" r="60" class="outline"/>
+      <path d="M 650 850 A 50 50 0 1 0 750 850" class="outline-no-fill"/>
+      <circle cx="685" cy="840" r="6" class="face-feature"/>
+      <circle cx="715" cy="840" r="6" class="face-feature"/>
+      <path d="M 690 855 Q 700 860 710 855" class="mouth"/>
+    </g>
+
+    <!-- Stars -->
+    <g class="outline">
+      <use href="#star-shape" transform="translate(400 100) scale(4)"/>
+      <use href="#star-shape" transform="translate(100 450) scale(3)"/>
+      <use href="#star-shape" transform="translate(650 100) scale(2)"/>
+      <use href="#star-shape" transform="translate(50 600) scale(2.5)"/>
+      <use href="#star-shape" transform="translate(750 600) scale(3.5)"/>
+      <use href="#star-shape" transform="translate(400 900) scale(3)"/>
+      <use href="#star-shape" transform="translate(200 700) scale(2)"/>
+      <use href="#star-shape" transform="translate(600 750) scale(2.5)"/>
+    </g>
+  </g>
+</svg>
