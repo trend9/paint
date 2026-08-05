@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      .outline {
+        stroke: #000000;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #ffffff;
+      }
+      .thick-outline {
+        stroke: #000000;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #ffffff;
+      }
+      .medium-outline {
+        stroke: #000000;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #ffffff;
+      }
+      .thin-outline {
+        stroke: #000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="1000" fill="white" />
+
+  <!-- SKY ELEMENTS -->
+  <g id="sky">
+    <!-- Smiling Candy Sun -->
+    <g id="sun">
+      <circle cx="680" cy="130" r="45" class="thick-outline" />
+      <!-- Sun Rays -->
+      <path d="M 680,65 L 680,45" class="thick-outline" />
+      <path d="M 680,195 L 680,215" class="thick-outline" />
+      <path d="M 615,130 L 595,130" class="thick-outline" />
+      <path d="M 745,130 L 765,130" class="thick-outline" />
+      <path d="M 634,84 L 620,70" class="thick-outline" />
+      <path d="M 726,176 L 740,190" class="thick-outline" />
+      <path d="M 634,176 L 620,190" class="thick-outline" />
+      <path d="M 726,84 L 740,70" class="thick-outline" />
+      <!-- Sun Face -->
+      <path d="M 662,120 Q 668,112 674,120" class="medium-outline" fill="none" />
+      <path d="M 686,120 Q 692,112 698,120" class="medium-outline" fill="none" />
+      <path d="M 668,138 Q 680,150 692,138" class="medium-outline" fill="none" />
+      <circle cx="660" cy="128" r="4" class="thin-outline" />
+      <circle cx="700" cy="128" r="4" class="thin-outline" />
+    </g>
+
+    <!-- Puffy Candy Floss Clouds -->
+    <g id="cloud-left">
+      <path d="M 60,140 
+               C 40,140 20,120 30,100 
+               C 20,80 40,50 70,60 
+               C 90,40 130,40 150,60 
+               C 180,50 200,80 190,100 
+               C 210,120 190,140 170,140 Z" class="thick-outline" />
+    </g>
+
+    <g id="cloud-right">
+      <path d="M 420,120 
+               C 400,120 385,105 390,90 
+               C 380,70 400,50 425,55 
+               C 440,35 470,35 485,55 
+               C 510,45 525,70 515,90 
+               C 530,105 515,120 500,120 Z" class="thick-outline" />
+    </g>
+  </g>
+
+  <!-- CANDY FOREST BACKGROUND -->
+  <g id="background-forest">
+    <!-- Distant Candy Hills -->
+    <path d="M 0,480 Q 200,420 400,460 T 800,430 L 800,760 L 0,760 Z" class="medium-outline" />
+
+    <!-- Lollipop Tree Left -->
+    <g id="lollipop-tree-1">
+      <rect x="100" y="260" width="24" height="200" rx="12" class="thick-outline" />
+      <circle cx="112" cy="210" r="65" class="thick-outline" />
+      <circle cx="112" cy="210" r="45" class="medium-outline" />
+      <circle cx="112" cy="210" r="25" class="medium-outline" />
+      <!-- Bow on Tree -->
+      <path d="M 92,270 C 70,250 70,290 92,275 Z" class="medium-outline" />
+      <path d="M 132,270 C 154,250 154,290 132,275 Z" class="medium-outline" />
+      <circle cx="112" cy="272" r="7" class="medium-outline" />
+    </g>
+
+    <!-- Lollipop Tree Right -->
+    <g id="lollipop-tree-2">
+      <rect x="660" y="280" width="20" height="180" rx="10" class="thick-outline" />
+      <circle cx="670" cy="230" r="55" class="thick-outline" />
+      <circle cx="670" cy="230" r="38" class="medium-outline" />
+      <circle cx="670" cy="230" r="20" class="medium-outline" />
+    </g>
+
+    <!-- Wrapped Candy Tree Middle -->
+    <g id="candy-tree-middle">
+      <rect x="300" y="320" width="18" height="130" rx="9" class="thick-outline" />
+      <ellipse cx="309" cy="280" rx="45" ry="30" class="thick-outline" />
+      <!-- Wrapper Ends -->
+      <path d="M 264,280 L 235,260 L 235,300 Z" class="medium-outline" />
+      <path d="M 354,280 L 383,260 L 383,300 Z" class="medium-outline" />
+      <!-- Stripe Details -->
+      <path d="M 290,256 C 300,270 300,290 290,304" class="thin-outline" fill="none" />
+      <path d="M 309,250 C 319,270 319,290 309,310" class="thin-outline" fill="none" />
+      <path d="M 328,256 C 338,270 338,290 328,304" class="thin-outline" fill="none" />
+    </g>
+
+    <!-- Gummy Drop Bushes -->
+    <g id="gummy-bushes">
+      <!-- Bush Left -->
+      <path d="M 20,480 Q 20,400 65,400 Q 110,400 110,480 Z" class="thick-outline" />
+      <path d="M 100,480 Q 100,420 135,420 Q 170,420 170,480 Z" class="thick-outline" />
+      <!-- Bush Right -->
+      <path d="M 540,470 Q 540,410 575,410 Q 610,410 610,470 Z" class="thick-outline" />
+      <path d="M 720,460 Q 720,390 755,390 Q 790,390 790,460 Z" class="thick-outline" />
+    </g>
+  </g>
+
+  <!-- CHOCOLATE TRACK -->
+  <g id="chocolate-track">
+    <!-- Ground Base -->
+    <path d="M 0,760 Q 400,740 800,760 L 800,1000 L 0,1000 Z" class="thick-outline" />
+
+    <!-- Chocolate Track Rails -->
+    <path d="M 0,750 Q 400,730 800,750" class="thick-outline" fill="none" />
+    <path d="M 0,775 Q 400,755 800,775" class="thick-outline" fill="none" />
+
+    <!-- Chocolate Bar Railroad Ties -->
+    <g id="track-ties">
+      <rect x="40" y="765" width="28" height="18" rx="4" class="medium-outline" transform="rotate(3, 54, 774)" />
+      <rect x="120" y="761" width="28" height="18" rx="4" class="medium-outline" transform="rotate(2, 134, 770)" />
+      <rect x="200" y="757" width="28" height="18" rx="4" class="medium-outline" transform="rotate(1, 214, 766)" />
+      <rect x="280" y="755" width="28" height="18" rx="4" class="medium-outline" />
+      <rect x="360" y="753" width="28" height="18" rx="4" class="medium-outline" />
+      <rect x="440" y="753" width="28" height="18" rx="4" class="medium-outline" />
+      <rect x="520" y="755" width="28" height="18" rx="4" class="medium-outline" transform="rotate(-1, 534, 764)" />
+      <rect x="600" y="757" width="28" height="18" rx="4" class="medium-outline" transform="rotate(-2, 614, 766)" />
+      <rect x="680" y="761" width="28" height="18" rx="4" class="medium-outline" transform="rotate(-3, 694, 770)" />
+      <rect x="740" y="764" width="28" height="18" rx="4" class="medium-outline" transform="rotate(-4, 754, 773)" />
+    </g>
+
+    <!-- Melting Chocolate Drips along bottom of rail -->
+    <path d="M 0,785 
+             Q 30,805 60,785 
+             T 120,785 
+             T 180,795 
+             T 240,785 
+             T 300,805 
+             T 360,785 
+             T 420,785 
+             T 480,800 
+             T 540,785 
+             T 600,785 
+             T 660,805 
+             T 720,785 
+             T 780,795 
+             L 800,785" class="medium-outline" fill="none" />
+  </g>
+
+  <!-- CANDY TRAIN -->
+  <g id="candy-train">
+
+    <!-- WAGON (CARRIAGE) -->
+    <g id="wagon_group">
+      <!-- Wagon Connector -->
+      <rect x="460" y="660" width="60" height="16" rx="6" class="thick-outline" />
+
+      <!-- Giant Candies inside Wagon -->
+      <g id="wagon-candies">
+        <!-- Giant Wrapped Candy -->
+        <g id="giant-wrapped-candy">
+          <ellipse cx="540" cy="530" rx="32" ry="22" class="thick-outline" transform="rotate(-10, 540, 530)" />
+          <path d="M 510,525 L 485,505 L 485,545 Z" class="medium-outline" />
+          <path d="M 570,535 L 595,515 L 595,555 Z" class="medium-outline" />
+          <path d="M 530,510 C 538,525 538,535 530,550" class="thin-outline" fill="none" />
+          <path d="M 548,512 C 556,527 556,537 548,552" class="thin-outline" fill="none" />
+        </g>
+
+        <!-- Giant Lollipop in Wagon -->
+        <g id="giant-wagon-pop">
+          <rect x="615" y="470" width="14" height="130" rx="7" class="thick-outline" />
+          <circle cx="622" cy="450" r="42" class="thick-outline" />
+          <circle cx="622" cy="450" r="28" class="medium-outline" />
+          <circle cx="622" cy="450" r="14" class="medium-outline" />
+        </g>
+
+        <!-- Candy Cane in Wagon -->
+        <g id="giant-candy-cane">
+          <path d="M 670,580 
+                   L 670,470 
+                   A 22,22 0 0 1 714,470 
+                   L 714,495 
+                   A 8,8 0 0 1 698,495 
+                   L 698,470 
+                   A 6,6 0 0 0 686,470 
+                   L 686,580 Z" class="thick-outline" />
+          <!-- Candy Cane Stripes -->
+          <path d="M 670,560 L 686,550" class="medium-outline" />
+          <path d="M 670,530 L 686,520" class="medium-outline" />
+          <path d="M 670,500 L 686,490" class="medium-outline" />
+          <path d="M 675,470 L 693,460" class="medium-outline" />
+        </g>
+
+        <!-- Smiling Cute Gumdrop in Wagon -->
+        <g id="wagon-gumdrop">
+          <path d="M 550,580 
+                   C 550,520 600,520 600,580 Z" class="thick-outline" />
+          <!-- Gumdrop Face -->
+          <path d="M 565,550 Q 570,543 575,550" class="medium-outline" fill="none" />
+          <path d="M 580,550 Q 585,543 590,550" class="medium-outline" fill="none" />
+          <path d="M 572,560 Q 577,567 583,560" class="medium-outline" fill="none" />
+        </g>
+      </g>
+
+      <!-- Wagon Tub Body -->
+      <path d="M 500,580 
+               L 515,680 
+               C 515,695 725,695 725,680 
+               L 740,580 Z" class="thick-outline" />
+
+      <!-- Wagon Top Rim -->
+      <rect x="490" y="570" width="260" height="18" rx="9" class="thick-outline" />
+
+      <!-- Wagon Heart / Circle Decorations -->
+      <circle cx="560" cy="635" r="16" class="medium-outline" />
+      <circle cx="620" cy="635" r="16" class="medium-outline" />
+      <circle cx="680" cy="635" r="16" class="medium-outline" />
+
+      <!-- Wagon Wheels (Lollipops) -->
+      <!-- Wagon Wheel 1 -->
+      <g id="wagon-wheel-1">
+        <circle cx="550" cy="710" r="42" class="thick-outline" />
+        <circle cx="550" cy="710" r="28" class="medium-outline" />
+        <circle cx="550" cy="710" r="14" class="medium-outline" />
+        <circle cx="550" cy="710" r="5" class="thick-outline" />
+      </g>
+      <!-- Wagon Wheel 2 -->
+      <g id="wagon-wheel-2">
+        <circle cx="670" cy="710" r="42" class="thick-outline" />
+        <circle cx="670" cy="710" r="28" class="medium-outline" />
+        <circle cx="670" cy="710" r="14" class="medium-outline" />
+        <circle cx="670" cy="710" r="5" class="thick-outline" />
+      </g>
+    </g> <!-- End Wagon -->
+
+
+    <!-- LOCOMOTIVE ENGINE -->
+    <g id="engine_group">
+
+      <!-- Candy Smoke Puffs from Smokestack -->
+      <g id="smoke-puffs">
+        <path d="M 210,380 
+                 C 180,370 170,330 200,310 
+                 C 180,280 210,240 250,260 
+                 C 280,230 330,250 330,290 
+                 C 360,300 350,350 320,360 
+                 C 310,390 240,400 210,380 Z" class="thick-outline" />
+
+        <!-- Floating Peppermint Candy inside Smoke -->
+        <g id="smoke-peppermint">
+          <circle cx="265" cy="315" r="24" class="medium-outline" />
+          <path d="M 265,291 A 24,24 0 0 1 282,298 L 265,315 Z" class="thin-outline" />
+          <path d="M 289,315 A 24,24 0 0 1 282,332 L 265,315 Z" class="thin-outline" />
+          <path d="M 265,339 A 24,24 0 0 1 248,332 L 265,315 Z" class="thin-outline" />
+          <path d="M 241,315 A 24,24 0 0 1 248,298 L 265,315 Z" class="thin-outline" />
+        </g>
+      </g>
+
+      <!-- Smokestack (Wafer Roll / Ice Cream Cone style) -->
+      <g id="smokestack">
+        <path d="M 200,430 L 250,430 L 240,500 L 210,500 Z" class="thick-outline" />
+        <!-- Smokestack Crown -->
+        <path d="M 190,430 C 190,415 260,415 260,430 Z" class="thick-outline" />
+        <!-- Stripes on Smokestack -->
+        <path d="M 204,445 L 246,445" class="medium-outline" />
+        <path d="M 207,465 L 243,465" class="medium-outline" />
+      </g>
+
+      <!-- Engine Cab (Back Box) -->
+      <g id="engine-cab">
+        <!-- Main Cab Box -->
+        <rect x="320" y="450" width="140" height="230" rx="15" class="thick-outline" />
+
+        <!-- Roof (Wavy Frosting Cap) -->
+        <path d="M 305,450 
+                 C 305,420 475,420 475,450 
+                 Q 455,460 435,450 
+                 Q 415,460 390,450 
+                 Q 365,460 345,450 
+                 Q 325,460 305,450 Z" class="thick-outline" />
+
+        <!-- Roof Cherry on Top -->
+        <circle cx="390" cy="405" r="16" class="thick-outline" />
+        <path d="M 390,389 C 400,370 420,370 425,380" class="medium-outline" fill="none" />
+
+        <!-- Cab Window -->
+        <rect x="350" y="480" width="80" height="80" rx="16" class="thick-outline" />
+        <path d="M 390,480 L 390,560" class="medium-outline" />
+        <path d="M 350,520 L 430,520" class="medium-outline" />
+      </g>
+
+      <!-- Engine Boiler (Front Cylinder) -->
+      <rect x="170" y="500" width="170" height="180" rx="10" class="thick-outline" />
+
+      <!-- Boiler Decorative Sugar Bands -->
+      <rect x="220" y="500" width="18" height="180" class="medium-outline" />
+      <rect x="270" y="500" width="18" height="180" class="medium-outline" />
+
+      <!-- Engine Front Nose (Dome with Cute Face) -->
+      <path d="M 170,500 
+               C 100,500 100,680 170,680 Z" class="thick-outline" />
+
+      <!-- Smiling Face on Front of Train -->
+      <g id="engine-face">
+        <!-- Big Cute Eyes -->
+        <circle cx="135" cy="565" r="15" class="thick-outline" />
+        <circle cx="132" cy="560" r="5" class="medium-outline" />
+
+        <!-- Cute Smile -->
+        <path d="M 120,610 Q 140,630 155,605" class="thick-outline" fill="none" />
+        <!-- Tongue -->
+        <path d="M 132,618 Q 140,626 146,616" class="medium-outline" fill="none" />
+
+        <!-- Rosy Cheeks -->
+        <ellipse cx="118" cy="590" rx="8" ry="5" class="medium-outline" />
+        <ellipse cx="155" cy="585" rx="8" ry="5" class="medium-outline" />
+      </g>
+
+      <!-- Front Headlight (Gumdrop Light) -->
+      <g id="headlight">
+        <path d="M 105,530 L 80,520 L 80,560 L 105,550" class="medium-outline" />
+        <circle cx="75" cy="540" r="14" class="thick-outline" />
+        <circle cx="75" cy="540" r="8" class="thin-outline" />
+      </g>
+
+      <!-- Candy Cane Cowcatcher / Front Bumper -->
+      <g id="cowcatcher">
+        <path d="M 105,680 L 60,730 L 165,730 L 155,680 Z" class="thick-outline" />
+        <!-- Stripes -->
+        <path d="M 85,730 L 110,680" class="medium-outline" />
+        <path d="M 115,730 L 130,680" class="medium-outline" />
+        <path d="M 140,730 L 148,680" class="medium-outline" />
+      </g>
+
+      <!-- Engine Swirling Lollipop Wheels -->
+      <!-- Engine Wheel 1 (Front Big Wheel) -->
+      <g id="engine-wheel-1">
+        <circle cx="190" cy="710" r="48" class="thick-outline" />
+        <circle cx="190" cy="710" r="32" class="medium-outline" />
+        <circle cx="190" cy="710" r="16" class="medium-outline" />
+        <circle cx="190" cy="710" r="6" class="thick-outline" />
+      </g>
+
+      <!-- Engine Wheel 2 (Middle Wheel) -->
+      <g id="engine-wheel-2">
+        <circle cx="300" cy="710" r="48" class="thick-outline" />
+        <circle cx="300" cy="710" r="32" class="medium-outline" />
+        <circle cx="300" cy="710" r="16" class="medium-outline" />
+        <circle cx="300" cy="710" r="6" class="thick-outline" />
+      </g>
+
+      <!-- Engine Wheel 3 (Back Wheel under Cab) -->
+      <g id="engine-wheel-3">
+        <circle cx="410" cy="710" r="48" class="thick-outline" />
+        <circle cx="410" cy="710" r="32" class="medium-outline" />
+        <circle cx="410" cy="710" r="16" class="medium-outline" />
+        <circle cx="410" cy="710" r="6" class="thick-outline" />
+      </g>
+
+    </g> <!-- End Engine -->
+
+  </g> <!-- End Candy Train -->
+
+  <!-- FOREGROUND CANDY DETAILS (EXTREME BOTTOM FOR EASY COLORING) -->
+  <g id="foreground-details">
+    <!-- Left Candy Flower -->
+    <g id="candy-flower-left">
+      <path d="M 50,910 L 50,850" class="thick-outline" />
+      <circle cx="50" cy="840" r="18" class="thick-outline" />
+      <!-- Flower Petals (Round Candies) -->
+      <circle cx="50" cy="815" r="10" class="medium-outline" />
+      <circle cx="75" cy="840" r="10" class="medium-outline" />
+      <circle cx="50" cy="865" r="10" class="medium-outline" />
+      <circle cx="25" cy="840" r="10" class="medium-outline" />
+    </g>
+
+    <!-- Wrapped Hard Candies on Ground -->
+    <g id="ground-candy-1">
+      <ellipse cx="250" cy="880" rx="20" ry="14" class="thick-outline" />
+      <path d="M 230,880 L 215,868 L 215,892 Z" class="medium-outline" />
+      <path d="M 270,880 L 285,868 L 285,892 Z" class="medium-outline" />
+    </g>
+
+    <g id="ground-candy-2">
+      <ellipse cx="550" cy="890" rx="22" ry="15" class="thick-outline" />
+      <path d="M 528,890 L 512,878 L 512,902 Z" class="medium-outline" />
+      <path d="M 572,890 L 588,878 L 588,902 Z" class="medium-outline" />
+      <path d="M 542,877 C 550,887 550,893 542,903" class="thin-outline" fill="none" />
+      <path d="M 558,877 C 566,887 566,893 558,903" class="thin-outline" fill="none" />
+    </g>
+
+    <!-- Right Lollipop Flower -->
+    <g id="candy-flower-right">
+      <path d="M 730,920 L 730,840" class="thick-outline" />
+      <circle cx="730" cy="830" r="25" class="thick-outline" />
+      <circle cx="730" cy="830" r="15" class="medium-outline" />
+      <!-- Leaf -->
+      <path d="M 730,870 Q 755,860 750,880 Z" class="medium-outline" />
+    </g>
+  </g>
+
+</svg>
