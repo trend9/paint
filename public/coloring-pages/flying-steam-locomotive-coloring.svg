@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Elements -->
+  <g id="sky_elements">
+    <!-- Clouds -->
+    <path d="M100 200 Q150 150 200 200 T300 200 Q350 250 300 300 T200 300 Q150 250 100 200Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M600 150 Q650 100 700 150 T750 150 Q780 200 750 250 T700 250 Q650 200 600 150Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M50 700 Q100 650 150 700 T250 700 Q300 750 250 800 T150 800 Q100 750 50 700Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M550 800 Q600 750 650 800 T750 800 Q780 850 750 900 T650 900 Q600 850 550 800Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M300 50 Q350 0 400 50 T500 50 Q530 100 500 150 T400 150 Q350 100 300 50Z" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Stars (simple circles for toddlers) -->
+    <circle cx="150" cy="100" r="20" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="700" cy="80" r="18" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="50" cy="850" r="22" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="750" cy="700" r="20" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="300" cy="900" r="25" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="600" cy="40" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="200" cy="550" r="18" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="450" cy="250" r="22" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Locomotive -->
+  <g id="locomotive">
+    <!-- Main Body Base (lower chassis) -->
+    <rect x="150" y="550" width="500" height="100" rx="30" ry="30" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Boiler (front part of the train, where the face is) -->
+    <rect x="200" y="430" width="400" height="120" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="400" cy="430" rx="200" ry="70" fill="white" stroke="black" stroke-width="5"/> <!-- Top curve of boiler -->
+
+    <!-- Cabin -->
+    <rect x="550" y="450" width="100" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
+    <rect x="560" y="460" width="80" height="80" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/> <!-- Window outline -->
+
+    <!-- Chimney -->
+    <rect x="250" y="380" width="80" height="50" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
+    <ellipse cx="290" cy="380" rx="40" ry="20" fill="white" stroke="black" stroke-width="5"/> <!-- Chimney top -->
+
+    <!-- Face (on the front of the boiler) -->
+    <g id="face">
+      <!-- Face outline is part of the boiler structure for coloring -->
+      <ellipse cx="370" cy="500" rx="80" ry="60" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Eyes -->
+      <circle cx="340" cy="480" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="440" cy="480" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Mouth (smile) -->
+      <path d="M360 520 Q390 545 420 520" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Wheels (simplified, just large circles) -->
+    <g id="wheels">
+      <circle cx="250" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="400" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="550" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Connecting rod -->
+      <rect x="200" y="650" width="400" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Smoke puffs from chimney -->
+    <g id="smoke">
+      <path d="M290 350 Q250 300 290 250 Q330 200 370 250 Q330 300 290 350Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M330 220 Q370 170 330 120 Q290 70 250 120 Q290 170 330 220Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
