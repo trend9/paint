@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- Page Border Frame -->
+  <rect x="25" y="25" width="750" height="950" rx="30" ry="30" fill="none" stroke="black" stroke-width="6"/>
+
+  <!-- FLOATING ELEMENTS (BACKGROUND) -->
+  
+  <!-- 5-Point Star (Top Left) -->
+  <path d="M 180,140 L 187,158 L 206,159 L 191,170 L 196,188 L 180,177 L 164,188 L 169,170 L 154,159 L 173,158 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 5-Point Star (Top Right) -->
+  <path d="M 620,130 L 629,151 L 652,152 L 634,166 L 640,188 L 620,175 L 600,188 L 606,166 L 588,152 L 611,151 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 5-Point Star (Mid Left) -->
+  <path d="M 110,480 L 116,494 L 131,495 L 119,504 L 123,518 L 110,509 L 97,518 L 101,504 L 89,495 L 104,494 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 5-Point Star (Bottom Right) -->
+  <path d="M 690,650 L 696,664 L 711,665 L 699,674 L 703,688 L 690,679 L 677,688 L 681,674 L 669,665 L 684,664 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4-Point Sparkle (Top Center Left) -->
+  <path d="M 300,130 Q 300,148 318,148 Q 300,148 300,166 Q 300,148 282,148 Q 300,148 300,130 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4-Point Sparkle (Top Center Right) -->
+  <path d="M 500,200 Q 500,218 518,218 Q 500,218 500,236 Q 500,218 482,218 Q 500,218 500,200 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cute Heart (Left) -->
+  <path d="M 230,240 C 230,225 212,215 198,228 C 184,215 166,225 166,240 C 166,260 198,278 198,282 C 198,278 230,260 230,240 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cute Heart (Right) -->
+  <path d="M 550,310 C 550,298 535,290 523,300 C 511,290 496,298 496,310 C 496,326 523,340 523,343 C 523,340 550,326 550,310 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Floating Wrapped Candy (Left) -->
+  <g transform="translate(150, 340) rotate(-15)">
+    <path d="M -25,0 L -45,-20 L -45,20 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 25,0 L 45,-20 L 45,20 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="-25" y="-18" width="50" height="36" rx="12" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -8,-17 L -16,17" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 12,-17 L 4,17" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Cookie (Top Right) -->
+  <g transform="translate(630, 270) rotate(20)">
+    <circle cx="0" cy="0" r="38" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Chocolate Chips -->
+    <circle cx="-14" cy="-14" r="6" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="12" cy="-18" r="7" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="18" cy="8" r="5" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="-6" cy="18" r="7" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="-20" cy="6" r="5" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="0" cy="-2" r="6" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Floating Wrapped Candy (Right) -->
+  <g transform="translate(660, 480) rotate(30)">
+    <path d="M -20,0 L -38,-16 L -38,16 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 20,0 L 38,-16 L 38,16 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="22" fill="white" stroke="black" stroke-width="5"/>
+    <path d="M -6,-21 C -2,-7 -2,7 -6,21" fill="none" stroke="black" stroke-width="4"/>
+    <path d="M 6,-21 C 10,-7 10,7 6,21" fill="none" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Floating Bubbles / Dots -->
+  <circle cx="280" cy="210" r="8" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="560" cy="250" r="10" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="120" cy="270" r="6" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="690" cy="380" r="9" fill="white" stroke="black" stroke-width="4"/>
+
+  <!-- CLOUD (SITTING BASE) -->
+  <g id="cloud">
+    <path d="M 160,720 
+             C 100,720 70,660 90,600 
+             C 60,540 100,470 170,480 
+             C 210,410 310,400 370,440 
+             C 430,380 540,390 580,450 
+             C 650,420 720,470 710,540 
+             C 750,600 720,670 650,700 
+             C 610,760 520,780 400,770 
+             C 280,780 200,760 160,720 Z" 
+          fill="white" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Scallop details inside cloud -->
+    <path d="M 130,600 C 160,580 200,600 210,630" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 590,610 C 620,570 660,580 670,610" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- UNICORN TAIL -->
+  <g id="tail">
+    <path d="M 290,590 
+             C 240,580 200,620 210,670 
+             C 220,710 260,720 290,680" 
+          fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 270,610 C 230,620 220,660 240,685" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- UNICORN BACK LEGS (SITTING POSTURE) -->
+  <!-- Left Leg -->
+  <path d="M 330,560 C 280,560 250,610 260,650 C 270,680 330,680 350,650 C 360,620 350,570 330,560 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 270,655 C 290,640 320,645 335,665" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Right Leg -->
+  <path d="M 470,560 C 520,560 550,610 540,650 C 530,680 470,680 450,650 C 440,620 450,570 470,560 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 530,655 C 510,640 480,645 465,665" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- UNICORN BODY -->
+  <path d="M 335,430 C 325,480 320,550 340,620 C 360,645 440,645 460,620 C 480,550 475,480 465,430 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- UNICORN MANE (BACK LOCKS) -->
+  <path d="M 330,240 C 290,220 270,260 280,290 C 250,290 240,340 270,370 C 250,390 260,430 290,440" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 470,240 C 510,220 530,260 520,290 C 550,290 560,340 530,370 C 550,390 540,430 510,440" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- UNICORN EARS -->
+  <!-- Left Ear -->
+  <path d="M 335,250 C 290,230 270,170 300,150 C 320,140 345,190 345,235 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 320,225 C 300,205 295,180 308,168" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right Ear -->
+  <path d="M 465,250 C 510,230 530,170 500,150 C 480,140 455,190 455,235 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 480,225 C 500,205 505,180 492,168" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- UNICORN HEAD -->
+  <path d="M 330,250 C 360,240 440,240 470,250 C 500,295 505,360 480,405 C 450,445 350,445 320,405 C 295,360 300,295 330,250 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- UNICORN HORN -->
+  <path d="M 375,245 C 370,175 390,105 400,105 C 410,105 430,175 425,245 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Horn Ridge Lines -->
+  <path d="M 373,215 Q 400,223 427,215" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 378,175 Q 400,183 422,175" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 386,140 Q 400,146 414,140" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- EYES -->
+  <!-- Left Eye -->
+  <circle cx="350" cy="320" r="22" fill="white" stroke="black" stroke-width="5"/>
+  <circle cx="355" cy="315" r="9" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="343" cy="327" r="4" fill="white" stroke="black" stroke-width="3"/>
+  <!-- Left Eyelashes -->
+  <path d="M 333,307 Q 323,295 318,300" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 343,300 Q 338,285 333,290" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right Eye -->
+  <circle cx="450" cy="320" r="22" fill="white" stroke="black" stroke-width="5"/>
+  <circle cx="445" cy="315" r="9" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="457" cy="327" r="4" fill="white" stroke="black" stroke-width="3"/>
+  <!-- Right Eyelashes -->
+  <path d="M 467,307 Q 477,295 482,300" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 457,300 Q 462,285 467,290" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- SNOUT & MOUTH -->
+  <ellipse cx="400" cy="380" rx="50" ry="32" fill="white" stroke="black" stroke-width="5"/>
+  <!-- Nostrils -->
+  <ellipse cx="382" cy="370" rx="4" ry="6" fill="white" stroke="black" stroke-width="4"/>
+  <ellipse cx="418" cy="370" rx="4" ry="6" fill="white" stroke="black" stroke-width="4"/>
+  <!-- Happy Smile -->
+  <path d="M 378,385 Q 400,410 422,385" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 388,397 Q 400,407 412,397" fill="white" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Cute Cheek Blush Circles -->
+  <circle cx="320" cy="360" r="10" fill="white" stroke="black" stroke-width="3" stroke-dasharray="4 3"/>
+  <circle cx="480" cy="360" r="10" fill="white" stroke="black" stroke-width="3" stroke-dasharray="4 3"/>
+
+  <!-- FRONT ARMS / HOOVES HOLDING LOLLIPOP -->
+  <!-- Left Arm -->
+  <path d="M 335,450 C 310,480 320,520 365,520 C 380,520 385,500 375,480 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 345,515 C 355,495 370,495 375,510" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right Arm -->
+  <path d="M 465,450 C 490,480 470,530 430,520 C 415,515 415,495 430,475 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 450,518 C 440,498 425,500 422,515" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- LOLLIPOP (SNACK BEING EATEN) -->
+  <g id="lollipop">
+    <!-- Stick -->
+    <path d="M 410,530 L 460,400" fill="none" stroke="black" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Ribbon Bow on Stick -->
+    <path d="M 445,430 C 430,420 425,440 440,440 C 445,440 445,430 445,430 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 445,430 C 460,420 465,440 450,440 C 445,440 445,430 445,430 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Big Swirl Lollipop Head -->
+    <circle cx="475" cy="380" r="42" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Swirl Line -->
+    <path d="M 475,380 
+             C 475,370 465,365 458,372 
+             C 448,382 452,402 468,408 
+             C 490,415 510,395 505,370 
+             C 498,342 460,340 440,365 
+             C 422,390 435,428 475,422" 
+          fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+</svg>
