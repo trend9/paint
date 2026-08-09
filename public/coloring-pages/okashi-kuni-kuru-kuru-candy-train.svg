@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Explicit white background -->
+  <rect x="0" y="0" width="800" height="1000" fill="white"/>
+
+  <!-- Landscape Elements -->
+  <g id="landscape">
+    <!-- Ground line -->
+    <path d="M0 700 Q100 650 200 700 T400 680 T600 710 T800 690" fill="none" stroke="black" stroke-width="5"/>
+
+    <!-- Chocolate River -->
+    <path d="M0 750 Q150 720 300 750 C400 760 500 740 650 760 Q750 770 800 750 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Gummy Bear Mountains -->
+    <g id="gummy-bear-mountains">
+      <path d="M50 700 C100 600 200 620 250 550 Q300 500 350 550 C400 600 450 630 500 600 L500 700 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M300 700 C350 620 450 650 500 580 Q550 530 600 580 C650 630 700 660 750 630 L750 700 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M600 700 C650 650 750 670 800 620 L800 700 Z" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Lollipop Trees -->
+    <g id="lollipop-trees">
+      <!-- Tree 1 -->
+      <rect x="100" y="600" width="20" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="110" cy="560" r="50" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Tree 2 -->
+      <rect x="300" y="580" width="25" height="120" rx="12" ry="12" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="312.5" cy="530" r="60" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Tree 3 -->
+      <rect x="650" y="590" width="20" height="110" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="660" cy="550" r="55" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Marshmallow Clouds -->
+    <g id="marshmallow-clouds">
+      <path d="M100 200 Q150 150 200 200 Q250 250 200 300 Q150 350 100 300 Q50 250 100 200 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M500 150 Q550 100 600 150 Q650 200 600 250 Q550 300 500 250 Q450 200 500 150 Z" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- Candy Train -->
+  <g id="candy-train">
+    <!-- Engine -->
+    <g id="engine">
+      <!-- Main Body -->
+      <rect x="50" y="500" width="200" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Front part -->
+      <rect x="230" y="510" width="50" height="80" rx="15" ry="15" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Cab -->
+      <rect x="180" y="450" width="70" height="50" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Smokestack -->
+      <rect x="200" y="420" width="30" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <ellipse cx="215" cy="420" rx="20" ry="10" fill="white" stroke="black" stroke-width="5"/>
+
+      <!-- Wheels -->
+      <circle cx="100" cy="620" r="40" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="100" cy="620" r="20" fill="white" stroke="black" stroke-width="5"/> <!-- Inner hub -->
+      <circle cx="200" cy="620" r="40" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="200" cy="620" r="20" fill="white" stroke="black" stroke-width="5"/> <!-- Inner hub -->
+
+      <!-- Connecting rod -->
+      <rect x="90" y="610" width="120" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+
+      <!-- Happy Face -->
+      <circle cx="255" cy="540" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Eye 1 -->
+      <circle cx="265" cy="540" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Eye 2, slightly overlapping -->
+      <path d="M245 560 Q260 575 275 560" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/> <!-- Smile -->
+    </g>
+
+    <!-- Lollipop Car -->
+    <g id="lollipop-car">
+      <!-- Connector -->
+      <rect x="270" y="550" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Lollipop Head -->
+      <circle cx="380" cy="540" r="60" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Swirl on lollipop (simplified for toddlers) -->
+      <path d="M380 540 C 395 510 415 500 420 520 C 425 540 410 570 380 560 C 350 550 340 520 350 500 C 360 480 380 470 400 480" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Lollipop Stick -->
+      <rect x="370" y="600" width="20" height="70" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Wheels -->
+      <circle cx="340" cy="680" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="340" cy="680" r="15" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="420" cy="680" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="420" cy="680" r="15" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Striped Candy Car -->
+    <g id="striped-candy-car">
+      <!-- Connector -->
+      <rect x="450" y="630" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Body -->
+      <rect x="480" y="550" width="180" height="100" rx="25" ry="25" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Stripes (lines only) -->
+      <line x1="510" y1="550" x2="480" y2="650" stroke="black" stroke-width="4"/>
+      <line x1="560" y1="550" x2="510" y2="650" stroke="black" stroke-width="4"/>
+      <line x1="610" y1="550" x2="560" y2="650" stroke="black" stroke-width="4"/>
+      <line x1="660" y1="550" x2="610" y2="650" stroke="black" stroke-width="4"/>
+      <!-- Window -->
+      <circle cx="570" cy="600" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Wheels -->
+      <circle cx="520" cy="680" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="520" cy="680" r="15" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="620" cy="680" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="620" cy="680" r="15" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Cotton Candy Steam -->
+    <g id="cotton-candy-steam">
+      <path d="M215 400 Q240 370 215 340 Q190 310 215 280 Q240 250 215 220" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M230 400 Q260 380 230 350 Q200 320 230 290 Q260 260 230 230" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
