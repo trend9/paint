@@ -1,77 +1,250 @@
-<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style type="text/css"><![CDATA[
-      /* Common style for thick black outlines and white fills for coloring */
-      .outline {
-        stroke: black;
-        stroke-width: 4;
-        fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      /* Style for outlines with no fill (for paths like smiles or tail curves) */
-      .outline-nofill {
-        stroke: black;
-        stroke-width: 4;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-    ]]></style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background Fill -->
+  <rect width="800" height="1000" fill="white"/>
 
-  <!-- Acacia Tree (in the background) -->
-  <g id="acacia-tree">
-    <!-- Tree Trunk - simple rounded rectangle -->
-    <rect x="150" y="450" width="60" height="300" rx="30" ry="30" class="outline"/>
-    <!-- Tree Canopy - simplified flat-top shape -->
-    <path d="M 50 450 C 0 350, 100 250, 200 250 C 300 250, 400 350, 350 450 L 50 450 Z" class="outline"/>
-    <!-- Simple leaf clusters for coloring inside canopy -->
-    <circle cx="130" cy="350" r="25" class="outline"/>
-    <circle cx="230" cy="330" r="20" class="outline"/>
-    <circle cx="170" cy="300" r="22" class="outline"/>
+  <!-- SKY ELEMENTS -->
+  <g id="sky" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Friendly Sun -->
+    <circle cx="140" cy="160" r="55"/>
+    <!-- Sun Rays -->
+    <line x1="140" y1="80" x2="140" y2="90"/>
+    <line x1="140" y1="230" x2="140" y2="240"/>
+    <line x1="60" y1="160" x2="70" y2="160"/>
+    <line x1="210" y1="160" x2="220" y2="160"/>
+    <line x1="83" y1="103" x2="90" y2="110"/>
+    <line x1="190" y1="210" x2="197" y2="217"/>
+    <line x1="83" y1="217" x2="90" y2="210"/>
+    <line x1="190" y1="110" x2="197" y2="103"/>
+
+    <!-- Happy Fluffy Clouds -->
+    <path d="M 520,160 Q 500,130 460,140 Q 430,110 390,130 Q 360,120 340,145 Q 315,140 305,165 Q 290,190 320,210 Q 330,220 530,220 Q 560,190 520,160 Z"/>
+    <path d="M 700,230 Q 685,210 660,215 Q 640,195 610,210 Q 590,200 575,220 Q 555,225 560,245 Q 550,265 575,280 L 715,280 Q 735,255 700,230 Z"/>
   </g>
 
-  <!-- Baby Lion Cub -->
-  <g id="lion-cub">
-    <!-- Body - a large, rounded shape for a sitting posture -->
-    <path d="M 300 750 C 250 600, 280 550, 400 550 C 520 550, 550 600, 500 750 C 450 780, 350 780, 300 750 Z" class="outline"/>
+  <!-- BACKGROUND LANDSCAPE -->
+  <g id="landscape" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Distant Mountains -->
+    <path d="M 0,520 Q 120,400 250,500 T 500,480 Q 630,360 800,510 L 800,750 L 0,750 Z"/>
+    <path d="M 220,495 Q 340,370 480,485"/>
 
-    <!-- Head - a large circle -->
-    <circle cx="400" cy="450" r="100" class="outline"/>
+    <!-- Tall Acacia Tree - Left -->
+    <g id="tree-left">
+      <!-- Trunk -->
+      <path d="M 90,720 Q 110,580 80,480 L 130,480 Q 140,580 140,720 Z"/>
+      <!-- Branch -->
+      <path d="M 120,530 Q 170,490 190,470 L 180,455 Q 150,480 112,505"/>
+      <!-- Top Canopy -->
+      <path d="M 30,480 C 10,430 70,400 100,420 C 120,380 190,380 210,410 C 240,400 270,440 250,470 C 260,500 210,530 170,510 C 130,530 70,530 50,500 C 30,500 20,490 30,480 Z"/>
+    </g>
 
-    <!-- Ears - two ellipses on top of the head -->
-    <ellipse cx="330" cy="380" rx="30" ry="40" class="outline"/>
-    <ellipse cx="470" cy="380" rx="30" ry="40" class="outline"/>
-    <!-- Inner ears for coloring -->
-    <ellipse cx="330" cy="380" rx="15" ry="20" class="outline"/>
-    <ellipse cx="470" cy="380" rx="15" ry="20" class="outline"/>
+    <!-- Safari Tree - Right -->
+    <g id="tree-right">
+      <!-- Trunk -->
+      <path d="M 670,700 Q 660,590 690,520 L 730,525 Q 700,600 715,700 Z"/>
+      <!-- Canopy -->
+      <path d="M 610,520 C 590,480 640,450 670,465 C 685,435 740,435 760,460 C 785,450 810,480 795,510 C 810,535 770,560 740,545 C 710,560 650,555 630,535 C 615,535 605,530 610,520 Z"/>
+    </g>
 
-    <!-- Muzzle - a smaller ellipse on the face -->
-    <ellipse cx="400" cy="490" rx="60" ry="35" class="outline"/>
-
-    <!-- Nose - a simple rounded triangle shape -->
-    <path d="M 375 475 Q 400 465, 425 475 L 400 505 Z" class="outline"/>
-
-    <!-- Eyes - two simple circles -->
-    <circle cx="360" cy="430" r="12" class="outline"/>
-    <circle cx="440" cy="430" r="12" class="outline"/>
-
-    <!-- Smile - a simple curved line -->
-    <path d="M 370 515 Q 400 535, 430 515" class="outline-nofill"/>
-
-    <!-- Front Paws - two rounded rectangles -->
-    <rect x="320" y="650" width="70" height="90" rx="35" ry="35" class="outline"/>
-    <rect x="410" y="650" width="70" height="90" rx="35" ry="35" class="outline"/>
-
-    <!-- Tail - a simple curved path with a fluffy circular end -->
-    <path d="M 500 650 C 550 620, 580 650, 580 720 C 580 770, 550 820, 480 800" class="outline-nofill"/>
-    <circle cx="480" cy="800" r="30" class="outline"/>
+    <!-- Ground Line -->
+    <path d="M 0,710 Q 200,670 400,710 T 800,680 L 800,1000 L 0,1000 Z" stroke-width="5"/>
   </g>
 
-  <!-- Safari Grass Patch (in the foreground) -->
-  <g id="grass-patch">
-    <!-- Grass shape - a wavy path covering the bottom of the page -->
-    <path d="M 0 760 Q 100 740, 200 760 Q 300 780, 400 760 Q 500 740, 600 760 Q 700 780, 800 760 L 800 1000 L 0 1000 Z" class="outline"/>
+  <!-- BUTTERFLY -->
+  <g id="butterfly" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Flutter Path / Motion Lines -->
+    <path d="M 170,390 Q 190,370 210,390 T 250,380" stroke-dasharray="8,10" fill="none"/>
+
+    <!-- Left Wings -->
+    <path d="M 230,335 C 180,285 140,335 185,365 C 205,378 225,355 230,345 Z"/>
+    <path d="M 228,348 C 185,365 170,415 205,415 C 225,415 232,385 228,348 Z"/>
+    <!-- Wing Patterns Left -->
+    <circle cx="185" cy="335" r="12"/>
+    <circle cx="195" cy="390" r="8"/>
+
+    <!-- Right Wings -->
+    <path d="M 238,335 C 288,285 328,335 283,365 C 263,378 243,355 238,345 Z"/>
+    <path d="M 240,348 C 283,365 298,415 263,415 C 243,415 236,385 240,348 Z"/>
+    <!-- Wing Patterns Right -->
+    <circle cx="283" cy="335" r="12"/>
+    <circle cx="273" cy="390" r="8"/>
+
+    <!-- Butterfly Body -->
+    <ellipse cx="234" cy="350" rx="7" ry="22"/>
+    <circle cx="234" cy="323" r="8"/>
+    <!-- Antennae -->
+    <path d="M 231,316 Q 220,295 210,300" fill="none"/>
+    <circle cx="209" cy="300" r="3" fill="black"/>
+    <path d="M 237,316 Q 248,295 258,300" fill="none"/>
+    <circle cx="259" cy="300" r="3" fill="black"/>
+  </g>
+
+  <!-- BABY LION -->
+  <g id="baby-lion" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Tail -->
+    <g id="tail">
+      <path d="M 530,730 C 620,730 670,680 650,600 C 640,560 600,570 610,595 C 625,635 590,680 520,685"/>
+      <!-- Tail Tuft -->
+      <path d="M 645,580 C 670,550 700,570 690,600 C 680,625 640,620 645,580 Z"/>
+      <!-- Tuft Detail Lines -->
+      <path d="M 660,585 Q 675,595 665,605" stroke-width="3"/>
+    </g>
+
+    <!-- Back Left Leg & Paw (Sitting behind) -->
+    <g id="back-leg">
+      <path d="M 480,720 C 560,720 570,840 490,850 C 450,855 440,820 460,780"/>
+      <!-- Back Paw -->
+      <ellipse cx="510" cy="835" rx="40" ry="25"/>
+      <!-- Toes -->
+      <path d="M 490,850 L 490,830"/>
+      <path d="M 515,855 L 515,830"/>
+      <path d="M 535,845 L 530,825"/>
+    </g>
+
+    <!-- Lion Body (Chubby & Cute) -->
+    <path d="M 340,650 C 310,720 340,840 440,840 C 480,840 520,800 500,720 C 480,660 410,630 340,650 Z"/>
+
+    <!-- Front Left Paw (Grounded) -->
+    <g id="front-left-paw">
+      <path d="M 345,710 L 335,820 C 335,845 385,845 385,820 L 385,730"/>
+      <!-- Toes -->
+      <path d="M 350,840 L 352,815"/>
+      <path d="M 370,840 L 368,815"/>
+    </g>
+
+    <!-- Front Right Leg & Paw (Playfully Reaching Up) -->
+    <g id="front-right-paw">
+      <path d="M 315,630 C 270,570 240,500 280,470 C 310,450 330,500 335,560"/>
+      <!-- Paw Pad / Toes -->
+      <circle cx="280" cy="485" r="28"/>
+      <!-- Cute Toe Pads -->
+      <circle cx="265" cy="470" r="7"/>
+      <circle cx="282" cy="463" r="7"/>
+      <circle cx="298" cy="472" r="7"/>
+      <ellipse cx="282" cy="492" rx="10" ry="8"/>
+    </g>
+
+    <!-- LION MANE (Big, Bubbly, Soft Petal Scallops) -->
+    <g id="mane">
+      <path d="M 400,310 
+               C 430,290 470,310 480,340 
+               C 510,330 550,360 545,395 
+               C 575,410 585,450 565,485 
+               C 585,515 570,560 535,575 
+               C 540,610 500,640 465,630 
+               C 440,650 390,650 370,625 
+               C 335,635 295,610 295,575 
+               C 260,560 245,515 265,480 
+               C 245,445 260,405 290,390 
+               C 285,355 320,325 355,335 
+               C 370,310 390,300 400,310 Z"/>
+    </g>
+
+    <!-- HEAD -->
+    <g id="head">
+      <!-- Head Base Outline -->
+      <ellipse cx="410" cy="475" rx="110" ry="95"/>
+
+      <!-- Inner Ears -->
+      <!-- Left Ear -->
+      <path d="M 315,405 C 290,330 360,320 370,380 Z"/>
+      <path d="M 330,395 C 315,350 355,345 360,385 Z"/>
+      <!-- Right Ear -->
+      <path d="M 505,405 C 530,330 460,320 450,380 Z"/>
+      <path d="M 490,395 C 505,350 465,345 460,385 Z"/>
+
+      <!-- Hair Tuft on Top -->
+      <path d="M 390,382 C 395,350 410,350 412,380 C 420,355 435,360 430,385"/>
+
+      <!-- EYES (Large, Expressive, Friendly) -->
+      <!-- Left Eye -->
+      <g id="left-eye">
+        <ellipse cx="360" cy="460" rx="22" ry="28"/>
+        <!-- Pupil / Iris -->
+        <ellipse cx="366" cy="462" rx="13" ry="18"/>
+        <!-- Catchlight Highlights -->
+        <circle cx="360" cy="452" r="6"/>
+        <circle cx="370" cy="470" r="3"/>
+      </g>
+
+      <!-- Right Eye -->
+      <g id="right-eye">
+        <ellipse cx="460" cy="460" rx="22" ry="28"/>
+        <!-- Pupil / Iris -->
+        <ellipse cx="454" cy="462" rx="13" ry="18"/>
+        <!-- Catchlight Highlights -->
+        <circle cx="448" cy="452" r="6"/>
+        <circle cx="458" cy="470" r="3"/>
+      </g>
+
+      <!-- Cute Eyebrows -->
+      <path d="M 342,420 Q 360,410 378,422" stroke-width="4"/>
+      <path d="M 442,422 Q 460,410 478,420" stroke-width="4"/>
+
+      <!-- Muzzle / Snout Area -->
+      <path d="M 370,495 C 370,475 450,475 450,495 C 450,525 370,525 370,495 Z"/>
+
+      <!-- Heart/Triangle Nose -->
+      <path d="M 392,490 Q 410,482 428,490 Q 432,508 410,520 Q 388,508 392,490 Z"/>
+
+      <!-- Happy Smile -->
+      <path d="M 410,520 L 410,530"/>
+      <path d="M 410,530 Q 390,550 375,532"/>
+      <path d="M 410,530 Q 430,550 445,532"/>
+
+      <!-- Open Mouth / Tongue (Happy Expression) -->
+      <path d="M 385,537 Q 410,570 435,537 Q 410,550 385,537 Z"/>
+
+      <!-- Rosy Cheeks -->
+      <ellipse cx="330" cy="490" rx="12" ry="8" stroke-dasharray="3,3"/>
+      <ellipse cx="490" cy="490" rx="12" ry="8" stroke-dasharray="3,3"/>
+
+      <!-- Whiskers -->
+      <path d="M 355,500 L 320,495"/>
+      <path d="M 352,510 L 325,515"/>
+      <path d="M 465,500 L 500,495"/>
+      <path d="M 468,510 L 495,515"/>
+    </g>
+  </g>
+
+  <!-- FOREGROUND DETAILS (Grass Tufts and Simple Flowers) -->
+  <g id="foreground" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Grass Left -->
+    <path d="M 60,760 Q 50,710 30,700 Q 60,720 70,690 Q 80,720 110,705 Q 90,735 90,760 Z"/>
+    
+    <!-- Flower Left -->
+    <g id="flower-left">
+      <path d="M 160,820 L 160,750"/>
+      <!-- Leaves -->
+      <path d="M 160,780 Q 130,770 140,795 Z"/>
+      <!-- Petals -->
+      <circle cx="160" cy="730" r="12"/>
+      <circle cx="160" cy="710" r="10"/>
+      <circle cx="180" cy="730" r="10"/>
+      <circle cx="160" cy="750" r="10"/>
+      <circle cx="140" cy="730" r="10"/>
+    </g>
+
+    <!-- Grass Center-Right -->
+    <path d="M 560,740 Q 550,690 530,680 Q 560,700 570,670 Q 580,700 610,685 Q 590,715 590,740 Z"/>
+
+    <!-- Flower Right -->
+    <g id="flower-right">
+      <path d="M 720,800 L 720,730"/>
+      <!-- Leaf -->
+      <path d="M 720,760 Q 750,750 740,775 Z"/>
+      <!-- Petals -->
+      <circle cx="720" cy="715" r="10"/>
+      <circle cx="720" cy="698" r="8"/>
+      <circle cx="737" cy="715" r="8"/>
+      <circle cx="720" cy="732" r="8"/>
+      <circle cx="703" cy="715" r="8"/>
+    </g>
+
+    <!-- Cute Little Pebbles -->
+    <ellipse cx="230" cy="760" rx="14" ry="8"/>
+    <ellipse cx="255" cy="765" rx="8" ry="5"/>
+    <ellipse cx="640" cy="750" rx="18" ry="9"/>
+    <ellipse cx="670" cy="755" rx="10" ry="6"/>
   </g>
 </svg>
