@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Snowy landscape -->
+  <g id="snowy_landscape">
+    <!-- Bottom snowdrift -->
+    <path d="M0 800 Q200 750 400 800 T800 850 V1000 H0 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Left side snowdrift -->
+    <path d="M0 0 V600 Q50 650 0 700 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Right side snowdrift -->
+    <path d="M800 0 V600 Q750 650 800 700 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Background snowdrift -->
+    <path d="M0 200 Q200 150 400 200 T800 250 V0 H0 Z" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+
+  <!-- Hot spring area -->
+  <g id="hot_spring_area">
+    <!-- Hot spring pool -->
+    <ellipse cx="400" cy="700" rx="300" ry="150" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Steam rising from the hot water -->
+    <path d="M250 580 Q260 550 270 580 Q280 550 290 580" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M350 550 Q360 520 370 550 Q380 520 390 550" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M450 580 Q460 550 470 580 Q480 550 490 580" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M550 550 Q560 520 570 550 Q580 520 590 550" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (left) -->
+    <g transform="translate(250, 720)">
+      <ellipse cx="0" cy="0" rx="70" ry="80" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <ellipse cx="0" cy="10" rx="50" ry="60" fill="white" stroke="black" stroke-width="5"/> <!-- Belly -->
+      <ellipse cx="0" cy="-60" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/> <!-- Head -->
+      <circle cx="-15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye left -->
+      <circle cx="15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye right -->
+      <path d="M-10 -55 Q0 -45 10 -55 Q0 -65 -10 -55 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M-25 -20 Q0 -10 25 -20" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M-70 -70 Q-80 -100 -60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Left flipper -->
+      <path d="M70 -70 Q80 -100 60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Right flipper -->
+    </g>
+
+    <!-- Penguin 2 (center) -->
+    <g transform="translate(400, 720)">
+      <ellipse cx="0" cy="0" rx="70" ry="80" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <ellipse cx="0" cy="10" rx="50" ry="60" fill="white" stroke="black" stroke-width="5"/> <!-- Belly -->
+      <ellipse cx="0" cy="-60" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/> <!-- Head -->
+      <circle cx="-15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye left -->
+      <circle cx="15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye right -->
+      <path d="M-10 -55 Q0 -45 10 -55 Q0 -65 -10 -55 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M-25 -20 Q0 -10 25 -20" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M-70 -70 Q-80 -100 -60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Left flipper -->
+      <path d="M70 -70 Q80 -100 60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Right flipper -->
+    </g>
+
+    <!-- Penguin 3 (right) -->
+    <g transform="translate(550, 720)">
+      <ellipse cx="0" cy="0" rx="70" ry="80" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <ellipse cx="0" cy="10" rx="50" ry="60" fill="white" stroke="black" stroke-width="5"/> <!-- Belly -->
+      <ellipse cx="0" cy="-60" rx="50" ry="50" fill="white" stroke="black" stroke-width="5"/> <!-- Head -->
+      <circle cx="-15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye left -->
+      <circle cx="15" cy="-70" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye right -->
+      <path d="M-10 -55 Q0 -45 10 -55 Q0 -65 -10 -55 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
+      <path d="M-25 -20 Q0 -10 25 -20" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M-70 -70 Q-80 -100 -60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Left flipper -->
+      <path d="M70 -70 Q80 -100 60 -110" fill="white" stroke="black" stroke-width="5"/> <!-- Right flipper -->
+    </g>
+  </g>
+
+  <!-- Simple snowflakes -->
+  <g id="snowflakes">
+    <!-- Snowflake 1 -->
+    <path d="M100 100 L90 100 M100 100 L110 100 M100 100 L100 90 M100 100 L100 110 M93 93 L107 107 M93 107 L107 93" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Snowflake 2 -->
+    <path d="M700 150 L690 150 M700 150 L710 150 M700 150 L700 140 M700 150 L700 160 M693 143 L707 157 M693 157 L707 143" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Snowflake 3 -->
+    <path d="M200 250 L190 250 M200 250 L210 250 M200 250 L200 240 M200 250 L200 260 M193 243 L207 257 M193 257 L207 243" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Snowflake 4 -->
+    <path d="M600 300 L590 300 M600 300 L610 300 M600 300 L600 290 M600 300 L600 310 M593 293 L607 307 M593 307 L607 293" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
