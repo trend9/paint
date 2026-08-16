@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- The pure white background is achieved by all shapes having fill="white" and the SVG itself having no explicit background. -->
+
+  <!-- Snowy Landscape and Fir Trees -->
+  <g id="snowy_landscape">
+    <!-- Ground snow bank - a gentle curve at the bottom -->
+    <path d="M0 900 Q200 850 400 900 T800 900 V1000 H0 Z" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Fir Tree 1 (left-back) -->
+    <g transform="translate(100, 400)">
+      <rect x="0" y="200" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M-20 220 Q15 150 70 220 L25 100 Q15 60 -5 100 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M-25 180 Q15 120 75 180 L25 50 Q15 10 -5 50 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Fir Tree 2 (right-back) -->
+    <g transform="translate(600, 400)">
+      <rect x="0" y="200" width="30" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M-20 220 Q15 150 70 220 L25 100 Q15 60 -5 100 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M-25 180 Q15 120 75 180 L25 50 Q15 10 -5 50 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- Hot Spring Bath -->
+  <g id="hot_spring_bath">
+    <ellipse cx="400" cy="700" rx="300" ry="150" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Steam Rising from Water - simple wavy lines -->
+    <g id="steam" stroke="black" stroke-width="4" fill="white">
+      <path d="M200 550 Q250 500 300 550 Q350 500 400 550 Q450 500 500 550 Q550 500 600 550" fill="none"/>
+      <path d="M220 580 Q270 530 320 580 Q370 530 420 580 Q470 530 520 580 Q570 530 620 580" fill="none"/>
+      <path d="M240 610 Q290 560 340 610 Q390 560 440 610 Q490 560 540 610 Q590 560 640 610" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (center, wearing towel) -->
+    <g transform="translate(350, 600)">
+      <ellipse cx="0" cy="0" rx="70" ry="100" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="0" cy="-100" rx="45" ry="50" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <ellipse cx="0" cy="0" rx="50" ry="70" fill="white" stroke="black" stroke-width="4"/> <!-- White Belly -->
+      <!-- Eyes -->
+      <circle cx="-15" cy="-110" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="15" cy="-110" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Beak -->
+      <path d="M-15 -90 L0 -80 L15 -90 Q0 -95 -15 -90 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Small Towel on Head -->
+      <rect x="-35" y="-145" width="70" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Penguin 2 (left, splashing gently) -->
+    <g transform="translate(200, 650)">
+      <ellipse cx="0" cy="0" rx="60" ry="90" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <ellipse cx="0" cy="-90" rx="40" ry="45" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <ellipse cx="0" cy="0" rx="45" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- White Belly -->
+      <!-- Eyes -->
+      <circle cx="-12" cy="-98" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="12" cy="-98" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Beak -->
+      <path d="M-12 -80 L0 -72 L12 -80 Q0 -85 -12 -80 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Splash Effects -->
+      <circle cx="40" cy="-20" r="20" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M50 -10 Q60 -5 70 -10 L60 0 Q50 5 50 -10 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Penguin 3 (right, partially submerged) -->
+    <g transform="translate(550, 700)">
+      <path d="M-60 0 C-60 -80 60 -80 60 0 C60 20 -60 20 -60 0 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Body (partially in water) -->
+      <ellipse cx="0" cy="-80" rx="40" ry="45" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <ellipse cx="0" cy="-10" rx="45" ry="50" fill="white" stroke="black" stroke-width="4"/> <!-- White Belly (upper part) -->
+      <!-- Eyes -->
+      <circle cx="-12" cy="-88" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="12" cy="-88" r="7" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Beak -->
+      <path d="M-12 -70 L0 -62 L12 -70 Q0 -75 -12 -70 Z" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Large Falling Snowflakes -->
+  <g id="snowflakes" stroke="black" stroke-width="3" fill="white">
+    <circle cx="100" cy="100" r="15"/>
+    <circle cx="700" cy="150" r="20"/>
+    <circle cx="200" cy="250" r="18"/>
+    <circle cx="550" cy="50" r="12"/>
+    <circle cx="300" cy="180" r="16"/>
+    <circle cx="650" cy="300" r="14"/>
+    <circle cx="50" cy="350" r="17"/>
+    <circle cx="450" cy="250" r="19"/>
+    <circle cx="750" cy="400" r="16"/>
+    <circle cx="150" cy="480" r="13"/>
+  </g>
+
+</svg>
