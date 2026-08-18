@@ -1,293 +1,324 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
-  <defs>
-    <style>
-      .outline {
-        stroke: #000000;
-        stroke-width: 5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: #FFFFFF;
-      }
-      .outline-thin {
-        stroke: #000000;
-        stroke-width: 4;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: #FFFFFF;
-      }
-      .no-fill {
-        fill: none;
-      }
-      .detail-line {
-        stroke: #000000;
-        stroke-width: 4;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-    </style>
-  </defs>
+  <!-- Background -->
+  <rect width="800" height="1000" fill="white"/>
 
-  <!-- Background Canvas -->
-  <rect width="800" height="1000" fill="#FFFFFF" />
-
-  <!-- ================= BACKGROUND ELEMENTS ================= -->
-  <g id="background-space">
-    <!-- Moon / Crater Planet (Top Center) -->
-    <g transform="translate(420, 80)">
-      <circle cx="0" cy="0" r="55" class="outline" />
-      <circle cx="-20" cy="-15" r="14" class="detail-line" />
-      <circle cx="15" cy="15" r="18" class="detail-line" />
-      <circle cx="-10" cy="25" r="10" class="detail-line" />
-      <circle cx="22" cy="-20" r="8" class="detail-line" />
+  <!-- ==================== SPACE BACKGROUND ==================== -->
+  <g id="space-background" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Top-Left Ringed Planet -->
+    <g id="planet-ringed">
+      <ellipse cx="140" cy="150" rx="90" ry="25" transform="rotate(-20 140 150)" />
+      <circle cx="140" cy="150" r="55" />
+      <!-- Re-draw front part of ring for overlap -->
+      <path d="M 55 160 A 90 25 0 0 0 215 125" fill="none" />
+      <circle cx="120" cy="135" r="10" />
+      <circle cx="155" cy="165" r="7" />
     </g>
 
-    <!-- Ringed Planet (Middle Right) -->
-    <g transform="translate(660, 620) rotate(-15)">
-      <!-- Back of Ring -->
-      <path d="M -110 0 A 110 35 0 0 1 110 0" class="detail-line" />
-      <!-- Planet Body -->
-      <circle cx="0" cy="0" r="70" class="outline" />
-      <!-- Front of Ring -->
-      <path d="M 110 0 A 110 35 0 0 1 -110 0" class="outline" />
+    <!-- Top-Right Moon with Craters -->
+    <g id="moon">
+      <circle cx="670" cy="160" r="60" />
+      <circle cx="650" cy="140" r="14" />
+      <circle cx="685" cy="175" r="10" />
+      <circle cx="645" cy="180" r="8" />
+      <circle cx="690" cy="135" r="6" />
     </g>
 
-    <!-- Small Striped Planet (Middle Left) -->
-    <g transform="translate(90, 480)">
-      <circle cx="0" cy="0" r="40" class="outline" />
-      <path d="M -38 -10 Q 0 -20 38 -10" class="detail-line" />
-      <path d="M -40 10 Q 0 0 40 10" class="detail-line" />
+    <!-- Middle-Right Striped Planet -->
+    <g id="planet-striped">
+      <circle cx="690" cy="460" r="50" />
+      <path d="M 645 440 Q 690 465 735 440" fill="none" />
+      <path d="M 642 470 Q 690 495 738 470" fill="none" />
     </g>
 
-    <!-- 5-Point Stars -->
-    <!-- Star 1 (Top Left) -->
-    <path d="M 90 130 L 97 150 L 118 150 L 101 163 L 107 183 L 90 170 L 73 183 L 79 163 L 62 150 L 83 150 Z" class="outline" />
-    <!-- Star 2 (Top Right) -->
-    <path d="M 720 100 L 725 115 L 740 115 L 728 125 L 732 140 L 720 130 L 708 140 L 712 125 L 700 115 L 715 115 Z" class="outline" />
-    <!-- Star 3 (Center) -->
-    <path d="M 400 450 L 407 470 L 428 470 L 411 483 L 417 503 L 400 490 L 383 503 L 389 483 L 372 470 L 393 470 Z" class="outline" />
-    <!-- Star 4 (Bottom Left) -->
-    <path d="M 100 880 L 105 895 L 120 895 L 108 905 L 112 920 L 100 910 L 88 920 L 92 905 L 80 895 L 95 895 Z" class="outline" />
-    <!-- Star 5 (Bottom Right) -->
-    <path d="M 700 850 L 707 870 L 728 870 L 711 883 L 717 903 L 700 890 L 683 903 L 689 883 L 672 870 L 693 870 Z" class="outline" />
-
-    <!-- 4-Point Sparkle Stars -->
-    <path d="M 280 80 Q 280 100 300 100 Q 280 100 280 120 Q 280 100 260 100 Q 280 100 280 80 Z" class="outline" />
-    <path d="M 520 300 Q 520 315 535 315 Q 520 315 520 330 Q 520 315 505 315 Q 520 315 520 300 Z" class="outline" />
-    <path d="M 70 310 Q 70 325 85 325 Q 70 325 70 340 Q 70 325 55 325 Q 70 325 70 310 Z" class="outline" />
-    <path d="M 500 780 Q 500 800 520 800 Q 500 800 500 820 Q 500 800 480 800 Q 500 800 500 780 Z" class="outline" />
-
-    <!-- Floating Space Dots/Bubbles -->
-    <circle cx="230" cy="180" r="8" class="outline" />
-    <circle cx="600" cy="140" r="10" class="outline" />
-    <circle cx="340" cy="380" r="7" class="outline" />
-    <circle cx="450" cy="620" r="9" class="outline" />
-    <circle cx="600" cy="500" r="6" class="outline" />
-    <circle cx="280" cy="880" r="10" class="outline" />
-  </g>
-
-  <!-- ================= CHARACTER 1: RABBIT ASTRONAUT (Top Left) ================= -->
-  <g id="rabbit-astronaut" transform="translate(200, 260)">
-    <!-- Helmet Back Base -->
-    <path d="M -70 -20 C -70 -120, 70 -120, 70 -20 C 70 50, -70 50, -70 -20 Z" class="outline" />
-
-    <!-- Rabbit Ears (inside helmet) -->
-    <!-- Left Ear -->
-    <path d="M -45 -30 C -50 -110, -15 -110, -15 -30 Z" class="outline" />
-    <path d="M -38 -35 C -42 -90, -22 -90, -22 -35" class="detail-line" />
-    <!-- Right Ear -->
-    <path d="M 15 -30 C 15 -110, 50 -110, 45 -30 Z" class="outline" />
-    <path d="M 22 -35 C 22 -90, 42 -90, 38 -35" class="detail-line" />
-
-    <!-- Rabbit Head -->
-    <ellipse cx="0" cy="0" rx="45" ry="38" class="outline" />
-    
-    <!-- Rabbit Face Details -->
-    <!-- Eyes -->
-    <ellipse cx="-18" cy="-5" rx="6" ry="8" fill="#000000" />
-    <circle cx="-20" cy="-8" r="2.5" fill="#FFFFFF" />
-    <ellipse cx="18" cy="-5" rx="6" ry="8" fill="#000000" />
-    <circle cx="16" cy="-8" r="2.5" fill="#FFFFFF" />
-    <!-- Cheeks -->
-    <path d="M -32 8 A 8 5 0 0 0 -20 12" class="detail-line" />
-    <path d="M 20 12 A 8 5 0 0 0 32 8" class="detail-line" />
-    <!-- Nose & Mouth -->
-    <polygon points="-4,3 4,3 0,8" fill="#000000" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
-    <path d="M 0 8 Q -6 16 -12 10" class="detail-line" />
-    <path d="M 0 8 Q 6 16 12 10" class="detail-line" />
-
-    <!-- Helmet Glass Visor Outline & Reflection -->
-    <path d="M -60 -10 A 62 55 0 0 1 60 -10" class="detail-line" />
-    <path d="M -45 -60 A 50 50 0 0 1 -20 -75" class="detail-line" />
-
-    <!-- Suit Collar -->
-    <path d="M -40 32 L 40 32 L 35 45 L -35 45 Z" class="outline" />
-
-    <!-- Space Suit Body -->
-    <path d="M -35 45 C -45 60, -45 110, -30 130 L 30 130 C 45 110, 45 60, 35 45 Z" class="outline" />
-    
-    <!-- Chest Control Panel -->
-    <rect x="-18" y="60" width="36" height="30" rx="8" class="outline-thin" />
-    <circle cx="-8" cy="75" r="5" class="outline-thin" />
-    <circle cx="8" cy="75" r="5" class="outline-thin" />
-
-    <!-- Left Arm (Resting) -->
-    <path d="M -38 52 C -60 65, -60 90, -48 105" class="outline" />
-    <!-- Left Mitten -->
-    <circle cx="-52" cy="112" r="14" class="outline" />
-
-    <!-- Right Arm (Waving) -->
-    <path d="M 38 52 C 60 40, 70 20, 75 -5" class="outline" />
-    <!-- Right Mitten (Waving Paw) -->
-    <path d="M 65 -22 C 60 -35, 85 -45, 92 -28 C 98 -32, 102 -20, 95 -12 Z" class="outline" />
-
-    <!-- Legs & Boots -->
-    <!-- Left Leg & Boot -->
-    <path d="M -25 130 L -28 150 L -45 150 C -52 150, -52 168, -35 168 L -10 168 L -10 130 Z" class="outline" />
-    <!-- Right Leg & Boot -->
-    <path d="M 25 130 L 28 150 L 45 150 C 52 150, 52 168, 35 168 L 10 168 L 10 130 Z" class="outline" />
-  </g>
-
-
-  <!-- ================= CHARACTER 2: CAT ASTRONAUT (Top Right, Floating) ================= -->
-  <g id="cat-astronaut" transform="translate(560, 260) rotate(12)">
-    <!-- Air Hose / Tether -->
-    <path d="M -60 120 C -100 150, -80 220, -140 200 C -180 190, -180 130, -220 150" class="detail-line" stroke-dasharray="12 8" />
-
-    <!-- Oxygen Tank Backpack -->
-    <rect x="-65" y="40" width="25" height="70" rx="10" class="outline" />
-
-    <!-- Helmet Back -->
-    <circle cx="0" cy="0" r="75" class="outline" />
-
-    <!-- Cat Ears (Inside Helmet) -->
-    <path d="M -50 -25 L -25 -60 L -10 -25 Z" class="outline" />
-    <path d="M -40 -28 L -25 -50 L -17 -28" class="detail-line" />
-    <path d="M 10 -25 L 25 -60 L 50 -25 Z" class="outline" />
-    <path d="M 17 -28 L 25 -50 L 40 -28" class="detail-line" />
-
-    <!-- Cat Head -->
-    <ellipse cx="0" cy="5" rx="46" ry="38" class="outline" />
-
-    <!-- Cat Face Details -->
-    <!-- Eyes (Happy Arcs) -->
-    <path d="M -25 -2 Q -15 -12 -5 -2" class="detail-line" stroke-width="5" />
-    <path d="M 5 -2 Q 15 -12 25 -2" class="detail-line" stroke-width="5" />
-    <!-- Nose & Whiskers -->
-    <polygon points="-4,6 4,6 0,11" fill="#000000" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
-    <path d="M 0 11 Q -5 18 -10 14" class="detail-line" />
-    <path d="M 0 11 Q 5 18 10 14" class="detail-line" />
-    <!-- Whiskers Left -->
-    <path d="M -28 10 L -48 6" class="detail-line" />
-    <path d="M -28 14 L -46 18" class="detail-line" />
-    <!-- Whiskers Right -->
-    <path d="M 28 10 L 48 6" class="detail-line" />
-    <path d="M 28 14 L 46 18" class="detail-line" />
-
-    <!-- Helmet Reflection Arc -->
-    <path d="M -55 -35 A 65 65 0 0 1 35 -55" class="detail-line" />
-
-    <!-- Suit Neck Ring -->
-    <path d="M -35 42 L 35 42 L 30 54 L -30 54 Z" class="outline" />
-
-    <!-- Suit Body -->
-    <path d="M -30 54 C -40 70, -35 110, -25 125 L 25 125 C 35 110, 40 70, 30 54 Z" class="outline" />
-    <path d="M -15 70 L 15 70 L 15 95 L -15 95 Z" class="outline-thin" />
-    <circle cx="0" cy="82" r="4" class="outline-thin" />
-
-    <!-- Tail in Sleeve -->
-    <path d="M 25 115 C 55 120, 70 90, 65 70 C 62 60, 50 65, 52 75 C 55 88, 42 105, 20 102" class="outline" />
-
-    <!-- Left Arm (Floating Up) -->
-    <path d="M -30 60 C -55 50, -65 30, -70 10" class="outline" />
-    <circle cx="-72" cy="0" r="13" class="outline" />
-
-    <!-- Right Arm (Floating Out) -->
-    <path d="M 30 60 C 55 60, 70 45, 80 30" class="outline" />
-    <circle cx="86" cy="22" r="13" class="outline" />
-
-    <!-- Left Leg & Boot -->
-    <path d="M -20 125 L -25 155 C -40 155, -45 175, -20 175 L -5 175 L -5 125 Z" class="outline" />
-    <!-- Right Leg & Boot -->
-    <path d="M 5 125 L 10 155 L 25 155 C 45 155, 40 175, 20 175 L 2 175 L 5 125 Z" class="outline" />
-  </g>
-
-  <!-- Cute Floating Fish Treat for Cat -->
-  <g transform="translate(710, 180) rotate(-20)">
-    <path d="M -15 0 C -30 -15, -30 15, -15 0 Z" class="outline" />
-    <ellipse cx="5" cy="0" rx="15" ry="10" class="outline" />
-    <circle cx="12" cy="-3" r="2" fill="#000000" />
-  </g>
-
-
-  <!-- ================= CHARACTER 3: DOG IN SPACESHIP (Bottom Left) ================= -->
-  <g id="dog-spaceship" transform="translate(260, 700)">
-
-    <!-- Rocket Thruster Flame -->
-    <path d="M -40 180 C -50 230, -20 250, 0 260 C 20 250, 50 230, 40 180 Z" class="outline" />
-    <path d="M -20 180 C -25 210, 0 225, 0 225 C 0 225, 25 210, 20 180 Z" class="outline-thin" />
-
-    <!-- Left Rocket Fin -->
-    <path d="M -90 120 C -140 130, -150 180, -130 200 C -100 190, -80 170, -75 150 Z" class="outline" />
-    <!-- Right Rocket Fin -->
-    <path d="M 90 120 C 140 130, 150 180, 130 200 C 100 190, 80 170, 75 150 Z" class="outline" />
-
-    <!-- Main Rocket Body -->
-    <path d="M 0 -180 C 90 -100, 100 60, 80 180 L -80 180 C -100 60, -90 -100, 0 -180 Z" class="outline" />
-
-    <!-- Rocket Nose Cone Line -->
-    <path d="M -52 -80 C -20 -95, 20 -95, 52 -80" class="detail-line" />
-    <!-- Rocket Body Decorative Stripe -->
-    <path d="M -78 140 C -30 155, 30 155, 78 140" class="detail-line" />
-
-    <!-- Large Porthole Window Outer Ring -->
-    <circle cx="0" cy="15" r="70" class="outline" />
-    <!-- Porthole Inner Frame -->
-    <circle cx="0" cy="15" r="58" class="outline-thin" />
-
-    <!-- DOG INSIDE PORTOLE -->
-    <g id="space-dog">
-      <!-- Dog Head -->
-      <ellipse cx="0" cy="10" rx="38" ry="32" class="outline" />
-
-      <!-- Left Floppy Ear -->
-      <path d="M -30 -5 C -55 -10, -60 25, -40 35 C -30 40, -25 20, -28 10 Z" class="outline" />
-      <!-- Right Floppy Ear -->
-      <path d="M 30 -5 C 55 -10, 60 25, 40 35 C 30 40, 25 20, 28 10 Z" class="outline" />
-
-      <!-- Dog Snout -->
-      <ellipse cx="0" cy="18" rx="16" ry="12" class="outline-thin" />
-      <!-- Dog Nose -->
-      <ellipse cx="0" cy="12" rx="7" ry="5" fill="#000000" />
-      <!-- Mouth & Tongue -->
-      <path d="M 0 17 L 0 23 C -5 23, -8 20, -10 18" class="detail-line" />
-      <path d="M 0 23 C 5 23, 8 20, 10 18" class="detail-line" />
-      <path d="M -4 23 C -4 28, 4 28, 4 23 Z" fill="#FFFFFF" class="outline-thin" />
-
-      <!-- Dog Eyes (Big Happy Circles) -->
-      <circle cx="-15" cy="2" r="7" class="outline" />
-      <circle cx="-13" cy="0" r="2.5" fill="#000000" />
-      <circle cx="15" cy="2" r="7" class="outline" />
-      <circle cx="13" cy="0" r="2.5" fill="#000000" />
-
-      <!-- Paws Resting on Window Rim -->
-      <!-- Left Paw -->
-      <path d="M -35 50 C -35 38, -15 38, -15 52 Z" class="outline" />
-      <path d="M -28 44 L -28 50" class="detail-line" />
-      <path d="M -22 44 L -22 50" class="detail-line" />
-      <!-- Right Paw -->
-      <path d="M 15 52 C 15 38, 35 38, 35 50 Z" class="outline" />
-      <path d="M 22 44 L 22 50" class="detail-line" />
-      <path d="M 28 44 L 28 50" class="detail-line" />
+    <!-- Middle-Left Small Planet -->
+    <g id="planet-crater">
+      <circle cx="110" cy="480" r="40" />
+      <circle cx="100" cy="470" r="8" />
+      <circle cx="125" cy="490" r="6" />
     </g>
 
-    <!-- Glass Shine Line on Porthole -->
-    <path d="M -38 -25 A 50 50 0 0 1 25 -38" class="detail-line" />
+    <!-- Bottom-Left Swirl Planet -->
+    <g id="planet-bottom-left">
+      <circle cx="130" cy="820" r="50" />
+      <path d="M 85 810 Q 130 835 175 810" fill="none" />
+      <circle cx="125" cy="845" r="9" />
+    </g>
+
+    <!-- Bottom-Right Shooting Star -->
+    <g id="shooting-star">
+      <!-- Tail Stripes -->
+      <path d="M 660 770 Q 690 730 730 710" fill="none" />
+      <path d="M 675 785 Q 710 750 750 730" fill="none" />
+      <path d="M 690 800 Q 730 770 770 750" fill="none" />
+      <!-- Star Head -->
+      <polygon points="650,750 658,768 678,770 663,784 667,804 650,793 633,804 637,784 622,770 642,768" />
+    </g>
+
+    <!-- Large 5-Point Stars -->
+    <!-- Star 1: Top Center -->
+    <polygon points="390,40 397,58 417,58 401,70 407,89 390,77 373,89 379,70 363,58 383,58" />
+    <!-- Star 2: Top Left -->
+    <polygon points="260,110 266,124 282,124 269,134 274,149 260,139 246,149 251,134 238,124 254,124" />
+    <!-- Star 3: Top Right -->
+    <polygon points="530,90 537,107 555,107 540,118 546,135 530,124 514,135 520,118 505,107 523,107" />
+    <!-- Star 4: Middle Left -->
+    <polygon points="210,330 216,345 232,345 219,355 224,370 210,360 196,370 201,355 188,345 204,345" />
+    <!-- Star 5: Middle Right -->
+    <polygon points="580,310 587,326 605,326 591,337 596,354 580,343 564,354 569,337 555,326 573,326" />
+    <!-- Star 6: Lower Right -->
+    <polygon points="570,620 577,635 593,635 580,645 585,660 570,650 555,660 560,645 547,635 563,635" />
+    <!-- Star 7: Lower Left -->
+    <polygon points="220,650 226,664 242,664 229,674 234,689 220,679 206,689 211,674 198,664 214,664" />
+
+    <!-- Cute 4-Point Sparkle Stars -->
+    <path d="M 280 230 Q 280 245 295 245 Q 280 245 280 260 Q 280 245 265 245 Q 280 245 280 230" />
+    <path d="M 520 220 Q 520 235 535 235 Q 520 235 520 250 Q 520 235 505 235 Q 520 235 520 220" />
+    <path d="M 100 310 Q 100 322 112 322 Q 100 322 100 334 Q 100 322 88 322 Q 100 322 100 310" />
+    <path d="M 710 320 Q 710 332 722 332 Q 710 332 710 344 Q 710 332 698 332 Q 710 332 710 320" />
+    <path d="M 700 580 Q 700 595 715 595 Q 700 595 700 610 Q 700 595 685 595 Q 700 595 700 580" />
+    <path d="M 90 640 Q 90 652 102 652 Q 90 652 90 664 Q 90 652 78 652 Q 90 652 90 640" />
+    <path d="M 230 780 Q 230 792 242 792 Q 230 792 230 804 Q 230 792 218 792 Q 230 792 230 780" />
+
+    <!-- Space Dots / Little Bubbles -->
+    <circle cx="340" cy="100" r="5" fill="black" />
+    <circle cx="470" cy="90" r="6" fill="black" />
+    <circle cx="610" cy="230" r="5" fill="black" />
+    <circle cx="180" cy="240" r="6" fill="black" />
+    <circle cx="60" cy="400" r="5" fill="black" />
+    <circle cx="735" cy="245" r="5" fill="black" />
+    <circle cx="740" cy="400" r="6" fill="black" />
+    <circle cx="640" cy="540" r="5" fill="black" />
+    <circle cx="150" cy="570" r="6" fill="black" />
+    <circle cx="70" cy="730" r="5" fill="black" />
+    <circle cx="730" cy="670" r="6" fill="black" />
+    <circle cx="735" cy="850" r="5" fill="black" />
   </g>
 
-  <!-- Cute Space Bone Floating Near Dog -->
-  <g transform="translate(420, 710) rotate(25)">
-    <path d="M -20 -5 C -28 -15, -35 -5, -25 0 C -35 5, -28 15, -20 5 L 20 5 C 28 15, 35 5, 25 0 C 35 -5, 28 -15, 20 -5 Z" class="outline" />
+  <!-- ==================== ROCKET EXHAUST & FLAMES ==================== -->
+  <g id="rocket-exhaust" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Big Outer Flame -->
+    <path d="M 330 730 C 310 800 320 850 400 930 C 480 850 490 800 470 730 Z" />
+    <!-- Middle Flame -->
+    <path d="M 350 730 C 340 780 350 820 400 870 C 450 820 460 780 450 730 Z" />
+    <!-- Inner Flame -->
+    <path d="M 375 730 C 370 760 380 785 400 815 C 420 785 430 760 425 730 Z" />
+    <!-- Cute Smoke Puffs beside flames -->
+    <path d="M 300 750 C 270 760 260 790 280 810 C 260 825 270 855 300 855 C 315 855 330 845 335 830" />
+    <path d="M 500 750 C 530 760 540 790 520 810 C 540 825 530 855 500 855 C 485 855 470 845 465 830" />
+  </g>
+
+  <!-- ==================== ROCKET FINS & BASE ==================== -->
+  <g id="rocket-fins" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Left Large Fin -->
+    <path d="M 275 560 C 230 580 185 640 180 700 C 210 710 245 695 275 665 Z" />
+    <path d="M 220 670 C 240 655 260 635 270 610" fill="none" />
+
+    <!-- Right Large Fin -->
+    <path d="M 525 560 C 570 580 615 640 620 700 C 590 710 555 695 525 665 Z" />
+    <path d="M 580 670 C 560 655 540 635 530 610" fill="none" />
+
+    <!-- Rocket Engine Nozzle -->
+    <path d="M 340 700 L 325 735 C 325 742 475 742 475 735 L 460 700 Z" />
+    <line x1="365" y1="735" x2="370" y2="700" />
+    <line x1="400" y1="735" x2="400" y2="700" />
+    <line x1="435" y1="735" x2="430" y2="700" />
+  </g>
+
+  <!-- ==================== MAIN ROCKET BODY ==================== -->
+  <g id="rocket-body" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Rocket Main Shell -->
+    <path d="M 400 130 C 330 200 270 330 270 510 C 270 610 280 675 285 705 L 515 705 C 520 675 530 610 530 510 C 530 330 470 200 400 130 Z" />
+
+    <!-- Nose Cone Tip Antenna -->
+    <circle cx="400" cy="90" r="14" />
+    <path d="M 400 104 L 400 130" />
+    <!-- Nose Cone Divider Line -->
+    <path d="M 335 210 Q 400 240 465 210" />
+
+    <!-- Decorative Body Bands -->
+    <path d="M 271 520 Q 400 560 529 520" fill="none" />
+    <path d="M 275 670 Q 400 705 525 670" fill="none" />
+    <circle cx="305" cy="685" r="5" fill="black" />
+    <circle cx="340" cy="690" r="5" fill="black" />
+    <circle cx="400" cy="692" r="5" fill="black" />
+    <circle cx="460" cy="690" r="5" fill="black" />
+    <circle cx="495" cy="685" r="5" fill="black" />
+  </g>
+
+  <!-- ==================== CHARACTERS IN PORTHOLES ==================== -->
+
+  <!-- ================= TOP PORTHOLE: RABBIT ASTRONAUT ================= -->
+  <g id="rabbit-astronaut" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Rabbit Porthole Frame Outer -->
+    <circle cx="400" cy="305" r="75" />
+    <!-- Rabbit Porthole Inner Opening -->
+    <circle cx="400" cy="305" r="64" />
+    <!-- Bolts on Porthole -->
+    <circle cx="400" cy="235" r="3.5" fill="black" />
+    <circle cx="450" cy="250" r="3.5" fill="black" />
+    <circle cx="470" cy="305" r="3.5" fill="black" />
+    <circle cx="450" cy="360" r="3.5" fill="black" />
+    <circle cx="400" cy="375" r="3.5" fill="black" />
+    <circle cx="350" cy="360" r="3.5" fill="black" />
+    <circle cx="330" cy="305" r="3.5" fill="black" />
+    <circle cx="350" cy="250" r="3.5" fill="black" />
+
+    <!-- Rabbit Body/Spacesuit inside porthole -->
+    <!-- Spacesuit Shoulders -->
+    <path d="M 360 365 Q 400 345 440 365 L 440 370 Q 400 375 360 370 Z" />
+    <path d="M 378 348 Q 400 356 422 348" fill="none" />
+
+    <!-- Left Ear (Bent / Curved) -->
+    <path d="M 370 255 C 350 205 370 190 382 205 C 392 218 385 245 385 255" />
+    <path d="M 373 245 C 365 220 375 210 379 218 C 382 225 380 240 380 245" stroke-width="4" fill="none" />
+
+    <!-- Right Ear (Tall) -->
+    <path d="M 415 255 C 415 200 440 200 440 220 C 440 235 430 245 425 255" />
+    <path d="M 423 245 C 423 218 433 218 433 228 C 433 236 428 242 425 245" stroke-width="4" fill="none" />
+
+    <!-- Head & Cheeks -->
+    <ellipse cx="400" cy="285" rx="34" ry="28" />
+
+    <!-- Astronaut Helmet Bubble -->
+    <circle cx="400" cy="275" r="48" stroke-dasharray="270 40" fill="none" stroke-width="4" />
+
+    <!-- Eyes (Big Happy Eyes with Shine) -->
+    <ellipse cx="388" cy="282" rx="5" ry="6" fill="black" />
+    <circle cx="386" cy="280" r="2" fill="white" stroke="none" />
+    <ellipse cx="412" cy="282" rx="5" ry="6" fill="black" />
+    <circle cx="410" cy="280" r="2" fill="white" stroke="none" />
+
+    <!-- Cute Nose & Mouth -->
+    <polygon points="397,292 403,292 400,296" fill="black" />
+    <path d="M 395 297 Q 400 302 405 297" fill="none" />
+
+    <!-- Whiskers -->
+    <line x1="373" y1="288" x2="360" y2="286" stroke-width="3" />
+    <line x1="373" y1="293" x2="360" y2="296" stroke-width="3" />
+    <line x1="427" y1="288" x2="440" y2="286" stroke-width="3" />
+    <line x1="427" y1="293" x2="440" y2="296" stroke-width="3" />
+
+    <!-- Waving Left Paw -->
+    <path d="M 350 315 C 335 305 340 285 352 290 C 360 295 360 310 355 320" />
+    <path d="M 345 300 C 347 296 352 296 354 300" fill="none" stroke-width="3" />
+
+    <!-- Helmet Glare Reflection -->
+    <path d="M 432 250 A 42 42 0 0 1 442 275" fill="none" stroke-width="4" />
+  </g>
+
+
+  <!-- ================= MIDDLE-LEFT PORTHOLE: BEAR ASTRONAUT ================= -->
+  <g id="bear-astronaut" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Porthole Frame Outer -->
+    <circle cx="345" cy="465" r="62" />
+    <!-- Porthole Inner -->
+    <circle cx="345" cy="465" r="52" />
+    <!-- Bolts -->
+    <circle cx="345" cy="408" r="3" fill="black" />
+    <circle cx="385" cy="420" r="3" fill="black" />
+    <circle cx="402" cy="465" r="3" fill="black" />
+    <circle cx="385" cy="510" r="3" fill="black" />
+    <circle cx="345" cy="522" r="3" fill="black" />
+    <circle cx="305" cy="510" r="3" fill="black" />
+    <circle cx="288" cy="465" r="3" fill="black" />
+    <circle cx="305" cy="420" r="3" fill="black" />
+
+    <!-- Bear Astronaut Helmet Bubble -->
+    <circle cx="345" cy="460" r="42" stroke-dasharray="230 40" fill="none" stroke-width="4" />
+
+    <!-- Bear Ears -->
+    <circle cx="320" cy="435" r="12" />
+    <path d="M 320 431 A 5 5 0 0 1 320 439" fill="none" stroke-width="3" />
+    <circle cx="370" cy="435" r="12" />
+    <path d="M 370 431 A 5 5 0 0 1 370 439" fill="none" stroke-width="3" />
+
+    <!-- Bear Head -->
+    <circle cx="345" cy="460" r="30" />
+
+    <!-- Bear Muzzle -->
+    <ellipse cx="345" cy="470" rx="14" ry="10" />
+    <ellipse cx="345" cy="466" rx="6" ry="4" fill="black" />
+    <path d="M 345 470 L 345 474" />
+    <path d="M 340 474 Q 345 478 350 474" fill="none" />
+
+    <!-- Bear Eyes -->
+    <ellipse cx="334" cy="455" rx="4" ry="5" fill="black" />
+    <circle cx="332" cy="453" r="1.5" fill="white" stroke="none" />
+    <ellipse cx="356" cy="455" rx="4" ry="5" fill="black" />
+    <circle cx="354" cy="453" r="1.5" fill="white" stroke="none" />
+
+    <!-- Spacesuit Collar / Shoulders -->
+    <path d="M 315 510 Q 345 495 375 510" />
+    <path d="M 330 493 Q 345 500 360 493" fill="none" />
+
+    <!-- Bear Waving Left Paw -->
+    <path d="M 300 475 C 288 465 292 445 304 450 C 312 455 312 470 306 480 Z" />
+    <!-- Paw Pad -->
+    <circle cx="302" cy="462" r="3" fill="black" />
+
+    <!-- Right Paw on Window Sill -->
+    <path d="M 375 500 C 385 495 395 505 385 515 Z" />
+  </g>
+
+
+  <!-- ================= MIDDLE-RIGHT PORTHOLE: FOX ASTRONAUT ================= -->
+  <g id="fox-astronaut" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Porthole Frame Outer -->
+    <circle cx="455" cy="465" r="62" />
+    <!-- Porthole Inner -->
+    <circle cx="455" cy="465" r="52" />
+    <!-- Bolts -->
+    <circle cx="455" cy="408" r="3" fill="black" />
+    <circle cx="495" cy="420" r="3" fill="black" />
+    <circle cx="512" cy="465" r="3" fill="black" />
+    <circle cx="495" cy="510" r="3" fill="black" />
+    <circle cx="455" cy="522" r="3" fill="black" />
+    <circle cx="415" cy="510" r="3" fill="black" />
+    <circle cx="398" cy="465" r="3" fill="black" />
+    <circle cx="415" cy="420" r="3" fill="black" />
+
+    <!-- Fox Helmet Bubble -->
+    <circle cx="455" cy="460" r="42" stroke-dasharray="230 40" fill="none" stroke-width="4" />
+
+    <!-- Fox Pointy Ears -->
+    <polygon points="428,440 435,415 448,435" />
+    <polygon points="433,436 437,422 444,434" stroke-width="3" />
+    <polygon points="462,435 475,415 482,440" />
+    <polygon points="466,434 473,422 477,436" stroke-width="3" />
+
+    <!-- Fox Head Shape with Fluffy Cheeks -->
+    <path d="M 430 455 C 420 465 425 475 435 475 C 445 485 465 485 475 475 C 485 475 490 465 480 455 C 475 445 435 445 430 455 Z" />
+
+    <!-- Fox Cheek Fur Lines -->
+    <path d="M 425 465 L 438 465" fill="none" stroke-width="3" />
+    <path d="M 485 465 L 472 465" fill="none" stroke-width="3" />
+
+    <!-- Fox Snout / Nose -->
+    <polygon points="452,468 458,468 455,472" fill="black" />
+    <path d="M 451 474 Q 455 478 459 474" fill="none" />
+
+    <!-- Fox Happy Eyes (Arched or Open) -->
+    <ellipse cx="444" cy="458" rx="4" ry="5" fill="black" />
+    <circle cx="442" cy="456" r="1.5" fill="white" stroke="none" />
+    <ellipse cx="466" cy="458" rx="4" ry="5" fill="black" />
+    <circle cx="464" cy="456" r="1.5" fill="white" stroke="none" />
+
+    <!-- Spacesuit Shoulders -->
+    <path d="M 425 510 Q 455 495 485 510" />
+    <path d="M 440 493 Q 455 500 470 493" fill="none" />
+
+    <!-- Fox Waving Right Paw -->
+    <path d="M 500 475 C 512 465 508 445 496 450 C 488 455 488 470 494 480 Z" />
+    <!-- Fox Paw Details -->
+    <circle cx="498" cy="462" r="3" fill="black" />
+
+    <!-- Left Paw Resting -->
+    <path d="M 425 500 C 415 495 405 505 415 515 Z" />
+  </g>
+
+  <!-- ==================== FRONT CENTER FIN ==================== -->
+  <g id="center-fin" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <path d="M 388 610 L 400 560 L 412 610 L 408 705 L 392 705 Z" />
   </g>
 
 </svg>
