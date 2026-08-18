@@ -1,5 +1,41 @@
 [
   {
+    "slug": "dinosaur-picnic-relax",
+    "title": "🦖  dinosau- picnic! 🦖 遊び心あふれるぬりえ",
+    "description": "みんな大好き恐竜たちが、お日様の下でゆったりピクニック！ 楽しいぬりえで、子供たちの創造力を育みましょう。\n\n【日本語】100〜120文字程度のぬりえの解説概要説明文",
+    "category": "動物・生き物",
+    "tags": [
+      "恐竜",
+      "ぬりえ",
+      "子供",
+      "絵",
+      "イラスト"
+    ],
+    "prompt": "Highly detailed premium English drawing prompt for FLUX.1-schnell text-to-image. MUST target a premium kids coloring booklet outline. For example: 'children coloring book sketch, clean thick outlines, bold black line-art, cute happy dinosaur playing under a sun, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4'",
+    "article": "【日本語】みんな大好き恐竜たちが、お日様の下でゆったりピクニック！\n\n  * **ストーリー** : 恐竜たちは、太陽の光を浴びて、緑の草花で作ったピクニックの準備をしています。\n  * **解説** : 楽しいぬりえは、子供たちが想像力を育むだけでなく、創造性を発揮して、自分だけの恐竜ピクニックを楽しめます。\n\n    **[H4]** 恐竜の仲間たち：\n    * **トカゲ:**  トカゲは、おいしい果実を食べるのが大好きで、ピクニックの準備に熱心です。\n    * **トリケラトプス:** トリケラトプスは、ゆったりとピクニックを楽しむのが好きで、周りの恐竜たちと仲良く会話をします。\n    * **ブラキオセラトプス:** ブラキオセラトプスは、食べ物を持ち運び、ピクニックの準備を任せるのが得意です。\n\n    **[H4]**  ぬりえのポイント：\n    * **シンプル** :  年齢層に合わせて、シンプルで分かりやすい恐竜のシルエットで、子供たちが簡単に塗り絵を楽しめます。\n    * **鮮明** :  鮮明な黒線で描かれた恐竜たちは、子供たちの想像力を刺激します。\n    * **白い背景** :  白背景は、塗り絵の表現力を高めます。\n    * **シンプル** :  シンプルで分かりやすい恐竜のシルエットで、子供たちが簡単に塗り絵を楽しめます。\n\n  * **ヒント** :   ピクニックの準備の様子を想像して、自由に塗り絵してみましょう！\n\n  * **遊び心** :  恐竜たちがピクニックを楽しむ様子を描いて、創造性を発揮しましょう！\n  * **学習** :  恐竜に関する知識を深めるヒントも一緒に提供しましょう。 ",
+    "seo": {
+      "h1": "【無料ダウンロード】恐竜たちののんびりピクニック | 子供向けぬりえイラスト (無料) | ",
+      "metaDescription": "子供たちが恐竜と楽しむ、無料のぬりえイラスト。シンプルでわかりやすい恐竜のシルエットで、楽しく塗り絵を楽しめます。",
+      "keywords": [
+        "ぬりえ",
+        "恐竜",
+        "子供",
+        "絵",
+        "イラスト",
+        "無料",
+        "ダウンロード",
+        "子供向け",
+        "ピクニック",
+        "遊び心",
+        "学習"
+      ]
+    },
+    "image": "/coloring-pages/dinosaur-picnic-relax.svg",
+    "imageType": "svg",
+    "createdAt": "2026-08-18T12:25:18.617Z",
+    "id": "153"
+  },
+  {
     "slug": "uchu-hikoushi-doubutsu-coloring",
     "title": "【宇宙へGO！】ロケットに乗ったかわいい動物宇宙飛行士ぬりえ",
     "description": "宇宙飛行士になったかわいい動物たちが、キラキラ星いっぱいの宇宙を冒険するぬりえです。想像力を広げて楽しく色を塗ろう！",

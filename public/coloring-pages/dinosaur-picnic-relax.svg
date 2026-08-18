@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 1000">
+  <!-- Sun Group -->
+  <g id="sun" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Sun body -->
+    <circle cx="400" cy="200" r="100" fill="white" stroke="black" stroke-width="5"/>
+    
+    <!-- Sun Rays (using rounded rectangles for consistency and simplicity) -->
+    <!-- Center of sun is (400,200). Rays radiate from here. Length ~50, Width ~20. rx=10, ry=10. -->
+    
+    <!-- Top Ray -->
+    <rect x="390" y="50" width="20" height="50" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Bottom Ray -->
+    <rect x="390" y="300" width="20" height="50" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Left Ray -->
+    <rect x="250" y="190" width="50" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Right Ray -->
+    <rect x="500" y="190" width="50" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    
+    <!-- Diagonal Rays (manually positioned to appear rotated without using transform) -->
+    <!-- Top-left diagonal ray -->
+    <rect x="315" y="90" width="40" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Top-right diagonal ray -->
+    <rect x="445" y="90" width="40" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Bottom-left diagonal ray -->
+    <rect x="315" y="290" width="40" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Bottom-right diagonal ray -->
+    <rect x="445" y="290" width="40" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Sun Face -->
+    <circle cx="370" cy="180" r="10" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="430" cy="180" r="10" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M 380 220 Q 400 240 420 220" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Dinosaur Group -->
+  <g id="dinosaur" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main body shape, including torso, neck base, and tail base -->
+    <path d="M 200 800
+             Q 150 700 180 600    
+             Q 220 520 300 480    
+             Q 350 450 400 480    
+             Q 450 500 500 500    
+             Q 550 520 600 600    
+             Q 650 700 680 800    
+             L 600 800            
+             L 200 800            
+             Z"
+          fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Head shape -->
+    <path d="M 350 480    
+             Q 320 420 370 410    
+             Q 420 420 400 480    
+             Z"
+          fill="white" stroke="black" stroke-width="5"/>
+    
+    <!-- Eyes -->
+    <circle cx="370" cy="440" r="10" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Mouth -->
+    <path d="M 360 460 Q 380 470 390 460" fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Legs (two visible, simplified rounded shapes) -->
+    <!-- Front Leg -->
+    <path d="M 270 800
+             Q 250 720 290 690
+             Q 330 720 310 800
+             Z"
+          fill="white" stroke="black" stroke-width="5"/>
+    <!-- Back Leg -->
+    <path d="M 520 800
+             Q 500 720 540 690
+             Q 580 720 560 800
+             Z"
+          fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Small rounded spikes on back for detail -->
+    <path d="M 450 500 Q 460 470 470 500" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M 480 500 Q 490 470 500 500" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M 510 500 Q 520 470 530 500" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Ground line -->
+  <g id="ground" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main ground shape, filled white -->
+    <path d="M 0 850 C 200 870 300 840 400 860 C 500 880 600 830 800 850 L 800 1000 L 0 1000 Z"
+          fill="white" stroke="black" stroke-width="5"/>
+    <!-- Simple grass tufts -->
+    <path d="M 100 850 Q 110 830 120 850" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M 250 850 Q 260 835 270 850" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M 450 860 Q 460 840 470 860" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M 600 850 Q 610 830 620 850" fill="none" stroke="black" stroke-width="3"/>
+  </g>
+</svg>
