@@ -1,0 +1,108 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Sun in the top-right corner -->
+  <g id="sun" stroke="black" stroke-width="5" fill="white">
+    <circle cx="680" cy="120" r="80"/>
+    <!-- Sun rays -->
+    <line x1="680" y1="20" x2="680" y2="60" stroke-linecap="round"/>
+    <line x1="740" y1="50" x2="770" y2="20" stroke-linecap="round"/>
+    <line x1="770" y1="120" x2="790" y2="120" stroke-linecap="round"/>
+    <line x1="740" y1="190" x2="770" y2="220" stroke-linecap="round"/>
+    <line x1="680" y1="220" x2="680" y2="180" stroke-linecap="round"/>
+    <line x1="620" y1="190" x2="590" y2="220" stroke-linecap="round"/>
+    <line x1="590" y1="120" x2="610" y2="120" stroke-linecap="round"/>
+    <line x1="620" y1="50" x2="590" y2="20" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ladybug -->
+  <g id="ladybug" stroke="black" stroke-width="5" fill="white">
+    <!-- Body -->
+    <ellipse cx="400" cy="600" rx="150" ry="120"/>
+    <!-- Head -->
+    <circle cx="400" cy="450" r="70"/>
+    <!-- Antennae -->
+    <path d="M360 400 Q340 370 360 350" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M440 400 Q460 370 440 350" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <circle cx="370" cy="430" r="15"/>
+    <circle cx="430" cy="430" r="15"/>
+    <!-- Smile -->
+    <path d="M370 470 Q400 490 430 470" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <!-- Spots -->
+    <circle cx="320" cy="550" r="40"/>
+    <circle cx="480" cy="550" r="40"/>
+    <circle cx="400" cy="600" r="40"/>
+    <circle cx="350" cy="670" r="40"/>
+    <circle cx="450" cy="670" r="40"/>
+    <!-- Legs -->
+    <path d="M250 550 Q200 500 200 540" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M250 600 Q190 620 200 660" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M280 680 Q250 720 300 740" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M550 550 Q600 500 600 540" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M550 600 Q610 620 600 660" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    <path d="M520 680 Q550 720 500 740" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flower Garden -->
+  <g id="flower-garden">
+    <!-- Daisy 1 (bottom left) -->
+    <g id="daisy-1" stroke="black" stroke-width="5" fill="white">
+      <circle cx="200" cy="850" r="40"/> <!-- Center -->
+      <ellipse cx="200" cy="780" rx="25" ry="50"/> <!-- Petal 1 -->
+      <ellipse cx="140" cy="810" rx="50" ry="25" transform="rotate(-30 140 810)"/> <!-- Petal 2 -->
+      <ellipse cx="120" cy="870" rx="25" ry="50" transform="rotate(-60 120 870)"/> <!-- Petal 3 -->
+      <ellipse cx="140" cy="930" rx="50" ry="25" transform="rotate(-150 140 930)"/> <!-- Petal 4 -->
+      <ellipse cx="200" cy="920" rx="25" ry="50" transform="rotate(-180 200 920)"/> <!-- Petal 5 -->
+      <ellipse cx="260" cy="930" rx="50" ry="25" transform="rotate(-210 260 930)"/> <!-- Petal 6 -->
+      <ellipse cx="280" cy="870" rx="25" ry="50" transform="rotate(-240 280 870)"/> <!-- Petal 7 -->
+      <ellipse cx="260" cy="810" rx="50" ry="25" transform="rotate(-330 260 810)"/> <!-- Petal 8 -->
+    </g>
+
+    <!-- Tulip 1 (bottom right) -->
+    <g id="tulip-1" stroke="black" stroke-width="5" fill="white">
+      <rect x="580" y="800" width="20" height="150" rx="10" ry="10"/> <!-- Stem -->
+      <path d="M550 850 Q530 800 560 780 C580 770 600 780 620 780 Q640 800 610 850 Z"/> <!-- Leaf 1 -->
+      <path d="M600 750 Q560 700 580 650 C600 620 620 620 640 650 Q660 700 620 750 Z"/> <!-- Petal back -->
+      <path d="M590 690 Q570 650 590 610 C600 590 610 590 620 610 Q640 650 620 690 Z"/> <!-- Petal left -->
+      <path d="M610 690 Q630 650 610 610 C600 590 590 590 580 610 Q560 650 590 690 Z"/> <!-- Petal right -->
+    </g>
+
+    <!-- Daisy 2 (middle left) -->
+    <g id="daisy-2" stroke="black" stroke-width="5" fill="white">
+      <circle cx="150" cy="400" r="30"/> <!-- Center -->
+      <ellipse cx="150" cy="350" rx="20" ry="40"/> <!-- Petal 1 -->
+      <ellipse cx="115" cy="370" rx="40" ry="20" transform="rotate(-30 115 370)"/> <!-- Petal 2 -->
+      <ellipse cx="100" cy="410" rx="20" ry="40" transform="rotate(-60 100 410)"/> <!-- Petal 3 -->
+      <ellipse cx="115" cy="450" rx="40" ry="20" transform="rotate(-150 115 450)"/> <!-- Petal 4 -->
+      <ellipse cx="150" cy="450" rx="20" ry="40" transform="rotate(-180 150 450)"/> <!-- Petal 5 -->
+      <ellipse cx="185" cy="450" rx="40" ry="20" transform="rotate(-210 185 450)"/> <!-- Petal 6 -->
+      <ellipse cx="200" cy="410" rx="20" ry="40" transform="rotate(-240 200 410)"/> <!-- Petal 7 -->
+      <ellipse cx="185" cy="370" rx="40" ry="20" transform="rotate(-330 185 370)"/> <!-- Petal 8 -->
+    </g>
+
+    <!-- Tulip 2 (top left) -->
+    <g id="tulip-2" stroke="black" stroke-width="5" fill="white">
+      <rect x="50" y="200" width="15" height="100" rx="8" ry="8"/> <!-- Stem -->
+      <path d="M30 250 Q10 210 40 190 C60 180 80 190 100 190 Q120 210 90 250 Z"/> <!-- Leaf -->
+      <path d="M60 180 Q20 130 40 80 C60 50 80 50 100 80 Q140 130 100 180 Z"/> <!-- Flower head -->
+      <path d="M55 125 Q35 90 55 60 C65 40 75 40 85 60 Q105 90 85 125 Z"/> <!-- Inner Petal 1 -->
+      <path d="M85 125 Q105 90 85 60 C75 40 65 40 55 60 Q35 90 55 125 Z"/> <!-- Inner Petal 2 -->
+    </g>
+
+    <!-- Daisy 3 (top middle right) -->
+    <g id="daisy-3" stroke="black" stroke-width="5" fill="white">
+      <circle cx="550" cy="300" r="35"/> <!-- Center -->
+      <ellipse cx="550" cy="240" rx="25" ry="45"/> <!-- Petal 1 -->
+      <ellipse cx="500" cy="270" rx="45" ry="25" transform="rotate(-30 500 270)"/> <!-- Petal 2 -->
+      <ellipse cx="480" cy="320" rx="25" ry="45" transform="rotate(-60 480 320)"/> <!-- Petal 3 -->
+      <ellipse cx="500" cy="370" rx="45" ry="25" transform="rotate(-150 500 370)"/> <!-- Petal 4 -->
+      <ellipse cx="550" cy="360" rx="25" ry="45" transform="rotate(-180 550 360)"/> <!-- Petal 5 -->
+      <ellipse cx="600" cy="370" rx="45" ry="25" transform="rotate(-210 600 370)"/> <!-- Petal 6 -->
+      <ellipse cx="620" cy="320" rx="25" ry="45" transform="rotate(-240 620 320)"/> <!-- Petal 7 -->
+      <ellipse cx="600" cy="270" rx="45" ry="25" transform="rotate(-330 600 270)"/> <!-- Petal 8 -->
+    </g>
+
+  </g>
+
+</svg>
