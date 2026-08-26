@@ -1,69 +1,79 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Explicit white background for the coloring page area -->
-  <rect x="0" y="0" width="800" height="1000" fill="white"/>
+  <!-- Group for the main lion cub -->
+  <g id="lion-cub" stroke="black" stroke-width="4" fill="white">
+    <!-- Body -->
+    <path d="M250 800 Q150 700 200 550 C250 400 550 400 600 550 Q650 700 550 800 Z" />
 
-  <!-- Background Hill - a simplified, rounded distant hill -->
-  <g id="background-hill">
-    <path d="M0 600 Q200 500 400 600 Q600 700 800 600 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Head -->
+    <path d="M350 550 C300 450 400 350 500 400 C550 450 500 550 450 550 Z" />
+
+    <!-- Left Ear -->
+    <ellipse cx="380" cy="380" rx="35" ry="40" />
+    <!-- Right Ear -->
+    <ellipse cx="480" cy="380" rx="35" ry="40" />
+
+    <!-- Muzzle -->
+    <ellipse cx="430" cy="500" rx="60" ry="35" />
+
+    <!-- Nose -->
+    <path d="M430 485 Q420 475 410 485 L430 495 L450 485 Q440 475 430 485 Z" />
+
+    <!-- Mouth (smile) -->
+    <path d="M400 515 Q430 530 460 515" fill="none" stroke-width="3"/>
+
+    <!-- Left Eye -->
+    <circle cx="390" cy="455" r="25" />
+    <!-- Right Eye -->
+    <circle cx="470" cy="455" r="25" />
+
+    <!-- Left Front Paw (raised, chasing) -->
+    <path d="M280 650 C260 600 300 570 340 590 L330 630 L290 660 Z" />
+    <!-- Right Front Paw -->
+    <path d="M480 650 C460 600 500 570 540 590 L530 630 L490 660 Z" />
+    <!-- Left Back Paw -->
+    <path d="M280 770 C250 740 270 700 310 700 L320 740 L290 780 Z" />
+    <!-- Right Back Paw -->
+    <path d="M500 770 C470 740 490 700 530 700 L540 740 L510 780 Z" />
+
+    <!-- Tail -->
+    <path d="M600 700 Q650 650 680 700 Q700 750 650 780" fill="none"/>
+    <!-- Tail Tuft -->
+    <path d="M640 760 Q650 790 670 780 Q680 750 640 760 Z" />
+
+    <!-- Fur texture lines -->
+    <path d="M300 580 Q320 570 340 590" fill="none" stroke-width="3"/>
+    <path d="M400 580 Q420 570 440 590" fill="none" stroke-width="3"/>
+    <path d="M500 580 Q520 570 540 590" fill="none" stroke-width="3"/>
+    <path d="M250 700 Q270 680 290 700" fill="none" stroke-width="3"/>
+    <path d="M550 700 Q530 680 510 700" fill="none" stroke-width="3"/>
+    <path d="M600 750 Q620 730 640 750" fill="none" stroke-width="3"/>
   </g>
 
-  <!-- Ground plane in the foreground -->
-  <g id="ground-plane">
-    <path d="M0 750 Q200 720 400 750 Q600 780 800 750 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Group for the butterfly -->
+  <g id="butterfly" stroke="black" stroke-width="3" fill="white">
+    <!-- Body -->
+    <ellipse cx="650" cy="300" rx="10" ry="30" />
+    <!-- Top Left Wing -->
+    <path d="M640 270 Q600 220 600 250 Q600 300 640 310 Q640 270 640 270 Z" />
+    <!-- Top Right Wing -->
+    <path d="M660 270 Q700 220 700 250 Q700 300 660 310 Q660 270 660 270 Z" />
+    <!-- Bottom Left Wing -->
+    <path d="M640 310 Q610 330 620 350 Q630 360 640 310 Z" />
+    <!-- Bottom Right Wing -->
+    <path d="M660 310 Q690 330 680 350 Q670 360 660 310 Z" />
+    <!-- Left Antenna -->
+    <path d="M645 270 Q630 240 625 230" fill="none" stroke-width="3"/>
+    <circle cx="625" cy="230" r="3" fill="white" stroke="black" stroke-width="2"/>
+    <!-- Right Antenna -->
+    <path d="M655 270 Q670 240 675 230" fill="none" stroke-width="3"/>
+    <circle cx="675" cy="230" r="3" fill="white" stroke="black" stroke-width="2"/>
   </g>
 
-  <!-- Simplified Baobab Tree -->
-  <g id="baobab-tree">
-    <!-- Trunk: wide at base, tapering upwards -->
-    <path d="M150 750 C120 600 120 450 150 350 C180 280 250 280 280 350 C310 450 310 600 280 750 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Canopy: simple, cloud-like shape for leaves -->
-    <path d="M215 350 C170 300 150 200 190 150 C230 100 280 100 320 150 C360 200 340 300 295 350 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Group for background elements (bushes) -->
+  <g id="background-elements" stroke="black" stroke-width="4" fill="white">
+    <!-- Bush 1 -->
+    <path d="M50 850 Q100 750 200 780 Q300 800 280 900 Q200 950 80 900 Z" />
+    <!-- Bush 2 -->
+    <path d="M750 850 Q700 750 600 780 Q500 800 520 900 Q600 950 720 900 Z" />
   </g>
-
-  <!-- Cute Happy Baby Lion Cub -->
-  <g id="lion-cub">
-    <!-- Main Body: rounded, sitting posture -->
-    <path d="M450 750 C380 700 350 600 350 500 C350 400 400 350 480 350 C560 350 610 400 610 500 C610 600 580 700 510 750 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Mane: fluffy halo around the head -->
-    <path d="M480 350 C400 300 350 200 380 150 C430 100 530 100 580 150 C610 200 560 300 480 350 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Head: inner face area -->
-    <path d="M480 350 C430 310 410 280 430 250 C450 220 510 220 530 250 C550 280 530 310 480 350 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Ears: simple rounded shapes on top of the head -->
-    <path d="M430 250 Q410 220 430 200 Q450 190 470 200 Q490 220 470 250 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M530 250 Q550 220 530 200 Q510 190 490 200 Q470 220 490 250 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Eyes: large, circular, friendly -->
-    <circle cx="450" cy="270" r="15" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="510" cy="270" r="15" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Pupils: small circles (white fill for coloring) -->
-    <circle cx="450" cy="275" r="5" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="510" cy="275" r="5" fill="white" stroke="black" stroke-width="3"/>
-
-    <!-- Nose: small, rounded triangle shape -->
-    <path d="M480 295 Q470 305 480 315 Q490 305 480 295 Z" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Mouth: a simple, happy smile -->
-    <path d="M460 320 Q480 330 500 320" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-    <!-- Front Paw (playfully raised) -->
-    <path d="M370 550 C350 500 330 500 320 530 C310 560 310 590 330 610 C350 630 370 630 390 610 C410 590 410 560 390 530 C380 500 370 500 370 550 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Other Front Paw (partially visible) -->
-    <path d="M560 550 C540 520 530 520 520 550 C510 580 510 610 530 630 C550 650 570 650 590 630 C610 610 610 580 590 550 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Hind Legs (simplified, small rounded shapes near the ground) -->
-    <path d="M370 700 Q350 730 370 750 Q390 730 370 700 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M590 700 Q610 730 590 750 Q570 730 590 700 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Tail: curved with a fluffy tuft -->
-    <g id="lion-tail">
-      <path d="M580 650 Q650 600 700 650 Q750 700 750 780 Q700 830 650 780 Q600 730 580 650 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- Tail Tuft: fluffy, rounded shape -->
-      <path d="M730 780 C740 760 750 760 760 780 C770 800 770 820 760 840 C750 860 740 860 730 840 C720 820 720 800 730 780 Z" fill="white" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-  </g>
-
 </svg>
