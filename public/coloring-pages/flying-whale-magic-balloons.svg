@@ -1,58 +1,78 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <g id="whale">
-    <!-- Main whale body -->
-    <ellipse cx="400" cy="450" rx="280" ry="150" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Side fin -->
-    <ellipse cx="300" cy="550" rx="80" ry="40" transform="rotate(-30 300 550)" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Tail fin -->
-    <path d="M680 450 Q750 400, 720 300 Q780 350, 750 450 Q780 550, 720 600 Q750 500, 680 450Z" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Large, friendly eye -->
-    <circle cx="280" cy="400" r="40" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Gentle smile -->
-    <path d="M250 480 Q 300 520, 350 480" fill="none" stroke="black" stroke-width="4"/>
-    
-    <!-- Blowhole -->
-    <ellipse cx="450" cy="270" rx="20" ry="10" fill="white" stroke="black" stroke-width="4"/>
-  </g>
+  <!-- Main Group for the entire scene -->
+  <g>
+    <!-- Whale Group -->
+    <g id="whale" transform="translate(0, 100)">
+      <!-- Whale Body -->
+      <path d="M 200 400 Q 100 300 150 200 Q 250 100 400 150 Q 550 200 600 300 Q 700 400 600 500 Q 500 600 350 550 Q 200 500 200 400 Z"
+            fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
 
-  <g id="balloons">
-    <!-- Balloon 1 (circle) -->
-    <circle cx="350" cy="150" r="30" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="350" y1="180" x2="370" y2="270" stroke="black" stroke-width="3"/>
-    
-    <!-- Balloon 2 (ellipse) -->
-    <ellipse cx="470" cy="100" rx="35" ry="45" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="470" y1="145" x2="450" y2="270" stroke="black" stroke-width="3"/>
-    
-    <!-- Balloon 3 (rounded rectangle) -->
-    <rect x="580" y="120" width="70" height="90" rx="15" ry="15" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="615" y1="210" x2="550" y2="270" stroke="black" stroke-width="3"/>
-    
-    <!-- Balloon 4 (heart shape) -->
-    <path d="M300 250 C280 210, 240 210, 240 250 C240 280, 270 300, 300 330 C330 300, 360 280, 360 250 C360 210, 320 210, 300 250Z" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="300" y1="330" x2="320" y2="350" stroke="black" stroke-width="3"/>
-    
-    <!-- Balloon 5 (small ellipse) -->
-    <ellipse cx="680" cy="80" rx="25" ry="35" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="680" y1="115" x2="600" y2="300" stroke="black" stroke-width="3"/>
-    
-    <!-- Balloon 6 (large circle, near tail) -->
-    <circle cx="700" cy="200" r="45" fill="white" stroke="black" stroke-width="4"/>
-    <line x1="700" y1="245" x2="650" y2="400" stroke="black" stroke-width="3"/>
-  </g>
+      <!-- Tail Fin -->
+      <path d="M 600 420 C 650 480 750 480 700 420 C 750 360 650 360 600 420 Z M 600 420 C 550 480 450 480 500 420 C 450 360 550 360 600 420 Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+      
+      <!-- Left Fin -->
+      <path d="M 250 450 Q 180 500 250 550 Q 320 500 250 450 Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+      
+      <!-- Right Fin (slightly different position) -->
+      <path d="M 500 400 Q 570 450 500 500 Q 430 450 500 400 Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
 
-  <g id="clouds">
-    <!-- Cloud 1 -->
-    <path d="M100 800 C50 780, 50 820, 100 840 C150 860, 200 840, 250 850 C300 860, 350 840, 350 800 C300 750, 150 750, 100 800Z" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Cloud 2 -->
-    <path d="M380 820 C330 800, 330 840, 380 860 C430 880, 480 860, 530 870 C580 880, 630 860, 630 820 C580 770, 430 770, 380 820Z" fill="white" stroke="black" stroke-width="4"/>
-    
-    <!-- Cloud 3 -->
-    <path d="M600 790 C570 770, 570 810, 600 830 C630 850, 660 830, 690 840 C720 850, 750 830, 750 790 C720 740, 630 740, 600 790Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Eye -->
+      <circle cx="300" cy="320" r="30" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="310" cy="325" r="10" fill="white" stroke="black" stroke-width="2"/>
+      
+      <!-- Cheek -->
+      <ellipse cx="330" cy="370" rx="30" ry="15" fill="white" stroke="black" stroke-width="3"/>
+
+      <!-- Mouth -->
+      <path d="M 320 380 C 370 430 430 430 480 380" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Water Spout / Air Puff -->
+      <g id="spout" transform="translate(400, 150)">
+        <ellipse cx="0" cy="0" rx="20" ry="30" fill="white" stroke="black" stroke-width="3"/>
+        <ellipse cx="10" cy="-30" rx="15" ry="25" fill="white" stroke="black" stroke-width="3"/>
+        <ellipse cx="-15" cy="-40" rx="12" ry="20" fill="white" stroke="black" stroke-width="3"/>
+      </g>
+    </g>
+
+    <!-- Balloons Group -->
+    <g id="balloons">
+      <!-- Common attachment point for balloon strings on the whale's back -->
+      <circle cx="400" cy="400" r="10" fill="white" stroke="black" stroke-width="3"/> <!-- A small attachment point on the whale back -->
+
+      <!-- Heart Balloon -->
+      <g transform="translate(150, 150)">
+        <path d="M 50 20 C 25 20 0 40 0 70 C 0 100 25 120 50 140 C 75 120 100 100 100 70 C 100 40 75 20 50 20 Z"
+              fill="white" stroke="black" stroke-width="4"/>
+        <line x1="50" y1="140" x2="400" y2="400" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Star Balloon -->
+      <g transform="translate(600, 100)">
+        <path d="M 50,0 L 65,35 L 100,35 L 75,60 L 90,95 L 50,70 L 10,95 L 25,60 L 0,35 L 35,35 Z"
+              fill="white" stroke="black" stroke-width="4"/>
+        <line x1="50" y1="95" x2="400" y2="400" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Oval Balloon (top-center) -->
+      <g transform="translate(350, 50)">
+        <ellipse cx="0" cy="0" rx="60" ry="90" fill="white" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="90" x2="400" y2="400" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Round Balloon (bottom-left) -->
+      <g transform="translate(50, 400)">
+        <circle cx="0" cy="0" r="60" fill="white" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="60" x2="400" y2="400" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Another Oval Balloon (right) -->
+      <g transform="translate(700, 300)">
+        <ellipse cx="0" cy="0" rx="50" ry="80" fill="white" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="80" x2="400" y2="400" stroke="black" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+    </g>
   </g>
 </svg>
