@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Sun -->
+  <g id="sun">
+    <circle cx="680" cy="120" r="70" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="680" y1="50" x2="680" y2="20" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="730" y1="80" x2="760" y2="60" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="750" y1="140" x2="780" y2="160" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="730" y1="200" x2="760" y2="220" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="680" y1="230" x2="680" y2="260" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="630" y1="200" x2="600" y2="220" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="610" y1="140" x2="580" y2="160" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <line x1="630" y1="80" x2="600" y2="60" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground / Hills -->
+  <g id="ground">
+    <path d="M0 800 C150 750 250 820 400 780 C550 740 650 810 800 780 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Picnic Blanket -->
+  <g id="picnic-blanket">
+    <rect x="120" y="600" width="560" height="200" rx="40" ry="40" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Dinosaur 1 (Long Neck, left) -->
+  <g id="dino1">
+    <!-- Body (sitting) -->
+    <ellipse cx="200" cy="650" rx="90" ry="70" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Neck -->
+    <path d="M170 590 Q150 500 200 450 L230 450 Q250 500 220 590 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Head -->
+    <ellipse cx="210" cy="430" rx="45" ry="35" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Eye -->
+    <circle cx="200" cy="420" r="6" fill="black"/>
+    <circle cx="200" cy="420" r="2" fill="white"/>
+    <!-- Mouth -->
+    <path d="M195 435 Q210 445 225 435" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arm (on blanket) -->
+    <path d="M140 650 Q110 670 130 700 Q160 710 180 680 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Dinosaur 2 (Spiky Back, middle) -->
+  <g id="dino2">
+    <!-- Body (sitting) -->
+    <ellipse cx="400" cy="650" rx="80" ry="60" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Head -->
+    <ellipse cx="420" cy="550" rx="40" ry="30" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Eye -->
+    <circle cx="410" cy="540" r="5" fill="black"/>
+    <circle cx="410" cy="540" r="1.5" fill="white"/>
+    <!-- Mouth -->
+    <path d="M405 555 Q420 565 435 555" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Spikes (simplified) -->
+    <path d="M380 600 L400 560 L420 600 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M430 600 L450 560 L470 600 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Arm (on blanket) -->
+    <path d="M350 650 Q320 670 340 700 Q370 710 390 680 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Dinosaur 3 (T-Rex-like, right) -->
+  <g id="dino3">
+    <!-- Body (sitting) -->
+    <ellipse cx="600" cy="650" rx="85" ry="65" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Head -->
+    <path d="M620 530 Q600 470 640 440 Q680 430 700 470 Q720 510 700 550 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Eye -->
+    <circle cx="650" cy="460" r="6" fill="black"/>
+    <circle cx="650" cy="460" r="2" fill="white"/>
+    <!-- Mouth -->
+    <path d="M640 490 Q660 505 680 490" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arm (on blanket) -->
+    <path d="M560 630 Q540 650 560 680 Q590 690 600 660 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Food items -->
+  <g id="sandwiches">
+    <!-- Sandwich 1 -->
+    <rect x="250" y="660" width="70" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="250" y1="690" x2="320" y2="690" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Sandwich 2 -->
+    <rect x="340" y="650" width="70" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="340" y1="680" x2="410" y2="680" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g id="fruits">
+    <!-- Apple -->
+    <circle cx="460" cy="670" r="30" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="460" y1="640" x2="460" y2="655" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <!-- Banana -->
+    <path d="M500 660 Q510 640 530 650 Q550 660 540 680 Q530 700 510 690 Q490 680 500 660 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Orange Slice -->
+    <path d="M490 720 A35 35 0 0 1 560 720 L525 720 Z" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="525" y1="720" x2="500" y2="700" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="525" y1="720" x2="515" y2="695" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="525" y1="720" x2="535" y2="695" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <line x1="525" y1="720" x2="550" y2="700" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g id="juice-boxes">
+    <!-- Juice box 1 -->
+    <rect x="600" y="680" width="60" height="80" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="630" y1="680" x2="630" y2="640" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>
