@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <g id="coloring-page-content">
+
+    <!-- Distant Hills / Horizon - These paths define the ground and distant landscape for coloring -->
+    <path d="M0 800 Q150 750 300 770 Q450 790 600 760 Q750 730 800 750 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="5"/>
+    <path d="M0 750 Q100 720 200 740 Q300 760 400 730 Q500 700 600 720 Q700 740 800 710 L800 800 L0 800 Z" fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Giraffe (background animal) -->
+    <g id="giraffe">
+      <!-- Body -->
+      <path d="M100 740 C50 640 150 540 200 590 C250 640 150 740 100 740 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Neck -->
+      <path d="M150 580 C140 390 200 340 230 390 C240 440 200 570 150 580 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <ellipse cx="230" cy="370" rx="30" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Ossicones (horn-like structures) -->
+      <path d="M220 350 L220 320 C225 310 235 310 240 320 L240 350 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Ears -->
+      <path d="M210 360 Q200 340 205 340 Q215 350 210 360 Z" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M250 360 Q260 340 255 340 Q245 350 250 360 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Snout -->
+      <ellipse cx="240" cy="380" rx="15" ry="10" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Eyes -->
+      <circle cx="225" cy="360" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <circle cx="235" cy="360" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Legs (simplified, partial, appearing behind ground line) -->
+      <rect x="120" y="640" width="30" height="100" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="160" y="640" width="30" height="100" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Spots (simplified outlines for coloring) -->
+      <path d="M150 440 C140 420 160 420 170 440 C170 460 150 460 150 440 Z" fill="white" stroke="black" stroke-width="2"/>
+      <path d="M180 490 C170 470 190 470 200 490 C200 510 180 510 180 490 Z" fill="white" stroke="black" stroke-width="2"/>
+      <path d="M120 510 C110 490 130 490 140 510 C140 530 120 530 120 510 Z" fill="white" stroke="black" stroke-width="2"/>
+      <path d="M150 590 C140 570 160 570 170 590 C170 610 150 610 150 590 Z" fill="white" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Zebra (background animal) -->
+    <g id="zebra">
+      <!-- Body -->
+      <path d="M680 740 C620 640 700 570 750 640 C800 690 720 740 680 740 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <path d="M730 590 C720 540 770 530 780 570 C790 590 750 610 730 590 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Mane -->
+      <path d="M725 570 Q735 540 745 570 Q755 540 765 570" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <!-- Ears -->
+      <path d="M725 580 Q715 560 720 560 Q730 570 725 580 Z" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M760 580 Q770 560 765 560 Q755 570 760 580 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Snout -->
+      <ellipse cx="760" cy="595" rx="15" ry="10" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Eyes -->
+      <circle cx="740" cy="580" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <circle cx="750" cy="580" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Legs (simplified, partial, appearing behind ground line) -->
+      <rect x="680" y="670" width="30" height="70" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="720" y="670" width="30" height="70" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Tail -->
+      <path d="M790 670 Q800 690 780 710" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <!-- Stripes (simplified outlines for coloring) -->
+      <path d="M710 640 C715 610 730 610 735 640" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M690 670 C695 640 710 640 715 670" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M740 670 C745 640 760 640 765 670" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M750 620 C755 590 770 590 775 620" fill="none" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Ball (foreground) -->
+    <g id="ball">
+      <circle cx="400" cy="740" r="50" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Baby Lion Cub (main subject, foreground) -->
+    <g id="lion-cub">
+      <!-- Body (pouncing pose) -->
+      <path d="M300 750 Q280 660 350 590 C480 490 580 590 520 690 Q480 760 300 750 Z" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Head -->
+      <circle cx="480" cy="510" r="70" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Ears -->
+      <path d="M430 470 Q420 420 450 430 Q460 450 430 470 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M530 470 Q540 420 510 430 Q500 450 530 470 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Snout/Mouth Area -->
+      <ellipse cx="480" cy="540" rx="35" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Nose -->
+      <path d="M470 530 Q480 525 490 530 Q480 540 470 530 Z" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Mouth (happy smile) -->
+      <path d="M465 550 Q480 565 495 550" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <!-- Eyes -->
+      <circle cx="460" cy="500" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="500" cy="500" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Front Paws (reaching for the ball) -->
+      <path d="M380 670 Q360 700 390 710 Q410 690 380 670 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M420 660 Q400 690 430 700 Q450 680 420 660 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Hind Legs/Paws (simplified) -->
+      <ellipse cx="320" cy="720" rx="30" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="500" cy="720" rx="30" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Tail -->
+      <path d="M280 700 Q250 650 200 670 Q180 700 200 720 Q250 740 280 700 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+  </g>
+</svg>
