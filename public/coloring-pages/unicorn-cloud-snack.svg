@@ -1,121 +1,72 @@
-<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg"
+     stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+     fill="white">
 
-  <!-- Group for the main fluffy cloud -->
+  <!-- Fluffy Cloud -->
   <g id="cloud">
-    <path d="M100,750 C50,700 50,600 100,550 C150,500 250,480 300,450 C350,420 450,420 500,450 C550,480 650,500 700,550 C750,600 750,700 700,750 C650,800 550,800 500,780 C450,750 350,750 300,780 C250,800 150,800 100,750 Z"
-          fill="white" stroke="black" stroke-width="5"/>
+    <path d="M100 880 Q100 800 150 750 C180 720 250 700 350 700 C450 700 520 720 550 750 Q600 800 550 880 C520 910 450 930 350 930 C250 930 180 910 150 880 Z"/>
   </g>
 
-  <!-- Group for the happy cute unicorn -->
+  <!-- Cute Happy Unicorn -->
   <g id="unicorn">
     <!-- Body -->
-    <ellipse cx="400" cy="620" rx="110" ry="80" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Head (downward looking to eat) -->
-    <path d="M300,580 Q280,530 290,490 Q340,470 380,490 Q390,530 370,580 Q340,600 300,580 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Muzzle -->
-    <ellipse cx="300" cy="560" rx="28" ry="20" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Ear -->
-    <path d="M350,480 Q360,460 370,480 Q360,490 350,480 Z" fill="white" stroke="black" stroke-width="4"/>
+    <ellipse cx="400" cy="570" rx="180" ry="120"/>
+    <!-- Head -->
+    <ellipse cx="480" cy="350" rx="100" ry="90"/>
+
+    <!-- Front Legs -->
+    <rect x="350" y="620" width="70" height="90" rx="30" ry="30"/>
+    <rect x="440" y="620" width="70" height="90" rx="30" ry="30"/>
+    <!-- Back Leg -->
+    <rect x="280" y="630" width="70" height="90" rx="30" ry="30"/>
+
+    <!-- Ears -->
+    <path d="M450 280 L470 210 L490 280 Z"/>
+    <path d="M500 280 L520 210 L540 280 Z"/>
+
     <!-- Horn -->
-    <path d="M370,470 L385,430 L400,470 L370,470 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Horn stripes -->
-    <line x1="378" y1="445" x2="392" y2="460" stroke="black" stroke-width="2"/>
-    <line x1="374" y1="455" x2="388" y2="470" stroke="black" stroke-width="2"/>
+    <path d="M495 200 L485 160 L475 200 L485 230 Z" stroke-width="4"/>
 
     <!-- Mane -->
-    <path d="M380,480 C400,450 440,450 460,480 C480,510 460,530 430,530 C400,530 380,510 380,480 Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M430,530 C450,510 470,520 480,540 C490,560 470,570 450,570 C430,570 410,550 430,530 Z" fill="white" stroke="black" stroke-width="4"/>
-
-    <!-- Front Left Leg (bent, reaching forward) -->
-    <path d="M330,620 Q340,680 355,680 Q370,680 380,620 L330,620 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Front Right Leg (sitting) -->
-    <path d="M410,680 Q415,720 430,720 Q445,720 450,680 L410,680 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Back Left Leg (partially hidden) -->
-    <path d="M320,660 Q325,700 340,700 Q355,700 360,660 L320,660 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Back Right Leg (partially hidden) -->
-    <path d="M440,660 Q445,700 460,700 Q475,700 480,660 L440,660 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M410 300 C400 220 450 200 500 280" fill="none" stroke-width="5"/>
+    <path d="M420 320 C410 240 460 220 510 300" fill="none" stroke-width="5"/>
 
     <!-- Tail -->
-    <path d="M480,630 C500,600 530,600 540,630 C550,660 530,670 500,660 C470,650 460,620 480,630 Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M500,660 C520,640 540,650 550,670 C560,690 540,700 520,690 C500,680 480,660 500,660 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M220 580 C180 500 150 600 200 680 C250 760 300 650 250 580" fill="none" stroke-width="5"/>
 
-    <!-- Eye -->
-    <circle cx="305" cy="530" r="6" fill="black" stroke="black" stroke-width="1"/>
+    <!-- Face Details -->
+    <!-- Eyes -->
+    <circle cx="450" cy="340" r="15" stroke-width="3"/>
+    <circle cx="510" cy="340" r="15" stroke-width="3"/>
     <!-- Smile -->
-    <path d="M290,565 Q300,575 310,565" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M460 380 Q480 395 500 380" fill="none" stroke-width="3"/>
   </g>
 
-  <!-- Group for colorful sweets and a rainbow cake -->
-  <g id="sweets">
-    <!-- Rainbow Cake Slice (placed near unicorn's mouth) -->
-    <g id="rainbow-cake">
-      <path d="M240,620 L290,520 L340,620 L240,620 Z" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Layers -->
-      <line x1="248" y1="595" x2="332" y2="595" stroke="black" stroke-width="3"/>
-      <line x1="256" y1="570" x2="324" y2="570" stroke="black" stroke-width="3"/>
-      <line x1="264" y1="545" x2="316" y2="545" stroke="black" stroke-width="3"/>
-      <!-- Cherry on top -->
-      <circle cx="290" cy="510" r="8" fill="white" stroke="black" stroke-width="3"/>
-    </g>
+  <!-- Simple Snacks -->
+  <g id="snacks" stroke-width="4">
+    <!-- Cookie -->
+    <circle cx="580" cy="650" r="40"/>
+    <circle cx="560" cy="640" r="5" fill="none"/>
+    <circle cx="590" cy="630" r="5" fill="none"/>
+    <circle cx="600" cy="660" r="5" fill="none"/>
+    <circle cx="570" cy="670" r="5" fill="none"/>
 
-    <!-- Lollipop (to the right of unicorn) -->
-    <g id="lollipop">
-      <circle cx="600" cy="600" r="30" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Swirls on lollipop -->
-      <path d="M580,590 C590,580 610,580 620,590" fill="none" stroke="black" stroke-width="2"/>
-      <path d="M585,600 C595,590 615,590 625,600" fill="none" stroke="black" stroke-width="2"/>
-      <path d="M590,610 C600,600 620,600 630,610" fill="none" stroke="black" stroke-width="2"/>
-      <rect x="595" y="630" width="10" height="40" rx="5" ry="5" fill="white" stroke="black" stroke-width="3"/>
-    </g>
-
-    <!-- Cupcake (front-right of unicorn) -->
-    <g id="cupcake">
-      <path d="M500,700 L510,660 A30,20 0 0 1 540,660 L550,700 Z" fill="white" stroke="black" stroke-width="4"/>
-      <path d="M510,660 Q500,630 525,610 Q550,630 540,660 Z" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="525" cy="605" r="5" fill="white" stroke="black" stroke-width="2"/> <!-- Cherry -->
-    </g>
-
-    <!-- Donut (bottom right) -->
-    <g id="donut">
-      <circle cx="680" cy="730" r="35" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="680" cy="730" r="15" fill="white" stroke="black" stroke-width="4"/>
-      <!-- Sprinkles/Drips -->
-      <path d="M645,720 Q655,710 665,720" fill="none" stroke="black" stroke-width="2"/>
-      <path d="M670,715 Q680,705 690,715" fill="none" stroke="black" stroke-width="2"/>
-      <path d="M695,720 Q705,710 715,720" fill="none" stroke="black" stroke="2"/>
-    </g>
-
-    <!-- Small candy near unicorn (sitting on the cloud, front-left) -->
-    <g id="candy1">
-      <circle cx="210" cy="710" r="10" fill="white" stroke="black" stroke-width="3"/>
-      <line x1="200" y1="700" x2="220" y2="720" stroke="black" stroke-width="2"/>
-      <line x1="200" y1="720" x2="220" y2="700" stroke="black" stroke-width="2"/>
-    </g>
-
-    <!-- Another small candy (bottom left of cake) -->
-    <g id="candy2">
-      <path d="M150,700 C140,690 130,700 140,710 C150,720 160,710 150,700 Z" fill="white" stroke="black" stroke-width="3"/>
-      <line x1="135" y1="705" x2="165" y2="705" stroke="black" stroke-width="2"/>
-    </g>
-
+    <!-- Cupcake -->
+    <path d="M330 730 L320 750 Q370 760 420 750 L410 730 Z"/> <!-- Cupcake liner -->
+    <path d="M330 730 C320 700 320 670 350 650 C380 630 420 670 410 700 C400 710 340 710 330 730 Z"/> <!-- Frosting base -->
+    <path d="M350 650 Q340 630 350 610 Q360 630 350 650 Z"/> <!-- Top frosting swirl -->
   </g>
 
-  <!-- Group for sparkling stars -->
-  <g id="stars">
-    <!-- Star 1 -->
-    <polygon points="150,200 160,220 180,225 160,230 150,250 140,230 120,225 140,220" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 2 -->
-    <polygon points="600,100 610,120 630,125 610,130 600,150 590,130 570,125 590,120" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 3 -->
-    <polygon points="750,300 760,320 780,325 760,330 750,350 740,330 720,325 740,320" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 4 -->
-    <polygon points="100,400 110,420 130,425 110,430 100,450 90,430 70,425 90,420" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 5 -->
-    <polygon points="400,100 410,120 430,125 410,130 400,150 390,130 370,125 390,120" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 6 -->
-    <polygon points="200,800 210,820 230,825 210,830 200,850 190,830 170,825 190,820" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Star 7 -->
-    <polygon points="650,850 660,870 680,875 660,880 650,900 640,880 620,875 640,870" fill="white" stroke="black" stroke-width="3"/>
-  </g>
+  <!-- Floating Stars and Hearts -->
+  <g id="decorations" stroke-width="4">
+    <!-- Stars -->
+    <path d="M150 200 L170 250 L230 250 L180 280 L200 330 L150 300 L100 330 L120 280 L70 250 L130 250 Z"/>
+    <path d="M600 150 L620 200 L680 200 L630 230 L650 280 L600 250 L550 280 L570 230 L520 200 L580 200 Z"/>
+    <path d="M700 400 L720 450 L780 450 L730 480 L750 530 L700 500 L650 530 L670 480 L620 450 L680 450 Z"/>
 
+    <!-- Hearts -->
+    <path d="M100 400 C120 350 180 350 200 400 C220 450 150 500 100 400 Z"/>
+    <path d="M200 500 C220 450 280 450 300 500 C320 550 250 600 200 500 Z"/>
+    <path d="M50 600 C70 550 130 550 150 600 C170 650 100 700 50 600 Z"/>
+  </g>
 </svg>
