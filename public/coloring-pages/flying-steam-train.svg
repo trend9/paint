@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 1000" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+  <g id="scene">
+    <!-- Fluffy, simple clouds -->
+    <g id="clouds">
+      <path d="M 100 800 Q 50 750, 150 700 Q 250 750, 200 800 Q 150 850, 100 800 Z" />
+      <path d="M 600 200 Q 550 150, 650 100 Q 750 150, 700 200 Q 650 250, 600 200 Z" />
+      <path d="M 650 600 Q 600 550, 700 500 Q 800 550, 750 600 Q 700 650, 650 600 Z" />
+      <path d="M 150 300 Q 100 250, 200 200 Q 300 250, 250 300 Q 200 350, 150 300 Z" />
+    </g>
+
+    <!-- Cute happy steam locomotive -->
+    <g id="locomotive">
+      <!-- Main body (base) -->
+      <rect x="100" y="450" width="600" height="100" rx="30" ry="30" />
+
+      <!-- Boiler (ellipse) -->
+      <ellipse cx="350" cy="400" rx="200" ry="70" />
+
+      <!-- Front nose (circle) -->
+      <circle cx="150" cy="400" r="70" />
+
+      <!-- Cab -->
+      <rect x="500" y="350" width="200" height="100" rx="30" ry="30" />
+
+      <!-- Chimney -->
+      <rect x="250" y="270" width="80" height="80" rx="20" ry="20" />
+
+      <!-- Wheels (circles) -->
+      <circle cx="250" cy="550" r="60" />
+      <circle cx="550" cy="550" r="60" />
+      
+      <!-- Connecting rod (rounded rectangle) -->
+      <rect x="200" y="540" width="400" height="20" rx="10" ry="10" />
+
+      <!-- Face on front nose -->
+      <g id="loco-face">
+        <!-- Eyes -->
+        <circle cx="120" cy="380" r="15" />
+        <circle cx="180" cy="380" r="15" />
+        <!-- Smile -->
+        <path d="M 130 410 Q 150 430, 170 410" fill="none" />
+      </g>
+
+      <!-- Wings -->
+      <g id="loco-wings">
+        <!-- Left Wing -->
+        <path d="M 70 420 C 20 380, 20 460, 70 500 C 120 460, 120 380, 70 420 Z" transform="rotate(-15 70 460)" />
+        <!-- Right Wing -->
+        <path d="M 730 420 C 780 380, 780 460, 730 500 C 680 460, 680 380, 730 420 Z" transform="rotate(15 730 460)" />
+      </g>
+    </g>
+
+    <!-- Smoke puffs from chimney -->
+    <g id="smoke-puffs">
+      <path d="M 290 270 Q 250 200, 300 180 Q 350 160, 380 200 Q 360 240, 290 270 Z" />
+      <path d="M 330 180 Q 300 150, 350 130 Q 400 150, 370 180 Q 340 200, 330 180 Z" />
+      <path d="M 360 150 Q 340 120, 370 100 Q 400 120, 380 140 Q 360 160, 360 150 Z" />
+    </g>
+
+    <!-- A little bird flying nearby -->
+    <g id="bird">
+      <path d="M 700 200 C 680 190, 670 210, 680 220 C 690 230, 710 230, 720 220 C 730 210, 720 190, 700 200 Z" />
+    </g>
+  </g>
+</svg>
