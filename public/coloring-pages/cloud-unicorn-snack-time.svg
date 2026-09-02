@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+
+  <!-- Cloud -->
+  <g id="cloud">
+    <path d="M100,750
+             C50,700 80,600 180,600
+             C280,600 300,550 400,550
+             C500,550 520,600 620,600
+             C720,600 750,700 700,750
+             C750,800 650,850 550,850
+             C450,850 400,900 300,900
+             C200,900 150,850 100,800
+             C50,750 100,750 100,750 Z"
+          stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Unicorn -->
+  <g id="unicorn">
+    <!-- Body -->
+    <ellipse cx="400" cy="650" rx="150" ry="120" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Head -->
+    <ellipse cx="400" cy="400" rx="80" ry="100" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Neck connection -->
+    <path d="M350,490 Q300,550 350,600 L450,600 Q500,550 450,490 Z" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Muzzle -->
+    <ellipse cx="400" cy="430" rx="50" ry="40" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Eyes -->
+    <circle cx="370" cy="380" r="18" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="430" cy="380" r="18" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Mouth -->
+    <path d="M375,455 Q400,470 425,455" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Nostrils -->
+    <circle cx="385" cy="420" r="6" stroke="black" stroke-width="3" fill="white"/>
+    <circle cx="415" cy="420" r="6" stroke="black" stroke-width="3" fill="white"/>
+
+    <!-- Ears -->
+    <path d="M370,330 L350,290 L360,320 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M430,330 L450,290 L440,320 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Horn -->
+    <path d="M400,280 L410,220 L400,230 L390,220 L400,280 Z" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M400,260 L395,250 M400,250 L395,240 M400,240 L395,230" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Mane (on head) -->
+    <path d="M370,330 C360,300 380,280 400,290 C420,280 440,300 430,330" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M380,310 C370,290 390,270 400,280 C410,270 430,290 420,310" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Front Legs - holding items -->
+    <g id="front-legs-holding">
+        <!-- Left arm/leg -->
+        <path d="M300,600 C280,550 250,550 220,580 C200,600 220,650 250,660 L290,660 C310,660 320,620 300,600 Z"
+              stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Right arm/leg -->
+        <path d="M500,600 C520,550 550,550 580,580 C600,600 580,650 550,660 L510,660 C490,660 480,620 500,600 Z"
+              stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Back legs (partially hidden by body/cloud) -->
+    <path d="M340,750 A40,40 0 0 1 380,750 L380,780 A40,40 0 0 1 340,780 Z"
+          stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M420,750 A40,40 0 0 0 460,750 L460,780 A40,40 0 0 0 420,780 Z"
+          stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+          
+    <!-- Tail -->
+    <path d="M540,600 C560,650 540,700 520,750 C500,800 520,850 540,900" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M550,620 C570,670 550,720 530,770 C510,820 530,870 550,920" stroke="black" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Cupcake held by unicorn's front left leg -->
+  <g id="cupcake" transform="translate(200, 560)">
+    <!-- Wrapper -->
+    <path d="M100,120 C105,100 115,100 120,120 C125,100 135,100 140,120 C145,100 155,100 160,120 L155,150 C145,130 135,130 130,150 C125,130 115,130 110,150 L105,120 Z"
+          stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Cake part -->
+    <path d="M100,120 Q130,110 160,120 L155,150 Q130,140 105,150 Z"
+          stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Frosting -->
+    <path d="M100,120 C100,100 110,90 130,90 C150,90 160,100 160,120 Q130,80 100,120 Z"
+          stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130,90 C120,70 140,70 130,60 Q120,80 130,90 Z"
+          stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Cherry -->
+    <circle cx="130" cy="55" r="10" stroke="black" stroke-width="3" fill="white"/>
+  </g>
+
+  <!-- Rainbow Lollipop held by unicorn's front right leg -->
+  <g id="lollipop" transform="translate(450, 560)">
+    <circle cx="100" cy="80" r="50" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Swirl inside lollipop -->
+    <path d="M100,80 C120,80 120,60 100,60 C80,60 80,100 100,100 C110,100 110,70 100,70" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Stick -->
+    <rect x="90" y="130" width="20" height="100" rx="10" ry="10" stroke="black" stroke-width="4" fill="white"/>
+  </g>
+
+</svg>
