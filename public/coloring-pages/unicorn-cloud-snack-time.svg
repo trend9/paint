@@ -1,76 +1,70 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Main group for the entire drawing with default stroke and fill properties -->
-  <g fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Cloud -->
+  <g id="cloud">
+    <path d="M100 650 C100 550 200 500 300 550 C400 500 500 550 600 550 C700 550 700 650 650 700 C600 750 500 750 400 700 C300 650 200 700 150 680 C100 660 100 650 100 650 Z"
+          fill="white" stroke="black" stroke-width="5"/>
+    <!-- Inner fluff lines -->
+    <path d="M150 690 Q180 660 250 670" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M300 680 Q350 650 400 660" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M450 690 Q500 660 550 670" fill="none" stroke="black" stroke-width="3"/>
+  </g>
 
-    <!-- Cloud for the unicorn to sit on -->
-    <g id="cloud">
-      <ellipse cx="400" cy="700" rx="300" ry="100"/>
-      <ellipse cx="280" cy="670" rx="100" ry="80"/>
-      <ellipse cx="520" cy="670" rx="100" ry="80"/>
-      <ellipse cx="350" cy="630" rx="80" ry="60"/>
-      <ellipse cx="450" cy="630" rx="80" ry="60"/>
-    </g>
+  <!-- Unicorn -->
+  <g id="unicorn">
+    <!-- Body -->
+    <ellipse cx="400" cy="500" rx="150" ry="100" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Head -->
+    <ellipse cx="500" cy="350" rx="80" ry="70" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Snout -->
+    <ellipse cx="530" cy="370" rx="30" ry="20" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Smile -->
+    <path d="M510 375 Q530 385 550 375" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Eyes -->
+    <circle cx="480" cy="330" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="530" cy="330" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Eye pupils (inner white circles) -->
+    <circle cx="485" cy="325" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="535" cy="325" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <!-- Ears -->
+    <path d="M480 290 Q460 260 470 250 Q490 260 480 290 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M530 290 Q510 260 520 250 Q540 260 530 290 Z" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Horn -->
+    <path d="M500 250 L510 200 L520 250 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M505 235 L515 225" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M500 220 L510 210" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Mane -->
+    <path d="M450 300 C430 250 400 270 380 300 C360 330 380 360 400 350 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M410 280 C400 260 390 270" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M420 290 C410 270 400 280" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Front Leg -->
+    <ellipse cx="450" cy="570" rx="35" ry="50" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Back Leg (partially hidden) -->
+    <ellipse cx="350" cy="570" rx="35" ry="50" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Tail (simple cloud-like shape) -->
+    <path d="M250 450 Q200 400 180 450 Q150 500 200 530 Q250 500 250 450 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
 
-    <!-- Unicorn -->
-    <g id="unicorn">
-      <!-- Body - a rounded path to represent a sitting posture -->
-      <path d="M 350 600 Q 300 550 320 450 Q 340 350 420 330 Q 500 350 520 450 Q 540 550 490 600 Z"/>
+  <!-- Cake -->
+  <g id="cake">
+    <!-- Bottom layer -->
+    <rect x="580" y="470" width="60" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Top layer/frosting -->
+    <ellipse cx="610" cy="470" rx="35" ry="10" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Candle -->
+    <rect x="605" y="450" width="10" height="20" fill="white" stroke="black" stroke-width="2"/>
+    <!-- Flame -->
+    <path d="M610 445 Q615 435 620 445 Q610 440 610 445 Z" fill="white" stroke="black" stroke-width="2"/>
+  </g>
 
-      <!-- Head -->
-      <ellipse cx="480" cy="370" rx="70" ry="60"/>
-
-      <!-- Snout -->
-      <ellipse cx="515" cy="390" rx="35" ry="25"/>
-      <!-- Nostrils -->
-      <circle cx="505" cy="390" r="3" fill="black" stroke-width="1"/>
-      <circle cx="525" cy="390" r="3" fill="black" stroke-width="1"/>
-
-      <!-- Eye -->
-      <circle cx="460" cy="360" r="8" fill="black" stroke-width="1"/>
-      <!-- Eyelash / Simple curve above eye for friendly expression -->
-      <path d="M 450 365 Q 460 375 470 365" fill="none" stroke="black" stroke-width="3"/>
-
-      <!-- Smile -->
-      <path d="M 495 400 Q 515 415 535 400" fill="none" stroke="black" stroke-width="3"/>
-
-      <!-- Ear -->
-      <path d="M 430 330 L 460 300 L 490 330 Z"/>
-
-      <!-- Horn -->
-      <path d="M 490 310 L 500 260 L 510 310 Z"/>
-
-      <!-- Mane - simplified wavy lines -->
-      <path d="M 420 340 C 400 310, 420 270, 450 280" fill="none"/>
-      <path d="M 425 350 C 405 320, 425 280, 455 290" fill="none"/>
-      <path d="M 430 360 C 410 330, 430 290, 460 300" fill="none"/>
-
-      <!-- Front Leg 1 (holding cupcake) - simplified rounded path -->
-      <path d="M 400 560 C 390 520, 410 460, 440 460 C 450 470, 430 530, 400 560 Z"/>
-
-      <!-- Front Leg 2 (holding cookie) - simplified rounded path -->
-      <path d="M 450 560 C 440 520, 460 460, 490 460 C 500 470, 480 530, 450 560 Z"/>
-
-      <!-- Tail - simplified wavy lines -->
-      <path d="M 330 500 C 300 450, 260 500, 280 550" fill="none"/>
-      <path d="M 335 510 C 305 460, 265 510, 285 560" fill="none"/>
-      <path d="M 340 520 C 310 470, 270 520, 290 570" fill="none"/>
-    </g>
-
-    <!-- Small Cupcake held by unicorn -->
-    <g id="cupcake">
-      <!-- Wrapper base -->
-      <rect x="430" y="440" width="30" height="15" rx="5" ry="5"/>
-      <!-- Cake top -->
-      <ellipse cx="445" cy="420" rx="20" ry="12"/>
-      <!-- Cherry on top -->
-      <circle cx="445" cy="405" r="7"/>
-    </g>
-
-    <!-- Star-shaped Cookie held by unicorn -->
-    <g id="cookie">
-      <!-- Simple 5-point star path -->
-      <path d="M 475 410 L 480 425 L 495 425 L 485 435 L 490 450 L 475 440 L 460 450 L 465 435 L 455 425 L 470 425 Z"/>
-    </g>
-
+  <!-- Juice Cup -->
+  <g id="juice-cup">
+    <!-- Cup body -->
+    <rect x="640" y="490" width="50" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Top opening (rim) -->
+    <ellipse cx="665" cy="490" rx="30" ry="10" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Juice inside (simple fillable shape) -->
+    <rect x="643" y="500" width="44" height="45" fill="white" stroke="black" stroke-width="2"/>
+    <!-- Straw -->
+    <rect x="670" y="450" width="8" height="50" rx="2" ry="2" fill="white" stroke="black" stroke-width="2"/>
   </g>
 </svg>
