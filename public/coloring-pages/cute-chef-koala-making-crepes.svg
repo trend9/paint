@@ -1,0 +1,99 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Kitchen Table -->
+  <g id="kitchen_table" stroke="black" stroke-width="5" fill="white">
+    <rect x="0" y="700" width="800" height="300" rx="40" ry="40"/>
+  </g>
+
+  <!-- Koala Chef -->
+  <g id="koala_chef">
+    <!-- Body -->
+    <g id="koala_body" stroke="black" stroke-width="5" fill="white">
+      <path d="M400 350 C280 300 250 550 400 580 C550 550 520 300 400 350 Z" /> <!-- Torso -->
+      <!-- Left Arm -->
+      <path d="M350 380 Q250 450 280 550 Q300 580 380 520 Z" />
+      <!-- Right Arm -->
+      <path d="M450 380 Q550 450 520 550 Q500 580 420 520 Z" />
+      <!-- Left Foot -->
+      <ellipse cx="360" cy="590" rx="60" ry="30" />
+      <!-- Right Foot -->
+      <ellipse cx="440" cy="590" rx="60" ry="30" />
+    </g>
+
+    <!-- Head -->
+    <g id="koala_head" stroke="black" stroke-width="5" fill="white">
+      <circle cx="400" cy="270" r="140" />
+      <!-- Left Ear -->
+      <circle cx="300" cy="180" r="60" />
+      <circle cx="300" cy="180" r="30" stroke="black" stroke-width="3" fill="white"/> <!-- Inner ear -->
+      <!-- Right Ear -->
+      <circle cx="500" cy="180" r="60" />
+      <circle cx="500" cy="180" r="30" stroke="black" stroke-width="3" fill="white"/> <!-- Inner ear -->
+      <!-- Muzzle -->
+      <ellipse cx="400" cy="300" rx="60" ry="40" stroke="black" stroke-width="4" fill="white"/>
+      <!-- Nose -->
+      <ellipse cx="400" cy="290" rx="30" ry="20" fill="black" stroke="none"/>
+      <!-- Left Eye -->
+      <circle cx="350" cy="240" r="15" fill="black" stroke="none"/>
+      <!-- Right Eye -->
+      <circle cx="450" cy="240" r="15" fill="black" stroke="none"/>
+      <!-- Mouth -->
+      <path d="M360 330 Q400 360 440 330" fill="none" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Chef Hat -->
+    <g id="chef_hat" stroke="black" stroke-width="5" fill="white">
+      <path d="M280 180 Q250 80 400 50 Q550 80 520 180 Q480 140 400 130 Q320 140 280 180 Z"/>
+      <path d="M280 180 Q320 160 400 150 Q480 160 520 180" fill="none" stroke="black" stroke-width="3"/> <!-- Hat brim detail -->
+    </g>
+
+    <!-- Apron -->
+    <g id="apron" stroke="black" stroke-width="5" fill="white">
+      <path d="M330 400 Q280 450 280 580 Q300 650 400 650 Q500 650 520 580 Q520 450 470 400 Z"/>
+      <path d="M330 400 L320 380 L350 360 L370 380" fill="white" stroke="black" stroke-width="3"/> <!-- Left Strap -->
+      <path d="M470 400 L480 380 L450 360 L430 380" fill="white" stroke="black" stroke-width="3"/> <!-- Right Strap -->
+      <circle cx="400" cy="480" r="30" stroke="black" stroke-width="3" fill="white"/> <!-- Pocket detail -->
+    </g>
+  </g>
+
+  <!-- Frying Pan -->
+  <g id="frying_pan" stroke="black" stroke-width="5" fill="white">
+    <ellipse cx="330" cy="580" rx="100" ry="25"/> <!-- Pan bottom curve -->
+    <path d="M230 580 V550 A100 25 0 0 1 430 550 V580 Z" /> <!-- Pan sides and top rim -->
+    <path d="M430 560 L500 540 Q550 530 550 500 Q550 470 500 460 L430 480 Z" /> <!-- Handle -->
+    <circle cx="530" cy="480" r="10" stroke="black" stroke-width="3" fill="white"/> <!-- Handle end detail -->
+  </g>
+
+  <!-- Crepe Flipping -->
+  <g id="crepe_flipping" stroke="black" stroke-width="4" fill="white">
+    <ellipse cx="380" cy="450" rx="90" ry="20" transform="rotate(10 380 450)"/> <!-- Crepe mid-air -->
+  </g>
+
+  <!-- Table Items -->
+  <g id="table_items">
+    <!-- Strawberries -->
+    <g id="strawberries">
+      <!-- Strawberry 1 -->
+      <path d="M500 780 C500 760 520 740 540 750 C560 740 580 760 580 780 C580 800 540 820 500 780 Z" stroke="black" stroke-width="4" fill="white"/>
+      <path d="M540 750 Q545 735 555 745 M540 750 Q535 735 525 745" stroke="black" stroke-width="3" fill="none"/> <!-- Leaf top -->
+      <circle cx="525" cy="775" r="2" fill="black" stroke="none"/>
+      <circle cx="540" cy="765" r="2" fill="black" stroke="none"/>
+      <circle cx="555" cy="775" r="2" fill="black" stroke="none"/>
+
+      <!-- Strawberry 2 -->
+      <path d="M600 820 C600 800 620 780 640 790 C660 780 680 800 680 820 C680 840 640 860 600 820 Z" stroke="black" stroke-width="4" fill="white"/>
+      <path d="M640 790 Q645 775 655 785 M640 790 Q635 775 625 785" stroke="black" stroke-width="3" fill="none"/> <!-- Leaf top -->
+      <circle cx="625" cy="815" r="2" fill="black" stroke="none"/>
+      <circle cx="640" cy="805" r="2" fill="black" stroke="none"/>
+      <circle cx="655" cy="815" r="2" fill="black" stroke="none"/>
+    </g>
+
+    <!-- Whipped Cream -->
+    <g id="whipped_cream" stroke="black" stroke-width="5" fill="white">
+      <path d="M150 850 C180 800 250 800 280 850 C300 880 250 900 200 890 C150 900 130 880 150 850 Z"/>
+      <path d="M200 850 Q210 830 220 840" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M180 870 Q190 850 200 860" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+
+</svg>

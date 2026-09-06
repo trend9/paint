@@ -1,5 +1,35 @@
 [
   {
+    "slug": "cute-chef-koala-making-crepes",
+    "title": "あま〜いクレープできたかな？コックさんコアラの楽しいぬりえ",
+    "description": "大きなコック帽をかぶった可愛いコアラさんが、あまくて美味しいクレープ作りに挑戦中！いちごやホイップクリームを美味しくトッピングして、自分だけのスイーツぬりえを完成させよう！幼児から楽しめる簡単で太い線のぬりえです。",
+    "category": "スイーツ・食べ物",
+    "tags": [
+      "コアラ",
+      "クレープ",
+      "スイーツ",
+      "お料理",
+      "動物ぬりえ"
+    ],
+    "prompt": "children coloring book page, cute happy chef koala holding a frying pan flipping a delicious crepe, wearing a big puffy chef hat and apron, fresh strawberries and whipped cream on a kitchen table, clean thick outlines, bold black line-art, pure white background, no shading, no gray fills, zero gradients, thick borders, simplified shapes designed for toddlers and young kids, beautiful clean vector look, high contrast ink lines --ar 3:4",
+    "article": "<h3>ユーカリの森のクレープやさんへようこそ！</h3><p>ここは森の小さなお菓子屋さん。大きくて真っ白なコック帽をかぶったコアラのシェフが、今日は特製のおいしいクレープを焼いています。<br>「クルクル、ポンッ！」とフライパンで薄い生地を上手にひっくり返したら、あま〜い香りがふわっと広がります。お皿の上には、真っ赤なイチゴや、ふわふわのホイップクリーム、甘いチョコソースもスタンバイ！みんなはどんな味のクレープが好きかな？</p><h4>おいしくぬるためのヒント</h4><ul><li><strong>クレープの生地：</strong>こんがりキツネ色やクリーム色でぬると、とってもおいしそうに見えるよ！</li><li><strong>フルーツのトッピング：</strong>赤（いちご）や黄色（バナナ）、茶色（チョコソース）など、カラフルな色を使ってにぎやかに仕上げてみよう。</li><li><strong>コアラさんのお洋服：</strong>コック帽やエプロンをすきな色や水玉もようにして、おしゃれなシェフに変身させてあげてね。</li></ul><h4>おうちの方へ：ぬりえを通じた知育のポイント</h4><p>食べ物をテーマにしたぬりえは、子どもの「食への興味（食育）」を自然に引き出す素晴らしいきっかけになります。「どんなトッピングをのせたい？」「クレープってどんな匂いがするかな？」と言葉を交わしながら色を選ぶことで、五感を刺激し、豊かな想像力や表現力を育みます。はみ出しても大丈夫！お子さまが思い描く世界をたくさん褒めてあげてくださいね。</p>",
+    "seo": {
+      "h1": "【無料プリント】コックさんコアラと美味しいクレープのかわいい知育ぬりえ（幼児・子供向け）",
+      "metaDescription": "かわいいコアラのコックさんがクレープを作る無料ぬりえ素材です！太い線で小さな子供でも塗りやすいシンプルなデザイン。いちごやホイップなど好きな色を塗って楽しめます。知育やおうち時間の遊びにPDF印刷してご活用ください。",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "クレープ ぬりえ",
+        "コアラ ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/cute-chef-koala-making-crepes.svg",
+    "imageType": "svg",
+    "createdAt": "2026-09-06T01:34:55.644Z",
+    "id": "187"
+  },
+  {
     "slug": "magic-school-cat-magician-coloring",
     "title": "【魔法の世界へようこそ！】ネコのマジシャン、フワフワぬりえ！",
     "description": "魔法学校の小さなネコのマジシャンが、カラフルな呪文を唱えているよ！キラキラ輝く魔法の杖や、ひらひら舞うトランプ、不思議な帽子など、自由な色で塗って、キミだけの魔法の世界を完成させよう！",
