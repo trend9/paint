@@ -1,0 +1,111 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - ensures a pure white canvas -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" stroke="none"/>
+
+  <!-- Main content group with default styling for outlines and fills -->
+  <g stroke="black" stroke-width="4" fill="white">
+
+    <!-- Simplified Forest Outline (background elements) -->
+    <g id="forest_background">
+      <!-- A few simple, rounded tree top shapes in the background -->
+      <path d="M0 650 Q 100 550 200 650 H 0 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M150 680 Q 250 580 350 680 H 150 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M400 660 Q 500 560 600 660 H 400 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M550 690 Q 650 590 750 690 H 550 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Whimsical Mushroom House -->
+    <g id="mushroom_house">
+      <!-- House stem / base -->
+      <rect x="300" y="600" width="200" height="250" rx="50" ry="50" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Mushroom cap / roof -->
+      <path d="M250 600 C 200 400 600 400 550 600 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Door -->
+      <path d="M370 700 Q 370 790 400 790 Q 430 790 430 700 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Door knob -->
+      <circle cx="420" cy="745" r="8" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Window -->
+      <circle cx="400" cy="650" r="30" fill="white" stroke="black" stroke-width="4"/>
+      
+      <!-- Simple flowers on mushroom cap for decoration -->
+      <g transform="translate(300 500) scale(0.6)">
+        <circle cx="0" cy="0" r="10" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+      </g>
+      <g transform="translate(450 470) scale(0.7)">
+        <circle cx="0" cy="0" r="10" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+      </g>
+      <g transform="translate(500 540) scale(0.5)">
+        <circle cx="0" cy="0" r="10" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="12" cy="-5" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="-6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+        <circle cx="6" cy="12" r="7" fill="white" stroke="black" stroke-width="4"/>
+      </g>
+    </g>
+
+    <!-- Tiny Fairy -->
+    <g id="fairy" transform="translate(260 770) scale(0.5)">
+      <!-- Body (bean shape) -->
+      <path d="M0 0 Q 30 50 0 100 Q -30 50 0 0 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <circle cx="0" cy="-40" r="35" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Simple Hair Bun -->
+      <circle cx="20" cy="-65" r="15" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Eyes -->
+      <circle cx="-15" cy="-45" r="5" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="15" cy="-45" r="5" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Smile -->
+      <path d="M-15 -25 Q 0 -15 15 -25" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Arms (simple curved lines, sitting pose) -->
+      <path d="M-20 20 Q -40 30 -50 40" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M20 20 Q 40 30 50 40" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Legs (simple curved lines, bent for sitting) -->
+      <path d="M-10 80 Q -20 100 -40 90" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M10 80 Q 20 100 40 90" fill="none" stroke="black" stroke-width="4"/>
+      <!-- Delicate, simplified Wings -->
+      <path d="M-40 -40 Q -80 -80 -40 -120 Q 0 -80 -40 -40 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M40 -40 Q 80 -80 40 -120 Q 0 -80 40 -40 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Ground and foreground elements -->
+    <g id="ground_elements">
+      <!-- Main ground area, slightly wavy, filled white for coloring -->
+      <path d="M0 850 Q 200 830 400 850 Q 600 870 800 850 L 800 1000 L 0 1000 Z" fill="white" stroke="black" stroke-width="4"/>
+      
+      <!-- A few large, simple leaves -->
+      <path d="M150 860 C 100 820 200 790 250 830 C 300 870 200 900 150 860 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M650 860 C 600 820 700 790 750 830 C 800 870 700 900 650 860 Z" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Friendly Flower 1 (left) -->
+      <g transform="translate(100 820)">
+        <circle cx="0" cy="0" r="15" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+        <circle cx="-18" cy="-8" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="18" cy="-8" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="-10" cy="18" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="10" cy="18" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <path d="M0 15 L0 60 Q 10 70 20 60" fill="none" stroke="black" stroke-width="4"/> <!-- Stem with leaf (line) -->
+        <path d="M15 50 C 5 45 15 45 15 50 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Simple leaf on stem (fillable) -->
+      </g>
+
+      <!-- Friendly Flower 2 (right) -->
+      <g transform="translate(700 820)">
+        <circle cx="0" cy="0" r="15" fill="white" stroke="black" stroke-width="4"/> <!-- Center -->
+        <circle cx="-18" cy="-8" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="18" cy="-8" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="-10" cy="18" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <circle cx="10" cy="18" r="10" fill="white" stroke="black" stroke-width="4"/> <!-- Petal -->
+        <path d="M0 15 L0 60 Q 10 70 20 60" fill="none" stroke="black" stroke-width="4"/> <!-- Stem with leaf (line) -->
+        <path d="M15 50 C 5 45 15 45 15 50 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Simple leaf on stem (fillable) -->
+      </g>
+    </g>
+
+  </g>
+</svg>
