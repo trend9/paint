@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="white">
+
+    <!-- Simple stars in the background -->
+    <g id="stars">
+        <circle cx="100" cy="150" r="15" />
+        <circle cx="700" cy="100" r="15" />
+        <circle cx="50" cy="800" r="15" />
+        <circle cx="750" cy="900" r="15" />
+        <circle cx="300" cy="50" r="15" />
+        <circle cx="500" cy="950" r="15" />
+        <circle cx="150" cy="40" r="15" />
+        <circle cx="650" cy="850" r="15" />
+    </g>
+
+    <!-- Friendly Sun peeking from top-right -->
+    <g id="sun">
+        <circle cx="700" cy="150" r="80" />
+        <!-- Sun rays - simplified rounded rectangles -->
+        <rect x="620" y="140" width="20" height="10" rx="5" ry="5" transform="rotate(-45 620 140)"/>
+        <rect x="660" y="70" width="10" height="20" rx="5" ry="5" transform="rotate(-20 660 70)"/>
+        <rect x="710" y="50" width="20" height="10" rx="5" ry="5" transform="rotate(0 710 50)"/>
+        <rect x="760" y="70" width="10" height="20" rx="5" ry="5" transform="rotate(20 760 70)"/>
+        <rect x="780" y="140" width="20" height="10" rx="5" ry="5" transform="rotate(45 780 140)"/>
+        <rect x="760" y="210" width="10" height="20" rx="5" ry="5" transform="rotate(70 760 210)"/>
+        <rect x="710" y="230" width="20" height="10" rx="5" ry="5" transform="rotate(90 710 230)"/>
+        <rect x="660" y="210" width="10" height="20" rx="5" ry="5" transform="rotate(110 660 210)"/>
+
+        <!-- Sun face - eyes and smile -->
+        <circle cx="680" cy="135" r="10" />
+        <circle cx="720" cy="135" r="10" />
+        <path d="M680 170 Q700 190 720 170" fill="none" />
+    </g>
+
+    <!-- Fluffy Clouds -->
+    <g id="clouds">
+        <!-- Main cloud under locomotive -->
+        <path d="M100 700 Q150 650 250 660 T400 680 T550 670 T650 700 Q600 750 500 740 Q400 750 300 740 Q200 750 100 700 Z" />
+        <!-- Cloud left of locomotive -->
+        <path d="M50 500 Q80 470 150 480 T250 500 T200 530 Q150 550 100 540 Q70 530 50 500 Z" />
+        <!-- Cloud right of locomotive -->
+        <path d="M600 450 Q630 420 700 430 T780 450 T730 480 Q680 500 630 490 Q600 480 600 450 Z" />
+        <!-- Small cloud far left -->
+        <path d="M150 250 Q180 220 250 230 T330 250 T280 280 Q230 300 180 290 Q150 280 150 250 Z" />
+    </g>
+
+    <!-- Cute Happy Steam Locomotive -->
+    <g id="locomotive">
+        <!-- Body of the locomotive -->
+        <rect x="150" y="380" width="500" height="150" rx="40" ry="40" />
+
+        <!-- Cab -->
+        <rect x="520" y="300" width="130" height="100" rx="20" ry="20" />
+        <rect x="535" y="315" width="80" height="60" rx="10" ry="10" /> <!-- Cab Window -->
+
+        <!-- Boiler (front part) -->
+        <ellipse cx="250" cy="455" rx="100" ry="70" />
+
+        <!-- Smokestack -->
+        <rect x="290" y="280" width="60" height="70" rx="15" ry="15" />
+        <ellipse cx="320" cy="280" rx="40" ry="25" />
+
+        <!-- Headlight -->
+        <circle cx="170" cy="450" r="30" />
+
+        <!-- Cowcatcher - simplified triangular shape -->
+        <path d="M150 530 L150 570 L200 570 L220 530 Z" />
+
+        <!-- Wheels - simplified large circles -->
+        <circle cx="280" cy="550" r="50" />
+        <circle cx="480" cy="550" r="50" />
+        
+        <!-- Connecting rod - simplified rectangle -->
+        <rect x="230" y="525" width="300" height="20" rx="10" ry="10" />
+
+        <!-- Locomotive face on the front -->
+        <circle cx="190" cy="420" r="15" /> <!-- Left eye -->
+        <circle cx="250" cy="420" r="15" /> <!-- Right eye -->
+        <path d="M200 460 Q220 480 240 460" fill="none" /> <!-- Smile -->
+    </g>
+
+</svg>
