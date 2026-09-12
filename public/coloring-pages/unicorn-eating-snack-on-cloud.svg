@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define common stroke and fill for the whole image -->
+    <g stroke="black" stroke-width="4" fill="white">
+
+        <!-- Background Elements: Rainbow and Stars -->
+        <g id="background_elements">
+            <!-- Rainbow: Simple wide arcs for coloring -->
+            <path d="M 50 350 C 250 150 550 150 750 350" fill="none" stroke-width="3" />
+            <path d="M 60 365 C 260 180 540 180 740 365" fill="none" stroke-width="3" />
+            <path d="M 70 380 C 270 210 530 210 730 380" fill="none" stroke-width="3" />
+            <path d="M 80 395 C 280 240 520 240 720 395" fill="none" stroke-width="3" />
+
+            <!-- Stars: Simple 5-point stars, slightly rounded/blunt edges -->
+            <!-- Star 1 -->
+            <path d="M 120 150 L 130 130 L 150 135 L 140 115 L 160 105 L 140 95 L 150 75 L 130 80 L 120 60 L 110 80 L 90 75 L 100 95 L 80 105 L 100 115 L 90 135 L 110 130 Z" />
+            <!-- Star 2 -->
+            <path d="M 650 100 L 660 80 L 680 85 L 670 65 L 690 55 L 670 45 L 680 25 L 660 30 L 650 10 L 640 30 L 620 25 L 630 45 L 610 55 L 630 65 L 620 85 L 640 80 Z" />
+            <!-- Star 3 -->
+            <path d="M 700 250 L 710 230 L 730 235 L 720 215 L 740 205 L 720 195 L 730 175 L 710 180 L 700 160 L 690 180 L 670 175 L 680 195 L 660 205 L 680 215 L 670 235 L 690 230 Z" />
+            <!-- Star 4 -->
+            <path d="M 200 250 L 210 230 L 230 235 L 220 215 L 240 205 L 220 195 L 230 175 L 210 180 L 200 160 L 190 180 L 170 175 L 180 195 L 160 205 L 180 215 L 170 235 L 190 230 Z" />
+        </g>
+
+        <!-- Fluffy Cloud -->
+        <g id="cloud">
+            <path d="M 100 750 Q 50 650 150 600 Q 250 550 350 600 Q 450 550 550 600 Q 650 550 700 650 Q 750 750 700 800 Q 600 850 500 800 Q 400 850 300 800 Q 200 850 100 750 Z" stroke-width="5" />
+        </g>
+
+        <!-- Cute Chubby Happy Baby Unicorn -->
+        <g id="unicorn" stroke-width="5">
+            <!-- Body -->
+            <ellipse cx="400" cy="650" rx="150" ry="100" />
+            <!-- Head -->
+            <ellipse cx="500" cy="500" rx="90" ry="80" />
+            <!-- Muzzle -->
+            <ellipse cx="560" cy="530" rx="40" ry="30" />
+            <!-- Eye -->
+            <circle cx="530" cy="480" r="10" stroke-width="3" />
+            <!-- Smile -->
+            <path d="M 540 540 Q 560 565 580 540" fill="none" stroke-width="3"/>
+            <!-- Ears -->
+            <path d="M 450 430 Q 470 390 490 430 Q 470 440 450 430 Z" />
+            <path d="M 500 420 Q 520 380 540 420 Q 520 430 500 420 Z" />
+            <!-- Horn -->
+            <path d="M 490 400 L 510 400 L 500 350 L 490 400 Z" />
+            <!-- Mane -->
+            <path d="M 440 430 Q 400 380 440 360 Q 480 380 440 430 Z" />
+            <path d="M 420 450 Q 380 400 420 380 Q 460 400 420 450 Z" />
+            <!-- Front Legs -->
+            <rect x="350" y="700" width="50" height="80" rx="20" ry="20" />
+            <rect x="420" y="700" width="50" height="80" rx="20" ry="20" />
+            <!-- Back Leg (one visible) -->
+            <rect x="290" y="700" width="50" height="80" rx="20" ry="20" />
+            <!-- Hooves (simple rounded shapes at bottom of legs) -->
+            <rect x="350" y="770" width="50" height="20" rx="10" ry="10" />
+            <rect x="420" y="770" width="50" height="20" rx="10" ry="10" />
+            <rect x="290" y="770" width="50" height="20" rx="10" ry="10" />
+            <!-- Tail -->
+            <path d="M 250 650 Q 200 600 250 550 Q 300 600 250 650 Z" />
+        </g>
+
+        <!-- Giant Frosted Cupcake -->
+        <g id="cupcake" stroke-width="4">
+            <!-- Cupcake wrapper (cup) -->
+            <path d="M 580 680 L 670 680 L 680 600 L 570 600 Z" />
+            <!-- Wrapper lines -->
+            <line x1="595" y1="600" x2="590" y2="680" stroke-width="2" />
+            <line x1="610" y1="600" x2="605" y2="680" stroke-width="2" />
+            <line x1="625" y1="600" x2="620" y2="680" stroke-width="2" />
+            <line x1="640" y1="600" x2="635" y2="680" stroke-width="2" />
+            <line x1="655" y1="600" x2="650" y2="680" stroke-width="2" />
+
+            <!-- Frosting -->
+            <path d="M 570 600 Q 550 550 625 500 Q 700 550 680 600 Z" />
+            <!-- Cherry on top -->
+            <circle cx="625" cy="490" r="15" stroke-width="3" />
+            <!-- Cherry stem -->
+            <path d="M 625 475 Q 630 450 645 460" fill="none" stroke-width="3" />
+            <!-- Sprinkles (small rectangles) -->
+            <rect x="585" y="520" width="5" height="15" rx="2" ry="2" stroke-width="1" />
+            <rect x="610" y="530" width="5" height="15" rx="2" ry="2" stroke-width="1" />
+            <rect x="640" y="510" width="5" height="15" rx="2" ry="2" stroke-width="1" />
+            <rect x="600" y="560" width="5" height="15" rx="2" ry="2" stroke-width="1" />
+            <rect x="635" y="550" width="5" height="15" rx="2" ry="2" stroke-width="1" />
+        </g>
+
+    </g>
+</svg>
