@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blackboard -->
+  <g id="blackboard">
+    <rect x="100" y="100" width="600" height="500" rx="40" ry="40" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Stars on blackboard -->
+    <path d="M 250 180 L 260 200 L 280 200 L 265 215 L 275 235 L 250 220 L 225 235 L 235 215 L 220 200 L 240 200 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M 550 250 L 560 270 L 580 270 L 565 285 L 575 305 L 550 290 L 525 305 L 535 285 L 520 270 L 540 270 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M 200 450 L 210 470 L 230 470 L 215 485 L 225 505 L 200 490 L 175 505 L 185 485 L 170 470 L 190 470 Z" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M 600 400 L 610 420 L 630 420 L 615 435 L 625 455 L 600 440 L 575 455 L 585 435 L 570 420 L 590 420 Z" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Moon on blackboard -->
+    <path d="M 400 200 A 70 70 0 1 1 400 340 A 50 50 0 1 0 400 200 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Cape (behind cat) -->
+  <g id="cape">
+    <path d="M 300 520 C 250 580 250 680 300 750 L 500 750 C 550 680 550 580 500 520 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Collar part -->
+    <ellipse cx="400" cy="520" rx="120" ry="30" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+
+  <!-- Cat -->
+  <g id="cat">
+    <!-- Body -->
+    <ellipse cx="400" cy="650" rx="150" ry="120" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Head -->
+    <ellipse cx="400" cy="450" rx="100" ry="90" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Ears -->
+    <path d="M 320 370 L 280 430 L 360 430 Z" fill="white" stroke="black" stroke-width="5"/>
+    <path d="M 480 370 L 520 430 L 440 430 Z" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Paws (front) -->
+    <rect x="330" y="700" width="70" height="80" rx="35" ry="35" fill="white" stroke="black" stroke-width="5"/>
+    <rect x="410" y="700" width="70" height="80" rx="35" ry="35" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Tail -->
+    <path d="M 550 630 Q 600 530 550 480 Q 500 430 450 410" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cat Face -->
+  <g id="cat-face">
+    <!-- Eyes -->
+    <circle cx="360" cy="420" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="440" cy="420" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Nose -->
+    <path d="M 400 450 L 390 470 L 410 470 Z" fill="white" stroke="black" stroke-width="3"/>
+    <!-- Mouth (simple smile) -->
+    <path d="M 370 480 Q 400 500 430 480" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Whiskers -->
+    <path d="M 340 470 L 300 460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 340 480 L 300 490" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 340 490 L 300 510" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 460 470 L 500 460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 460 480 L 500 490" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 460 490 L 500 510" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Magician's Hat -->
+  <g id="magician-hat">
+    <!-- Top part of hat -->
+    <rect x="350" y="270" width="100" height="70" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Brim -->
+    <ellipse cx="400" cy="340" rx="80" ry="20" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Star on hat -->
+    <path d="M 400 285 L 405 295 L 415 295 L 408 302 L 412 312 L 400 307 L 388 312 L 392 302 L 385 295 L 395 295 Z" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Wand -->
+  <g id="wand">
+    <!-- Stick of the wand -->
+    <rect x="430" y="580" width="15" height="150" rx="7" ry="7" fill="white" stroke="black" stroke-width="4" transform="rotate(-40 437.5 730)"/>
+    <!-- Star at the top, adjusted position -->
+    <g transform="translate(470, 500) rotate(-40)">
+        <path d="M 0 0 L 7 14 L 21 14 L 10 24 L 17 38 L 0 28 L -17 38 L -10 24 L -21 14 L -7 14 Z" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+    <!-- Simpler sparkles (small circles) around the star -->
+    <circle cx="470" cy="470" r="5" fill="white" stroke="black" stroke-width="1"/>
+    <circle cx="500" cy="500" r="5" fill="white" stroke="black" stroke-width="1"/>
+    <circle cx="450" cy="510" r="5" fill="white" stroke="black" stroke-width="1"/>
+    <circle cx="480" cy="540" r="5" fill="white" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Magical Dust -->
+  <g id="magical-dust">
+    <circle cx="280" cy="550" r="10" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="260" cy="600" r="8" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="290" cy="650" r="12" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="320" cy="520" r="7" fill="white" stroke="black" stroke-width="2"/>
+
+    <circle cx="520" cy="550" r="10" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="540" cy="600" r="8" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="510" cy="650" r="12" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="480" cy="520" r="7" fill="white" stroke="black" stroke-width="2"/>
+  </g>
+</svg>
