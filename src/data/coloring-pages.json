@@ -1,5 +1,38 @@
 [
   {
+    "slug": "dinosaur-picnic-coloring",
+    "title": "🦖 恐竜たちがのんびりピクニック  🦖  ",
+    "description": "This coloring page features adorable dinosaurs having a relaxing picnic.  Let your child's creativity bloom with this fun activity! ",
+    "category": "動物・生き物",
+    "tags": [
+      "恐竜",
+      "子供",
+      "ぬりえ",
+      "coloring",
+      "ピクニック"
+    ],
+    "prompt": "Highly detailed premium English drawing prompt for FLUX.1-schnell text-to-image. MUST target a premium kids coloring booklet outline. For example: 'children coloring book sketch, clean thick outlines, bold black line-art, cute happy dinosaur playing under a sun, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4'",
+    "article": "【日本語】おもしろいストーリーや、ぬり方のコツ・お母様お父様へ贈る知育・知性発達の意味を含んだ、約600〜800文字程度のHTMLタグやMarkdownのH3、H4タグで構成された魅力的な記事本文",
+    "seo": {
+      "h1": "【無料ダウンロード】恐竜ののんびりピクニック | Coloring Page for Kids",
+      "metaDescription": "This free coloring page features adorable dinosaurs having a relaxing picnic. Get your child creative and have fun! ",
+      "keywords": [
+        "恐竜",
+        "ぬりえ",
+        "子供",
+        "ピクニック",
+        "coloring page",
+        "free coloring pages",
+        "dinosaur",
+        "kids coloring"
+      ]
+    },
+    "image": "/coloring-pages/dinosaur-picnic-coloring.svg",
+    "imageType": "svg",
+    "createdAt": "2026-09-15T02:09:39.941Z",
+    "id": "205"
+  },
+  {
     "slug": "alice-rabbit-clockmaker",
     "title": "「不思議の国のアリス」風！とけい屋さんのうさぎさんぬりえ",
     "description": "アリスの世界から飛び出した、かわいい時計屋さんのうさぎさんのぬりえだよ！おもしろい時計がいっぱいのお店で、時間を旅する気分を味わってみよう！細部まで丁寧に塗って、自分だけの特別な世界を彩ってね。",
