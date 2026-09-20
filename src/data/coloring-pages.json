@@ -1,5 +1,38 @@
 [
   {
+    "slug": "dinosaur-picnic",
+    "title": "恐竜たちののんびりピクニック",
+    "description": "Dino friends are having a relaxing picnic!  Bring your crayons and color this cute dinosaur scene.  ",
+    "category": "動物・生き物",
+    "tags": [
+      "dinosaur",
+      "coloring",
+      "kids",
+      "picnic",
+      "cute"
+    ],
+    "prompt": "Highly detailed premium English drawing prompt for FLUX.1-schnell text-to-image. MUST target a premium kids coloring booklet outline. For example: 'children coloring book sketch, clean thick outlines, bold black line-art, cute happy dinosaur playing under a sun, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4'",
+    "article": "【日本語】おもしろいストーリーや、ぬり方のコツ・お母様お父様へ贈る知育・知性発達の意味を含んだ、約600〜800文字程度のHTMLタグやMarkdownのH3、H4タグで構成された魅力的な記事本文",
+    "seo": {
+      "h1": "【無料ダウンロード】恐竜のピクニック, 子供向けぬりえイラスト",
+      "metaDescription": "【日本語】Google検索に評価され、クリック率が上がる120文字のメタディスクリプション",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "【恐竜】",
+        "恐竜 ピクニック",
+        "キッズ",
+        "子供向け",
+        "無料ダウンロード"
+      ]
+    },
+    "image": "/coloring-pages/dinosaur-picnic.svg",
+    "imageType": "svg",
+    "createdAt": "2026-09-20T01:59:36.670Z",
+    "id": "214"
+  },
+  {
     "slug": "forest-fairy-house-coloring",
     "title": "【無料ぬりえ】森のちいさな妖精さんと秘密のおうち",
     "description": "きらきらかわいい妖精さんが住む、森の奥の秘密のおうちを塗ってみよう！自然や想像力を育む、子供向けのぬりえです。",
