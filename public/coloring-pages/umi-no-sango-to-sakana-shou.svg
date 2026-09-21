@@ -1,0 +1,157 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: white;
+      }
+      .thick-outline {
+        stroke-width: 5;
+      }
+      .medium-outline {
+        stroke-width: 4;
+      }
+      .thin-outline {
+        stroke-width: 3;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Coral Reef Base -->
+  <g id="coral-reef-base">
+    <path d="M0 800 Q100 700 200 800 T400 850 T600 800 T800 850 L800 1000 L0 1000 Z" class="outline thick-outline" />
+  </g>
+
+  <!-- Coral Structures -->
+  <g id="coral-structures">
+    <!-- Large Brain Coral -->
+    <path d="M700 820 C750 780 780 700 760 650 S700 600 650 620 S600 680 620 730 S670 780 700 820 Z" class="outline thick-outline" />
+    <path d="M690 770 C710 750 720 710 700 690 S670 680 660 700 S670 750 690 770 Z" class="outline thin-outline" />
+    <path d="M680 730 C690 720 695 700 685 690 S665 680 655 690 S670 720 680 730 Z" class="outline thin-outline" />
+
+    <!-- Branching Coral Left -->
+    <path d="M120 780 C100 700 150 600 200 650 C230 680 200 750 120 780 Z" class="outline thick-outline" />
+    <path d="M180 670 C190 620 220 580 250 600 S270 650 240 680 C210 700 180 670 Z" class="outline thick-outline" />
+    <path d="M150 700 C160 680 170 640 160 620 S140 610 130 630 S140 680 150 700 Z" class="outline medium-outline" />
+    <path d="M220 640 C230 620 240 590 230 570 S210 560 200 580 S210 620 220 640 Z" class="outline medium-outline" />
+
+    <!-- Branching Coral Right -->
+    <path d="M600 850 C620 750 550 650 500 700 C470 730 500 800 600 850 Z" class="outline thick-outline" />
+    <path d="M520 720 C510 670 480 630 450 650 S430 700 460 730 C490 750 520 720 Z" class="outline thick-outline" />
+    <path d="M550 780 C560 760 570 720 560 700 S540 690 530 710 S540 760 550 780 Z" class="outline medium-outline" />
+    <path d="M480 680 C490 660 500 630 490 610 S470 600 460 620 S470 660 480 680 Z" class="outline medium-outline" />
+
+  </g>
+
+  <!-- Fish -->
+  <g id="fish-group">
+    <!-- Clownfish 1 -->
+    <g transform="translate(100, 450) scale(1.0)">
+      <path d="M50 0 C80 -20 120 10 100 40 C110 50 100 60 80 50 C120 80 80 100 50 80 C20 100 -10 70 0 40 C-10 10 20 -20 50 0 Z" class="outline thick-outline" />
+      <path d="M105 40 C120 30 120 50 105 40 Z" class="outline medium-outline" /> <!-- Tail -->
+      <path d="M40 90 C50 100 50 110 40 90 Z" class="outline medium-outline" /> <!-- Bottom Fin -->
+      <path d="M55 -10 C65 -20 75 -10 55 -10 Z" class="outline medium-outline" /> <!-- Top Fin -->
+      <circle cx="20" cy="30" r="8" class="outline thin-outline" /> <!-- Eye -->
+      <path d="M20 40 Q25 45 30 40" class="outline thin-outline no-fill" /> <!-- Smile -->
+      <path d="M40 10 Q45 15 50 10" class="outline thin-outline no-fill" /> <!-- Cheek detail -->
+      <path d="M40 20 L40 60" class="outline thin-outline" /> <!-- Stripe 1 -->
+      <path d="M70 10 L70 70" class="outline thin-outline" /> <!-- Stripe 2 -->
+    </g>
+
+    <!-- Angelfish -->
+    <g transform="translate(500, 300) scale(1.0)">
+      <path d="M60 0 Q100 50 60 100 Q20 50 60 0 Z" class="outline thick-outline" />
+      <path d="M60 0 L40 -30 L80 -30 L60 0 Z" class="outline medium-outline" /> <!-- Top Fin -->
+      <path d="M60 100 L40 130 L80 130 L60 100 Z" class="outline medium-outline" /> <!-- Bottom Fin -->
+      <path d="M100 50 Q120 40 120 60 Q100 50 Z" class="outline medium-outline" /> <!-- Tail Fin -->
+      <circle cx="40" cy="50" r="8" class="outline thin-outline" /> <!-- Eye -->
+      <path d="M40 60 Q45 65 50 60" class="outline thin-outline no-fill" /> <!-- Smile -->
+      <path d="M50 0 L50 100" class="outline thin-outline" /> <!-- Stripe 1 -->
+      <path d="M70 0 L70 100" class="outline thin-outline" /> <!-- Stripe 2 -->
+    </g>
+
+    <!-- Butterflyfish -->
+    <g transform="translate(300, 600) scale(0.9)">
+      <ellipse cx="50" cy="50" rx="40" ry="30" class="outline thick-outline" />
+      <path d="M90 50 Q110 40 110 60 Q90 50 Z" class="outline medium-outline" /> <!-- Tail -->
+      <path d="M50 20 C60 10 70 20 50 20 Z" class="outline medium-outline" /> <!-- Top Fin -->
+      <path d="M50 80 C60 90 70 80 50 80 Z" class="outline medium-outline" /> <!-- Bottom Fin -->
+      <circle cx="30" cy="45" r="8" class="outline thin-outline" /> <!-- Eye -->
+      <path d="M30 55 Q35 60 40 55" class="outline thin-outline no-fill" /> <!-- Smile -->
+      <path d="M20 20 L20 80" class="outline thin-outline" /> <!-- Stripe 1 -->
+      <path d="M40 20 L40 80" class="outline thin-outline" /> <!-- Stripe 2 -->
+    </g>
+
+    <!-- Clownfish 2 -->
+    <g transform="translate(600, 100) scale(0.8)">
+      <path d="M50 0 C80 -20 120 10 100 40 C110 50 100 60 80 50 C120 80 80 100 50 80 C20 100 -10 70 0 40 C-10 10 20 -20 50 0 Z" class="outline thick-outline" />
+      <path d="M105 40 C120 30 120 50 105 40 Z" class="outline medium-outline" /> <!-- Tail -->
+      <path d="M40 90 C50 100 50 110 40 90 Z" class="outline medium-outline" /> <!-- Bottom Fin -->
+      <path d="M55 -10 C65 -20 75 -10 55 -10 Z" class="outline medium-outline" /> <!-- Top Fin -->
+      <circle cx="20" cy="30" r="8" class="outline thin-outline" /> <!-- Eye -->
+      <path d="M20 40 Q25 45 30 40" class="outline thin-outline no-fill" /> <!-- Smile -->
+      <path d="M40 20 L40 60" class="outline thin-outline" /> <!-- Stripe 1 -->
+      <path d="M70 10 L70 70" class="outline thin-outline" /> <!-- Stripe 2 -->
+    </g>
+  </g>
+
+  <!-- Friendly Turtle -->
+  <g id="turtle-group" transform="translate(200, 750) scale(1.2)">
+    <!-- Shell -->
+    <ellipse cx="100" cy="50" rx="60" ry="30" class="outline thick-outline" />
+    <!-- Head -->
+    <path d="M140 30 Q160 10 180 30 Q170 50 140 60 Z" class="outline thick-outline" />
+    <!-- Eye -->
+    <circle cx="160" cy="35" r="7" class="outline thin-outline" />
+    <!-- Smile -->
+    <path d="M155 45 Q160 50 165 45" class="outline thin-outline no-fill" />
+    <!-- Front Flippers -->
+    <path d="M60 40 Q40 20 20 40 Q40 60 60 40 Z" class="outline medium-outline" />
+    <path d="M140 70 Q120 90 100 70 Q120 50 140 70 Z" class="outline medium-outline" />
+    <!-- Back Flippers -->
+    <path d="M40 70 Q20 90 0 70 Q20 50 40 70 Z" class="outline medium-outline" />
+    <path d="M160 30 Q180 10 200 30 Q180 50 160 30 Z" class="outline medium-outline" />
+    <!-- Tail -->
+    <path d="M40 80 Q20 90 20 70 Q40 70 40 80 Z" class="outline thin-outline" />
+  </g>
+
+  <!-- Starfishes -->
+  <g id="starfish-group">
+    <!-- Starfish 1 -->
+    <path d="M70 900 L80 930 L50 930 L60 960 L30 960 L40 930 L10 930 L20 900 L0 870 L30 870 L40 840 L50 870 L80 870 L70 900 Z" transform="scale(0.8) translate(800, 0)" class="outline medium-outline" />
+    <!-- Starfish 2 -->
+    <path d="M70 900 L80 930 L50 930 L60 960 L30 960 L40 930 L10 930 L20 900 L0 870 L30 870 L40 840 L50 870 L80 870 L70 900 Z" transform="scale(0.7) translate(300, 100)" class="outline medium-outline" />
+    <!-- Starfish 3 -->
+    <path d="M70 900 L80 930 L50 930 L60 960 L30 960 L40 930 L10 930 L20 900 L0 870 L30 870 L40 840 L50 870 L80 870 L70 900 Z" transform="scale(0.6) translate(600, -200)" class="outline medium-outline" />
+  </g>
+
+  <!-- Bubbles -->
+  <g id="bubbles-group">
+    <circle cx="200" cy="150" r="20" class="outline thin-outline no-fill" />
+    <circle cx="180" cy="100" r="15" class="outline thin-outline no-fill" />
+    <circle cx="210" cy="80" r="10" class="outline thin-outline no-fill" />
+
+    <circle cx="450" cy="200" r="25" class="outline thin-outline no-fill" />
+    <circle cx="470" cy="160" r="18" class="outline thin-outline no-fill" />
+    <circle cx="440" cy="130" r="12" class="outline thin-outline no-fill" />
+
+    <circle cx="150" cy="600" r="15" class="outline thin-outline no-fill" />
+    <circle cx="130" cy="570" r="10" class="outline thin-outline no-fill" />
+
+    <circle cx="700" cy="400" r="22" class="outline thin-outline no-fill" />
+    <circle cx="680" cy="360" r="16" class="outline thin-outline no-fill" />
+    <circle cx="710" cy="330" r="10" class="outline thin-outline no-fill" />
+
+    <circle cx="300" cy="250" r="18" class="outline thin-outline no-fill" />
+    <circle cx="320" cy="210" r="12" class="outline thin-outline no-fill" />
+
+    <circle cx="50" cy="50" r="12" class="outline thin-outline no-fill" />
+    <circle cx="750" cy="500" r="15" class="outline thin-outline no-fill" />
+  </g>
+
+</svg>
