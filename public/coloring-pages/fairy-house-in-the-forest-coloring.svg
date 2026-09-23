@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="black" stroke-width="4" fill="white">
+
+    <!-- Group for Forest Background Elements -->
+    <g id="forest_background">
+      <!-- Background Tree Left -->
+      <rect x="50" y="600" width="70" height="200" rx="20" ry="20" fill="white"/>
+      <path d="M20 600 C-10 500 150 500 120 600 C150 580 140 450 80 400 C20 350 0 450 20 600 Z" fill="white"/>
+
+      <!-- Background Tree Right -->
+      <rect x="680" y="650" width="70" height="150" rx="20" ry="20" fill="white"/>
+      <path d="M650 650 C620 550 780 550 750 650 C780 630 770 500 710 450 C650 400 630 500 650 650 Z" fill="white"/>
+
+      <!-- General ground line/bush area -->
+      <path d="M0 800 C100 780 300 820 400 800 C500 780 700 820 800 800 L800 1000 L0 1000 Z" fill="white"/>
+      <path d="M0 900 C150 880 350 920 500 900 C650 880 800 920 800 900 L800 1000 L0 1000 Z" fill="white"/>
+    </g>
+
+    <!-- Group for the Mushroom House -->
+    <g id="mushroom_house" transform="translate(200 250)">
+      <!-- Mushroom Cap -->
+      <path d="M50 200 C50 -50 350 -50 350 200 C350 220 330 250 300 250 C250 250 150 250 100 250 C70 250 50 220 50 200 Z" fill="white"/>
+      <!-- Spots on Mushroom Cap -->
+      <circle cx="100" cy="50" r="30" fill="white"/>
+      <circle cx="200" cy="30" r="40" fill="white"/>
+      <circle cx="300" cy="100" r="25" fill="white"/>
+      <circle cx="150" cy="150" r="20" fill="white"/>
+
+      <!-- House Base/Stem -->
+      <rect x="100" y="250" width="200" height="300" rx="50" ry="50" fill="white"/>
+
+      <!-- Door -->
+      <rect x="160" y="400" width="80" height="150" rx="40" ry="40" fill="white"/>
+      <circle cx="175" cy="470" r="7" fill="white" stroke="black" stroke-width="2"/>
+
+      <!-- Window 1 -->
+      <circle cx="150" cy="320" r="30" fill="white"/>
+      <line x1="120" y1="320" x2="180" y2="320" stroke="black" stroke-width="3"/>
+      <line x1="150" y1="290" x2="150" y2="350" stroke="black" stroke-width="3"/>
+
+      <!-- Window 2 -->
+      <circle cx="250" cy="320" r="30" fill="white"/>
+      <line x1="220" y1="320" x2="280" y2="320" stroke="black" stroke-width="3"/>
+      <line x1="250" y1="290" x2="250" y2="350" stroke="black" stroke-width="3"/>
+
+      <!-- Small chimney -->
+      <rect x="300" y="100" width="40" height="70" rx="10" ry="10" fill="white"/>
+      <path d="M300 100 C290 80 350 80 340 100 L340 100" fill="none" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Group for the Fairy -->
+    <g id="fairy" transform="translate(100 100)">
+      <!-- Body -->
+      <ellipse cx="580" cy="300" rx="30" ry="50" fill="white"/>
+      <!-- Head -->
+      <circle cx="580" cy="240" r="35" fill="white"/>
+      <!-- Eyes -->
+      <circle cx="565" cy="235" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <circle cx="595" cy="235" r="5" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Smile -->
+      <path d="M565 255 Q580 265 595 255" fill="none" stroke="black" stroke-width="3"/>
+      <!-- Hair -->
+      <path d="M550 220 C540 210 560 200 580 205 Q600 200 610 210 C610 220 590 230 580 230 C570 230 550 220 550 220 Z" fill="white"/>
+
+      <!-- Arms -->
+      <path d="M555 290 Q530 280 520 300" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M605 290 Q630 280 640 300" fill="none" stroke="black" stroke-width="3"/>
+      <!-- Legs -->
+      <path d="M570 345 Q560 360 565 370" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M590 345 Q600 360 595 370" fill="none" stroke="black" stroke-width="3"/>
+
+      <!-- Wings -->
+      <path d="M580 260 C540 200 500 250 540 300 C540 270 560 250 580 260 Z" fill="white"/> <!-- Left Top Wing -->
+      <path d="M580 290 C540 330 510 370 550 370 C560 350 570 330 580 290 Z" fill="white"/> <!-- Left Bottom Wing -->
+      <path d="M580 260 C620 200 660 250 620 300 C620 270 600 250 580 260 Z" fill="white"/> <!-- Right Top Wing -->
+      <path d="M580 290 C620 330 650 370 610 370 C600 350 590 330 580 290 Z" fill="white"/> <!-- Right Bottom Wing -->
+    </g>
+
+    <!-- Group for Foreground Forest Elements -->
+    <g id="forest_foreground">
+      <!-- Simple flower 1 -->
+      <g transform="translate(150 780)">
+        <circle cx="0" cy="0" r="15" fill="white"/>
+        <circle cx="0" cy="-20" r="10" fill="white"/>
+        <circle cx="15" cy="-15" r="10" fill="white"/>
+        <circle cx="20" cy="0" r="10" fill="white"/>
+        <circle cx="15" cy="15" r="10" fill="white"/>
+        <circle cx="0" cy="20" r="10" fill="white"/>
+        <circle cx="-15" cy="15" r="10" fill="white"/>
+        <circle cx="-20" cy="0" r="10" fill="white"/>
+        <circle cx="-15" cy="-15" r="10" fill="white"/>
+      </g>
+      <!-- Simple flower 2 -->
+      <g transform="translate(680 820)">
+        <circle cx="0" cy="0" r="12" fill="white"/>
+        <path d="M0 -12 Q-10 -30 0 -35 Q10 -30 0 -12 Z" fill="white"/>
+        <path d="M12 0 Q30 -10 35 0 Q30 10 12 0 Z" fill="white"/>
+        <path d="M0 12 Q-10 30 0 35 Q10 30 0 12 Z" fill="white"/>
+        <path d="M-12 0 Q-30 -10 -35 0 Q-30 10 -12 0 Z" fill="white"/>
+      </g>
+      <!-- Simple flower 3 -->
+      <g transform="translate(300 900)">
+        <circle cx="0" cy="0" r="18" fill="white"/>
+        <path d="M-15 -15 Q-30 -30 -15 -35 Q0 -40 15 -35 Q30 -30 15 -15 Z" fill="white"/>
+        <path d="M15 -15 Q30 0 15 15 Q0 30 -15 15 Q-30 0 -15 -15 Z" fill="white"/>
+      </g>
+    </g>
+
+  </g>
+</svg>
