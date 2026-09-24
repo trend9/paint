@@ -1,0 +1,228 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg"
+     stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Stars in background -->
+  <g id="stars" stroke-width="3">
+    <circle cx="100" cy="50" r="5" />
+    <circle cx="700" cy="120" r="4" />
+    <circle cx="50" cy="200" r="6" />
+    <circle cx="300" cy="70" r="3" />
+    <circle cx="650" cy="800" r="5" />
+    <circle cx="150" cy="900" r="4" />
+    <circle cx="400" cy="950" r="6" />
+    <circle cx="750" cy="500" r="3" />
+    <circle cx="250" cy="400" r="5" />
+    <circle cx="550" cy="250" r="4" />
+    <circle cx="120" cy="650" r="6" />
+    <circle cx="680" cy="350" r="3" />
+    <circle cx="450" cy="150" r="5" />
+    <circle cx="350" cy="850" r="4" />
+    <circle cx="70" cy="750" r="6" />
+    <circle cx="500" cy="600" r="3" />
+    <circle cx="200" cy="300" r="5" />
+    <circle cx="600" cy="90" r="4" />
+  </g>
+
+  <!-- Simplified Cartoon Rocket -->
+  <g id="rocket" stroke-width="5">
+    <!-- Main body -->
+    <rect x="320" y="470" width="160" height="280" rx="40" ry="40" />
+    <!-- Top cap / nose cone -->
+    <rect x="320" y="420" width="160" height="80" rx="40" ry="40" />
+    <!-- Fins -->
+    <path d="M320 650 L280 700 L320 750 Z" />
+    <path d="M480 650 L520 700 L480 750 Z" />
+    <!-- Window -->
+    <circle cx="400" cy="550" r="30" stroke-width="4"/>
+    <!-- Thruster opening -->
+    <path d="M350 750 C340 780 400 800 450 750 Z" />
+  </g>
+
+  <!-- Planets -->
+  <g id="planets">
+    <!-- Earth (top left) -->
+    <g id="earth" transform="translate(150, 200)" stroke-width="5">
+      <circle cx="0" cy="0" r="70" />
+      <path d="M-40 -20 C-50 -40 -30 -60 0 -50 C30 -60 50 -40 40 -20 C30 0 10 20 -10 10 C-30 20 -40 0 -40 -20 Z" stroke-width="3" />
+      <path d="M10 30 C20 40 40 30 50 50 C40 60 20 50 10 30 Z" stroke-width="3" />
+    </g>
+
+    <!-- Saturn (top right) -->
+    <g id="saturn" transform="translate(650, 250)" stroke-width="5">
+      <circle cx="0" cy="0" r="80" />
+      <ellipse cx="0" cy="0" rx="120" ry="25" transform="rotate(-15)" fill="none" />
+      <ellipse cx="0" cy="0" rx="100" ry="20" transform="rotate(-15)" fill="none" stroke-width="3" />
+    </g>
+
+    <!-- Mars (bottom left) -->
+    <g id="mars" transform="translate(180, 800)" stroke-width="5">
+      <circle cx="0" cy="0" r="60" />
+      <circle cx="-20" cy="-20" r="15" stroke-width="3" />
+      <circle cx="20" cy="10" r="10" stroke-width="3" />
+    </g>
+  </g>
+
+  <!-- Cute Happy Astronaut Animals -->
+
+  <!-- Dog Astronaut -->
+  <g id="dog-astronaut" transform="translate(600, 850)" stroke-width="4">
+    <!-- Suit body -->
+    <rect x="-40" y="-50" width="80" height="100" rx="30" ry="30" />
+    <!-- Arms -->
+    <rect x="-70" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(20 -55 -0)" />
+    <rect x="40" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(-20 55 -0)" />
+    <!-- Legs -->
+    <rect x="-30" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(-10 -17.5 65)"/>
+    <rect x="5" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(10 17.5 65)"/>
+
+    <g>
+      <!-- Head -->
+      <circle cx="0" cy="-85" r="25" stroke-width="3" />
+      <!-- Ears (visible behind helmet) -->
+      <path d="M-20 -105 Q-25 -95 -15 -85 Z" stroke-width="3"/>
+      <path d="M20 -105 Q25 -95 15 -85 Z" stroke-width="3"/>
+      <!-- Helmet bubble over head and ears -->
+      <circle cx="0" cy="-80" r="50" stroke-width="5" />
+      <!-- Visor -->
+      <ellipse cx="0" cy="-85" rx="35" ry="30" stroke-width="3" />
+      <!-- Face features (inside helmet/visor) -->
+      <g stroke-width="3">
+        <circle cx="-10" cy="-90" r="3" /> <!-- Eye left -->
+        <circle cx="10" cy="-90" r="3" /> <!-- Eye right -->
+        <path d="M-10 -78 Q0 -73 10 -78" fill="none" /> <!-- Smile -->
+        <path d="M-5 -75 L5 -75 L0 -70 Z" /> <!-- Nose -->
+      </g>
+    </g>
+  </g>
+
+  <!-- Cat Astronaut -->
+  <g id="cat-astronaut" transform="translate(450, 100)" stroke-width="4">
+    <!-- Suit body -->
+    <rect x="-40" y="-50" width="80" height="100" rx="30" ry="30" />
+    <!-- Arms -->
+    <rect x="-70" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(20 -55 -0)" />
+    <rect x="40" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(-20 55 -0)" />
+    <!-- Legs -->
+    <rect x="-30" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(-10 -17.5 65)"/>
+    <rect x="5" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(10 17.5 65)"/>
+
+    <g>
+      <!-- Head -->
+      <circle cx="0" cy="-85" r="25" stroke-width="3" />
+      <!-- Ears (visible behind helmet) -->
+      <path d="M-20 -105 L-5 -105 L-10 -85 Z" stroke-width="3"/>
+      <path d="M20 -105 L5 -105 L10 -85 Z" stroke-width="3"/>
+      <!-- Helmet bubble over head and ears -->
+      <circle cx="0" cy="-80" r="50" stroke-width="5" />
+      <!-- Visor -->
+      <ellipse cx="0" cy="-85" rx="35" ry="30" stroke-width="3" />
+      <!-- Face features (inside helmet/visor) -->
+      <g stroke-width="3">
+        <circle cx="-10" cy="-90" r="3" /> <!-- Eye left -->
+        <circle cx="10" cy="-90" r="3" /> <!-- Eye right -->
+        <path d="M-10 -78 Q0 -73 10 -78" fill="none" /> <!-- Smile -->
+        <path d="M-5 -75 L5 -75 L0 -70 Z" /> <!-- Nose -->
+        <path d="M-15 -80 H-30" /> <!-- Whisker 1 -->
+        <path d="M-15 -75 H-30" /> <!-- Whisker 2 -->
+        <path d="M-15 -70 H-30" /> <!-- Whisker 3 -->
+        <path d="M15 -80 H30" /> <!-- Whisker 4 -->
+        <path d="M15 -75 H30" /> <!-- Whisker 5 -->
+        <path d="M15 -70 H30" /> <!-- Whisker 6 -->
+      </g>
+    </g>
+  </g>
+
+  <!-- Bear Astronaut -->
+  <g id="bear-astronaut" transform="translate(200, 600)" stroke-width="4">
+    <!-- Suit body -->
+    <rect x="-40" y="-50" width="80" height="100" rx="30" ry="30" />
+    <!-- Arms -->
+    <rect x="-70" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(20 -55 -0)" />
+    <rect x="40" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(-20 55 -0)" />
+    <!-- Legs -->
+    <rect x="-30" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(-10 -17.5 65)"/>
+    <rect x="5" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(10 17.5 65)"/>
+
+    <g>
+      <!-- Head -->
+      <circle cx="0" cy="-85" r="30" stroke-width="3" /> <!-- Slightly larger head -->
+      <!-- Ears (visible behind helmet) -->
+      <circle cx="-18" cy="-105" r="10" stroke-width="3"/>
+      <circle cx="18" cy="-105" r="10" stroke-width="3"/>
+      <!-- Helmet bubble over head and ears -->
+      <circle cx="0" cy="-80" r="50" stroke-width="5" />
+      <!-- Visor -->
+      <ellipse cx="0" cy="-85" rx="35" ry="30" stroke-width="3" />
+      <!-- Face features (inside helmet/visor) -->
+      <g stroke-width="3">
+        <circle cx="-10" cy="-90" r="3" />
+        <circle cx="10" cy="-90" r="3" />
+        <path d="M-10 -78 Q0 -73 10 -78" fill="none" />
+        <path d="M-5 -75 L5 -75 L0 -70 Z" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Monkey Astronaut -->
+  <g id="monkey-astronaut" transform="translate(680, 600)" stroke-width="4">
+    <!-- Suit body -->
+    <rect x="-40" y="-50" width="80" height="100" rx="30" ry="30" />
+    <!-- Arms -->
+    <rect x="-70" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(20 -55 -0)" />
+    <rect x="40" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(-20 55 -0)" />
+    <!-- Legs -->
+    <rect x="-30" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(-10 -17.5 65)"/>
+    <rect x="5" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(10 17.5 65)"/>
+
+    <g>
+      <!-- Head -->
+      <circle cx="0" cy="-85" r="25" stroke-width="3" />
+      <!-- Ears (visible behind helmet) -->
+      <circle cx="-35" cy="-85" r="15" stroke-width="3"/>
+      <circle cx="35" cy="-85" r="15" stroke-width="3"/>
+      <!-- Helmet bubble over head and ears -->
+      <circle cx="0" cy="-80" r="50" stroke-width="5" />
+      <!-- Visor -->
+      <ellipse cx="0" cy="-85" rx="35" ry="30" stroke-width="3" />
+      <!-- Face features (inside helmet/visor) -->
+      <g stroke-width="3">
+        <circle cx="-10" cy="-90" r="3" />
+        <circle cx="10" cy="-90" r="3" />
+        <path d="M-10 -78 Q0 -73 10 -78" fill="none" />
+        <ellipse cx="0" cy="-73" rx="10" ry="7" /> <!-- Monkey Mouth Area -->
+      </g>
+    </g>
+  </g>
+
+  <!-- Rabbit Astronaut -->
+  <g id="rabbit-astronaut" transform="translate(100, 100)" stroke-width="4">
+    <!-- Suit body -->
+    <rect x="-40" y="-50" width="80" height="100" rx="30" ry="30" />
+    <!-- Arms -->
+    <rect x="-70" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(20 -55 -0)" />
+    <rect x="40" y="-30" width="30" height="60" rx="15" ry="15" transform="rotate(-20 55 -0)" />
+    <!-- Legs -->
+    <rect x="-30" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(-10 -17.5 65)"/>
+    <rect x="5" y="40" width="25" height="50" rx="12" ry="12" transform="rotate(10 17.5 65)"/>
+
+    <g>
+      <!-- Head -->
+      <circle cx="0" cy="-85" r="25" stroke-width="3" />
+      <!-- Ears (visible behind helmet) -->
+      <ellipse cx="-15" cy="-115" rx="10" ry="20" stroke-width="3"/>
+      <ellipse cx="15" cy="-115" rx="10" ry="20" stroke-width="3"/>
+      <!-- Helmet bubble over head and ears -->
+      <circle cx="0" cy="-80" r="50" stroke-width="5" />
+      <!-- Visor -->
+      <ellipse cx="0" cy="-85" rx="35" ry="30" stroke-width="3" />
+      <!-- Face features (inside helmet/visor) -->
+      <g stroke-width="3">
+        <circle cx="-10" cy="-90" r="3" />
+        <circle cx="10" cy="-90" r="3" />
+        <path d="M-10 -78 Q0 -73 10 -78" fill="none" />
+        <path d="M-5 -75 L5 -75 L0 -70 Z" />
+      </g>
+    </g>
+  </g>
+
+</svg>
