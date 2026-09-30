@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <g id="cloud" fill="white" stroke="black" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 650 C100 550, 200 500, 300 500 C400 500, 500 480, 550 550 C600 500, 700 550, 700 650 C700 750, 650 800, 550 800 C450 850, 350 850, 250 800 C150 780, 100 700, 100 650 Z"/>
+  </g>
+
+  <g id="unicorn" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Body (sitting comfortably) -->
+    <path d="M280 650 C200 650, 180 550, 250 480 C320 410, 450 410, 520 480 C580 550, 560 650, 480 650 L280 650 Z"/>
+
+    <!-- Neck -->
+    <path d="M450 480 C470 450, 480 430, 490 400" fill="none"/>
+
+    <!-- Head -->
+    <path d="M490 400 C520 370, 560 370, 590 400 C610 420, 610 450, 590 470 C570 490, 520 490, 490 470 L490 400 Z"/>
+
+    <!-- Snout/Mouth (gentle smile) -->
+    <path d="M540 450 Q550 455, 540 460" fill="none" stroke-width="3"/>
+
+    <!-- Eyes -->
+    <circle cx="535" cy="420" r="5"/>
+    <circle cx="550" cy="420" r="5"/>
+
+    <!-- Ears -->
+    <path d="M515 380 L525 350 L535 380 Z"/>
+    <path d="M545 380 L555 350 L565 380 Z"/>
+
+    <!-- Horn -->
+    <path d="M540 345 L535 310 L545 300 L550 335 Z" stroke-width="4"/>
+    <line x1="538" y1="325" x2="547" y2="330" stroke-width="2"/>
+    <line x1="536" y1="315" x2="544" y2="318" stroke-width="2"/>
+
+    <!-- Mane (simple, swirling) -->
+    <path d="M480 400 C470 380, 450 370, 440 390 C430 410, 440 430, 450 440 Z"/>
+    <path d="M460 410 C450 390, 430 380, 420 400 C410 420, 420 440, 430 450 Z"/>
+    <path d="M440 420 C430 400, 410 390, 400 410 C390 430, 400 450, 410 460 Z"/>
+
+    <!-- Tail (simple, swirling) -->
+    <g id="tail">
+      <path d="M260 550 C240 530, 220 540, 210 560 C200 580, 210 600, 220 610 Z"/>
+      <path d="M240 560 C220 540, 200 550, 190 570 C180 590, 190 610, 200 620 Z"/>
+      <path d="M220 570 C200 550, 180 560, 170 580 C160 600, 170 620, 180 630 Z"/>
+    </g>
+
+    <!-- Front Left Leg/Hoof (holding cupcake) -->
+    <path d="M445 580 C440 590, 440 605, 450 610 C460 615, 470 600, 470 590 C465 570, 450 570, 445 580 Z"/>
+    
+    <!-- Front Right Leg/Hoof (holding cookie) -->
+    <path d="M380 580 C375 590, 375 605, 385 610 C395 615, 405 600, 405 590 C400 570, 385 570, 380 580 Z"/>
+    
+  </g>
+
+  <g id="cupcake" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Cup -->
+    <path d="M440 600 L455 600 L455 630 Q447 640, 440 630 Z"/>
+    <!-- Frosting -->
+    <path d="M440 600 Q447 585, 455 600 Q450 580, 445 585 Q440 570, 440 600 Z"/>
+  </g>
+
+  <g id="cookie" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Star cookie -->
+    <polygon points="375,600 380,590 385,600 395,605 385,610 380,620 375,610 365,605 375,600"/>
+  </g>
+
+  <g id="juice-box" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Box -->
+    <rect x="580" y="600" width="70" height="100" rx="10" ry="10"/>
+    <!-- Straw -->
+    <rect x="610" y="560" width="8" height="50" rx="2" ry="2"/>
+    <circle cx="614" cy="558" r="4"/> <!-- Straw bend tip -->
+    <!-- Sparkle (simple 5-point star) -->
+    <polygon points="610,585 615,570 620,585 635,590 620,595 615,610 610,595 595,590 610,585" fill="white" stroke="black" stroke-width="3"/>
+  </g>
+</svg>
