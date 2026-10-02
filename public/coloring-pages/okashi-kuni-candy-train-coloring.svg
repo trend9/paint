@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Pure white background -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" stroke="none"/>
+
+  <!-- Background Elements -->
+  <g id="background_elements">
+    <!-- Chocolate Bar Mountains -->
+    <g id="mountains">
+      <rect x="0" y="550" width="450" height="250" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 0 580 V 770 M 75 580 V 770 M 150 580 V 770 M 225 580 V 770 M 300 580 V 770 M 375 580 V 770" fill="none" stroke="black" stroke-width="4"/>
+      
+      <rect x="350" y="500" width="450" height="300" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 350 530 V 770 M 425 530 V 770 M 500 530 V 770 M 575 530 V 770 M 650 530 V 770 M 725 530 V 770" fill="none" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Marshmallow Leaf Trees -->
+    <g id="trees">
+      <!-- Tree 1 -->
+      <rect x="50" y="650" width="40" height="150" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="70" cy="620" rx="60" ry="40" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="50" cy="580" rx="50" ry="35" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="90" cy="590" rx="55" ry="38" fill="white" stroke="black" stroke-width="4"/>
+      
+      <!-- Tree 2 -->
+      <rect x="680" y="680" width="40" height="120" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="700" cy="650" rx="60" ry="40" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="680" cy="610" rx="50" ry="35" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="720" cy="620" rx="55" ry="38" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Cotton Candy Clouds -->
+    <g id="clouds">
+      <path d="M 100 100 Q 150 50 200 100 T 300 100 Q 320 150 300 200 T 200 200 Q 150 250 100 200 T 100 100 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 500 80 Q 550 30 600 80 T 700 80 Q 720 130 700 180 T 600 180 Q 550 230 500 180 T 500 80 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 300 30 Q 350 -20 400 30 T 500 30 Q 520 80 500 130 T 400 130 Q 350 180 300 130 T 300 30 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- Licorice Track -->
+  <g id="track">
+    <line x1="0" y1="800" x2="800" y2="800" stroke="black" stroke-width="5"/>
+    <line x1="0" y1="820" x2="800" y2="820" stroke="black" stroke-width="5"/>
+    <!-- Ties -->
+    <line x1="50" y1="800" x2="50" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="150" y1="800" x2="150" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="250" y1="800" x2="250" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="350" y1="800" x2="350" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="450" y1="800" x2="450" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="550" y1="800" x2="550" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="650" y1="800" x2="650" y2="820" stroke="black" stroke-width="5"/>
+    <line x1="750" y1="800" x2="750" y2="820" stroke="black" stroke-width="5"/>
+  </g>
+
+  <!-- Candy Train -->
+  <g id="candy_train">
+    <!-- Locomotive -->
+    <g id="locomotive">
+      <!-- Main body/base -->
+      <rect x="100" y="660" width="200" height="70" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Cab -->
+      <rect x="250" y="590" width="80" height="70" rx="15" ry="15" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Boiler (Swirled Lollipop) -->
+      <circle cx="170" cy="610" r="70" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Simplified swirl path -->
+      <path d="M 170 610 Q 170 560 200 560 Q 220 590 200 610 Q 180 630 150 630 Q 130 600 150 580 Q 170 560 170 570" fill="none" stroke="black" stroke-width="4"/>
+
+      <!-- Smokestack (Striped Candy) -->
+      <rect x="180" y="490" width="40" height="70" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="200" cy="490" rx="30" ry="15" fill="white" stroke="black" stroke-width="4"/>
+      <line x1="180" y1="510" x2="220" y2="510" stroke="black" stroke-width="4"/>
+      <line x1="180" y1="530" x2="220" y2="530" stroke="black" stroke-width="4"/>
+      <line x1="180" y1="550" x2="220" y2="550" stroke="black" stroke-width="4"/>
+
+      <!-- Steam puff -->
+      <path d="M 200 460 Q 220 410 250 460 T 300 460 Q 320 510 300 560 T 250 560 Q 220 610 200 560 T 150 560 Q 130 510 150 460 T 200 460 Z" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Eyes on the lollipop boiler -->
+      <g id="loco_eyes">
+        <circle cx="150" cy="590" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <circle cx="190" cy="590" r="15" fill="white" stroke="black" stroke-width="3"/>
+        <circle cx="150" cy="590" r="5" fill="black" stroke="none"/>
+        <circle cx="190" cy="590" r="5" fill="black" stroke="none"/>
+      </g>
+      <!-- Mouth -->
+      <path d="M 155 625 Q 170 640 185 625" fill="none" stroke="black" stroke-width="3"/>
+
+      <!-- Wheels (Striped candies) -->
+      <g id="loco_wheels">
+        <circle cx="150" cy="760" r="40" fill="white" stroke="black" stroke-width="4"/>
+        <line x1="110" y1="760" x2="190" y2="760" stroke="black" stroke-width="4"/>
+        <line x1="150" y1="720" x2="150" y2="800" stroke="black" stroke-width="4"/>
+        <line x1="125" y1="735" x2="175" y2="785" stroke="black" stroke-width="4"/>
+        <line x1="125" y1="785" x2="175" y2="735" stroke="black" stroke-width="4"/>
+
+        <circle cx="270" cy="760" r="40" fill="white" stroke="black" stroke-width="4"/>
+        <line x1="230" y1="760" x2="310" y2="760" stroke="black" stroke-width="4"/>
+        <line x1="270" y1="720" x2="270" y2="800" stroke="black" stroke-width="4"/>
+        <line x1="245" y1="735" x2="295" y2="785" stroke="black" stroke-width="4"/>
+        <line x1="245" y1="785" x2="295" y2="735" stroke="black" stroke-width="4"/>
+      </g>
+
+      <!-- Connection -->
+      <rect x="300" y="710" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Wagon 1 (Cookies) -->
+    <g id="wagon1">
+      <rect x="350" y="650" width="150" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="350" y="620" width="150" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Wheels -->
+      <circle cx="390" cy="770" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="460" cy="770" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Connection -->
+      <rect x="320" y="670" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="500" y="670" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      
+      <!-- Cookies -->
+      <circle cx="425" cy="660" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="410" cy="660" r="5" fill="black" stroke="none"/>
+      <circle cx="440" cy="650" r="5" fill="black" stroke="none"/>
+      <circle cx="430" cy="675" r="5" fill="black" stroke="none"/>
+
+      <circle cx="470" cy="640" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="460" cy="635" r="4" fill="black" stroke="none"/>
+      <circle cx="480" cy="645" r="4" fill="black" stroke="none"/>
+      
+      <circle cx="380" cy="630" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="370" cy="625" r="4" fill="black" stroke="none"/>
+      <circle cx="390" cy="635" r="4" fill="black" stroke="none"/>
+    </g>
+
+    <!-- Wagon 2 (Cupcakes) -->
+    <g id="wagon2">
+      <rect x="550" y="650" width="150" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="550" y="620" width="150" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Wheels -->
+      <circle cx="590" cy="770" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="660" cy="770" r="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Connection -->
+      <rect x="520" y="670" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Cupcakes -->
+      <!-- Cupcake 1 -->
+      <path d="M 580 670 L 590 630 A 20 20 0 0 1 610 630 L 620 670 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 590 630 A 20 20 0 0 1 610 630" fill="none" stroke="black" stroke-width="4"/>
+      <ellipse cx="600" cy="625" rx="20" ry="15" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="600" cy="615" r="5" fill="white" stroke="black" stroke-width="3"/>
+
+      <!-- Cupcake 2 -->
+      <path d="M 640 670 L 650 630 A 20 20 0 0 1 670 630 L 680 670 Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M 650 630 A 20 20 0 0 1 670 630" fill="none" stroke="black" stroke-width="4"/>
+      <ellipse cx="660" cy="625" rx="20" ry="15" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="660" cy="615" r="5" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
