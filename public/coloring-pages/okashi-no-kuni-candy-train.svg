@@ -1,183 +1,172 @@
-<svg viewBox="0 0 800 1000">
-  <!-- Global styling for outlines and fills -->
-  <defs>
-    <style type="text/css">
-      .outline {
-        stroke: black;
-        stroke-width: 4;
-        fill: white;
-      }
-      .outline-thick {
-        stroke: black;
-        stroke-width: 5;
-        fill: white;
-      }
-      .outline-thin {
-        stroke: black;
-        stroke-width: 3;
-        fill: white;
-      }
-      .no-fill {
-        fill: none;
-      }
-    </style>
-  </defs>
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- All elements share a common stroke and fill, adhering to coloring book style -->
+  <g stroke="black" stroke-width="4" fill="white">
 
-  <!-- Landscape: Ice Cream Mountains and Cookie Trees -->
-  <g id="landscape">
-    <!-- Mountains -->
-    <path d="M 0 750 Q 200 650 400 700 T 800 600 V 1000 H 0 Z" class="outline-thick"/>
-    <path d="M 0 850 Q 150 780 300 800 T 600 750 T 800 820 V 1000 H 0 Z" class="outline-thick"/>
+    <!-- Cotton Candy Clouds: Simple, rounded shapes for a whimsical sky -->
+    <g id="clouds">
+      <path d="M100 150 Q150 50 250 80 T400 100 T550 150 T650 200 T700 250 Q650 150 550 100 T400 80 T250 120 T100 150 Z" />
+      <path d="M600 50 Q650 -20 750 20 T780 100 T700 150 Q650 80 600 50 Z" />
+      <path d="M50 250 Q0 200 100 180 T200 220 T250 280 Q200 220 100 250 Z" />
+    </g>
 
-    <!-- Cookie Trees -->
-    <g id="tree1" transform="translate(100, 550)">
-      <rect x="0" y="200" width="40" height="100" rx="10" ry="10" class="outline"/>
-      <circle cx="20" cy="150" r="70" class="outline-thick"/>
-      <circle cx="0" cy="130" r="15" class="outline-thin"/>
-      <circle cx="50" cy="160" r="12" class="outline-thin"/>
-      <circle cx="20" cy="100" r="10" class="outline-thin"/>
+    <!-- Ice Cream Trees: Rounded cones with stacked ice cream scoops and a cherry on top -->
+    <g id="ice_cream_trees">
+      <!-- Tree 1 -->
+      <path d="M100 700 L150 700 L170 450 L80 450 Z" /> <!-- Trunk -->
+      <circle cx="125" cy="400" r="70" /> <!-- Scoop 1 -->
+      <circle cx="150" cy="350" r="60" /> <!-- Scoop 2 -->
+      <circle cx="100" cy="360" r="50" /> <!-- Scoop 3 -->
+      <circle cx="125" cy="300" r="30" /> <!-- Cherry -->
+
+      <!-- Tree 2 -->
+      <path d="M600 650 L650 650 L670 400 L580 400 Z" /> <!-- Trunk -->
+      <circle cx="625" cy="350" r="70" /> <!-- Scoop 1 -->
+      <circle cx="650" cy="300" r="60" /> <!-- Scoop 2 -->
+      <circle cx="600" cy="310" r="50" /> <!-- Scoop 3 -->
+      <circle cx="625" cy="250" r="30" /> <!-- Cherry -->
     </g>
-    <g id="tree2" transform="translate(600, 500)">
-      <rect x="0" y="200" width="40" height="120" rx="10" ry="10" class="outline"/>
-      <circle cx="20" cy="150" r="80" class="outline-thick"/>
-      <circle cx="5" cy="110" r="18" class="outline-thin"/>
-      <circle cx="55" cy="140" r="15" class="outline-thin"/>
-      <circle cx="25" cy="90" r="13" class="outline-thin"/>
+
+    <!-- Candy Track: A path made of gingerbread rectangles and candy canes -->
+    <g id="track">
+      <!-- Main track line to guide placement and provide overall shape -->
+      <path d="M0 800 C150 750 650 750 800 800" fill="none" stroke="black" stroke-width="6"/>
+
+      <!-- Gingerbread and Candy Cane sections -->
+      <!-- Gingerbread 1 -->
+      <rect x="0" y="780" width="100" height="40" rx="10" ry="10" />
+      <line x1="20" y1="785" x2="80" y2="785" stroke="black" stroke-width="2"/>
+      <line x1="20" y1="795" x2="80" y2="795" stroke="black" stroke-width="2"/>
+      <line x1="20" y1="805" x2="80" y2="805" stroke="black" stroke-width="2"/>
+
+      <!-- Candy Cane 1 -->
+      <path d="M110 770 C120 760 130 790 140 780" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M115 765 C125 755 135 785 145 775" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M105 775 C115 765 125 795 135 785" fill="none" stroke="black" stroke-width="2"/>
+
+      <!-- Gingerbread 2 -->
+      <rect x="200" y="770" width="100" height="40" rx="10" ry="10" />
+      <line x1="220" y1="775" x2="280" y2="775" stroke="black" stroke-width="2"/>
+      <line x1="220" y1="785" x2="280" y2="785" stroke="black" stroke-width="2"/>
+      <line x1="220" y1="795" x2="280" y2="795" stroke="black" stroke-width="2"/>
+
+      <!-- Candy Cane 2 -->
+      <path d="M310 760 C320 750 330 780 340 770" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M315 755 C325 745 335 775 345 765" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M305 765 C315 755 325 785 335 775" fill="none" stroke="black" stroke-width="2"/>
+
+      <!-- Gingerbread 3 -->
+      <rect x="400" y="760" width="100" height="40" rx="10" ry="10" />
+      <line x1="420" y1="765" x2="480" y2="765" stroke="black" stroke-width="2"/>
+      <line x1="420" y1="775" x2="480" y2="775" stroke="black" stroke-width="2"/>
+      <line x1="420" y1="785" x2="480" y2="785" stroke="black" stroke-width="2"/>
+
+      <!-- Candy Cane 3 -->
+      <path d="M510 750 C520 740 530 770 540 760" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M515 745 C525 735 535 765 545 755" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M505 755 C515 745 525 775 535 765" fill="none" stroke="black" stroke-width="2"/>
+
+      <!-- Gingerbread 4 -->
+      <rect x="600" y="770" width="100" height="40" rx="10" ry="10" />
+      <line x1="620" y1="775" x2="680" y2="775" stroke="black" stroke-width="2"/>
+      <line x1="620" y1="785" x2="680" y2="785" stroke="black" stroke-width="2"/>
+      <line x1="620" y1="795" x2="680" y2="795" stroke="black" stroke-width="2"/>
+
+      <!-- Candy Cane 4 -->
+      <path d="M710 780 C720 770 730 800 740 790" fill="none" stroke="black" stroke-width="4"/>
+      <path d="M715 775 C725 765 735 795 745 785" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M705 785 C715 775 725 805 735 795" fill="none" stroke="black" stroke-width="2"/>
     </g>
+
+    <!-- Candy Train: Locomotive and three wagons carrying sweets -->
+    <g id="candy_train">
+      <!-- Locomotive: Main engine with a friendly face -->
+      <g id="locomotive">
+        <!-- Main body -->
+        <rect x="50" y="600" width="200" height="100" rx="30" ry="30" />
+        <!-- Cab -->
+        <rect x="180" y="550" width="80" height="80" rx="20" ry="20" />
+        <!-- Chimney -->
+        <rect x="80" y="550" width="40" height="50" rx="10" ry="10" />
+        <ellipse cx="100" cy="550" rx="25" ry="10" />
+        <!-- Front detail -->
+        <rect x="30" y="650" width="30" height="50" rx="10" ry="10" />
+        <rect x="230" y="650" width="30" height="50" rx="10" ry="10" />
+
+        <!-- Face details -->
+        <circle cx="150" cy="650" r="40" />
+        <circle cx="130" cy="640" r="10" /> <!-- Left eye -->
+        <circle cx="170" cy="640" r="10" /> <!-- Right eye -->
+        <path d="M130 665 Q150 680 170 665" fill="none" stroke="black" stroke-width="3" /> <!-- Smile -->
+
+        <!-- Lollipop Wheels for Locomotive -->
+        <circle cx="100" cy="700" r="40" />
+        <path d="M100 700 C120 710 110 680 100 660 C90 680 80 710 100 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <circle cx="200" cy="700" r="40" />
+        <path d="M200 700 C220 710 210 680 200 660 C190 680 180 710 200 700 Z" fill="none" stroke="black" stroke-width="3"/>
+      </g>
+
+      <!-- Wagon 1 (Carrying a Cupcake) -->
+      <g id="wagon_cupcake">
+        <rect x="280" y="620" width="150" height="80" rx="20" ry="20" />
+        <!-- Wheels -->
+        <circle cx="310" cy="700" r="30" />
+        <path d="M310 700 C325 705 320 690 310 680 C300 690 295 705 310 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <circle cx="400" cy="700" r="30" />
+        <path d="M400 700 C415 705 410 690 400 680 C390 690 385 705 400 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <!-- Coupling -->
+        <rect x="250" y="660" width="30" height="20" rx="5" ry="5" />
+
+        <!-- Cupcake -->
+        <path d="M320 620 L360 620 C370 580 370 550 340 530 C310 550 310 580 320 620 Z" /> <!-- Cupcake top -->
+        <path d="M300 620 C310 630 370 630 380 620 L370 600 L310 600 Z" /> <!-- Cupcake wrapper -->
+        <circle cx="340" cy="520" r="10" /> <!-- Cherry -->
+      </g>
+
+      <!-- Wagon 2 (Carrying Chocolate Bar & Gummy Bear) -->
+      <g id="wagon_sweets">
+        <rect x="450" y="620" width="150" height="80" rx="20" ry="20" />
+        <!-- Wheels -->
+        <circle cx="480" cy="700" r="30" />
+        <path d="M480 700 C495 705 490 690 480 680 C470 690 465 705 480 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <circle cx="570" cy="700" r="30" />
+        <path d="M570 700 C585 705 580 690 570 680 C560 690 555 705 570 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <!-- Coupling -->
+        <rect x="420" y="660" width="30" height="20" rx="5" ry="5" />
+
+        <!-- Chocolate Bar -->
+        <rect x="470" y="550" width="60" height="40" rx="5" ry="5" />
+        <line x1="470" y1="570" x2="530" y2="570" stroke="black" stroke-width="2"/>
+        <line x1="500" y1="550" x2="500" y2="590" stroke="black" stroke-width="2"/>
+
+        <!-- Gummy Bear -->
+        <path d="M550 560 C540 550 540 530 550 530 C560 530 560 550 550 560 Z" /> <!-- Head -->
+        <circle cx="545" cy="535" r="5" /> <!-- Left Ear -->
+        <circle cx="555" cy="535" r="5" /> <!-- Right Ear -->
+        <path d="M550 560 C530 590 570 590 550 560 Z" /> <!-- Body -->
+        <circle cx="545" cy="550" r="3" /> <!-- Left Eye -->
+        <circle cx="555" cy="550" r="3" /> <!-- Right Eye -->
+        <path d="M548 558 Q550 562 552 558" fill="none" stroke="black" stroke-width="1.5" /> <!-- Mouth -->
+      </g>
+
+      <!-- Wagon 3 (Carrying a Donut Stack) -->
+      <g id="wagon_donut">
+        <rect x="620" y="620" width="150" height="80" rx="20" ry="20" />
+        <!-- Wheels -->
+        <circle cx="650" cy="700" r="30" />
+        <path d="M650 700 C665 705 660 690 650 680 C640 690 635 705 650 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <circle cx="740" cy="700" r="30" />
+        <path d="M740 700 C755 705 750 690 740 680 C730 690 725 705 740 700 Z" fill="none" stroke="black" stroke-width="3"/>
+        <!-- Coupling -->
+        <rect x="590" y="660" width="30" height="20" rx="5" ry="5" />
+
+        <!-- Donut 1 -->
+        <circle cx="690" cy="560" r="30" />
+        <circle cx="690" cy="560" r="10" fill="white" stroke="black" stroke-width="3"/>
+        <!-- Donut 2 -->
+        <circle cx="690" cy="595" r="30" />
+        <circle cx="690" cy="595" r="10" fill="white" stroke="black" stroke-width="3"/>
+      </g>
+    </g>
+
   </g>
-
-  <!-- Sky elements -->
-  <g id="sky-elements">
-    <!-- Sun -->
-    <circle cx="700" cy="100" r="60" class="outline-thick"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(30 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(90 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(150 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(210 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(270 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" transform="rotate(330 700 100)" class="outline"/>
-    <rect x="630" y="85" width="20" height="10" rx="2" ry="2" class="outline"/>
-
-    <!-- Clouds -->
-    <path d="M 100 150 Q 130 100 180 120 T 250 100 T 320 150 T 200 180 Z" class="outline-thick"/>
-    <path d="M 400 200 Q 430 150 480 170 T 550 150 T 620 200 T 500 230 Z" class="outline-thick"/>
-  </g>
-
-  <!-- Candy Train -->
-  <g id="candy-train" transform="translate(50, 600)">
-    <!-- Locomotive Body -->
-    <rect x="0" y="0" width="200" height="100" rx="20" ry="20" class="outline-thick"/>
-    <rect x="150" y="-50" width="50" height="50" rx="10" ry="10" class="outline"/> <!-- Cab -->
-    <rect x="10" y="-80" width="40" height="70" rx="10" ry="10" class="outline"/> <!-- Chimney -->
-    <ellipse cx="30" cy="-85" rx="25" ry="10" class="outline"/> <!-- Chimney top -->
-    <path d="M 200 60 Q 220 50 220 80 L 200 100 Z" class="outline"/> <!-- Front bumper/cowcatcher -->
-
-    <!-- Locomotive Window -->
-    <rect x="160" y="-40" width="30" height="30" rx="5" ry="5" class="outline-thin"/>
-
-    <!-- Lollipop Wheels for Locomotive -->
-    <g transform="translate(50, 115)">
-      <circle cx="0" cy="0" r="35" class="outline-thick"/>
-      <path d="M 0 0 A 25 25 0 1 1 25 0 L 0 0 A 15 15 0 1 0 15 0 L 0 0" class="outline-thin no-fill"/>
-      <path d="M 0 0 A 25 25 0 1 0 25 0 L 0 0 A 15 15 0 1 1 15 0 L 0 0" class="outline-thin no-fill"/>
-      <circle cx="0" cy="0" r="10" class="outline-thin"/>
-    </g>
-    <g transform="translate(150, 115)">
-      <circle cx="0" cy="0" r="35" class="outline-thick"/>
-      <path d="M 0 0 A 25 25 0 1 1 25 0 L 0 0 A 15 15 0 1 0 15 0 L 0 0" class="outline-thin no-fill"/>
-      <path d="M 0 0 A 25 25 0 1 0 25 0 L 0 0 A 15 15 0 1 1 15 0 L 0 0" class="outline-thin no-fill"/>
-      <circle cx="0" cy="0" r="10" class="outline-thin"/>
-    </g>
-
-    <!-- Wagon 1 -->
-    <g id="wagon1" transform="translate(230, 10)">
-      <rect x="0" y="0" width="150" height="90" rx="20" ry="20" class="outline-thick"/>
-      <rect x="30" y="20" width="90" height="50" rx="10" ry="10" class="outline"/> <!-- Window -->
-      <!-- Gummy Bear 1 -->
-      <g class="gummy-bear" transform="translate(75, 45)">
-        <circle cx="0" cy="-20" r="25" class="outline-thin"/> <!-- Head -->
-        <circle cx="-15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 1 -->
-        <circle cx="15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 2 -->
-        <circle cx="-8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 1 -->
-        <circle cx="8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 2 -->
-        <path d="M -10 -15 Q 0 -5 10 -15" class="outline-thin no-fill"/> <!-- Mouth -->
-      </g>
-      <!-- Lollipop Wheels -->
-      <g transform="translate(40, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-      <g transform="translate(110, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-    </g>
-
-    <!-- Connector 1-2 -->
-    <rect x="195" y="60" width="35" height="15" rx="5" ry="5" class="outline"/>
-
-    <!-- Wagon 2 -->
-    <g id="wagon2" transform="translate(410, 10)">
-      <rect x="0" y="0" width="150" height="90" rx="20" ry="20" class="outline-thick"/>
-      <rect x="30" y="20" width="90" height="50" rx="10" ry="10" class="outline"/> <!-- Window -->
-      <!-- Gummy Bear 2 -->
-      <g class="gummy-bear" transform="translate(75, 45)">
-        <circle cx="0" cy="-20" r="25" class="outline-thin"/> <!-- Head -->
-        <circle cx="-15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 1 -->
-        <circle cx="15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 2 -->
-        <circle cx="-8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 1 -->
-        <circle cx="8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 2 -->
-        <path d="M -10 -15 Q 0 -5 10 -15" class="outline-thin no-fill"/> <!-- Mouth -->
-      </g>
-      <!-- Lollipop Wheels -->
-      <g transform="translate(40, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-      <g transform="translate(110, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-    </g>
-
-    <!-- Connector 2-3 -->
-    <rect x="385" y="60" width="35" height="15" rx="5" ry="5" class="outline"/>
-
-    <!-- Wagon 3 -->
-    <g id="wagon3" transform="translate(590, 10)">
-      <rect x="0" y="0" width="150" height="90" rx="20" ry="20" class="outline-thick"/>
-      <rect x="30" y="20" width="90" height="50" rx="10" ry="10" class="outline"/> <!-- Window -->
-      <!-- Gummy Bear 3 -->
-      <g class="gummy-bear" transform="translate(75, 45)">
-        <circle cx="0" cy="-20" r="25" class="outline-thin"/> <!-- Head -->
-        <circle cx="-15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 1 -->
-        <circle cx="15" cy="-40" r="10" class="outline-thin"/> <!-- Ear 2 -->
-        <circle cx="-8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 1 -->
-        <circle cx="8" cy="-25" r="3" class="outline-thin no-fill"/> <!-- Eye 2 -->
-        <path d="M -10 -15 Q 0 -5 10 -15" class="outline-thin no-fill"/> <!-- Mouth -->
-      </g>
-      <!-- Lollipop Wheels -->
-      <g transform="translate(40, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-      <g transform="translate(110, 105)">
-        <circle cx="0" cy="0" r="30" class="outline-thick"/>
-        <path d="M 0 0 A 20 20 0 1 1 20 0 L 0 0 A 12 12 0 1 0 12 0 L 0 0" class="outline-thin no-fill"/>
-        <path d="M 0 0 A 20 20 0 1 0 20 0 L 0 0 A 12 12 0 1 1 12 0 L 0 0" class="outline-thin no-fill"/>
-        <circle cx="0" cy="0" r="8" class="outline-thin"/>
-      </g>
-    </g>
-  </g>
-
 </svg>
