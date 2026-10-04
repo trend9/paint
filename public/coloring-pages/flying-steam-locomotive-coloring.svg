@@ -1,65 +1,100 @@
-<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Sky Elements -->
-  <g id="sky_elements">
-    <!-- Clouds -->
-    <path d="M100 200 Q150 150 200 200 T300 200 Q350 250 300 300 T200 300 Q150 250 100 200Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M600 150 Q650 100 700 150 T750 150 Q780 200 750 250 T700 250 Q650 200 600 150Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M50 700 Q100 650 150 700 T250 700 Q300 750 250 800 T150 800 Q100 750 50 700Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M550 800 Q600 750 650 800 T750 800 Q780 850 750 900 T650 900 Q600 850 550 800Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M300 50 Q350 0 400 50 T500 50 Q530 100 500 150 T400 150 Q350 100 300 50Z" fill="white" stroke="black" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .outline-thick {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-thin {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-nofill {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    ]]></style>
+  </defs>
 
-    <!-- Stars (simple circles for toddlers) -->
-    <circle cx="150" cy="100" r="20" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="700" cy="80" r="18" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="50" cy="850" r="22" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="750" cy="700" r="20" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="300" cy="900" r="25" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="600" cy="40" r="15" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="200" cy="550" r="18" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="450" cy="250" r="22" fill="white" stroke="black" stroke-width="3"/>
+  <!-- Friendly Sun peeking from behind a cloud (top right) -->
+  <g class="sun-group">
+    <circle cx="700" cy="150" r="80" class="outline-thick"/>
+    <!-- Sun rays (rounded rectangles) -->
+    <rect x="680" y="50" width="40" height="20" rx="10" ry="10" class="outline-thick" transform="rotate(-30 700 150)"/>
+    <rect x="730" y="70" width="40" height="20" rx="10" ry="10" class="outline-thick" transform="rotate(10 700 150)"/>
+    <rect x="750" y="130" width="40" height="20" rx="10" ry="10" class="outline-thick" transform="rotate(50 700 150)"/>
+    <rect x="730" y="200" width="40" height="20" rx="10" ry="10" class="outline-thick" transform="rotate(90 700 150)"/>
   </g>
 
-  <!-- Locomotive -->
-  <g id="locomotive">
-    <!-- Main Body Base (lower chassis) -->
-    <rect x="150" y="550" width="500" height="100" rx="30" ry="30" fill="white" stroke="black" stroke-width="5"/>
+  <!-- Fluffy Clouds -->
+  <g class="cloud-group">
+    <!-- Cloud hiding part of the sun -->
+    <path d="M600,100 Q630,50 670,70 Q710,50 750,100 Q780,120 760,160 Q730,190 690,170 Q650,190 620,160 Q590,140 600,100 Z" class="outline-thick"/>
+    <!-- Main cloud -->
+    <path d="M100,200 Q150,120 250,130 Q350,120 400,200 Q430,250 400,300 Q350,350 250,340 Q150,350 100,300 Q70,250 100,200 Z" class="outline-thick"/>
+    <!-- Smaller cloud -->
+    <path d="M480,300 Q510,270 550,280 Q590,270 620,300 Q640,330 620,360 Q590,390 550,380 Q510,390 480,360 Q460,330 480,300 Z" class="outline-thick"/>
+  </g>
 
-    <!-- Boiler (front part of the train, where the face is) -->
-    <rect x="200" y="430" width="400" height="120" fill="white" stroke="black" stroke-width="5"/>
-    <ellipse cx="400" cy="430" rx="200" ry="70" fill="white" stroke="black" stroke-width="5"/> <!-- Top curve of boiler -->
+  <!-- Cute and Happy Steam Locomotive -->
+  <g class="locomotive-group">
+    <!-- Main body -->
+    <rect x="150" y="450" width="400" height="150" rx="40" ry="40" class="outline-thick"/>
+    <!-- Cab -->
+    <rect x="450" y="380" width="100" height="100" rx="20" ry="20" class="outline-thick"/>
+    <!-- Boiler front (where face is) -->
+    <circle cx="150" cy="525" r="70" class="outline-thick"/>
+    <!-- Chimney base -->
+    <rect x="190" y="380" width="60" height="50" rx="15" ry="15" class="outline-thick"/>
+    <!-- Chimney top -->
+    <path d="M180,380 Q190,350 215,340 Q240,350 250,380 H180 Z" class="outline-thick"/>
 
-    <!-- Cabin -->
-    <rect x="550" y="450" width="100" height="100" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
-    <rect x="560" y="460" width="80" height="80" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/> <!-- Window outline -->
+    <!-- Wheels (simplified, large circles on the side) -->
+    <circle cx="280" cy="600" r="60" class="outline-thick"/>
+    <circle cx="450" cy="600" r="60" class="outline-thick"/>
 
-    <!-- Chimney -->
-    <rect x="250" y="380" width="80" height="50" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
-    <ellipse cx="290" cy="380" rx="40" ry="20" fill="white" stroke="black" stroke-width="5"/> <!-- Chimney top -->
+    <!-- Headlight -->
+    <circle cx="150" cy="470" r="25" class="outline-thin"/>
 
-    <!-- Face (on the front of the boiler) -->
-    <g id="face">
-      <!-- Face outline is part of the boiler structure for coloring -->
-      <ellipse cx="370" cy="500" rx="80" ry="60" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Face details -->
+    <g class="face-details">
       <!-- Eyes -->
-      <circle cx="340" cy="480" r="25" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="440" cy="480" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="120" cy="510" r="15" class="outline-thin"/>
+      <circle cx="180" cy="510" r="15" class="outline-thin"/>
       <!-- Mouth (smile) -->
-      <path d="M360 520 Q390 545 420 520" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+      <path d="M125,545 Q150,565 175,545" class="outline-nofill"/>
     </g>
+  </g>
 
-    <!-- Wheels (simplified, just large circles) -->
-    <g id="wheels">
-      <circle cx="250" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
-      <circle cx="400" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
-      <circle cx="550" cy="680" r="60" fill="white" stroke="black" stroke-width="5"/>
-      <!-- Connecting rod -->
-      <rect x="200" y="650" width="400" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-    </g>
+  <!-- Playful Smoke Trail -->
+  <g class="smoke-trail-group">
+    <!-- Cloud puff 1 (coming from chimney) -->
+    <path d="M220,320 Q240,280 280,290 Q320,280 340,320 Q360,350 340,380 Q320,410 280,400 Q240,410 220,380 Q200,350 220,320 Z" class="outline-thick"/>
+    
+    <!-- Heart shape 1 -->
+    <path d="M360,280 C330,250 310,210 330,190 C350,170 370,170 390,190 C410,210 390,250 360,280 Z" class="outline-thick"/>
 
-    <!-- Smoke puffs from chimney -->
-    <g id="smoke">
-      <path d="M290 350 Q250 300 290 250 Q330 200 370 250 Q330 300 290 350Z" fill="white" stroke="black" stroke-width="4"/>
-      <path d="M330 220 Q370 170 330 120 Q290 70 250 120 Q290 170 330 220Z" fill="white" stroke="black" stroke-width="4"/>
-    </g>
+    <!-- Star shape 1 (simplified) -->
+    <path d="M480,200 L495,240 L540,250 L500,280 L510,320 L480,290 L450,320 L460,280 L420,250 L465,240 Z" class="outline-thick"/>
+    
+    <!-- Cloud puff 2 (smaller, further back) -->
+    <path d="M550,220 Q570,190 600,200 Q630,190 650,220 Q670,250 650,280 Q630,310 600,300 Q570,310 550,280 Q530,250 550,220 Z" class="outline-thick"/>
+    
   </g>
 </svg>
