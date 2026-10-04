@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 1000" width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group for sky elements: Moon and Stars -->
+  <g id="sky_elements" stroke="black" stroke-width="4">
+    <!-- Gentle Moon (Crescent shape) -->
+    <path d="M 680 120 A 60 80 0 1 0 680 280 A 70 90 0 1 1 680 120 Z" fill="white"/>
+    
+    <!-- Simple Stars -->
+    <path d="M 150 100 L 160 130 L 190 130 L 165 150 L 175 180 L 150 160 L 125 180 L 135 150 L 110 130 L 140 130 Z" fill="white"/>
+    <path d="M 500 70 L 508 95 L 535 95 L 512 110 L 520 135 L 500 120 L 480 135 L 488 110 L 465 95 L 492 95 Z" fill="white"/>
+    <path d="M 300 150 L 308 175 L 335 175 L 312 190 L 320 215 L 300 200 L 280 215 L 288 190 L 265 175 L 292 175 Z" fill="white"/>
+    <path d="M 40 220 L 48 245 L 75 245 L 52 260 L 60 285 L 40 270 L 20 285 L 28 260 L 5 245 L 32 245 Z" fill="white"/>
+    <path d="M 720 300 L 728 325 L 755 325 L 732 340 L 740 365 L 720 350 L 700 365 L 708 340 L 685 325 L 712 325 Z" fill="white"/>
+  </g>
+
+  <!-- Group for fluffy Clouds -->
+  <g id="clouds" stroke="black" stroke-width="4">
+    <!-- Large cloud at bottom left -->
+    <path d="M 100 750 Q 50 700 150 680 Q 250 660 300 700 Q 350 750 300 800 Q 250 850 150 830 Q 50 810 100 750 Z" fill="white"/>
+    <!-- Large cloud at mid-right -->
+    <path d="M 600 650 Q 550 600 650 580 Q 750 560 800 600 Q 750 650 700 700 Q 650 750 600 700 Q 550 650 600 650 Z" fill="white"/>
+    <!-- Cloud near the locomotive -->
+    <path d="M 400 350 Q 380 300 450 280 Q 520 260 500 310 Q 550 330 500 360 Q 450 390 400 360 Q 350 330 400 350 Z" fill="white"/>
+    <!-- Smaller cloud top left -->
+    <path d="M 50 400 Q 10 350 100 330 Q 200 310 250 350 Q 200 400 150 430 Q 100 460 50 400 Z" fill="white"/>
+  </g>
+
+  <!-- Group for the majestic Steam Locomotive -->
+  <g id="locomotive" stroke="black" stroke-width="4">
+    <!-- Main Boiler Body (rounded rectangle) -->
+    <rect x="200" y="400" width="450" height="150" rx="75" ry="75" fill="white"/>
+    
+    <!-- Cab -->
+    <rect x="550" y="370" width="120" height="140" rx="20" ry="20" fill="white"/>
+    <!-- Cab Window -->
+    <rect x="570" y="390" width="80" height="60" rx="10" ry="10" fill="white"/>
+
+    <!-- Smokestack Base -->
+    <rect x="250" y="330" width="60" height="80" rx="15" ry="15" fill="white"/>
+    <!-- Smokestack Top -->
+    <ellipse cx="280" cy="320" rx="35" ry="20" fill="white"/>
+
+    <!-- Headlight -->
+    <circle cx="210" cy="475" r="30" fill="white"/>
+
+    <!-- Stylized "Driving Wheels" for flying effect (not touching ground) -->
+    <circle cx="380" cy="620" r="70" fill="white"/>
+    <circle cx="580" cy="620" r="70" fill="white"/>
+    <!-- Connecting Rod -->
+    <rect x="380" y="610" width="200" height="20" rx="10" ry="10" fill="white"/>
+
+    <!-- Piston Cylinder (simplified) -->
+    <rect x="180" y="500" width="80" height="40" rx="10" ry="10" fill="white"/>
+    <!-- Piston Rod (simplified) -->
+    <rect x="250" y="505" width="130" height="30" rx="10" ry="10" fill="white"/>
+
+    <!-- Friendly Face - Eyes -->
+    <circle cx="270" cy="430" r="18" fill="white"/>
+    <circle cx="320" cy="430" r="18" fill="white"/>
+    <!-- Friendly Face - Mouth (smile) -->
+    <path d="M 270 460 Q 295 480 320 460" fill="none"/>
+
+    <!-- Steam Puffs from Smokestack -->
+    <path d="M 280 300 Q 250 250 300 240 Q 350 230 320 280 Q 300 300 280 300 Z" fill="white"/>
+    <path d="M 310 270 Q 290 230 320 220 Q 350 210 330 250 Q 310 270 310 270 Z" fill="white"/>
+  </g>
+</svg>
