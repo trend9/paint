@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <g id="ground">
+    <path d="M0 700 Q400 650 800 700 L800 1000 L0 1000 Z" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+
+  <g id="sun">
+    <circle cx="650" cy="150" r="80" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Sun rays, simple lines -->
+    <line x1="650" y1="70" x2="650" y2="30" stroke="black" stroke-width="4"/>
+    <line x1="700" y1="90" x2="740" y2="60" stroke="black" stroke-width="4"/>
+    <line x1="720" y1="150" x2="760" y2="150" stroke="black" stroke-width="4"/>
+    <line x1="700" y1="210" x2="740" y2="240" stroke="black" stroke-width="4"/>
+    <line x1="650" y1="230" x2="650" y2="270" stroke="black" stroke-width="4"/>
+    <line x1="600" y1="210" x2="560" y2="240" stroke="black" stroke-width="4"/>
+    <line x1="580" y1="150" x2="540" y2="150" stroke="black" stroke-width="4"/>
+    <line x1="600" y1="90" x2="560" y2="60" stroke="black" stroke-width="4"/>
+  </g>
+
+  <g id="picnic_blanket">
+    <rect x="100" y="550" width="600" height="300" rx="40" ry="40" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Checkered pattern lines -->
+    <line x1="100" y1="600" x2="700" y2="600" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="650" x2="700" y2="650" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="700" x2="700" y2="700" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="750" x2="700" y2="750" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="800" x2="700" y2="800" stroke="black" stroke-width="3"/>
+
+    <line x1="150" y1="550" x2="150" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="200" y1="550" x2="200" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="250" y1="550" x2="250" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="300" y1="550" x2="300" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="350" y1="550" x2="350" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="400" y1="550" x2="400" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="450" y1="550" x2="450" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="500" y1="550" x2="500" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="550" y1="550" x2="550" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="600" y1="550" x2="600" y2="850" stroke="black" stroke-width="3"/>
+    <line x1="650" y1="550" x2="650" y2="850" stroke="black" stroke-width="3"/>
+  </g>
+
+  <g id="dinosaurs">
+    <!-- T-Rex (left) -->
+    <g id="t-rex">
+      <path d="M250 500 Q200 400 280 350 Q360 300 400 380 Q420 480 350 530 L280 530 L250 500 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M300 350 Q320 250 270 200 Q200 180 200 280 Q220 330 300 350 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Head -->
+      <circle cx="230" cy="250" r="15" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <circle cx="235" cy="255" r="5" fill="black" stroke="none"/> <!-- Pupil -->
+      <path d="M250 290 Q280 310 300 290" fill="none" stroke="black" stroke-width="3"/> <!-- Mouth -->
+      <path d="M300 390 Q290 380 280 390" fill="white" stroke="black" stroke-width="3"/> <!-- Arm 1 -->
+      <path d="M320 410 Q310 400 300 410" fill="white" stroke="black" stroke-width="3"/> <!-- Arm 2 -->
+      <path d="M280 530 L260 600 Q290 630 320 600 L300 530 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Leg -->
+    </g>
+
+    <!-- Stegosaurus (middle) -->
+    <g id="stegosaurus">
+      <path d="M450 500 Q400 400 480 350 Q560 300 600 380 Q620 480 550 530 L480 530 L450 500 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M500 350 Q520 250 470 200 Q400 180 400 280 Q420 330 500 350 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Head -->
+      <circle cx="430" cy="250" r="15" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <circle cx="435" cy="255" r="5" fill="black" stroke="none"/> <!-- Pupil -->
+      <path d="M450 290 Q480 310 500 290" fill="none" stroke="black" stroke-width="3"/> <!-- Mouth -->
+      <!-- Plates -->
+      <path d="M480 400 Q490 350 500 400 Q490 450 480 400Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M520 410 Q530 360 540 410 Q530 460 520 410Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M560 420 Q570 370 580 420 Q570 470 560 420Z" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M480 530 L460 600 Q490 630 520 600 L500 530 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Leg -->
+    </g>
+
+    <!-- Triceratops (right) -->
+    <g id="triceratops">
+      <path d="M650 500 Q600 400 680 350 Q760 300 780 380 Q790 480 750 530 L680 530 L650 500 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Body -->
+      <path d="M700 350 Q720 250 670 200 Q600 180 600 280 Q620 330 700 350 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Head base -->
+      <path d="M680 300 Q650 250 670 200 Q720 180 750 250 Q780 300 750 350 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Frill -->
+      <circle cx="630" cy="250" r="15" fill="white" stroke="black" stroke-width="3"/> <!-- Eye -->
+      <circle cx="635" cy="255" r="5" fill="black" stroke="none"/> <!-- Pupil -->
+      <path d="M650 290 Q680 310 700 290" fill="none" stroke="black" stroke-width="3"/> <!-- Mouth -->
+      <path d="M650 230 L650 210 Q660 200 670 210 L670 230 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Horn 1 -->
+      <path d="M680 230 L680 210 Q690 200 700 210 L700 230 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Horn 2 -->
+      <path d="M675 250 L675 230 Q680 220 685 230 L685 250 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Nose Horn -->
+      <path d="M680 530 L660 600 Q690 630 720 600 L700 530 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Leg -->
+    </g>
+  </g>
+
+  <g id="picnic_basket">
+    <path d="M600 500 Q620 450 680 450 Q700 500 700 520 L680 550 Q650 580 620 550 L600 520 Z" fill="white" stroke="black" stroke-width="5"/> <!-- Basket body -->
+    <path d="M620 450 Q650 420 680 450" fill="none" stroke="black" stroke-width="4"/> <!-- Basket handle -->
+    <!-- Fruits and sandwiches inside -->
+    <circle cx="640" cy="480" r="15" fill="white" stroke="black" stroke-width="3"/> <!-- Apple -->
+    <path d="M660 480 C670 470 680 470 680 480 C680 490 670 490 660 480 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Banana (simplified, more like crescent) -->
+    <rect x="630" y="460" width="30" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="3"/> <!-- Sandwich -->
+    <path d="M645 460 Q650 450 655 460" fill="none" stroke="black" stroke-width="3"/> <!-- Sandwich detail -->
+  </g>
+
+  <g id="butterflies">
+    <!-- Butterfly 1 -->
+    <g transform="translate(150, 150)">
+      <ellipse cx="0" cy="0" rx="10" ry="15" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <path d="M-10 -15 Q-30 -20 -30 -30 Q-20 -40 -10 -30 Q-5 -20 -10 -15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 1 (top-left) -->
+      <path d="M10 -15 Q30 -20 30 -30 Q20 -40 10 -30 Q5 -20 10 -15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 2 (top-right) -->
+      <path d="M-10 15 Q-30 20 -30 30 Q-20 40 -10 30 Q-5 20 -10 15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 3 (bottom-left) -->
+      <path d="M10 15 Q30 20 30 30 Q20 40 10 30 Q5 20 10 15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 4 (bottom-right) -->
+      <line x1="-5" y1="-20" x2="-10" y2="-40" stroke="black" stroke-width="3"/>
+      <circle cx="-10" cy="-40" r="3" fill="black" stroke="none"/> <!-- Antenna 1 tip -->
+      <line x1="5" y1="-20" x2="10" y2="-40" stroke="black" stroke-width="3"/>
+      <circle cx="10" cy="-40" r="3" fill="black" stroke="none"/> <!-- Antenna 2 tip -->
+    </g>
+
+    <!-- Butterfly 2 -->
+    <g transform="translate(300, 100) scale(0.8)">
+      <ellipse cx="0" cy="0" rx="10" ry="15" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <path d="M-10 -15 Q-30 -20 -30 -30 Q-20 -40 -10 -30 Q-5 -20 -10 -15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 1 -->
+      <path d="M10 -15 Q30 -20 30 -30 Q20 -40 10 -30 Q5 -20 10 -15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 2 -->
+      <path d="M-10 15 Q-30 20 -30 30 Q-20 40 -10 30 Q-5 20 -10 15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 3 -->
+      <path d="M10 15 Q30 20 30 30 Q20 40 10 30 Q5 20 10 15 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Wing 4 -->
+      <line x1="-5" y1="-20" x2="-10" y2="-40" stroke="black" stroke-width="3"/>
+      <circle cx="-10" cy="-40" r="3" fill="black" stroke="none"/> <!-- Antenna 1 tip -->
+      <line x1="5" y1="-20" x2="10" y2="-40" stroke="black" stroke-width="3"/>
+      <circle cx="10" cy="-40" r="3" fill="black" stroke="none"/> <!-- Antenna 2 tip -->
+    </g>
+  </g>
+
+</svg>
