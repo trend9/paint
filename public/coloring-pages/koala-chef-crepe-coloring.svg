@@ -1,143 +1,114 @@
-<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Styles for thick black outlines and white fills -->
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style type="text/css">
       .outline {
         stroke: black;
-        stroke-width: 4; /* Standard thick outline */
-        fill: white;    /* All elements filled white for coloring */
-      }
-      .outline-thick {
-        stroke: black;
-        stroke-width: 5; /* Extra thick outline for main shapes */
+        stroke-width: 4;
         fill: white;
       }
-      .outline-none {
+      .outline-thin {
         stroke: black;
-        stroke-width: 4; /* Outline only, no fill for lines like smiles */
+        stroke-width: 3;
+        fill: white;
+      }
+      .fill-none {
+        stroke: black;
+        stroke-width: 4;
         fill: none;
       }
     </style>
   </defs>
 
-  <!-- Pure white background rectangle -->
-  <rect x="0" y="0" width="800" height="1000" fill="white"/>
-
-  <!-- Simple Kitchen Setting -->
-  <g id="kitchen_setting">
-    <!-- Countertop -->
-    <rect x="0" y="700" width="800" height="300" class="outline-thick"/>
-    <!-- Back wall separation line -->
-    <line x1="0" y1="700" x2="800" y2="700" stroke="black" stroke-width="5"/>
+  <!-- Counter -->
+  <g id="counter">
+    <rect x="100" y="650" width="600" height="150" rx="30" ry="30" class="outline"/>
+    <rect x="120" y="780" width="100" height="150" rx="20" ry="20" class="outline"/>
+    <rect x="580" y="780" width="100" height="150" rx="20" ry="20" class="outline"/>
+    <path d="M 100 680 Q 200 640 400 640 Q 600 640 700 680" class="fill-none stroke-width-4" stroke-width="4"/>
   </g>
 
-  <!-- Koala Chef Character -->
-  <g id="koala_chef">
+  <!-- Koala -->
+  <g id="koala">
     <!-- Body -->
-    <ellipse cx="400" cy="600" rx="150" ry="180" class="outline-thick"/>
+    <ellipse cx="400" cy="550" rx="150" ry="200" class="outline"/>
+
     <!-- Head -->
-    <ellipse cx="400" cy="350" rx="130" ry="120" class="outline-thick"/>
+    <ellipse cx="400" cy="350" rx="130" ry="120" class="outline"/>
 
     <!-- Ears -->
-    <g id="koala_ears">
-      <ellipse cx="290" cy="270" rx="70" ry="60" class="outline-thick"/>
-      <ellipse cx="290" cy="270" rx="50" ry="40" class="outline"/> <!-- Inner ear -->
-      <ellipse cx="510" cy="270" rx="70" ry="60" class="outline-thick"/>
-      <ellipse cx="510" cy="270" rx="50" ry="40" class="outline"/> <!-- Inner ear -->
-    </g>
+    <ellipse cx="280" cy="220" rx="60" ry="80" class="outline"/>
+    <ellipse cx="520" cy="220" rx="60" ry="80" class="outline"/>
+    <ellipse cx="280" cy="220" rx="30" ry="40" class="outline"/>
+    <ellipse cx="520" cy="220" rx="30" ry="40" class="outline"/>
 
-    <!-- Face Features -->
-    <g id="koala_face">
-      <!-- Eyes -->
-      <circle cx="350" cy="330" r="15" class="outline"/>
-      <circle cx="450" cy="330" r="15" class="outline"/>
-      <!-- Nose -->
-      <ellipse cx="400" cy="380" rx="30" ry="25" class="outline-thick"/>
-      <!-- Happy Smile Mouth -->
-      <path d="M360 410 Q400 430 440 410" class="outline-none"/>
-    </g>
+    <!-- Face features -->
+    <circle cx="350" cy="320" r="25" class="outline"/>
+    <circle cx="450" cy="320" r="25" class="outline"/>
+    <ellipse cx="400" cy="380" rx="40" ry="30" class="outline"/>
+    <path d="M 350 420 Q 400 450 450 420" class="fill-none stroke-width-4" stroke-width="4"/>
 
-    <!-- Chef Hat -->
-    <g id="chef_hat">
-      <path d="M300 250 C280 200 320 120 400 100 C480 120 520 200 500 250 H300 Z" class="outline-thick"/>
-      <ellipse cx="400" cy="250" rx="100" ry="20" class="outline-thick"/> <!-- Hat base -->
-    </g>
-
-    <!-- Apron -->
-    <g id="apron">
-      <path d="M300 500 L250 680 A50 50 0 0 0 280 700 L520 700 A50 50 0 0 0 550 680 L500 500 Z" class="outline-thick"/>
-      <!-- Apron strap/top edge -->
-      <path d="M300 500 Q350 480 400 500 Q450 480 500 500" class="outline-none"/>
-    </g>
-
-    <!-- Arms (simplified for toddler style) -->
-    <g id="koala_arms">
-      <!-- Left arm (holding frying pan) -->
-      <path d="M310 500 C250 550 200 600 220 650 C240 670 280 660 310 630 C340 600 350 540 310 500 Z" class="outline-thick"/>
-      <!-- Right arm (holding spatula) -->
-      <path d="M490 500 C550 550 600 600 580 650 C560 670 520 660 490 630 C460 600 450 540 490 500 Z" class="outline-thick"/>
-    </g>
+    <!-- Arms -->
+    <path d="M 280 480 C 220 500 200 550 200 620 C 200 650 220 660 250 640 L 280 500 Z" class="outline"/>
+    <path d="M 520 480 C 580 500 600 550 600 620 C 600 650 580 660 550 640 L 520 500 Z" class="outline"/>
+    <!-- Paws holding pan -->
+    <path d="M 220 580 C 210 600 230 620 260 620 L 250 590 L 220 580 Z" class="outline"/>
+    <path d="M 580 580 C 590 600 570 620 540 620 L 550 590 L 580 580 Z" class="outline"/>
   </g>
 
-  <!-- Frying Pan with Crepe -->
-  <g id="frying_pan">
-    <!-- Pan body and rim -->
-    <ellipse cx="230" cy="680" rx="80" ry="30" class="outline-thick"/> <!-- Pan top rim -->
-    <rect x="150" y="680" width="160" height="20" rx="10" ry="10" class="outline-thick"/> <!-- Pan base -->
-    <!-- Pan handle -->
-    <path d="M310 680 C360 670 380 660 420 650 C440 640 450 630 460 620 C470 610 470 600 460 590 C450 580 430 570 410 560 C390 550 350 540 310 530" class="outline-thick"/>
-    <!-- Perfectly round crepe inside the pan -->
-    <circle cx="230" cy="670" r="60" class="outline-thick"/>
+  <!-- Chef Hat -->
+  <g id="chef-hat">
+    <rect x="300" y="240" width="200" height="50" rx="20" ry="20" class="outline"/>
+    <path d="M 300 250 C 280 200 300 150 350 140 C 400 130 450 130 500 140 C 520 150 520 200 500 250 Z" class="outline"/>
+    <path d="M 350 140 C 370 100 400 80 450 90 C 470 100 480 120 490 140" class="fill-none stroke-width-4" stroke-width="4"/>
+    <path d="M 320 220 C 300 190 320 160 350 150" class="fill-none stroke-width-4" stroke-width="4"/>
+    <path d="M 480 220 C 500 190 480 160 450 150" class="fill-none stroke-width-4" stroke-width="4"/>
+    <path d="M 400 130 C 400 110 420 100 430 110" class="fill-none stroke-width-4" stroke-width="4"/>
   </g>
 
-  <!-- Spatula -->
-  <g id="spatula">
-    <!-- Spatula handle -->
-    <rect x="580" y="620" width="120" height="20" rx="10" ry="10" transform="rotate(-30 580 620)" class="outline-thick"/>
-    <!-- Spatula flipper part -->
-    <rect x="670" y="550" width="40" height="50" rx="5" ry="5" transform="rotate(-30 670 550)" class="outline-thick"/>
+  <!-- Apron -->
+  <g id="apron">
+    <path d="M 300 420 Q 400 400 500 420 L 500 650 Q 400 670 300 650 Z" class="outline"/>
+    <path d="M 320 430 L 290 400 C 280 380 290 360 320 360 L 350 370" class="fill-none stroke-width-4" stroke-width="4"/>
+    <path d="M 480 430 L 510 400 C 520 380 510 360 480 360 L 450 370" class="fill-none stroke-width-4" stroke-width="4"/>
   </g>
 
-  <!-- Kitchen Items on Counter -->
-  <g id="kitchen_items">
-    <!-- Bowl of Strawberries -->
-    <g id="bowl_strawberries">
-      <ellipse cx="150" cy="850" rx="90" ry="40" class="outline-thick"/> <!-- Bowl rim -->
-      <path d="M60 850 A90 40 0 0 1 240 850 C240 900 60 900 60 850 Z" class="outline-thick"/> <!-- Bowl base -->
-      <!-- Simple strawberries (circles) -->
-      <circle cx="120" cy="830" r="15" class="outline"/>
-      <circle cx="180" cy="835" r="15" class="outline"/>
-      <circle cx="150" cy="810" r="15" class="outline"/>
-      <circle cx="100" cy="845" r="15" class="outline"/>
-      <circle cx="200" cy="820" r="15" class="outline"/>
-    </g>
+  <!-- Pan with Crepe -->
+  <g id="pan-crepe">
+    <!-- Crepe -->
+    <circle cx="400" cy="570" r="120" class="outline"/>
+    <!-- Pan -->
+    <ellipse cx="400" cy="570" rx="130" ry="125" class="outline"/>
+    <path d="M 270 570 C 250 550 250 520 270 500 L 280 490 L 270 570 Z" class="outline"/>
+    <path d="M 270 570 L 200 590 L 180 580 C 160 570 160 540 180 530 L 200 520 L 270 540 Z" class="outline"/>
+    <path d="M 200 555 L 170 550" class="fill-none stroke-width-4" stroke-width="4"/>
+    <circle cx="170" cy="550" r="10" class="outline"/>
+  </g>
 
-    <!-- Bowl of Bananas -->
-    <g id="bowl_bananas">
-      <ellipse cx="650" cy="850" rx="90" ry="40" class="outline-thick"/> <!-- Bowl rim -->
-      <path d="M560 850 A90 40 0 0 1 740 850 C740 900 560 900 560 850 Z" class="outline-thick"/> <!-- Bowl base -->
-      <!-- Simple bananas (arched paths) -->
-      <path d="M620 820 Q640 790 660 820" class="outline"/>
-      <path d="M640 830 Q660 800 680 830" class="outline"/>
-      <path d="M600 840 Q620 810 640 840" class="outline"/>
-    </g>
+  <!-- Toppings on Counter -->
+  <g id="toppings">
+    <!-- Cream swirl 1 -->
+    <path d="M 200 670 Q 230 650 260 670 Q 250 700 200 700 Z" class="outline"/>
+    <path d="M 220 670 Q 230 660 240 670" class="fill-none stroke-width-3" stroke-width="3"/>
 
-    <!-- Pitcher of Batter -->
-    <g id="pitcher_batter">
-      <ellipse cx="400" cy="730" rx="70" ry="30" class="outline-thick"/> <!-- Pitcher opening -->
-      <path d="M330 730 L320 850 Q380 900 480 850 L470 730 Z" class="outline-thick"/> <!-- Pitcher body -->
-      <path d="M470 750 Q520 780 500 830 Q480 880 470 850" class="outline-thick"/> <!-- Pitcher handle -->
-      <ellipse cx="400" cy="740" rx="60" ry="20" class="outline"/> <!-- Batter liquid surface -->
-    </g>
+    <!-- Cream swirl 2 -->
+    <path d="M 600 670 Q 570 650 540 670 Q 550 700 600 700 Z" class="outline"/>
+    <path d="M 580 670 Q 570 660 560 670" class="fill-none stroke-width-3" stroke-width="3"/>
+    
+    <!-- Berries -->
+    <circle cx="280" cy="690" r="20" class="outline"/>
+    <circle cx="310" cy="670" r="20" class="outline"/>
+    <circle cx="260" cy="660" r="20" class="outline"/>
 
-    <!-- Tub of Whipped Cream -->
-    <g id="tub_whipped_cream">
-      <ellipse cx="500" cy="730" rx="70" ry="30" class="outline-thick"/> <!-- Tub opening -->
-      <rect x="430" y="730" width="140" height="120" rx="10" ry="10" class="outline-thick"/> <!-- Tub body -->
-      <!-- Whipped cream dollop on top -->
-      <path d="M460 720 Q480 680 500 700 Q520 680 540 720 Z" class="outline-thick"/>
-    </g>
-
+    <circle cx="520" cy="690" r="20" class="outline"/>
+    <circle cx="490" cy="670" r="20" class="outline"/>
+    <circle cx="540" cy="660" r="20" class="outline"/>
+    
+    <!-- Fruit slices / larger pieces -->
+    <path d="M 150 720 A 40 40 0 0 1 190 760 L 150 760 Z" class="outline"/>
+    <path d="M 150 740 L 170 740" class="fill-none stroke-width-3" stroke-width="3"/>
+    
+    <path d="M 650 720 A 40 40 0 0 0 610 760 L 650 760 Z" class="outline"/>
+    <path d="M 650 740 L 630 740" class="fill-none stroke-width-3" stroke-width="3"/>
   </g>
 
 </svg>
