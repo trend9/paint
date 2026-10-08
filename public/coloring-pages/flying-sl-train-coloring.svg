@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define common stroke styles -->
+  <defs>
+    <style type="text/css"><![CDATA[
+      .outline {
+        stroke: black;
+        stroke-width: 4; /* Using 4, within the 3-5 range */
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline-none {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Train Group -->
+  <g id="flying_train">
+    <!-- Main Body of Train -->
+    <rect x="150" y="450" width="400" height="150" rx="40" ry="40" class="outline"/>
+
+    <!-- Cabin -->
+    <rect x="450" y="350" width="150" height="150" rx="30" ry="30" class="outline"/>
+    <!-- Cabin Window (for coloring) -->
+    <rect x="475" y="375" width="100" height="100" rx="20" ry="20" class="outline"/>
+
+    <!-- Front Boiler / Nose -->
+    <ellipse cx="150" cy="525" rx="75" ry="75" class="outline"/>
+    <!-- Overlap to make it look like boiler extends from main body and cover unwanted ellipse line -->
+    <rect x="150" y="450" width="10" height="150" class="outline" fill="white" stroke="none"/>
+    <!-- Front window/detail -->
+    <rect x="175" y="475" width="150" height="100" rx="20" ry="20" class="outline"/>
+
+    <!-- Smokestack -->
+    <rect x="250" y="300" width="70" height="100" rx="25" ry="25" class="outline"/>
+    <ellipse cx="285" cy="300" rx="45" ry="25" class="outline"/>
+
+    <!-- Wheels - Simplified, just for train appearance -->
+    <circle cx="250" cy="625" r="50" class="outline"/>
+    <circle cx="450" cy="625" r="50" class="outline"/>
+    <!-- Connectors for wheels -->
+    <rect x="250" y="600" width="200" height="50" rx="10" ry="10" class="outline"/>
+
+    <!-- Wings for flying -->
+    <rect x="50" y="420" width="100" height="40" rx="20" ry="20" transform="rotate(-20 100 440)" class="outline"/>
+    <rect x="650" y="420" width="100" height="40" rx="20" ry="20" transform="rotate(20 700 440)" class="outline"/>
+
+    <!-- Happy Face -->
+    <g id="train_face">
+      <!-- Eyes -->
+      <circle cx="200" cy="500" r="20" class="outline"/>
+      <circle cx="270" cy="500" r="20" class="outline"/>
+      <!-- Mouth -->
+      <path d="M200,535 Q235,560 270,535" class="outline-none"/>
+    </g>
+
+    <!-- Smoke puffs -->
+    <g id="smoke_puffs">
+      <path d="M285,280 C260,250 300,240 320,260 C340,240 380,250 360,280 Z" class="outline"/>
+      <path d="M330,240 C310,210 350,200 370,220 C390,200 430,210 410,240 Z" class="outline"/>
+    </g>
+  </g>
+
+  <!-- Clouds Group -->
+  <g id="clouds">
+    <!-- Cloud 1 -->
+    <path d="M100,150 Q70,100 120,100 Q170,100 200,150 Q230,200 170,200 Q110,200 100,150 Z" class="outline" transform="scale(0.8) translate(50,50)"/>
+    <!-- Cloud 2 -->
+    <path d="M550,150 Q520,100 570,100 Q620,100 650,150 Q680,200 620,200 Q560,200 550,150 Z" class="outline" transform="scale(0.9) translate(50,50)"/>
+    <!-- Cloud 3 -->
+    <path d="M150,750 Q120,700 170,700 Q220,700 250,750 Q280,800 220,800 Q160,800 150,750 Z" class="outline" transform="scale(1.1) translate(0,50)"/>
+    <!-- Cloud 4 -->
+    <path d="M600,700 Q570,650 620,650 Q670,650 700,700 Q730,750 670,750 Q610,750 600,700 Z" class="outline" transform="scale(0.7) translate(100,150)"/>
+  </g>
+
+  <!-- Stars Group -->
+  <g id="stars">
+    <!-- Star 1 (4-point simplified star) -->
+    <path d="M100,50 L110,70 L130,80 L110,90 L100,110 L90,90 L70,80 L90,70 Z" class="outline"/>
+    <!-- Star 2 -->
+    <path d="M650,100 L660,120 L680,130 L660,140 L650,160 L640,140 L620,130 L640,120 Z" class="outline" transform="scale(0.8)"/>
+    <!-- Star 3 -->
+    <path d="M50,800 L60,820 L80,830 L60,840 L50,860 L40,840 L20,830 L40,820 Z" class="outline" transform="scale(0.9)"/>
+    <!-- Star 4 -->
+    <path d="M700,900 L710,920 L730,930 L710,940 L700,960 L690,940 L670,930 L690,920 Z" class="outline" transform="scale(0.7)"/>
+    <!-- Star 5 -->
+    <path d="M400,150 L410,170 L430,180 L410,190 L400,210 L390,190 L370,180 L390,170 Z" class="outline" transform="scale(0.6)"/>
+  </g>
+
+</svg>
