@@ -1,5 +1,33 @@
 [
   {
+    "slug": "astronaut-bear-space-adventure",
+    "title": "星空へたびだとう！宇宙飛行士のくまさんぬりえ",
+    "description": "大きなヘルメットをかぶった可愛いこぐまの宇宙飛行士が、キラキラ光る星や惑星の間をふわふわ冒険中！幼児から楽しめる太い線の塗り絵です。宇宙への好奇心を育みながら、自由な色彩感覚を伸ばしましょう。",
+    "category": "動物・生き物",
+    "tags": [
+      "宇宙",
+      "くま",
+      "幼児向け",
+      "簡単ぬりえ"
+    ],
+    "prompt": "children coloring book page, crisp ultra-thick black line art, cute happy teddy bear astronaut floating in outer space, wearing a simple round spacesuit helmet, holding a small star, surrounded by simple cartoon planets and friendly smiling stars, completely pure white background, no shading, no gray fills, no gradients, bold borders, wide blank coloring spaces for toddlers, clean minimal SVG vector look, high contrast ink lines --ar 3:4",
+    "article": "<h3>きらきらのお星さまへ！くまさんの宇宙たんけん</h3><p>まあるい大きなヘルメットをかぶって、ぷかぷか浮かんでいるのは、元気いっぱいの「くまの宇宙飛行士（うちゅうひこうし）」さん！<br>遠くに見える大きな惑星（わくせい）や、にっこり笑うお星さまたちに「こんにちは！」とごあいさつをしています。ロケットに乗ってやってきた宇宙には、どんな不思議な色があふれているのかな？みんなのすきな色で、わくわくする宇宙の世界をいっぱいに広げてあげてくださいね。</p><h4>ぬりえを楽しむポイント</h4><ul><li><strong>宇宙服（うちゅうふく）は何色？</strong><br>本物の宇宙服は白色が多いですが、赤色や黄色、カラフルなしま模様に塗っても大歓迎！自分だけのオリジナルスーツをデザインしてみましょう。</li><li><strong>お星さまをピカピカにしよう</strong><br>黄色やオレンジ、金色など、元気が出る明るい色で星や星くずをぬると、パッと画面が華やかになります。</li></ul><h4>保護者の方へ：ぬりえで広がる知育と好奇心</h4><p>広大な宇宙をテーマにしたぬりえは、子どもの「もっと知りたい！」という探求心や科学への興味を引き出す素晴らしいきっかけになります。<br>「宇宙には空気がなくてふわふわ浮くんだよ」「太陽の周りを回る星があるんだね」などと会話を交わしながら楽しむことで、語彙力や空間認識能力が自然と育まれます。また、円や星型などのシンプルな図形を枠からはみ出さないように塗る練習は、運筆力や手先の器用さ（微細運動）を高めるのにも役立ちます。</p>",
+    "seo": {
+      "h1": "【無料プリント】宇宙飛行士のくまさんのかわいいぬりえ（幼児・子供向け）",
+      "metaDescription": "無料で印刷できる幼児向け「宇宙飛行士のくま」のぬりえシートです。太い線で小さな子どもでも塗りやすく、宇宙への好奇心を育む知育に最適。おうち遊びや保育にぜひご利用ください。",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "宇宙 ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/astronaut-bear-space-adventure.jpg",
+    "imageType": "jpg",
+    "createdAt": "2026-10-10T03:14:40.213Z",
+    "id": "250"
+  },
+  {
     "slug": "ladybug-flower-field-coloring",
     "title": "【無料ぬりえ】お花畑でパタパタ！てんとう虫さんの楽しい一日",
     "description": "きらきらお日様の下、たくさんのお花に囲まれててんとう虫さんが遊んでいるよ。色とりどりの花とてんとう虫さんをかわいく塗って、自分だけの美しいお花畑を作ろう！",
