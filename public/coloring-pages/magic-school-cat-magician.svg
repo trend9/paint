@@ -1,86 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Magical School Background -->
-  <g id="magical_school_background">
-    <!-- Main school building -->
-    <rect x="100" y="550" width="600" height="300" rx="40" ry="40" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Left tower -->
-    <path d="M150 550 L180 400 L250 400 L280 550 Z" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="215" cy="380" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Tower top -->
-    <!-- Right tower -->
-    <path d="M520 550 L550 400 L620 400 L650 550 Z" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="585" cy="380" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Tower top -->
-    <!-- Door -->
-    <rect x="350" y="700" width="100" height="150" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Windows (simplified) -->
-    <circle cx="200" cy="650" r="30" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="600" cy="650" r="30" fill="white" stroke="black" stroke-width="4"/>
-    <rect x="300" y="590" width="50" height="50" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-    <rect x="450" y="590" width="50" height="50" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
 
-    <!-- Stars around the school -->
-    <path d="M300,150 L320,200 L370,210 L330,240 L340,290 L300,260 L260,290 L270,240 L230,210 L280,200 Z" fill="white" stroke="black" stroke-width="3"/>
-    <path d="M650,100 L670,150 L720,160 L680,190 L690,240 L650,210 L610,240 L620,190 L580,160 L630,150 Z" fill="white" stroke="black" stroke-width="3"/>
-    <path d="M100,250 L120,300 L170,310 L130,340 L140,390 L100,360 L60,390 L70,340 L30,310 L80,300 Z" fill="white" stroke="black" stroke-width="3"/>
-    <path d="M450,50 L470,100 L520,110 L480,140 L490,190 L450,160 L410,190 L420,140 L380,110 L430,100 Z" fill="white" stroke="black" stroke-width="3"/>
-    <path d="M700,400 L720,450 L770,460 L730,490 L740,540 L700,510 L660,540 L670,490 L630,460 L680,450 Z" fill="white" stroke="black" stroke-width="3"/>
-
-    <!-- Sparkles (simplified as small crosses) -->
-    <g stroke="black" stroke-width="3" fill="white">
-      <line x1="100" y1="50" x2="120" y2="70"/>
-      <line x1="100" y1="70" x2="120" y2="50"/>
-      <line x1="500" y1="200" x2="520" y2="220"/>
-      <line x1="500" y1="220" x2="520" y2="200"/>
-      <line x1="250" y1="450" x2="270" y2="470"/>
-      <line x1="250" y1="470" x2="270" y2="450"/>
-      <line x1="700" y1="150" x2="720" y2="170"/>
-      <line x1="700" y1="170" x2="720" y2="150"/>
-    </g>
-
+  <!-- Flowing Cape - placed early so it's behind the cat -->
+  <g id="cape">
+    <path d="M 200 600 C 100 500, 50 750, 100 900 L 700 900 C 750 750, 700 500, 600 600 C 600 700, 650 750, 600 850 C 550 880, 250 880, 200 850 C 150 750, 200 700, 200 600 Z" stroke="black" stroke-width="4" fill="white"/>
   </g>
 
-  <!-- Cat Magician -->
-  <g id="cat_magician">
+  <!-- Main Cat Magician -->
+  <g id="cat-magician">
     <!-- Body -->
-    <ellipse cx="400" cy="700" rx="150" ry="100" fill="white" stroke="black" stroke-width="5"/>
-    <!-- Head -->
-    <circle cx="400" cy="500" r="100" fill="white" stroke="black" stroke-width="5"/>
-    <!-- Ears -->
-    <path d="M330 420 L360 380 L390 420 Z" fill="white" stroke="black" stroke-width="5"/>
-    <path d="M470 420 L440 380 L410 420 Z" fill="white" stroke="black" stroke-width="5"/>
-    <!-- Eyes -->
-    <circle cx="360" cy="480" r="15" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="440" cy="480" r="15" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Nose -->
-    <path d="M400 510 L395 520 L405 520 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Mouth -->
-    <path d="M380 530 Q400 545 420 530" fill="none" stroke="black" stroke-width="4"/>
-    <!-- Whiskers -->
-    <line x1="320" y1="500" x2="360" y2="505" stroke="black" stroke-width="3"/>
-    <line x1="320" y1="510" x2="360" y2="510" stroke="black" stroke-width="3"/>
-    <line x1="320" y1="520" x2="360" y2="515" stroke="black" stroke-width="3"/>
-    <line x1="480" y1="500" x2="440" y2="505" stroke="black" stroke-width="3"/>
-    <line x1="480" y1="510" x2="440" y2="510" stroke="black" stroke-width="3"/>
-    <line x1="480" y1="520" x2="440" y2="515" stroke="black" stroke-width="3"/>
-
-    <!-- Pointy Hat -->
-    <path d="M350 400 L400 250 L450 400 A50 30 0 0 1 350 400 Z" fill="white" stroke="black" stroke-width="5"/>
-    <circle cx="400" cy="270" r="20" fill="white" stroke="black" stroke-width="4"/> <!-- Simplified star on hat as a circle -->
+    <path d="M 400 600 C 280 550, 250 750, 350 850 L 450 850 C 550 750, 520 550, 400 600 Z" stroke="black" stroke-width="4" fill="white"/>
     
-    <!-- Cape -->
-    <path d="M300 550 Q250 650 300 750 Q350 780 400 750 Q450 780 500 750 Q550 650 500 550 Z" fill="white" stroke="black" stroke-width="5"/>
-    <path d="M300 550 C280 580 280 620 300 650" fill="none" stroke="black" stroke-width="4"/> <!-- Left Cape fold -->
-    <path d="M500 550 C520 580 520 620 500 650" fill="none" stroke="black" stroke-width="4"/> <!-- Right Cape fold -->
+    <!-- Paws (Arms) - left paw -->
+    <rect x="250" y="580" width="80" height="150" rx="40" ry="40" stroke="black" stroke-width="4" fill="white"/>
+    
+    <!-- Feet -->
+    <rect x="300" y="830" width="80" height="80" rx="40" ry="40" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="420" y="830" width="80" height="80" rx="40" ry="40" stroke="black" stroke-width="4" fill="white"/>
 
-    <!-- Arms/Paws -->
-    <ellipse cx="280" cy="650" rx="40" ry="30" transform="rotate(-30 280 650)" fill="white" stroke="black" stroke-width="5"/> <!-- Left arm -->
-    <ellipse cx="520" cy="650" rx="40" ry="30" transform="rotate(30 520 650)" fill="white" stroke="black" stroke-width="5"/> <!-- Right arm -->
-
-    <!-- Magic Wand -->
-    <g id="magic_wand">
-      <line x1="470" y1="630" x2="550" y2="550" stroke="black" stroke-width="5"/>
-      <!-- Star on wand -->
-      <path d="M550,550 L560,535 L580,530 L565,545 L570,565 L550,555 L530,565 L535,545 L520,530 L540,535 Z" fill="white" stroke="black" stroke-width="4"/>
-    </g>
-
+    <!-- Head -->
+    <circle cx="400" cy="450" r="150" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Ears -->
+    <path d="M 320 320 Q 350 250, 380 320 Q 350 350, 320 320 Z" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M 420 320 Q 450 250, 480 320 Q 450 350, 420 320 Z" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Eyes -->
+    <circle cx="350" cy="420" r="30" stroke="black" stroke-width="3" fill="white"/>
+    <circle cx="450" cy="420" r="30" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Nose -->
+    <circle cx="400" cy="480" r="15" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Mouth -->
+    <path d="M 370 510 Q 400 540, 430 510" stroke="black" stroke-width="3" fill="none"/>
   </g>
+
+  <!-- Wizard Hat -->
+  <g id="wizard-hat">
+    <!-- Hat Brim -->
+    <ellipse cx="400" cy="380" rx="130" ry="50" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Hat Cone -->
+    <path d="M 290 380 L 400 150 L 510 380 Z" stroke="black" stroke-width="5" fill="white"/>
+    <!-- Star on Hat -->
+    <path d="M 400 180 L 415 210 L 450 215 L 425 240 L 430 270 L 400 255 L 370 270 L 375 240 L 350 215 L 385 210 Z" stroke="black" stroke-width="4" fill="white"/>
+  </g>
+
+  <!-- Magic Wand - positioned before right paw so paw can overlap it slightly -->
+  <g id="magic-wand">
+    <!-- Wand Stick -->
+    <rect x="520" y="450" width="30" height="180" rx="15" ry="15" transform="rotate(20 520 450)" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Star on Wand -->
+    <g transform="translate(560 410) rotate(20)">
+      <path d="M 0 0 L 15 30 L 50 35 L 25 60 L 30 90 L 0 75 L -30 90 L -25 60 L -50 35 L -15 30 Z" stroke="black" stroke-width="4" fill="white"/>
+    </g>
+  </g>
+
+  <!-- Cat's right paw - placed after wand so it overlaps -->
+  <rect x="470" y="550" width="80" height="150" rx="40" ry="40" stroke="black" stroke-width="4" fill="white" transform="rotate(10 510 625)"/>
+
+  <!-- Friendly Owl on shoulder -->
+  <g id="owl">
+    <!-- Body -->
+    <ellipse cx="280" cy="530" rx="60" ry="70" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Head (overlaps body) -->
+    <circle cx="280" cy="480" r="50" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Eyes -->
+    <circle cx="260" cy="470" r="15" stroke="black" stroke-width="3" fill="white"/>
+    <circle cx="300" cy="470" r="15" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Beak -->
+    <path d="M 280 490 L 270 505 L 290 505 Z" stroke="black" stroke-width="3" fill="white"/>
+    <!-- Wings -->
+    <path d="M 220 530 Q 200 500, 220 560" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M 340 530 Q 360 500, 340 560" stroke="black" stroke-width="4" fill="white"/>
+  </g>
+
+  <!-- Floating Open Spellbook -->
+  <g id="spellbook">
+    <!-- Left Page -->
+    <rect x="70" y="100" width="200" height="150" rx="10" ry="10" transform="rotate(-10 70 100)" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Right Page -->
+    <rect x="250" y="80" width="200" height="150" rx="10" ry="10" transform="rotate(10 250 80)" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Spine -->
+    <rect x="260" y="120" width="20" height="120" rx="5" ry="5" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Simple Symbols Floating Nearby -->
+    <g id="spellbook-symbols">
+      <!-- Star -->
+      <path d="M 500 150 L 515 180 L 550 185 L 525 210 L 530 240 L 500 225 L 470 240 L 475 210 L 450 185 L 485 180 Z" stroke="black" stroke-width="4" fill="white"/>
+      <!-- Circle -->
+      <circle cx="600" cy="100" r="40" stroke="black" stroke-width="4" fill="white"/>
+      <!-- Triangle -->
+      <path d="M 680 180 L 720 120 L 760 180 Z" stroke="black" stroke-width="4" fill="white"/>
+      <!-- Swirl -->
+      <path d="M 600 250 Q 650 200, 700 250 S 650 300, 600 250" stroke="black" stroke-width="4" fill="none"/>
+      <path d="M 600 250 Q 630 220, 660 250 S 630 280, 600 250" stroke="black" stroke-width="4" fill="none"/>
+    </g>
+  </g>
+
 </svg>
