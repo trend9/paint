@@ -1,110 +1,103 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-    <!-- Main Group for all content, slightly shifted down for better vertical centering -->
-    <g transform="translate(0, 50)">
+  <!-- Table -->
+  <g id="table">
+    <rect x="350" y="650" width="400" height="50" rx="15" ry="15" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="370" y="700" width="30" height="200" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="700" y="700" width="30" height="200" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+  </g>
 
-        <!-- Koala Chef -->
-        <g id="koala_chef">
-            <!-- Body -->
-            <ellipse cx="400" cy="650" rx="150" ry="180" fill="white" stroke="black" stroke-width="4"/>
-            
-            <!-- Head -->
-            <circle cx="400" cy="400" r="140" fill="white" stroke="black" stroke-width="4"/>
-            
-            <!-- Ears -->
-            <ellipse cx="300" cy="300" rx="60" ry="80" fill="white" stroke="black" stroke-width="4"/>
-            <ellipse cx="500" cy="300" rx="60" ry="80" fill="white" stroke="black" stroke-width="4"/>
-            <!-- Inner ear detail -->
-            <ellipse cx="300" cy="300" rx="30" ry="40" fill="white" stroke="black" stroke-width="3"/>
-            <ellipse cx="500" cy="300" rx="30" ry="40" fill="white" stroke="black" stroke-width="3"/>
+  <!-- Koala Chef -->
+  <g id="koala">
+    <!-- Body -->
+    <ellipse cx="350" cy="550" rx="160" ry="200" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Head -->
+    <circle cx="350" cy="300" r="140" fill="white" stroke="black" stroke-width="4"/>
 
-            <!-- Chef Hat -->
-            <path d="M 320 280 Q 300 180 400 150 Q 500 180 480 280 Z" fill="white" stroke="black" stroke-width="4"/>
-            <ellipse cx="400" cy="280" rx="90" ry="25" fill="white" stroke="black" stroke-width="4"/>
-            
-            <!-- Face features -->
-            <!-- Eyes -->
-            <circle cx="350" cy="380" r="20" fill="white" stroke="black" stroke-width="3"/>
-            <circle cx="450" cy="380" r="20" fill="white" stroke="black" stroke-width="3"/>
-            <!-- Nose (white fill as per coloring book requirement) -->
-            <ellipse cx="400" cy="420" rx="30" ry="25" fill="white" stroke="black" stroke-width="4"/>
-            <!-- Mouth -->
-            <path d="M 370 450 Q 400 480 430 450" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Ears -->
+    <circle cx="220" cy="180" r="70" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="480" cy="180" r="70" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Inner ears -->
+    <circle cx="220" cy="180" r="40" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="480" cy="180" r="40" fill="white" stroke="black" stroke-width="3"/>
 
-            <!-- Arms -->
-            <!-- Left arm (viewer's left, holding spatula) -->
-            <path d="M 300 500 C 250 550 200 650 250 700 C 300 750 350 600 340 520 Z" fill="white" stroke="black" stroke-width="4"/>
-            <!-- Right arm (viewer's right) -->
-            <path d="M 500 500 C 550 550 600 650 550 700 C 500 750 450 600 460 520 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Face: Eyes -->
+    <circle cx="290" cy="270" r="25" fill="white" stroke="black" stroke-width="3"/>
+    <circle cx="410" cy="270" r="25" fill="white" stroke="black" stroke-width="3"/>
 
-            <!-- Legs/Feet (partially hidden by griddle) -->
-            <ellipse cx="350" cy="790" rx="70" ry="40" fill="white" stroke="black" stroke-width="4"/>
-            <ellipse cx="450" cy="790" rx="70" ry="40" fill="white" stroke="black" stroke-width="4"/>
-        </g>
+    <!-- Face: Nose -->
+    <ellipse cx="350" cy="340" rx="40" ry="30" fill="white" stroke="black" stroke-width="4"/>
 
-        <!-- Griddle, Crepe, and Spatula -->
-        <g id="griddle_crepe_spatula">
-            <!-- Griddle base -->
-            <rect x="250" y="700" width="300" height="30" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-            <rect x="240" y="730" width="320" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="3"/>
-            <!-- Griddle Handle -->
-            <rect x="550" y="710" width="50" height="15" rx="5" ry="5" fill="white" stroke="black" stroke-width="3"/>
-            
-            <!-- Crepe (fluffy, irregular path) -->
-            <path d="M 300 650 C 320 630 480 630 500 650 C 520 670 520 750 500 770 C 480 790 320 790 300 770 C 280 750 280 670 300 650 Z" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Face: Smile -->
+    <path d="M 290 390 Q 350 430 410 390" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
 
-            <!-- Spatula in koala's hand -->
-            <!-- Spatula handle -->
-            <path d="M 280 680 C 290 640 330 620 350 640 C 360 660 320 690 280 680 Z" fill="white" stroke="black" stroke-width="3"/>
-            <!-- Spatula head (slightly under the crepe) -->
-            <rect x="300" y="660" width="80" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="3" transform="rotate(-5 340 670)"/>
-        </g>
+    <!-- Chef hat -->
+    <rect x="230" y="180" width="240" height="60" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/> <!-- Hat band -->
+    <path d="M 230 190 Q 200 100 350 70 Q 500 100 470 190 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Hat puff -->
+    <path d="M 250 120 Q 270 90 350 100 Q 430 90 450 120" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 260 140 Q 280 110 350 120 Q 420 110 440 140" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
 
-        <!-- Surrounding Elements: Fruits, Whipped Cream, Chocolate Sauce -->
-        <g id="surroundings">
-            <!-- Strawberries -->
-            <g id="strawberry_left" transform="translate(100, 700)">
-                <path d="M 0 0 Q 30 -50 60 0 Q 70 30 50 60 Q 30 70 10 60 Q -10 30 0 0 Z" fill="white" stroke="black" stroke-width="3"/>
-                <circle cx="20" cy="20" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <circle cx="40" cy="30" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <circle cx="30" cy="45" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <path d="M 30 -5 L 20 -20 L 40 -20 L 30 -5 Z" fill="white" stroke="black" stroke-width="2"/> <!-- Green top -->
-            </g>
-            <g id="strawberry_right" transform="translate(600, 700)">
-                <path d="M 0 0 Q 30 -50 60 0 Q 70 30 50 60 Q 30 70 10 60 Q -10 30 0 0 Z" fill="white" stroke="black" stroke-width="3"/>
-                <circle cx="20" cy="20" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <circle cx="40" cy="30" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <circle cx="30" cy="45" r="3" fill="white" stroke="black" stroke-width="2"/>
-                <path d="M 30 -5 L 20 -20 L 40 -20 L 30 -5 Z" fill="white" stroke="black" stroke-width="2"/> <!-- Green top -->
-            </g>
+    <!-- Apron -->
+    <rect x="270" y="450" width="160" height="180" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="250" y="470" width="20" height="80" rx="10" ry="10" fill="white" stroke="black" stroke-width="3" transform="rotate(-15 250 470)"/>
+    <rect x="430" y="470" width="20" height="80" rx="10" ry="10" fill="white" stroke="black" stroke-width="3" transform="rotate(15 450 470)"/>
+    <!-- Apron straps -->
+    <path d="M 270 450 Q 250 430 250 400" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 430 450 Q 450 430 450 400" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
 
-            <!-- Bananas -->
-            <g id="banana_left" transform="translate(80, 850)">
-                <path d="M 0 0 Q 100 -50 150 50 L 140 70 Q 50 120 0 70 Z" fill="white" stroke="black" stroke-width="3"/>
-                <path d="M 10 10 Q 90 -40 140 40 L 130 60 Q 40 100 10 60 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Inner line for banana segments -->
-            </g>
-            <g id="banana_right" transform="translate(570, 850) scale(-1, 1)"> <!-- Flip horizontally for second banana -->
-                <path d="M 0 0 Q 100 -50 150 50 L 140 70 Q 50 120 0 70 Z" fill="white" stroke="black" stroke-width="3"/>
-                <path d="M 10 10 Q 90 -40 140 40 L 130 60 Q 40 100 10 60 Z" fill="white" stroke="black" stroke-width="3"/>
-            </g>
-
-            <!-- Whipped Cream Dollop -->
-            <g id="whipped_cream" transform="translate(650, 450)">
-                <path d="M 0 50 C 20 20 50 0 80 10 C 110 20 120 50 100 80 C 80 110 50 120 20 100 Z" fill="white" stroke="black" stroke-width="4"/>
-                <path d="M 20 60 C 30 40 50 30 70 40 C 90 50 90 70 70 80 C 50 90 30 80 20 60 Z" fill="white" stroke="black" stroke-width="3"/>
-            </g>
-
-            <!-- Chocolate Sauce Bottles -->
-            <g id="chocolate_sauce_left" transform="translate(100, 300)">
-                <rect x="0" y="50" width="60" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-                <path d="M 10 50 L 50 50 L 40 10 L 20 10 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Neck -->
-                <rect x="25" y="0" width="10" height="15" rx="3" ry="3" fill="white" stroke="black" stroke-width="2"/> <!-- Nozzle -->
-            </g>
-            <g id="chocolate_sauce_right" transform="translate(650, 300)">
-                <rect x="0" y="50" width="60" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-                <path d="M 10 50 L 50 50 L 40 10 L 20 10 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Neck -->
-                <rect x="25" y="0" width="10" height="15" rx="3" ry="3" fill="white" stroke="black" stroke-width="2"/> <!-- Nozzle -->
-            </g>
-
-        </g>
+  <!-- Right Arm (holding spatula) -->
+  <g id="koala-arm-spatula">
+    <ellipse cx="450" cy="500" rx="40" ry="80" transform="rotate(20 450 500)" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="490" cy="560" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Hand -->
+    <!-- Spatula -->
+    <g id="spatula">
+      <rect x="470" y="580" width="15" height="100" rx="8" ry="8" fill="white" stroke="black" stroke-width="3" transform="rotate(10 470 580)"/> <!-- Handle -->
+      <rect x="460" y="670" width="40" height="60" rx="10" ry="10" fill="white" stroke="black" stroke-width="3" transform="rotate(10 460 670)"/> <!-- Blade -->
     </g>
+  </g>
+
+  <!-- Left Arm (holding pan) -->
+  <g id="koala-arm-pan">
+    <ellipse cx="250" cy="500" rx="40" ry="80" transform="rotate(-20 250 500)" fill="white" stroke="black" stroke-width="4"/>
+    <circle cx="210" cy="560" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Hand -->
+    <!-- Crepe Pan and Crepe -->
+    <g id="crepe-pan-and-crepe">
+      <circle cx="200" cy="620" r="80" fill="white" stroke="black" stroke-width="5"/> <!-- Pan base -->
+      <path d="M 120 620 A 80 80 0 0 1 280 620 L 270 630 A 70 70 0 0 0 130 630 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Pan lip -->
+      <rect x="280" y="600" width="80" height="20" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" transform="rotate(-10 280 600)"/> <!-- Handle -->
+      <!-- Crepe (fluffy, simple circle/oval inside) -->
+      <ellipse cx="200" cy="620" rx="70" ry="60" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M 150 600 Q 180 570 200 580 Q 220 570 250 600 Q 230 630 200 640 Q 170 630 150 600 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Fluffy part -->
+    </g>
+  </g>
+
+  <!-- Bowls on table -->
+  <g id="bowls">
+    <!-- Bowl 1: Strawberries -->
+    <g id="strawberries-bowl">
+      <path d="M 450 750 Q 420 780 450 810 Q 480 780 450 750 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Bowl shape -->
+      <ellipse cx="450" cy="750" rx="60" ry="20" fill="white" stroke="black" stroke-width="4"/> <!-- Rim -->
+      <path d="M 420 740 Q 430 720 450 730 Q 470 720 480 740 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Strawberry 1 -->
+      <path d="M 430 760 Q 440 740 460 750 Q 480 740 490 760 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Strawberry 2 -->
+      <path d="M 460 770 Q 470 750 490 760 Q 510 750 520 770 Z" fill="white" stroke="black" stroke-width="3" transform="rotate(10 470 770)"/> <!-- Strawberry 3 -->
+    </g>
+
+    <!-- Bowl 2: Blueberries -->
+    <g id="blueberries-bowl">
+      <path d="M 580 750 Q 550 780 580 810 Q 610 780 580 750 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Bowl shape -->
+      <ellipse cx="580" cy="750" rx="60" ry="20" fill="white" stroke="black" stroke-width="4"/> <!-- Rim -->
+      <circle cx="560" cy="740" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="590" cy="735" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="570" cy="760" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="610" cy="750" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="540" cy="755" r="10" fill="white" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Bowl 3: Whipped cream -->
+    <g id="whipped-cream-bowl">
+      <path d="M 700 750 Q 670 780 700 810 Q 730 780 700 750 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Bowl shape -->
+      <ellipse cx="700" cy="750" rx="60" ry="20" fill="white" stroke="black" stroke-width="4"/> <!-- Rim -->
+      <path d="M 670 730 Q 680 690 700 700 Q 720 690 730 730 Q 710 710 700 720 Q 690 710 670 730 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Whipped cream swirl -->
+    </g>
+  </g>
 </svg>

@@ -1,5 +1,35 @@
 [
   {
+    "slug": "koala-chef-crepe-making",
+    "title": "コアラのクレープ屋さん：ふわふわクレープを作ろう！",
+    "description": "コアラのコックさんが美味しいクレープを作っているよ！どんな色のフルーツやクリームを乗せるかな？みんなで楽しく色を塗って、自分だけのオリジナルクレープを完成させよう！",
+    "category": "スイーツ・食べ物",
+    "tags": [
+      "クレープ",
+      "コアラ",
+      "コックさん",
+      "スイーツ"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, cute happy koala chef wearing a tall chef's hat and apron, holding a crepe pan and a spatula, making a fluffy crepe. The koala has a big friendly smile. On a table next to the koala, there are bowls of sliced strawberries, blueberries, and whipped cream. The scene is simple and uncluttered. pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4",
+    "article": "<h3>コアラのコックさんと一緒に美味しいクレープを作ろう！</h3>\n<p>コアラのコックさんは、ふわふわで甘いクレープを作るのがとっても上手。今日もお店は大忙し！みんなが大好きなフルーツやクリームをたっぷりのせた、世界で一番美味しいクレープを作っているんだ。さあ、きみもコアラのコックさんと一緒に、カラフルなクレープに色を塗ってみよう！</p>\n\n<h3>ぬりえの楽しみ方とコツ</h3>\n<ul>\n<li>クレープの生地は、きれいなきつね色に塗ってみよう。バナナは黄色、いちごは赤、ブルーベリーは青...好きな色でカラフルに飾ってね。</li>\n<li>クリームはふわふわに見えるように、白や薄いピンクで塗ると可愛いよ。</li>\n<li>コアラのコックさんのエプロンや帽子も、好きな色に塗ってあげてね。どんな色のコックさんになるかな？</li>\n</ul>\n\n<h4>保護者の皆様へ：ぬりえが育むお子様の力</h4>\n<p>このぬりえは、お子様の想像力や色彩感覚を豊かに育むだけでなく、指先の巧緻性（こうちせい）を高めるのに役立ちます。コアラのコックさんが作るクレープを通じて、様々な食材の色や形に触れることで、食への興味も深まります。</p>\n<p>「どんな味がするのかな？」「このフルーツは何色？」など、色を塗る過程でお子様と会話することで、表現力や語彙力も自然と伸びていきます。完成したクレープの絵を見ながら、「これは〇〇ちゃんのオリジナルクレープだね！」とたくさん褒めてあげてください。お子様の自信と達成感に繋がります。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】コアラのコックさんと作る！楽しいクレープぬりえ（子供向け）",
+      "metaDescription": "コアラのコックさんが作る美味しそうなクレープの無料ぬりえ！お子様の想像力と色彩感覚を育む、楽しくてかわいい塗り絵です。今すぐダウンロードして、お家で楽しもう！",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "クレープ ぬりえ",
+        "コアラ ぬりえ",
+        "スイーツ ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/koala-chef-crepe-making.svg",
+    "imageType": "svg",
+    "createdAt": "2026-10-12T20:32:04.277Z",
+    "id": "255"
+  },
+  {
     "slug": "flying-whale-mysterious-balloons",
     "title": "【無料ぬりえ】空飛ぶクジラとふしぎな風船の夢いっぱいの旅",
     "description": "大空をゆうゆうと泳ぐ大きなクジラさんと、たくさんのふしぎな風船たちが繰り広げる、夢と冒険のぬりえ。子供たちの想像力を育む楽しい一枚です！",
