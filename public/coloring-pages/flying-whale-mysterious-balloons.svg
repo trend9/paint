@@ -1,135 +1,65 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Ensures a pure white background for the coloring page -->
-  <rect x="0" y="0" width="800" height="1000" fill="white"/>
-
-  <!-- Background Elements: Moon and Stars -->
-  <g id="background-elements" stroke="black" stroke-width="4" fill="white">
-    <!-- Crescent Moon -->
-    <path d="M 650 150 A 70 70 0 0 1 650 290 A 60 60 0 0 0 650 150 Z" />
-
-    <!-- Stars - Simple rounded shapes -->
-    <g id="stars" stroke-width="3">
-      <circle cx="150" cy="100" r="20" />
-      <circle cx="280" cy="70" r="15" />
-      <circle cx="700" cy="40" r="25" />
-      <circle cx="50" cy="200" r="18" />
-      <circle cx="450" cy="90" r="22" />
-      <path d="M 350 50 L 360 70 L 380 70 L 370 90 L 380 110 L 350 100 L 320 110 L 330 90 L 320 70 L 340 70 Z" /> <!-- Simple 5-point star -->
-      <path d="M 200 250 L 210 270 L 230 270 L 220 290 L 230 310 L 200 300 L 170 310 L 180 290 L 170 270 L 190 270 Z" />
-    </g>
-  </g>
-
-  <!-- Whale and Balloons -->
-  <g id="whale-and-balloons" stroke="black" stroke-width="5" fill="white">
+  <!-- Group for the cute happy flying whale -->
+  <g id="flying-whale" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
     <!-- Whale Body -->
-    <ellipse cx="400" cy="500" rx="250" ry="120" />
-
-    <!-- Whale Tail -->
-    <g id="whale-tail">
-      <path d="M 150 500 C 100 460, 70 460, 70 490 C 70 520, 100 540, 150 500 Z"/>
-      <path d="M 150 500 C 100 540, 70 540, 70 510 C 70 480, 100 460, 150 500 Z"/>
-    </g>
-
-    <!-- Flippers -->
-    <path d="M 300 560 C 270 600, 350 620, 380 570 C 400 550, 330 530, 300 560 Z"/>
-    <path d="M 500 560 C 530 600, 450 620, 420 570 C 400 550, 470 530, 500 560 Z"/>
-
-    <!-- Eye (simple circles) -->
-    <circle cx="500" cy="450" r="20" />
-    <circle cx="500" cy="450" r="10" stroke-width="3"/> <!-- Inner eye circle -->
-
-    <!-- Mouth (happy curve) -->
-    <path d="M 450 520 Q 520 540 590 520" fill="none" stroke="black" stroke-width="4"/>
-
-    <!-- Blowhole puff (simple outline) -->
-    <path d="M 400 370 C 380 340, 420 330, 440 350 C 460 370, 430 390, 400 370 Z" stroke-width="4"/>
-    <path d="M 420 370 C 400 350, 440 340, 460 360 C 480 380, 450 400, 420 370 Z" stroke-width="4"/>
+    <path d="M150 500 Q200 300 400 300 C650 300 750 450 700 600 C650 750 300 700 150 500 Z" stroke-width="5"/>
+    <!-- Whale Tail Fin 1 -->
+    <path d="M150 500 Q100 550 150 600 Q180 570 150 500 Z" stroke-width="5"/>
+    <!-- Whale Tail Fin 2 -->
+    <path d="M150 500 Q100 450 150 400 Q180 430 150 500 Z" stroke-width="5"/>
+    <!-- Whale Side Fin -->
+    <path d="M350 550 Q300 600 350 650 Q400 600 350 550 Z" />
+    <!-- Whale Eye -->
+    <circle cx="550" cy="400" r="30" />
+    <!-- Whale Smile -->
+    <path d="M500 470 Q550 520 600 470" fill="none" />
+    <!-- Water Spout (cloud shape for coloring) -->
+    <path d="M400 300 C430 270 440 220 400 200 C360 220 370 270 400 300 Z" />
   </g>
 
-  <!-- Balloons and Strings -->
-  <g id="balloons-and-strings" stroke="black" stroke-width="4" fill="white">
-    <!-- Strings from whale to balloons -->
-    <line x1="380" y1="400" x2="300" y2="250" stroke-width="3" fill="none"/>
-    <line x1="420" y1="400" x2="500" y2="200" stroke-width="3" fill="none"/>
-    <line x1="400" y1="420" x2="400" y2="280" stroke-width="3" fill="none"/>
-    <line x1="350" y1="450" x2="200" y2="300" stroke-width="3" fill="none"/>
-    <line x1="450" y1="450" x2="600" y2="250" stroke-width="3" fill="none"/>
-    <line x1="410" y1="380" x2="250" y2="150" stroke-width="3" fill="none"/>
-    <line x1="430" y1="390" x2="550" y2="100" stroke-width="3" fill="none"/>
-    <line x1="440" y1="400" x2="680" y2="180" stroke-width="3" fill="none"/>
-
-    <!-- Balloons (various shapes and patterns) -->
-    <!-- Balloon 1: Circle with stripes -->
-    <g transform="translate(300, 250)">
-      <circle cx="0" cy="0" r="60"/>
-      <line x1="-50" y1="-30" x2="50" y2="-30" stroke-width="3" fill="none"/>
-      <line x1="-50" y1="0" x2="50" y2="0" stroke-width="3" fill="none"/>
-      <line x1="-50" y1="30" x2="50" y2="30" stroke-width="3" fill="none"/>
+  <!-- Group for the mysterious balloons -->
+  <g id="balloons" stroke="black" stroke-width="3" fill="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Star Balloon 1 (Top Left) -->
+    <path d="M100 150 L120 200 L170 200 L130 230 L150 280 L100 250 L50 280 L70 230 L30 200 L80 200 Z" />
+    <!-- Heart Balloon 1 (Top Right) -->
+    <path d="M600 150 C650 100 750 100 750 200 C750 280 670 350 600 400 C530 350 450 280 450 200 C450 100 550 100 600 150 Z" />
+    <!-- Flower Balloon 1 (Bottom Left) -->
+    <g transform="translate(100 800)">
+        <circle cx="0" cy="0" r="40" /> <!-- Center -->
+        <ellipse cx="0" cy="-60" rx="30" ry="40" />
+        <ellipse cx="0" cy="60" rx="30" ry="40" />
+        <ellipse cx="60" cy="0" rx="30" ry="40" transform="rotate(90)" />
+        <ellipse cx="-60" cy="0" rx="30" ry="40" transform="rotate(90)" />
+        <ellipse cx="40" cy="-40" rx="30" ry="40" transform="rotate(45)" />
+        <ellipse cx="-40" cy="40" rx="30" ry="40" transform="rotate(45)" />
+        <ellipse cx="40" cy="40" rx="30" ry="40" transform="rotate(-45)" />
+        <ellipse cx="-40" cy="-40" rx="30" ry="40" transform="rotate(-45)" />
     </g>
-
-    <!-- Balloon 2: Ellipse with dots -->
-    <g transform="translate(500, 200)">
-      <ellipse cx="0" cy="0" rx="40" ry="70"/>
-      <circle cx="-15" cy="-30" r="8" stroke-width="2"/>
-      <circle cx="15" cy="-10" r="8" stroke-width="2"/>
-      <circle cx="-10" cy="20" r="8" stroke-width="2"/>
+    <!-- Bubble Balloon 1 (Mid-Left) -->
+    <circle cx="250" cy="700" r="60" />
+    <!-- Star Balloon 2 (Mid-Right, smaller) -->
+    <path d="M700 650 L715 680 L745 680 L720 700 L730 730 L700 710 L670 730 L680 700 L655 680 L685 680 Z" />
+    <!-- Heart Balloon 2 (Above whale, smaller) -->
+    <path d="M180 350 C200 330 230 330 230 360 C230 380 210 400 180 410 C150 400 130 380 130 360 C130 330 160 330 180 350 Z" />
+    <!-- Bubble Balloon 2 (Bottom Right) -->
+    <circle cx="650" cy="800" r="40" />
+    <!-- Flower Balloon 2 (Top Right, smaller) -->
+    <g transform="translate(700 50)">
+        <circle cx="0" cy="0" r="20" /> <!-- Center -->
+        <ellipse cx="0" cy="-30" rx="15" ry="20" />
+        <ellipse cx="0" cy="30" rx="15" ry="20" />
+        <ellipse cx="30" cy="0" rx="15" ry="20" transform="rotate(90)" />
+        <ellipse cx="-30" cy="0" rx="15" ry="20" transform="rotate(90)" />
     </g>
-
-    <!-- Balloon 3: Rounded rectangle with zig-zag -->
-    <g transform="translate(400, 280)">
-      <rect x="-40" y="-70" width="80" height="100" rx="20" ry="20"/>
-      <path d="M -30 -40 L 0 -50 L 30 -40 L 0 -30 Z" stroke-width="3" fill="none"/>
-      <path d="M -30 0 L 0 -10 L 30 0 L 0 10 Z" stroke-width="3" fill="none"/>
-      <path d="M -30 40 L 0 30 L 30 40 L 0 50 Z" stroke-width="3" fill="none"/>
-    </g>
-
-    <!-- Balloon 4: Heart shape with inner heart -->
-    <g transform="translate(200, 300)">
-      <path d="M 0 -40 C 25 -80, 60 -60, 60 -20 C 60 20, 30 50, 0 80 C -30 50, -60 20, -60 -20 C -60 -60, -25 -80, 0 -40 Z"/>
-      <path d="M 0 -20 C 15 -50, 35 -35, 35 -5 C 35 15, 15 30, 0 50 C -15 30, -35 15, -35 -5 C -35 -35, -15 -50, 0 -20 Z" stroke-width="3"/>
-    </g>
-
-    <!-- Balloon 5: Star shape with simple criss-cross -->
-    <g transform="translate(600, 250)">
-      <path d="M 0 -70 L 20 -20 L 70 -20 L 30 10 L 50 60 L 0 30 L -50 60 L -30 10 L -70 -20 L -20 -20 Z"/>
-      <line x1="-40" y1="-30" x2="40" y2="30" stroke-width="3" fill="none"/>
-      <line x1="-40" y1="30" x2="40" y2="-30" stroke-width="3" fill="none"/>
-    </g>
-    
-    <!-- Balloon 6: Oval with swirl -->
-    <g transform="translate(250, 150)">
-      <ellipse cx="0" cy="0" rx="35" ry="55"/>
-      <path d="M -15 -20 Q 0 -50 15 -20 Q 0 10 -15 -20 Z" fill="none" stroke="black" stroke-width="3"/>
-    </g>
-
-    <!-- Balloon 7: Teardrop shape with grid lines -->
-    <g transform="translate(550, 100)">
-      <path d="M 0 60 C 40 60, 40 -40, 0 -70 C -40 -40, -40 60, 0 60 Z"/>
-      <line x1="-30" y1="0" x2="30" y2="0" stroke-width="3" fill="none"/>
-      <line x1="-20" y1="20" x2="20" y2="20" stroke-width="3" fill="none"/>
-      <line x1="-20" y1="-20" x2="20" y2="-20" stroke-width="3" fill="none"/>
-      <line x1="0" y1="-50" x2="0" y2="50" stroke-width="3" fill="none"/>
-      <line x1="-20" y1="-30" x2="-20" y2="30" stroke-width="3" fill="none"/>
-      <line x1="20" y1="-30" x2="20" y2="30" stroke-width="3" fill="none"/>
-    </g>
-
-    <!-- Balloon 8: Diamond shape with diagonal lines -->
-    <g transform="translate(680, 180)">
-      <path d="M 0 -60 L 40 0 L 0 60 L -40 0 Z"/>
-      <line x1="-30" y1="-30" x2="30" y2="30" stroke-width="3" fill="none"/>
-      <line x1="-30" y1="30" x2="30" y2="-30" stroke-width="3" fill="none"/>
-    </g>
-  </g>
-
-  <!-- Fluffy Clouds -->
-  <g id="clouds" stroke="black" stroke-width="5" fill="white">
-    <!-- Main cloud at bottom -->
-    <path d="M 50 850 Q 150 780, 300 780 Q 450 780, 500 850 Q 550 780, 700 780 Q 800 800, 750 900 Q 700 980, 500 980 Q 300 980, 200 900 Q 150 880, 50 850 Z" />
-
-    <!-- Smaller cloud 1 -->
-    <path d="M 480 720 Q 520 670, 590 670 Q 660 670, 690 720 Q 710 750, 660 770 Q 590 790, 520 770 Q 480 750, 480 720 Z" />
-
-    <!-- Smaller cloud 2 -->
-    <path d="M 150 750 Q 180 700, 250 700 Q 320 700, 350 750 Q 370 780, 320 800 Q 250 820, 180 800 Q 150 780, 150 750 Z" />
+    <!-- Simple Bubble 3 (Far Left) -->
+    <circle cx="50" cy="450" r="30" />
+    <!-- Simple Bubble 4 (Far Right) -->
+    <circle cx="750" cy="900" r="50" />
+    <!-- Simple Star 3 (Glittering type, Top-Mid) -->
+    <path d="M300 100 L310 120 L330 120 L315 130 L325 150 L300 140 L275 150 L285 130 L270 120 L290 120 Z" />
+    <!-- Simple Diamond (Glittering type, Mid-Bottom) -->
+    <path d="M400 750 L450 800 L400 850 L350 800 Z" />
+    <!-- Simple Diamond (Glittering type, Mid-Top) -->
+    <path d="M500 250 L525 275 L500 300 L475 275 Z" />
   </g>
 </svg>
