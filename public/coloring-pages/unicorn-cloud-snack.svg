@@ -1,117 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <defs>
-    <style type="text/css"><![CDATA[
-      .outline-thin {
-        stroke: black;
-        stroke-width: 3;
-        fill: white;
-      }
-      .outline {
-        stroke: black;
-        stroke-width: 4;
-        fill: white;
-      }
-      .outline-thick {
-        stroke: black;
-        stroke-width: 5;
-        fill: white;
-      }
-      .stroke-only-thin {
-        stroke: black;
-        stroke-width: 3;
-        fill: none;
-      }
-      .stroke-only-extra-thin {
-        stroke: black;
-        stroke-width: 2;
-        fill: none;
-      }
-    ]]></style>
-  </defs>
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pure white background covering the whole viewBox -->
+  <rect x="0" y="0" width="800" height="1000" fill="white" stroke="none"/>
 
-  <!-- Background elements -->
-  <g id="background-elements">
-    <!-- Small clouds -->
-    <path class="outline" d="M100 150 Q120 100 160 100 T220 150 Q200 170 160 180 T100 150 Z"/>
-    <path class="outline" d="M650 200 Q670 150 710 150 T770 200 Q750 220 710 230 T650 200 Z"/>
-    <path class="outline" d="M50 800 Q70 750 110 750 T170 800 Q150 820 110 830 T50 800 Z"/>
-    
-    <!-- Stars (simple 5-point stars) -->
-    <path class="outline" d="M400 50 L420 80 L450 85 L425 110 L430 140 L400 120 L370 140 L375 110 L350 85 L380 80 Z"/>
-    <path class="outline" d="M700 800 L720 830 L750 835 L725 860 L730 890 L700 870 L670 890 L675 860 L650 835 L680 830 Z"/>
-    <path class="outline" d="M150 400 L170 430 L200 435 L175 460 L180 490 L150 470 L120 490 L125 460 L100 435 L130 430 Z"/>
+  <!-- Group for the fluffy cloud and surrounding elements -->
+  <g id="cloud-and-surroundings">
+    <!-- Main fluffy cloud shape -->
+    <path d="M100,680 C70,620 80,550 150,500 C220,450 300,460 350,490 C400,450 480,450 530,490 C600,460 680,480 720,550 C750,620 740,680 680,720 C620,760 550,750 480,740 C410,750 340,760 280,720 C220,680 130,740 100,680 Z"
+          fill="white" stroke="black" stroke-width="5"/>
+
+    <!-- Stars around the cloud -->
+    <g id="stars" stroke="black" stroke-width="3" fill="white">
+      <polygon points="100,400 115,425 145,425 120,445 130,475 100,455 70,475 80,445 55,425 85,425" />
+      <polygon points="650,300 665,325 695,325 670,345 680,375 650,355 620,375 630,345 605,325 635,325" />
+      <polygon points="200,250 215,275 245,275 220,295 230,325 200,305 170,325 180,295 155,275 185,275" />
+      <polygon points="700,500 715,525 745,525 720,545 730,575 700,555 670,575 680,545 655,525 685,525" />
+      <polygon points="150,750 165,775 195,775 170,795 180,825 150,805 120,825 130,795 105,775 135,775" />
+    </g>
+
+    <!-- Hearts around the cloud -->
+    <g id="hearts" stroke="black" stroke-width="3" fill="white">
+      <path d="M100,500 C80,480 80,450 100,430 C120,450 120,480 100,500 Z" />
+      <path d="M500,400 C480,380 480,350 500,330 C520,350 520,380 500,400 Z" />
+      <path d="M700,650 C680,630 680,600 700,580 C720,600 720,630 700,650 Z" />
+      <path d="M250,350 C230,330 230,300 250,280 C270,300 270,330 250,350 Z" />
+      <path d="M50,650 C30,630 30,600 50,580 C70,600 70,630 50,650 Z" />
+    </g>
   </g>
 
-  <!-- Main cloud -->
-  <g id="main-cloud">
-    <path class="outline-thick" d="M150 650 C100 650 100 550 180 500 C250 450 350 450 400 480 C450 450 550 450 620 500 C700 550 700 650 650 650 C700 700 650 750 600 750 C550 800 450 800 400 770 C350 800 250 800 200 750 C150 750 100 700 150 650 Z"/>
-  </g>
+  <!-- Group for the cute happy unicorn -->
+  <g id="unicorn" stroke="black" stroke-width="4" fill="white">
+    <!-- Body - large rounded shape -->
+    <ellipse cx="400" cy="620" rx="150" ry="100"/>
 
-  <!-- Unicorn -->
-  <g id="unicorn">
-    <!-- Body -->
-    <ellipse class="outline-thick" cx="400" cy="580" rx="180" ry="100"/>
+    <!-- Legs (sitting gracefully) -->
+    <!-- Front left leg -->
+    <path d="M360,680 C340,730 380,740 400,700 C420,660 380,670 360,680 Z" />
+    <!-- Front right leg -->
+    <path d="M440,680 C420,730 460,740 480,700 C500,660 460,670 440,680 Z" />
+    <!-- Back left leg (partially hidden) -->
+    <path d="M280,680 C260,710 290,730 320,720 C340,710 300,690 280,680 Z" />
 
-    <!-- Head -->
-    <path class="outline-thick" d="M500 500 C580 450 620 500 580 580 C540 600 500 580 500 500 Z"/>
+    <!-- Neck connection -->
+    <path d="M480,550 C490,520 500,490 510,480 L500,600 C490,570 480,550 480,550 Z" />
 
-    <!-- Snout -->
-    <ellipse class="outline" cx="560" cy="550" rx="35" ry="25"/>
-    <!-- Nostrils -->
-    <circle class="stroke-only-extra-thin" cx="550" cy="555" r="2"/>
-    <circle class="stroke-only-extra-thin" cx="570" cy="555" r="2"/>
-    
-    <!-- Smile -->
-    <path class="stroke-only-thin" d="M540 570 Q560 585 580 570"/>
+    <!-- Head - rounded ellipse -->
+    <ellipse cx="560" cy="480" rx="80" ry="70"/>
+    <!-- Muzzle - smaller ellipse for the snout area -->
+    <ellipse cx="610" cy="490" rx="35" ry="25"/>
 
-    <!-- Eyes -->
-    <circle class="outline" cx="530" cy="510" r="15"/>
-    <circle class="outline" cx="570" cy="510" r="15"/>
-    <!-- Pupils -->
-    <circle class="stroke-only-extra-thin" cx="530" cy="510" r="4"/>
-    <circle class="stroke-only-extra-thin" cx="570" cy="510" r="4"/>
+    <!-- Gentle smile -->
+    <path d="M595,500 Q610,515 625,500" fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Eyes - simple circles -->
+    <circle cx="560" cy="460" r="8"/>
 
     <!-- Ears -->
-    <path class="outline" d="M510 480 Q520 450 540 460 Q530 490 510 480 Z"/>
-    <path class="outline" d="M550 480 Q560 450 580 460 Q570 490 550 480 Z"/>
-    
-    <!-- Horn -->
-    <path class="outline" d="M530 460 Q550 410 570 460 L530 460 Z"/>
-    <!-- Horn stripes -->
-    <line class="stroke-only-extra-thin" x1="535" y1="445" x2="565" y2="455"/>
-    <line class="stroke-only-extra-thin" x1="540" y1="430" x2="560" y2="440"/>
+    <path d="M520,430 Q530,400 550,420 Q540,410 520,430 Z"/>
+    <path d="M560,420 Q570,390 590,410 Q580,400 560,420 Z"/>
 
-    <!-- Mane -->
-    <path class="outline-thick" d="M480 480 Q450 420 400 450 Q350 480 380 520 Q410 550 480 480 Z"/>
+    <!-- Horn - simplified rounded triangle -->
+    <path d="M550,400 C555,360 565,360 570,400 C565,405 555,405 550,400 Z"/>
 
-    <!-- Legs (front) -->
-    <path class="outline-thick" d="M300 650 Q310 700 350 700 Q360 650 300 650 Z"/>
-    <path class="outline-thick" d="M420 650 Q430 700 470 700 Q480 650 420 650 Z"/>
-    <!-- Legs (back, slightly obscured) -->
-    <path class="outline-thick" d="M250 630 Q260 680 300 680 Q310 630 250 630 Z"/>
-    <path class="outline-thick" d="M370 630 Q380 680 420 680 Q430 630 370 630 Z"/>
+    <!-- Mane (flowing tufts) -->
+    <path d="M510,400 C490,370 500,340 520,360 C540,380 530,410 510,400 Z"/>
+    <path d="M490,430 C470,400 480,370 500,390 C520,410 510,440 490,430 Z"/>
+    <path d="M470,460 C450,430 460,400 480,420 C500,440 490,470 470,460 Z"/>
 
-    <!-- Tail -->
-    <path class="outline-thick" d="M220 580 Q180 500 200 480 Q250 480 230 550 Q250 600 220 580 Z"/>
+    <!-- Tail (fluffy tufts) -->
+    <path d="M250,680 C230,650 210,670 200,700 C190,730 220,750 250,720 Z"/>
+    <path d="M260,690 C240,660 220,680 210,710 C200,740 230,760 260,730 Z"/>
   </g>
 
-  <!-- Cupcake -->
-  <g id="cupcake">
-    <!-- Base -->
-    <path class="outline-thick" d="M600 670 Q620 720 640 700 Q660 720 680 670 L600 670 Z"/>
-    <line class="stroke-only-thin" x1="605" y1="675" x2="630" y2="690"/>
-    <line class="stroke-only-thin" x1="620" y1="670" x2="640" y2="685"/>
-    <line class="stroke-only-thin" x1="640" y1="670" x2="660" y2="685"/>
-    <line class="stroke-only-thin" x1="655" y1="675" x2="680" y2="690"/>
+  <!-- Group for food items (cookies, cupcake) -->
+  <g id="food" stroke="black" stroke-width="3" fill="white">
+    <!-- Cupcake (near unicorn's mouth) -->
+    <g id="cupcake">
+      <!-- Wrapper -->
+      <path d="M620,530 L640,560 Q630,570 610,570 Q590,570 580,560 L600,530 Z" stroke-width="4"/>
+      <!-- Cake part -->
+      <ellipse cx="610" cy="525" rx="30" ry="20" stroke-width="4"/>
+      <!-- Frosting - simple rounded top -->
+      <ellipse cx="610" cy="500" rx="25" ry="15" stroke-width="4"/>
+      <!-- Cherry on top -->
+      <circle cx="610" cy="485" r="5"/>
+    </g>
 
-    <!-- Frosting -->
-    <path class="outline-thick" d="M640 590 C620 550 580 600 600 640 C620 660 660 660 680 640 C700 600 660 550 640 590 Z"/>
-    <!-- Cherry on top -->
-    <circle class="outline" cx="640" cy="580" r="10"/>
-  </g>
-
-  <!-- Star-shaped Cookie -->
-  <g id="star-cookie">
-    <path class="outline-thick" d="M500 680 L520 710 L550 715 L525 740 L530 770 L500 750 L470 770 L475 740 L450 715 L480 710 Z"/>
+    <!-- Cookies -->
+    <g id="cookies">
+      <!-- Cookie 1 -->
+      <circle cx="500" cy="650" r="25"/>
+      <circle cx="490" cy="640" r="5"/>
+      <circle cx="510" cy="645" r="5"/>
+      <circle cx="500" cy="660" r="5"/>
+      <circle cx="495" cy="655" r="5"/>
+      <!-- Cookie 2 -->
+      <circle cx="450" cy="700" r="25"/>
+      <circle cx="440" cy="690" r="5"/>
+      <circle cx="460" cy="695" r="5"/>
+      <circle cx="450" cy="710" r="5"/>
+      <circle cx="445" cy="705" r="5"/>
+      <!-- Cookie 3 -->
+      <circle cx="680" cy="620" r="25"/>
+      <circle cx="670" cy="610" r="5"/>
+      <circle cx="690" cy="615" r="5"/>
+      <circle cx="680" cy="630" r="5"/>
+      <circle cx="675" cy="625" r="5"/>
+    </g>
   </g>
 </svg>
