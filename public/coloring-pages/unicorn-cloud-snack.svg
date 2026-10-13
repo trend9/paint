@@ -1,89 +1,117 @@
-<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
   <defs>
-    <style>
-      .outline-main {
+    <style type="text/css"><![CDATA[
+      .outline-thin {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+      }
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+      }
+      .outline-thick {
         stroke: black;
         stroke-width: 5;
         fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
       }
-      .outline-detail {
-        stroke: black;
-        stroke-width: 3;
-        fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .outline-detail-nofill {
+      .stroke-only-thin {
         stroke: black;
         stroke-width: 3;
         fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
       }
-    </style>
+      .stroke-only-extra-thin {
+        stroke: black;
+        stroke-width: 2;
+        fill: none;
+      }
+    ]]></style>
   </defs>
 
-  <!-- Large fluffy cloud -->
-  <g id="cloud">
-    <path class="outline-main" d="M100 800 Q50 750 100 700 Q120 660 180 650 Q230 620 280 630 Q300 590 350 600 Q400 570 450 590 Q500 560 550 580 Q600 550 650 590 Q700 630 700 680 Q730 720 700 770 Q670 820 600 840 Q550 860 480 850 Q420 870 350 840 Q280 860 200 840 Q150 820 100 800 Z"/>
+  <!-- Background elements -->
+  <g id="background-elements">
+    <!-- Small clouds -->
+    <path class="outline" d="M100 150 Q120 100 160 100 T220 150 Q200 170 160 180 T100 150 Z"/>
+    <path class="outline" d="M650 200 Q670 150 710 150 T770 200 Q750 220 710 230 T650 200 Z"/>
+    <path class="outline" d="M50 800 Q70 750 110 750 T170 800 Q150 820 110 830 T50 800 Z"/>
+    
+    <!-- Stars (simple 5-point stars) -->
+    <path class="outline" d="M400 50 L420 80 L450 85 L425 110 L430 140 L400 120 L370 140 L375 110 L350 85 L380 80 Z"/>
+    <path class="outline" d="M700 800 L720 830 L750 835 L725 860 L730 890 L700 870 L670 890 L675 860 L650 835 L680 830 Z"/>
+    <path class="outline" d="M150 400 L170 430 L200 435 L175 460 L180 490 L150 470 L120 490 L125 460 L100 435 L130 430 Z"/>
   </g>
 
-  <!-- Cute happy unicorn -->
+  <!-- Main cloud -->
+  <g id="main-cloud">
+    <path class="outline-thick" d="M150 650 C100 650 100 550 180 500 C250 450 350 450 400 480 C450 450 550 450 620 500 C700 550 700 650 650 650 C700 700 650 750 600 750 C550 800 450 800 400 770 C350 800 250 800 200 750 C150 750 100 700 150 650 Z"/>
+  </g>
+
+  <!-- Unicorn -->
   <g id="unicorn">
     <!-- Body -->
-    <ellipse class="outline-main" cx="450" cy="550" rx="150" ry="100"/>
-    <!-- Neck -->
-    <path class="outline-main" d="M380 470 C350 400 380 360 420 350 L480 350 C520 360 550 400 520 470 Z"/>
+    <ellipse class="outline-thick" cx="400" cy="580" rx="180" ry="100"/>
+
     <!-- Head -->
-    <ellipse class="outline-main" cx="450" cy="300" rx="120" ry="90"/>
-    <!-- Snout (mouth area) -->
-    <ellipse class="outline-main" cx="490" cy="330" rx="60" ry="40"/>
+    <path class="outline-thick" d="M500 500 C580 450 620 500 580 580 C540 600 500 580 500 500 Z"/>
+
+    <!-- Snout -->
+    <ellipse class="outline" cx="560" cy="550" rx="35" ry="25"/>
+    <!-- Nostrils -->
+    <circle class="stroke-only-extra-thin" cx="550" cy="555" r="2"/>
+    <circle class="stroke-only-extra-thin" cx="570" cy="555" r="2"/>
+    
+    <!-- Smile -->
+    <path class="stroke-only-thin" d="M540 570 Q560 585 580 570"/>
+
+    <!-- Eyes -->
+    <circle class="outline" cx="530" cy="510" r="15"/>
+    <circle class="outline" cx="570" cy="510" r="15"/>
+    <!-- Pupils -->
+    <circle class="stroke-only-extra-thin" cx="530" cy="510" r="4"/>
+    <circle class="stroke-only-extra-thin" cx="570" cy="510" r="4"/>
+
+    <!-- Ears -->
+    <path class="outline" d="M510 480 Q520 450 540 460 Q530 490 510 480 Z"/>
+    <path class="outline" d="M550 480 Q560 450 580 460 Q570 490 550 480 Z"/>
+    
     <!-- Horn -->
-    <path class="outline-main" d="M440 220 Q470 140 500 220 Z"/>
-    <path class="outline-detail-nofill" d="M450 200 Q470 160 490 200 M460 210 Q470 180 480 210"/> <!-- Horn details -->
+    <path class="outline" d="M530 460 Q550 410 570 460 L530 460 Z"/>
+    <!-- Horn stripes -->
+    <line class="stroke-only-extra-thin" x1="535" y1="445" x2="565" y2="455"/>
+    <line class="stroke-only-extra-thin" x1="540" y1="430" x2="560" y2="440"/>
+
     <!-- Mane -->
-    <path class="outline-main" d="M370 250 C300 200 280 280 320 350 C350 400 400 380 370 300 Z"/>
+    <path class="outline-thick" d="M480 480 Q450 420 400 450 Q350 480 380 520 Q410 550 480 480 Z"/>
+
+    <!-- Legs (front) -->
+    <path class="outline-thick" d="M300 650 Q310 700 350 700 Q360 650 300 650 Z"/>
+    <path class="outline-thick" d="M420 650 Q430 700 470 700 Q480 650 420 650 Z"/>
+    <!-- Legs (back, slightly obscured) -->
+    <path class="outline-thick" d="M250 630 Q260 680 300 680 Q310 630 250 630 Z"/>
+    <path class="outline-thick" d="M370 630 Q380 680 420 680 Q430 630 370 630 Z"/>
+
     <!-- Tail -->
-    <path class="outline-main" d="M300 550 C250 600 200 550 220 620 C240 680 280 650 300 600 Z"/>
-    <!-- Front Legs -->
-    <rect class="outline-main" x="380" y="600" width="60" height="100" rx="30" ry="30"/>
-    <rect class="outline-main" x="500" y="600" width="60" height="100" rx="30" ry="30"/>
-    <!-- Hooves (simple lines at the bottom of legs) -->
-    <path class="outline-detail-nofill" d="M380 700 H440 M500 700 H560"/>
-
-    <!-- Face details -->
-    <g id="unicorn-face">
-      <!-- Eyes -->
-      <circle class="outline-detail" cx="410" cy="280" r="20"/>
-      <circle class="outline-detail" cx="500" cy="280" r="20"/>
-      <!-- Smile -->
-      <path class="outline-detail-nofill" d="M460 350 Q490 380 520 350"/>
-      <!-- Cheek blush marks -->
-      <ellipse class="outline-detail-nofill" cx="400" cy="340" rx="20" ry="10"/>
-      <ellipse class="outline-detail-nofill" cx="540" cy="340" rx="20" ry="10"/>
-    </g>
+    <path class="outline-thick" d="M220 580 Q180 500 200 480 Q250 480 230 550 Q250 600 220 580 Z"/>
   </g>
 
-  <!-- Simple cookie -->
-  <g id="cookie">
-    <circle class="outline-main" cx="420" cy="400" r="70"/>
-    <!-- Chocolate chips -->
-    <circle class="outline-detail-nofill" cx="390" cy="370" r="15"/>
-    <circle class="outline-detail-nofill" cx="450" cy="380" r="15"/>
-    <circle class="outline-detail-nofill" cx="420" cy="430" r="15"/>
-  </g>
+  <!-- Cupcake -->
+  <g id="cupcake">
+    <!-- Base -->
+    <path class="outline-thick" d="M600 670 Q620 720 640 700 Q660 720 680 670 L600 670 Z"/>
+    <line class="stroke-only-thin" x1="605" y1="675" x2="630" y2="690"/>
+    <line class="stroke-only-thin" x1="620" y1="670" x2="640" y2="685"/>
+    <line class="stroke-only-thin" x1="640" y1="670" x2="660" y2="685"/>
+    <line class="stroke-only-thin" x1="655" y1="675" x2="680" y2="690"/>
 
-  <!-- Small cake -->
-  <g id="cake">
-    <!-- Cake body -->
-    <rect class="outline-main" x="500" y="380" width="100" height="80" rx="10" ry="10"/>
-    <!-- Frosting top -->
-    <path class="outline-main" d="M500 380 Q550 360 600 380"/>
-    <!-- Frosting drips -->
-    <path class="outline-detail-nofill" d="M510 380 V400 M530 380 V400 M550 380 V400 M570 380 V400 M590 380 V400"/>
+    <!-- Frosting -->
+    <path class="outline-thick" d="M640 590 C620 550 580 600 600 640 C620 660 660 660 680 640 C700 600 660 550 640 590 Z"/>
     <!-- Cherry on top -->
-    <circle class="outline-detail-nofill" cx="550" cy="360" r="15"/>
+    <circle class="outline" cx="640" cy="580" r="10"/>
+  </g>
+
+  <!-- Star-shaped Cookie -->
+  <g id="star-cookie">
+    <path class="outline-thick" d="M500 680 L520 710 L550 715 L525 740 L530 770 L500 750 L470 770 L475 740 L450 715 L480 710 Z"/>
   </g>
 </svg>
