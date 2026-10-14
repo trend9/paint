@@ -1,116 +1,94 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style type="text/css">
-      .outline {
-        stroke: black;
-        stroke-width: 4;
-        fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .outline-thin {
-        stroke: black;
-        stroke-width: 3;
-        fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .outline-nofill {
-        stroke: black;
-        stroke-width: 4;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .outline-thin-nofill {
-        stroke: black;
-        stroke-width: 3;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-    </style>
-  </defs>
+  <!-- Background Elements -->
+  <g id="background_elements">
+    <!-- Simple Table -->
+    <rect x="100" y="780" width="600" height="40" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+    <rect x="120" y="820" width="30" height="150" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+    <rect x="650" y="820" width="30" height="150" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
 
-  <!-- Group for the main blackboard (background element) -->
-  <g id="blackboard">
-    <rect x="100" y="150" width="600" height="700" rx="30" ry="30" class="outline"/>
-    <!-- Blackboard frame detail, simplified -->
-    <rect x="115" y="165" width="570" height="670" rx="20" ry="20" class="outline-nofill"/>
+    <!-- Potion Bottle on Table -->
+    <g id="potion_bottle">
+      <path d="M520 700 L500 750 C490 770 510 770 500 790 L520 790 C510 770 530 770 520 750 L500 700 Z" fill="white" stroke="black" stroke-width="5"/>
+      <rect x="500" y="750" width="40" height="40" rx="10" ry="10" fill="white" stroke="black" stroke-width="5"/>
+      <ellipse cx="520" cy="740" rx="20" ry="10" fill="white" stroke="black" stroke-width="5"/>
+    </g>
+
+    <!-- Floating Stars -->
+    <g id="floating_stars">
+      <!-- Star 1 -->
+      <path d="M150 150 L170 180 L210 185 L180 210 L190 250 L150 220 L110 250 L120 210 L90 185 L130 180 Z" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Star 2 -->
+      <path d="M600 100 L620 130 L660 135 L630 160 L640 200 L600 170 L560 200 L570 160 L540 135 L580 130 Z" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Star 3 -->
+      <path d="M250 50 L270 80 L310 85 L280 110 L290 150 L250 120 L210 150 L220 110 L190 85 L230 80 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Star 4 -->
+      <path d="M700 300 L715 320 L740 325 L720 340 L725 360 L700 345 L675 360 L680 340 L660 325 L685 320 Z" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Star 5 -->
+      <path d="M100 450 L115 470 L140 475 L120 490 L125 510 L100 495 L75 510 L80 490 L60 475 L85 470 Z" fill="white" stroke="black" stroke-width="4"/>
+    </g>
   </g>
 
-  <!-- Group for the Cat Magician -->
-  <g id="cat-magician">
+  <!-- Cat Magician -->
+  <g id="cat_magician">
     <!-- Cat Body -->
-    <ellipse cx="400" cy="650" rx="180" ry="200" class="outline"/>
-    <!-- Cat Tail -->
-    <path d="M 230 750 Q 150 700 180 600 Q 200 550 250 500" class="outline-nofill"/>
-    <!-- Cat Paws (Front) -->
-    <ellipse cx="320" cy="780" rx="60" ry="40" class="outline" transform="rotate(-15 320 780)"/>
-    <ellipse cx="480" cy="780" rx="60" ry="40" class="outline" transform="rotate(15 480 780)"/>
+    <ellipse cx="400" cy="700" rx="180" ry="150" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Cat Head -->
+    <circle cx="400" cy="500" r="140" fill="white" stroke="black" stroke-width="5"/>
+    <!-- Cat Ears -->
+    <path d="M300 380 C320 300 380 300 400 380 Z" fill="white" stroke="black" stroke-width="5"/>
+    <path d="M500 380 C480 300 420 300 400 380 Z" fill="white" stroke="black" stroke-width="5"/>
 
-    <!-- Cat Head and Face -->
-    <g id="cat-head">
-      <circle cx="400" cy="420" r="120" class="outline"/>
-      <!-- Cat Ears -->
-      <path d="M 330 300 Q 350 250 370 300 Q 360 330 330 300 Z" class="outline"/>
-      <path d="M 470 300 Q 450 250 430 300 Q 440 330 470 300 Z" class="outline"/>
+    <!-- Cat Face -->
+    <g id="cat_face">
       <!-- Eyes -->
-      <circle cx="360" cy="400" r="20" class="outline-thin"/>
-      <circle cx="440" cy="400" r="20" class="outline-thin"/>
+      <circle cx="340" cy="470" r="30" fill="white" stroke="black" stroke-width="5"/>
+      <circle cx="460" cy="470" r="30" fill="white" stroke="black" stroke-width="5"/>
       <!-- Nose -->
-      <ellipse cx="400" cy="440" rx="15" ry="10" class="outline-thin"/>
-      <!-- Mouth - friendly smile -->
-      <path d="M 370 470 Q 400 490 430 470" class="outline-thin-nofill"/>
+      <path d="M400 520 L380 540 L420 540 Z" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Mouth (happy smile) -->
+      <path d="M350 560 Q400 600 450 560" fill="none" stroke="black" stroke-width="5"/>
+      <!-- Whiskers -->
+      <path d="M300 540 L250 530" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M300 560 L250 570" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M300 580 L250 590" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M500 540 L550 530" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M500 560 L550 570" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M500 580 L550 590" fill="none" stroke="black" stroke-width="3"/>
     </g>
 
     <!-- Wizard Hat -->
-    <g id="wizard-hat">
-      <!-- Hat brim -->
-      <ellipse cx="400" cy="330" rx="100" ry="30" class="outline"/>
-      <!-- Hat cone -->
-      <path d="M 320 320 Q 400 150 480 320 Z" class="outline"/>
-      <!-- Stars on hat -->
-      <path d="M 370 200 L 375 210 L 385 215 L 375 220 L 370 230 L 365 220 L 355 215 L 365 210 Z" class="outline-thin"/>
-      <path d="M 430 250 L 435 260 L 445 265 L 435 270 L 430 280 L 425 270 L 415 265 L 425 260 Z" class="outline-thin"/>
-      <path d="M 400 170 L 405 180 L 415 185 L 405 190 L 400 200 L 395 190 L 385 185 L 395 180 Z" class="outline-thin"/>
+    <g id="wizard_hat">
+      <ellipse cx="400" cy="400" rx="140" ry="40" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M300 380 L400 150 L500 380 Z" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Hat details -->
+      <circle cx="400" cy="270" r="30" fill="white" stroke="black" stroke-width="5"/>
     </g>
 
-    <!-- Cat's arm holding the wand -->
-    <g id="cat-wand-arm">
-      <path d="M 450 600 Q 490 550 520 580 Q 550 610 520 650 Q 490 680 450 650 Z" class="outline"/>
-      <!-- Wand -->
-      <rect x="500" y="550" width="20" height="150" rx="10" ry="10" class="outline" transform="rotate(45 500 600)"/>
-      <!-- Star at wand tip -->
-      <path d="M 600 500 L 610 520 L 630 525 L 610 530 L 600 550 L 590 530 L 570 525 L 590 520 Z" class="outline"/>
+    <!-- Small Cape -->
+    <g id="small_cape">
+      <path d="M300 580 C200 600 200 700 300 720 L300 600 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M500 580 C600 600 600 700 500 720 L500 600 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M300 580 Q400 600 500 580 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M300 600 C300 650 500 650 500 600 Z" fill="white" stroke="black" stroke-width="5"/>
     </g>
-  </g>
 
-  <!-- Floating Playing Cards and Stars (foreground elements) -->
-  <g id="floating-elements">
-    <!-- Card 1 (Circle inside) -->
-    <rect x="150" y="250" width="80" height="120" rx="10" ry="10" class="outline" transform="rotate(-15 190 310)"/>
-    <circle cx="190" cy="310" r="20" class="outline-thin"/>
-    <!-- Card 2 (Square inside) -->
-    <rect x="600" y="200" width="80" height="120" rx="10" ry="10" class="outline" transform="rotate(10 640 260)"/>
-    <rect x="625" y="245" width="30" height="30" rx="5" ry="5" class="outline-thin"/>
-    <!-- Card 3 (Diamond inside) -->
-    <rect x="100" y="600" width="80" height="120" rx="10" ry="10" class="outline" transform="rotate(20 140 660)"/>
-    <path d="M 140 650 L 150 670 L 140 690 L 130 670 Z" class="outline-thin"/>
-    <!-- Card 4 (Club-like inside) -->
-    <rect x="650" y="650" width="80" height="120" rx="10" ry="10" class="outline" transform="rotate(-5 690 710)"/>
-    <circle cx="680" cy="690" r="10" class="outline-thin"/>
-    <circle cx="700" cy="690" r="10" class="outline-thin"/>
-    <circle cx="690" cy="680" r="10" class="outline-thin"/>
-    <!-- Simple stem for the club -->
-    <path d="M 685 695 L 695 695 L 695 715 L 685 715 Z" class="outline-thin"/>
+    <!-- Cat Paws -->
+    <g id="cat_paws">
+      <!-- Left Paw -->
+      <ellipse cx="300" cy="800" rx="60" ry="40" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Right Paw (holding wand) -->
+      <ellipse cx="500" cy="800" rx="60" ry="40" fill="white" stroke="black" stroke-width="5"/>
+    </g>
 
+    <!-- Cat Tail -->
+    <path d="M220 750 Q180 850 250 900 Q300 880 300 800 Z" fill="white" stroke="black" stroke-width="5"/>
 
-    <!-- Small Stars -->
-    <path d="M 250 180 L 255 190 L 265 195 L 255 200 L 250 210 L 245 200 L 235 195 L 245 190 Z" class="outline-thin"/>
-    <path d="M 550 160 L 555 170 L 565 175 L 555 180 L 550 190 L 545 180 L 535 175 L 545 170 Z" class="outline-thin"/>
-    <path d="M 700 500 L 705 510 L 715 515 L 705 520 L 700 530 L 695 520 L 685 515 L 695 510 Z" class="outline-thin"/>
-    <path d="M 120 450 L 125 460 L 135 465 L 125 470 L 120 480 L 115 470 L 105 465 L 115 460 Z" class="outline-thin"/>
-    <path d="M 300 850 L 305 860 L 315 865 L 305 870 L 300 880 L 295 870 L 285 865 L 295 860 Z" class="outline-thin"/>
+    <!-- Magic Wand -->
+    <g id="magic_wand">
+      <rect x="520" y="650" width="20" height="180" rx="10" ry="10" transform="rotate(-30 520 650)" fill="white" stroke="black" stroke-width="5"/>
+      <!-- Sparkling effect -->
+      <path d="M600 550 L620 580 L660 585 L630 610 L640 650 L600 620 L560 650 L570 610 L540 585 L580 580 Z" fill="white" stroke="black" stroke-width="5"/>
+      <path d="M600 550 L600 650 M550 600 L650 600" fill="none" stroke="black" stroke-width="3"/>
+    </g>
   </g>
 </svg>
