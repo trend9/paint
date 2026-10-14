@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Background Hills -->
+  <g id="background-hills">
+    <path d="M0 700 Q150 650 300 680 T500 720 T650 690 T800 710 V1000 H0 Z" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M-50 780 Q100 750 250 770 T400 800 T550 780 T700 810 T850 790 V1000 H-50 Z" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Fir Trees -->
+  <g id="fir-trees">
+    <!-- Tree 1 -->
+    <path d="M150 550 L120 620 Q140 640 150 620 Q160 640 180 620 L150 550 Z" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="145" y="620" width="10" height="30" rx="3" ry="3" fill="white" stroke="black" stroke-width="4"/>
+    <!-- Tree 2 -->
+    <path d="M650 580 L620 650 Q640 670 650 650 Q660 670 680 650 L650 580 Z" fill="white" stroke="black" stroke-width="4"/>
+    <rect x="645" y="650" width="10" height="30" rx="3" ry="3" fill="white" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Hot Spring -->
+  <g id="hot-spring">
+    <path d="M100 800 C150 720 650 720 700 800 C750 880 650 920 400 920 C150 920 50 880 100 800 Z" fill="white" stroke="black" stroke-width="5"/>
+  </g>
+
+  <!-- Penguins -->
+  <g id="penguins">
+    <!-- Penguin 1 (left) -->
+    <g id="penguin-1">
+      <ellipse cx="280" cy="780" rx="40" ry="60" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <circle cx="280" cy="710" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <circle cx="270" cy="705" r="4" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 1 -->
+      <circle cx="290" cy="705" r="4" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 2 -->
+      <path d="M275 720 Q280 725 285 720" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M245 770 Q235 760 235 790 Q245 800 245 770 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 1 -->
+      <path d="M315 770 Q325 760 325 790 Q315 800 315 770 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 2 -->
+    </g>
+
+    <!-- Penguin 2 (center) -->
+    <g id="penguin-2">
+      <ellipse cx="400" cy="770" rx="45" ry="65" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <circle cx="400" cy="690" r="35" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <circle cx="390" cy="685" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 1 -->
+      <circle cx="410" cy="685" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 2 -->
+      <path d="M395 700 Q400 705 405 700" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M355 760 Q345 750 345 780 Q355 790 355 760 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 1 -->
+      <path d="M445 760 Q455 750 455 780 Q445 790 445 760 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 2 -->
+    </g>
+
+    <!-- Penguin 3 (right) -->
+    <g id="penguin-3">
+      <ellipse cx="520" cy="790" rx="40" ry="55" fill="white" stroke="black" stroke-width="4"/> <!-- Body -->
+      <circle cx="520" cy="720" r="30" fill="white" stroke="black" stroke-width="4"/> <!-- Head -->
+      <circle cx="510" cy="715" r="4" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 1 -->
+      <circle cx="530" cy="715" r="4" fill="white" stroke="black" stroke-width="3"/> <!-- Eye 2 -->
+      <path d="M515 730 Q520 735 525 730" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      <path d="M485 780 Q475 770 475 800 Q485 810 485 780 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 1 -->
+      <path d="M555 780 Q565 770 565 800 Q555 810 555 780 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Wing 2 -->
+    </g>
+  </g>
+
+  <!-- Steam Rising -->
+  <g id="steam">
+    <path d="M200 750 C210 700 190 650 200 600" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M350 740 C360 690 340 640 350 590" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M450 730 C460 680 440 630 450 580" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <path d="M600 760 C610 710 590 660 600 610" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
