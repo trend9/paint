@@ -1,5 +1,40 @@
 [
   {
+    "slug": "alice-rabbit-watchmaker-coloring",
+    "title": "【無料ぬりえ】アリスのうさぎさん時計屋さん：ふしぎな時間旅行へようこそ！",
+    "description": "アリスの世界から飛び出した、おしゃれなうさぎさんの時計屋さんぬりえ！たくさんの時計とゼンマイに囲まれた、ふしぎな工房をカラフルに彩ろう。想像力を広げて、自分だけの特別な時間を作ってみてね！",
+    "category": "ファンタジー",
+    "tags": [
+      "アリス",
+      "うさぎ",
+      "時計",
+      "ファンタジー",
+      "無料ぬりえ",
+      "子供向け",
+      "知育"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, a cute happy anthropomorphic rabbit wearing a waistcoat, monocle, and a tiny hat, working diligently in a whimsical watchmaker's shop, surrounded by many oversized, simple, happy-faced clocks of various shapes (round, square, star), gears, and springs scattered around the floor and hanging on the walls. The background is a pure white, solid color. No shading, no gray fills, zero gradients. Thick, prominent borders are a must. The style should be highly simplified for toddlers, resembling an SVG vector graphic, with beautiful ink lines. Iconic Alice in Wonderland aesthetic elements without being too complex. --ar 3:4",
+    "article": "<h3>ふしぎの国からやってきた！うさぎの時計屋さんへようこそ</h3><p>みんな、こんにちは！きょうは、とってもふしぎな世界へご招待します。絵本から飛び出してきたみたいな、かわいい「うさぎの時計屋さん」のぬりえだよ！このうさぎさん、いつもチョッキを着て、まるいメガネをかけているんだ。そして、彼の作る時計はどれもこれも、ちょっと変わっていて、でもとびきり楽しいんだよ。大きなぜんまいや、ピカピカの歯車、いろんな形の時計がたくさん！きみはどんな色で、この時計屋さんを彩るかな？</p><h3>きみだけの特別な時間をぬってみよう！</h3><h4>【ぬり方のヒント】</h4><ul><li>うさぎさんのチョッキは何色にする？赤かな、それとも青かな？</li><li>たくさんの時計は、一つずつちがう色にしてみよう！カラフルな時計がいっぱい並んだら、どんなに楽しいだろうね。</li><li>壁にかかっている時計は、もしかしたら時間の流れを変える時計かもしれないよ。想像しながらぬってみてね。</li><li>細かくてむずかしいところは、お父さんやお母さんと一緒にゆっくりぬってみてね。</li></ul><h4>【おうちの方へ：ぬりえで育む知育の効果】</h4><p>このぬりえは、お子様の想像力と色彩感覚を豊かにするだけでなく、時計や時間の概念に触れる良いきっかけとなります。アリスの世界観を通して、ファンタジーへの興味を引き出し、物語を創造する力を育みます。また、細かい部分を塗ることで、指先の巧緻性（こうちせい）や集中力も自然と向上します。どんな色を選んでも間違いはありません。お子様の自由な発想を大切に見守ってあげてください。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】ふしぎの国のアリス風 うさぎの時計屋さんぬりえ（子供・幼児向け）",
+      "metaDescription": "アリスの世界から飛び出した、かわいい「うさぎの時計屋さん」の無料ぬりえ！たくさんの時計とゼンマイに囲まれたふしぎな工房をカラフルに彩ろう。子供たちの想像力を育む知育ぬりえです。今すぐダウンロード！",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "アリス ぬりえ",
+        "うさぎ ぬりえ",
+        "時計 ぬりえ",
+        "ファンタジー ぬりえ",
+        "知育ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/alice-rabbit-watchmaker-coloring.svg",
+    "imageType": "svg",
+    "createdAt": "2026-10-15T02:05:16.379Z",
+    "id": "260"
+  },
+  {
     "slug": "snow-world-penguin-onsen-coloring",
     "title": "【無料ぬりえ】雪の世界ののんびりペンギン温泉！きらきら湯けむり、ポカポカ楽しい♪",
     "description": "真っ白な雪が降る冬の日、あったかい温泉に入ってのんびり過ごすペンギンたちのぬりえです。湯けむりモクモク、みんなでポカポカ。可愛いペンギンたちを色とりどりに塗って、楽しい温泉タイムを彩ろう！",
