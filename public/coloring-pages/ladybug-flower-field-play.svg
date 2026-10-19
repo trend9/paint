@@ -1,0 +1,148 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .main-outline {
+        stroke: black;
+        stroke-width: 5;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .detail-outline {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Ladybug -->
+  <g id="ladybug">
+    <!-- Body -->
+    <ellipse cx="400" cy="350" rx="100" ry="130" class="main-outline"/>
+    <!-- Head -->
+    <circle cx="400" cy="220" r="70" class="main-outline"/>
+    <!-- Eyes -->
+    <circle cx="360" cy="210" r="15" class="detail-outline"/>
+    <circle cx="440" cy="210" r="15" class="detail-outline"/>
+    <!-- Smile -->
+    <path d="M 370 240 Q 400 260 430 240" class="detail-outline no-fill"/>
+    <!-- Antennae -->
+    <path d="M 380 180 Q 360 150 340 160" class="detail-outline no-fill"/>
+    <circle cx="340" cy="160" r="5" class="detail-outline"/>
+    <path d="M 420 180 Q 440 150 460 160" class="detail-outline no-fill"/>
+    <circle cx="460" cy="160" r="5" class="detail-outline"/>
+    <!-- Wings (slightly open) -->
+    <ellipse cx="360" cy="350" rx="60" ry="120" transform="rotate(-15 360 350)" class="main-outline"/>
+    <ellipse cx="440" cy="350" rx="60" ry="120" transform="rotate(15 440 350)" class="main-outline"/>
+    <!-- Prominent dotted wings (dots for coloring) -->
+    <circle cx="350" cy="300" r="15" class="detail-outline"/>
+    <circle cx="380" cy="360" r="15" class="detail-outline"/>
+    <circle cx="340" cy="420" r="15" class="detail-outline"/>
+    <circle cx="450" cy="300" r="15" class="detail-outline"/>
+    <circle cx="420" cy="360" r="15" class="detail-outline"/>
+    <circle cx="460" cy="420" r="15" class="detail-outline"/>
+  </g>
+
+  <!-- Ground line - simple wavy area -->
+  <path d="M 0 650 C 200 680 600 620 800 650 V 1000 H 0 Z" class="outline"/>
+
+  <!-- Foreground Flowers -->
+  <g id="foreground-flowers">
+    <!-- Large Daisy 1 -->
+    <g transform="translate(150 850)">
+      <circle cx="0" cy="0" r="30" class="outline"/> <!-- Center -->
+      <ellipse cx="0" cy="-50" rx="20" ry="40" class="outline"/>
+      <ellipse cx="0" cy="50" rx="20" ry="40" class="outline"/>
+      <ellipse cx="-50" cy="0" rx="40" ry="20" class="outline"/>
+      <ellipse cx="50" cy="0" rx="40" ry="20" class="outline"/>
+      <ellipse cx="-35" cy="-35" rx="35" ry="35" transform="rotate(-45 -35 -35)" class="outline"/>
+      <ellipse cx="35" cy="-35" rx="35" ry="35" transform="rotate(45 35 -35)" class="outline"/>
+      <ellipse cx="-35" cy="35" rx="35" ry="35" transform="rotate(45 -35 35)" class="outline"/>
+      <ellipse cx="35" cy="35" rx="35" ry="35" transform="rotate(-45 35 35)" class="outline"/>
+      <path d="M 0 30 V 130" class="outline no-fill"/> <!-- Stem -->
+      <path d="M 0 80 Q -30 70 -40 100 Q -30 110 0 130 Z" class="outline"/> <!-- Leaf -->
+    </g>
+
+    <!-- Large Tulip 1 -->
+    <g transform="translate(600 850)">
+      <path d="M 0 -70 Q -30 -120 -50 -70 Q -40 -20 0 0 Q 40 -20 50 -70 Q 30 -120 0 -70 Z" class="outline"/>
+      <path d="M 0 0 V 130" class="outline no-fill"/> <!-- Stem -->
+      <path d="M 0 50 Q 30 40 40 70 Q 30 80 0 100 Z" class="outline"/> <!-- Leaf -->
+    </g>
+
+    <!-- Large Clover 1 -->
+    <g transform="translate(350 820)">
+      <circle cx="0" cy="-30" r="30" class="outline"/>
+      <circle cx="35" cy="-10" r="30" class="outline"/>
+      <circle cx="-35" cy="-10" r="30" class="outline"/>
+      <path d="M 0 0 V 130" class="outline no-fill"/> <!-- Stem -->
+    </g>
+
+    <!-- Large Sunflower 1 -->
+    <g transform="translate(720 800)">
+      <circle cx="0" cy="0" r="40" class="outline"/> <!-- Center -->
+      <!-- Petals -->
+      <path d="M 0 -40 L -20 -70 L 0 -60 L 20 -70 L 0 -40 Z" class="outline"/>
+      <path d="M 40 0 L 70 -20 L 60 0 L 70 20 L 40 0 Z" class="outline"/>
+      <path d="M 0 40 L 20 70 L 0 60 L -20 70 L 0 40 Z" class="outline"/>
+      <path d="M -40 0 L -70 20 L -60 0 L -70 -20 L -40 0 Z" class="outline"/>
+      <!-- Diagonal petals, simplified paths for toddlers -->
+      <path d="M -28 -28 L -48 -58 L -38 -48 L -18 -58 L -28 -28 Z" class="outline" transform="rotate(-45)"/>
+      <path d="M 28 -28 L 48 -58 L 38 -48 L 18 -58 L 28 -28 Z" class="outline" transform="rotate(45)"/>
+      <path d="M -28 28 L -48 58 L -38 48 L -18 58 L -28 28 Z" class="outline" transform="rotate(45)"/>
+      <path d="M 28 28 L 48 58 L 38 48 L 18 58 L 28 28 Z" class="outline" transform="rotate(-45)"/>
+      <path d="M 0 40 V 180" class="outline no-fill"/> <!-- Stem -->
+      <path d="M 0 100 Q 30 90 40 120 Q 30 130 0 150 Z" class="outline"/> <!-- Leaf -->
+    </g>
+  </g>
+
+  <!-- Background Flowers -->
+  <g id="background-flowers">
+    <!-- Small Daisy 2 -->
+    <g transform="translate(100 700)">
+      <circle cx="0" cy="0" r="15" class="outline"/>
+      <ellipse cx="0" cy="-20" rx="10" ry="20" class="outline"/>
+      <ellipse cx="0" cy="20" rx="10" ry="20" class="outline"/>
+      <ellipse cx="-20" cy="0" rx="20" ry="10" class="outline"/>
+      <ellipse cx="20" cy="0" rx="20" ry="10" class="outline"/>
+      <path d="M 0 15 V 50" class="detail-outline no-fill"/>
+    </g>
+
+    <!-- Small Tulip 2 -->
+    <g transform="translate(280 720)">
+      <path d="M 0 -40 Q -10 -70 -20 -40 Q -15 -10 0 0 Q 15 -10 20 -40 Q 10 -70 0 -40 Z" class="outline"/>
+      <path d="M 0 0 V 30" class="detail-outline no-fill"/>
+    </g>
+
+    <!-- Small Clover 2 -->
+    <g transform="translate(500 695)">
+      <circle cx="0" cy="-25" r="15" class="outline"/>
+      <circle cx="17.5" cy="-5" r="15" class="outline"/>
+      <circle cx="-17.5" cy="-5" r="15" class="outline"/>
+      <path d="M 0 0 V 55" class="detail-outline no-fill"/>
+    </g>
+
+    <!-- Small Sunflower 2 -->
+    <g transform="translate(700 690)">
+      <circle cx="0" cy="0" r="20" class="outline"/>
+      <path d="M 0 -15 L -10 -30 L 0 -25 L 10 -30 L 0 -15 Z" class="outline"/>
+      <path d="M 15 0 L 30 -10 L 25 0 L 30 10 L 15 0 Z" class="outline"/>
+      <path d="M 0 15 L 10 30 L 0 25 L -10 30 L 0 15 Z" class="outline"/>
+      <path d="M -15 0 L -30 10 L -25 0 L -30 -10 L -15 0 Z" class="outline"/>
+      <path d="M 0 20 V 60" class="detail-outline no-fill"/>
+    </g>
+  </g>
+</svg>
