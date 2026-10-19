@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- Background Clouds & Sky Details -->
+  <g id="clouds" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Cloud Top Left -->
+    <path d="M 120 180 
+             q -30 0 -45 -25 
+             q -25 -40 5 -70 
+             q 20 -25 55 -15 
+             q 30 -40 75 -30 
+             q 45 10 50 50 
+             q 40 5 45 45 
+             q 5 45 -40 45 z" />
+
+    <!-- Cloud Top Right -->
+    <path d="M 640 130 
+             q 30 -25 65 -15 
+             q 45 10 45 50 
+             q 35 15 30 50 
+             q -10 40 -50 40 
+             l -90 0 
+             q -40 -5 -40 -45 
+             q 0 -35 40 -80 z" />
+
+    <!-- Cloud Mid Left -->
+    <path d="M 70 510 
+             q -35 0 -45 -35 
+             q -10 -40 25 -55 
+             q 15 -35 50 -30 
+             q 35 -30 70 -10 
+             q 35 15 30 55 
+             q 35 20 25 55 
+             q -10 35 -50 30 z" />
+
+    <!-- Cloud Bottom Right -->
+    <path d="M 630 830 
+             q -25 -30 -15 -65 
+             q 15 -40 55 -40 
+             q 35 -35 75 -20 
+             q 40 20 35 60 
+             q 35 20 25 60 
+             q -15 35 -55 30 
+             l -75 0 
+             q -35 -5 -45 -25 z" />
+
+    <!-- Cloud Bottom Left -->
+    <path d="M 170 890 
+             q -35 5 -55 -25 
+             q -25 -35 0 -60 
+             q 15 -30 45 -25 
+             q 25 -35 65 -25 
+             q 40 10 45 45 
+             q 35 10 35 45 
+             q -5 45 -50 45 z" />
+
+    <!-- Little Sparkles / Stars -->
+    <!-- Star 1 -->
+    <path d="M 240 90 Q 240 105 255 105 Q 240 105 240 120 Q 240 105 225 105 Q 240 105 240 90 Z" />
+    <!-- Star 2 -->
+    <path d="M 570 70 Q 570 85 585 85 Q 570 85 570 100 Q 570 85 555 85 Q 570 85 570 70 Z" />
+    <!-- Star 3 -->
+    <path d="M 710 400 Q 710 415 725 415 Q 710 415 710 430 Q 710 415 695 415 Q 710 415 710 400 Z" />
+    <!-- Star 4 -->
+    <path d="M 110 670 Q 110 685 125 685 Q 110 685 110 700 Q 110 685 95 685 Q 110 685 110 670 Z" />
+  </g>
+
+  <!-- Balloon Strings -->
+  <g id="strings" stroke="black" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M 235 285 C 260 360, 370 420, 395 500" />
+    <path d="M 330 240 C 340 330, 385 410, 400 500" />
+    <path d="M 430 205 C 430 300, 410 400, 405 502" />
+    <path d="M 525 240 C 510 330, 430 410, 410 505" />
+    <path d="M 605 295 C 580 370, 450 430, 415 508" />
+    <path d="M 300 370 C 330 420, 385 460, 402 505" />
+    <path d="M 515 375 C 485 425, 435 465, 412 508" />
+  </g>
+
+  <!-- Whale -->
+  <g id="whale" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Back Flipper (Far side) -->
+    <path d="M 470 635 C 480 665, 500 700, 525 710 C 535 715, 545 705, 540 690 C 530 660, 510 630, 495 615" />
+
+    <!-- Main Whale Body and Tail -->
+    <path d="M 660 560 
+             C 675 490, 580 440, 430 450 
+             C 320 455, 220 505, 175 555 
+             C 150 540, 115 505, 85 510 
+             C 70 515, 75 540, 95 560 
+             C 115 580, 135 590, 140 600 
+             C 130 610, 100 630, 80 655 
+             C 65 675, 80 695, 95 690 
+             C 130 675, 160 635, 185 615 
+             C 215 670, 290 740, 400 755 
+             C 520 770, 620 720, 665 635 
+             C 675 615, 675 585, 660 560 Z" />
+
+    <!-- Whale Belly Patch / Texture -->
+    <!-- Lower jaw to tail groove border -->
+    <path d="M 665 635 
+             C 600 710, 480 725, 375 700 
+             C 275 675, 215 625, 185 615" 
+          fill="none" />
+
+    <!-- Belly Under-lines (Grooves for coloring) -->
+    <g fill="none" stroke-width="4">
+      <path d="M 590 680 C 555 725, 490 735, 440 735" />
+      <path d="M 520 705 C 485 735, 420 745, 370 740" />
+      <path d="M 445 720 C 410 745, 355 745, 310 735" />
+      <path d="M 370 715 C 335 730, 290 725, 255 705" />
+    </g>
+
+    <!-- Front Flipper (Near side) -->
+    <path d="M 425 630 
+             C 415 675, 395 740, 425 765 
+             C 445 780, 465 760, 475 730 
+             C 490 685, 480 640, 460 620 Z" />
+
+    <!-- Cute Smiling Mouth -->
+    <path d="M 660 595 
+             C 635 635, 570 635, 545 605 
+             C 538 595, 545 590, 550 595 
+             C 570 620, 625 620, 650 590 
+             Z" />
+    <!-- Smile corner dimple -->
+    <path d="M 538 595 C 535 605, 545 612, 550 610" fill="none" />
+
+    <!-- Sweet Eye -->
+    <!-- Outer Eye White -->
+    <circle cx="585" cy="535" r="22" />
+    <!-- Large Pupil -->
+    <circle cx="588" cy="535" r="14" fill="black" />
+    <!-- Big Catchlight / Sparkle in eye -->
+    <circle cx="583" cy="530" r="5" fill="white" stroke="none" />
+    <circle cx="593" cy="539" r="2.5" fill="white" stroke="none" />
+    <!-- Cute Eyebrow -->
+    <path d="M 568 502 C 580 492, 600 495, 608 505" fill="none" stroke-width="4" />
+
+    <!-- Cute Rosy Cheek (Coloring circle) -->
+    <ellipse cx="625" cy="580" rx="14" ry="9" stroke-width="3" stroke-dasharray="4,3" fill="white" />
+
+    <!-- Water Drop Blowhole Detail (Tiny and cute on head) -->
+    <path d="M 460 450 C 455 425, 475 410, 475 410 C 475 410, 495 425, 490 450 Z" />
+
+    <!-- Knot / Bow where balloons attach to the whale -->
+    <path d="M 395 495 
+             C 385 485, 370 495, 380 510 
+             C 390 520, 415 520, 425 510 
+             C 435 495, 420 485, 410 495 
+             Z" />
+    <!-- Ribbon ends -->
+    <path d="M 385 512 C 375 525, 360 530, 355 540" fill="none" stroke-width="4" />
+    <path d="M 420 512 C 430 525, 440 535, 440 545" fill="none" stroke-width="4" />
+  </g>
+
+  <!-- Balloons -->
+  <g id="balloons" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    
+    <!-- Balloon 1: Round (Left) -->
+    <g>
+      <circle cx="225" cy="235" r="55" />
+      <!-- Knot -->
+      <polygon points="220,290 230,290 225,298" />
+      <!-- Inner highlight circle for coloring -->
+      <path d="M 195 210 A 35 35 0 0 1 235 190" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 2: Oval (Mid-Left) -->
+    <g>
+      <ellipse cx="325" cy="175" rx="50" ry="65" />
+      <!-- Knot -->
+      <polygon points="320,240 330,240 325,248" />
+      <!-- Inner highlight -->
+      <path d="M 300 140 A 40 50 0 0 1 345 125" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 3: Heart Shape (Center High) -->
+    <g>
+      <path d="M 430 195 
+               C 430 195, 360 145, 360 95 
+               A 38 38 0 0 1 430 80 
+               A 38 38 0 0 1 500 95 
+               C 500 145, 430 195, 430 195 Z" />
+      <!-- Knot -->
+      <polygon points="425,195 435,195 430,205" />
+      <!-- Inner cute detail -->
+      <path d="M 380 90 A 20 20 0 0 1 415 85" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 4: Oval (Mid-Right) -->
+    <g>
+      <ellipse cx="530" cy="175" rx="52" ry="68" />
+      <!-- Knot -->
+      <polygon points="525,243 535,243 530,252" />
+      <!-- Inner highlight -->
+      <path d="M 505 140 A 40 50 0 0 1 550 125" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 5: Big Round (Right) -->
+    <g>
+      <circle cx="615" cy="240" r="58" />
+      <!-- Knot -->
+      <polygon points="610,298 620,298 615,306" />
+      <!-- Inner highlight -->
+      <path d="M 585 210 A 40 40 0 0 1 630 195" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 6: Lower Left Round -->
+    <g>
+      <circle cx="295" cy="320" r="48" />
+      <!-- Knot -->
+      <polygon points="290,368 300,368 295,376" />
+      <!-- Inner highlight -->
+      <path d="M 270 300 A 30 30 0 0 1 305 285" fill="none" stroke-width="4" />
+    </g>
+
+    <!-- Balloon 7: Lower Right Oval -->
+    <g>
+      <ellipse cx="520" cy="315" rx="46" ry="60" />
+      <!-- Knot -->
+      <polygon points="515,375 525,375 520,383" />
+      <!-- Inner highlight -->
+      <path d="M 495 285 A 35 45 0 0 1 535 270" fill="none" stroke-width="4" />
+    </g>
+  </g>
+</svg>
