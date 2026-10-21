@@ -1,195 +1,186 @@
 <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-  <!-- Pure white background for the coloring page -->
-  <rect x="0" y="0" width="800" height="1000" fill="white"/>
+  <!-- Global style for coloring book: thick black outlines, white fill -->
+  <style>
+    .main-outline {
+      stroke: black;
+      stroke-width: 5;
+      fill: white;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    .detail-outline {
+      stroke: black;
+      stroke-width: 4;
+      fill: white;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    .thin-detail {
+      stroke: black;
+      stroke-width: 3;
+      fill: white;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  </style>
 
-  <!-- Shop Environment: Simple desk/workbench and floor line -->
-  <g id="shop-environment">
-    <!-- A simple floor line to define the ground -->
-    <line x1="0" y1="800" x2="800" y2="800" stroke="black" stroke-width="5" fill="none"/>
-    <!-- A simple workbench with rounded corners -->
-    <rect x="100" y="700" width="600" height="150" rx="30" ry="30" fill="white" stroke="black" stroke-width="5"/>
-    <!-- Desk legs -->
-    <rect x="120" y="850" width="50" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
-    <rect x="630" y="850" width="50" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+  <!-- Background elements: Whimsical Clocks and Gears -->
+  <g id="whimsical_elements">
+    <!-- Shelves and Tables -->
+    <!-- Shelf 1 (top left) -->
+    <rect x="50" y="250" width="200" height="20" rx="10" ry="10" class="detail-outline"/>
+    <rect x="60" y="270" width="10" height="40" rx="5" ry="5" class="detail-outline"/>
+    <rect x="240" y="270" width="10" height="40" rx="5" ry="5" class="detail-outline"/>
+
+    <!-- Shelf 2 (top right) -->
+    <rect x="550" y="180" width="200" height="20" rx="10" ry="10" class="detail-outline"/>
+    <rect x="560" y="200" width="10" height="40" rx="5" ry="5" class="detail-outline"/>
+    <rect x="740" y="200" width="10" height="40" rx="5" ry="5" class="detail-outline"/>
+
+    <!-- Long Shelf (mid-left) -->
+    <rect x="50" y="550" width="250" height="25" rx="12" ry="12" class="detail-outline"/>
+    <rect x="60" y="575" width="10" height="50" rx="5" ry="5" class="detail-outline"/>
+    <rect x="290" y="575" width="10" height="50" rx="5" ry="5" class="detail-outline"/>
+
+    <!-- Table (bottom right) -->
+    <rect x="500" y="800" width="250" height="40" rx="15" ry="15" class="detail-outline"/>
+    <rect x="520" y="840" width="20" height="80" rx="10" ry="10" class="detail-outline"/>
+    <rect x="710" y="840" width="20" height="80" rx="10" ry="10" class="detail-outline"/>
+
+    <!-- Floating Gear 1 (top left) -->
+    <g class="detail-outline">
+      <circle cx="150" cy="150" r="50"/>
+      <ellipse cx="150" cy="90" rx="15" ry="10"/> <!-- Tooth 1 -->
+      <ellipse cx="150" cy="210" rx="15" ry="10"/> <!-- Tooth 2 -->
+      <ellipse cx="90" cy="150" rx="10" ry="15"/> <!-- Tooth 3 -->
+      <ellipse cx="210" cy="150" rx="10" ry="15"/> <!-- Tooth 4 -->
+      <circle cx="150" cy="150" r="15" class="thin-detail"/>
+    </g>
+
+    <!-- Clock 1 (on shelf 1) -->
+    <circle cx="150" cy="220" r="40" class="detail-outline"/>
+    <line x1="150" y1="220" x2="150" y2="195" class="thin-detail" fill="none"/>
+    <line x1="150" y1="220" x2="175" y2="220" class="thin-detail" fill="none"/>
+
+    <!-- Gear 2 (floating mid-right) -->
+    <g class="detail-outline">
+      <circle cx="650" cy="400" r="45"/>
+      <ellipse cx="650" cy="345" rx="12" ry="8"/> <!-- Tooth 1 -->
+      <ellipse cx="650" cy="455" rx="12" ry="8"/> <!-- Tooth 2 -->
+      <ellipse cx="595" cy="400" rx="8" ry="12"/> <!-- Tooth 3 -->
+      <ellipse cx="705" cy="400" rx="8" ry="12"/> <!-- Tooth 4 -->
+      <circle cx="650" cy="400" r="12" class="thin-detail"/>
+    </g>
+
+    <!-- Clock 2 (on shelf 2) -->
+    <rect x="600" y="100" width="100" height="100" rx="15" ry="15" class="detail-outline"/>
+    <circle cx="650" cy="150" r="30" class="detail-outline"/>
+    <line x1="650" y1="150" x2="650" y2="130" class="thin-detail" fill="none"/>
+    <line x1="650" y1="150" x2="670" y2="150" class="thin-detail" fill="none"/>
+
+    <!-- Wavy Clock (on long shelf) -->
+    <path d="M175 480 C200 450 250 450 275 480 C300 510 300 540 275 570 C250 600 200 600 175 570 C150 540 150 510 175 480 Z" class="detail-outline"/>
+    <circle cx="225" cy="525" r="30" class="detail-outline"/>
+    <line x1="225" y1="525" x2="225" y2="505" class="thin-detail" fill="none"/>
+    <line x1="225" y1="525" x2="245" y2="525" class="thin-detail" fill="none"/>
+
+    <!-- Cuckoo Clock (floating mid-left) -->
+    <rect x="80" y="350" width="100" height="150" rx="15" ry="15" class="detail-outline"/>
+    <path d="M80 350 L130 310 L180 350 Z" class="detail-outline" fill="white"/> <!-- Roof -->
+    <rect x="115" y="360" width="30" height="30" rx="5" ry="5" class="detail-outline"/> <!-- Cuckoo door -->
+    <circle cx="130" cy="430" r="30" class="detail-outline"/>
+    <line x1="130" y1="430" x2="130" y2="410" class="thin-detail" fill="none"/>
+    <line x1="130" y1="430" x2="150" y2="430" class="thin-detail" fill="none"/>
+
+    <!-- Gear 3 (bottom left) -->
+    <g class="detail-outline">
+      <circle cx="100" cy="850" r="40"/>
+      <ellipse cx="100" cy="800" rx="10" ry="8"/> <!-- Tooth 1 -->
+      <ellipse cx="100" cy="900" rx="10" ry="8"/> <!-- Tooth 2 -->
+      <ellipse cx="50" cy="850" rx="8" ry="10"/> <!-- Tooth 3 -->
+      <ellipse cx="150" cy="850" rx="8" ry="10"/> <!-- Tooth 4 -->
+      <circle cx="100" cy="850" r="10" class="thin-detail"/>
+    </g>
+
+    <!-- Clock 3 (on table) -->
+    <ellipse cx="625" cy="750" rx="60" ry="80" class="detail-outline"/>
+    <circle cx="625" cy="750" r="35" class="detail-outline"/>
+    <line x1="625" y1="750" x2="625" y2="725" class="thin-detail" fill="none"/>
+    <line x1="625" y1="750" x2="645" y2="750" class="thin-detail" fill="none"/>
+
+    <!-- Small gear 4 (floating right) -->
+    <g class="detail-outline">
+      <circle cx="700" cy="600" r="30"/>
+      <ellipse cx="700" cy="565" rx="8" ry="6"/> <!-- Tooth 1 -->
+      <ellipse cx="700" cy="635" rx="8" ry="6"/> <!-- Tooth 2 -->
+      <ellipse cx="665" cy="600" rx="6" ry="8"/> <!-- Tooth 3 -->
+      <ellipse cx="735" cy="600" rx="6" ry="8"/> <!-- Tooth 4 -->
+      <circle cx="700" cy="600" r="8" class="thin-detail"/>
+    </g>
   </g>
 
-  <!-- Anthropomorphic Rabbit Character -->
-  <g id="rabbit">
-    <!-- Body (rounded blob shape) -->
-    <path d="M400 650 C350 600, 350 500, 400 450 C450 500, 450 600, 400 650 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Head (ellipse) -->
-    <ellipse cx="400" cy="400" rx="90" ry="100" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Ears (rounded paths) -->
-    <path d="M360 300 Q340 220, 380 180 Q420 220, 400 300 Z" fill="white" stroke="black" stroke-width="4"/>
-    <path d="M440 300 Q460 220, 420 180 Q380 220, 400 300 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Eyes -->
-    <circle cx="370" cy="380" r="10" fill="white" stroke="black" stroke-width="3"/>
-    <circle cx="430" cy="380" r="10" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Nose (simple triangle) -->
-    <path d="M400 410 L390 425 L410 425 Z" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Happy Mouth (curved line) -->
-    <path d="M380 440 Q400 460, 420 440" fill="none" stroke="black" stroke-width="3"/>
-    <!-- Waistcoat (simple outline) -->
-    <path d="M400 450 L360 550 Q350 590, 400 600 Q450 590, 440 550 L400 450 Z" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Monocle -->
-    <circle cx="430" cy="380" r="25" fill="none" stroke="black" stroke-width="3"/>
-    <line x1="445" y1="395" x2="480" y2="420" stroke="black" stroke-width="2"/> <!-- monocle chain/wire -->
-    <!-- Tiny Hat -->
-    <path d="M400 320 L380 300 L420 300 L400 320 Z" fill="white" stroke="black" stroke-width="3"/>
-    <ellipse cx="400" cy="320" rx="30" ry="10" fill="white" stroke="black" stroke-width="3"/>
-    <!-- Arms (simple curved paths) -->
-    <path d="M360 550 Q340 580, 320 600 Q300 620, 320 650" fill="none" stroke="black" stroke-width="4"/>
-    <path d="M440 550 Q460 580, 480 600 Q500 620, 480 650" fill="none" stroke="black" stroke-width="4"/>
-    <!-- Hands (simple circles) working on the desk -->
-    <circle cx="320" cy="650" r="20" fill="white" stroke="black" stroke-width="4"/>
-    <circle cx="480" cy="650" r="20" fill="white" stroke="black" stroke-width="4"/>
-    <!-- Small tool (like a screwdriver) in hand -->
-    <path d="M400 660 L410 680 L390 680 Z" fill="white" stroke="black" stroke-width="3"/>
-    <rect x="398" y="620" width="4" height="40" fill="white" stroke="black" stroke-width="2"/>
-  </g>
+  <!-- Rabbit Watchmaker -->
+  <g id="rabbit_watchmaker" class="main-outline">
+    <!-- Body -->
+    <ellipse cx="400" cy="700" rx="150" ry="200"/>
 
-  <!-- Whimsical Clocks, Gears, and Springs -->
-  <g id="decorative-elements">
-    <!-- Oversized Round Clock 1 (hanging on wall) -->
-    <g transform="translate(150, 150) scale(1.2)">
-      <circle cx="0" cy="0" r="80" fill="white" stroke="black" stroke-width="5"/>
-      <circle cx="0" cy="0" r="70" fill="white" stroke="black" stroke-width="3"/>
-      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/> <!-- Clock center -->
-      <line x1="0" y1="0" x2="0" y2="-50" stroke="black" stroke-width="3"/> <!-- Hour hand -->
-      <line x1="0" y1="0" x2="40" y2="40" stroke="black" stroke-width="3"/> <!-- Minute hand -->
-      <!-- Happy face for the clock -->
-      <circle cx="-25" cy="-20" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="25" cy="-20" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-30 10 Q0 30, 30 10" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Head -->
+    <ellipse cx="400" cy="450" rx="100" ry="120"/>
+
+    <!-- Ears -->
+    <g transform="translate(330, 270) rotate(-15)">
+      <ellipse cx="0" cy="0" rx="40" ry="100"/>
+      <path d="M0 -70 Q-10 -30 -10 30 Q-5 60 0 70 Q5 60 10 30 Q10 -30 0 -70 Z" class="thin-detail"/> <!-- Inner ear -->
+    </g>
+    <g transform="translate(470, 270) rotate(15)">
+      <ellipse cx="0" cy="0" rx="40" ry="100"/>
+      <path d="M0 -70 Q10 -30 10 30 Q5 60 0 70 Q-5 60 -10 30 Q-10 -30 0 -70 Z" class="thin-detail"/> <!-- Inner ear -->
     </g>
 
-    <!-- Oversized Square Clock 1 (hanging on wall) -->
-    <g transform="translate(600, 200) scale(1)">
-      <rect x="-80" y="-80" width="160" height="160" rx="20" ry="20" fill="white" stroke="black" stroke-width="5"/>
-      <rect x="-70" y="-70" width="140" height="140" rx="15" ry="15" fill="white" stroke="black" stroke-width="3"/>
-      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
-      <line x1="0" y1="0" x2="-40" y2="0" stroke="black" stroke-width="3"/>
-      <line x1="0" y1="0" x2="0" y2="50" stroke="black" stroke-width="3"/>
-      <!-- Happy face for the clock -->
-      <circle cx="-20" cy="-30" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="20" cy="-30" r="5" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-25 -5 Q0 15, 25 -5" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Face features -->
+    <circle cx="360" cy="430" r="15" class="detail-outline"/> <!-- Eye 1 -->
+    <circle cx="440" cy="430" r="15" class="detail-outline"/> <!-- Eye 2 -->
+    <path d="M400 450 C395 460 405 460 400 470 Z" class="thin-detail"/> <!-- Nose -->
+    <path d="M370 490 Q400 510 430 490" fill="none" class="main-outline" stroke-width="4"/> <!-- Mouth -->
+
+    <!-- Waistcoat (simplified) -->
+    <path d="M300 550 C330 570 370 570 400 550 C430 570 470 570 500 550 L500 750 C500 800 450 830 400 830 C350 830 300 800 300 750 Z" class="main-outline"/>
+    <path d="M300 550 L400 600 L500 550" class="thin-detail" fill="none"/> <!-- V-neck opening -->
+    <circle cx="400" cy="650" r="10" class="detail-outline"/> <!-- Button 1 -->
+    <circle cx="400" cy="700" r="10" class="detail-outline"/> <!-- Button 2 -->
+    <circle cx="400" cy="750" r="10" class="detail-outline"/> <!-- Button 3 -->
+
+    <!-- Arms (holding watch) -->
+    <!-- Left arm -->
+    <path d="M280 600 Q250 670 300 740 C350 780 400 780 400 780" class="main-outline"/>
+    <!-- Right arm -->
+    <path d="M520 600 Q550 670 500 740 C450 780 400 780 400 780" class="main-outline"/>
+
+    <!-- Pocket Watch (held by rabbit) -->
+    <g id="pocket_watch" transform="translate(400 780)">
+      <circle cx="0" cy="0" r="80" class="main-outline"/>
+      <circle cx="0" cy="-80" r="15" class="detail-outline"/> <!-- Loop -->
+      <line x1="0" y1="0" x2="0" y2="-50" class="thin-detail" fill="none"/> <!-- Hour hand -->
+      <line x1="0" y1="0" x2="40" y2="0" class="thin-detail" fill="none"/> <!-- Minute hand -->
+      <!-- Simple tick marks (small lines) -->
+      <g class="thin-detail" fill="none">
+        <line x1="0" y1="-75" x2="0" y2="-80"/> <!-- 12 o'clock -->
+        <g transform="rotate(30)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 1 o'clock -->
+        <g transform="rotate(60)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 2 o'clock -->
+        <g transform="rotate(90)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 3 o'clock -->
+        <g transform="rotate(120)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 4 o'clock -->
+        <g transform="rotate(150)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 5 o'clock -->
+        <g transform="rotate(180)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 6 o'clock -->
+        <g transform="rotate(210)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 7 o'clock -->
+        <g transform="rotate(240)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 8 o'clock -->
+        <g transform="rotate(270)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 9 o'clock -->
+        <g transform="rotate(300)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 10 o'clock -->
+        <g transform="rotate(330)"> <line x1="0" y1="-75" x2="0" y2="-80"/> </g> <!-- 11 o'clock -->
+      </g>
     </g>
 
-    <!-- Oversized Star Clock (hanging on wall) -->
-    <g transform="translate(400, 150) scale(0.8)">
-      <path d="M0 -100 L29 -40 L95 -30 L48 18 L59 84 L0 50 L-59 84 L-48 18 L-95 -30 L-29 -40 Z" fill="white" stroke="black" stroke-width="5"/>
-      <circle cx="0" cy="0" r="30" fill="white" stroke="black" stroke-width="3"/>
-      <circle cx="0" cy="0" r="5" fill="white" stroke="black" stroke-width="3"/>
-      <line x1="0" y1="0" x2="30" y2="-30" stroke="black" stroke-width="3"/>
-      <line x1="0" y1="0" x2="-20" y2="40" stroke="black" stroke-width="3"/>
-      <!-- Happy face for the clock -->
-      <circle cx="-10" cy="-15" r="3" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="10" cy="-15" r="3" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-15 0 Q0 10, 15 0" fill="none" stroke="black" stroke-width="2"/>
-    </g>
-
-    <!-- Smaller Round Clock (on desk) -->
-    <g transform="translate(250, 750) scale(0.6)">
-      <circle cx="0" cy="0" r="60" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="0" cy="0" r="50" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="0" cy="0" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="30" y2="-30" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
-      <!-- Happy face for the clock -->
-      <circle cx="-15" cy="-10" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="15" cy="-10" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-20 5 Q0 15, 20 5" fill="none" stroke="black" stroke-width="2"/>
-    </g>
-
-    <!-- Another Square Clock (hanging from wall) -->
-    <g transform="translate(100, 450) scale(0.7)">
-      <rect x="-60" y="-60" width="120" height="120" rx="15" ry="15" fill="white" stroke="black" stroke-width="4"/>
-      <rect x="-50" y="-50" width="100" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="0" cy="0" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="-30" y2="-10" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="20" y2="30" stroke="black" stroke-width="2"/>
-      <!-- Happy face for the clock -->
-      <circle cx="-10" cy="-15" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="10" cy="-15" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-15 0 Q0 10, 15 0" fill="none" stroke="black" stroke-width="2"/>
-    </g>
-
-    <!-- Large Gear (on wall) -->
-    <g transform="translate(700, 400) scale(0.8)">
-      <circle cx="0" cy="0" r="70" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="0" cy="0" r="20" fill="white" stroke="black" stroke-width="3"/>
-      <!-- Simple gear teeth (rounded rectangles) -->
-      <rect x="-10" y="-75" width="20" height="10" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="50" y="-50" width="10" height="20" transform="rotate(45 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="75" y="-10" width="10" height="20" transform="rotate(90 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="50" y="40" width="10" height="20" transform="rotate(135 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-10" y="65" width="20" height="10" transform="rotate(180 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-60" y="40" width="10" height="20" transform="rotate(225 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-75" y="-10" width="10" height="20" transform="rotate(270 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-60" y="-60" width="10" height="20" transform="rotate(315 0 0)" fill="white" stroke="black" stroke-width="3"/>
-    </g>
-
-    <!-- Small Gear (on floor) -->
-    <g transform="translate(150, 850) scale(0.5)">
-      <circle cx="0" cy="0" r="50" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="0" cy="0" r="15" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-8" y="-55" width="16" height="8" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="35" y="-35" width="8" height="16" transform="rotate(45 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="47" y="-8" width="8" height="16" transform="rotate(90 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="35" y="27" width="8" height="16" transform="rotate(135 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-8" y="47" width="16" height="8" transform="rotate(180 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-43" y="27" width="8" height="16" transform="rotate(225 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-55" y="-8" width="8" height="16" transform="rotate(270 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-43" y="-43" width="8" height="16" transform="rotate(315 0 0)" fill="white" stroke="black" stroke-width="3"/>
-    </g>
-
-    <!-- Medium Gear (on floor) -->
-    <g transform="translate(650, 800) scale(0.6)">
-      <circle cx="0" cy="0" r="60" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="0" cy="0" r="18" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-9" y="-65" width="18" height="9" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="42" y="-42" width="9" height="18" transform="rotate(45 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="52" y="-9" width="9" height="18" transform="rotate(90 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="42" y="33" width="9" height="18" transform="rotate(135 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-9" y="56" width="18" height="9" transform="rotate(180 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-51" y="33" width="9" height="18" transform="rotate(225 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-60" y="-9" width="9" height="18" transform="rotate(270 0 0)" fill="white" stroke="black" stroke-width="3"/>
-      <rect x="-51" y="-51" width="9" height="18" transform="rotate(315 0 0)" fill="white" stroke="black" stroke-width="3"/>
-    </g>
-
-    <!-- Spring 1 (on desk) -->
-    <path d="M480 720 Q490 700, 500 720 Q510 740, 520 720 Q530 700, 540 720" fill="none" stroke="black" stroke-width="4"/>
-    <!-- Spring 2 (on floor) -->
-    <path d="M50 900 Q70 880, 90 900 Q110 920, 130 900" fill="none" stroke="black" stroke-width="4"/>
-    <!-- Spring 3 (hanging from wall) -->
-    <path d="M500 500 Q510 480, 520 500 Q530 520, 540 500 Q550 480, 560 500" fill="none" stroke="black" stroke-width="4"/>
-
-    <!-- Small Round Clock (on floor) -->
-    <g transform="translate(500, 900) scale(0.4)">
-      <circle cx="0" cy="0" r="60" fill="white" stroke="black" stroke-width="4"/>
-      <circle cx="0" cy="0" r="50" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="0" cy="0" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="-20" y2="30" stroke="black" stroke-width="2"/>
-      <line x1="0" y1="0" x2="30" y2="10" stroke="black" stroke-width="2"/>
-      <!-- Happy face for the clock -->
-      <circle cx="-15" cy="-10" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <circle cx="15" cy="-10" r="4" fill="white" stroke="black" stroke-width="2"/>
-      <path d="M-20 5 Q0 15, 20 5" fill="none" stroke="black" stroke-width="2"/>
-    </g>
-
-    <!-- Tiny Gear (on desk) -->
-    <g transform="translate(350, 720) scale(0.3)">
-      <circle cx="0" cy="0" r="40" fill="white" stroke="black" stroke-width="3"/>
-      <circle cx="0" cy="0" r="10" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="-7" y="-45" width="14" height="7" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="25" y="-25" width="7" height="14" transform="rotate(45 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="35" y="-7" width="7" height="14" transform="rotate(90 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="25" y="18" width="7" height="14" transform="rotate(135 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="-7" y="38" width="14" height="7" transform="rotate(180 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="-32" y="18" width="7" height="14" transform="rotate(225 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="-42" y="-7" width="7" height="14" transform="rotate(270 0 0)" fill="white" stroke="black" stroke-width="2"/>
-      <rect x="-32" y="-32" width="7" height="14" transform="rotate(315 0 0)" fill="white" stroke="black" stroke-width="2"/>
-    </g>
+    <!-- Feet/Paws (lower body, implied) -->
+    <ellipse cx="320" cy="880" rx="70" ry="40"/>
+    <ellipse cx="480" cy="880" rx="70" ry="40"/>
   </g>
 </svg>
