@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Group for the main character: the astronaut animal -->
+  <g id="astronaut-animal">
+    <!-- Helmet -->
+    <g id="helmet">
+      <ellipse cx="400" cy="300" rx="150" ry="160" /> <!-- Main helmet shell -->
+      <rect x="300" y="240" width="200" height="110" rx="30" ry="30" /> <!-- Visor opening -->
+      <path d="M300 280 L280 280 L280 320 L300 320 Z" fill="none" /> <!-- Left visor trim -->
+      <path d="M500 280 L520 280 L520 320 L500 320 Z" fill="none" /> <!-- Right visor trim -->
+      <circle cx="400" cy="460" r="30" /> <!-- Inner neck ring base -->
+      <ellipse cx="400" cy="460" rx="60" ry="35" fill="none" /> <!-- Outer neck ring -->
+    </g>
+
+    <!-- Animal (Bear) Head & Face, visible through the visor -->
+    <g id="animal-head">
+      <circle cx="400" cy="300" r="80" /> <!-- Head shape -->
+      <circle cx="360" cy="270" r="20" /> <!-- Left eye -->
+      <circle cx="440" cy="270" r="20" /> <!-- Right eye -->
+      <ellipse cx="400" cy="330" rx="30" ry="20" /> <!-- Muzzle -->
+      <circle cx="400" cy="320" r="10" /> <!-- Nose -->
+      <path d="M385 345 Q400 355 415 345" fill="none" /> <!-- Mouth -->
+      <circle cx="330" cy="170" r="35" /> <!-- Left ear -->
+      <circle cx="470" cy="170" r="35" /> <!-- Right ear -->
+    </g>
+
+    <!-- Astronaut Suit Body -->
+    <g id="suit-body">
+      <ellipse cx="400" cy="650" rx="180" ry="190" /> <!-- Main suit body -->
+      <rect x="300" y="550" width="200" height="80" rx="20" ry="20" /> <!-- Chest panel -->
+      <circle cx="350" cy="590" r="15" /> <!-- Panel button 1 -->
+      <circle cx="400" cy="590" r="15" /> <!-- Panel button 2 -->
+      <circle cx="450" cy="590" r="15" /> <!-- Panel button 3 -->
+
+      <!-- Arms and Paws -->
+      <path d="M220 580 C180 500 100 580 150 700 L180 720 L270 650 Z" /> <!-- Left arm -->
+      <path d="M580 580 C620 500 700 580 650 700 L620 720 L530 650 Z" /> <!-- Right arm -->
+      <ellipse cx="150" cy="700" rx="40" ry="30" /> <!-- Left paw/glove -->
+      <ellipse cx="650" cy="700" rx="40" ry="30" /> <!-- Right paw/glove -->
+
+      <!-- Legs and Boots -->
+      <rect x="300" y="790" width="80" height="120" rx="30" ry="30" /> <!-- Left leg -->
+      <rect x="420" y="790" width="80" height="120" rx="30" ry="30" /> <!-- Right leg -->
+      <ellipse cx="340" cy="910" rx="60" ry="30" /> <!-- Left boot -->
+      <ellipse cx="460" cy="910" rx="60" ry="30" /> <!-- Right boot -->
+    </g>
+  </g>
+
+  <!-- Group for space elements -->
+  <g id="space-elements">
+    <!-- Friendly Planet -->
+    <g id="planet">
+      <circle cx="150" cy="850" r="100" /> <!-- Planet body -->
+      <path d="M50 850 A100 30 0 0 1 250 850" fill="none" /> <!-- Planet ring top arc -->
+      <path d="M250 850 A100 30 0 0 1 50 850" fill="none" /> <!-- Planet ring bottom arc -->
+      <circle cx="120" cy="820" r="20" /> <!-- Crater 1 -->
+      <circle cx="180" cy="880" r="15" /> <!-- Crater 2 -->
+    </g>
+
+    <!-- Simplified Stars -->
+    <g id="stars">
+      <!-- Round stars -->
+      <circle cx="100" cy="100" r="25" />
+      <circle cx="700" cy="150" r="30" />
+      <circle cx="50" cy="400" r="20" />
+      <circle cx="750" cy="600" r="25" />
+      <circle cx="200" cy="700" r="20" />
+      <circle cx="600" cy="900" r="30" />
+      <circle cx="400" cy="100" r="20" />
+      <circle cx="100" cy="600" r="30" />
+      <circle cx="700" cy="300" r="20" />
+      <circle cx="250" cy="50" r="25" />
+      <circle cx="550" cy="750" r="20" />
+      <circle cx="150" cy="250" r="30" />
+      <circle cx="650" cy="50" r="25" />
+
+      <!-- Simple cross-shaped stars (outlines only) -->
+      <path d="M500 50 h20 M510 40 v20" fill="none" stroke-width="4" />
+      <path d="M600 250 h20 M610 240 v20" fill="none" stroke-width="4" />
+      <path d="M180 500 h20 M190 490 v20" fill="none" stroke-width="4" />
+      <path d="M300 80 h20 M310 70 v20" fill="none" stroke-width="4" />
+      <path d="M700 800 h20 M710 790 v20" fill="none" stroke-width="4" />
+      <path d="M450 700 h20 M460 690 v20" fill="none" stroke-width="4" />
+    </g>
+  </g>
+</svg>
