@@ -1,0 +1,128 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .outline { stroke: black; stroke-width: 4; fill: white; }
+      .outline-nofill { stroke: black; stroke-width: 4; fill: none; }
+    ]]></style>
+  </defs>
+
+  <!-- Marshmallow Clouds -->
+  <g id="marshmallow-clouds">
+    <path class="outline" d="M100 200 Q150 150 200 170 Q250 150 300 200 Q250 250 200 230 Q150 250 100 200Z" />
+    <path class="outline" d="M500 150 Q550 100 600 120 Q650 100 700 150 Q650 200 600 180 Q550 200 500 150Z" />
+  </g>
+
+  <!-- Candy Trees -->
+  <g id="candy-trees">
+    <!-- Tree 1 -->
+    <rect class="outline" x="50" y="550" width="40" height="150" rx="10" ry="10" />
+    <circle class="outline" cx="70" cy="520" r="70" />
+    <!-- Tree 2 -->
+    <rect class="outline" x="710" y="500" width="40" height="180" rx="10" ry="10" />
+    <ellipse class="outline" cx="730" cy="460" rx="90" ry="80" />
+  </g>
+
+  <!-- Thick Chocolate Tracks -->
+  <g id="tracks">
+    <rect class="outline" x="0" y="780" width="800" height="40" rx="10" ry="10" />
+    <rect class="outline" x="0" y="850" width="800" height="40" rx="10" ry="10" />
+    <rect class="outline" x="50" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="150" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="250" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="350" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="450" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="550" y="815" width="50" height="30" rx="5" ry="5" />
+    <rect class="outline" x="650" y="815" width="50" height="30" rx="5" ry="5" />
+  </g>
+
+  <!-- Candy Train -->
+  <g id="train">
+    <!-- Engine -->
+    <g id="engine">
+      <!-- Main body -->
+      <rect class="outline" x="100" y="580" width="200" height="100" rx="20" ry="20" />
+      <!-- Cab -->
+      <rect class="outline" x="220" y="500" width="80" height="80" rx="10" ry="10" />
+      <!-- Smoke stack -->
+      <rect class="outline" x="130" y="470" width="40" height="60" rx="10" ry="10" />
+      <ellipse class="outline" cx="150" cy="470" rx="30" ry="15" />
+      <!-- Front bumper/cowcatcher -->
+      <rect class="outline" x="80" y="660" width="30" height="20" rx="5" ry="5" />
+      <rect class="outline" x="80" y="600" width="20" height="60" rx="5" ry="5" />
+      <!-- Train face -->
+      <circle class="outline" cx="120" cy="620" r="10" /> <!-- Left eye -->
+      <circle class="outline" cx="170" cy="620" r="10" /> <!-- Right eye -->
+      <path class="outline-nofill" d="M130 640 Q145 660 160 640" /> <!-- Smile -->
+
+      <!-- Engine Lollipop Wheels -->
+      <g id="engine-wheels">
+        <g transform="translate(150 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+        <g transform="translate(250 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Wagon 1 -->
+    <g id="wagon1">
+      <!-- Connector to engine -->
+      <rect class="outline" x="290" y="640" width="20" height="20" rx="5" ry="5" />
+      <!-- Wagon body -->
+      <path class="outline" d="M310 580 H450 L430 680 H330 Z" />
+      <!-- Content: Giant Cookie -->
+      <circle class="outline" cx="380" cy="630" r="50" />
+      <circle class="outline" cx="360" cy="610" r="10" />
+      <circle class="outline" cx="400" cy="620" r="10" />
+      <circle class="outline" cx="370" cy="645" r="10" />
+      <circle class="outline" cx="410" cy="650" r="10" />
+      <!-- Wagon 1 Lollipop Wheels -->
+      <g id="wagon1-wheels">
+        <g transform="translate(350 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+        <g transform="translate(420 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Wagon 2 -->
+    <g id="wagon2">
+      <!-- Connector to wagon 1 -->
+      <rect class="outline" x="440" y="640" width="20" height="20" rx="5" ry="5" />
+      <!-- Wagon body -->
+      <path class="outline" d="M460 580 H600 L580 680 H480 Z" />
+      <!-- Content: Giant Cupcake -->
+      <!-- Cupcake bottom -->
+      <path class="outline" d="M510 650 H560 L550 670 H520 Z" />
+      <!-- Cupcake frosting -->
+      <path class="outline" d="M510 650 Q500 620 520 600 Q540 580 560 600 Q570 620 560 650 Z" />
+      <!-- Cherry on top -->
+      <circle class="outline" cx="535" cy="590" r="12" />
+      <path class="outline-nofill" d="M535 590 L545 580" stroke-width="3" />
+      <!-- Wagon 2 Lollipop Wheels -->
+      <g id="wagon2-wheels">
+        <g transform="translate(500 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+        <g transform="translate(570 700)">
+          <circle class="outline" cx="0" cy="0" r="40" />
+          <circle class="outline" cx="0" cy="0" r="15" />
+          <path class="outline-nofill" d="M0 0 C 10 10 10 25 20 35" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
