@@ -1,0 +1,126 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <style>
+      /* Define a common stroke style for reusability */
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+      }
+      .line {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Flower Field (lower part of the canvas) -->
+  <g id="flower-field">
+    <!-- Large Flower 1 -->
+    <g transform="translate(150, 750)">
+      <circle cx="0" cy="0" r="40" class="outline"/> <!-- Center -->
+      <!-- Petals -->
+      <ellipse cx="0" cy="-70" rx="40" ry="60" class="outline"/>
+      <ellipse cx="0" cy="70" rx="40" ry="60" class="outline"/>
+      <ellipse cx="-70" cy="0" rx="60" ry="40" class="outline"/>
+      <ellipse cx="70" cy="0" rx="60" ry="40" class="outline"/>
+      <path d="M0,40 L0,150" class="line"/> <!-- Stem -->
+      <ellipse cx="-40" cy="110" rx="20" ry="40" transform="rotate(-30 0 110)" class="outline"/> <!-- Leaf -->
+    </g>
+
+    <!-- Medium Flower 2 -->
+    <g transform="translate(450, 800)">
+      <circle cx="0" cy="0" r="30" class="outline"/> <!-- Center -->
+      <!-- Petals -->
+      <ellipse cx="0" cy="-50" rx="30" ry="45" class="outline"/>
+      <ellipse cx="0" cy="50" rx="30" ry="45" class="outline"/>
+      <ellipse cx="-50" cy="0" rx="45" ry="30" class="outline"/>
+      <ellipse cx="50" cy="0" rx="45" ry="30" class="outline"/>
+      <path d="M0,30 L0,130" class="line"/> <!-- Stem -->
+      <ellipse cx="30" cy="90" rx="15" ry="30" transform="rotate(20 0 90)" class="outline"/> <!-- Leaf -->
+    </g>
+
+    <!-- Small Flower 3 -->
+    <g transform="translate(700, 780)">
+      <circle cx="0" cy="0" r="25" class="outline"/> <!-- Center -->
+      <!-- Petals -->
+      <ellipse cx="0" cy="-40" rx="25" ry="35" class="outline"/>
+      <ellipse cx="0" cy="40" rx="25" ry="35" class="outline"/>
+      <ellipse cx="-40" cy="0" rx="35" ry="25" class="outline"/>
+      <ellipse cx="40" cy="0" rx="35" ry="25" class="outline"/>
+      <path d="M0,25 L0,100" class="line"/> <!-- Stem -->
+    </g>
+
+    <!-- Another Flower 4 -->
+    <g transform="translate(280, 900)">
+        <circle cx="0" cy="0" r="20" class="outline"/> <!-- Center -->
+        <ellipse cx="0" cy="-30" rx="20" ry="25" class="outline"/>
+        <ellipse cx="0" cy="30" rx="20" ry="25" class="outline"/>
+        <ellipse cx="-30" cy="0" rx="25" ry="20" class="outline"/>
+        <ellipse cx="30" cy="0" rx="25" ry="20" class="outline"/>
+        <path d="M0,20 L0,70" class="line"/>
+    </g>
+
+    <!-- Another Flower 5 -->
+    <g transform="translate(600, 920)">
+        <circle cx="0" cy="0" r="22" class="outline"/> <!-- Center -->
+        <ellipse cx="0" cy="-32" rx="22" ry="28" class="outline"/>
+        <ellipse cx="0" cy="32" rx="22" ry="28" class="outline"/>
+        <ellipse cx="-32" cy="0" rx="28" ry="22" class="outline"/>
+        <ellipse cx="32" cy="0" rx="28" ry="22" class="outline"/>
+        <path d="M0,22 L0,75" class="line"/>
+    </g>
+     <!-- Small Flower 6 -->
+    <g transform="translate(50, 900)">
+      <circle cx="0" cy="0" r="18" class="outline"/> <!-- Center -->
+      <ellipse cx="0" cy="-28" rx="18" ry="22" class="outline"/>
+      <ellipse cx="0" cy="28" rx="18" ry="22" class="outline"/>
+      <ellipse cx="-28" cy="0" rx="22" ry="18" class="outline"/>
+      <ellipse cx="28" cy="0" rx="22" ry="18" class="outline"/>
+      <path d="M0,18 L0,60" class="line"/> <!-- Stem -->
+    </g>
+
+  </g>
+
+  <!-- Ladybug -->
+  <g id="ladybug" transform="translate(400, 350)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="100" ry="120" class="outline"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="50" class="outline"/>
+
+    <!-- Eyes (big cheerful eyes) -->
+    <g transform="translate(-25, -135)">
+      <circle cx="0" cy="0" r="20" class="outline" stroke-width="4"/> <!-- Eye white -->
+      <circle cx="0" cy="0" r="10" class="outline" stroke-width="4"/> <!-- Pupil outline, filled white -->
+    </g>
+    <g transform="translate(25, -135)">
+      <circle cx="0" cy="0" r="20" class="outline" stroke-width="4"/> <!-- Eye white -->
+      <circle cx="0" cy="0" r="10" class="outline" stroke-width="4"/> <!-- Pupil outline, filled white -->
+    </g>
+
+    <!-- Antennae -->
+    <path d="M-30,-165 Q-40,-200 -60,-180" class="line" stroke-width="3"/>
+    <circle cx="-60" cy="-180" r="8" class="outline" stroke-width="3"/>
+    <path d="M30,-165 Q40,-200 60,-180" class="line" stroke-width="3"/>
+    <circle cx="60" cy="-180" r="8" class="outline" stroke-width="3"/>
+
+    <!-- Wings (shell split line) -->
+    <path d="M0, -100 V 100" class="line" stroke-width="5"/>
+
+    <!-- Spots -->
+    <circle cx="-50" cy="-50" r="25" class="outline"/>
+    <circle cx="50" cy="-50" r="25" class="outline"/>
+    <circle cx="-70" cy="30" r="25" class="outline"/>
+    <circle cx="70" cy="30" r="25" class="outline"/>
+    <circle cx="-30" cy="80" r="25" class="outline"/>
+    <circle cx="30" cy="80" r="25" class="outline"/>
+
+    <!-- Simple flight path -->
+    <path d="M-150,200 Q-250,150 -200,50 Q-150,-50 -200,-150" class="line" stroke-width="2" stroke-dasharray="10 10"/>
+    <path d="M150,200 Q250,150 200,50 Q150,-50 200,-150" class="line" stroke-width="2" stroke-dasharray="10 10"/>
+
+  </g>
+</svg>
