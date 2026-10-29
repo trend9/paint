@@ -1,107 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <!-- Global styling for outlines -->
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style type="text/css"><![CDATA[
-      .outline {
-        stroke: black;
-        stroke-width: 4; /* Using a consistent stroke-width, within the 3-5 range */
-        fill: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .outline-nofill {
-        stroke: black;
-        stroke-width: 4;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .snow {
-        stroke: black;
-        stroke-width: 3; /* Slightly thinner for snow, but still bold */
-        fill: white;
-      }
-    ]]></style>
+    <style type="text/css">
+      .outline { stroke: black; stroke-width: 4; fill: white; }
+      .hot-spring-fill { stroke: black; stroke-width: 5; fill: white; }
+      .penguin-fill { fill: white; stroke: black; stroke-width: 4; }
+      .detail-fill { fill: white; stroke: black; stroke-width: 3; }
+      .eye-fill { fill: white; stroke: black; stroke-width: 3; }
+      .steam-line { stroke: black; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .snowflake-outline { stroke: black; stroke-width: 3; fill: white; }
+    </style>
   </defs>
 
-  <!-- Background Mountains Group -->
-  <g id="mountains">
-    <!-- Large, smooth hump for main mountain range -->
-    <path class="outline" d="M0 600 C200 400, 600 400, 800 600 V1000 H0 Z" />
-    <!-- Smaller, overlapping hump for a layered effect -->
-    <path class="outline" d="M0 550 C150 350, 450 350, 800 550 V1000 H0 Z" />
+  <g id="landscape">
+    <path class="outline" d="M0 700 Q150 650 400 700 T800 650 L800 1000 L0 1000 Z"/>
+    <path class="outline" d="M0 600 Q200 550 400 580 Q600 610 800 550 L800 700 L0 700 Z"/>
+    <path class="outline" d="M0 450 Q100 400 250 430 Q400 460 550 420 Q700 390 800 400 L800 500 L0 500 Z"/>
   </g>
 
-  <!-- Hot Spring (Onsen) Group -->
   <g id="hot-spring">
-    <ellipse class="outline" cx="400" cy="800" rx="320" ry="160" />
-    <!-- Steam above the hot spring -->
-    <path class="outline-nofill" d="M100 670 Q200 620, 300 670 T500 670 T700 670" />
-    <path class="outline-nofill" d="M120 650 Q220 600, 320 650 T520 650 T720 650" />
-    <path class="outline-nofill" d="M140 630 Q240 580, 340 630 T540 630 T740 630" />
+    <ellipse cx="400" cy="800" rx="350" ry="150" class="hot-spring-fill"/>
+    <path class="steam-line" d="M100 680 Q150 650 200 680 M250 670 Q300 640 350 670 M400 685 Q450 655 500 685 M550 675 Q600 645 650 675 M700 690 Q750 660 800 690"/>
+    <path class="steam-line" d="M120 710 Q170 680 220 710 M270 700 Q320 670 370 700 M420 715 Q470 685 520 715 M570 705 Q620 675 670 705 M720 720 Q770 690 800 720"/>
   </g>
 
-  <!-- Penguins Group -->
   <g id="penguins">
-    <!-- Penguin 1 (Left) -->
     <g id="penguin-1">
-      <ellipse class="outline" cx="250" cy="700" rx="55" ry="90" /> <!-- Main body, partially submerged -->
-      <ellipse class="outline" cx="250" cy="640" rx="40" ry="45" /> <!-- Head -->
-      <ellipse class="outline" cx="250" cy="710" rx="35" ry="60" /> <!-- White belly patch -->
-      <path class="outline" d="M195 680 Q160 690, 190 730" /> <!-- Left flipper -->
-      <path class="outline" d="M305 680 Q340 690, 310 730" /> <!-- Right flipper -->
-      <path class="outline" d="M245 650 L250 640 L255 650 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
-      <circle class="outline" cx="235" cy="630" r="5" /> <!-- Left eye -->
-      <circle class="outline" cx="265" cy="630" r="5" /> <!-- Right eye -->
-      <path class="outline-nofill" d="M240 660 Q250 670, 260 660" /> <!-- Smile -->
+      <ellipse cx="200" cy="700" rx="70" ry="100" class="penguin-fill"/>
+      <circle cx="200" cy="620" r="50" class="penguin-fill"/>
+      <path d="M170 650 Q185 640 200 650 Q215 640 230 650" class="detail-fill"/>
+      <circle cx="185" cy="600" r="10" class="eye-fill"/>
+      <circle cx="215" cy="600" r="10" class="eye-fill"/>
+      <path d="M200 615 L190 625 L210 625 Z" class="detail-fill"/>
+      <path d="M120 680 Q140 650 160 680 L140 700 Z" class="penguin-fill"/>
+      <path d="M240 680 Q260 650 280 680 L260 700 Z" class="penguin-fill"/>
+      <rect x="180" y="550" width="40" height="20" rx="8" ry="8" class="detail-fill"/>
     </g>
 
-    <!-- Penguin 2 (Middle) -->
     <g id="penguin-2">
-      <ellipse class="outline" cx="450" cy="700" rx="55" ry="90" /> <!-- Main body, partially submerged -->
-      <ellipse class="outline" cx="450" cy="640" rx="40" ry="45" /> <!-- Head -->
-      <ellipse class="outline" cx="450" cy="710" rx="35" ry="60" /> <!-- White belly patch -->
-      <path class="outline" d="M395 680 Q360 690, 390 730" /> <!-- Left flipper -->
-      <path class="outline" d="M505 680 Q540 690, 510 730" /> <!-- Right flipper -->
-      <path class="outline" d="M445 650 L450 640 L455 650 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
-      <circle class="outline" cx="435" cy="630" r="5" /> <!-- Left eye -->
-      <circle class="outline" cx="465" cy="630" r="5" /> <!-- Right eye -->
-      <path class="outline-nofill" d="M440 660 Q450 670, 460 660" /> <!-- Smile -->
+      <ellipse cx="400" cy="720" rx="80" ry="110" class="penguin-fill"/>
+      <circle cx="400" cy="640" r="60" class="penguin-fill"/>
+      <path d="M360 670 Q380 650 400 670 Q420 650 440 670" class="detail-fill"/>
+      <circle cx="380" cy="620" r="12" class="eye-fill"/>
+      <circle cx="420" cy="620" r="12" class="eye-fill"/>
+      <path d="M400 635 L390 645 L410 645 Z" class="detail-fill"/>
+      <path d="M310 700 Q340 670 370 700 L340 720 Z" class="penguin-fill"/>
+      <path d="M430 700 Q460 670 490 700 L460 720 Z" class="penguin-fill"/>
+      <rect x="380" y="570" width="40" height="20" rx="8" ry="8" class="detail-fill"/>
     </g>
 
-    <!-- Penguin 3 (Right, slightly smaller and further back) -->
     <g id="penguin-3">
-      <ellipse class="outline" cx="600" cy="705" rx="50" ry="80" /> <!-- Main body, partially submerged -->
-      <ellipse class="outline" cx="600" cy="650" rx="35" ry="40" /> <!-- Head -->
-      <ellipse class="outline" cx="600" cy="710" rx="30" ry="50" /> <!-- White belly patch -->
-      <path class="outline" d="M550 685 Q520 695, 550 725" /> <!-- Left flipper -->
-      <path class="outline" d="M650 685 Q680 695, 650 725" /> <!-- Right flipper -->
-      <path class="outline" d="M595 660 L600 650 L605 660 Z" fill="white" stroke="black" stroke-width="3"/> <!-- Beak -->
-      <circle class="outline" cx="585" cy="640" r="5" /> <!-- Left eye -->
-      <circle class="outline" cx="615" cy="640" r="5" /> <!-- Right eye -->
-      <path class="outline-nofill" d="M590 670 Q600 680, 610 670" /> <!-- Smile -->
+      <ellipse cx="600" cy="710" rx="65" ry="95" class="penguin-fill"/>
+      <circle cx="600" cy="630" r="45" class="penguin-fill"/>
+      <path d="M570 660 Q585 650 600 660 Q615 650 630 660" class="detail-fill"/>
+      <circle cx="585" cy="610" r="9" class="eye-fill"/>
+      <circle cx="615" cy="610" r="9" class="eye-fill"/>
+      <path d="M600 625 L590 635 L610 635 Z" class="detail-fill"/>
+      <path d="M530 690 Q550 660 570 690 L550 710 Z" class="penguin-fill"/>
     </g>
   </g>
 
-  <!-- Falling Snow Group -->
   <g id="snowflakes">
-    <circle class="snow" cx="100" cy="150" r="10" />
-    <circle class="snow" cx="700" cy="180" r="12" />
-    <circle class="snow" cx="350" cy="100" r="8" />
-    <circle class="snow" cx="50" cy="300" r="15" />
-    <circle class="snow" cx="750" cy="400" r="10" />
-    <circle class="snow" cx="200" cy="50" r="12" />
-    <circle class="snow" cx="450" cy="250" r="15" />
-    <circle class="snow" cx="600" cy="350" r="8" />
-    <circle class="snow" cx="150" cy="450" r="10" />
-    <circle class="snow" cx="550" cy="120" r="12" />
-    <circle class="snow" cx="250" cy="200" r="15" />
-    <circle class="snow" cx="650" cy="50" r="10" />
-    <circle class="snow" cx="300" cy="380" r="8" />
-    <circle class="snow" cx="500" cy="480" r="12" />
-    <circle class="snow" cx="120" cy="250" r="10" />
-    <circle class="snow" cx="680" cy="280" r="15" />
-    <circle class="snow" cx="400" cy="50" r="10" />
+    <circle cx="100" cy="150" r="10" class="snowflake-outline"/>
+    <circle cx="250" cy="100" r="8" class="snowflake-outline"/>
+    <circle cx="400" cy="50" r="12" class="snowflake-outline"/>
+    <circle cx="550" cy="120" r="9" class="snowflake-outline"/>
+    <circle cx="700" cy="80" r="11" class="snowflake-outline"/>
+    <circle cx="150" cy="280" r="9" class="snowflake-outline"/>
+    <circle cx="300" cy="220" r="11" class="snowflake-outline"/>
+    <circle cx="450" cy="180" r="10" class="snowflake-outline"/>
+    <circle cx="600" cy="250" r="8" class="snowflake-outline"/>
+    <circle cx="750" cy="200" r="12" class="snowflake-outline"/>
+    <circle cx="50" cy="400" r="10" class="snowflake-outline"/>
+    <circle cx="200" cy="350" r="8" class="snowflake-outline"/>
+    <circle cx="350" cy="300" r="12" class="snowflake-outline"/>
+    <circle cx="500" cy="370" r="9" class="snowflake-outline"/>
+    <circle cx="650" cy="320" r="11" class="snowflake-outline"/>
   </g>
-
 </svg>
