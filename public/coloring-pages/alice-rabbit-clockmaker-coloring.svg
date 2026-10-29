@@ -1,111 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <g id="workshop_background" stroke="black" stroke-width="4" fill="white">
-    <!-- Workbench/Table -->
-    <rect x="50" y="600" width="700" height="150" rx="30" ry="30" fill="white"/>
-    <rect x="150" y="750" width="100" height="200" rx="20" ry="20" fill="white"/>
-    <rect x="550" y="750" width="100" height="200" rx="20" ry="20" fill="white"/>
+<svg viewBox="0 0 800 1000">
+  <defs>
+    <path id="gearTooth" d="M-15 -10 L15 -10 L15 10 L-15 10 Z" />
+  </defs>
+
+  <!-- Background whimsical clocks and gears -->
+  <g id="background_elements" stroke="black" stroke-width="4" fill="white">
+    <!-- Large clock 1 -->
+    <circle cx="150" cy="200" r="80"/>
+    <line x1="150" y1="200" x2="150" y2="140" stroke="black" stroke-width="3"/>
+    <line x1="150" y1="200" x2="190" y2="220" stroke="black" stroke-width="3"/>
+
+    <!-- Large gear 1 -->
+    <circle cx="250" cy="300" r="50"/>
+    <circle cx="250" cy="300" r="15"/>
+    <g transform="translate(250,300)" fill="white">
+        <use href="#gearTooth" transform="rotate(0) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(45) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(90) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(135) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(180) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(225) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(270) translate(60,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(315) translate(60,0) rotate(0)"/>
+    </g>
+
+
+    <!-- Medium clock 2 -->
+    <circle cx="700" cy="250" r="70"/>
+    <line x1="700" y1="250" x2="700" y2="200" stroke="black" stroke-width="3"/>
+    <line x1="700" y1="250" x2="740" y2="260" stroke="black" stroke-width="3"/>
+
+    <!-- Medium gear 2 -->
+    <circle cx="550" cy="200" r="40"/>
+    <circle cx="550" cy="200" r="10"/>
+     <g transform="translate(550,200)" fill="white">
+        <use href="#gearTooth" transform="rotate(0) translate(48,0) rotate(0) scale(0.7)"/>
+        <use href="#gearTooth" transform="rotate(60) translate(48,0) rotate(0) scale(0.7)"/>
+        <use href="#gearTooth" transform="rotate(120) translate(48,0) rotate(0) scale(0.7)"/>
+        <use href="#gearTooth" transform="rotate(180) translate(48,0) rotate(0) scale(0.7)"/>
+        <use href="#gearTooth" transform="rotate(240) translate(48,0) rotate(0) scale(0.7)"/>
+        <use href="#gearTooth" transform="rotate(300) translate(48,0) rotate(0) scale(0.7)"/>
+    </g>
+
+
+    <!-- Small clock 3 -->
+    <circle cx="100" cy="700" r="60"/>
+    <line x1="100" y1="700" x2="100" y2="660" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="700" x2="130" y2="710" stroke="black" stroke-width="3"/>
+
+    <!-- Large gear 3 -->
+    <circle cx="180" cy="850" r="70"/>
+    <circle cx="180" cy="850" r="20"/>
+    <g transform="translate(180,850)" fill="white">
+        <use href="#gearTooth" transform="rotate(0) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(30) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(60) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(90) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(120) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(150) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(180) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(210) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(240) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(270) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(300) translate(80,0) rotate(0)"/>
+        <use href="#gearTooth" transform="rotate(330) translate(80,0) rotate(0)"/>
+    </g>
+
+
+    <!-- Large clock 4 -->
+    <circle cx="650" cy="850" r="90"/>
+    <line x1="650" y1="850" x2="650" y2="780" stroke="black" stroke-width="3"/>
+    <line x1="650" y1="850" x2="710" y2="870" stroke="black" stroke-width="3"/>
+
+    <!-- Medium gear 4 -->
+    <circle cx="750" cy="600" r="60"/>
+    <circle cx="750" cy="600" r="18"/>
+     <g transform="translate(750,600)" fill="white">
+        <use href="#gearTooth" transform="rotate(0) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(40) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(80) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(120) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(160) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(200) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(240) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(280) translate(70,0) rotate(0) scale(0.8)"/>
+        <use href="#gearTooth" transform="rotate(320) translate(70,0) rotate(0) scale(0.8)"/>
+    </g>
+
+    <!-- Small gear 5 -->
+    <circle cx="400" cy="150" r="30"/>
+    <circle cx="400" cy="150" r="8"/>
+     <g transform="translate(400,150)" fill="white">
+        <use href="#gearTooth" transform="rotate(0) translate(38,0) rotate(0) scale(0.5)"/>
+        <use href="#gearTooth" transform="rotate(72) translate(38,0) rotate(0) scale(0.5)"/>
+        <use href="#gearTooth" transform="rotate(144) translate(38,0) rotate(0) scale(0.5)"/>
+        <use href="#gearTooth" transform="rotate(216) translate(38,0) rotate(0) scale(0.5)"/>
+        <use href="#gearTooth" transform="rotate(288) translate(38,0) rotate(0) scale(0.5)"/>
+    </g>
+
   </g>
 
-  <g id="rabbit_character" stroke="black" stroke-width="4" fill="white">
+  <!-- Anthropomorphic Rabbit -->
+  <g id="rabbit" stroke="black" stroke-width="4" fill="white">
     <!-- Body -->
-    <ellipse cx="400" cy="500" rx="150" ry="180" fill="white"/>
-    <!-- Head -->
-    <ellipse cx="400" cy="300" rx="120" ry="100" fill="white"/>
-    <!-- Left Ear -->
-    <path d="M300 180 Q320 80 380 120 Q350 220 300 180 Z" fill="white"/>
-    <!-- Right Ear -->
-    <path d="M500 180 Q480 80 420 120 Q450 220 500 180 Z" fill="white"/>
-    <!-- Muzzle -->
-    <ellipse cx="400" cy="330" rx="60" ry="40" fill="white"/>
-    <!-- Nose -->
-    <circle cx="400" cy="315" r="15" fill="black"/>
-    <!-- Mouth -->
-    <path d="M370 345 Q400 365 430 345" fill="none" stroke="black" stroke-width="4"/>
-    <!-- Left Eye -->
-    <circle cx="355" cy="290" r="15" fill="black"/>
-    <!-- Right Eye -->
-    <circle cx="445" cy="290" r="15" fill="black"/>
-    <!-- Glasses -->
-    <circle cx="355" cy="290" r="30" fill="none" stroke="black" stroke-width="3"/>
-    <circle cx="445" cy="290" r="30" fill="none" stroke="black" stroke-width="3"/>
-    <line x1="385" y1="290" x2="415" y2="290" stroke="black" stroke-width="3"/>
-    <!-- Vest -->
-    <path d="M280 400 Q250 450 250 500 Q260 580 400 620 Q540 580 550 500 Q550 450 520 400 Z" fill="white"/>
-    <line x1="400" y1="420" x2="400" y2="580" stroke="black" stroke-width="4"/>
+    <ellipse cx="400" cy="650" rx="120" ry="180"/>
+
     <!-- Left Arm -->
-    <path d="M300 450 C250 480 200 550 220 620 L270 600 Q270 500 320 450 Z" fill="white"/>
+    <path d="M480 580 Q520 530 580 550 C550 630 480 630 480 580 Z"/>
     <!-- Right Arm -->
-    <path d="M500 450 C550 480 600 550 580 620 L530 600 Q530 500 480 450 Z" fill="white"/>
-    <!-- Tail -->
-    <circle cx="280" cy="580" r="40" fill="white"/>
+    <path d="M320 580 Q280 530 220 550 C250 630 320 630 320 580 Z"/>
+
+    <!-- Legs/Feet -->
+    <ellipse cx="360" cy="840" rx="60" ry="40"/>
+    <ellipse cx="440" cy="840" rx="60" ry="40"/>
+
+    <!-- Head -->
+    <circle cx="400" cy="400" r="100"/>
+
+    <!-- Ears -->
+    <path d="M350 300 Q330 180 380 180 Q430 180 410 300 Z" transform="rotate(-15 390 240)"/>
+    <path d="M450 300 Q470 180 420 180 Q370 180 390 300 Z" transform="rotate(15 410 240)"/>
+
+    <!-- Waistcoat -->
+    <path d="M300 500 C300 480 400 450 500 480 C500 650 400 700 300 650 Z"/>
+    <path d="M400 470 L400 680" stroke="black" stroke-width="3" fill="none"/>
+    <circle cx="400" cy="520" r="8" stroke="black" stroke-width="3"/>
+    <circle cx="400" cy="580" r="8" stroke="black" stroke-width="3"/>
+    <circle cx="400" cy="640" r="8" stroke="black" stroke-width="3"/>
+
+    <!-- Face Details -->
+    <!-- Eyes -->
+    <circle cx="360" cy="380" r="15"/>
+    <circle cx="440" cy="380" r="15"/>
+    <!-- Nose -->
+    <ellipse cx="400" cy="420" rx="15" ry="10"/>
+    <!-- Mouth -->
+    <path d="M370 445 Q400 465 430 445" fill="none" stroke="black" stroke-width="3"/>
   </g>
 
-  <g id="whimsical_clocks_gears" stroke="black" stroke-width="4" fill="white">
-    <!-- Large Wall Clock -->
-    <circle cx="650" cy="200" r="100" fill="white"/>
-    <circle cx="650" cy="200" r="10" fill="black"/>
-    <line x1="650" y1="200" x2="650" y2="120" stroke="black" stroke-width="4"/>
-    <line x1="650" y1="200" x2="710" y2="230" stroke="black" stroke-width="4"/>
-    <circle cx="650" cy="200" r="80" fill="none" stroke="black" stroke-width="3"/>
-
-    <!-- Small Table Clock 1 -->
-    <rect x="100" y="550" width="80" height="100" rx="15" ry="15" fill="white"/>
-    <circle cx="140" cy="590" r="30" fill="white"/>
-    <circle cx="140" cy="590" r="5" fill="black"/>
-    <line x1="140" y1="590" x2="140" y2="570" stroke="black" stroke-width="3"/>
-    <line x1="140" y1="590" x2="160" y2="600" stroke="black" stroke-width="3"/>
-
-    <!-- Small Table Clock 2 -->
-    <ellipse cx="700" cy="550" rx="50" ry="40" fill="white"/>
-    <circle cx="700" cy="550" r="25" fill="white"/>
-    <circle cx="700" cy="550" r="5" fill="black"/>
-    <line x1="700" y1="550" x2="700" y2="530" stroke="black" stroke-width="3"/>
-    <line x1="700" y1="550" x2="720" y2="540" stroke="black" stroke-width="3"/>
-
-    <!-- Grandfather Clock like shape -->
-    <rect x="20" y="200" width="100" height="400" rx="20" ry="20" fill="white"/>
-    <circle cx="70" cy="270" r="35" fill="white"/>
-    <circle cx="70" cy="270" r="5" fill="black"/>
-    <line x1="70" y1="270" x2="70" y2="245" stroke="black" stroke-width="3"/>
-    <line x1="70" y1="270" x2="90" y2="280" stroke="black" stroke-width="3"/>
-    <rect x="40" y="320" width="60" height="150" rx="10" ry="10" fill="white"/>
-
-    <!-- Gears -->
-    <g id="gears" stroke="black" stroke-width="4" fill="white">
-      <circle cx="200" cy="250" r="60" fill="white"/>
-      <circle cx="200" cy="250" r="20" fill="white"/>
-      <path d="M200 190 L210 180 L220 190 Z" fill="white"/>
-      <path d="M200 310 L210 320 L220 310 Z" fill="white"/>
-      <path d="M140 250 L130 260 L140 270 Z" fill="white"/>
-      <path d="M260 250 L270 260 L260 270 Z" fill="white"/>
-      <path d="M165 200 L155 190 L165 180 Z" fill="white"/>
-      <path d="M235 200 L245 190 L235 180 Z" fill="white"/>
-      <path d="M165 300 L155 310 L165 320 Z" fill="white"/>
-      <path d="M235 300 L245 310 L235 320 Z" fill="white"/>
-      
-      <circle cx="400" cy="700" r="40" fill="white"/>
-      <circle cx="400" cy="700" r="15" fill="white"/>
-      <path d="M400 660 L405 655 L410 660 Z" fill="white"/>
-      <path d="M400 740 L405 745 L410 740 Z" fill="white"/>
-      <path d="M360 700 L355 705 L360 710 Z" fill="white"/>
-      <path d="M440 700 L445 705 L440 710 Z" fill="white"/>
-    </g>
-
-    <!-- Tools -->
-    <g id="tools">
-      <!-- Wrench -->
-      <rect x="250" y="650" width="100" height="30" rx="10" ry="10" fill="white"/>
-      <rect x="340" y="640" width="20" height="50" fill="white"/>
-      <path d="M350 640 L360 635 L370 640 L370 650 L360 655 L350 650 Z" fill="white"/>
-      
-      <!-- Magnifying Glass (held by rabbit - simplified) -->
-      <circle cx="560" cy="580" r="40" fill="white"/>
-      <line x1="590" y1="610" x2="630" y2="650" stroke="black" stroke-width="4"/>
-      
-      <!-- Screwdriver -->
-      <rect x="50" y="700" width="10" height="80" rx="5" ry="5" fill="white"/>
-      <rect x="45" y="695" width="20" height="10" rx="3" ry="3" fill="white"/>
-      <path d="M55 780 L50 790 L60 790 L55 780 Z" fill="white"/>
-    </g>
+  <!-- Magnifying Glass -->
+  <g id="magnifying_glass" stroke="black" stroke-width="4" fill="white">
+    <!-- Handle -->
+    <rect x="580" y="580" width="30" height="100" rx="15" ry="15"/>
+    <!-- Lens frame -->
+    <circle cx="560" cy="550" r="60"/>
+    <!-- Inner part of lens (just a white circle to show it's glass) -->
+    <circle cx="560" cy="550" r="50"/>
   </g>
 </svg>
