@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect x="0" y="0" width="800" height="1000" fill="white"/>
+
+  <!-- Simplified Savanna Background Elements -->
+  <g id="savanna-background">
+    <!-- Baobab Tree Outline (distant) -->
+    <g id="baobab-tree" fill="white" stroke="black" stroke-width="4">
+      <path d="M650 750 C660 600 600 500 680 300 C780 400 760 500 700 750 Z" />
+      <ellipse cx="680" cy="270" rx="90" ry="70"/>
+      <ellipse cx="620" cy="280" rx="60" ry="50"/>
+      <ellipse cx="730" cy="290" rx="65" ry="55"/>
+    </g>
+
+    <!-- Two Simple Grass Tufts -->
+    <g id="grass-tufts" fill="white" stroke="black" stroke-width="4">
+      <path d="M100 850 Q110 820 120 850 Q130 880 140 850 Q125 890 100 850 Z" />
+      <path d="M250 880 Q260 850 270 880 Q280 910 290 880 Q275 920 250 880 Z" />
+    </g>
+  </g>
+
+  <!-- Baby Lion Cub -->
+  <g id="lion-cub" fill="white" stroke="black" stroke-width="5">
+    <!-- Body -->
+    <ellipse cx="400" cy="650" rx="150" ry="100" />
+
+    <!-- Head -->
+    <circle cx="350" cy="500" r="100" />
+
+    <!-- Ears -->
+    <circle cx="280" cy="420" r="35" />
+    <circle cx="420" cy="420" r="35" />
+
+    <!-- Mane (simplified rounded tufts) -->
+    <path d="M250 490 Q220 460 210 500 Q200 540 230 570 C240 550 250 490 250 490 Z" />
+    <path d="M450 490 Q480 460 490 500 Q500 540 470 570 C460 550 450 490 450 490 Z" />
+    <path d="M290 400 Q350 350 410 400 C380 410 320 410 290 400 Z" />
+
+    <!-- Snout area -->
+    <ellipse cx="350" cy="550" rx="50" ry="30" />
+
+    <!-- Nose -->
+    <path d="M350 535 C340 540 345 545 350 545 C355 545 360 540 350 535 Z" />
+
+    <!-- Mouth -->
+    <path d="M320 560 Q350 575 380 560" fill="none" stroke="black" stroke-width="4"/>
+
+    <!-- Eyes -->
+    <circle cx="310" cy="480" r="15" />
+    <circle cx="390" cy="480" r="15" />
+
+    <!-- Front Paws -->
+    <rect x="250" y="700" width="60" height="80" rx="30" ry="30" />
+    <rect x="360" y="700" width="60" height="80" rx="30" ry="30" />
+
+    <!-- Back Paw -->
+    <rect x="450" y="700" width="80" height="70" rx="30" ry="30" transform="rotate(10 490 735)" />
+
+    <!-- Tail -->
+    <path d="M500 680 C550 650 580 600 550 550 C520 500 480 480 450 500" fill="none" stroke="black" stroke-width="5"/>
+    <ellipse cx="450" cy="500" rx="25" ry="15" /> <!-- Tail tuft -->
+  </g>
+
+  <!-- Small, Simple Butterfly -->
+  <g id="butterfly" fill="white" stroke="black" stroke-width="4">
+    <circle cx="500" cy="200" r="15" /> <!-- Body -->
+    <!-- Wings (simple ellipses) -->
+    <ellipse cx="460" cy="180" rx="40" ry="50" transform="rotate(-15 460 180)"/>
+    <ellipse cx="460" cy="220" rx="40" ry="50" transform="rotate(15 460 220)"/>
+    <ellipse cx="540" cy="180" rx="40" ry="50" transform="rotate(15 540 180)"/>
+    <ellipse cx="540" cy="220" rx="40" ry="50" transform="rotate(-15 540 220)"/>
+    <!-- Antennae -->
+    <path d="M500 185 Q490 140 480 120" fill="none"/>
+    <path d="M500 185 Q510 140 520 120" fill="none"/>
+  </g>
+
+</svg>
