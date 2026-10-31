@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- BACKGROUND CASTLE ROOM -->
+  <g id="castle-background" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Floor Line -->
+    <line x1="40" y1="830" x2="760" y2="830" stroke-width="5" />
+
+    <!-- Castle Archway -->
+    <path d="M 120 830 V 420 A 280 280 0 0 1 680 420 V 830" fill="none" stroke-width="5" />
+    <path d="M 160 830 V 430 A 240 240 0 0 1 640 430 V 830" fill="none" stroke-width="4" />
+
+    <!-- Keystone & Arch Stones Details -->
+    <path d="M 375 175 L 425 175 L 435 225 L 365 225 Z" />
+    <line x1="260" y1="230" x2="235" y2="200" />
+    <line x1="540" y1="230" x2="565" y2="200" />
+    <line x1="180" y1="330" x2="145" y2="320" />
+    <line x1="620" y1="330" x2="655" y2="320" />
+
+    <!-- Castle Window (Center) -->
+    <path d="M 330 460 V 350 A 70 70 0 0 1 470 350 V 460 Z" stroke-width="4" />
+    <line x1="400" y1="280" x2="400" y2="460" />
+    <line x1="330" y1="380" x2="470" y2="380" />
+
+    <!-- Window Sill -->
+    <rect x="315" y="460" width="170" height="18" rx="6" />
+
+    <!-- Cute Clouds Outside Window -->
+    <path d="M 350 345 A 12 12 0 0 1 370 335 A 15 15 0 0 1 390 345 Z" fill="none" stroke-width="3" />
+    <path d="M 420 335 A 10 10 0 0 1 435 325 A 12 12 0 0 1 450 335 Z" fill="none" stroke-width="3" />
+
+    <!-- Castle Wall Banners/Drapes -->
+    <!-- Left Drape -->
+    <path d="M 40 100 Q 110 120 110 260 Q 75 280 40 260 Z" />
+    <path d="M 110 260 Q 75 300 40 330" fill="none" />
+    <!-- Right Drape -->
+    <path d="M 760 100 Q 690 120 690 260 Q 725 280 760 260 Z" />
+    <path d="M 690 260 Q 725 300 760 330" fill="none" />
+
+    <!-- Wall Sparkles / Stars -->
+    <path d="M 230 330 Q 240 345 255 345 Q 240 345 230 360 Q 220 345 205 345 Q 220 345 230 330 Z" />
+    <path d="M 570 320 Q 580 335 595 335 Q 580 335 570 350 Q 560 335 545 335 Q 560 335 570 320 Z" />
+  </g>
+
+  <!-- CHAIRS IN BACKGROUND -->
+  <g id="chairs" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Princess Chair (Left) -->
+    <path d="M 120 780 V 500 A 40 40 0 0 1 200 500 V 780" />
+    <circle cx="160" cy="460" r="14" />
+    <path d="M 135 510 H 185" />
+    <path d="M 135 550 H 185" />
+
+    <!-- Teddy Chair (Right) -->
+    <path d="M 600 780 V 540 A 40 40 0 0 1 680 540 V 780" />
+    <circle cx="640" cy="500" r="14" />
+    <path d="M 615 550 H 665" />
+  </g>
+
+  <!-- PRINCESS (LEFT) -->
+  <g id="princess" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Back Hair -->
+    <path d="M 160 480 C 130 540 120 660 180 700 C 190 640 190 560 190 510 Z" />
+    <path d="M 270 480 C 300 530 295 620 270 660 C 260 600 255 540 250 500 Z" />
+
+    <!-- Big Puffy Dress (Ballgown) -->
+    <path d="M 215 620 Q 140 680 130 830 H 315 Q 310 700 245 620 Z" stroke-width="5" />
+    
+    <!-- Dress Ruffles & Swags -->
+    <path d="M 130 830 Q 175 790 220 830 Q 265 790 315 830" fill="none" stroke-width="4" />
+    <path d="M 155 700 Q 220 750 290 700" fill="none" stroke-width="3" />
+    
+    <!-- Puffy Sleeves -->
+    <circle cx="180" cy="590" r="24" />
+    <circle cx="265" cy="590" r="24" />
+
+    <!-- Bodice -->
+    <path d="M 195 580 L 190 635 Q 225 650 255 635 L 250 580 Z" />
+    <path d="M 205 585 Q 225 600 240 585" fill="none" />
+
+    <!-- Left Arm & Hand (Resting in lap) -->
+    <path d="M 175 605 Q 165 670 195 675 Q 210 675 205 640" />
+
+    <!-- Neck & Head -->
+    <path d="M 213 555 H 233 V 575 H 213 Z" />
+    <circle cx="223" cy="510" r="42" />
+
+    <!-- Cute Face Details -->
+    <!-- Left Eye -->
+    <ellipse cx="208" cy="508" rx="6" ry="8" fill="black" />
+    <circle cx="206" cy="505" r="2.5" fill="white" />
+    <!-- Right Eye -->
+    <ellipse cx="238" cy="508" rx="6" ry="8" fill="black" />
+    <circle cx="236" cy="505" r="2.5" fill="white" />
+    <!-- Eyelashes -->
+    <path d="M 202 499 L 197 494" />
+    <path d="M 244 499 L 249 494" />
+    <!-- Sweet Smile -->
+    <path d="M 216 525 Q 223 536 232 525" fill="none" stroke-width="3.5" />
+    <!-- Cheeks -->
+    <circle cx="197" cy="522" r="5" stroke-width="2" />
+    <circle cx="249" cy="522" r="5" stroke-width="2" />
+
+    <!-- Princess Hair: Bangs and Curls -->
+    <path d="M 183 495 Q 223 515 263 495 C 263 460 250 440 223 440 C 195 440 183 460 183 495 Z" />
+    <path d="M 223 440 Q 235 480 255 485" fill="none" stroke-width="3" />
+    <path d="M 205 480 Q 215 455 223 440" fill="none" stroke-width="3" />
+
+    <!-- Tiara / Crown -->
+    <path d="M 203 445 L 200 415 L 213 427 L 223 405 L 233 427 L 246 415 L 243 445 Z" stroke-width="3.5" />
+    <circle cx="223" cy="415" r="3" fill="black" />
+    <circle cx="203" cy="425" r="2.5" fill="black" />
+    <circle cx="243" cy="425" r="2.5" fill="black" />
+
+    <!-- Right Arm & Hand reaching to table -->
+    <path d="M 265 605 Q 295 620 315 625 C 325 628 325 640 310 642 C 285 645 260 635 250 625" />
+  </g>
+
+  <!-- TEDDY BEAR (RIGHT) -->
+  <g id="teddy-bear" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Teddy Ears -->
+    <circle cx="535" cy="495" r="22" />
+    <circle cx="535" cy="495" r="12" />
+    <circle cx="635" cy="495" r="22" />
+    <circle cx="635" cy="495" r="12" />
+
+    <!-- Teddy Feet / Legs -->
+    <ellipse cx="535" cy="800" rx="30" ry="22" />
+    <circle cx="535" cy="800" r="12" stroke-width="3" />
+    <ellipse cx="645" cy="800" rx="30" ry="22" />
+    <circle cx="645" cy="800" r="12" stroke-width="3" />
+
+    <!-- Teddy Chubby Body -->
+    <ellipse cx="585" cy="690" rx="65" ry="85" stroke-width="5" />
+    <!-- Tummy Patch -->
+    <ellipse cx="585" cy="705" rx="42" ry="55" stroke-width="3.5" />
+
+    <!-- Teddy Head -->
+    <circle cx="585" cy="545" r="52" stroke-width="4.5" />
+
+    <!-- Teddy Muzzle -->
+    <ellipse cx="585" cy="565" rx="24" ry="17" />
+    <!-- Nose -->
+    <path d="M 577 556 Q 585 550 593 556 Q 585 565 577 556 Z" fill="black" />
+    <!-- Mouth -->
+    <path d="M 585 563 V 573" />
+    <path d="M 576 571 Q 585 578 594 571" fill="none" stroke-width="3.5" />
+
+    <!-- Teddy Eyes (Happy arches with sparkles) -->
+    <circle cx="560" cy="535" r="6" fill="black" />
+    <circle cx="558" cy="533" r="2" fill="white" />
+    <circle cx="610" cy="535" r="6" fill="black" />
+    <circle cx="608" cy="533" r="2" fill="white" />
+
+    <!-- Eyebrows -->
+    <path d="M 552 522 Q 560 518 568 522" fill="none" stroke-width="3" />
+    <path d="M 602 522 Q 610 518 618 522" fill="none" stroke-width="3" />
+
+    <!-- Big Bowtie -->
+    <path d="M 585 605 L 560 590 V 620 Z" />
+    <path d="M 585 605 L 610 590 V 620 Z" />
+    <circle cx="585" cy="605" r="7" />
+
+    <!-- Right Paw (Resting on side) -->
+    <ellipse cx="645" cy="670" rx="20" ry="16" transform="rotate(-15 645 670)" />
+
+    <!-- Left Arm & Paw (Reaching happily to the table) -->
+    <path d="M 545 640 C 510 640 480 635 470 645 C 460 655 480 675 510 670 C 530 668 545 660 545 660" />
+    <ellipse cx="475" cy="650" rx="13" ry="11" />
+  </g>
+
+  <!-- TEA PARTY TABLE (CENTER) -->
+  <g id="tea-table" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Tablecloth Body / Skirt -->
+    <path d="M 300 680 L 280 830 H 520 L 500 680 Z" stroke-width="4" />
+
+    <!-- Decorative Folds & Scallops on Cloth -->
+    <path d="M 280 830 Q 320 805 360 830 Q 400 805 440 830 Q 480 805 520 830" fill="none" stroke-width="4" />
+    <line x1="335" y1="695" x2="330" y2="815" stroke-width="3" />
+    <line x1="400" y1="695" x2="400" y2="815" stroke-width="3" />
+    <line x1="465" y1="695" x2="470" y2="815" stroke-width="3" />
+
+    <!-- Tablecloth Drape Swag -->
+    <path d="M 300 685 Q 400 735 500 685" fill="none" stroke-width="3.5" />
+
+    <!-- Table Top (Round Oval) -->
+    <ellipse cx="400" cy="675" rx="125" ry="32" stroke-width="5" />
+  </g>
+
+  <!-- TABLETOP GOODIES: TEAPOT, CUPS, CAKE -->
+  <g id="tea-set" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Centerpiece Cake Stand & Cake -->
+    <!-- Cake Plate Stand -->
+    <ellipse cx="400" cy="645" rx="35" ry="9" stroke-width="3.5" />
+    <path d="M 395 645 V 660 H 405 V 645" stroke-width="3" />
+
+    <!-- Cake Slice -->
+    <path d="M 375 635 L 415 620 L 425 632 L 385 647 Z" />
+    <path d="M 375 635 V 645 L 385 657 V 647 Z" />
+    <path d="M 385 657 L 425 642 V 632" />
+    <!-- Cake Frosting Layer -->
+    <path d="M 380 644 L 420 629" fill="none" stroke-width="2.5" />
+    <!-- Cherry on Top -->
+    <circle cx="405" cy="618" r="6" />
+    <path d="M 407 612 Q 417 600 422 602" fill="none" stroke-width="2.5" />
+
+    <!-- Cute Round Teapot (Left of center) -->
+    <!-- Teapot Handle -->
+    <path d="M 320 610 C 295 610 295 645 320 645" fill="none" stroke-width="4" />
+    <!-- Teapot Spout -->
+    <path d="M 360 615 Q 380 605 385 595 C 378 615 365 630 355 635" />
+    <!-- Teapot Body -->
+    <circle cx="340" cy="625" r="24" stroke-width="4" />
+    <path d="M 328 625 Q 340 635 352 625" fill="none" stroke-width="3" />
+    <!-- Teapot Lid & Knob -->
+    <path d="M 328 604 Q 340 598 352 604 Z" />
+    <circle cx="340" cy="597" r="4.5" />
+
+    <!-- Steam Hearts from Teapot -->
+    <path d="M 365 575 C 365 565 375 565 375 573 C 375 580 365 587 365 587 C 365 587 355 580 355 573 C 355 565 365 565 365 575 Z" stroke-width="2.5" />
+    <path d="M 380 550 Q 385 538 380 530" fill="none" stroke-width="2.5" />
+
+    <!-- Princess's Teacup (Far Left) -->
+    <ellipse cx="305" cy="655" rx="18" ry="6" stroke-width="3" />
+    <path d="M 293 652 Q 293 665 305 665 Q 317 665 317 652 Z" stroke-width="3.5" />
+    <path d="M 317 655 C 323 655 323 662 316 663" fill="none" stroke-width="2.5" />
+
+    <!-- Teddy's Teacup (Right) -->
+    <ellipse cx="465" cy="658" rx="18" ry="6" stroke-width="3" />
+    <path d="M 453 655 Q 453 668 465 668 Q 477 668 477 655 Z" stroke-width="3.5" />
+    <path d="M 477 658 C 483 658 483 665 476 666" fill="none" stroke-width="2.5" />
+
+    <!-- Little Sugar Bowl / Treat Plate -->
+    <ellipse cx="445" cy="640" rx="14" ry="5" stroke-width="2.5" />
+    <path d="M 437 638 Q 445 646 453 638 Z" stroke-width="2.5" />
+    <circle cx="445" cy="633" r="2.5" stroke-width="2" />
+  </g>
+
+  <!-- FLOOR DETAILS (SWEET HEARTS & STARS) -->
+  <g id="floor-decorations" fill="white" stroke="black" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Little Flower on Floor Left -->
+    <circle cx="90" cy="860" r="7" />
+    <path d="M 90 847 A 6 6 0 0 1 90 853" />
+    <circle cx="90" cy="844" r="5" />
+    <circle cx="103" cy="855" r="5" />
+    <circle cx="99" cy="870" r="5" />
+    <circle cx="81" cy="870" r="5" />
+    <circle cx="77" cy="855" r="5" />
+
+    <!-- Small Heart Floor Center -->
+    <path d="M 400 870 C 400 858 415 858 415 868 C 415 878 400 888 400 888 C 400 888 385 878 385 868 C 385 858 400 858 400 870 Z" stroke-width="3" />
+
+    <!-- Small Toy Crown / Star on Floor Right -->
+    <path d="M 700 850 Q 710 860 725 860 Q 710 860 700 870 Q 690 860 675 860 Q 690 860 700 850 Z" stroke-width="3" />
+  </g>
+</svg>
