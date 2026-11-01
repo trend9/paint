@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="coloring-scene">
+
+    <!-- Snow around the hot spring -->
+    <g id="snow" stroke="black" stroke-width="4" fill="white">
+      <!-- Bottom snow bank -->
+      <path d="M0 750 Q200 700 400 750 Q600 800 800 750 V1000 H0 Z" />
+      <!-- Left snow bank -->
+      <path d="M0 750 Q50 600 150 500 Q100 400 0 350 Z" />
+      <!-- Right snow bank -->
+      <path d="M800 750 Q750 600 650 500 Q700 400 800 350 Z" />
+      <!-- Some small snow mounds on the sides -->
+      <ellipse cx="120" cy="880" rx="80" ry="40" />
+      <ellipse cx="680" cy="880" rx="80" ry="40" />
+    </g>
+
+    <!-- Hot spring water -->
+    <g id="hot-spring" stroke="black" stroke-width="4" fill="white">
+      <!-- Main water pool -->
+      <ellipse cx="400" cy="650" rx="300" ry="150" />
+      <!-- Water ripples -->
+      <circle cx="280" cy="630" r="30" fill="none" />
+      <circle cx="520" cy="670" r="40" fill="none" />
+      <!-- Steam lines -->
+      <path d="M300 500 Q320 450 340 500 Q360 550 380 500" fill="none" stroke-width="3" />
+      <path d="M420 500 Q440 450 460 500 Q480 550 500 500" fill="none" stroke-width="3" />
+      <path d="M360 430 Q380 380 400 430 Q420 480 440 430" fill="none" stroke-width="3" />
+    </g>
+
+    <!-- Penguin swimming in the hot spring -->
+    <g id="penguin" stroke="black" stroke-width="4" fill="white">
+      <!-- Main head and upper body contour -->
+      <path d="M350 600 Q300 550 300 500 Q300 400 350 350 C380 320 420 320 450 350 Q500 400 500 500 Q500 550 450 600 Z" />
+
+      <!-- White belly/face patch -->
+      <path d="M380 550 Q360 500 360 450 Q360 400 380 370 C390 360 410 360 420 370 Q440 400 440 450 Q440 500 420 550 Z" />
+
+      <!-- Eyes -->
+      <circle cx="370" cy="400" r="25" />
+      <circle cx="430" cy="400" r="25" />
+      <!-- Pupils (inner circles, outlined for coloring) -->
+      <circle cx="370" cy="405" r="8" fill="white" stroke="black" stroke-width="3" />
+      <circle cx="430" cy="405" r="8" fill="white" stroke="black" stroke-width="3" />
+
+      <!-- Beak (mouth) -->
+      <path d="M390 435 Q400 450 410 435" fill="none" stroke="black" stroke-width="3" />
+      <path d="M390 440 Q400 455 410 440" fill="none" stroke="black" stroke-width="3" />
+
+      <!-- Flippers (partially visible, reaching out slightly) -->
+      <path d="M280 510 C250 530 250 550 280 570 Q300 550 280 510 Z" />
+      <path d="M520 510 C550 530 550 550 520 570 Q500 550 520 510 Z" />
+
+    </g>
+
+  </g>
+</svg>
