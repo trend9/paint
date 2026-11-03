@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Candy Train Group -->
+  <g id="candy-train" stroke="black" stroke-width="4" fill="white">
+    <!-- Engine -->
+    <g id="engine">
+      <!-- Engine body -->
+      <rect x="50" y="550" width="200" height="120" rx="30" ry="30"/>
+      <!-- Engine front/face -->
+      <rect x="200" y="520" width="80" height="150" rx="20" ry="20"/>
+      <circle cx="240" cy="570" r="18"/> <!-- Eye left -->
+      <circle cx="240" cy="620" r="18"/> <!-- Eye right -->
+      <path d="M220 595 C230 605, 250 605, 260 595" fill="none" stroke-linecap="round" stroke-width="5"/> <!-- Smile -->
+      <!-- Smokestack -->
+      <rect x="180" y="470" width="40" height="60" rx="10" ry="10"/>
+      <ellipse cx="200" cy="470" rx="30" ry="20"/>
+      <!-- Pilot (cowcatcher) -->
+      <path d="M280 670 L260 690 L200 690 L220 670 Z" />
+      <!-- Engine wheels - swirling candy -->
+      <g id="engine-wheels">
+        <circle cx="120" cy="700" r="45"/>
+        <path d="M120 655 A45 45 0 0 1 160 675" fill="none" stroke-linecap="round"/>
+        <path d="M120 655 A45 45 0 0 0 80 675" fill="none" stroke-linecap="round"/>
+        <path d="M120 745 A45 45 0 0 1 80 725" fill="none" stroke-linecap="round"/>
+        <path d="M120 745 A45 45 0 0 0 160 725" fill="none" stroke-linecap="round"/>
+        <circle cx="230" cy="700" r="45"/>
+        <path d="M230 655 A45 45 0 0 1 270 675" fill="none" stroke-linecap="round"/>
+        <path d="M230 655 A45 45 0 0 0 190 675" fill="none" stroke-linecap="round"/>
+        <path d="M230 745 A45 45 0 0 1 190 725" fill="none" stroke-linecap="round"/>
+        <path d="M230 745 A45 45 0 0 0 270 725" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- Connector to next car -->
+      <rect x="280" y="650" width="30" height="20" rx="5" ry="5"/>
+    </g>
+
+    <!-- Train Car 1: Gingerbread House -->
+    <g id="gingerbread-car">
+      <!-- Car body -->
+      <rect x="310" y="580" width="180" height="100" rx="20" ry="20"/>
+      <!-- Roof -->
+      <path d="M310 580 L340 500 L460 500 L490 580 Z"/>
+      <!-- Door -->
+      <rect x="350" y="600" width="40" height="60" rx="10" ry="10"/>
+      <!-- Window -->
+      <rect x="420" y="610" width="30" height="30" rx="5" ry="5"/>
+      <!-- Decorative icing dots -->
+      <circle cx="325" cy="530" r="5"/>
+      <circle cx="370" cy="510" r="5"/>
+      <circle cx="415" cy="510" r="5"/>
+      <circle cx="460" cy="530" r="5"/>
+      <!-- Wheels -->
+      <g id="gingerbread-wheels">
+        <circle cx="360" cy="700" r="40"/>
+        <path d="M360 660 A40 40 0 0 1 395 675" fill="none" stroke-linecap="round"/>
+        <path d="M360 660 A40 40 0 0 0 325 675" fill="none" stroke-linecap="round"/>
+        <path d="M360 740 A40 40 0 0 1 325 725" fill="none" stroke-linecap="round"/>
+        <path d="M360 740 A40 40 0 0 0 395 725" fill="none" stroke-linecap="round"/>
+
+        <circle cx="450" cy="700" r="40"/>
+        <path d="M450 660 A40 40 0 0 1 485 675" fill="none" stroke-linecap="round"/>
+        <path d="M450 660 A40 40 0 0 0 415 675" fill="none" stroke-linecap="round"/>
+        <path d="M450 740 A40 40 0 0 1 415 725" fill="none" stroke-linecap="round"/>
+        <path d="M450 740 A40 40 0 0 0 485 725" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- Connector -->
+      <rect x="490" y="650" width="30" height="20" rx="5" ry="5"/>
+    </g>
+
+    <!-- Train Car 2: Giant Cookie -->
+    <g id="cookie-car">
+      <!-- Cookie body -->
+      <circle cx="620" cy="620" r="70"/>
+      <!-- Chocolate chips -->
+      <circle cx="600" cy="590" r="10"/>
+      <circle cx="640" cy="610" r="12"/>
+      <circle cx="610" cy="640" r="9"/>
+      <circle cx="585" cy="620" r="11"/>
+      <circle cx="650" cy="580" r="8"/>
+      <!-- Car platform -->
+      <rect x="530" y="650" width="180" height="30" rx="10" ry="10"/>
+      <!-- Wheels -->
+      <g id="cookie-wheels">
+        <circle cx="580" cy="700" r="40"/>
+        <path d="M580 660 A40 40 0 0 1 615 675" fill="none" stroke-linecap="round"/>
+        <path d="M580 660 A40 40 0 0 0 545 675" fill="none" stroke-linecap="round"/>
+        <path d="M580 740 A40 40 0 0 1 545 725" fill="none" stroke-linecap="round"/>
+        <path d="M580 740 A40 40 0 0 0 615 725" fill="none" stroke-linecap="round"/>
+
+        <circle cx="660" cy="700" r="40"/>
+        <path d="M660 660 A40 40 0 0 1 695 675" fill="none" stroke-linecap="round"/>
+        <path d="M660 660 A40 40 0 0 0 625 675" fill="none" stroke-linecap="round"/>
+        <path d="M660 740 A40 40 0 0 1 625 725" fill="none" stroke-linecap="round"/>
+        <path d="M660 740 A40 40 0 0 0 695 725" fill="none" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Candy Cargo -->
+    <g id="candy-cargo">
+      <!-- Cupcake on engine -->
+      <path d="M190 500 C200 470, 240 470, 250 500 Z" fill="white" stroke="black" stroke-width="4"/> <!-- Frosting top -->
+      <ellipse cx="220" cy="500" rx="35" ry="15"/> <!-- Cupcake base -->
+      <circle cx="220" cy="480" r="5"/> <!-- Cherry on top -->
+
+      <!-- Lollipop on gingerbread car -->
+      <circle cx="370" cy="540" r="25"/>
+      <path d="M370 515 A25 25 0 0 1 390 530" fill="none" stroke-linecap="round"/>
+      <path d="M370 515 A25 25 0 0 0 350 530" fill="none" stroke-linecap="round"/>
+      <path d="M370 565 A25 25 0 0 1 350 550" fill="none" stroke-linecap="round"/>
+      <path d="M370 565 A25 25 0 0 0 390 550" fill="none" stroke-linecap="round"/>
+      <rect x="365" y="565" width="10" height="40" rx="5" ry="5"/>
+
+      <!-- Gummy Bears on cookie car -->
+      <g id="gummy-bear-1">
+        <ellipse cx="570" cy="600" rx="35" ry="45"/> <!-- Body -->
+        <circle cx="555" cy="550" r="15"/> <!-- Ear left -->
+        <circle cx="585" cy="550" r="15"/> <!-- Ear right -->
+      </g>
+      <g id="gummy-bear-2">
+        <ellipse cx="670" cy="600" rx="35" ry="45"/> <!-- Body -->
+        <circle cx="655" cy="550" r="15"/> <!-- Ear left -->
+        <circle cx="685" cy="550" r="15"/> <!-- Ear right -->
+      </g>
+    </g>
+  </g>
+
+  <!-- Whimsical Candy Land Background Group -->
+  <g id="candy-land" stroke="black" stroke-width="4" fill="white">
+    <!-- Chocolate River -->
+    <path d="M0 800 Q200 780 400 820 Q600 860 800 840 L800 1000 L0 1000 Z" fill="white"/>
+
+    <!-- Lollipop Trees -->
+    <g id="lollipop-tree-1">
+      <rect x="100" y="380" width="30" height="150" rx="10" ry="10"/>
+      <circle cx="115" cy="320" r="60"/>
+      <path d="M115 260 A60 60 0 0 1 160 290" fill="none" stroke-linecap="round"/>
+      <path d="M115 260 A60 60 0 0 0 70 290" fill="none" stroke-linecap="round"/>
+      <path d="M115 380 A60 60 0 0 1 70 350" fill="none" stroke-linecap="round"/>
+      <path d="M115 380 A60 60 0 0 0 160 350" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="lollipop-tree-2">
+      <rect x="650" y="350" width="30" height="180" rx="10" ry="10"/>
+      <circle cx="665" cy="280" r="70"/>
+      <path d="M665 210 A70 70 0 0 1 720 240" fill="none" stroke-linecap="round"/>
+      <path d="M665 210 A70 70 0 0 0 610 240" fill="none" stroke-linecap="round"/>
+      <path d="M665 350 A70 70 0 0 1 610 320" fill="none" stroke-linecap="round"/>
+      <path d="M665 350 A70 70 0 0 0 720 320" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="lollipop-tree-3">
+      <rect x="300" y="420" width="20" height="100" rx="8" ry="8"/>
+      <circle cx="310" cy="380" r="40"/>
+      <path d="M310 340 A40 40 0 0 1 340 355" fill="none" stroke-linecap="round"/>
+      <path d="M310 340 A40 40 0 0 0 280 355" fill="none" stroke-linecap="round"/>
+      <path d="M310 420 A40 40 0 0 1 280 405" fill="none" stroke-linecap="round"/>
+      <path d="M310 420 A40 40 0 0 0 340 405" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Marshmallow Clouds -->
+    <g id="marshmallow-cloud-1">
+      <path d="M100 150 Q120 100 180 100 Q240 100 260 120 Q280 140 280 170 Q280 190 260 190 L100 190 Z"/>
+    </g>
+    <g id="marshmallow-cloud-2">
+      <path d="M450 120 Q480 80 550 80 Q620 80 650 100 Q680 120 680 150 Q680 170 650 170 L450 170 Z"/>
+    </g>
+    <g id="marshmallow-cloud-3">
+      <path d="M50 250 Q80 200 150 200 Q220 200 250 220 Q280 240 280 270 Q280 290 250 290 L50 290 Z"/>
+    </g>
+
+  </g>
+</svg>
