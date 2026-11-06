@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- Background Decorative Stars & Sparkles -->
+  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Top Left Star -->
+    <path d="M 160,200 L 175,235 L 210,240 L 185,265 L 190,300 L 160,280 L 130,300 L 135,265 L 110,240 L 145,235 Z"/>
+    
+    <!-- Top Right Star -->
+    <path d="M 640,180 L 652,210 L 685,215 L 660,238 L 665,270 L 640,252 L 615,270 L 620,238 L 595,215 L 628,210 Z"/>
+
+    <!-- Mid Right Star -->
+    <path d="M 680,420 L 690,442 L 715,445 L 695,462 L 700,485 L 680,472 L 660,485 L 665,462 L 645,445 L 670,442 Z"/>
+
+    <!-- Mid Left Star -->
+    <path d="M 120,450 L 130,472 L 155,475 L 135,492 L 140,515 L 120,502 L 100,515 L 105,492 L 85,475 L 110,472 Z"/>
+
+    <!-- Cute Floating Hearts -->
+    <path d="M 230,340 C 230,325 210,315 195,330 C 180,315 160,325 160,340 C 160,365 195,385 195,385 C 195,385 230,365 230,340 Z"/>
+    <path d="M 630,320 C 630,308 615,300 602,312 C 590,300 575,308 575,320 C 575,340 602,356 602,356 C 602,356 630,340 630,320 Z"/>
+
+    <!-- Sparkle Dots -->
+    <circle cx="260" cy="220" r="8"/>
+    <circle cx="560" cy="190" r="10"/>
+    <circle cx="600" cy="530" r="8"/>
+    <circle cx="180" cy="540" r="9"/>
+  </g>
+
+  <!-- Big Fluffy Cloud Base -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Bottom Support Clouds -->
+    <path d="M 220,830 C 160,830 120,870 150,910 C 180,940 250,940 290,920 C 340,950 460,950 510,915 C 560,945 640,935 665,895 C 690,855 640,820 590,825"/>
+    
+    <!-- Main Fluffy Cloud Body -->
+    <path d="M 180,780 
+             C 110,770 90,690 145,640 
+             C 130,570 210,530 270,565 
+             C 320,505 440,500 495,555 
+             C 545,510 645,530 670,595 
+             C 735,620 745,715 690,770 
+             C 735,825 680,900 605,890 
+             C 555,930 465,925 420,890 
+             C 365,935 265,920 230,875 
+             C 170,880 135,825 180,780 Z"/>
+    
+    <!-- Inner Cloud Outline Details for Coloring -->
+    <path d="M 240,650 C 270,620 330,630 350,665" fill="none" stroke-width="4"/>
+    <path d="M 470,640 C 510,610 570,625 585,670" fill="none" stroke-width="4"/>
+    <path d="M 310,870 C 350,845 420,850 450,875" fill="none" stroke-width="4"/>
+    <path d="M 170,720 C 205,710 235,735 240,760" fill="none" stroke-width="4"/>
+    <path d="M 645,710 C 625,735 630,765 660,780" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Unicorn Tail -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <path d="M 520,680 C 580,670 640,700 660,750 C 675,790 645,830 600,830 C 565,830 550,805 570,785 C 590,765 585,745 550,740 C 530,738 505,745 490,730"/>
+    <path d="M 590,765 C 625,760 640,730 625,705" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Unicorn Body & Hind Legs -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Chubby Body -->
+    <path d="M 320,530 C 290,580 295,680 340,740 C 380,760 440,760 480,735 C 520,690 525,580 485,530 Z"/>
+
+    <!-- Left Hind Leg & Foot (Sitter) -->
+    <ellipse cx="295" cy="735" rx="55" ry="40" transform="rotate(-15 295 735)"/>
+    <!-- Left Hoof Line -->
+    <path d="M 265,710 C 285,725 285,745 270,765" fill="none" stroke-width="4"/>
+    <!-- Cute Sole Heart Detail -->
+    <path d="M 320,735 C 320,727 310,720 302,727 C 295,720 285,727 285,735 C 285,747 302,757 302,757 C 302,757 320,747 320,735 Z" stroke-width="3"/>
+
+    <!-- Right Hind Leg & Foot (Sitter) -->
+    <ellipse cx="505" cy="735" rx="55" ry="40" transform="rotate(15 505 735)"/>
+    <!-- Right Hoof Line -->
+    <path d="M 535,710 C 515,725 515,745 530,765" fill="none" stroke-width="4"/>
+    <!-- Cute Sole Heart Detail -->
+    <path d="M 515,735 C 515,727 505,720 498,727 C 490,720 480,727 480,735 C 480,747 498,757 498,757 C 498,757 515,747 515,735 Z" stroke-width="3"/>
+  </g>
+
+  <!-- Unicorn Mane (Back Layer) -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Left flowing hair tufts -->
+    <path d="M 310,320 C 250,320 220,380 235,435 C 245,470 280,480 300,470 C 255,505 270,560 320,565"/>
+    <path d="M 240,430 C 275,435 300,410 305,385" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Head & Ears -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Back / Right Ear -->
+    <path d="M 470,250 C 485,200 535,185 550,225 C 555,245 535,280 500,285 Z"/>
+    <path d="M 490,245 C 500,220 525,215 530,235" fill="none" stroke-width="4"/>
+
+    <!-- Main Head Outline (Cute Chubby Cheeks) -->
+    <path d="M 315,310 
+             C 280,350 270,410 295,455 
+             C 320,495 380,515 435,510 
+             C 490,505 530,470 535,415 
+             C 540,360 515,310 475,295 
+             C 440,280 345,280 315,310 Z"/>
+
+    <!-- Front / Left Ear -->
+    <path d="M 320,270 C 305,215 255,210 245,255 C 240,280 265,310 300,315 Z"/>
+    <path d="M 295,270 C 285,240 265,240 260,260" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Unicorn Mane (Top Forelock over forehead) -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <path d="M 345,285 C 330,235 380,215 410,240 C 435,220 470,235 460,270 C 490,265 505,305 475,335 C 445,335 440,300 415,300 C 390,300 380,325 355,320 C 340,315 340,295 345,285 Z"/>
+    <path d="M 410,245 C 420,275 390,295 375,295" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Spiral Unicorn Horn -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Horn Base Cone -->
+    <path d="M 380,250 C 385,200 395,150 405,100 C 415,150 425,200 430,245 Z"/>
+    <!-- Spiral Ridge Segments -->
+    <path d="M 388,225 C 405,230 418,220 427,210" fill="none" stroke-width="4"/>
+    <path d="M 393,190 C 408,193 416,183 423,172" fill="none" stroke-width="4"/>
+    <path d="M 399,152 C 410,155 415,147 418,137" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Cute Unicorn Face Details -->
+  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Left Happy Sleeping Eye (Arc + Lashes) -->
+    <path d="M 330,385 C 340,365 370,365 380,385" fill="none" stroke-width="5"/>
+    <path d="M 340,374 L 330,362" stroke-width="4"/>
+    <path d="M 355,368 L 355,353" stroke-width="4"/>
+    <path d="M 370,374 L 380,362" stroke-width="4"/>
+
+    <!-- Right Happy Sleeping Eye (Arc + Lashes) -->
+    <path d="M 435,385 C 445,365 475,365 485,385" fill="none" stroke-width="5"/>
+    <path d="M 445,374 L 435,362" stroke-width="4"/>
+    <path d="M 460,368 L 460,353" stroke-width="4"/>
+    <path d="M 475,374 L 485,362" stroke-width="4"/>
+
+    <!-- Rosy Cheek Circles -->
+    <ellipse cx="325" cy="415" rx="18" ry="10" fill="none" stroke-width="3.5"/>
+    <ellipse cx="490" cy="415" rx="18" ry="10" fill="none" stroke-width="3.5"/>
+
+    <!-- Dainty Muzzle / Cute Smiling Mouth -->
+    <path d="M 395,418 C 402,422 413,422 420,418" fill="none" stroke-width="4"/>
+    <path d="M 395,425 C 400,445 415,445 420,425" fill="white" stroke-width="4"/>
+
+    <!-- Nostril Dots -->
+    <circle cx="395" cy="408" r="2.5" fill="black"/>
+    <circle cx="420" cy="408" r="2.5" fill="black"/>
+  </g>
+
+  <!-- Delicious Cupcake Held Gracefully -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Cupcake Wrapper -->
+    <path d="M 375,550 L 382,600 C 383,608 432,608 433,600 L 440,550 Z"/>
+    <!-- Wrapper Vertical Folds -->
+    <path d="M 390,553 L 395,598" fill="none" stroke-width="3.5"/>
+    <path d="M 407,555 L 407,601" fill="none" stroke-width="3.5"/>
+    <path d="M 425,553 L 420,598" fill="none" stroke-width="3.5"/>
+
+    <!-- Swirly Cloud-like Frosting -->
+    <path d="M 365,550 
+             C 355,540 360,520 375,520 
+             C 370,505 385,490 405,492 
+             C 415,480 435,485 440,500 
+             C 455,505 460,525 450,538 
+             C 455,545 450,555 440,555 
+             Z"/>
+    
+    <!-- Frosting Inner Swirl Lines -->
+    <path d="M 375,535 C 395,545 425,540 440,525" fill="none" stroke-width="3.5"/>
+    <path d="M 390,515 C 405,525 420,515 430,505" fill="none" stroke-width="3.5"/>
+
+    <!-- Cherry on Top -->
+    <circle cx="410" cy="478" r="14"/>
+    <!-- Cherry Stem -->
+    <path d="M 412,464 C 420,445 435,445 440,448" fill="none" stroke-width="3.5"/>
+
+    <!-- Cute Heart Sprinkles on Frosting -->
+    <path d="M 382,532 C 382,528 377,525 373,528 C 370,525 365,528 365,532 C 365,537 373,542 373,542 C 373,542 382,537 382,532 Z" stroke-width="2.5"/>
+    <circle cx="425" cy="535" r="3" fill="none" stroke-width="2.5"/>
+    <line x1="395" y1="500" x2="401" y2="506" stroke-width="3"/>
+  </g>
+
+  <!-- Front Little Arms / Hooves Hugging Cupcake -->
+  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Left Forelimb -->
+    <path d="M 330,550 C 330,580 365,585 380,565 C 385,558 385,550 375,542 C 355,525 338,532 330,550 Z"/>
+    <!-- Left Hoof Cut -->
+    <path d="M 365,545 C 368,555 372,565 378,568" fill="none" stroke-width="4"/>
+
+    <!-- Right Forelimb -->
+    <path d="M 485,550 C 485,580 450,585 435,565 C 430,558 430,550 440,542 C 460,525 477,532 485,550 Z"/>
+    <!-- Right Hoof Cut -->
+    <path d="M 450,545 C 447,555 443,565 437,568" fill="none" stroke-width="4"/>
+  </g>
+
+  <!-- Bottom Floating Little Puffy Clouds -->
+  <g stroke="black" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <!-- Small Cloud Left -->
+    <path d="M 120,860 C 100,860 90,835 105,820 C 100,795 130,785 145,800 C 160,780 195,785 200,810 C 215,820 210,845 195,855 C 195,865 175,870 160,865 C 145,875 125,870 120,860 Z"/>
+    <!-- Small Cloud Right -->
+    <path d="M 640,840 C 625,840 615,820 630,805 C 625,785 650,775 665,788 C 675,772 705,775 710,795 C 725,805 720,825 705,835 C 700,845 680,850 670,845 C 655,852 645,848 640,840 Z"/>
+  </g>
+</svg>
