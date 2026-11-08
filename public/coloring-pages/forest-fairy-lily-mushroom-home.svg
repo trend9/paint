@@ -1,0 +1,128 @@
+<svg viewBox="0 0 800 1000">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 4; /* Thick outline */
+        fill: white;    /* White fill for coloring */
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      .outline-nofill {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;     /* No fill for lines/patterns */
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Cheerful Mushroom House -->
+  <g id="mushroom-house">
+    <!-- Mushroom Stem/House Body -->
+    <path class="outline"
+      d="M350 750 Q300 600 350 450 C380 400 420 400 450 450 Q500 600 450 750 Z" />
+    <!-- Door -->
+    <rect class="outline" x="380" y="650" width="40" height="80" rx="10" ry="10"/>
+    <!-- Doorknob -->
+    <circle class="outline" cx="410" cy="690" r="5"/>
+
+    <!-- Mushroom Cap/Swirly Roof -->
+    <path class="outline"
+      d="M300 450 C200 350 250 250 400 200 C550 250 600 350 500 450 Z" />
+    <!-- Swirly pattern on roof - simplified concentric arcs -->
+    <path class="outline-nofill"
+      d="M395 240 C350 250 320 300 350 350 C380 400 420 400 450 350 C480 300 450 250 405 240" />
+    <path class="outline-nofill"
+      d="M398 265 C370 270 345 305 370 330 C395 355 425 355 450 330 C475 305 450 270 422 265" />
+
+    <!-- Simple Window 1 -->
+    <circle class="outline" cx="360" cy="550" r="25"/>
+    <!-- Simple Window 2 -->
+    <circle class="outline" cx="440" cy="550" r="25"/>
+  </g>
+
+  <!-- Super Cute Tiny Fairy -->
+  <g id="fairy">
+    <!-- Body -->
+    <ellipse class="outline" cx="600" cy="300" rx="20" ry="35"/>
+    <!-- Head -->
+    <circle class="outline" cx="600" cy="250" r="25"/>
+    <!-- Arms -->
+    <path class="outline-nofill" d="M585 290 Q570 280 560 295"/>
+    <path class="outline-nofill" d="M615 290 Q630 280 640 295"/>
+    <!-- Legs -->
+    <path class="outline-nofill" d="M590 330 L580 350"/>
+    <path class="outline-nofill" d="M610 330 L620 350"/>
+
+    <!-- Face -->
+    <circle class="outline-nofill" cx="590" cy="245" r="3"/>
+    <circle class="outline-nofill" cx="610" cy="245" r="3"/>
+    <path class="outline-nofill" d="M590 260 Q600 265 610 260"/>
+
+    <!-- Small Wings -->
+    <path class="outline" d="M600 280 Q630 250 640 290 Q630 320 600 280 Z" />
+    <path class="outline" d="M600 280 Q570 250 560 290 Q570 320 600 280 Z" />
+  </g>
+
+  <!-- Simple Flowers -->
+  <g id="flowers">
+    <!-- Flower 1 (bottom left) -->
+    <g transform="translate(150, 850)">
+      <circle class="outline" cx="0" cy="0" r="15"/> <!-- Center -->
+      <ellipse class="outline" cx="-20" cy="0" rx="15" ry="8"/>
+      <ellipse class="outline" cx="20" cy="0" rx="15" ry="8"/>
+      <ellipse class="outline" cx="0" cy="-20" rx="8" ry="15"/>
+      <ellipse class="outline" cx="0" cy="20" rx="8" ry="15"/>
+      <ellipse class="outline" cx="-14" cy="-14" rx="13" ry="7" transform="rotate(-45)"/>
+      <ellipse class="outline" cx="14" cy="-14" rx="13" ry="7" transform="rotate(45)"/>
+      <ellipse class="outline" cx="-14" cy="14" rx="13" ry="7" transform="rotate(45)"/>
+      <ellipse class="outline" cx="14" cy="14" rx="13" ry="7" transform="rotate(-45)"/>
+      <path class="outline-nofill" d="M0 30 L0 80"/> <!-- Stem -->
+      <ellipse class="outline" cx="-20" cy="60" rx="15" ry="8" transform="rotate(-20 -20 60)"/> <!-- Leaf -->
+    </g>
+
+    <!-- Flower 2 (bottom right) -->
+    <g transform="translate(650, 800)">
+      <circle class="outline" cx="0" cy="0" r="15"/> <!-- Center -->
+      <ellipse class="outline" cx="-20" cy="0" rx="15" ry="8"/>
+      <ellipse class="outline" cx="20" cy="0" rx="15" ry="8"/>
+      <ellipse class="outline" cx="0" cy="-20" rx="8" ry="15"/>
+      <ellipse class="outline" cx="0" cy="20" rx="8" ry="15"/>
+      <path class="outline-nofill" d="M0 30 L0 80"/> <!-- Stem -->
+      <ellipse class="outline" cx="20" cy="60" rx="15" ry="8" transform="rotate(20 20 60)"/> <!-- Leaf -->
+    </g>
+  </g>
+
+  <!-- Simple Leaves scattered -->
+  <g id="leaves">
+    <ellipse class="outline" cx="200" cy="650" rx="40" ry="20" transform="rotate(20 200 650)"/>
+    <ellipse class="outline" cx="220" cy="700" rx="30" ry="15" transform="rotate(-10 220 700)"/>
+    <ellipse class="outline" cx="580" cy="680" rx="35" ry="18" transform="rotate(-15 580 680)"/>
+  </g>
+
+  <!-- Happy Caterpillar -->
+  <g id="caterpillar">
+    <g transform="translate(100, 400)">
+      <!-- Body segments -->
+      <circle class="outline" cx="0" cy="0" r="30"/>
+      <circle class="outline" cx="40" cy="0" r="30"/>
+      <circle class="outline" cx="80" cy="0" r="30"/>
+      <circle class="outline" cx="120" cy="0" r="30"/>
+      <circle class="outline" cx="160" cy="0" r="30"/>
+      <!-- Head -->
+      <circle class="outline" cx="200" cy="0" r="35"/>
+      <!-- Eyes -->
+      <circle class="outline-nofill" cx="190" cy="-10" r="5"/>
+      <circle class="outline-nofill" cx="210" cy="-10" r="5"/>
+      <!-- Smile -->
+      <path class="outline-nofill" d="M190 10 Q200 15 210 10"/>
+      <!-- Antennae -->
+      <path class="outline-nofill" d="M190 -30 L180 -50"/>
+      <circle class="outline" cx="180" cy="-50" r="5"/>
+      <path class="outline-nofill" d="M210 -30 L220 -50"/>
+      <circle class="outline" cx="220" cy="-50" r="5"/>
+    </g>
+  </g>
+</svg>
