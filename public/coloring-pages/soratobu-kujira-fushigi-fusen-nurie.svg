@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group for Clouds in the background -->
+  <g id="clouds" stroke="black" stroke-width="4" fill="white">
+    <!-- Cloud 1 -->
+    <path d="M100 200 Q150 150 200 180 T300 170 T400 200 Q350 250 300 220 T200 230 T100 200Z" />
+    <!-- Cloud 2 -->
+    <path d="M500 150 Q550 100 600 130 T700 120 T750 150 Q700 200 650 170 T550 180 T500 150Z" />
+    <!-- Cloud 3 (lower) -->
+    <path d="M250 780 Q300 730 350 760 T450 750 T500 780 Q450 830 400 800 T300 810 T250 780Z" />
+  </g>
+
+  <!-- Group for the Whale -->
+  <g id="whale" stroke="black" stroke-width="4" fill="white">
+    <!-- Whale Body - large rounded shape -->
+    <path d="M200 500 C150 400 200 350 350 350 S650 400 600 500 C650 600 600 650 450 650 S250 600 200 500Z" />
+    <!-- Whale Tail (simpler) -->
+    <path d="M180 500 C150 450 80 470 100 500 C80 530 150 550 180 500Z" />
+    <!-- Pectoral Fin 1 (left side of whale) -->
+    <ellipse cx="300" cy="620" rx="60" ry="30" transform="rotate(-15 300 620)" />
+    <!-- Pectoral Fin 2 (right side of whale) -->
+    <ellipse cx="500" cy="620" rx="60" ry="30" transform="rotate(15 500 620)" />
+
+    <!-- Whale Eye 1 -->
+    <circle cx="350" cy="420" r="15" fill="black" stroke="none" />
+    <!-- Whale Eye 2 -->
+    <circle cx="450" cy="420" r="15" fill="black" stroke="none" />
+    <!-- Whale Mouth (smile) -->
+    <path d="M370 470 Q400 500 430 470" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    <!-- Blowhole -->
+    <circle cx="400" cy="360" r="10" />
+  </g>
+
+  <!-- Group for Balloons and their strings -->
+  <g id="balloons">
+    <!-- Balloon 1 (circle) -->
+    <circle cx="280" cy="200" r="50" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 2 (ellipse) -->
+    <ellipse cx="400" cy="180" rx="40" ry="60" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 3 (teardrop/path) -->
+    <path d="M550 200 C560 150 540 120 520 120 C500 120 490 150 500 200 S525 250 550 200 Z" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 4 (rounded rectangle) -->
+    <rect x="620" y="150" width="70" height="90" rx="20" ry="20" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 5 (another circle) -->
+    <circle cx="180" cy="300" r="40" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 6 (larger ellipse, upper left) -->
+    <ellipse cx="250" cy="100" rx="50" ry="30" fill="white" stroke="black" stroke-width="3" />
+    <!-- Balloon 7 (larger ellipse, upper right) -->
+    <ellipse cx="600" cy="100" rx="50" ry="30" fill="white" stroke="black" stroke-width="3" />
+
+    <!-- Balloon Strings connected to the whale -->
+    <line x1="280" y1="250" x2="350" y2="390" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="400" y1="240" x2="400" y2="380" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="525" y1="230" x2="480" y2="390" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="655" y1="240" x2="520" y2="380" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="180" y1="340" x2="330" y2="410" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="250" y1="130" x2="370" y2="360" stroke="black" stroke-width="3" stroke-linecap="round" />
+    <line x1="600" y1="130" x2="430" y2="360" stroke="black" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>
