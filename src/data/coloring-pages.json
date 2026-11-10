@@ -1,5 +1,40 @@
 [
   {
+    "slug": "alice-rabbit-clockmaker-shop",
+    "title": "【ふしぎの国へようこそ！】じかんのまほう使い、うさぎの時計屋さんぬりえ",
+    "description": "アリスの物語に出てくるような、ちょっとふしぎなうさぎの時計屋さん。たくさんのかわいい時計をぬって、じかんのまほうを楽しもう！",
+    "category": "ファンタジー",
+    "tags": [
+      "うさぎ",
+      "時計",
+      "アリス",
+      "ファンタジー",
+      "時間",
+      "ものづくり",
+      "無料ダウンロード"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, a cute, smiling white rabbit wearing a tiny waistcoat and round spectacles, carefully holding a whimsical, oversized pocket watch with visible gears and cogs. The rabbit is standing in a fantastical clock shop, surrounded by various cartoonish, odd-shaped clocks, some with teacups or playing cards motifs, all in an Alice in Wonderland style. The background is pure white and completely empty, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines, very clean and clear --ar 3:4",
+    "article": "<h3>まほうの時計を作るうさぎさんに出会おう！</h3>\n<p>こんにちは、ちいさなアーティストさん！今日は、ふしぎな森の奥にある、ちょっと変わった時計屋さんへご案内します。このお店のご主人は、いつもニコニコ顔の、とってもかしこいうさぎさん。このうさぎさんは、ただの時計屋さんじゃありません。なんと、じかんのまほうをかける、すてきな時計を作るまほう使いなのです！</p>\n<p>うさぎさんの時計屋さんには、壁いっぱいに不思議な時計がいっぱい。秒針がクッキーでできていたり、文字盤がティーカップになっていたり、どれもこれもかわいくて、見てるだけでわくわくしちゃうね。このぬりえでは、そんなふしぎな時計を、きみだけの色でいっぱいにすることができます。</p>\n\n<h3>きみの色で、じかんのまほうをかけよう！</h3>\n<p>さあ、色えんぴつやクレヨンを手に取って、うさぎさんの時計屋さんをカラフルに彩ってみましょう！</p>\n<ul>\n<li><b>うさぎさんの服は？</b> どんな色がおしゃれかな？ 赤いベスト？ 青いズボン？ きみが思う一番すてきな色をぬってあげてね。</li>\n<li><b>たくさんの時計たち！</b> 時計の針は何色にしよう？ 文字盤は？ 時計の中の歯車も、いろんな色でぬってみると、もっとまほうみたいになるよ。</li>\n<li><b>背景もじゆうに！</b> うさぎさんの時計屋さんはどんな場所にあるのかな？ 緑の森の中？ それとも、虹色の雲の上？ きみの想像力で、背景も描いてみよう！</li>\n</ul>\n<p>色を塗ることで、指先の運動能力がアップしたり、集中力がつくのはもちろん、自分で考えて色を選ぶことで、きみだけの世界を表現する力が育まれます。どれ一つとして同じ色の時計はないはず！きみのオリジナルカラーで、世界に一つだけの「じかんのまほう」を完成させてね。</p>\n\n<h4>おうちの方へ：お子さまの知的好奇心を育むぬりえの魅力</h4>\n<p>この「うさぎの時計屋さん」ぬりえは、お子さまの創造力を刺激するだけでなく、時間という抽象的な概念への興味を引き出すきっかけにもなります。時計の形や数字を塗ることで、自然と時計の読み方や時間の流れについて考える機会が生まれるでしょう。</p>\n<p>また、アリスの世界観は、お子さまの想像力を広げ、ファンタジーへの扉を開きます。自由に色を選ぶ過程は、色彩感覚や美的センスを養い、指先を使う細かい作業は、集中力と手先の器用さを高めます。完成したぬりえを通じて、お子さまとの会話を楽しみ、作品を褒めることで、自己肯定感を育むことにもつながります。ぜひ、親子で一緒に、この魔法のような時間を楽しんでください。</p>",
+    "seo": {
+      "h1": "【無料ダウンロード】ふしぎの国のアリス風「うさぎの時計屋さん」ぬりえ（子供・幼児向け）",
+      "metaDescription": "アリスの冒険のような「うさぎの時計屋さん」ぬりえを無料ダウンロード！お子様の想像力を育み、色彩感覚を刺激する知育ぬりえです。今すぐプリントアウトして楽しもう。",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "うさぎ ぬりえ",
+        "アリス ぬりえ",
+        "ファンタジー ぬりえ",
+        "時計 ぬりえ",
+        "知育 ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/alice-rabbit-clockmaker-shop.jpg",
+    "imageType": "jpg",
+    "createdAt": "2026-11-10T19:06:26.242Z",
+    "id": "310"
+  },
+  {
     "slug": "dinosaur-picnic-fun",
     "title": "モグモグ、パクパク！恐竜さんのわくわくピクニックぬりえ",
     "description": "大きな恐竜たちが森でピクニック！おいしいサンドイッチやフルーツを囲んで、みんなで楽しい時間を過ごしているよ。色鉛筆でカラフルに塗って、ピクニックをもっとにぎやかにしよう！",
