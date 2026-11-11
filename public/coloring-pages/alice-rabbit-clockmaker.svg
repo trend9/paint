@@ -1,346 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
-  <rect width="800" height="1000" fill="white"/>
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      .outline-fill-none {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      .outline-thin {
+        stroke: black;
+        stroke-width: 3;
+        fill: white;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
 
-  <!-- BACKGROUND WALLPAPER & SHELVES -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Floor Line -->
-    <line x1="20" y1="900" x2="780" y2="900" stroke-width="5"/>
-    <ellipse cx="400" cy="920" rx="360" ry="50"/>
-
-    <!-- High Wall Shelf -->
-    <path d="M 460 220 L 780 220 L 780 240 L 460 240 Z" stroke-width="5"/>
-    <path d="M 480 240 L 480 270 L 510 240" fill="none"/>
-    <path d="M 730 240 L 730 270 L 760 240" fill="none"/>
-
-    <!-- Cute Small Clocks on Top Shelf -->
-    <!-- Dome Clock -->
-    <path d="M 490 220 L 490 170 C 490 130 550 130 550 170 L 550 220 Z"/>
-    <circle cx="520" cy="180" r="20"/>
-    <line x1="520" y1="180" x2="520" y2="170"/>
-    <line x1="520" y1="180" x2="530" y2="180"/>
-
-    <!-- Little Square Clock -->
-    <rect x="580" y="150" width="60" height="70" rx="10"/>
-    <circle cx="610" cy="185" r="22"/>
-    <circle cx="610" cy="140" r="8"/>
-    <line x1="610" y1="185" x2="610" y2="173"/>
-    <line x1="610" y1="185" x2="622" y2="185"/>
-
-    <!-- Whimsical Teapot Clock on Shelf -->
-    <path d="M 670 220 C 660 190 670 160 700 160 C 730 160 740 190 730 220 Z"/>
-    <circle cx="700" cy="190" r="16"/>
-    <path d="M 730 175 C 750 175 755 195 730 205" fill="none"/>
-    <path d="M 670 185 C 655 180 655 170 665 170" fill="none"/>
-    <circle cx="700" cy="153" r="5"/>
-  </g>
-
-  <!-- HANGING POCKET WATCHES (TOP) -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Hanging Chain Left -->
-    <path d="M 280 0 L 280 90" stroke-dasharray="1 12" stroke-width="5"/>
-    <rect x="272" y="85" width="16" height="15" rx="4"/>
-    <circle cx="280" cy="150" r="45" stroke-width="5"/>
-    <circle cx="280" cy="150" r="35"/>
-    <!-- Hour marks & hands -->
-    <circle cx="280" cy="122" r="3"/>
-    <circle cx="308" cy="150" r="3"/>
-    <circle cx="280" cy="178" r="3"/>
-    <circle cx="252" cy="150" r="3"/>
-    <line x1="280" y1="150" x2="280" y2="132" stroke-width="4"/>
-    <line x1="280" y1="150" x2="295" y2="150" stroke-width="4"/>
-
-    <!-- Hanging Chain Center-Right -->
-    <path d="M 420 0 L 420 60" stroke-dasharray="1 12" stroke-width="5"/>
-    <ellipse cx="420" cy="65" rx="10" ry="6"/>
-    <circle cx="420" cy="115" r="40" stroke-width="5"/>
-    <circle cx="420" cy="115" r="30"/>
-    <circle cx="420" cy="93" r="2.5"/>
-    <circle cx="442" cy="115" r="2.5"/>
-    <circle cx="420" cy="137" r="2.5"/>
-    <circle cx="398" cy="115" r="2.5"/>
-    <path d="M 420 115 L 430 102"/>
-    <path d="M 420 115 L 410 110"/>
-  </g>
-
-  <!-- GRANDFATHER CLOCK (LEFT) -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Top Decorative Finial & Crown -->
-    <circle cx="120" cy="100" r="14"/>
-    <path d="M 60 170 C 60 120 180 120 180 170 Z" stroke-width="5"/>
-    <path d="M 50 170 L 190 170 L 190 190 L 50 190 Z"/>
-
-    <!-- Clock Face Hood -->
-    <rect x="55" y="190" width="130" height="140" rx="10"/>
-    <circle cx="120" cy="260" r="50" stroke-width="5"/>
-    <circle cx="120" cy="260" r="40"/>
-    <!-- Hour Dots -->
-    <circle cx="120" cy="227" r="3.5"/>
-    <circle cx="153" cy="260" r="3.5"/>
-    <circle cx="120" cy="293" r="3.5"/>
-    <circle cx="87" cy="260" r="3.5"/>
-    <circle cx="143" cy="237" r="3"/>
-    <circle cx="143" cy="283" r="3"/>
-    <circle cx="97" cy="283" r="3"/>
-    <circle cx="97" cy="237" r="3"/>
-    <!-- Hands -->
-    <path d="M 120 260 L 120 235" stroke-width="4"/>
-    <path d="M 120 260 L 140 268" stroke-width="4"/>
-    <circle cx="120" cy="260" r="4"/>
-
-    <!-- Middle Waist Trunk -->
-    <path d="M 65 330 L 175 330 L 170 650 L 70 650 Z"/>
-    <!-- Glass Door Trunk -->
-    <rect x="80" y="350" width="80" height="270" rx="15"/>
-    <!-- Pendulum inside -->
-    <line x1="120" y1="360" x2="120" y2="520" stroke-width="4"/>
-    <circle cx="120" cy="540" r="28" stroke-width="5"/>
-    <circle cx="120" cy="540" r="16"/>
-    <!-- Weights -->
-    <rect x="92" y="390" width="12" height="60" rx="5"/>
-    <rect x="136" y="410" width="12" height="60" rx="5"/>
-
-    <!-- Base -->
-    <path d="M 55 650 L 185 650 L 195 900 L 45 900 Z" stroke-width="5"/>
-    <!-- Base Decorative Panel -->
-    <rect x="70" y="680" width="100" height="180" rx="10"/>
-    <path d="M 85 710 C 120 690 120 690 155 710 L 155 830 C 120 850 120 850 85 830 Z"/>
-    <!-- Feet -->
-    <rect x="45" y="900" width="30" height="20" rx="5"/>
-    <rect x="165" y="900" width="30" height="20" rx="5"/>
-  </g>
-
-  <!-- BIG WALL CUCKOO / GEAR CLOCK (RIGHT) -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Cuckoo House Roof -->
-    <path d="M 670 270 L 600 340 L 740 340 Z" stroke-width="5"/>
-    <circle cx="670" cy="305" r="10"/>
-    <!-- House Body -->
-    <rect x="615" y="340" width="110" height="140" rx="8" stroke-width="5"/>
-    <!-- Big Clock Face -->
-    <circle cx="670" cy="410" r="42" stroke-width="4"/>
-    <circle cx="670" cy="410" r="32"/>
-    <circle cx="670" cy="384" r="3"/>
-    <circle cx="696" cy="410" r="3"/>
-    <circle cx="670" cy="436" r="3"/>
-    <circle cx="644" cy="410" r="3"/>
-    <!-- Wavy hands -->
-    <path d="M 670 410 C 675 398 665 392 670 388"/>
-    <path d="M 670 410 L 688 418"/>
-    <!-- Hanging Pinecone Weights -->
-    <line x1="640" y1="480" x2="640" y2="540" stroke-dasharray="2 8"/>
-    <path d="M 632 540 C 632 530 648 530 648 540 C 652 555 640 568 640 568 C 640 568 628 555 632 540 Z"/>
-    <line x1="700" y1="480" x2="700" y2="520" stroke-dasharray="2 8"/>
-    <path d="M 692 520 C 692 510 708 510 708 520 C 712 535 700 548 700 548 C 700 548 688 535 692 520 Z"/>
-  </g>
-
-  <!-- EXPOSED WHIMSICAL WALL GEARS (BACKGROUND RIGHT) -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Big Cog -->
-    <circle cx="560" cy="340" r="38"/>
-    <circle cx="560" cy="340" r="18"/>
-    <!-- Cog Teeth -->
-    <rect x="553" y="296" width="14" height="10" rx="3"/>
-    <rect x="553" y="374" width="14" height="10" rx="3"/>
-    <rect x="516" y="333" width="10" height="14" rx="3"/>
-    <rect x="594" y="333" width="10" height="14" rx="3"/>
-    <rect x="528" y="307" width="12" height="12" rx="3" transform="rotate(45 534 313)"/>
-    <rect x="580" y="360" width="12" height="12" rx="3" transform="rotate(45 586 366)"/>
-    <rect x="580" y="307" width="12" height="12" rx="3" transform="rotate(-45 586 313)"/>
-    <rect x="528" y="360" width="12" height="12" rx="3" transform="rotate(-45 534 366)"/>
-
-    <!-- Interlocking Smaller Cog -->
-    <circle cx="510" cy="405" r="24"/>
-    <circle cx="510" cy="405" r="10"/>
-    <rect x="505" y="377" width="10" height="8" rx="2"/>
-    <rect x="505" y="425" width="10" height="8" rx="2"/>
-    <rect x="481" y="400" width="8" height="10" rx="2"/>
-    <rect x="529" y="400" width="8" height="10" rx="2"/>
-  </g>
-
-  <!-- WORKBENCH (CENTER-RIGHT) -->
-  <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Desk Top Plank -->
-    <path d="M 230 670 L 760 670 C 770 670 775 680 770 690 L 750 720 C 748 725 740 730 730 730 L 210 730 C 200 730 195 720 200 710 L 220 680 C 222 675 225 670 230 670 Z"/>
-    <!-- Desk Apron -->
-    <path d="M 235 730 L 740 730 L 735 765 L 240 765 Z" stroke-width="4"/>
-    <!-- Drawer details -->
-    <rect x="260" y="735" width="130" height="25" rx="4" stroke-width="3"/>
-    <ellipse cx="325" cy="747" rx="8" ry="4" stroke-width="3"/>
-    <rect x="420" y="735" width="130" height="25" rx="4" stroke-width="3"/>
-    <ellipse cx="485" cy="747" rx="8" ry="4" stroke-width="3"/>
-
-    <!-- Table Legs -->
-    <path d="M 250 765 L 240 910 L 270 910 L 280 765 Z" stroke-width="4"/>
-    <path d="M 700 765 L 690 910 L 720 910 L 730 765 Z" stroke-width="4"/>
-    <!-- Crossbar -->
-    <path d="M 260 850 L 705 850" stroke-width="4"/>
-
-    <!-- Stool for Rabbit -->
-    <ellipse cx="370" cy="850" rx="55" ry="14" stroke-width="4"/>
-    <path d="M 335 860 L 320 930" stroke-width="4"/>
-    <path d="M 405 860 L 420 930" stroke-width="4"/>
-    <path d="M 370 864 L 370 930" stroke-width="4"/>
-  </g>
-
-  <!-- CLOCK PARTS ON WORKBENCH -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Big Alarm Clock Rabbit is Fixing -->
-    <!-- Twin Bells -->
-    <path d="M 590 580 C 585 565 605 550 620 560 Z"/>
-    <path d="M 680 560 C 695 550 715 565 710 580 Z"/>
-    <rect x="645" y="555" width="10" height="12" rx="3"/>
-    <path d="M 635 555 C 640 545 660 545 665 555"/>
-    <!-- Legs -->
-    <line x1="600" y1="670" x2="590" y2="690" stroke-width="5"/>
-    <line x1="700" y1="670" x2="710" y2="690" stroke-width="5"/>
+  <!-- Rabbit Clockmaker -->
+  <g id="rabbit-clockmaker">
     <!-- Body -->
-    <circle cx="650" cy="625" r="50" stroke-width="5"/>
-    <circle cx="650" cy="625" r="40"/>
-    <!-- Inside the clock being repaired: half dial, exposed cogs -->
-    <path d="M 610 625 C 610 600 630 585 655 585" stroke-dasharray="4 4"/>
-    <!-- Exposed internal gear -->
-    <circle cx="660" cy="625" r="15"/>
-    <circle cx="660" cy="625" r="6"/>
-    <line x1="660" y1="607" x2="660" y2="643"/>
-    <line x1="642" y1="625" x2="678" y2="625"/>
-    <!-- Loose Small Gears on table -->
-    <ellipse cx="560" cy="690" rx="18" ry="8"/>
-    <ellipse cx="560" cy="690" rx="7" ry="3"/>
-    <ellipse cx="525" cy="700" rx="12" ry="6"/>
-    <!-- Oil Can / Tool Stand -->
-    <path d="M 730 690 C 725 675 735 660 745 660 C 755 660 765 675 760 690 Z"/>
-    <line x1="745" y1="660" x2="735" y2="640"/>
-    <path d="M 755 670 C 765 670 765 680 757 685" fill="none"/>
+    <rect x="300" y="450" width="200" height="250" rx="100" ry="125" class="outline"/>
+    <!-- Waistcoat -->
+    <path d="M300 500 Q350 450 400 500 T500 500 L500 700 Q400 650 300 700 Z" class="outline"/>
+    <path d="M400 500 L400 700" class="outline-fill-none"/> <!-- Waistcoat split -->
+
+    <!-- Legs -->
+    <rect x="320" y="680" width="60" height="100" rx="30" ry="50" class="outline"/>
+    <rect x="420" y="680" width="60" height="100" rx="30" ry="50" class="outline"/>
+
+    <!-- Arms -->
+    <rect x="250" y="480" width="80" height="150" rx="40" ry="75" class="outline" transform="rotate(-20 250 480)"/>
+    <rect x="470" y="480" width="80" height="150" rx="40" ry="75" class="outline" transform="rotate(20 550 480)"/>
+
+    <!-- Head -->
+    <circle cx="400" cy="350" r="120" class="outline"/>
+    <!-- Ears -->
+    <rect x="340" y="150" width="50" height="150" rx="25" ry="75" class="outline" transform="rotate(-15 365 225)"/>
+    <rect x="410" y="150" width="50" height="150" rx="25" ry="75" class="outline" transform="rotate(15 435 225)"/>
+
+    <!-- Face details -->
+    <!-- Eyes -->
+    <circle cx="360" cy="320" r="20" class="outline"/>
+    <circle cx="440" cy="320" r="20" class="outline"/>
+    <!-- Pupils -->
+    <circle cx="360" cy="320" r="8" class="outline-thin"/>
+    <circle cx="440" cy="320" r="8" class="outline-thin"/>
+    <!-- Nose -->
+    <ellipse cx="400" cy="370" rx="20" ry="15" class="outline"/>
+    <!-- Mouth -->
+    <path d="M370 390 Q400 420 430 390" class="outline-fill-none"/>
+
+    <!-- Spectacles -->
+    <circle cx="360" cy="320" r="30" class="outline-fill-none"/>
+    <circle cx="440" cy="320" r="30" class="outline-fill-none"/>
+    <line x1="390" y1="320" x2="410" y2="320" class="outline-fill-none"/>
+
+    <!-- Pocket watch in hand -->
+    <g id="pocket-watch">
+      <circle cx="280" cy="580" r="35" class="outline"/>
+      <path d="M280 545 L280 535 M260 560 L300 560 M270 570 L290 570" class="outline-fill-none"/> <!-- Simple hands -->
+      <path d="M280 545 Q285 530 290 545" class="outline-fill-none"/> <!-- Small loop for chain -->
+    </g>
   </g>
 
-  <!-- THE DAPPER WHITE RABBIT (HERO CHARACTER) -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Fluffy Bunny Tail -->
-    <ellipse cx="310" cy="740" rx="25" ry="20" stroke-width="4"/>
-    <path d="M 295 730 C 290 740 300 755 315 750" fill="none"/>
+  <!-- Surrounding Clocks -->
+  <g id="clocks">
+    <!-- Grandfather Clock -->
+    <g id="grandfather-clock" transform="translate(550 150)">
+      <rect x="0" y="0" width="120" height="450" rx="20" ry="20" class="outline"/>
+      <rect x="10" y="10" width="100" height="100" rx="10" ry="10" class="outline"/> <!-- Clock face frame -->
+      <circle cx="60" cy="60" r="40" class="outline"/> <!-- Clock face -->
+      <line x1="60" y1="60" x2="60" y2="30" class="outline-fill-none"/> <!-- Hour hand -->
+      <line x1="60" y1="60" x2="85" y2="60" class="outline-fill-none"/> <!-- Minute hand -->
+      <!-- Pendulum -->
+      <line x1="60" y1="180" x2="60" y2="300" class="outline-fill-none"/>
+      <ellipse cx="60" cy="320" rx="20" ry="30" class="outline"/>
+      <!-- Smiling face on clock -->
+      <circle cx="45" cy="140" r="5" class="outline"/>
+      <circle cx="75" cy="140" r="5" class="outline"/>
+      <path d="M40 155 Q60 170 80 155" class="outline-fill-none"/>
+    </g>
 
-    <!-- Rabbit Feet / Slippers under desk -->
-    <ellipse cx="340" cy="890" rx="25" ry="14" stroke-width="4"/>
-    <ellipse cx="400" cy="890" rx="25" ry="14" stroke-width="4"/>
-    <path d="M 330 890 C 330 885 345 885 345 890" fill="none"/>
-    <path d="M 390 890 C 390 885 405 885 405 890" fill="none"/>
-
-    <!-- Bunny Ears -->
-    <!-- Left Ear (Upright & Proud) -->
-    <path d="M 380 340 C 360 270 340 180 375 120 C 395 85 425 105 420 160 C 415 210 410 270 405 330 Z" stroke-width="5"/>
-    <!-- Inner Left Ear -->
-    <path d="M 382 300 C 370 245 365 175 385 135 C 395 115 408 125 405 160 C 402 195 398 255 398 295" stroke-width="3"/>
-
-    <!-- Right Ear (Whimsically Bent/Folded Forward) -->
-    <path d="M 440 330 C 450 260 470 200 515 170 C 535 155 555 175 540 205 C 525 225 490 235 480 265 C 470 290 465 315 460 340 Z" stroke-width="5"/>
-    <!-- Inner Right Ear -->
-    <path d="M 458 310 C 465 270 480 240 508 215 C 525 200 530 205 522 220 C 505 240 485 255 475 285" stroke-width="3"/>
-
-    <!-- Cute Chubby Head -->
-    <path d="M 360 400 C 330 420 340 485 380 495 C 410 505 450 505 480 495 C 520 485 530 420 500 400 C 485 350 375 350 360 400 Z" stroke-width="5"/>
-
-    <!-- Cheeks Fluff Details -->
-    <path d="M 342 450 C 335 455 330 465 340 470" fill="none"/>
-    <path d="M 518 450 C 525 455 530 465 520 470" fill="none"/>
-
-    <!-- Dapper Spectacles / Glasses -->
-    <!-- Round Left Lens -->
-    <circle cx="395" cy="425" r="24" stroke-width="5"/>
-    <circle cx="395" cy="425" r="18" stroke-width="2" stroke-dasharray="20 4"/>
-    <!-- Round Right Lens -->
-    <circle cx="465" cy="425" r="24" stroke-width="5"/>
-    <circle cx="465" cy="425" r="18" stroke-width="2" stroke-dasharray="20 4"/>
-    <!-- Glasses Bridge -->
-    <path d="M 419 422 C 425 416 435 416 441 422" stroke-width="5" fill="none"/>
-    <!-- Glasses Temples (Side frames) -->
-    <path d="M 371 425 L 350 415" stroke-width="4"/>
-    <path d="M 489 425 L 510 415" stroke-width="4"/>
-
-    <!-- Friendly Eyes (Behind Spectacles) -->
-    <!-- Left Eye -->
-    <ellipse cx="398" cy="423" rx="10" ry="12"/>
-    <circle cx="395" cy="419" r="4"/>
-    <circle cx="402" cy="427" r="2"/>
-    <!-- Right Eye -->
-    <ellipse cx="462" cy="423" rx="10" ry="12"/>
-    <circle cx="459" cy="419" r="4"/>
-    <circle cx="466" cy="427" r="2"/>
-
-    <!-- Cute Eyebrows (Focused/Happy) -->
-    <path d="M 382 392 C 392 386 408 390 412 395" stroke-width="4" fill="none"/>
-    <path d="M 478 392 C 468 386 452 390 448 395" stroke-width="4" fill="none"/>
-
-    <!-- Bunny Nose and Mouth -->
-    <path d="M 425 448 C 427 444 433 444 435 448 L 433 454 C 432 456 428 456 427 454 Z" stroke-width="4"/>
-    <path d="M 430 456 L 430 466" stroke-width="3"/>
-    <path d="M 430 466 C 423 466 416 462 414 457" stroke-width="3" fill="none"/>
-    <path d="M 430 466 C 437 466 444 462 446 457" stroke-width="3" fill="none"/>
-    <!-- Cute Whiskers -->
-    <path d="M 360 460 L 325 455" stroke-width="3"/>
-    <path d="M 358 470 L 330 475" stroke-width="3"/>
-    <path d="M 500 460 L 535 455" stroke-width="3"/>
-    <path d="M 502 470 L 530 475" stroke-width="3"/>
-
-    <!-- Dapper Clothing -->
-    <!-- Shirt Collar -->
-    <path d="M 410 495 L 430 520 L 395 515 Z" stroke-width="4"/>
-    <path d="M 450 495 L 430 520 L 465 515 Z" stroke-width="4"/>
-
-    <!-- Oversized Whimsical Bowtie -->
-    <path d="M 430 520 L 395 505 C 385 520 385 535 395 550 L 430 535 Z" stroke-width="4"/>
-    <path d="M 430 520 L 465 505 C 475 520 475 535 465 550 L 430 535 Z" stroke-width="4"/>
-    <circle cx="430" cy="527" r="8" stroke-width="4"/>
-
-    <!-- Waistcoat / Vest & Torso -->
-    <path d="M 370 525 C 350 570 345 660 360 740 C 390 755 470 755 500 740 C 515 660 510 570 490 525 Z" stroke-width="5"/>
-
-    <!-- Waistcoat Opening & Buttons -->
-    <path d="M 390 535 L 430 630 L 470 535" stroke-width="4" fill="none"/>
-    <path d="M 430 630 L 430 745" stroke-width="4"/>
-    <!-- Big Chunky Buttons -->
-    <circle cx="430" cy="655" r="7" stroke-width="4"/>
-    <circle cx="430" cy="690" r="7" stroke-width="4"/>
-    <circle cx="430" cy="722" r="7" stroke-width="4"/>
-
-    <!-- Waistcoat Pocket with Hanging Watch Chain (Fob) -->
-    <path d="M 455 670 L 485 665" stroke-width="4"/>
-    <path d="M 460 670 C 455 700 440 700 430 690" stroke-width="3" stroke-dasharray="2 6" fill="none"/>
-
-    <!-- Left Arm & Paw (Resting on clock/table, holding gear) -->
-    <path d="M 360 540 C 335 590 325 640 370 675 C 385 685 410 685 425 670 L 395 625" stroke-width="5"/>
-    <path d="M 425 670 C 435 665 440 650 435 640 C 430 635 420 635 415 640" stroke-width="4"/>
-    <!-- Paw Fingers -->
-    <path d="M 425 670 C 420 680 405 685 395 680" stroke-width="3" fill="none"/>
-
-    <!-- Right Arm & Paw (Holding Watchmaker Tool) -->
-    <path d="M 490 540 C 525 570 550 620 530 660 C 520 675 495 675 475 660 L 480 610" stroke-width="5"/>
-    <!-- Right Paw Clenching Tool -->
-    <circle cx="510" cy="645" r="16" stroke-width="4"/>
-    <path d="M 500 640 C 505 632 520 632 522 642" stroke-width="3" fill="none"/>
-    <path d="M 500 650 C 505 645 520 645 524 652" stroke-width="3" fill="none"/>
-
-    <!-- Tiny Watchmaker Tool (Screwdriver / Tweezers) -->
-    <!-- Handle -->
-    <path d="M 525 615 L 500 670" stroke-width="5"/>
-    <!-- Tool Shaft pointing toward the alarm clock -->
-    <path d="M 500 670 L 580 650" stroke-width="5"/>
-    <!-- Tool Tip -->
-    <path d="M 580 650 L 600 645" stroke-width="3"/>
+    <!-- Cuckoo Clock -->
+    <g id="cuckoo-clock" transform="translate(100 200)">
+      <rect x="0" y="0" width="100" height="120" rx="10" ry="10" class="outline"/> <!-- House body -->
+      <path d="M-10 0 L50 -50 L110 0 Z" class="outline"/> <!-- Roof -->
+      <rect x="25" y="25" width="50" height="50" rx="5" ry="5" class="outline"/> <!-- Clock face frame -->
+      <circle cx="50" cy="50" r="20" class="outline"/> <!-- Clock face -->
+      <line x1="50" y1="50" x2="50" y2="40" class="outline-fill-none"/>
+      <line x1="50" y1="50" x2="60" y2="50" class="outline-fill-none"/>
+      <rect x="40" y="80" width="20" height="20" rx="5" ry="5" class="outline"/> <!-- Cuckoo door -->
+      <!-- Cuckoo bird -->
+      <g id="cuckoo-bird" transform="translate(50 70)">
+        <ellipse cx="0" cy="-20" rx="15" ry="10" class="outline"/>
+        <path d="M-10 -25 L0 -35 L10 -25 Z" class="outline-fill-none"/> <!-- Beak -->
+        <circle cx="0" cy="-20" r="3" class="outline-thin"/>
+      </g>
+    </g>
   </g>
 
-  <!-- FOREGROUND SWEET WHIMSICAL DETAILS -->
-  <g stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="white">
-    <!-- Little Dropped Screw and Spring on Floor -->
-    <path d="M 470 940 C 475 930 485 930 490 940 C 495 950 505 950 510 940" fill="none" stroke-width="4"/>
-    <ellipse cx="440" cy="945" rx="8" ry="4" stroke-width="3"/>
-    <line x1="440" y1="941" x2="440" y2="949" stroke-width="3"/>
+  <!-- Workshop elements (gears, springs, clock parts) -->
+  <g id="workshop-elements">
+    <!-- Table/Workbench -->
+    <rect x="0" y="750" width="800" height="250" class="outline"/>
 
-    <!-- Tiny Mouse Friend Peeking from base of Grandfather Clock -->
-    <path d="M 195 890 C 200 870 225 870 230 890 Z" stroke-width="4"/>
-    <circle cx="198" cy="870" r="7"/>
-    <circle cx="227" cy="870" r="7"/>
-    <circle cx="210" cy="880" r="2"/>
-    <circle cx="216" cy="880" r="2"/>
-    <path d="M 213 884 L 213 886"/>
+    <!-- Large gear on table -->
+    <g id="gear-large" transform="translate(150 850)">
+      <circle cx="0" cy="0" r="50" class="outline"/>
+      <circle cx="0" cy="0" r="20" class="outline"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(0 0 0)"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(60 0 0)"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(120 0 0)"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(180 0 0)"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(240 0 0)"/>
+      <rect x="-15" y="-60" width="30" height="20" rx="5" ry="5" class="outline" transform="rotate(300 0 0)"/>
+    </g>
+
+    <!-- Small gear on table -->
+    <g id="gear-small" transform="translate(650 900)">
+      <circle cx="0" cy="0" r="30" class="outline"/>
+      <circle cx="0" cy="0" r="10" class="outline"/>
+      <rect x="-10" y="-38" width="20" height="15" rx="3" ry="3" class="outline" transform="rotate(0 0 0)"/>
+      <rect x="-10" y="-38" width="20" height="15" rx="3" ry="3" class="outline" transform="rotate(72 0 0)"/>
+      <rect x="-10" y="-38" width="20" height="15" rx="3" ry="3" class="outline" transform="rotate(144 0 0)"/>
+      <rect x="-10" y="-38" width="20" height="15" rx="3" ry="3" class="outline" transform="rotate(216 0 0)"/>
+      <rect x="-10" y="-38" width="20" height="15" rx="3" ry="3" class="outline" transform="rotate(288 0 0)"/>
+    </g>
+
+    <!-- Springs -->
+    <path d="M50 800 Q70 820 90 800 Q110 780 130 800 Q150 820 170 800" class="outline-fill-none"/>
+    <path d="M700 850 Q720 870 740 850 Q760 830 780 850" class="outline-fill-none"/>
+
+    <!-- Other scattered parts -->
+    <ellipse cx="200" cy="780" rx="25" ry="15" class="outline"/> <!-- Oval part -->
+    <rect x="500" y="800" width="40" height="20" rx="10" ry="10" class="outline"/> <!-- Small block -->
+    <circle cx="60" cy="880" r="15" class="outline"/> <!-- Small circle -->
+    <circle cx="750" cy="780" r="10" class="outline"/> <!-- Tiny circle -->
+    <path d="M50 750 L80 750 M65 740 L65 760" class="outline-fill-none"/> <!-- Plus sign -->
+    <path d="M720 750 L750 750" class="outline-fill-none"/> <!-- Dash sign -->
   </g>
+
 </svg>
