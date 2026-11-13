@@ -1,0 +1,153 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="4" fill="white" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Candy Train Group -->
+  <g id="candyTrain">
+    <!-- Train Engine -->
+    <g id="engine">
+      <!-- Main Body -->
+      <rect x="50" y="450" width="200" height="100" rx="30" ry="30" />
+      <!-- Cab -->
+      <rect x="180" y="380" width="80" height="70" rx="20" ry="20" />
+      <!-- Smokestack -->
+      <path d="M 80 430 Q 90 350 120 350 L 120 370 Q 90 370 80 430 Z" />
+      <circle cx="100" cy="340" r="25" />
+      <!-- Headlight -->
+      <circle cx="60" cy="490" r="20" />
+      <!-- Cowcatcher -->
+      <path d="M 50 550 H 20 C 0 570 0 600 20 620 H 50 L 50 550 Z" />
+
+      <!-- Engine Face -->
+      <circle cx="150" cy="500" r="25" /> <!-- Nose/Mouth area -->
+      <circle cx="135" cy="490" r="5" fill="black" stroke="none" /> <!-- Left Eye -->
+      <circle cx="165" cy="490" r="5" fill="black" stroke="none" /> <!-- Right Eye -->
+      <path d="M 130 510 Q 150 525 170 510" fill="none" stroke="black" stroke-width="4" /> <!-- Smile -->
+
+      <!-- Engine Wheels (Lollipop) -->
+      <g id="engineWheels">
+        <g transform="translate(100 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" /> <!-- Swirl lines simplified -->
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" /> <!-- Stick -->
+        </g>
+        <g transform="translate(200 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" />
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Carriage Connector -->
+    <rect x="240" y="520" width="30" height="15" rx="5" ry="5" />
+
+    <!-- Cookie Carriage -->
+    <g id="cookieCarriage">
+      <rect x="270" y="460" width="180" height="90" rx="40" ry="40" />
+      <!-- Cookie Chips -->
+      <circle cx="300" cy="490" r="10" stroke-width="3" />
+      <circle cx="340" cy="510" r="10" stroke-width="3" />
+      <circle cx="380" cy="480" r="10" stroke-width="3" />
+      <circle cx="420" cy="500" r="10" stroke-width="3" />
+
+      <!-- Passengers: Gingerbread Man -->
+      <g id="gingerbreadMan1" transform="translate(320, 480) scale(0.6)">
+        <path d="M 15 0 C 10 -15 20 -15 30 0 L 30 30 Q 35 40 30 50 L 25 60 Q 15 65 5 60 L 0 50 Q -5 40 0 30 Z" stroke-width="5"/> <!-- Body -->
+        <circle cx="15" cy="-10" r="10" stroke-width="5"/> <!-- Head -->
+        <circle cx="10" cy="-12" r="2" fill="black" stroke="none"/> <!-- Left Eye -->
+        <circle cx="20" cy="-12" r="2" fill="black" stroke="none"/> <!-- Right Eye -->
+        <path d="M 10 -5 Q 15 0 20 -5" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+        <circle cx="15" cy="15" r="4" stroke-width="3"/> <!-- Button -->
+        <circle cx="15" cy="30" r="4" stroke-width="3"/> <!-- Button -->
+      </g>
+
+      <!-- Carriage Wheels (Lollipop) -->
+      <g id="cookieCarriageWheels">
+        <g transform="translate(320 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" />
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" />
+        </g>
+        <g transform="translate(420 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" />
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Carriage Connector -->
+    <rect x="440" y="520" width="30" height="15" rx="5" ry="5" />
+
+    <!-- Donut Carriage -->
+    <g id="donutCarriage">
+      <circle cx="550" cy="500" r="70" stroke-width="5" />
+      <circle cx="550" cy="500" r="30" stroke-width="5" />
+
+      <!-- Passengers: Simple candy -->
+      <g id="candyPassenger" transform="translate(535, 480) scale(0.6)">
+        <path d="M 15 0 Q 30 15 15 30 Q 0 15 15 0 Z" stroke-width="5"/> <!-- Candy body -->
+        <circle cx="15" cy="10" r="2" fill="black" stroke="none"/> <!-- Left Eye -->
+        <circle cx="15" cy="20" r="2" fill="black" stroke="none"/> <!-- Right Eye -->
+        <path d="M 10 25 Q 15 28 20 25" fill="none" stroke="black" stroke-width="3"/> <!-- Smile -->
+      </g>
+
+      <!-- Carriage Wheels (Lollipop) -->
+      <g id="donutCarriageWheels">
+        <g transform="translate(500 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" />
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" />
+        </g>
+        <g transform="translate(600 580)">
+          <circle r="40" stroke-width="5" />
+          <circle r="15" />
+          <path d="M 0 -40 L 0 40 M -40 0 L 40 0" fill="none" stroke="black" stroke-width="3" />
+          <rect x="-5" y="40" width="10" height="20" rx="3" ry="3" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Track (Candy Canes) -->
+  <g id="track">
+    <rect x="0" y="650" width="800" height="40" rx="20" ry="20" />
+    <!-- Diagonal stripes for candy cane effect -->
+    <path d="M 0 690 L 40 650 M 80 690 L 120 650 M 160 690 L 200 650 M 240 690 L 280 650 M 320 690 L 360 650 M 400 690 L 440 650 M 480 690 L 520 650 M 560 690 L 600 650 M 640 690 L 680 650 M 720 690 L 760 650 M 800 690 L 800 650"
+          fill="none" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Background Elements (minimal) -->
+  <g id="background">
+    <!-- Gingerbread Houses -->
+    <g id="house1" transform="translate(600, 200)">
+      <rect x="0" y="0" width="100" height="80" rx="10" ry="10" />
+      <path d="M -10 0 L 50 -50 L 110 0 Z" /> <!-- Roof -->
+      <rect x="35" y="40" width="30" height="40" rx="5" ry="5" /> <!-- Door -->
+      <rect x="15" y="15" width="20" height="20" rx="5" ry="5" /> <!-- Window -->
+      <rect x="65" y="15" width="20" height="20" rx="5" ry="5" /> <!-- Window -->
+    </g>
+
+    <g id="house2" transform="translate(70, 150) scale(0.8)">
+      <rect x="0" y="0" width="100" height="80" rx="10" ry="10" />
+      <path d="M -10 0 L 50 -50 L 110 0 Z" /> <!-- Roof -->
+      <rect x="35" y="40" width="30" height="40" rx="5" ry="5" /> <!-- Door -->
+      <rect x="15" y="15" width="20" height="20" rx="5" ry="5" /> <!-- Window -->
+      <rect x="65" y="15" width="20" height="20" rx="5" ry="5" /> <!-- Window -->
+    </g>
+
+    <!-- Gummy Bear Trees -->
+    <g id="tree1" transform="translate(150, 70)">
+      <ellipse cx="0" cy="0" rx="80" ry="60" /> <!-- Canopy -->
+      <rect x="-20" y="40" width="40" height="80" rx="10" ry="10" /> <!-- Trunk -->
+    </g>
+
+    <g id="tree2" transform="translate(700, 100) scale(0.7)">
+      <ellipse cx="0" cy="0" rx="80" ry="60" /> <!-- Canopy -->
+      <rect x="-20" y="40" width="40" height="80" rx="10" ry="10" /> <!-- Trunk -->
+    </g>
+  </g>
+</svg>
