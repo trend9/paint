@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" stroke="black" fill="white">
+    <!-- Pure white background rectangle to ensure consistent white fill for canvas -->
+    <rect x="0" y="0" width="800" height="1000" fill="white" stroke="none"/>
+
+    <!-- Group for Hot Spring elements -->
+    <g id="hot-spring">
+        <!-- Main water body of the hot spring -->
+        <path d="M100 750 Q150 700 250 700 T700 750 Q750 800 700 900 Q650 950 550 900 T100 850 Q50 800 100 750 Z"
+              fill="white" stroke="black" stroke-width="5"/>
+
+        <!-- Steam rising from the hot water -->
+        <path d="M200 680 Q220 650 200 620 Q180 590 200 560" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M350 670 Q370 640 350 610 Q330 580 350 550" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M500 690 Q520 660 500 630 Q480 600 500 570" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M650 680 Q670 650 650 620 Q630 590 650 560" fill="none" stroke="black" stroke-width="3"/>
+
+        <!-- Water splashes from the baby penguin -->
+        <path d="M330 830 Q340 810 350 830 Q360 850 350 870 C340 860 330 840 330 830 Z" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M310 820 Q320 800 330 820 Q340 840 330 860 C320 850 310 830 310 820 Z" fill="none" stroke="black" stroke-width="3"/>
+        <path d="M370 820 Q380 800 390 820 Q400 840 390 860 C380 850 370 830 370 820 Z" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+
+    <!-- Group for Penguins -->
+    <g id="penguins">
+        <!-- Adult Penguin 1 (left) -->
+        <g id="penguin-adult-left">
+            <ellipse cx="200" cy="780" rx="60" ry="100" stroke-width="4"/> <!-- Body -->
+            <ellipse cx="200" cy="780" rx="40" ry="80" stroke-width="4"/> <!-- Belly -->
+            <circle cx="200" cy="670" r="45" stroke-width="4"/> <!-- Head -->
+            <path d="M180 700 Q190 690 200 700 Q210 690 220 700" fill="none" stroke-width="4"/> <!-- Smile -->
+            <path d="M190 675 L190 685 L210 685 L210 675 Z" stroke-width="4"/> <!-- Beak outline -->
+            <circle cx="185" cy="660" r="8" stroke-width="4"/> <!-- Left eye outer -->
+            <circle cx="185" cy="660" r="3" stroke-width="4"/> <!-- Left eye pupil -->
+            <circle cx="215" cy="660" r="8" stroke-width="4"/> <!-- Right eye outer -->
+            <circle cx="215" cy="660" r="3" stroke-width="4"/> <!-- Right eye pupil -->
+            <!-- Flippers, partially submerged -->
+            <path d="M140 780 Q120 750 140 730 L160 750 L140 780 Z" stroke-width="4"/>
+            <path d="M260 780 Q280 750 260 730 L240 750 L260 780 Z" stroke-width="4"/>
+        </g>
+
+        <!-- Baby Penguin (middle, splashing) -->
+        <g id="penguin-baby-middle">
+            <ellipse cx="350" cy="880" rx="40" ry="70" stroke-width="4"/> <!-- Body -->
+            <ellipse cx="350" cy="880" rx="30" ry="55" stroke-width="4"/> <!-- Belly -->
+            <circle cx="350" cy="810" r="35" stroke-width="4"/> <!-- Head -->
+            <path d="M330 825 Q340 815 350 825 Q360 815 370 825" fill="none" stroke-width="4"/> <!-- Smile -->
+            <path d="M340 805 L340 815 L360 815 L360 805 Z" stroke-width="4"/> <!-- Beak outline -->
+            <circle cx="335" cy="795" r="7" stroke-width="4"/> <!-- Left eye outer -->
+            <circle cx="335" cy="795" r="2.5" stroke-width="4"/> <!-- Left eye pupil -->
+            <circle cx="365" cy="795" r="7" stroke-width="4"/> <!-- Right eye outer -->
+            <circle cx="365" cy="795" r="2.5" stroke-width="4"/> <!-- Right eye pupil -->
+            <!-- Flippers for splashing, partially submerged -->
+            <path d="M310 880 Q290 850 310 830 L325 850 L310 880 Z" stroke-width="4"/>
+            <path d="M390 880 Q410 850 390 830 L375 850 L390 880 Z" stroke-width="4"/>
+        </g>
+
+        <!-- Adult Penguin 2 (right, with towel) -->
+        <g id="penguin-adult-right">
+            <ellipse cx="550" cy="780" rx="60" ry="100" stroke-width="4"/> <!-- Body -->
+            <ellipse cx="550" cy="780" rx="40" ry="80" stroke-width="4"/> <!-- Belly -->
+            <circle cx="550" cy="670" r="45" stroke-width="4"/> <!-- Head -->
+            <path d="M530 700 Q540 690 550 700 Q560 690 570 700" fill="none" stroke-width="4"/> <!-- Smile -->
+            <path d="M540 675 L540 685 L560 685 L560 675 Z" stroke-width="4"/> <!-- Beak outline -->
+            <circle cx="535" cy="660" r="8" stroke-width="4"/> <!-- Left eye outer -->
+            <circle cx="535" cy="660" r="3" stroke-width="4"/> <!-- Left eye pupil -->
+            <circle cx="565" cy="660" r="8" stroke-width="4"/> <!-- Right eye outer -->
+            <circle cx="565" cy="660" r="3" stroke-width="4"/> <!-- Right eye pupil -->
+            <!-- Flippers, partially submerged -->
+            <path d="M490 780 Q470 750 490 730 L510 750 L490 780 Z" stroke-width="4"/>
+            <path d="M610 780 Q630 750 610 730 L590 750 L610 780 Z" stroke-width="4"/>
+
+            <!-- Towel on head -->
+            <rect x="520" y="620" width="60" height="30" rx="10" ry="10" stroke-width="3"/>
+            <path d="M520 635 Q530 630 540 635 Q550 640 560 635 Q570 630 580 635" fill="none" stroke-width="2"/>
+        </g>
+    </g>
+
+    <!-- Group for Rocks -->
+    <g id="rocks">
+        <!-- Rock 1 (left) -->
+        <path d="M100 750 Q80 720 120 700 Q160 680 180 710 Q190 730 170 750 Z" stroke-width="4"/>
+        <path d="M100 730 Q110 710 140 710 Q150 720 100 730 Z" stroke-width="4"/> <!-- Snow cap -->
+        <!-- Rock 2 (right) -->
+        <path d="M700 750 Q720 720 680 700 Q640 680 620 710 Q610 730 630 750 Z" stroke-width="4"/>
+        <path d="M700 730 Q690 710 660 710 Q650 720 700 730 Z" stroke-width="4"/> <!-- Snow cap -->
+        <!-- Rock 3 (bottom-left) -->
+        <path d="M150 900 Q130 870 170 850 Q210 830 230 860 Q240 880 220 900 Z" stroke-width="4"/>
+        <path d="M150 880 Q160 860 190 860 Q200 870 150 880 Z" stroke-width="4"/> <!-- Snow cap -->
+        <!-- Rock 4 (bottom-right) -->
+        <path d="M650 900 Q630 870 670 850 Q710 830 730 860 Q740 880 720 900 Z" stroke-width="4"/>
+        <path d="M650 880 Q660 860 690 860 Q700 870 650 880 Z" stroke-width="4"/> <!-- Snow cap -->
+    </g>
+
+    <!-- Group for Snowflakes -->
+    <g id="snowflakes">
+        <!-- Snowflake 1 -->
+        <path d="M150 100 L150 120 M140 110 L160 110 M145 105 L155 115 M145 115 L155 105" fill="none" stroke-width="2"/>
+        <!-- Snowflake 2 -->
+        <path d="M400 50 L400 70 M390 60 L410 60 M395 55 L405 65 M395 65 L405 55" fill="none" stroke-width="2"/>
+        <!-- Snowflake 3 -->
+        <path d="M650 120 L650 140 M640 130 L660 130 M645 125 L655 135 M645 135 L655 125" fill="none" stroke-width="2"/>
+        <!-- Snowflake 4 -->
+        <path d="M250 200 L250 220 M240 210 L260 210 M245 205 L255 215 M245 215 L255 205" fill="none" stroke-width="2"/>
+        <!-- Snowflake 5 -->
+        <path d="M550 250 L550 270 M540 260 L560 260 M545 255 L555 265 M545 265 L555 255" fill="none" stroke-width="2"/>
+        <!-- Snowflake 6 -->
+        <path d="M100 300 L100 320 M90 310 L110 310 M95 305 L105 315 M95 315 L105 305" fill="none" stroke-width="2"/>
+        <!-- Snowflake 7 -->
+        <path d="M700 350 L700 370 M690 360 L710 360 M695 355 L705 365 M695 365 L705 355" fill="none" stroke-width="2"/>
+        <!-- Snowflake 8 -->
+        <path d="M450 400 L450 420 M440 410 L460 410 M445 405 L455 415 M445 415 L455 405" fill="none" stroke-width="2"/>
+    </g>
+</svg>
