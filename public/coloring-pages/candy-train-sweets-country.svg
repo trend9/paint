@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="candy_train" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Engine Body -->
+    <g id="engine">
+      <rect x="50" y="300" width="400" height="200" rx="30" ry="30"/>
+      <rect x="150" y="200" width="200" height="100" rx="20" ry="20"/> <!-- Cabin -->
+
+      <!-- Smokestack -->
+      <g id="smokestack">
+        <rect x="210" y="150" width="60" height="120" rx="10" ry="10" />
+        <ellipse cx="240" cy="150" rx="40" ry="20" />
+      </g>
+      
+      <!-- Front Bumper/Cowcatcher -->
+      <path d="M50 450 L50 500 C20 500 20 550 50 550 L100 550 C120 550 120 500 100 500 L50 450 Z" />
+      <circle cx="75" cy="400" r="40" stroke-width="5"/> <!-- Headlight -->
+      
+      <!-- Joyous Face -->
+      <g id="engine_face">
+        <circle cx="100" cy="370" r="15" /> <!-- Left Eye -->
+        <circle cx="160" cy="370" r="15" /> <!-- Right Eye -->
+        <path d="M100 420 Q130 440 160 420" fill="none"/> <!-- Smile -->
+      </g>
+    </g>
+
+    <!-- Engine Wheels (Candy Wheels) -->
+    <g id="engine_wheels">
+      <circle cx="150" cy="550" r="70" />
+      <path d="M150 480 C180 500 120 600 150 620" fill="none" stroke-width="4"/>
+      <path d="M80 550 C100 580 200 520 220 550" fill="none" stroke-width="4"/>
+
+      <circle cx="380" cy="550" r="70" />
+      <path d="M380 480 C410 500 350 600 380 620" fill="none" stroke-width="4"/>
+      <path d="M310 550 C330 580 430 520 450 550" fill="none" stroke-width="4"/>
+    </g>
+
+    <!-- Coupling between Engine and Wagon -->
+    <rect x="440" y="470" width="40" height="20" rx="5" ry="5" stroke-width="4"/>
+
+    <!-- Wagon Body -->
+    <g id="wagon">
+      <rect x="500" y="350" width="250" height="150" rx="30" ry="30"/>
+    </g>
+
+    <!-- Wagon Wheels (Candy Wheels) -->
+    <g id="wagon_wheels">
+      <circle cx="580" cy="550" r="70" />
+      <path d="M580 480 C610 500 550 600 580 620" fill="none" stroke-width="4"/>
+      <path d="M510 550 C530 580 630 520 650 550" fill="none" stroke-width="4"/>
+
+      <circle cx="700" cy="550" r="70" />
+      <path d="M700 480 C730 500 670 600 700 620" fill="none" stroke-width="4"/>
+      <path d="M630 550 C650 580 750 520 770 550" fill="none" stroke-width="4"/>
+    </g>
+
+    <!-- Candy Decorations -->
+    <g id="decorations">
+      <!-- Lollipop on Engine -->
+      <circle cx="400" cy="300" r="30" stroke-width="4"/>
+      <path d="M400 270 C415 285 385 315 400 330" fill="none" stroke-width="3"/>
+      <rect x="390" y="330" width="20" height="80" rx="5" ry="5" stroke-width="4"/>
+
+      <!-- Donut on Engine -->
+      <circle cx="300" cy="320" r="25" stroke-width="4"/>
+      <circle cx="300" cy="320" r="10" fill="none" stroke-width="4"/>
+
+      <!-- Cupcake on Wagon -->
+      <path d="M550 400 L600 400 L610 450 L540 450 Z" stroke-width="4"/> <!-- Wrapper -->
+      <path d="M540 450 C545 420 605 420 610 450" fill="none" stroke-width="3"/>
+      <path d="M550 400 C565 350 585 350 600 400" stroke-width="4"/> <!-- Frosting -->
+
+      <!-- Chocolate Bar on Wagon -->
+      <rect x="650" y="380" width="80" height="40" rx="8" ry="8" stroke-width="4"/>
+      <line x1="670" y1="380" x2="670" y2="420" stroke-width="3"/>
+      <line x1="690" y1="380" x2="690" y2="420" stroke-width="3"/>
+      <line x1="710" y1="380" x2="710" y2="420" stroke-width="3"/>
+      <line x1="650" y1="400" x2="730" y2="400" stroke-width="3"/>
+
+      <!-- Large Lollipop on Ground -->
+      <circle cx="100" cy="680" r="40" />
+      <path d="M100 640 C120 660 80 700 100 720" fill="none" stroke-width="4"/>
+      <path d="M60 680 C70 700 130 660 140 680" fill="none" stroke-width="4"/>
+      <rect x="90" y="720" width="20" height="60" rx="5" ry="5" stroke-width="4"/>
+
+      <!-- Large Swirl Candy on Ground -->
+      <circle cx="700" cy="700" r="50" />
+      <path d="M700 650 C725 675 675 725 700 750" fill="none" stroke-width="4"/>
+      <path d="M650 700 C675 725 725 675 750 700" fill="none" stroke-width="4"/>
+      <rect x="690" y="750" width="20" height="70" rx="5" ry="5" stroke-width="4"/>
+    </g>
+
+    <!-- Ground Line -->
+    <line x1="0" y1="620" x2="800" y2="620" />
+
+  </g>
+</svg>
