@@ -1,0 +1,191 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Flower 1: Large Daisy -->
+    <g class="daisy" transform="translate(150, 750)">
+      <!-- Stem -->
+      <path d="M 0 0 L 0 200" fill="none"/>
+      <!-- Leaf 1 -->
+      <path d="M 0 150 Q 50 100 100 150 Q 50 200 0 150 Z"/>
+      <!-- Leaf 2 -->
+      <path d="M 0 100 Q -50 50 -100 100 Q -50 150 0 100 Z"/>
+      <!-- Center -->
+      <circle cx="0" cy="0" r="50"/>
+      <!-- Petals -->
+      <g>
+        <ellipse cx="0" cy="-70" rx="30" ry="60"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(30)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(150)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(210)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(300)"/>
+        <ellipse cx="0" cy="-70" rx="30" ry="60" transform="rotate(330)"/>
+      </g>
+    </g>
+
+    <!-- Flower 2: Tall Tulip -->
+    <g class="tulip" transform="translate(400, 850)">
+      <!-- Stem -->
+      <path d="M 0 0 L 0 250" fill="none"/>
+      <!-- Leaf -->
+      <path d="M 0 180 Q 70 120 100 180 Q 70 240 0 180 Z"/>
+      <!-- Flower head -->
+      <path d="M -50 -50 C -70 -100 -20 -150 0 -130 C 20 -150 70 -100 50 -50 Z"/>
+      <path d="M -20 -50 C -30 -80 -10 -110 0 -100 C 10 -110 30 -80 20 -50 Z"/>
+      <path d="M 20 -50 C 30 -80 10 -110 0 -100 C -10 -110 -30 -80 -20 -50 Z"/>
+    </g>
+
+    <!-- Flower 3: Sunflower -->
+    <g class="sunflower" transform="translate(650, 700)">
+      <!-- Stem -->
+      <path d="M 0 0 L 0 220" fill="none"/>
+      <!-- Leaf -->
+      <path d="M 0 150 Q -70 90 -120 150 Q -70 210 0 150 Z"/>
+      <!-- Center -->
+      <circle cx="0" cy="0" r="60"/>
+      <!-- Petals (rounded rectangles, rotated) -->
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(30)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(60)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(90)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(120)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(150)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(180)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(210)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(240)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(270)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(300)"/>
+      <rect x="-30" y="-100" width="60" height="80" rx="30" ry="30" transform="rotate(330)"/>
+    </g>
+
+    <!-- Smaller background flower (daisy-like) -->
+    <g class="small-daisy" transform="translate(500, 600)">
+        <path d="M 0 0 L 0 100" fill="none"/>
+        <path d="M 0 80 Q 30 60 50 80 Q 30 100 0 80 Z"/>
+        <circle cx="0" cy="0" r="30"/>
+        <g>
+            <ellipse cx="0" cy="-40" rx="20" ry="35"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(45)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(90)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(135)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(180)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(270)"/>
+            <ellipse cx="0" cy="-40" rx="20" ry="35" transform="rotate(315)"/>
+        </g>
+    </g>
+    
+    <!-- Another small background flower (tulip-like) -->
+    <g class="small-tulip" transform="translate(100, 600)">
+        <path d="M 0 0 L 0 80" fill="none"/>
+        <path d="M 0 60 Q -30 40 -50 60 Q -30 80 0 60 Z"/>
+        <path d="M -20 -20 C -30 -40 -10 -60 0 -50 C 10 -60 30 -40 20 -20 Z"/>
+        <path d="M -8 -20 C -15 -35 -5 -45 0 -40 C 5 -45 15 -35 8 -20 Z"/>
+        <path d="M 8 -20 C 15 -35 5 -45 0 -40 C -5 -45 -15 -35 -8 -20 Z"/>
+    </g>
+
+
+    <!-- Ladybug 1: On daisy -->
+    <g class="ladybug" transform="translate(150, 680)">
+      <circle cx="0" cy="0" r="25"/> <!-- Body -->
+      <path d="M 0 -25 L 0 25" fill="none"/> <!-- Center line -->
+      <circle cx="0" cy="-35" r="15"/> <!-- Head -->
+      <circle cx="-10" cy="-10" r="7"/> <!-- Spot 1 -->
+      <circle cx="10" cy="-10" r="7"/> <!-- Spot 2 -->
+      <circle cx="-10" cy="10" r="7"/> <!-- Spot 3 -->
+      <circle cx="10" cy="10" r="7"/> <!-- Spot 4 -->
+      <path d="M -5 -35 Q -15 -45 -20 -35" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+      <path d="M 5 -35 Q 15 -45 20 -35" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+    </g>
+
+    <!-- Ladybug 2: Flying -->
+    <g class="ladybug" transform="translate(300, 300)">
+      <circle cx="0" cy="0" r="30"/> <!-- Body -->
+      <path d="M 0 -30 L 0 30" fill="none"/> <!-- Center line -->
+      <circle cx="0" cy="-40" r="18"/> <!-- Head -->
+      <circle cx="-12" cy="-12" r="8"/> <!-- Spot 1 -->
+      <circle cx="12" cy="-12" r="8"/> <!-- Spot 2 -->
+      <circle cx="-12" cy="12" r="8"/> <!-- Spot 3 -->
+      <circle cx="12" cy="12" r="8"/> <!-- Spot 4 -->
+      <path d="M -6 -40 Q -20 -55 -25 -40" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+      <path d="M 6 -40 Q 20 -55 25 -40" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+      <!-- Simple wing shapes (ovals) -->
+      <ellipse cx="-15" cy="-20" rx="20" ry="35" transform="rotate(-30)"/>
+      <ellipse cx="15" cy="-20" rx="20" ry="35" transform="rotate(30)"/>
+    </g>
+
+    <!-- Ladybug 3: Crawling on a big leaf (sunflower leaf) -->
+    <g class="ladybug" transform="translate(560, 580)">
+      <circle cx="0" cy="0" r="20"/> <!-- Body -->
+      <path d="M 0 -20 L 0 20" fill="none"/> <!-- Center line -->
+      <circle cx="0" cy="-30" r="12"/> <!-- Head -->
+      <circle cx="-8" cy="-8" r="6"/> <!-- Spot 1 -->
+      <circle cx="8" cy="-8" r="6"/> <!-- Spot 2 -->
+      <circle cx="-8" cy="8" r="6"/> <!-- Spot 3 -->
+      <circle cx="8" cy="8" r="6"/> <!-- Spot 4 -->
+      <path d="M -4 -30 Q -10 -38 -15 -30" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+      <path d="M 4 -30 Q 10 -38 15 -30" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+      <!-- Simple legs, attached to body -->
+      <line x1="-15" y1="0" x2="-25" y2="5" fill="none"/>
+      <line x1="15" y1="0" x2="25" y2="5" fill="none"/>
+      <line x1="-15" y1="-10" x2="-25" y2="-5" fill="none"/>
+      <line x1="15" y1="-10" x2="25" y2="-5" fill="none"/>
+    </g>
+
+    <!-- Ladybug 4: On tulip -->
+    <g class="ladybug" transform="translate(400, 770)">
+        <circle cx="0" cy="0" r="22"/> <!-- Body -->
+        <path d="M 0 -22 L 0 22" fill="none"/> <!-- Center line -->
+        <circle cx="0" cy="-32" r="14"/> <!-- Head -->
+        <circle cx="-9" cy="-9" r="6"/> <!-- Spot 1 -->
+        <circle cx="9" cy="-9" r="6"/> <!-- Spot 2 -->
+        <circle cx="-9" cy="9" r="6"/> <!-- Spot 3 -->
+        <circle cx="9" cy="9" r="6"/> <!-- Spot 4 -->
+        <path d="M -4 -32 Q -12 -40 -17 -32" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+        <path d="M 4 -32 Q 12 -40 17 -32" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+    </g>
+    
+    <!-- Ladybug 5: Flying near top -->
+    <g class="ladybug" transform="translate(100, 200)">
+        <circle cx="0" cy="0" r="28"/> <!-- Body -->
+        <path d="M 0 -28 L 0 28" fill="none"/> <!-- Center line -->
+        <circle cx="0" cy="-38" r="16"/> <!-- Head -->
+        <circle cx="-11" cy="-11" r="7"/> <!-- Spot 1 -->
+        <circle cx="11" cy="-11" r="7"/> <!-- Spot 2 -->
+        <circle cx="-11" cy="11" r="7"/> <!-- Spot 3 -->
+        <circle cx="11" cy="11" r="7"/> <!-- Spot 4 -->
+        <path d="M -5 -38 Q -18 -50 -23 -38" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+        <path d="M 5 -38 Q 18 -50 23 -38" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+        <ellipse cx="-12" cy="-18" rx="18" ry="32" transform="rotate(-30)"/>
+        <ellipse cx="12" cy="-18" rx="18" ry="32" transform="rotate(30)"/>
+    </g>
+
+    <!-- Ladybug 6: Smaller, crawling on a ground leaf -->
+    <g class="ladybug" transform="translate(60, 880)">
+      <path d="M 0 0 Q 30 -30 60 0 Q 30 30 0 0 Z"/> <!-- Ground leaf -->
+      <g transform="translate(30, 0)">
+        <circle cx="0" cy="0" r="18"/> <!-- Body -->
+        <path d="M 0 -18 L 0 18" fill="none"/> <!-- Center line -->
+        <circle cx="0" cy="-26" r="10"/> <!-- Head -->
+        <circle cx="-7" cy="-7" r="5"/> <!-- Spot 1 -->
+        <circle cx="7" cy="-7" r="5"/> <!-- Spot 2 -->
+        <circle cx="-7" cy="7" r="5"/> <!-- Spot 3 -->
+        <circle cx="7" cy="7" r="5"/> <!-- Spot 4 -->
+        <path d="M -3 -26 Q -8 -33 -12 -26" fill="none" stroke-width="3"/> <!-- Antenna 1 -->
+        <path d="M 3 -26 Q 8 -33 12 -26" fill="none" stroke-width="3"/> <!-- Antenna 2 -->
+        <line x1="-12" y1="0" x2="-20" y2="5" fill="none"/>
+        <line x1="12" y1="0" x2="20" y2="5" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Add some ground lines at the bottom for visual grounding -->
+    <path d="M 0 900 Q 200 880 400 900 T 800 920" fill="none" stroke-width="4"/>
+    <path d="M 0 950 Q 300 930 600 950 T 800 960" fill="none" stroke-width="4"/>
+
+  </g>
+</svg>
