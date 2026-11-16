@@ -1,112 +1,92 @@
-<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Castle Room Background - Simplified -->
-  <g id="castle-room">
-    <!-- Floor line -->
-    <line x1="0" y1="800" x2="800" y2="800" stroke="black" stroke-width="5" />
-    <!-- Large rounded window on the back wall -->
-    <rect x="100" y="100" width="600" height="400" rx="50" ry="50" fill="white" stroke="black" stroke-width="4" />
-    <!-- Window mullions -->
-    <line x1="400" y1="100" x2="400" y2="500" stroke="black" stroke-width="3" />
-    <line x1="100" y1="300" x2="700" y2="300" stroke="black" stroke-width="3" />
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Castle Background -->
+  <g id="castle" stroke="black" stroke-width="4" fill="white">
+    <rect x="100" y="550" width="600" height="250" rx="30" ry="30"/>
+    <rect x="150" y="400" width="150" height="200" rx="20" ry="20"/>
+    <rect x="500" y="400" width="150" height="200" rx="20" ry="20"/>
+    <path d="M150 400 L225 350 L300 400 L300 400 L150 400 Z"/>
+    <path d="M500 400 L575 350 L650 400 L650 400 L500 400 Z"/>
+    <path d="M100 550 H150 V500 H200 V550 H250 V500 H300 V550 H350 V500 H400 V550 H450 V500 H500 V550 H550 V500 H600 V550 H650 V500 H700 V550 Z" fill="none"/>
   </g>
 
-  <!-- Tea Party Table -->
-  <g id="tea-party-table">
-    <!-- Table top -->
-    <rect x="150" y="650" width="500" height="100" rx="30" ry="30" fill="white" stroke="black" stroke-width="5" />
-    <!-- Table legs -->
-    <rect x="200" y="750" width="50" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
-    <rect x="550" y="750" width="50" height="100" rx="10" ry="10" fill="white" stroke="black" stroke-width="4" />
+  <!-- Ground -->
+  <g id="ground">
+    <path d="M0 780 C200 850 600 850 800 780 V1000 H0 Z" stroke="black" stroke-width="4" fill="white"/>
   </g>
 
-  <!-- Happy Princess -->
-  <g id="princess">
-    <!-- Body/Dress -->
-    <path d="M 250 620 C 200 650, 180 750, 300 780 C 420 750, 400 650, 350 620 Z" fill="white" stroke="black" stroke-width="5" />
-    <!-- Neck -->
-    <rect x="290" y="520" width="20" height="30" rx="5" ry="5" fill="white" stroke="black" stroke-width="4" />
+  <!-- Tea Table -->
+  <g id="tea-table" stroke="black" stroke-width="4" fill="white">
+    <ellipse cx="400" cy="740" rx="200" ry="60"/>
+    <rect x="370" y="740" width="60" height="150" rx="10" ry="10"/>
+  </g>
+
+  <!-- Princess -->
+  <g id="princess" stroke="black" stroke-width="4" fill="white">
     <!-- Head -->
-    <circle cx="300" cy="490" r="60" fill="white" stroke="black" stroke-width="5" />
-    <!-- Hair fringe -->
-    <path d="M 250 470 Q 270 450, 300 440 Q 330 450, 350 470" fill="white" stroke="black" stroke-width="4" />
+    <circle cx="280" cy="560" r="70"/>
+    <!-- Hair -->
+    <path d="M280 490 C220 450 180 520 200 580 C180 620 220 680 280 660 L280 490 Z"/>
+    <path d="M280 490 C340 450 380 520 360 580 C380 620 340 680 280 660 L280 490 Z"/>
+    <!-- Eyes -->
+    <circle cx="250" cy="545" r="8"/>
+    <circle cx="310" cy="545" r="8"/>
+    <!-- Smile -->
+    <path d="M250 580 Q280 600 310 580" fill="none"/>
     <!-- Crown -->
-    <path d="M 275 450 L 285 430 L 300 450 L 315 430 L 325 450 L 325 460 Q 300 470, 275 460 Z" fill="white" stroke="black" stroke-width="4" />
-    <!-- Face: eyes, mouth -->
-    <circle cx="285" cy="480" r="7" fill="white" stroke="black" stroke-width="3" />
-    <circle cx="315" cy="480" r="7" fill="white" stroke="black" stroke-width="3" />
-    <path d="M 290 500 Q 300 510, 310 500" fill="none" stroke="black" stroke-width="3" />
-    <!-- Arms resting on table -->
-    <path d="M 320 550 C 340 600, 360 620, 380 650" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 280 550 C 260 600, 240 620, 220 650" fill="white" stroke="black" stroke-width="4" />
-    <!-- Hands -->
-    <circle cx="380" cy="650" r="20" fill="white" stroke="black" stroke-width="4" />
-    <circle cx="220" cy="650" r="20" fill="white" stroke="black" stroke-width="4" />
+    <path d="M230 490 L245 470 L280 480 L315 470 L330 490" fill="white"/>
+    <!-- Body/Gown -->
+    <path d="M280 630 C200 680 150 800 150 850 H410 C410 800 360 680 280 630 Z"/>
+    <!-- Arm -->
+    <path d="M230 650 Q200 680 210 740 Q250 760 270 700 Z"/>
+    <!-- Hand -->
+    <circle cx="240" cy="740" r="20"/>
   </g>
 
-  <!-- Friendly Teddy Bear -->
-  <g id="teddy-bear">
+  <!-- Teddy Bear -->
+  <g id="teddy-bear" stroke="black" stroke-width="4" fill="white">
     <!-- Body -->
-    <ellipse cx="500" cy="680" rx="100" ry="100" fill="white" stroke="black" stroke-width="5" />
+    <ellipse cx="580" cy="750" rx="80" ry="100"/>
     <!-- Head -->
-    <circle cx="500" cy="470" r="60" fill="white" stroke="black" stroke-width="5" />
+    <circle cx="580" cy="630" r="70"/>
     <!-- Ears -->
-    <circle cx="460" cy="430" r="25" fill="white" stroke="black" stroke-width="4" />
-    <circle cx="540" cy="430" r="25" fill="white" stroke="black" stroke-width="4" />
-    <!-- Snout area -->
-    <ellipse cx="500" cy="485" rx="30" ry="20" fill="white" stroke="black" stroke-width="4" />
-    <!-- Face: eyes, nose, mouth -->
-    <circle cx="485" cy="460" r="7" fill="white" stroke="black" stroke-width="3" />
-    <circle cx="515" cy="460" r="7" fill="white" stroke="black" stroke-width="3" />
-    <circle cx="500" cy="480" r="5" fill="white" stroke="black" stroke-width="3" />
-    <path d="M 500 485 V 495 M 490 495 Q 500 505, 510 495" fill="none" stroke="black" stroke-width="3" />
-    <!-- Arms -->
-    <path d="M 530 530 C 550 580, 570 600, 590 630" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 470 530 C 450 580, 430 600, 410 630" fill="white" stroke="black" stroke-width="4" />
-    <!-- Hands -->
-    <circle cx="590" cy="630" r="20" fill="white" stroke="black" stroke-width="4" />
-    <circle cx="410" cy="630" r="20" fill="white" stroke="black" stroke-width="4" />
+    <ellipse cx="530" cy="590" rx="25" ry="30"/>
+    <ellipse cx="630" cy="590" rx="25" ry="30"/>
+    <!-- Snout -->
+    <ellipse cx="580" cy="650" rx="30" ry="20"/>
+    <circle cx="580" cy="640" r="5"/>
+    <!-- Eyes -->
+    <circle cx="550" cy="615" r="8"/>
+    <circle cx="610" cy="615" r="8"/>
+    <!-- Smile -->
+    <path d="M555 660 Q580 675 605 660" fill="none"/>
+    <!-- Arm -->
+    <path d="M520 680 Q500 720 520 780 Q550 800 580 750 Z"/>
+    <!-- Bow Tie -->
+    <path d="M580 720 C560 710 550 700 560 690 C570 680 580 690 580 700 C580 690 590 680 600 690 C610 700 600 710 580 720 Z" fill="white"/>
+    <circle cx="580" cy="700" r="10"/>
   </g>
 
-  <!-- Elegant Tea Set -->
-  <g id="tea-set">
-    <!-- Teapot Body -->
-    <ellipse cx="400" cy="680" rx="60" ry="40" fill="white" stroke="black" stroke-width="5" />
-    <!-- Teapot Lid base -->
-    <path d="M 370 640 Q 400 600, 430 640" fill="white" stroke="black" stroke-width="4" />
-    <!-- Teapot Lid knob -->
-    <circle cx="400" cy="620" r="20" fill="white" stroke="black" stroke-width="4" />
-    <!-- Teapot Handle -->
-    <path d="M 460 670 C 490 650, 490 730, 460 740 C 470 750, 470 670, 460 670 Z" fill="white" stroke="black" stroke-width="4" />
-    <circle cx="475" cy="700" r="15" fill="white" stroke="black" stroke-width="3" />
-    <!-- Teapot Spout -->
-    <path d="M 340 670 C 310 650, 310 730, 340 740 C 330 750, 330 670, 340 670 Z" fill="white" stroke="black" stroke-width="4" />
-    <circle cx="325" cy="700" r="15" fill="white" stroke="black" stroke-width="3" />
+  <!-- Tea Set -->
+  <g id="tea-set" stroke="black" stroke-width="4" fill="white">
+    <!-- Princess's cup -->
+    <path d="M220 720 Q240 700 260 720 L260 750 Q240 770 220 750 Z"/>
+    <ellipse cx="240" cy="720" rx="25" ry="10"/>
+    <path d="M265 730 Q280 720 280 740 Q280 760 265 750" fill="none"/>
 
-    <!-- Princess's Teacup and Saucer -->
-    <ellipse cx="280" cy="730" rx="50" ry="15" fill="white" stroke="black" stroke-width="4" />
-    <ellipse cx="280" cy="700" rx="30" ry="20" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 305 690 A 15 15 0 1 1 305 710 A 15 15 0 1 1 305 690 Z" fill="white" stroke="black" stroke-width="3" />
+    <!-- Teddy's cup -->
+    <path d="M540 730 Q560 710 580 730 L580 760 Q560 780 540 760 Z"/>
+    <ellipse cx="560" cy="730" rx="25" ry="10"/>
+    <path d="M585 740 Q600 730 600 750 Q600 770 585 760" fill="none"/>
 
-    <!-- Bear's Teacup and Saucer -->
-    <ellipse cx="520" cy="730" rx="50" ry="15" fill="white" stroke="black" stroke-width="4" />
-    <ellipse cx="520" cy="700" rx="30" ry="20" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 495 690 A 15 15 0 1 0 495 710 A 15 15 0 1 0 495 690 Z" fill="white" stroke="black" stroke-width="3" />
+    <!-- Teapot -->
+    <path d="M380 670 C350 670 340 700 340 720 C340 740 350 770 380 770 L420 770 C450 770 460 740 460 720 C460 700 450 670 420 670 Z"/>
+    <ellipse cx="400" cy="670" rx="40" ry="15"/>
+    <path d="M460 700 Q480 690 490 700 Q480 710 460 710 Z" fill="none"/>
+    <path d="M340 700 Q320 690 320 720 Q320 750 340 740" fill="none"/>
+
+    <!-- Pastries -->
+    <circle cx="340" cy="730" r="20"/>
+    <circle cx="460" cy="730" r="20"/>
   </g>
 
-  <!-- Cupcakes -->
-  <g id="cupcakes">
-    <!-- Cupcake 1 (left) -->
-    <path d="M 325 750 Q 320 765, 350 765 Q 380 765, 375 750" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 325 750 L 325 720 A 25 25 0 0 1 375 720 L 375 750 Z" fill="white" stroke="black" stroke-width="4" />
-    <ellipse cx="350" cy="720" rx="25" ry="10" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 330 710 Q 335 690, 350 690 Q 365 690, 370 710 L 350 715 Z" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 340 705 C 345 700, 355 700, 360 705" fill="none" stroke="black" stroke-width="3" />
-
-    <!-- Cupcake 2 (right) -->
-    <path d="M 425 750 Q 420 765, 450 765 Q 480 765, 475 750" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 425 750 L 425 720 A 25 25 0 0 1 475 720 L 475 750 Z" fill="white" stroke="black" stroke-width="4" />
-    <ellipse cx="450" cy="720" rx="25" ry="10" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 430 710 Q 435 690, 450 690 Q 465 690, 470 710 L 450 715 Z" fill="white" stroke="black" stroke-width="4" />
-    <path d="M 440 705 C 445 700, 455 700, 460 705" fill="none" stroke="black" stroke-width="3" />
-  </g>
 </svg>
