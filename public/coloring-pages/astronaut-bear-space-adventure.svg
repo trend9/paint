@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+      }
+      .no-fill {
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- Planet in the background -->
+  <g id="planet">
+    <circle cx="650" cy="800" r="150" class="outline" />
+    <!-- Planet ring -->
+    <ellipse cx="650" cy="800" rx="200" ry="40" transform="rotate(-15 650 800)" class="outline no-fill" />
+    <!-- A simple line on the planet for texture -->
+    <path d="M550 750 Q650 720 750 750" class="outline no-fill" />
+  </g>
+
+  <!-- Bear Astronaut -->
+  <g id="bear-astronaut">
+    <!-- Astronaut Suit Body (simplified capsule shape) -->
+    <path d="M300 450 C280 450 270 470 270 500 L270 650 C270 680 280 700 300 700 L500 700 C520 700 530 680 530 650 L530 500 C530 470 520 450 500 450 Z" class="outline" />
+
+    <!-- Helmet main part -->
+    <circle cx="400" cy="350" r="120" class="outline" />
+    <!-- Helmet visor opening -->
+    <ellipse cx="400" cy="350" rx="80" ry="70" class="outline" />
+
+    <!-- Bear Head inside helmet -->
+    <circle cx="400" cy="350" r="90" class="outline" />
+    <!-- Bear Muzzle -->
+    <ellipse cx="400" cy="370" rx="40" ry="30" class="outline" />
+    <!-- Bear Nose -->
+    <circle cx="400" cy="360" r="10" class="outline" />
+    <!-- Bear Eyes -->
+    <circle cx="375" cy="340" r="8" class="outline" />
+    <circle cx="425" cy="340" r="8" class="outline" />
+    <!-- Bear Mouth -->
+    <path d="M380 385 Q400 395 420 385" class="outline no-fill" />
+    <!-- Bear Ears -->
+    <circle cx="340" cy="270" r="30" class="outline" />
+    <circle cx="460" cy="270" r="30" class="outline" />
+
+    <!-- Arms -->
+    <rect x="230" y="470" width="60" height="150" rx="30" ry="30" class="outline" /> <!-- Left arm (viewer's left) -->
+    <rect x="510" y="470" width="60" height="150" rx="30" ry="30" class="outline" /> <!-- Right arm (viewer's right) -->
+
+    <!-- Hands/Gloves -->
+    <circle cx="260" cy="620" r="35" class="outline" /> <!-- Left glove (holding flag) -->
+    <circle cx="540" cy="620" r="35" class="outline" /> <!-- Right glove -->
+
+    <!-- Legs -->
+    <rect x="320" y="670" width="60" height="100" rx="30" ry="30" class="outline" /> <!-- Left leg -->
+    <rect x="420" y="670" width="60" height="100" rx="30" ry="30" class="outline" /> <!-- Right leg -->
+
+    <!-- Feet/Boots -->
+    <ellipse cx="350" cy="770" rx="50" ry="30" class="outline" /> <!-- Left boot -->
+    <ellipse cx="450" cy="770" rx="50" ry="30" class="outline" /> <!-- Right boot -->
+  </g>
+
+  <!-- Flag held by the bear's left hand (viewer's left) -->
+  <g id="flag">
+    <!-- Flag pole -->
+    <rect x="260" y="520" width="10" height="120" rx="5" ry="5" class="outline" />
+    <!-- Flag cloth -->
+    <path d="M270 520 Q330 500 380 520 Q360 560 380 600 Q330 620 270 600 Z" class="outline" />
+    <!-- Lines on flag -->
+    <path d="M270 545 Q330 525 380 545" class="outline no-fill" />
+    <path d="M270 575 Q330 555 380 575" class="outline no-fill" />
+  </g>
+
+  <!-- Smiling Stars -->
+  <g id="stars">
+    <!-- Star 1 -->
+    <circle cx="150" cy="150" r="50" class="outline" />
+    <circle cx="135" cy="135" r="7" class="outline" />
+    <circle cx="165" cy="135" r="7" class="outline" />
+    <path d="M135 160 Q150 170 165 160" class="outline no-fill" />
+
+    <!-- Star 2 -->
+    <circle cx="700" cy="180" r="40" class="outline" />
+    <circle cx="690" cy="170" r="6" class="outline" />
+    <circle cx="710" cy="170" r="6" class="outline" />
+    <path d="M690 190 Q700 198 710 190" class="outline no-fill" />
+
+    <!-- Star 3 -->
+    <circle cx="100" cy="750" r="60" class="outline" />
+    <circle cx="80" cy="735" r="8" class="outline" />
+    <circle cx="120" cy="735" r="8" class="outline" />
+    <path d="M80 760 Q100 775 120 760" class="outline no-fill" />
+
+    <!-- Star 4 -->
+    <circle cx="400" cy="900" r="30" class="outline" />
+    <circle cx="390" cy="890" r="5" class="outline" />
+    <circle cx="410" cy="890" r="5" class="outline" />
+    <path d="M390 905 Q400 912 410 905" class="outline no-fill" />
+  </g>
+</svg>
