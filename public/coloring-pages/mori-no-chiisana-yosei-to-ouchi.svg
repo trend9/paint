@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="flower-petal" d="M0 -30 Q10 -15 0 0 Q-10 -15 0 -30 Z" />
+  </defs>
+
+  <g id="magical-forest-clearing">
+
+    <!-- Large Friendly Leaves -->
+    <g id="leaves" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M100 800 Q150 700 300 700 Q400 750 350 850 Q250 950 100 800 Z" />
+      <path d="M500 850 Q450 750 600 700 Q700 750 650 850 Q550 950 500 850 Z" />
+      <path d="M250 950 C300 900 450 900 500 950 L400 980 L250 950 Z" />
+    </g>
+
+    <!-- Whimsical Flowers -->
+    <g id="flowers" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Flower 1 -->
+      <g transform="translate(180 650)">
+        <circle r="20" />
+        <use href="#flower-petal" transform="rotate(0)" />
+        <use href="#flower-petal" transform="rotate(72)" />
+        <use href="#flower-petal" transform="rotate(144)" />
+        <use href="#flower-petal" transform="rotate(216)" />
+        <use href="#flower-petal" transform="rotate(288)" />
+      </g>
+      <!-- Flower 2 -->
+      <g transform="translate(620 670)">
+        <circle r="20" />
+        <use href="#flower-petal" transform="rotate(0)" />
+        <use href="#flower-petal" transform="rotate(72)" />
+        <use href="#flower-petal" transform="rotate(144)" />
+        <use href="#flower-petal" transform="rotate(216)" />
+        <use href="#flower-petal" transform="rotate(288)" />
+      </g>
+      <!-- Flower 3 -->
+      <g transform="translate(400 900)">
+        <circle r="25" />
+        <use href="#flower-petal" transform="rotate(0) scale(1.2)" />
+        <use href="#flower-petal" transform="rotate(72) scale(1.2)" />
+        <use href="#flower-petal" transform="rotate(144) scale(1.2)" />
+        <use href="#flower-petal" transform="rotate(216) scale(1.2)" />
+        <use href="#flower-petal" transform="rotate(288) scale(1.2)" />
+      </g>
+    </g>
+
+    <!-- Charming Mushroom House -->
+    <g id="mushroom-house" stroke="black" stroke-width="5" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Stem -->
+      <rect x="320" y="650" width="160" height="250" rx="60" ry="60" />
+      <!-- Cap -->
+      <path d="M250 650 C200 500 600 500 550 650 Q400 690 250 650 Z" />
+      <!-- Door -->
+      <rect x="360" y="750" width="80" height="150" rx="30" ry="30" />
+      <!-- Window 1 -->
+      <circle cx="330" cy="580" r="30" />
+      <!-- Window 2 -->
+      <circle cx="470" cy="580" r="30" />
+    </g>
+
+    <!-- Cute Tiny Fairy -->
+    <g id="fairy" stroke="black" stroke-width="4" fill="white" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Body -->
+      <ellipse cx="400" cy="450" rx="40" ry="60" />
+      <!-- Head -->
+      <circle cx="400" cy="370" r="35" />
+      <!-- Eyes -->
+      <circle cx="385" cy="365" r="5" />
+      <circle cx="415" cy="365" r="5" />
+      <!-- Hair/Hat (simple rounded shape) -->
+      <path d="M370 335 C350 320 350 300 400 300 C450 300 450 320 430 335 Q400 340 370 335 Z" />
+      <!-- Arms -->
+      <path d="M365 440 Q330 430 330 480" fill="none"/>
+      <path d="M435 440 Q470 430 470 480" fill="none"/>
+      <!-- Delicate Wings -->
+      <g fill="white" stroke="black" stroke-width="3">
+        <path d="M440 380 Q520 330 500 450 Q470 490 440 450 C440 430 440 380 440 380 Z" />
+        <path d="M360 380 Q280 330 300 450 Q330 490 360 450 C360 430 360 380 360 380 Z" />
+        <!-- Wing details -->
+        <path d="M470 415 Q490 390 480 370 M470 415 Q490 440 480 460" fill="none"/>
+        <path d="M330 415 Q310 390 320 370 M330 415 Q310 440 320 460" fill="none"/>
+      </g>
+    </g>
+
+  </g>
+</svg>
