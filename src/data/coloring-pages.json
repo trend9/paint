@@ -1,5 +1,35 @@
 [
   {
+    "slug": "dinosaur-picnic-adventure",
+    "title": "【無料】恐竜たちのわくわくピクニック！おいしいお弁当ぬりえ",
+    "description": "可愛い恐竜たちが森でピクニック！ティラノサウルス、トリケラトプス、ブロントサウルスが仲良くお弁当を広げています。どんな色になるかな？創造力を育む無料ぬりえです。",
+    "category": "動物・生き物",
+    "tags": [
+      "恐竜 ぬりえ",
+      "ピクニック",
+      "無料ダウンロード",
+      "知育ぬりえ"
+    ],
+    "prompt": "children coloring book sketch, clean thick outlines, bold black line-art, cute happy dinosaurs having a relaxing picnic in a sunny meadow, a gentle T-Rex eating a sandwich with a happy expression, a friendly Triceratops sharing fruit from a basket, a cheerful Brontosaurus holding a juice box, an old Pterodactyl flying overhead with a picnic blanket, lush green trees and soft clouds in the background, pure white background, no shading, no gray fills, zero gradients, thick borders, highly simplified for toddlers, SVG vector look, beautiful ink lines --ar 3:4",
+    "article": "<h3>恐竜さんたちと森へピクニックに行こう！</h3>\n大きなティラノサウルスさん、角がかっこいいトリケラトプスさん、首がながーいブロントサウルスさんが、みんなで森にピクニックにきましたよ。見て！おいしそうなお弁当を広げていますね。サンドイッチに、甘いフルーツ、ジュースもあるみたい！みんなは何色のバスケットにするかな？恐竜さんたちも、どんな色が好きかな？想像力をいーっぱい使って、カラフルなピクニックの絵を完成させてくださいね。お空の色、お花の色、草の色も、自由な色で塗ってみて！\n<h3>ぬり方のコツと、もっと楽しむヒント！</h3>\nまずは、好きな恐竜さんから塗ってみましょう！恐竜さんの肌の色は、緑色や茶色だけじゃないんだよ。ピンクや青、黄色だって、みんなの好きな色で塗ってあげてね。お弁当の中身も、どんな味かな？って想像しながら色を塗ると、もっと楽しくなるよ。もしよかったら、クレヨンや色鉛筆だけじゃなくて、絵の具やマーカーも使ってみてね。色々な画材を試すと、新しい発見があるかもしれません。おうちの人と一緒に、どんな恐竜さんたちがピクニックに来たのか、お話しながら塗るのも楽しいね。\n<h4>保護者の皆様へ：ぬりえが育むお子様の力</h4>\nこの「恐竜たちのわくわくピクニック」ぬりえは、お子様の色彩感覚や集中力を高めるだけでなく、物語を想像する力を養います。恐竜たちの表情や、お弁当の中身など、細部にまで注意を払うことで、観察力も向上します。また、自分で色を選ぶことで自己表現の楽しさを知り、達成感を得ることができます。\n<h4>恐竜の名前を覚えたり、お話を広げたり</h4>\nティラノサウルス、トリケラトプス、ブロントサウルスなど、登場する恐竜たちの名前を一緒に呼んでみましょう。それぞれの特徴について話したり、「もし恐竜が本当にピクニックに来たら、どんなことが起きるかな？」と問いかけたりすることで、お子様の知的好奇心を刺激し、豊かな想像力を育むことができます。家族のコミュニケーションツールとしても、ぜひご活用ください。",
+    "seo": {
+      "h1": "【無料ダウンロード】恐竜たちの楽しいピクニックぬりえ（知育・幼児向け）",
+      "metaDescription": "可愛い恐竜たちが森でピクニックを楽しむ無料ぬりえです。ティラノサウルス、トリケラトプス、ブロントサウルスが登場。色彩感覚や想像力を育み、集中力もアップ。無料ダウンロードで今日から楽しめます！",
+      "keywords": [
+        "ぬりえ 無料",
+        "子供 ぬりえ",
+        "かんたん ぬりえ",
+        "恐竜 ぬりえ",
+        "ピクニック ぬりえ",
+        "知育ぬりえ"
+      ]
+    },
+    "image": "/coloring-pages/dinosaur-picnic-adventure.svg",
+    "imageType": "svg",
+    "createdAt": "2026-11-20T19:22:04.711Z",
+    "id": "330"
+  },
+  {
     "slug": "candy-train-sweets-land",
     "title": "お菓子の国を冒険！くるくるキャンディトレインのぬりえ",
     "description": "くるくるキャンディトレインに乗って、甘いお菓子の国を大冒険！色とりどりのお菓子に囲まれた楽しい世界を、自由に色ぬりして楽しもう！夢いっぱいのぬりえだよ！",
