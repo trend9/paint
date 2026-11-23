@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <style type="text/css">
+      .outline {
+        stroke: black;
+        stroke-width: 4;
+        fill: white;
+      }
+      .outline-none {
+        stroke: black;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Mushroom House -->
+  <g id="mushroom-house">
+    <!-- Mushroom Cap -->
+    <path class="outline" d="M200 450 C200 250 600 250 600 450 Q600 500 400 520 Q200 500 200 450 Z" />
+    
+    <!-- Mushroom Stem -->
+    <rect x="350" y="470" width="100" height="300" rx="50" ry="50" class="outline" />
+
+    <!-- Door -->
+    <rect x="370" y="600" width="60" height="120" rx="30" ry="30" class="outline" />
+    <!-- Door knob -->
+    <circle cx="415" cy="660" r="5" class="outline" />
+
+    <!-- Windows on cap -->
+    <circle cx="280" cy="380" r="30" class="outline" />
+    <circle cx="520" cy="380" r="30" class="outline" />
+  </g>
+
+  <!-- Forest Plants and Flowers -->
+  <g id="forest-plants">
+    <!-- Large leaf 1 (bottom left) -->
+    <path class="outline" d="M50 850 C10 750 150 700 250 780 C350 860 200 950 50 850 Z" />
+    <!-- Large leaf 2 (bottom right) -->
+    <path class="outline" d="M750 850 C790 750 650 700 550 780 C450 860 600 950 750 850 Z" />
+
+    <!-- Flower 1 (left) -->
+    <g id="flower1">
+      <circle cx="150" cy="700" r="30" class="outline" /> <!-- Center -->
+      <ellipse cx="150" cy="650" rx="20" ry="40" transform="rotate(0 150 700)" class="outline" />
+      <ellipse cx="150" cy="650" rx="20" ry="40" transform="rotate(45 150 700)" class="outline" />
+      <ellipse cx="150" cy="650" rx="20" ry="40" transform="rotate(90 150 700)" class="outline" />
+      <ellipse cx="150" cy="650" rx="20" ry="40" transform="rotate(135 150 700)" class="outline" />
+    </g>
+
+    <!-- Flower 2 (right) -->
+    <g id="flower2">
+      <circle cx="650" cy="700" r="30" class="outline" /> <!-- Center -->
+      <ellipse cx="650" cy="650" rx="20" ry="40" transform="rotate(0 650 700)" class="outline" />
+      <ellipse cx="650" cy="650" rx="20" ry="40" transform="rotate(45 650 700)" class="outline" />
+      <ellipse cx="650" cy="650" rx="20" ry="40" transform="rotate(90 650 700)" class="outline" />
+      <ellipse cx="650" cy="650" rx="20" ry="40" transform="rotate(135 650 700)" class="outline" />
+    </g>
+
+    <!-- Bush/Grass mound at bottom -->
+    <path class="outline" d="M0 880 Q200 780 400 880 T800 880 L800 1000 L0 1000 Z" />
+  </g>
+
+  <!-- Fairy -->
+  <g id="fairy">
+    <!-- Body -->
+    <ellipse cx="500" cy="380" rx="25" ry="40" class="outline" />
+
+    <!-- Head -->
+    <circle cx="500" cy="320" r="25" class="outline" />
+    <!-- Eyes -->
+    <circle cx="490" cy="315" r="3" class="outline" />
+    <circle cx="510" cy="315" r="3" class="outline" />
+    <!-- Smile -->
+    <path d="M490 325 Q500 335 510 325" class="outline-none" />
+
+    <!-- Arms -->
+    <path d="M475 350 Q460 360 465 380" class="outline-none" />
+    <path d="M525 350 Q540 360 535 380" class="outline-none" />
+
+    <!-- Legs -->
+    <path d="M485 415 Q490 425 480 435" class="outline-none" />
+    <path d="M515 415 Q510 425 520 435" class="outline-none" />
+
+    <!-- Wings (delicate and simple ellipses) -->
+    <ellipse cx="530" cy="320" rx="40" ry="30" transform="rotate(20 530 320)" class="outline" />
+    <ellipse cx="470" cy="320" rx="40" ry="30" transform="rotate(-20 470 320)" class="outline" />
+    <ellipse cx="530" cy="360" rx="35" ry="25" transform="rotate(10 530 360)" class="outline" />
+    <ellipse cx="470" cy="360" rx="35" ry="25" transform="rotate(-10 470 360)" class="outline" />
+  </g>
+
+</svg>
