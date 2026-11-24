@@ -1,0 +1,107 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main group for the entire scene -->
+  <g>
+
+    <!-- Ground Line -->
+    <path d="M0 850 Q200 800 400 850 T800 850" fill="white" stroke="black" stroke-width="4"/>
+
+    <!-- Background Elements: Palm Trees -->
+    <g class="palm-trees">
+      <!-- Left Palm Tree -->
+      <rect x="140" y="450" width="20" height="400" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M150 450 C100 400 100 350 150 330 C200 350 200 400 150 450 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Leaves -->
+      <path d="M150 330 Q100 280 80 300 Q100 350 150 330 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M150 330 Q150 260 170 280 Q200 300 150 330 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M150 330 Q200 280 220 300 Q200 350 150 330 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+
+      <!-- Right Palm Tree -->
+      <rect x="640" y="500" width="20" height="350" rx="10" ry="10" fill="white" stroke="black" stroke-width="4"/>
+      <path d="M650 500 C600 450 600 400 650 380 C700 400 700 450 650 500 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <!-- Leaves -->
+      <path d="M650 380 Q600 330 580 350 Q600 400 650 380 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M650 380 Q650 310 670 330 Q700 350 650 380 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M650 380 Q700 330 720 350 Q700 400 650 380 Z" fill="white" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Bush -->
+    <path d="M500 700 Q450 600 400 650 Q350 700 300 650 Q250 750 300 800 Q400 850 500 800 Q550 750 500 700 Z"
+          fill="white" stroke="black" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- Giraffe peeking from behind the bush -->
+    <g class="giraffe" transform="translate(350, 480)">
+      <!-- Neck -->
+      <rect x="10" y="50" width="60" height="150" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head -->
+      <ellipse cx="40" cy="50" rx="40" ry="50" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Ears -->
+      <ellipse cx="20" cy="15" rx="15" ry="10" transform="rotate(-20 20 15)" fill="white" stroke="black" stroke-width="4"/>
+      <ellipse cx="60" cy="15" rx="15" ry="10" transform="rotate(20 60 15)" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Ossicones -->
+      <rect x="25" y="-10" width="10" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="30" cy="-10" r="5" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="45" y="-10" width="10" height="20" rx="5" ry="5" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="50" cy="-10" r="5" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Snout -->
+      <ellipse cx="40" cy="70" rx="25" ry="15" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Eyes -->
+      <circle cx="25" cy="40" r="5" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="55" cy="40" r="5" fill="white" stroke="black" stroke-width="3"/>
+      <!-- Mouth -->
+      <path d="M30 80 Q40 90 50 80" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Baby Lion -->
+    <g class="baby-lion" transform="translate(200, 550)">
+      <!-- Back Legs -->
+      <rect x="70" y="270" width="60" height="60" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="170" y="270" width="60" height="60" rx="30" ry="30" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Paw details for back legs -->
+      <path d="M75 320 Q85 335 90 335 Q95 335 105 320" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <path d="M175 320 Q185 335 190 335 Q195 335 205 320" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Body -->
+      <ellipse cx="150" cy="200" rx="120" ry="100" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Mane (simplified, large circle behind head) -->
+      <circle cx="150" cy="120" r="100" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Head (on top of mane) -->
+      <circle cx="150" cy="120" r="80" fill="white" stroke="black" stroke-width="4"/>
+
+      <!-- Ears -->
+      <circle cx="100" cy="80" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <circle cx="200" cy="80" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Inner ears -->
+      <circle cx="100" cy="80" r="10" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="200" cy="80" r="10" fill="white" stroke="black" stroke-width="3"/>
+
+      <!-- Snout -->
+      <ellipse cx="150" cy="140" rx="40" ry="25" fill="white" stroke="black" stroke-width="4"/>
+      <!-- Nose -->
+      <path d="M150 130 L140 150 L160 150 Z" fill="white" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Mouth -->
+      <path d="M150 150 V165 M135 160 Q150 175 165 160" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Eyes -->
+      <circle cx="130" cy="115" r="8" fill="white" stroke="black" stroke-width="3"/>
+      <circle cx="170" cy="115" r="8" fill="white" stroke="black" stroke-width="3"/>
+
+      <!-- Front Legs (playful pose, one raised) -->
+      <!-- Left paw raised -->
+      <g transform="translate(100, 250) rotate(-20)">
+        <rect x="0" y="0" width="40" height="70" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+        <path d="M5 65 Q15 80 20 80 Q25 80 35 65" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <!-- Right paw on ground -->
+      <g transform="translate(200, 270) rotate(10)">
+        <rect x="0" y="0" width="40" height="80" rx="20" ry="20" fill="white" stroke="black" stroke-width="4"/>
+        <path d="M5 75 Q15 90 20 90 Q25 90 35 75" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- Tail -->
+      <path d="M260 210 Q290 190 310 230 Q330 270 310 300" fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="310" cy="300" r="15" fill="white" stroke="black" stroke-width="4"/> <!-- Tail tuft -->
+    </g>
+
+  </g>
+</svg>
