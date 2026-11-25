@@ -1,0 +1,149 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="background_elements">
+    <!-- Stars -->
+    <circle cx="100" cy="50" r="8" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="700" cy="120" r="10" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="50" cy="300" r="6" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="750" cy="400" r="9" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="150" cy="600" r="7" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="680" cy="700" r="11" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="120" cy="850" r="5" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="500" cy="950" r="8" stroke="black" stroke-width="4" fill="white"/>
+    
+    <!-- Planets -->
+    <circle cx="200" cy="100" r="40" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="650" cy="850" rx="50" ry="30" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="750" cy="200" r="30" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="100" cy="700" r="35" stroke="black" stroke-width="4" fill="white"/>
+    <path d="M400 50 L450 60 L400 70 L350 60 Z" stroke="black" stroke-width="4" fill="white"/>
+  </g>
+
+  <!-- Dog Astronaut -->
+  <g id="dog_astronaut" transform="translate(150, 200)">
+    <!-- Suit Body -->
+    <rect x="0" y="70" width="100" height="120" rx="30" ry="30" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Helmet -->
+    <circle cx="50" cy="50" r="60" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="50" cy="55" rx="40" ry="35" stroke="black" stroke-width="4" fill="white"/> <!-- Visor -->
+    <!-- Arms -->
+    <rect x="-30" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="90" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Legs -->
+    <rect x="10" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="60" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Gloves -->
+    <circle cx="-10" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="110" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Boots -->
+    <ellipse cx="25" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="75" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    
+    <!-- Dog Face -->
+    <g transform="translate(50, 55)">
+      <circle cx="-15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Left Eye -->
+      <circle cx="15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Right Eye -->
+      <path d="M0,5 C-5,10 5,10 0,15 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Nose -->
+      <path d="M-15,15 Q0,25 15,15" stroke="black" stroke-width="4" fill="none"/> <!-- Smile -->
+      <!-- Ears -->
+      <path d="M-50,-30 C-60,-50 -40,-50 -30,-30 Z" stroke="black" stroke-width="4" fill="white"/>
+      <path d="M50,-30 C60,-50 40,-50 30,-30 Z" stroke="black" stroke-width="4" fill="white"/>
+    </g>
+  </g>
+
+  <!-- Cat Astronaut -->
+  <g id="cat_astronaut" transform="translate(550, 200)">
+    <!-- Suit Body -->
+    <rect x="0" y="70" width="100" height="120" rx="30" ry="30" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Helmet -->
+    <circle cx="50" cy="50" r="60" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="50" cy="55" rx="40" ry="35" stroke="black" stroke-width="4" fill="white"/> <!-- Visor -->
+    <!-- Arms -->
+    <rect x="-30" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="90" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Legs -->
+    <rect x="10" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="60" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Gloves -->
+    <circle cx="-10" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="110" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Boots -->
+    <ellipse cx="25" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="75" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Cat Face -->
+    <g transform="translate(50, 55)">
+      <circle cx="-15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Left Eye -->
+      <circle cx="15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Right Eye -->
+      <path d="M0,8 C-3,10 3,10 0,13 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Nose -->
+      <path d="M-15,15 Q0,25 15,15" stroke="black" stroke-width="4" fill="none"/> <!-- Smile -->
+      <!-- Ears -->
+      <path d="M-30,-30 L-50,-60 L-10,-60 Z" stroke="black" stroke-width="4" fill="white"/>
+      <path d="M30,-30 L50,-60 L10,-60 Z" stroke="black" stroke-width="4" fill="white"/>
+    </g>
+  </g>
+
+  <!-- Bear Astronaut -->
+  <g id="bear_astronaut" transform="translate(150, 650)">
+    <!-- Suit Body -->
+    <rect x="0" y="70" width="100" height="120" rx="30" ry="30" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Helmet -->
+    <circle cx="50" cy="50" r="60" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="50" cy="55" rx="40" ry="35" stroke="black" stroke-width="4" fill="white"/> <!-- Visor -->
+    <!-- Arms -->
+    <rect x="-30" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="90" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Legs -->
+    <rect x="10" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="60" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Gloves -->
+    <circle cx="-10" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="110" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Boots -->
+    <ellipse cx="25" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="75" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Bear Face -->
+    <g transform="translate(50, 55)">
+      <circle cx="-15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Left Eye -->
+      <circle cx="15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Right Eye -->
+      <path d="M0,5 C-7,10 7,10 0,15 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Nose -->
+      <path d="M-15,15 Q0,25 15,15" stroke="black" stroke-width="4" fill="none"/> <!-- Smile -->
+      <!-- Ears -->
+      <circle cx="-40" cy="-40" r="15" stroke="black" stroke-width="4" fill="white"/>
+      <circle cx="40" cy="-40" r="15" stroke="black" stroke-width="4" fill="white"/>
+    </g>
+  </g>
+
+  <!-- Rabbit Astronaut -->
+  <g id="rabbit_astronaut" transform="translate(550, 650)">
+    <!-- Suit Body -->
+    <rect x="0" y="70" width="100" height="120" rx="30" ry="30" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Helmet -->
+    <circle cx="50" cy="50" r="60" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="50" cy="55" rx="40" ry="35" stroke="black" stroke-width="4" fill="white"/> <!-- Visor -->
+    <!-- Arms -->
+    <rect x="-30" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="90" y="80" width="40" height="70" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Legs -->
+    <rect x="10" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <rect x="60" y="180" width="30" height="60" rx="15" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Gloves -->
+    <circle cx="-10" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <circle cx="110" cy="140" r="20" stroke="black" stroke-width="4" fill="white"/>
+    <!-- Boots -->
+    <ellipse cx="25" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+    <ellipse cx="75" cy="245" rx="20" ry="15" stroke="black" stroke-width="4" fill="white"/>
+
+    <!-- Rabbit Face -->
+    <g transform="translate(50, 55)">
+      <circle cx="-15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Left Eye -->
+      <circle cx="15" cy="-5" r="5" stroke="black" stroke-width="4" fill="white"/> <!-- Right Eye -->
+      <path d="M0,8 C-3,10 3,10 0,13 Z" stroke="black" stroke-width="4" fill="white"/> <!-- Nose -->
+      <path d="M-15,15 Q0,25 15,15" stroke="black" stroke-width="4" fill="none"/> <!-- Smile -->
+      <!-- Ears -->
+      <ellipse cx="-35" cy="-60" rx="15" ry="40" transform="rotate(-15 -35 -60)" stroke="black" stroke-width="4" fill="white"/>
+      <ellipse cx="35" cy="-60" rx="15" ry="40" transform="rotate(15 35 -60)" stroke="black" stroke-width="4" fill="white"/>
+    </g>
+  </g>
+
+</svg>
